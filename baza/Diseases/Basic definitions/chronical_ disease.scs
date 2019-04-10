@@ -1,0 +1,29 @@
+concept_chronical_disease=>nrel_idtf:[chronical disease]
+	(*
+		<-lang_en;;
+	*);;
+concept_chronical_disease=>nrel_idtf:[множество хронических заболеваний]
+	(*
+		<-lang_ru;;	
+	*);;
+concept_chronical_disease=>nrel_main_idtf:[хроническое заболевание]
+	(*
+		<-lang_ru;;
+	*);;
+concept_chronical_disease<-rrel_key_sc_element:...
+	(*
+<-definition;;
+=>nrel_main_idtf:[Опр.(хроническое заболевание)] 
+	(* 
+		<-lang_ru;;
+	*);;
+<=nrel_sc_text_translation:...
+(*
+		->[Хроническим называют длительное заболевание, поддающееся контролю, но не полному исцелению. Понятие «хронический» обычно используется для обозначения заболеваний, длящихся более трех месяцев.]
+(* 
+<-lang_ru;; 
+*);;
+	
+	*);;
+*);;
+

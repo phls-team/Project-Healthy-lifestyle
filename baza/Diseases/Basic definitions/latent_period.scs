@@ -1,0 +1,32 @@
+concept_latent_period=>nrel_idtf:[latent period]
+	(*
+		<-lang_en;;
+	*);;
+concept_latent_period=>nrel_idtf:[Латентный период]
+	(*
+		<-lang_ru;;	
+	*);;
+concept_latent_period=>nrel_main_idtf:[Латентный период]
+	(*
+		<-lang_ru;;
+	*);;
+concept_latent_period<-rrel_key_sc_element:...
+	(*
+<-definition;;
+=>nrel_main_idtf:[Опр.(латентный период)] 
+	(* 
+		<-lang_ru;;
+	*);;
+<=nrel_sc_text_translation:...
+(*
+		->[Латентный период болезни — это промежуток времени от заражения организма до момента, когда сам больной становится заразным.]
+(* 
+<-lang_ru;; 
+*);;
+	
+	*);;
+<=nrel_using_constants:...
+	(*
+		->in_dev;;
+	*);;
+*);;

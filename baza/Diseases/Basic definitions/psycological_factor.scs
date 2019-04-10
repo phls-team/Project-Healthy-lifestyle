@@ -1,0 +1,25 @@
+concept_psycological_factor=>nrel_idtf:[sequela]
+	(*
+		<-lang_en;;
+	*);;
+concept_psycological_factor=>nrel_main_idtf:[психологический фактор]
+	(*
+		<-lang_ru;;
+	*);;
+concept_psycological_factor<-rrel_key_sc_element:...
+	(*
+<-definition;;
+=>nrel_main_idtf:[Опр.(психологический фактор)] 
+	(* 
+		<-lang_ru;;
+	*);;
+<=nrel_sc_text_translation:...
+(*
+		->[Психологический фактор - это различные явления, влияющие на заболевания, их процесс протекания и возникновения. ]
+(* 
+<-lang_ru;; 
+*);;
+	
+	*);;
+*);;
+

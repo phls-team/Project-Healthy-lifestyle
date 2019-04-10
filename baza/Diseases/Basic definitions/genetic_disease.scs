@@ -1,0 +1,29 @@
+concept_genetic_disease=>nrel_idtf:[genetic_disease]
+	(*
+		<-lang_en;;
+	*);;
+concept_genetic_disease=>nrel_idtf:[множеств геннетических заболеваний]
+	(*
+		<-lang_ru;;	
+	*);;
+concept_genetic_disease=>nrel_main_idtf:[генетическое заболевание]
+	(*
+		<-lang_ru;;
+	*);;
+concept_genetic_disease<-rrel_key_sc_element:...
+	(*
+<-definition;;
+=>nrel_main_idtf:[Опр.(генетическое заболевание)] 
+	(* 
+		<-lang_ru;;
+	*);;
+<=nrel_sc_text_translation:...
+(*
+		->[Генетическим называется заболевание, возникающие в результате повреждения ДНК на уровне гена.]
+(* 
+<-lang_ru;; 
+*);;
+	
+	*);;
+*);;
+

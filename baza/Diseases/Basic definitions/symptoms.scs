@@ -1,0 +1,29 @@
+concept_symptoms=>nrel_idtf:[symptoms]
+	(*
+		<-lang_en;;
+	*);;
+concept_symptoms=>nrel_main_idtf:[симптом]
+	(*
+		<-lang_ru;;
+	*);;
+concept_symptoms=>nrel_idtf:[множество симптомов]
+	(*
+		<-lang_ru;;	
+	*);;
+concept_symptoms<-rrel_key_sc_element:...
+	(*
+<-definition;;
+=>nrel_main_idtf:[Опр.(симпотм)] 
+	(* 
+		<-lang_ru;;
+	*);;
+<=nrel_sc_text_translation:...
+(*
+		->[Симптом — это признак, частое проявление какого-либо заболевания, патологического состояния или нарушения какого-либо процесса жизнедеятельности.]
+(* 
+<-lang_ru;; 
+*);;
+	
+	*);;
+*);;
+

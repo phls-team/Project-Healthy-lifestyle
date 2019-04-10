@@ -1,0 +1,29 @@
+concept_hereditary_disease=>nrel_idtf:[hereditary disease]
+	(*
+		<-lang_en;;
+	*);;
+concept_hereditary_disease=>nrel_idtf:[множество наследственных заболеваний]
+	(*
+		<-lang_ru;;	
+	*);;
+concept_hereditary_disease=>nrel_main_idtf:[наследственное заболевание]
+	(*
+		<-lang_ru;;
+	*);;
+concept_hereditary_disease<-rrel_key_sc_element:...
+	(*
+<-definition;;
+=>nrel_main_idtf:[Опр.(наследственное заболевание)] 
+	(* 
+		<-lang_ru;;
+	*);;
+<=nrel_sc_text_translation:...
+(*
+		->[Наследственным называют заболевание, возникновение и развитие которого связано с различными дефектами и нарушениями в наследственном аппарате клеток. В основе наследственных заболеваний лежат нарушения наследственной информации — мутации: хромосомные, генные и митохондриальные мутации.]
+(* 
+<-lang_ru;; 
+*);;
+	
+	*);;
+*);;
+

@@ -1,0 +1,25 @@
+concept_incubation_period=>nrel_idtf:[incubation period]
+	(*
+		<-lang_en;;
+	*);;
+concept_incubation_period=>nrel_main_idtf:[инкубационный период]
+	(*
+		<-lang_ru;;
+	*);;
+concept_incubation_period<-rrel_key_sc_element:...
+	(*
+<-definition;;
+=>nrel_main_idtf:[Опр.(инкубационный период)] 
+	(* 
+		<-lang_ru;;
+	*);;
+<=nrel_sc_text_translation:...
+(*
+		->[Инкубационный период (лат. incubatio высиживание птенцов; син.: инкубация, латентный период) — начальный скрытый период инфекционной болезни от момента внедрения возбудителя в макроорганизм до появления первых клинических признаков болезни.]
+(* 
+<-lang_ru;; 
+*);;
+	
+	*);;
+*);;
+

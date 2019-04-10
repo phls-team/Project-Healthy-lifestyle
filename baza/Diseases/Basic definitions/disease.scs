@@ -1,0 +1,29 @@
+concept_disease=>nrel_idtf:[disease]
+	(*
+		<-lang_en;;
+	*);;
+concept_disease=>nrel_idtf:[множество заболеваний]
+	(*
+		<-lang_ru;;	
+	*);;
+concept_disease=>nrel_main_idtf:[заболевание]
+	(*
+		<-lang_ru;;
+	*);;
+concept_disease<-rrel_key_sc_element:...
+	(*
+<-definition;;
+=>nrel_main_idtf:[Опр.(заболевание)] 
+	(* 
+		<-lang_ru;;
+	*);;
+<=nrel_sc_text_translation:...
+(*
+		->[Заболевание — болезнь у отдельного человека, возникновение болезни. ]
+(* 
+<-lang_ru;; 
+*);;
+	
+	*);;
+*);;
+concept_disease=>nrel_inclusion:concept_chronical_disease;concept_hereditary_disease;concept_genetic_disease;concept_symptoms;concept_classification;;

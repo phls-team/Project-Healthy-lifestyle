@@ -1,0 +1,32 @@
+concept_final_period=>nrel_idtf:[final period]
+	(*
+		<-lang_en;;
+	*);;
+concept_final_period=>nrel_idtf:[Завершающий период]
+	(*
+		<-lang_ru;;	
+	*);;
+concept_final_period=>nrel_main_idtf:[Завершающий период]
+	(*
+		<-lang_ru;;
+	*);;
+concept_final_period<-rrel_key_sc_element:...
+	(*
+<-definition;;
+=>nrel_main_idtf:[Опр.(завершающий период болезни)] 
+	(* 
+		<-lang_ru;;
+	*);;
+<=nrel_sc_text_translation:...
+(*
+		->[Период завершения болезни (выздоровление, реконвалесценция) может протекать быстро, критически (см. Кризис) или постепенно, литически (см. Лизис). В зависимости от длительности течения и быстроты нарастания и исчезновения проявлений болезни различают острые и хронические.]
+(* 
+<-lang_ru;; 
+*);;
+	
+	*);;
+<=nrel_using_constants:...
+	(*
+		->in_dev;;
+	*);;
+*);;
