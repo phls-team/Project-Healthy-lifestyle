@@ -1,0 +1,12 @@
+rrel_kcal
+<- sc_node_role_relation;
+=> nrel_main_idtf: 
+	[ккал'] 
+	(* 
+	<- lang_ru;; 
+	*);
+=> nrel_main_idtf: 
+	[kcal'] 
+	(* 
+	<- lang_en;; 
+	*);;

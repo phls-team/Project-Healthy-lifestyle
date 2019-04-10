@@ -1,0 +1,33 @@
+vitamin_C
+
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [витамин C]
+          (*<-lang_ru;;*);
+          [vitamin C]
+          (*<-lang_en;;*);
+
+=> nrel_is_contained_in:vagetable;
+=> nrel_is_contained_in:fruit;
+
+=> nrel_daily_requirement_for_adults:[75-90 мг](*<-lang_ru;;*);
+
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+=> nrel_main_idtf: [Утв.(витамин С)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://explanations/explanation_for_vitamin_C.html"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+

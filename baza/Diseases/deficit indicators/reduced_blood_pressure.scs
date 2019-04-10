@@ -1,0 +1,11 @@
+reduced_blood_pressure
+
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [reduced_blood_pressure]
+          (*<-lang_en;;*);
+          [пониженное кровяное давление]
+          (*<-lang_ru;;*);;
+
+

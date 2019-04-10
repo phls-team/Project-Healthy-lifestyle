@@ -1,0 +1,7 @@
+berry_bilberry
+
+=> nrel_main_idtf:
+          [черника]
+          (*<-lang_ru;;*);
+          [bilberry]
+          (*<-lang_en;;*);;

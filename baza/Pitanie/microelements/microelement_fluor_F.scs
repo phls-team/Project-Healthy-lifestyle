@@ -1,0 +1,9 @@
+microelement_fluor_F
+
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [микроэлемент фтор]
+          (*<-lang_ru;;*);
+          [microelement fluor]
+          (*<-lang_en;;*);;

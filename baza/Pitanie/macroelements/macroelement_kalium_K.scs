@@ -1,0 +1,32 @@
+macroelement_kalium_K
+
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [макроэлемент калий]
+          (*<-lang_ru;;*);
+          [macroelement kalium]
+          (*<-lang_en;;*);
+
+=> nrel_daily_requirement_for_adults:[2-3 мг](*<-lang_ru;;*);
+
+=> nrel_helps_for_digestion_of: macroelement_calcium_Ca;
+
+<= nrel_deficit_indicator_of: cramps_in_muscles;
+<= nrel_deficit_indicator_of: pain_and_weakness_in_muscles;
+<= nrel_deficit_indicator_of: irritability;
+<= nrel_deficit_indicator_of: loss_of_appetite;
+<= nrel_deficit_indicator_of: erosive_gastrisis;
+<= nrel_deficit_indicator_of:asthenia;
+<= nrel_deficit_indicator_of: sleep_disorder;
+<= nrel_deficit_indicator_of: reduced_blood_pressure;
+<= nrel_deficit_indicator_of: heart_arythmy;
+
+=> nrel_is_contained_in: potato;
+=> nrel_is_contained_in: fruit_melon;
+=> nrel_is_contained_in: raisins;
+=> nrel_is_contained_in: fruit_banana;
+=> nrel_is_contained_in: milk;
+=> nrel_is_contained_in: fruit_lemon;
+=> nrel_is_contained_in: fruit_lime;
+=> nrel_is_contained_in: fruit_orange;;

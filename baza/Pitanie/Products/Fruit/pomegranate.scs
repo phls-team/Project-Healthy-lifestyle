@@ -1,0 +1,8 @@
+fruit_pomegranate
+
+=> nrel_main_idtf:
+          [гранат]
+          (*<-lang_ru;;*);
+          [pomegranate]
+          (*<-lang_en;;*);;
+

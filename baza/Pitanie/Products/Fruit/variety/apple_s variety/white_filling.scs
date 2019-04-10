@@ -1,0 +1,11 @@
+white_filling
+=> nrel_main_idtf: 
+	[белый налив] 
+	(* 
+	<- lang_ru;; 
+	*);
+=> nrel_main_idtf: 
+	[white filling] 
+	(* 
+	<- lang_en;; 
+	*);;

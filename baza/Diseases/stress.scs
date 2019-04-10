@@ -1,0 +1,10 @@
+stress
+
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [стресс]
+          (*<-lang_ru;;*);
+          [stress]
+          (*<-lang_en;;*);;
+

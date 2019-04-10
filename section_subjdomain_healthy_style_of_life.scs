@@ -1,0 +1,22 @@
+section_subjdomain_healthy_style_of_life
+=> nrel_main_idtf:
+	[Здоровый образ жизни]
+	(* <- lang_ru;; *);
+        [Healthy style of life]
+	(* <- lang_en;; *);
+
+<- not_enough_formed_structure;;
+
+section_subdomain_healthy_style_of_life <- atomic_section;;
+
+section_subjdomain_healthy_style_of_life = [*^"file://section_subjdomain_healthy_style_of_life.scsi"*];;
+
+section_subjdomain_healthy_style_of_life
+ ->rrel_key_sc_element:  
+        concept_diet;
+        concept_physical_exercises;
+	concept_mineral_balance;
+	concept_health;
+	concept_health_science;
+	concept_sport;;
+

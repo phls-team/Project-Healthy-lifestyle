@@ -1,0 +1,9 @@
+fruit_pineapple
+
+=> nrel_main_idtf:
+          [ананас]
+          (*<-lang_ru;;*);
+          [pineapple]
+          (*<-lang_en;;*);;
+
+

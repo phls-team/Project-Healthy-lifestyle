@@ -1,0 +1,8 @@
+berry_currant
+
+=> nrel_main_idtf:
+          [смородина]
+          (*<-lang_ru;;*);
+          [currant]
+          (*<-lang_en;;*);;
+

@@ -1,0 +1,11 @@
+streyfling
+=> nrel_main_idtf: 
+	[штрейфлинг] 
+	(* 
+	<- lang_ru;; 
+	*);
+=> nrel_main_idtf: 
+	[streyfling] 
+	(* 
+	<- lang_en;; 
+	*);;

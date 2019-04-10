@@ -1,0 +1,52 @@
+sc_agent_of_products_you_need
+=>nrel_main_idtf:
+[sc-агент для составления списка продуктов для восстановления вещественного баланса] (* <- lang_ru;; *);
+[sc-agent of of creating list of product for recreation of mineral balance] (* <- lang_en;; *);
+<- abstract_sc_agent;
+
+=>nrel_primary_initiation_condition: (sc_event_add_output_arc =>question_initiated);
+=>nrel_initiation_condition_and_result: (..sc_agent_of_products_you_need_initiation_condition =>
+..sc_agent_of_products_you_need_result);
+<= nrel_sc_agent_key_sc_elements:
+{
+question_initiated;
+question;
+question_products_you_need
+};
+<- key_sc_element:
+...
+(*
+<- sc_description_of_sc_agent_behavior;;
+<= nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+[Задачей sc-агента поиска определение склонения имени существительного.];;
+*);;
+*); 
+=>nrel_inclusion: ...
+(*
+<- platform_independent_abstract_sc_agent;;
+<= nrel_sc_agent_program:
+{
+agent_proc_products_you_need;
+proc_products_you_need
+};;
+->sc_agent_of_products_you_need_scp (* <- active_sc_agent;; *);;
+*);;
+..sc_agent_of_products_you_need_initiation_condition
+= [*
+question_products_you_need _-> .._question;;
+question_initiated _-> .._question;;
+question _-> .._question;;
+.._question _-> .._parameter;;
+*];;
+
+..sc_agent_of_products_you_need_result
+= [*
+question_products_you_need _-> .._question;;
+question_finished _-> .._question;;
+question _-> .._question;;
+.._question _=>nrel_answer:: .._answer;;
+.._question _-> .._parameter;;
+*];;

@@ -1,0 +1,11 @@
+heart_desease
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [heart desease]
+          (*<-lang_en;;*);
+          [болезнь сердца]
+          (*<-lang_ru;;*);
+
+=> nrel_inclusion: hypertonic_desease;;

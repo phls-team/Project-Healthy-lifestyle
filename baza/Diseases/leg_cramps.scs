@@ -1,0 +1,9 @@
+leg_cramps
+
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [судороги ног]
+          (*<-lang_ru;;*);
+          [leg cramps]
+          (*<-lang_en;;*);;

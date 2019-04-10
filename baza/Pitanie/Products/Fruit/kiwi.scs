@@ -1,0 +1,8 @@
+fruit_kiwi
+
+=> nrel_main_idtf:
+          [киви]
+          (*<-lang_ru;;*);
+          [kiwi]
+          (*<-lang_en;;*);;
+

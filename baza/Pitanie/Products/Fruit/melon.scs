@@ -1,0 +1,8 @@
+berry_melon
+
+=> nrel_main_idtf:
+          [дыня]
+          (*<-lang_ru;;*);
+          [melon]
+          (*<-lang_en;;*);;
+

@@ -1,0 +1,8 @@
+fruit_mango
+
+=> nrel_main_idtf:
+          [манго]
+          (*<-lang_ru;;*);
+          [mango]
+          (*<-lang_en;;*);;
+

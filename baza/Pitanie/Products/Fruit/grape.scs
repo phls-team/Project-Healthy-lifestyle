@@ -1,0 +1,9 @@
+berry_grape
+
+=> nrel_main_idtf:
+          [виноград]
+          (*<-lang_ru;;*);
+          [grape]
+          (*<-lang_en;;*);;
+
+

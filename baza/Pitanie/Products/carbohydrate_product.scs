@@ -1,0 +1,10 @@
+concept_carbohydrate_product
+
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [углеводный продукт]
+          (*<-lang_ru;;*);
+          [carbohydrate product]
+          (*<-lang_en;;*);;
+

@@ -1,0 +1,106 @@
+vitamin_B9_content 
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+          [содержание витамина B9]
+          (*<-lang_ru;;*);
+	  [vitamin B9 content]
+          (*<-lang_en;;*);;
+vitamin_B9 <= nrel_substance:vitamin_B9_content
+(* 
+	<- content;;
+	-> 0.002mg_per_100g
+	(*
+		->fruit_pear;;
+		->fruit_apple;;
+		->berry_chokeberry;;
+		->berry_grape;;
+	*);;
+	-> 0.005mg_per_100g
+	(*
+		->berry_raspberry;;
+		->berry_gooseberry;;
+		->fruit_nectarine;;
+		->fruit_orange;;
+	*);;
+	-> 0.02mg_per_100g
+	(*
+		->fruit_pomegranate;;
+		->berry_strawberry;;
+	*);;
+	-> 0.04mg_per_100g
+	(*
+		->fruit_mango;;
+	*);;
+	-> 0.004mg_per_100g
+	(*
+		=> nrel_measurement: 0.004;;
+		->fruit_peach;;
+	*);;
+	-> 0.026mg_per_100g
+	(*
+		=> nrel_measurement: 0.026;;
+		->fruit_coconut;;
+	*);;
+	-> 0.009mg_per_100g
+	(*
+		->fruit_pineapple;;
+		->fruit_lemon;;
+	*);;
+	-> 0.008mg_per_100g
+	(*
+		->berry_watermelon;;
+		->berry_cherry;;
+		->fruit_lime;;
+	*);;
+	-> 0.08mg_per_100g
+	(*
+		->fruit_avocado;;
+	*);;
+	-> 0.018mg_per_100g
+	(*
+		=> nrel_measurement: 0.018;;
+		->fruit_banana;;
+		->fruit_kiwi;;
+	*);;
+	-> 0.003mg_per_100g
+	(*
+		=> nrel_measurement: 0.003;;
+		->fruit_apricot;;
+		->fruit_grapefruit;;
+	*);;
+	-> 0.015mg_per_100g
+	(*
+		->berry_plum;;
+	*);;
+	-> 0.017mg_per_100g
+	(*
+		->fruit_bergamot;;
+	*);;
+	-> 0.013mg_per_100g
+	(*
+		=> nrel_measurement: 0.013;;
+		->fruit_date;;
+	*);;
+	-> 0.01mg_per_100g
+	(*
+		->berry_bilberry;;
+		->fruit_fig;;
+	*);;
+	-> 5mg_per_100g
+	(*
+		=> nrel_measurement: 5;;
+		->berry_currant;;
+	*);;
+	-> 0.001mg_per_100g
+	(*
+		=> nrel_measurement: 0.001;;
+		->berry_cranberry;;
+	*);;
+	-> 0.006mg_per_100g
+	(*
+		=> nrel_measurement: 0.006;;
+		->berry_melon;;
+		->berry_mulberry;;
+	*);;
+*);;
+

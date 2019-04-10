@@ -1,0 +1,22 @@
+rowing
+<-sc_node_not_relation;
+->aerobic_excercise;;
+rowing => nrel_main_idtf:
+	[гребля](* <-lang_ru;; *);
+    [rowing](* <-lang_en;; *);;
+rowing <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: гребля] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: rowing] (* <- lang_en;; *);;
+        <- definition;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Гребля — способ перемещения судна по поверхности воды с помощью вёсел, приводимых в движение мускульными усилиями человека.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Rowing — a way of movement of the vessel on a water surface by means of the oars set in motion by muscular efforts of the person.](*<- lang_en;;*);;
+			*);;
+		*);;
+

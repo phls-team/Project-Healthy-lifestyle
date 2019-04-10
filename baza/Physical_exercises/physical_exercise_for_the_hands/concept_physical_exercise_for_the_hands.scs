@@ -1,0 +1,13 @@
+concept_physical_exercise_for_the_hands
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [physical exercise for the hands]
+          (*<-lang_en;;*);
+          [физические нагрузки для рук]
+          (*<-lang_ru;;*);
+
+=> nrel_inclusion: arm_extension;
+=> nrel_inclusion: arm_flexion;
+=> nrel_inclusion: raising_hands;;

@@ -1,0 +1,9 @@
+microelement_germanium_Ge
+
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [микроэлемент германий]
+          (*<-lang_ru;;*);
+          [microelement germanium]
+          (*<-lang_en;;*);;

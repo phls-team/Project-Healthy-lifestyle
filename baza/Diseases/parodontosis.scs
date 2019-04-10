@@ -1,0 +1,28 @@
+parodontosis
+
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [пародонтоз]
+          (*<-lang_ru;;*);
+          [parodontosis]
+          (*<-lang_en;;*);
+
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+=> nrel_main_idtf: [Опр.(пародонтоз)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://definitions/definition_for_parodontosis.html"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+

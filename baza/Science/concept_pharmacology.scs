@@ -1,0 +1,51 @@
+concept_pharmacology
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [фармакология]
+          (*<-lang_ru;;*);
+          [pharmacology]
+          (*<-lang_en;;*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+=> nrel_main_idtf: [Опр.(фармакология)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:	
+			...
+			(*
+			-> rrel_example:
+				"file://explanations/explanation_for_pharmacology.html"
+				(* <- lang_ru;;	*);;
+			*);;
+	*);
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- statement ;;
+=> nrel_main_idtf: [Утв.(фармакология)]  (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example:
+				"file://statements/statement_for_pharmacology_one.html"
+				(* <- lang_ru;;	*);;
+			*);;
+	*);
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- statement ;;
+=> nrel_main_idtf: [Утв.(фармакология)]  (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example:
+				"file://statements/statement_for_pharmacology_two.html"
+				(* <- lang_ru;;	*);;
+			*);;
+	*);
+=> nrel_inclusion: concept_desease; concept_macroelement; concept_microelement; concept_vitamin;;

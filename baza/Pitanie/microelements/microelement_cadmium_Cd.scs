@@ -1,0 +1,9 @@
+microelement_cadmium_Cd
+
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [микроэлемент кадмий]
+          (*<-lang_ru;;*);
+          [microelement cadmium]
+          (*<-lang_en;;*);;

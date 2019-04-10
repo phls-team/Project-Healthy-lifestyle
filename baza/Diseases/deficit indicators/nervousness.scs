@@ -1,0 +1,11 @@
+nervousness
+
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [nervousness]
+          (*<-lang_en;;*);
+          [нервозность]
+          (*<-lang_ru;;*);;
+
+

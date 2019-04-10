@@ -1,0 +1,8 @@
+berry_cranberry
+
+=> nrel_main_idtf:
+          [клюква]
+          (*<-lang_ru;;*);
+          [cranberry]
+          (*<-lang_en;;*);;
+

@@ -1,0 +1,11 @@
+golden_delishes
+=> nrel_main_idtf: 
+	[голден делишес] 
+	(* 
+	<- lang_ru;; 
+	*);
+=> nrel_main_idtf: 
+	[golden delishes] 
+	(* 
+	<- lang_en;; 
+	*);;

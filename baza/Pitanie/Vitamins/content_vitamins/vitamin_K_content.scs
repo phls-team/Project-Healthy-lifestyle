@@ -1,0 +1,34 @@
+vitamin_K_content 
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+          [содержание витамина K]
+          (*<-lang_ru;;*);
+	  [vitamin K content]
+          (*<-lang_en;;*);;
+vitamin_K <= nrel_substance:vitamin_K_content
+(* 
+	<- content;;
+	-> 1mg_per_100g
+	(*
+		->berry_bilberry;;
+	*);;
+	-> 7.8mg_per_100g
+	(*
+		=> nrel_measurement: 7.8;;
+		->berry_mulberry;;
+	*);;
+	-> 0.003mg_per_100g
+	(*
+		->fruit_date;;
+		->fruit_peach;;
+	*);;
+	-> 0.001mg_per_100g
+	(*
+		->fruit_lime;;
+	*);;
+	-> 0.002mg_per_100g
+	(*
+		->fruit_nectarine;;
+	*);;
+*);;
+

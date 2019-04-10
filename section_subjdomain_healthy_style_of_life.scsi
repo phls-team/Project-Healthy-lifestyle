@@ -1,0 +1,314 @@
+subjdomain_of_healthy_style_of_life
+=> nrel_main_idtf:
+	[Здоровый образ жизни]
+	(* <- lang_ru;; *);
+	[Healthy style of life]
+	(* <- lang_en;; *);
+
+<- subject_domain;
+-> rrel_maximum_studied_object_class: healthy_style_of_life;
+-> rrel_not_maximum_studied_object_class:
+	concept_diet;
+	concept_physical_exercises;
+	concept_mineral_balance;
+	concept_health;
+	concept_health_science;
+	concept_sport;;
+
+healthy_style_of_life
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[здоровый образ жизни]
+	(* <- lang_ru;; *);
+	[healthy style of life]
+	(* <- lang_en;; *);
+<= nrel_basic_decomposition:
+	{
+	concept_diet;
+	concept_physical_exercises;
+	concept_mineral_balance
+	};
+=> nrel_inclusion: concept_health_science; concept_sport;;
+
+
+
+concept_health
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[здоровье]
+	(* <- lang_ru;; *);
+	[health]
+	(* <- lang_en;; *);
+
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+=> nrel_main_idtf: [Опр.(здоровье)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:	
+			...
+			(*
+			-> rrel_example:
+				"file://explanations/explanation_for_health.html"
+				(* <- lang_ru;;	*);;
+			*);;
+	*);
+=> nrel_inclusion: healthy_style_of_life;
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- statement ;;
+=> nrel_main_idtf: [Утв.(здоровье)]  (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example:
+				"file://statements/statement_for_health.html"
+				(* <- lang_ru;;	*);;
+			*);;
+	*);;
+
+concept_diet
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[здоровое питание]
+	(* <- lang_ru;; *);
+	[diet]
+	(* <- lang_en;; *);
+
+=> nrel_inclusion:products;
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+=> nrel_main_idtf: [Опр.(здоровое питание)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:	
+			...
+			(*
+			-> rrel_example:
+				"file://explanations/explanation_for_diet.html"
+				(* <- lang_ru;;	*);;
+			*);;
+	*);
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- statement ;;
+=> nrel_main_idtf: [Утв.(здоровое питание)]  (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example:
+				"file://statements/statement_for_diet_one.html"
+				(* <- lang_ru;;	*);;
+			*);;
+	*);
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- statement ;;
+=> nrel_main_idtf: [Утв.(здоровое питание)]  (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example:
+				"file://statements/statement_for_diet_two.html"
+				(* <- lang_ru;;	*);;
+			*);;
+	*);;
+
+
+concept_physical_exercises
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[физические нагрузки]
+	(* <- lang_ru;; *);
+	[physical_exercises]
+	(* <- lang_en;; *);
+
+=> nrel_inclusion: concept_physical_exercise_for_the_body;
+=> nrel_inclusion: concept_physical_exercise_for_the_legs;
+=> nrel_inclusion: concept_physical_exercise_for_the_hands;
+=> nrel_inclusion: concept_physical_exercise_for_the_back;
+=> nrel_inclusion: concept_physical_exercise_for_the_abdomen;
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- statement ;;
+=> nrel_main_idtf: [Утв.(физические нагрузки)]  (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example:
+				"file://statements/statement_for_physical_exercise_one.html"
+				(* <- lang_ru;;	*);;
+			*);;
+	*);
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- statement ;;
+=> nrel_main_idtf: [Утв.(физические нагрузки)]  (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example:
+				"file://statements/statement_for_physical_exercise_two.html"
+				(* <- lang_ru;;	*);;
+			*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+=> nrel_main_idtf: [Опр.(физические нагрузки)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://definitions/definition_for_physical_exercises.html"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+
+concept_mineral_balance
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[вещественный баланс]
+	(* <- lang_ru;; *);
+	[mineral balance]
+	(* <- lang_en;; *);
+
+=> nrel_decomposition:{
+	concept_microelement;
+	concept_macroelement;
+	concept_vitamin
+};
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+=> nrel_main_idtf: [Опр.(вещественный баланс)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:	
+			...
+			(*
+			-> rrel_example:
+				"file://explanations/explanation_for_mineral_balance.html"
+				(* <- lang_ru;;	*);;
+			*);;
+	*);;
+
+concept_health_science
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[наука о здоровье]
+	(* <- lang_ru;; *);
+	[health science]
+	(* <- lang_en;; *);
+
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+=> nrel_main_idtf: [Опр.(наука)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:	
+			...
+			(*
+			-> rrel_example:
+				"file://explanations/explanation_for_science.html"
+				(* <- lang_ru;;	*);;
+			*);;
+	*);
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- statement ;;
+=> nrel_main_idtf: [Утв.(наука)]  (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example:
+				"file://statements/statement_for_science_one.html"
+				(* <- lang_ru;;	*);;
+			*);;
+	*);
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- statement ;;
+=> nrel_main_idtf: [Утв.(наука)]  (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example:
+				"file://statements/statement_for_science_two.html"
+				(* <- lang_ru;;	*);;
+			*);;
+	*);
+=> nrel_inclusion:concept_dietology; concept_health_psychology; concept_pharmacology;;
+
+concept_sport
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[спорт]
+	(* <- lang_ru;; *);
+	[sport]
+	(* <- lang_en;; *);
+
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+=> nrel_main_idtf: [Опр.(спорт)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:	
+			...
+			(*
+			-> rrel_example:
+				"file://explanations/explanation_for_sport.html"
+				(* <- lang_ru;;	*);;
+			*);;
+	*);
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- statement ;;
+=> nrel_main_idtf: [Утв.(спорт)]  (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example:
+				"file://statements/statement_for_sport_one.html"
+				(* <- lang_ru;;	*);;
+			*);;
+	*);
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- statement ;;
+=> nrel_main_idtf: [Утв.(спорт)]  (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example:
+				"file://statements/statement_for_sport_two.html"
+				(* <- lang_ru;;	*);;
+			*);;
+	*);
+=> nrel_inclusion: concept_football; concept_volleyball; concept_basketball; concept_handball; concept_biathlon;;

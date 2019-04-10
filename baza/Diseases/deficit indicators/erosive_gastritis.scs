@@ -1,0 +1,27 @@
+erosive_gastrisis
+
+
+=> nrel_main_idtf:
+          [erosive gastrisis]
+          (*<-lang_en;;*);
+          [эрозийный гастрит]
+          (*<-lang_ru;;*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+=> nrel_main_idtf: [Опр.(эрозийный гастрит)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://definitions/definition_for_erosive_gastrisis.html"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+
+

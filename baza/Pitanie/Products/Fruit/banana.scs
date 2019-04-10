@@ -1,0 +1,10 @@
+fruit_banana
+
+
+=> nrel_main_idtf:
+          [банан]
+          (*<-lang_ru;;*);
+          [banana]
+          (*<-lang_en;;*);;
+
+

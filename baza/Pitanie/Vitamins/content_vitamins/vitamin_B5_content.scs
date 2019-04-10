@@ -1,0 +1,81 @@
+vitamin_B5_content 
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+          [содержание витамина B5]
+          (*<-lang_ru;;*);
+	  [vitamin B5 content]
+          (*<-lang_en;;*);;
+vitamin_B5 <= nrel_substance:vitamin_B5_content
+(* 
+	<- content;;
+	-> 0.3mg_per_100g
+	(*
+		->fruit_apricot;;
+		->fruit_coconut;;
+		->fruit_orange;;
+		->berry_strawberry;;
+	*);;
+	-> 0.03mg_per_100g
+	(*
+		->fruit_grapefruit;;
+		->fruit_pomelo;;
+	*);;
+	-> 0.5mg_per_100g
+	(*
+		->berry_chokeberry;;
+		->fruit_pomegranate;;
+	*);;
+	-> 0.2mg_per_100g
+	(*
+		->fruit_lemon;;
+		->fruit_mango;;
+		->berry_melon;;
+		->berry_raspberry;;
+	*);;
+	-> 0.22mg_per_100g
+	(*
+		=> nrel_measurement: 0.22;;
+		->fruit_lime;;
+		->berry_plum;;
+	*);;
+	-> 0.05mg_per_100g
+	(*
+		->berry_grape;;
+		->fruit_pear;;
+	*);;
+	-> 0.4mg_per_100g
+	(*
+		->berry_currant;;
+		->fruit_fig;;
+	*);;
+	-> 0.18mg_per_100g
+	(*
+		=> nrel_measurement: 0.18;;
+		->fruit_bergamot;;
+	*);;
+	-> 0.08mg_per_100g
+	(*
+		->berry_mulberry;;
+	*);;
+	-> 0.78mg_per_100g
+	(*
+		=> nrel_measurement: 0.78;;
+		->fruit_date;;
+	*);;
+	-> 0.14mg_per_100g
+	(*
+		=> nrel_measurement: 0.14;;
+		->berry_cherry;;
+	*);;
+	-> 0.19mg_per_100g
+	(*
+		=> nrel_measurement: 0.19;;
+		->fruit_nectarine;;
+	*);;
+	-> 1.4mg_per_100g
+	(*
+		=> nrel_measurement: 1.4;;
+		->fruit_avocado;;
+	*);;
+*);;
+

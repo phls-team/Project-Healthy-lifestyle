@@ -1,0 +1,13 @@
+concept_vegetable
+
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [овощ]
+          (*<-lang_ru;;*);
+          [vegetable]
+          (*<-lang_en;;*);
+
+=> nrel_inclusion:vegetable_pea;;
+
+

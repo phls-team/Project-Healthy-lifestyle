@@ -1,0 +1,11 @@
+cinnamon_striped
+=> nrel_main_idtf: 
+	[коричное полосатое] 
+	(* 
+	<- lang_ru;; 
+	*);
+=> nrel_main_idtf: 
+	[cinnamon striped] 
+	(* 
+	<- lang_en;; 
+	*);;

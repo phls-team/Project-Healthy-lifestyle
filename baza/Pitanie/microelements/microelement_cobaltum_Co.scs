@@ -1,0 +1,9 @@
+microelement_cobaltum_Co
+
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [микроэлемент кобальт]
+          (*<-lang_ru;;*);
+          [microelement cobaltum]
+          (*<-lang_en;;*);;

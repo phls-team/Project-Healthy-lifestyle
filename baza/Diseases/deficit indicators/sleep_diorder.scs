@@ -1,0 +1,11 @@
+sleep_disorder
+
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [sleep_disorder]
+          (*<-lang_en;;*);
+          [расстройство сна]
+          (*<-lang_ru;;*);;
+
+

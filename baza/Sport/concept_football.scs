@@ -1,0 +1,50 @@
+concept_football
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [футбол]
+          (*<-lang_ru;;*);
+          [football]
+          (*<-lang_en;;*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+=> nrel_main_idtf: [Опр.(футбол)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:	
+			...
+			(*
+			-> rrel_example:
+				"file://explanations/explanation_for_football.html"
+				(* <- lang_ru;;	*);;
+			*);;
+	*);
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- statement ;;
+=> nrel_main_idtf: [Утв.(футбол)]  (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example:
+				"file://statements/statement_for_football_one.html"
+				(* <- lang_ru;;	*);;
+			*);;
+	*);
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- statement ;;
+=> nrel_main_idtf: [Утв.(футбол)]  (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example:
+				"file://statements/statement_for_football_two.html"
+				(* <- lang_ru;;	*);;
+			*);;
+	*);;

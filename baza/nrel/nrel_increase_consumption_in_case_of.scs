@@ -1,0 +1,12 @@
+nrel_increase_comsumption_in_case_of
+<- sc_node_norole_relation;
+=> nrel_main_idtf: 
+	[увеличить потребление при*] 
+	(* 
+	<- lang_ru;; 
+	*);
+=> nrel_main_idtf: 
+	[increase comsumption in case of*] 
+	(* 
+	<- lang_en;; 
+	*);;

@@ -1,0 +1,11 @@
+loss_of_appetite
+
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [loss of appetite]
+          (*<-lang_en;;*);
+          [потеря аппетита]
+          (*<-lang_ru;;*);;
+
+

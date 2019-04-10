@@ -1,0 +1,34 @@
+vitamin_B5
+
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [витамин B5]
+          (*<-lang_ru;;*);
+          [vitamin B5]
+          (*<-lang_en;;*);
+
+=> nrel_is_contained_in:mushrooms;
+=> nrel_is_contained_in:nuts;
+
+=> nrel_daily_requirement_for_adults:[0,4-0,8 мг](*<-lang_ru;;*);
+=> nrel_daily_requirement_for_children:[0,1-0,4 мг](*<-lang_ru;;*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+=> nrel_main_idtf: [Утв.(витамин B5)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://explanations/explanation_for_vitamin_B5.html"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+
+

@@ -1,0 +1,67 @@
+scp_program ->proc_products_you_need (*
+
+->rrel_params: .proc_products_you_need_params (*
+-> rrel_1: rrel_in: _parameter;;
+-> rrel_2: rrel_in: _answer;;
+*);;
+
+->rrel_operators: .proc_products_you_need_operator_set (*
+
+->rrel_init: .proc_new_operator_of_products(*
+<- searchElStr5;;
+-> rrel_1: rrel_fixed: rrel_scp_var: _parameter;;
+-> rrel_2: rrel_assign: rrel_common: rrel_const: rrel_scp_var: _comm_arc;;
+-> rrel_3: rrel_assign: rrel_scp_var: _curr_macroel;;
+-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _acr1;;
+-> rrel_5: rrel_fixed: rrel_scp_const: nrel_deficit_indicator_of;;
+=>nrel_then: .proc_gen_res_set;;
+=>nrel_else: .proc_new_operator_return ;;
+
+*);;
+
+-> .proc_gen_res_set(*
+<- genEl;;
+-> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _res_set;;
+=>nrel_goto: .proc_macroelements_you_need_1;;
+*);;
+
+-> .proc_macroelements_you_need_1(*
+<- searchSetStr5;;
+-> rrel_1: rrel_fixed: rrel_scp_var: _curr_macroel;;
+-> rrel_2: rrel_assign: rrel_common: rrel_const: rrel_scp_var: _comm_arc2_1;;
+-> rrel_3: rrel_assign: rrel_scp_var: _curr_elem;;
+-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _acr3;;
+-> rrel_5: rrel_fixed: rrel_scp_const: nrel_is_contained_in;;
+
+-> rrel_set_3: rrel_assign: rrel_scp_var: _res_set;;
+=>nrel_goto: .proc_macroelements_you_need_1_2;;
+*);;
+
+-> .proc_macroelements_you_need_1_2(*
+<- searchSetStr3;;
+-> rrel_1: rrel_fixed: rrel_scp_var: _res_set;;
+-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _pos_arc2_1;;
+-> rrel_3: rrel_assign: rrel_scp_var: _curr_elem;;
+
+-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer;;
+
+=>nrel_goto: .proc_macroelements_you_need_1_3;;
+*);;
+
+
+-> .proc_macroelements_you_need_1_3(*
+<- genElStr3;;
+-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _pos_arc2_1;;
+-> rrel_3: rrel_fixed: rrel_scp_var: _res_set;;
+
+=>nrel_goto: .proc_new_operator_return;;
+*);;
+
+
+-> .proc_new_operator_return (*
+<- return;;
+*);;
+*);;
+*);;

@@ -1,0 +1,49 @@
+physical_excercise
+<-sc_node_not_relation;;
+physical_excercise => nrel_main_idtf:
+	[физическое упражнение](* <-lang_ru;; *);
+    [physical excercise](* <-lang_en;; *);;
+physical_excercise <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: физическое упражнение] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: physical excercise] (* <- lang_en;; *);;
+        <- definition;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Физические упражнения — элементарные движения, составленные из них двигательные действия и их комплексы, систематизированные в целях физического развития. ](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Physical exercises are the elementary movements made of them the physical actions and their complexes systematized for physical development.](*<- lang_en;;*);;
+			*);;
+		*);;
+physical_excercise <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element: push_up; pulling_up; nrel_muscle_mass;anaerobic_excercise;;
+		=> nrel_main_idtf: 
+            [Утв.(подтягиание, отжимание, мышечная масса*, анаэробное упражнение)] (* <- lang_ru;; *);
+            [Expl.(push-up, pulling up, muscle mass*,anaerobic excercise)] (* <- lang_eng;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+			    	[Силовые упражнения — такие как отжимания, подтягивания — направлены на увеличение мышечной массы и придания большей силы мышцам.](*<- lang_ru;;*);
+			    	[Strength exercises — such as push-ups, pullings up — are directed to increase in muscle bulk and giving of bigger force to muscles.](*<- lang_en;;*);;
+			*);;
+*);;
+physical_excercise <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element: rowing; swimming; nrel_body_weight;aerobic_excercise;;
+		=> nrel_main_idtf: 
+            [Утв.(гребля,плавание, масса тела*,аэробное упражнение)] (* <- lang_ru;; *);
+            [Expl.(rowing, swimmins, body weight*,aerobic excercise)] (* <- lang_eng;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+			    	[Кардиоупражнения — например, гребля, плавание — полезны для сердца, улучшают выносливость и снижают массу тела.](*<- lang_ru;;*);
+			    	[Cardioexercises — for example, rowing, swimming — are useful to heart, improve endurance and reduce body weight.](*<- lang_en;;*);;
+			*);;
+*);;
+

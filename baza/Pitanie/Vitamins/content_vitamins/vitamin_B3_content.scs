@@ -1,0 +1,106 @@
+vitamin_B3_content 
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+          [содержание витамина B3]
+          (*<-lang_ru;;*);
+	  [vitamin B3 content]
+          (*<-lang_en;;*);;
+vitamin_B3 <= nrel_substance:vitamin_B3_content
+(* 
+	<- content;;
+	-> 0.3mg_per_100g
+	(*
+		->fruit_apple;;
+		->berry_currant;;
+		->berry_gooseberry;;
+		->berry_watermelon;;
+	*);;
+	-> 0.6mg_per_100g
+	(*
+		=> nrel_measurement: 0.6;;
+		->berry_chokeberry;;
+	*);;
+	-> 0.62mg_per_100g
+	(*
+		=> nrel_measurement: 0.62;;
+		->berry_mulberry;;
+	*);;
+	-> 0.36mg_per_100g
+	(*
+		=> nrel_measurement: 0.36;;
+		->fruit_kiwi;;
+	*);;
+	-> 0.4mg_per_100g
+	(*
+		->berry_blackberry;;
+	*);;
+	-> 0.04mg_per_100g
+	(*
+		->berry_melon;;
+	*);;
+	-> 0.54mg_per_100g
+	(*
+		=> nrel_measurement: 0.54;;
+		->fruit_coconut;;
+	*);;
+	-> 0.5mg_per_100g
+	(*
+		->fruit_fig;;
+		->fruit_pomegranate;;
+	*);;
+	-> 0.28mg_per_100g
+	(*
+		=> nrel_measurement: 0.28;;
+		->berry_bilberry;;
+	*);;
+	-> 0.8mg_per_100g
+	(*
+		=> nrel_measurement: 0.8;;
+		->fruit_peach;;
+	*);;
+	-> 0.2mg_per_100g
+	(*
+		->berry_grape;;
+		->fruit_grapefruit;;
+		->fruit_lemon;;
+		->fruit_lime;;
+		->fruit_orange;;
+		->fruit_persimmon;;
+		->fruit_pineapple;;
+		->fruit_quince;;
+		->fruit_tangerine;;
+	*);;
+	-> 0.49mg_per_100g
+	(*
+		=> nrel_measurement: 0.49;;
+		->fruit_bergamot;;
+	*);;
+	-> 1.7mg_per_100g
+	(*
+		=> nrel_measurement: 1.7;;
+		->fruit_avocado;;
+	*);;
+	-> 1.12mg_per_100g
+	(*
+		=> nrel_measurement: 1.12;;
+		->fruit_nectarine;;
+	*);;
+	-> 0.7mg_per_100g
+	(*
+		=> nrel_measurement: 0.7;;
+		->berry_dog_rose;;
+		->berry_plum;;
+		->fruit_mango;;
+	*);;
+	-> 1mg_per_100g
+	(*
+		=> nrel_measurement: 1;;
+		->fruit_banana;;
+	*);;
+	-> 2.2mg_per_100g
+	(*
+		=> nrel_measurement: 2.2;;
+		->fruit_date;;
+	*);;
+*);;
+

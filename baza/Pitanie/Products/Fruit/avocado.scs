@@ -1,0 +1,8 @@
+fruit_avocado
+
+=> nrel_main_idtf:
+          [авокадо]
+          (*<-lang_ru;;*);
+          [avocado]
+          (*<-lang_en;;*);;
+

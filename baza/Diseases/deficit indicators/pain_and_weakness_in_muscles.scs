@@ -1,0 +1,11 @@
+pain_and_weakness_in_muscles
+
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [pain and weakness in muscles]
+          (*<-lang_en;;*);
+          [боль и слабость в мышцах]
+          (*<-lang_ru;;*);;
+
+

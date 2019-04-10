@@ -1,0 +1,8 @@
+mushrooms
+
+
+=> nrel_main_idtf:
+          [грибы]
+          (*<-lang_ru;;*);
+          [mushrooms]
+          (*<-lang_en;;*);;

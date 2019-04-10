@@ -1,0 +1,11 @@
+heart_arythmy
+
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [heart_arythmy]
+          (*<-lang_en;;*);
+          [сердечная аритмия]
+          (*<-lang_ru;;*);;
+
+

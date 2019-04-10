@@ -1,0 +1,12 @@
+nrel_gestation_period
+<- sc_node_norole_relation;
+=> nrel_main_idtf: 
+	[период созревания*] 
+	(* 
+	<- lang_ru;; 
+	*);
+=> nrel_main_idtf: 
+	[gestation period*] 
+	(* 
+	<- lang_en;; 
+	*);;

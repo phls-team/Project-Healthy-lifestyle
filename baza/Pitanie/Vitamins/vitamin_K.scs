@@ -1,0 +1,31 @@
+vitamin_K
+
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [витамин K]
+          (*<-lang_ru;;*);
+          [vitamin K]
+          (*<-lang_en;;*);
+
+
+=> nrel_daily_requirement_for_adults:[90 мкг](*<-lang_ru;;*);
+
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+=> nrel_main_idtf: [Утв.(витамин К)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://explanations/explanation_for_vitamin_K.html"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+

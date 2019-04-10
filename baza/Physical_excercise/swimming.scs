@@ -1,0 +1,22 @@
+swimming
+<-sc_node_not_relation;
+->aerobic_excercise;;
+swimming => nrel_main_idtf:
+	[плавание](* <-lang_ru;; *);
+    [swimming](* <-lang_en;; *);;
+swimming <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: плавание] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: swimming] (* <- lang_en;; *);;
+        <- definition;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Плавание является движением человека по воде с помощью конечностей, как правило, без какого-либо искусственного аппарата.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Swimming is the movement of the person on water by means of extremities, as a rule, without any artificial device.](*<- lang_en;;*);;
+			*);;
+		*);;
+

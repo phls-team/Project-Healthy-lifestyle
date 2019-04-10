@@ -1,0 +1,98 @@
+vitamin_E_content 
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+          [содержание витамина E]
+          (*<-lang_ru;;*);
+	  [vitamin E content]
+          (*<-lang_en;;*);;
+vitamin_E <= nrel_substance:vitamin_E_content
+(* 
+	<- content;;
+	-> 0.55mg_per_100g
+	(*
+		=> nrel_measurement: 0.55;;
+		->fruit_apple;;
+	*);;
+	-> 0.5mg_per_100g
+	(*
+		->fruit_avocado;;
+		->berry_gooseberry;;
+		->berry_strawberry;;
+	*);;
+	-> 0.24mg_per_100g
+	(*
+		=> nrel_measurement: 0.24;;
+		->fruit_coconut;;
+	*);;
+	-> 0.4mg_per_100g
+	(*
+		->fruit_pear;;
+		->fruit_pomegranate;;
+	*);;
+	-> 0.6mg_per_100g
+	(*
+		->berry_plum;;
+		->berry_raspberry;;
+	*);;
+	-> 0.22mg_per_100g
+	(*
+		->fruit_lime;;
+	*);;
+	-> 0.2mg_per_100g
+	(*
+		->fruit_lemon;;
+		->fruit_orange;;
+		->fruit_tangerine;;
+	*);;
+	-> 0.87mg_per_100g
+	(*
+		=> nrel_measurement: 0.87;;
+		->berry_mulberry;;
+	*);;
+	-> 0.72mg_per_100g
+	(*
+		=> nrel_measurement: 0.72;;
+		->berry_currant;;
+	*);;
+	-> 0.77mg_per_100g
+	(*
+		=> nrel_measurement: 0.77;;
+		->fruit_nectarine;;
+	*);;
+	-> 0.3mg_per_100g
+	(*
+		->fruit_banana;;
+		->fruit_bergamot;;
+		->fruit_grapefruit;;
+	*);;
+	-> 1.1mg_per_100g
+	(*
+		=> nrel_measurement: 1.1;;
+		->fruit_apricot;;
+	*);;
+	-> 0.1mg_per_100g
+	(*
+		->fruit_date;;
+		->fruit_fig;;
+		->berry_melon;;
+		->berry_watermelon;;
+	*);;
+	-> 1mg_per_100g
+	(*
+		->berry_cranberry;;
+	*);;
+	-> 1.2mg_per_100g
+	(*
+		->berry_bilberry;;
+		->berry_blackberry;;
+	*);;
+	-> 1.7mg_per_100g
+	(*
+		->berry_dog_rose;;
+	*);;
+	-> 2.2mg_per_100g
+	(*
+		->berry_chokeberry;;
+	*);;
+*);;
+

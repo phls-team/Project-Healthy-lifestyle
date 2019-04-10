@@ -1,0 +1,9 @@
+macroelement_natrium_Na
+
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [макроэлемент натрий]
+          (*<-lang_ru;;*);
+          [macroelement natrium]
+          (*<-lang_en;;*);;

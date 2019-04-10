@@ -1,0 +1,47 @@
+concept_fruit
+
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [фрукт]
+          (*<-lang_ru;;*);
+          [fruit]
+          (*<-lang_en;;*);
+
+=> nrel_inclusion:apricot;
+=> nrel_inclusion:fruit_apple;
+=> nrel_inclusion:fruit_banana;
+=> nrel_inclusion:fruit_grapefruit;
+=> nrel_inclusion:fruit_kiwi;
+=> nrel_inclusion:fruit_lemon;
+=> nrel_inclusion:fruit_lime;
+=> nrel_inclusion:berry_melon;
+=> nrel_inclusion:fruit_orange;
+=> nrel_inclusion:fruit_peach;
+=> nrel_inclusion:fruit_pear;
+=> nrel_inclusion:fruit_pineapple;
+=> nrel_inclusion:fruit_avocado;
+=> nrel_inclusion:berry_bilberry;
+=> nrel_inclusion:berry_blackberry;
+=> nrel_inclusion:fruit_coconut;
+=> nrel_inclusion:berry_currant;
+=> nrel_inclusion:berry_gooseberry;
+=> nrel_inclusion:fruit_mango;
+=> nrel_inclusion:berry_plum;
+=> nrel_inclusion:fruit_pomegranate;
+=> nrel_inclusion:berry_raspberry;
+=> nrel_inclusion:berry_strawberry;
+=> nrel_inclusion:berry_chokeberry;
+=> nrel_inclusion:berry_cranberry;
+=> nrel_inclusion:fruit_quince;
+=> nrel_inclusion:berry_dog_rose;
+=> nrel_inclusion:fruit_date;
+=> nrel_inclusion:berry_watermelon;
+=> nrel_inclusion:fruit_fig;
+=> nrel_inclusion:fruit_apricot;
+=> nrel_inclusion:fruit_nectarine;
+=> nrel_inclusion:fruit_persimmon;
+=> nrel_inclusion:fruit_tangerine;
+=> nrel_inclusion:fruit_bergamot;
+=> nrel_inclusion:fruit_pomelo;
+=> nrel_inclusion:berry_mulberry;;

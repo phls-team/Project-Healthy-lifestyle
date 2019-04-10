@@ -1,0 +1,8 @@
+fruit_apricot
+
+=> nrel_main_idtf:
+          [абрикос]
+          (*<-lang_ru;;*);
+          [apricot]
+          (*<-lang_en;;*);;
+

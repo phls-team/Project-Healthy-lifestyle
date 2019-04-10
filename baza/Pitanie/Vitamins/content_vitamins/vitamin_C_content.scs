@@ -1,0 +1,148 @@
+vitamin_C_content 
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+          [содержание витамина C]
+          (*<-lang_ru;;*);
+	  [vitamin C content]
+          (*<-lang_en;;*);;
+vitamin_C <= nrel_substance:vitamin_C_content
+(* 
+	<- content;;
+	-> 10mg_per_100g
+	(*
+		=> nrel_measurement: 10;;
+		->fruit_apple;;
+		->fruit_apricot;;
+		->fruit_avocado;;
+		->berry_bilberry;;
+		->berry_cherry;;
+		->berry_plum;;
+	*);;
+	-> 10.8mg_per_100g
+	(*
+		=> nrel_measurement: 10.8;;
+		->berry_grape;;
+	*);;
+	-> 36mg_per_100g
+	(*
+		=> nrel_measurement: 36;;
+		->fruit_banana;;
+		->fruit_mango;;
+		->berry_mulberry;;
+	*);;
+	-> 3.3mg_per_100g
+	(*
+		=> nrel_measurement: 3.3;;
+		->fruit_coconut;;
+	*);;
+	-> 15mg_per_100g
+	(*
+		=> nrel_measurement: 15;;
+		->berry_blackberry;;
+		->berry_cranberry;;
+		->fruit_persimmon;;
+		->fruit_quince;;
+	*);;
+	-> 67mg_per_100g
+	(*
+		=> nrel_measurement: 67;;
+		->berry_chokeberry;;
+	*);;
+	-> 7mg_per_100g
+	(*
+		=> nrel_measurement: 7;;
+		->berry_watermelon;;
+	*);;
+	-> 6.6mg_per_100g
+	(*
+		=> nrel_measurement: 6.6;;
+		->fruit_peach;;
+	*);;
+	-> 650mg_per_100g
+	(*
+		=> nrel_measurement: 650;;
+		->berry_dog_rose;;
+	*);;
+	-> 60mg_per_100g
+	(*
+		=> nrel_measurement: 60;;
+		->fruit_orange;;
+		->berry_strawberry;;
+	*);;
+	-> 200mg_per_100g
+	(*
+		=> nrel_measurement: 200;;
+		->berry_currant;;
+	*);;
+	-> 2mg_per_100g
+	(*
+		=> nrel_measurement: 2;;
+		->fruit_fig;;
+	*);;
+	-> 5.4mg_per_100g
+	(*
+		=> nrel_measurement: 5.4;;
+		->fruit_nectarine;;
+	*);;
+	-> 4mg_per_100g
+	(*
+		=> nrel_measurement: 4;;
+		->fruit_pomegranate;;
+	*);;
+	-> 5mg_per_100g
+	(*
+		->fruit_pear;;
+	*);;
+	-> 50mg_per_100g
+	(*
+		=> nrel_measurement: 50;;
+		->fruit_pomelo;;
+	*);;
+	-> 20mg_per_100g
+	(*
+		=> nrel_measurement: 20;;
+		->berry_melon;;
+		->fruit_pineapple;;
+	*);;
+	-> 29mg_per_100g
+	(*
+		=> nrel_measurement: 29;;
+		->fruit_lime;;
+	*);;
+	-> 30mg_per_100g
+	(*
+		=> nrel_measurement: 30;;
+		->berry_gooseberry;;
+	*);;
+	-> 38mg_per_100g
+	(*
+		=> nrel_measurement: 38;;
+		->fruit_tangerine;;
+	*);;
+	-> 40mg_per_100g
+	(*
+		=> nrel_measurement: 40;;
+		->fruit_lemon;;
+	*);;
+	-> 90mg_per_100g
+	(*
+		=> nrel_measurement: 90;;
+		->fruit_kiwi;;
+	*);;
+	-> 44.7mg_per_100g
+	(*
+		=> nrel_measurement: 44.7;;
+		->fruit_bergamot;;
+	*);;
+	-> 45mg_per_100g
+	(*
+		=> nrel_measurement: 45;;
+		->fruit_grapefruit;;
+	*);;
+	-> 25mg_per_100g
+	(*
+		=> nrel_measurement: 25;;
+		->berry_raspberry;;
+	*);;
+*);;
+

@@ -1,0 +1,9 @@
+microelement_bromum_Br
+
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [микроэлемент бром]
+          (*<-lang_ru;;*);
+          [microelement bromum]
+          (*<-lang_en;;*);;

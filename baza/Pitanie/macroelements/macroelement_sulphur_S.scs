@@ -1,0 +1,9 @@
+macroelement_sulphur_S
+
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [макроэлемент сера]
+          (*<-lang_ru;;*);
+          [macroelement sulphur]
+          (*<-lang_en;;*);;

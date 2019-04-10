@@ -1,0 +1,8 @@
+berry_blackberry
+
+=> nrel_main_idtf:
+          [ежевика]
+          (*<-lang_ru;;*);
+          [blackberry]
+          (*<-lang_en;;*);;
+

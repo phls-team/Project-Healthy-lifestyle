@@ -1,0 +1,72 @@
+concept_conservant
+
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [консервант]
+          (*<-lang_ru;;*);
+          [conservant]
+          (*<-lang_en;;*);
+
+
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+=> nrel_main_idtf: [Опр.(консервант)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://definitions/definition_for_conservant.html"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);
+
+
+=>nrel_inclusion:E200;
+=>nrel_inclusion:E209;
+=>nrel_inclusion:E210;
+=>nrel_inclusion:E213;
+=>nrel_inclusion:E214;
+=>nrel_inclusion:E215;
+=>nrel_inclusion:E216;
+=>nrel_inclusion:E217;
+=>nrel_inclusion:E218;
+=>nrel_inclusion:E219;
+=>nrel_inclusion:E220;
+=>nrel_inclusion:E221;
+=>nrel_inclusion:E225;
+=>nrel_inclusion:E226;
+=>nrel_inclusion:E227;
+=>nrel_inclusion:E228;
+=>nrel_inclusion:E230;
+=>nrel_inclusion:E231;
+=>nrel_inclusion:E232;
+=>nrel_inclusion:E233;
+=>nrel_inclusion:E234;
+=>nrel_inclusion:E235;
+=>nrel_inclusion:E236;
+=>nrel_inclusion:E237;
+=>nrel_inclusion:E238;
+=>nrel_inclusion:E239;
+=>nrel_inclusion:E240;
+=>nrel_inclusion:E241;
+=>nrel_inclusion:E249;
+=>nrel_inclusion:E252;
+=>nrel_inclusion:E261;
+=>nrel_inclusion:E262;
+=>nrel_inclusion:E263;
+=>nrel_inclusion:E264;
+=>nrel_inclusion:E281;
+=>nrel_inclusion:E282;
+=>nrel_inclusion:E283;
+=>nrel_inclusion:E284;
+=>nrel_inclusion:E285;
+=>nrel_inclusion:E296;
+=>nrel_inclusion:E297;;
+

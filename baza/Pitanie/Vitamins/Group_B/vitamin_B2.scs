@@ -1,0 +1,33 @@
+vitamin_B2
+
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [витамин B2]
+          (*<-lang_ru;;*);
+          [vitamin B2]
+          (*<-lang_en;;*);
+
+=> nrel_is_contained_in:eggs;
+=> nrel_is_contained_in:nuts;
+=> nrel_is_contained_in:mushrooms;
+
+=> nrel_daily_requirement_for_adults:[1,8-2 мг](*<-lang_ru;;*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+=> nrel_main_idtf: [Утв.(витамин B2)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://explanations/explanation_for_vitamin_B2.html"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+

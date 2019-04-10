@@ -1,0 +1,34 @@
+vitamin_D
+
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [витамин D]
+          (*<-lang_ru;;*);
+          [vitamin D]
+          (*<-lang_en;;*);
+
+=> nrel_helps_for_digestion: macroelement_magnesium_Mg;
+
+=> nrel_is_contained_in:fish;
+=> nrel_is_contained_in:cheese;
+
+=> nrel_daily_requirement_for_adults:[600 мг](*<-lang_ru;;*);
+
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+=> nrel_main_idtf: [Утв.(витамин D)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://explanations/explanation_for_vitamin_D.html"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;

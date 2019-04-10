@@ -1,0 +1,13 @@
+concept_physical_exercise_for_the_legs
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [physical exercise for the legs]
+          (*<-lang_en;;*);
+          [физические нагрузки для ног]
+          (*<-lang_ru;;*);
+
+=> nrel_inclusion: swing_foot;
+=> nrel_inclusion: attacks;
+=> nrel_inclusion: leg_retraction;;

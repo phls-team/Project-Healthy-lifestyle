@@ -1,0 +1,11 @@
+microelement_ferrum_Fe
+
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [микроэлемент железо]
+          (*<-lang_ru;;*);
+          [microelement ferrum]
+          (*<-lang_en;;*);
+
+=> helps_for_digestion: macroelement_calcium_Ca;;

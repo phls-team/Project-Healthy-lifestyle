@@ -1,0 +1,41 @@
+concept_vitamin
+
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [витамин]
+          (*<-lang_ru;;*);
+          [vitamin]
+          (*<-lang_en;;*);
+
+=> nrel_inclusion: vitamin_A;
+=> nrel_inclusion: concept_vitamin_group_B;
+=> nrel_inclusion: vitamin_C;
+=> nrel_inclusion: vitamin_D;
+=> nrel_inclusion: vitamin_E;
+=> nrel_inclusion: vitamin_F;
+=> nrel_inclusion: vitamin_K;
+=> nrel_inclusion: vitamin_N;
+=> nrel_inclusion: vitamin_P;
+=> nrel_inclusion: vitamin_PP;
+=> nrel_inclusion: vitamin_Q;
+=> nrel_inclusion: vitamin_T;
+=> nrel_inclusion: vitamin_U;
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+=> nrel_main_idtf: [Опр.(витамины)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://definitions/definition_for_vitamin.html"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+

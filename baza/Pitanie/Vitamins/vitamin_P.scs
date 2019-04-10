@@ -1,0 +1,28 @@
+vitamin_P
+
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [витамин P]
+          (*<-lang_ru;;*);
+          [vitamin P]
+          (*<-lang_en;;*);
+
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+=> nrel_main_idtf: [Утв.(витамин P)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://explanations/explanation_for_vitamin_P.html"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+

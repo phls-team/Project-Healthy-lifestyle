@@ -1,0 +1,25 @@
+macroelement_phosphorus_P
+
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [макроэлемент фосфор]
+          (*<-lang_ru;;*);
+          [macroelement phosphorus]
+          (*<-lang_en;;*);
+
+=> nrel_daily_requirement_for_adults:[1500-1600 мг](*<-lang_ru;;*);
+=> nrel_daily_requirement_for_children:[1350-1800 мг](*<-lang_ru;;*);
+
+=> nrel_helps_for_digestion_of: macroelement_calcium_Ca;
+
+<= nrel_deficit_indicator_of: general_weakness_and_fatigue;
+<= nrel_deficit_indicator_of: pain_and_weakness_in_muscles;
+<= nrel_deficit_indicator_of: development_of_osteoporosis;
+<= nrel_deficit_indicator_of: loss_of_attention;
+
+=> nrel_is_contained_in: cheese;
+=> nrel_is_contained_in: pea;
+=> nrel_is_contained_in: fish;
+=> nrel_is_contained_in: eggs;;
+

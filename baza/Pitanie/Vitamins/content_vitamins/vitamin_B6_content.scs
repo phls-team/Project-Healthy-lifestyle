@@ -1,0 +1,91 @@
+vitamin_B6_content 
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+          [содержание витамина B6]
+          (*<-lang_ru;;*);
+	  [vitamin B6 content]
+          (*<-lang_en;;*);;
+vitamin_B6 <= nrel_substance:vitamin_B6_content
+(* 
+	<- content;;
+	-> 0.07mg_per_100g
+	(*
+		->fruit_apple;;
+		->fruit_tangerine;;
+		->berry_chokeberry;;
+		->berry_raspberry;;
+	*);;
+	-> 0.08mg_per_100g
+	(*
+		->berry_cranberry;;
+		->berry_plum;;
+	*);;
+	-> 0.09mg_per_100g
+	(*
+		->berry_watermelon;;
+	*);;
+	-> 0.086mg_per_100g
+	(*
+		=> nrel_measurement: 0.086;;
+		->berry_cranberry;;
+		->berry_grape;;
+	*);;
+	-> 0.04mg_per_100g
+	(*
+		->fruit_bergamot;;
+		->fruit_grapefruit;;
+		->fruit_pomegranate;;
+		->berry_cherry;;
+	*);;
+	-> 0.054mg_per_100g
+	(*
+		=> nrel_measurement: 0.054;;
+		->fruit_coconut;;
+	*);;
+	-> 0.25mg_per_100g
+	(*
+		=> nrel_measurement: 0.25;;
+		->fruit_avocado;;
+	*);;
+	-> 0.2mg_per_100g
+	(*
+		->fruit_banana;;
+		->fruit_kiwi;;
+	*);;
+	-> 0.1mg_per_100g
+	(*
+		->berry_bilberry;;
+		->fruit_fig;;
+	*);;
+	-> 0.13mg_per_100g
+	(*
+		->berry_currant;;
+	*);;
+	-> 0.03mg_per_100g
+	(*
+		->berry_gooseberry;;
+		->fruit_nectarine;;
+	*);;
+	-> 0.05mg_per_100g
+	(*
+		->berry_mulberry;;
+	*);;
+	-> 0.043mg_per_100g
+	(*
+		=> nrel_measurement: 0.043;;
+		->fruit_lime;;
+	*);;
+	-> 0.06mg_per_100g
+	(*
+		->fruit_lemon;;
+		->fruit_orange;;
+		->fruit_pear;;
+		->berry_melon;;
+		->berry_strawberry;;
+	*);;
+	-> 0.19mg_per_100g
+	(*
+		->fruit_date;;
+	*);;
+*);;
+

@@ -1,0 +1,11 @@
+development_of_parodontosis
+
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [development of parodontosis]
+          (*<-lang_en;;*);
+          [развитие пародонтоза]
+          (*<-lang_ru;;*);;
+
+

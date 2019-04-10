@@ -1,0 +1,10 @@
+concept_protein_product
+
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [белковый продукт]
+          (*<-lang_ru;;*);
+          [protein product]
+          (*<-lang_en;;*);;
+

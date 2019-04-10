@@ -1,0 +1,9 @@
+microelement_vanadium_Br
+
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [микроэлемент ванадий]
+          (*<-lang_ru;;*);
+          [microelement vanadium]
+          (*<-lang_en;;*);;

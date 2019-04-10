@@ -1,0 +1,50 @@
+concept_health_psychology
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [психология здоровья]
+          (*<-lang_ru;;*);
+          [health psychology]
+          (*<-lang_en;;*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+=> nrel_main_idtf: [Опр.(психология здоровья)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:	
+			...
+			(*
+			-> rrel_example:
+				"file://explanations/explanation_for_health_psychology.html"
+				(* <- lang_ru;;	*);;
+			*);;
+	*);
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- statement ;;
+=> nrel_main_idtf: [Утв.(психология здоровья)]  (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example:
+				"file://statements/statement_for_health_psychology_one.html"
+				(* <- lang_ru;;	*);;
+			*);;
+	*);
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- statement ;;
+=> nrel_main_idtf: [Утв.(психология здоровья)]  (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example:
+				"file://statements/statement_for_health_psychology_two.html"
+				(* <- lang_ru;;	*);;
+			*);;
+	*);;

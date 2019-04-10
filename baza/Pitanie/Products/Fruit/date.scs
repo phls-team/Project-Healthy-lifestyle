@@ -1,0 +1,8 @@
+fruit_date
+
+=> nrel_main_idtf:
+          [финик]
+          (*<-lang_ru;;*);
+          [date]
+          (*<-lang_en;;*);;
+

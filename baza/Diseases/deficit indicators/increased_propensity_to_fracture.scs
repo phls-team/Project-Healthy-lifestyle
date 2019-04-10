@@ -1,0 +1,11 @@
+increased_propensity_to_fracture
+
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [increased propensity to fracture]
+          (*<-lang_en;;*);
+          [повышенная склонность к переломам]
+          (*<-lang_ru;;*);;
+
+

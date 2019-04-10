@@ -1,0 +1,7 @@
+pea
+
+=> nrel_main_idtf:
+          [горох]
+          (*<-lang_ru;;*);
+          [pea]
+          (*<-lang_en;;*);;

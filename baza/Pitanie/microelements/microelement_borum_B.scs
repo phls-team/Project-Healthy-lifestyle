@@ -1,0 +1,9 @@
+microelement_borum_B
+
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [микроэлемент бор]
+          (*<-lang_ru;;*);
+          [microelement borum]
+          (*<-lang_en;;*);;

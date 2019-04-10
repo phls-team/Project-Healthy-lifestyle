@@ -1,0 +1,11 @@
+fruit_lemon
+
+=> nrel_main_idtf:
+          [лимон]
+          (*<-lang_ru;;*);
+          [lemon]
+          (*<-lang_en;;*);;
+
+
+
+

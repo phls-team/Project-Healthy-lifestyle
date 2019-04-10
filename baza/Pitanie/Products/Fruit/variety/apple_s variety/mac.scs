@@ -1,0 +1,11 @@
+mac
+=> nrel_main_idtf: 
+	[макинтош] 
+	(* 
+	<- lang_ru;; 
+	*);
+=> nrel_main_idtf: 
+	[mac] 
+	(* 
+	<- lang_en;; 
+	*);;

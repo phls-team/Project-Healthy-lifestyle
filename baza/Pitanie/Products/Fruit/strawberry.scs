@@ -1,0 +1,8 @@
+berry_strawberry
+
+=> nrel_main_idtf:
+          [клубника]
+          (*<-lang_ru;;*);
+          [strawberry]
+          (*<-lang_en;;*);;
+

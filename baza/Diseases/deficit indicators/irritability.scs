@@ -1,0 +1,11 @@
+irritability
+
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [irritability]
+          (*<-lang_en;;*);
+          [раздражительность]
+          (*<-lang_ru;;*);;
+
+

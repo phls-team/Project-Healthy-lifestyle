@@ -1,0 +1,13 @@
+concept_physical_exercise_for_the_back
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [physical exercise for the back]
+          (*<-lang_en;;*);
+          [физические нагрузки для спины]
+          (*<-lang_ru;;*);
+
+=> nrel_inclusion: bridge;
+=> nrel_inclusion: cat;
+=> nrel_inclusion: cobra;;

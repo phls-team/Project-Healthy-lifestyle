@@ -1,0 +1,8 @@
+fruit_pomelo
+
+=> nrel_main_idtf:
+          [памело]
+          (*<-lang_ru;;*);
+          [pomelo]
+          (*<-lang_en;;*);;
+

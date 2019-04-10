@@ -1,0 +1,13 @@
+concept_physical_exercise_for_the_body
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [physical exercise for the body]
+          (*<-lang_en;;*);
+          [физические нагрузки для тела]
+          (*<-lang_ru;;*);
+
+=> nrel_inclusion:strap;
+=> nrel_inclusion:push_ups;
+=> nrel_inclusion:squats;;

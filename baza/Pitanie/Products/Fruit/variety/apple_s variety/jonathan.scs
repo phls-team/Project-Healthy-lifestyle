@@ -1,0 +1,40 @@
+jonathan
+=> nrel_main_idtf: 
+	[джонатан] 
+	(* 
+	<- lang_ru;; 
+	*);
+=> nrel_main_idtf: 
+	[jonathan] 
+	(* 
+	<- lang_en;; 
+	*);
+
+=> nrel_birthplace: USA;
+=> nrel_colouration: red
+(*
+	<-concept_colour;;
+*);
+=> nrel_gestation_period: october;;
+
+USA => nrel_main_idtf:
+          [США]
+          (*<-lang_ru;;*);
+          [USA]
+          (*<-lang_en;;*);;
+concept_colour => nrel_main_idtf:
+          [цвет]
+          (*<-lang_ru;;*);
+          [colour]
+          (*<-lang_en;;*);;
+red => nrel_main_idtf:
+          [красный]
+          (*<-lang_ru;;*);
+          [red]
+          (*<-lang_en;;*);;
+october => nrel_main_idtf:
+          [октябрь]
+          (*<-lang_ru;;*);
+          [october]
+          (*<-lang_en;;*);;
+

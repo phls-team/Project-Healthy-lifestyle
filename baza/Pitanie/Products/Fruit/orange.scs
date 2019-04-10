@@ -1,0 +1,9 @@
+fruit_orange
+
+=> nrel_main_idtf:
+          [апельсин]
+          (*<-lang_ru;;*);
+          [orange]
+          (*<-lang_en;;*);;
+
+

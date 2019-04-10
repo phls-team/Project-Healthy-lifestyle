@@ -1,0 +1,26 @@
+concept_vitamin_group_B
+
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [витамин группы B]
+          (*<-lang_ru;;*);
+          [vitamin group B]
+          (*<-lang_en;;*);
+
+=> nrel_inclusion: vitamin_B1;
+=> nrel_inclusion: vitamin_B2;
+=> nrel_inclusion: vitamin_B3;
+=> nrel_inclusion: vitamin_B4;
+=> nrel_inclusion: vitamin_B5;
+=> nrel_inclusion: vitamin_B6;
+=> nrel_inclusion: vitamin_B7;
+=> nrel_inclusion: vitamin_B8;
+=> nrel_inclusion: vitamin_B9;
+=> nrel_inclusion: vitamin_B10;
+=> nrel_inclusion: vitamin_B11;
+=> nrel_inclusion: vitamin_B12;
+=> nrel_inclusion: vitamin_B13;
+=> nrel_inclusion: vitamin_B15;
+=> nrel_inclusion: vitamin_B17;;
+

@@ -1,0 +1,17 @@
+concept_physical_exercise_for_the_abdomen
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [physical exercise for the abdomen]
+          (*<-lang_en;;*);
+          [физические нагрузки для живота]
+          (*<-lang_ru;;*);
+
+=> nrel_inclusion: bicycle;
+=> nrel_inclusion: lifting_legs;
+=> nrel_inclusion: twisting;;
+
+
+
+

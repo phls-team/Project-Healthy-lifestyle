@@ -1,0 +1,18 @@
+concept_product
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [продукт питания]
+          (*<-lang_ru;;*);
+          [product]
+          (*<-lang_en;;*);
+
+=> nrel_inclusion: concept_fruit;
+=> nrel_inclusion: bran;
+=> nrel_inclusion: cheese;
+=> nrel_inclusion: eggs;
+=> nrel_inclusion: fish;
+=> nrel_inclusion: nuts;
+=> nrel_inclusion: pea;
+=> nrel_inclusion: rainsins;;
+

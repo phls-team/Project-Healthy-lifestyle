@@ -1,0 +1,8 @@
+fruit_fig
+
+=> nrel_main_idtf:
+          [инжир]
+          (*<-lang_ru;;*);
+          [fig]
+          (*<-lang_en;;*);;
+

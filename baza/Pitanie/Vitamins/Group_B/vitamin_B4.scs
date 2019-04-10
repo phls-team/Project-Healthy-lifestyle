@@ -1,0 +1,31 @@
+vitamin_B4
+
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [витамин B4]
+          (*<-lang_ru;;*);
+          [vitamin B4]
+          (*<-lang_en;;*);
+
+
+
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+=> nrel_main_idtf: [Утв.(витамин B4)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://explanations/explanation_for_vitamin_B4.html"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+
+

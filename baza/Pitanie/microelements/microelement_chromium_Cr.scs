@@ -1,0 +1,9 @@
+microelement_chromium_Cr
+
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [микроэлемент хром]
+          (*<-lang_ru;;*);
+          [microelement chromium]
+          (*<-lang_en;;*);;

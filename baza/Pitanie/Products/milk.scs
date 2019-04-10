@@ -1,0 +1,8 @@
+milk
+
+
+=> nrel_main_idtf:
+          [молоко]
+          (*<-lang_ru;;*);
+          [milk]
+          (*<-lang_en;;*);;

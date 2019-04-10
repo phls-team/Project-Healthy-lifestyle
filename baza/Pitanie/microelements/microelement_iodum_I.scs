@@ -1,0 +1,9 @@
+microelement_iodum_I
+
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [микроэлемент йод]
+          (*<-lang_ru;;*);
+          [microelement iodum]
+          (*<-lang_en;;*);;

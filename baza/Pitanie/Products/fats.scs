@@ -1,0 +1,9 @@
+concept_fats
+
+
+=> nrel_main_idtf:
+          [жиры]
+          (*<-lang_ru;;*);
+          [fats]
+          (*<-lang_en;;*);;
+

@@ -1,0 +1,25 @@
+macroelement_magnesium_Mg
+
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [макроэлемент магний]
+          (*<-lang_ru;;*);
+          [macroelement magnesium]
+          (*<-lang_en;;*);
+
+=> nrel_helps_for_digestion_of: macroelement_calcium_Ca;
+
+=> nrel_daily_requiremeny_for_adults:[400 мг](*<-lang_ru;;*);
+=> nrel_daily_requiremeny_for_children:[200 мг](*<-lang_ru;;*);
+
+<= nrel_deficit_indicator_of:hyperthyroidism;
+<= nrel_deficit_indicator_of:development_of_osteoporosis;
+<= nrel_deficit_indicator_of:development_of_parodontosis;
+<= nrel_deficit_indicator_of:increased_blood_pressure;
+<= nrel_deficit_indicator_of:heart_arythmy;
+
+=> nrel_is_contained_in:raisins;
+=> nrel_is_contained_in:bran;
+=> nrel_is_contained_in:nuts;;
+

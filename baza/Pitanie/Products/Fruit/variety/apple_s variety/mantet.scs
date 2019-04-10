@@ -1,0 +1,11 @@
+mantet
+=> nrel_main_idtf: 
+	[мантет] 
+	(* 
+	<- lang_ru;; 
+	*);
+=> nrel_main_idtf: 
+	[mantet] 
+	(* 
+	<- lang_en;; 
+	*);;

@@ -1,0 +1,9 @@
+fruit_pear
+
+=> nrel_main_idtf:
+          [груша]
+          (*<-lang_ru;;*);
+          [pear]
+          (*<-lang_en;;*);;
+
+

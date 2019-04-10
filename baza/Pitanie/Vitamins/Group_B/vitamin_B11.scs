@@ -1,0 +1,10 @@
+vitamin_B11
+
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [витамин B11]
+          (*<-lang_ru;;*);
+          [vitamin B11]
+          (*<-lang_en;;*);;
+

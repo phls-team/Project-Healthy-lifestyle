@@ -1,0 +1,16 @@
+vitamin_P_content 
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+          [содержание витамина P]
+          (*<-lang_ru;;*);
+	  [vitamin P content]
+          (*<-lang_en;;*);;
+vitamin_P <= nrel_substance:vitamin_P_content
+(* 
+	<- content;;
+	-> 0.4mg_per_100g
+	(*
+		->berry_cranberry;;
+	*);;
+*);;
+

@@ -1,0 +1,36 @@
+fruit_apple
+
+=> nrel_main_idtf:
+          [яблоко]
+          (*<-lang_ru;;*);
+          [apple]
+          (*<-lang_en;;*);
+=> nrel_birthplace: Central_Asia;
+=> nrel_variety: white_filling; melba; mantet; grushivka_moscow; candy; mac; streyfling; cinnamon_striped; zhigulevskoe; antonovka; jonathan; golden_delishes;
+=> nrel_calorie_content: ...
+(*
+	<- quantity;;
+	<= nrel_relevance: ...
+	(*
+		-> rrel_kcal: 52
+		(*
+			<- number;;
+		*);;
+	*);;
+*);;
+		
+
+
+
+Central_Asia => nrel_main_idtf:
+          [Центральная Азия]
+          (*<-lang_ru;;*);
+          [Central Asia]
+          (*<-lang_en;;*);;
+quantity => nrel_main_idtf:
+          [величина]
+          (*<-lang_ru;;*);
+          [quantity]
+          (*<-lang_en;;*);;
+
+

@@ -1,0 +1,8 @@
+berry_plum
+
+=> nrel_main_idtf:
+          [слива]
+          (*<-lang_ru;;*);
+          [plum]
+          (*<-lang_en;;*);;
+

@@ -1,0 +1,8 @@
+fruit_bergamot
+
+=> nrel_main_idtf:
+          [бергамот]
+          (*<-lang_ru;;*);
+          [bergamot]
+          (*<-lang_en;;*);;
+

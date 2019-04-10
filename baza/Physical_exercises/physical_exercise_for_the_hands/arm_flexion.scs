@@ -1,0 +1,40 @@
+arm_flexion
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [arm flexion]
+          (*<-lang_en;;*);
+          [сгибание рук]
+          (*<-lang_ru;;*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+=> nrel_main_idtf: [Утв.(сгибание рук)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://explanations/explanation_for_arm_flexion.html"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://photos/photo_for_arm_flexion.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
+

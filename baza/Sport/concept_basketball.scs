@@ -1,0 +1,50 @@
+concept_basketball
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [баскетбол]
+          (*<-lang_ru;;*);
+          [basketball]
+          (*<-lang_en;;*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+=> nrel_main_idtf: [Опр.(баскетбол)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:	
+			...
+			(*
+			-> rrel_example:
+				"file://explanations/explanation_for_basketball.html"
+				(* <- lang_ru;;	*);;
+			*);;
+	*);
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- statement ;;
+=> nrel_main_idtf: [Утв.(баскетбол)]  (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example:
+				"file://statements/statement_for_basketball_one.html"
+				(* <- lang_ru;;	*);;
+			*);;
+	*);
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- statement ;;
+=> nrel_main_idtf: [Утв.(баскетбол)]  (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example:
+				"file://statements/statement_for_basketball_two.html"
+				(* <- lang_ru;;	*);;
+			*);;
+	*);;

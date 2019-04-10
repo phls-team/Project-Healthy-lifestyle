@@ -1,0 +1,42 @@
+concept_desease
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [desease]
+          (*<-lang_en;;*);
+          [болезнь]
+          (*<-lang_ru;;*);
+
+=> nrel_inclusion: anxiety;
+=> nrel_inclusion: arthritis;
+=> nrel_inclusion: depression;
+=> nrel_inclusion: higher_level_of_cholesterol_in_blood;
+=> nrel_inclusion: hyperactivity;
+=> nrel_inclusion: leg_cramps;
+=> nrel_inclusion: osteoporosis;
+=> nrel_inclusion: parodontosis;
+=> nrel_inclusion: stress;
+=> nrel_inclusion: heart_desease;
+
+=> nrel_inclusion: asthenia;
+=> nrel_inclusion: cramps_in_muscles;
+=> nrel_inclusion: development_of_osteoporosis;
+=> nrel_inclusion: development_of_parodontosis;
+=> nrel_inclusion: erosive_gastrisis;
+=> nrel_inclusion: general_weakness_and_fatigue;
+=> nrel_inclusion: heart_arythmy;
+=> nrel_inclusion: heart_pain;
+=> nrel_inclusion: hyperthyroidism;
+=> nrel_inclusion: increased_propensity_to_fracture;
+=> nrel_inclusion: irritability;
+=> nrel_inclusion: loss_of_appetite;
+=> nrel_inclusion: loss_of_attention;
+=> nrel_inclusion: nervousness;
+=> nrel_inclusion: pain_and_weakness_in_muscles;
+=> nrel_inclusion: reduced_blood_pressure;
+=> nrel_inclusion: sleep_disorder;;
+
+
+
+

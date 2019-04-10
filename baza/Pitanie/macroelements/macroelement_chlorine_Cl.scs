@@ -1,0 +1,9 @@
+macroelement_chlorine_Cl
+
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [макроэлемент хлор]
+          (*<-lang_ru;;*);
+          [macroelement chlorine]
+          (*<-lang_en;;*);;

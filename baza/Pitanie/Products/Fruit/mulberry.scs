@@ -1,0 +1,8 @@
+berry_mulberry
+
+=> nrel_main_idtf:
+          [шелковица]
+          (*<-lang_ru;;*);
+          [mulberry]
+          (*<-lang_en;;*);;
+

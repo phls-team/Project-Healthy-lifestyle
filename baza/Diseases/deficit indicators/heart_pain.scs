@@ -1,0 +1,11 @@
+heart_pain
+
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [heart pain]
+          (*<-lang_en;;*);
+          [боль в сердце]
+          (*<-lang_ru;;*);;
+
+

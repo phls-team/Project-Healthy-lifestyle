@@ -1,0 +1,11 @@
+zhigulevskoe
+=> nrel_main_idtf: 
+	[жигулевское] 
+	(* 
+	<- lang_ru;; 
+	*);
+=> nrel_main_idtf: 
+	[zhigulevskoe] 
+	(* 
+	<- lang_en;; 
+	*);;

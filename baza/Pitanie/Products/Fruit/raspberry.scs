@@ -1,0 +1,8 @@
+berry_raspberry
+
+=> nrel_main_idtf:
+          [малина]
+          (*<-lang_ru;;*);
+          [raspberry]
+          (*<-lang_en;;*);;
+

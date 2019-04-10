@@ -1,0 +1,8 @@
+fruit_grapefruit
+
+=> nrel_main_idtf:
+          [грейпфрут]
+          (*<-lang_ru;;*);
+          [grapefruit]
+          (*<-lang_en;;*);;
+

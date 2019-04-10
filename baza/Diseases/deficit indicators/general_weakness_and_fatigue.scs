@@ -1,0 +1,11 @@
+general_weakness_and_fatigue
+
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [general weakness and fatigue]
+          (*<-lang_en;;*);
+          [общая слабость и утомляемость]
+          (*<-lang_ru;;*);;
+
+

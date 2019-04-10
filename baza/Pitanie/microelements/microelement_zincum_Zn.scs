@@ -1,0 +1,9 @@
+microelement_zincum_Br
+
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [микроэлемент цинк]
+          (*<-lang_ru;;*);
+          [microelement zincum]
+          (*<-lang_en;;*);;

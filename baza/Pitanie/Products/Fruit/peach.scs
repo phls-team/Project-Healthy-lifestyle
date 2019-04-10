@@ -1,0 +1,9 @@
+fruit_peach
+
+=> nrel_main_idtf:
+          [персик]
+          (*<-lang_ru;;*);
+          [peach]
+          (*<-lang_en;;*);;
+
+

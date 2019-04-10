@@ -1,0 +1,11 @@
+loss_of_attention
+
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [loss of attention]
+          (*<-lang_en;;*);
+          [снижение внимания]
+          (*<-lang_ru;;*);;
+
+

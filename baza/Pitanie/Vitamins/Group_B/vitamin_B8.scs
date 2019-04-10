@@ -1,0 +1,10 @@
+vitamin_B8
+
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [витамин B8]
+          (*<-lang_ru;;*);
+          [vitamin B8]
+          (*<-lang_en;;*);;
+

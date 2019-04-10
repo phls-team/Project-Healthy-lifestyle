@@ -1,0 +1,8 @@
+fruit_persimmon
+
+=> nrel_main_idtf:
+          [хурма]
+          (*<-lang_ru;;*);
+          [persimmon]
+          (*<-lang_en;;*);;
+

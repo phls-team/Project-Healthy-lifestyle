@@ -1,0 +1,52 @@
+vitamin_B4_content 
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+          [содержание витамина B4]
+          (*<-lang_ru;;*);
+	  [vitamin B4 content]
+          (*<-lang_en;;*);;
+vitamin_B4 <= nrel_substance:vitamin_B4_content
+(* 
+	<- content;;
+	-> 14mg_per_100g
+	(*
+		=> nrel_measurement: 14;;
+		->fruit_avocado;;
+	*);;
+	-> 12.1mg_per_100g
+	(*
+		=> nrel_measurement: 12.1;;
+		->fruit_coconut;;
+	*);;
+	-> 12.3mg_per_100g
+	(*
+		=> nrel_measurement: 12.3;;
+		->berry_mulberry;;
+	*);;
+	-> 5.1mg_per_100g
+	(*
+		=> nrel_measurement: 5.1;;
+		->fruit_lime;;
+	*);;
+	-> 7.6mg_per_100g
+	(*
+		=> nrel_measurement: 7.6;;
+		->fruit_mango;;
+	*);;
+	-> 6.2mg_per_100g
+	(*
+		=> nrel_measurement: 6.2;;
+		->fruit_nectarine;;
+	*);;
+	-> 6.1mg_per_100g
+	(*
+		=> nrel_measurement: 6.1;;
+		->fruit_peach;;
+	*);;
+	-> 8.35mg_per_100g
+	(*
+		=> nrel_measurement: 8.35;;
+		->fruit_bergamot;;
+	*);;
+*);;
+
