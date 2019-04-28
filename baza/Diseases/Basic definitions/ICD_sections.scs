@@ -1,0 +1,59 @@
+concept_class_01=>nrel_main_idtf:[Class 01.Certain infectious or parasitic diseases  ]
+(*<-lang_en;;*);;
+concept_class_01=>nrel_main_idtf:[Класс 01.Инфекционные и паразитарные заболевания]
+(*<-lang_ru;;*);;
+concept_ICD_11_classification=>nrel_inclusion:concept_class_01;;
+
+concept_subClassOf01_01=>nrel_main_idtf:[Subclass I.Gastroenteritis and colitis of infectious and unspecified origin]
+(*<-lang_en;;*);;
+concept_subClassOf01_01=>nrel_main_idtf:[Подкласс I.Гастроэнтерит и колит инфекционного и неопределенного происхождения]
+(*<-lang_ru;;*);;
+concept_subClassOf01_01=>nrel_arrayOfIdentificators:[first unique idtf - last unique idtf];;
+concept_class_01=>nrel_inclusion:concept_subClassOf01_01;;
+
+concept_subClassOf01_02=>nrel_main_idtf:[Subclass II.Predominantly sexually transmitted infections.]
+(*<-lang_en;;*);;
+concept_subClassOf01_02=>nrel_main_idtf:[Подкласс II.Заболвания, передаваемые половым путём.]
+(*<-lang_ru;;*);;
+concept_class_01=>nrel_inclusion:concept_subClassOf01_02;;
+concept_subClassOf01_02=>nrel_arrayOfIdentificators:[first unique idtf - last unique idtf];;
+
+concept_subClassOf01_03=>nrel_main_idtf:[Subclass III.Mycobacterial diseases]
+(*<-lang_en;;*);;
+concept_subClassOf01_03=>nrel_main_idtf:[Подкласс III.Заболевания, вызванные микобактериями]
+(*<-lang_ru;;*);;
+concept_class_01=>nrel_inclusion:concept_subClassOf01_03;;
+concept_subClassOf01_02=>nrel_arrayOfIdentificators:[first unique idtf - last unique idtf];;
+
+concept_subClassOf01_04=>nrel_main_idtf:[Subclass IV.Certain staphylococcal or streptococcal diseases]
+(*<-lang_en;;*);;
+concept_subClassOf01_04=>nrel_main_idtf:[Подкласс IV.Некоторые стафилококковые или стрептококковые заболевания]
+(*<-lang_ru;;*);;
+concept_class_01=>nrel_inclusion:concept_subClassOf01_04;;
+concept_subClassOf01_04=>nrel_arrayOfIdentificators:[first unique idtf - last unique idtf];;
+
+concept_subClassOf01_05=>nrel_main_idtf:[Subclass V.Pyogenic bacterial infections of the skin or subcutaneous tissues]
+(*<-lang_en;;*);;
+concept_subClassOf01_05=>nrel_main_idtf:[Подкласс V.Пиогенные бактериальные инфекции кожи или подкожных тканей]
+(*<-lang_ru;;*);;
+concept_subClassOf01_05=>nrel_arrayOfIdentificators:[first unique idtf - last unique idtf];;
+concept_class_01=>nrel_inclusion:concept_subClassOf01_05;;
+
+concept_subClassOf01_06=>nrel_main_idtf:[Subclass VI.Certain zoonotic bacterial diseases]
+(*<-lang_en;;*);;
+concept_subClassOf01_06=>nrel_main_idtf:[Подкласс VI.Некоторые зоонозные бактериальные заболевания]
+(*<-lang_ru;;*);;
+concept_subClassOf01_06<-rrel_key_sc_element:...
+(*
+<-class_description;;
+=>nrel_main_idtf:[class description]
+(*<-lang_en;;*);;
+=>nrel_main_idtf:[описание класса]
+(*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(* ->[This is a group of bacterial diseases that are transmitted to humans by contact with infected vertebrate animals.] (*<-lang_en;;*);;
+->[Это группа бактериальных заболеваний, которые передаются человеку при контакте с зараженными позвоночными животными.] (*<-lang_ru;;*);;
+*);;
+*);;
+concept_subClassOf01_06=>nrel_arrayOfIdentificators:[first unique idtf - last unique idtf];;
+concept_class_01=>nrel_inclusion:concept_subClassOf01_06;;

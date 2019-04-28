@@ -1,21 +1,21 @@
-concept_classification=>nrel_idtf:[classification]
+concept_illness_classification=>nrel_main_idtf:[illness classification]
 	(*
 		<-lang_en;;
 	*);;
-concept_classification=>nrel_idtf:[классификация]
-	(*
-		<-lang_ru;;	
-	*);;
-concept_classification=>nrel_main_idtf:[классификация]
+concept_illness_classification=>nrel_main_idtf:[классификация болезней]
 	(*
 		<-lang_ru;;
 	*);;
-concept_classification<-rrel_key_sc_element:...
+concept_illness_classification<-rrel_key_sc_element:...
 	(*
 <-definition;;
-=>nrel_main_idtf:[Опр.(классификация)] 
+=>nrel_main_idtf:[Опр.(классификация болезней)] 
 	(* 
 		<-lang_ru;;
+	*);;
+=>nrel_main_idtf:[Def.(Classification of diseases)] 
+	(* 
+		<-lang_en;;
 	*);;
 <=nrel_sc_text_translation:...
 (*
@@ -23,17 +23,25 @@ concept_classification<-rrel_key_sc_element:...
 (* 
 <-lang_ru;; 
 *);;
+		->[The classification of diseases is the division of various diseases into classes. At the moment, the classification is carried out in accordance with the international classification of diseases (ICD). There are 11 revisions of this classification, the last of which is the 11th.]
+(* 
+<-lang_en;; 
+*);;
 	
 	*);;
 *);;
 
-concept_classification->rrel_key_sc_element:...
+concept_illness_classification->rrel_key_sc_element:...
 	(*
-		->rrel_key_sc_element:concept_classification;;
+		->rrel_key_sc_element:concept_illness_classification;;
 		<-statement;;
-		=>nrel_main_idtf:[Утв.(Международная классификация болезней 11-й пересмотр (МКБ-11))]
+		=>nrel_main_idtf:[Утв.(Международная классификация болезней, 11-й пересмотр (МКБ-11))]
 	(*
 		<-lang_ru;;
+	*);;
+		=>nrel_main_idtf:[Statement (International Classification of Diseases, 11th revision (ICD-11))]
+	(*
+		<-lang_en;;
 	*);;
 		<=nrel_sc_text_translation:...
 	(*
@@ -41,7 +49,54 @@ concept_classification->rrel_key_sc_element:...
 	(*
 		<-lang_ru;; 
 	*);;
+		->rrel_example:[The International Classification of Diseases 11 revision (hereinafter ICD 11) is a worldwide standard for the collection of data on mortality and morbidity, which allows for the best method to encode and statistically process medical information. It also allows organizing health management processes, redistributing financial and other resources, optimizing research, collecting and taking into account epidemiological information, helping to improve primary health care, regulating prevention and treatment issues, helping to get an idea of ​​the health situation in individual countries. , different population groups, age groups, etc. In English, the term International Classification of Diseases (ICD) is used.]
+	(*
+		<-lang_en;; 
+	*);;
 	*);;
 	*);;
 
-nrel_
+concept_illness_classification<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://images/ICD-11.png"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;
+concept_illness_classification=>nrel_inclusion:concept_ICD_11_classification;;
+
+concept_ICD_11_classification=>nrel_main_idtf:[Structure of ICD-11 classification]
+	(*
+		<-lang_en;;
+	*);;
+concept_ICD_11_classification=>nrel_main_idtf:[Структура классификации по МКБ-11 (ICD-11)]
+	(*
+		<-lang_ru;;
+	*);;
+concept_ICD_11_classification<-rrel_key_sc_element:...
+	(*
+		<-explanation;;
+		<=nre_main_idtf:[Утв.(структура МКБ-11)](*<-lang_ru;; *);;
+                <=nre_main_idtf:[Def.(ICD-11 structure)](*<-lang_en;; *);;
+<=nrel_sc_text_translation:
+...
+	(*
+		->rrel_example:
+"file://html/icd_structure_ru.html"
+	(*
+<-lang_ru;;
+		=>nrel_format:format_html;;
+	*);;	
+		->rrel_example:
+"file://html/icd_structure_en.html"
+	(*
+<-lang_en;;
+		=>nrel_format:format_html;;
+	*);;
+*);;
+*);;

@@ -1,0 +1,8 @@
+nrel_arrayOfIdentificators=>nrel_main_idtf:[содержащиеся идентификаторы (с первого по последний)]
+(*<-lang_ru;;*);;
+nrel_arrayOfIdentificators=>nrel_idtf:[array of elements, that consist that class (from first to last)]
+(*<-lang_en;;*);;
+nrel_class_description=>nrel_idtf:[decription]
+(*<-lang_en;;*);;
+nreL_class_description=>nrel_main_idtf:[описание класса/подкласса]
+(*<-lang_ru;;*);;
