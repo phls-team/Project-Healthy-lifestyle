@@ -8,12 +8,28 @@ concept_subClassOf01_01=>nrel_main_idtf:[Subclass I.Gastroenteritis and colitis 
 (*<-lang_en;;*);;
 concept_subClassOf01_01=>nrel_main_idtf:[Подкласс I.Гастроэнтерит и колит инфекционного и неопределенного происхождения]
 (*<-lang_ru;;*);;
-concept_subClassOf01_01=>nrel_arrayOfIdentificators:[first unique idtf - last unique idtf];;
+concept_subClassOf01_01=>nrel_arrayOfIdentificators:[1A00 - last unique idtf];;
 concept_class_01=>nrel_inclusion:concept_subClassOf01_01;;
+
+concept_part1OfSubClassOf01_01<-sc_node_not_relation;
+=>nrel_main_idtf:[Bacterial intestinal infections](*<-lang_en;;*);;
+concept_part1OfSubClassOf01_01<-sc_node_not_relation;
+=>nrel_main_idtf:[Бактериальные кишечные инфекции](*<-lang_ru;;*);;
+concept_part1OfSubClassOf01_01<-rrel_sc_key_element:...
+(*<-statement;;
+=>nrel_main_idtf:[class description](*<-lang_en;;*);;
+=>nrel_main_idtf:[описание класса](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(* ->[Any condition of the intestines, caused by an infection with a bacterial source.] (*<-lang_en;;*);;
+->[Бактериальные кишечные инфекции] (*<-lang_ru;;*);;
+*);;
+*);;
+concept_part1OfSubClassOf01_01=>nrel_arrayOfIdentificators:[1A00 - last unique idtf];;
+concept_subClassOf01_01=>nrel_inclusion:concept_part1OfSubClassOf01_01;;
 
 concept_subClassOf01_02=>nrel_main_idtf:[Subclass II.Predominantly sexually transmitted infections.]
 (*<-lang_en;;*);;
-concept_subClassOf01_02=>nrel_main_idtf:[Подкласс II.Заболвания, передаваемые половым путём.]
+concept_subClassOf01_02=>nrel_main_idtf:[Подкласс II.Заболевания, передаваемые половым путём.]
 (*<-lang_ru;;*);;
 concept_class_01=>nrel_inclusion:concept_subClassOf01_02;;
 concept_subClassOf01_02=>nrel_arrayOfIdentificators:[first unique idtf - last unique idtf];;
@@ -45,7 +61,7 @@ concept_subClassOf01_06=>nrel_main_idtf:[Подкласс VI.Некоторые 
 (*<-lang_ru;;*);;
 concept_subClassOf01_06<-rrel_key_sc_element:...
 (*
-<-class_description;;
+<-statement;;
 =>nrel_main_idtf:[class description]
 (*<-lang_en;;*);;
 =>nrel_main_idtf:[описание класса]
@@ -57,3 +73,212 @@ concept_subClassOf01_06<-rrel_key_sc_element:...
 *);;
 concept_subClassOf01_06=>nrel_arrayOfIdentificators:[first unique idtf - last unique idtf];;
 concept_class_01=>nrel_inclusion:concept_subClassOf01_06;;
+
+concept_subClassOf01_07=>nrel_main_idtf:[Subclass VII.Other bacterial diseases]
+(*<-lang_en;;*);;
+concept_subClassOf01_07=>nrel_main_idtf:[Подкласс VII.Другие бактериальные заболевания]
+(*<-lang_ru;;*);;
+concept_subClassOf01_07=>nrel_arrayOfIdentificators:[first unique idtf - last unique idtf];;
+concept_class_01=>nrel_inclusion:concept_subClassOf01_07;;
+
+concept_subClassOf01_08=>nrel_main_idtf:[Subclass VIII.Human immunodeficiency virus disease]
+(*<-lang_en;;*);;
+concept_subClassOf01_08=>nrel_main_idtf:[Подкласс VIII.Вирус иммунодефицита человека]
+(*<-lang_ru;;*);;
+concept_subClassOf01_08<-rrel_sc_key_element:...
+(*<-statement;;
+=>nrel_main_idtf:[class description](*<-lang_en;;*);;
+=>nrel_main_idtf:[описание класса](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(* ->[A case of HIV infection is defined as an individual with HIV infection irrespective of clinical stage including severe or stage 4 clinical disease, also known as AIDS) confirmed by laboratory criteria according to country definitions and requirements. ] (*<-lang_en;;*);;
+->[Случай ВИЧ-инфекции определяется как индивидуум с ВИЧ-инфекцией независимо от клинической стадии, включая тяжелое заболевание или стадию 4 (также известную как СПИД), подтвержденную лабораторными критериями в соответствии с определениями и требованиями страны.] (*<-lang_ru;;*);;
+*);;
+*);;
+concept_subClassOf01_08=>nrel_arrayOfIdentificators:[first unique idtf - last unique idtf];;
+concept_class_01=>nrel_inclusion:concept_subClassOf01_08;;
+
+concept_subClassOf01_09=>nrel_main_idtf:[Subclass IX.Viral infections of the central nervous system]
+(*<-lang_en;;*);;
+concept_subClassOf01_09=>nrel_main_idtf:[Подкласс IX.Вирусные инфекции центральной нервной системы]
+(*<-lang_ru;;*);;
+concept_subClassOf01_09<-rrel_sc_key_element:...
+(*<-statement;;
+=>nrel_main_idtf:[class description](*<-lang_en;;*);;
+=>nrel_main_idtf:[описание класса](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(* ->[Any disease of the central nervous system, caused by an infection with a viral source.  ] (*<-lang_en;;*);;
+->[Любое заболевание центральной нервной системы, вызванное заражением вирусным источником.] (*<-lang_ru;;*);;
+*);;
+*);;
+concept_subClassOf01_10=>nrel_arrayOfIdentificators:[first unique idtf - last unique idtf];;
+concept_class_01=>nrel_inclusion:concept_subClassOf01_08;;
+
+concept_subClassOf01_10=>nrel_main_idtf:[Subclass X.Non-viral and unspecified infections of the central nervous system ]
+(*<-lang_en;;*);;
+concept_subClassOf01_10=>nrel_main_idtf:[Подкласс X.Невирусные и неуточненные инфекции центральной нервной системы]
+(*<-lang_ru;;*);;
+concept_subClassOf01_10<-rrel_sc_key_element:...
+(*<-statement;;
+=>nrel_main_idtf:[class description](*<-lang_en;;*);;
+=>nrel_main_idtf:[описание класса](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(* ->[Any condition of the nervous system, caused by an infection with a bacterial, fungal, parasitic or unspecified source.] (*<-lang_en;;*);;
+->[Невирусные и неуточненные инфекции центральной нервной системы] (*<-lang_ru;;*);;
+*);;
+*);;
+concept_subClassOf01_10=>nrel_arrayOfIdentificators:[first unique idtf - last unique idtf];;
+concept_class_01=>nrel_inclusion:concept_subClassOf01_10;;
+
+concept_subClassOf01_11=>nrel_main_idtf:[Subclass XI.Dengue]
+(*<-lang_en;;*);;
+concept_subClassOf01_11=>nrel_main_idtf:[Подкласс XI.лихорадка денге]
+(*<-lang_ru;;*);;
+concept_subClassOf01_11<-rrel_sc_key_element:...
+(*<-statement;;
+=>nrel_main_idtf:[class description](*<-lang_en;;*);;
+=>nrel_main_idtf:[описание класса](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(* ->[Dengue is a viral disease transmitted by the bite of a mosquito infected by dengue viruses. It is one disease entity with different clinical presentations and often with unpredictable clinical evolution and outcome. Most patients recover following a self-limiting non-severe clinical course like nausea, vomiting, rash, aches and pains, but a small proportion progress to severe disease, mostly characterized by plasma leakage with or without haemorrhage, although severe haemorrhages or severe organ impairment can occur, with or without dengue shock. ] (*<-lang_en;;*);;
+->[Денге - это вирусное заболевание, передаваемое укусом комара, зараженного вирусами денге. Это одно заболевание с различными клиническими проявлениями и часто с непредсказуемым клиническим развитием и исходом. Большинство пациентов выздоравливают после самоограничивающегося нетяжелого клинического течения, такого как тошнота, рвота, сыпь, боли и боли, но небольшая доля прогрессирует до тяжелого заболевания, в основном характеризующегося утечкой плазмы с кровоизлиянием или без него, хотя серьезные кровоизлияния или тяжелые поражения органов может произойти, с или без шока денге.] (*<-lang_ru;;*);;
+*);;
+*);;
+concept_subClassOf01_11=>nrel_arrayOfIdentificators:[first unique idtf - last unique idtf];;
+concept_class_01=>nrel_inclusion:concept_subClassOf01_11;;
+
+concept_subClassOf01_12=>nrel_main_idtf:[Subclass XII.Certain arthropod-borne viral fevers ]
+(*<-lang_en;;*);;
+concept_subClassOf01_12=>nrel_main_idtf:[Подкласс XII.Определенные членистоногие вирусные лихорадки]
+(*<-lang_ru;;*);;
+concept_subClassOf01_12=>nrel_arrayOfIdentificators:[first unique idtf - last unique idtf];;
+concept_class_01=>nrel_inclusion:concept_subClassOf01_12;;
+
+concept_subClassOf01_13=>nrel_main_idtf:[Subclass XIII.CCertain zoonotic viral diseases]
+(*<-lang_en;;*);;
+concept_subClassOf01_13=>nrel_main_idtf:[Подкласс XIII.Некоторые зоонозные вирусные заболевания]
+(*<-lang_ru;;*);;
+concept_subClassOf01_13=>nrel_arrayOfIdentificators:[first unique idtf - last unique idtf];;
+concept_class_01=>nrel_inclusion:concept_subClassOf01_13;;
+
+concept_subClassOf01_14=>nrel_main_idtf:[Subclass XIV.Certain other viral diseases]
+(*<-lang_en;;*);;
+concept_subClassOf01_14=>nrel_main_idtf:[Подкласс XIV.Некоторые другие вирусные заболевания]
+(*<-lang_ru;;*);;
+concept_subClassOf01_14=>nrel_arrayOfIdentificators:[first unique idtf - last unique idtf];;
+concept_class_01=>nrel_inclusion:concept_subClassOf01_14;;
+
+concept_subClassOf01_15=>nrel_main_idtf:[Subclass XV.Influenza]
+(*<-lang_en;;*);;
+concept_subClassOf01_15=>nrel_main_idtf:[Подкласс XV.Грипп]
+(*<-lang_ru;;*);;
+concept_subClassOf01_15<-rrel_sc_key_element:...
+(*<-statement;;
+=>nrel_main_idtf:[class description](*<-lang_en;;*);;
+=>nrel_main_idtf:[описание класса](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(* ->[Any disease of the respiratory system, caused by an infection with influenza virus. These diseases are characterized by fever, cough, headache, myalgia, arthralgia, or malaise. Transmission is by inhalation of infected respiratory secretions. Confirmation is by identification of influenza virus from a nasopharyngeal, nose, or throat swab. ] (*<-lang_en;;*);;
+->[Любое заболевание дыхательной системы, вызванное заражением вирусом гриппа. Эти заболевания характеризуются лихорадкой, кашлем, головной болью, миалгией, артралгией или недомоганием. Передача происходит при вдыхании инфицированного дыхательного секрета. Подтверждением является идентификация вируса гриппа из мазка из носоглотки, носа или горла.] (*<-lang_ru;;*);;
+*);;
+*);;
+concept_subClassOf01_15=>nrel_arrayOfIdentificators:[first unique idtf - last unique idtf];;
+concept_class_01=>nrel_inclusion:concept_subClassOf01_15;;
+
+concept_subClassOf01_16=>nrel_main_idtf:[Subclass XVI.Viral hepatitis]
+(*<-lang_en;;*);;
+concept_subClassOf01_16=>nrel_main_idtf:[Подкласс XVI.Вирусный гепатит]
+(*<-lang_ru;;*);;
+concept_subClassOf01_16<-rrel_sc_key_element:...
+(*<-statement;;
+=>nrel_main_idtf:[class description](*<-lang_en;;*);;
+=>nrel_main_idtf:[описание класса](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(* ->[A group of liver diseases caused by infection with one or more of the five hepatitis viruses, hepatitis A virus, hepatitis B virus, hepatitis C virus, hepatitis D virus and hepatitis E viruses. The infection may be recent and present for less than 6 months (acute hepatitis) or present for more than 6 months (chronic hepatitis), in which case progression to cirrhosis and liver cancer can occur. Transmission is by the fecal-oral route including water contamination, sexual transmission, blood and body fluid contamination (parenteral spread) and from mother to baby at the time of birth (vertical transmission). Depending on the virus, diagnosis is confirmed by detection of specific viral antigens, anti-viral antibodies or viral nucleic acids in serum.] (*<-lang_en;;*);;
+->[Группа заболеваний печени, вызванных заражением одним или несколькими из пяти вирусов гепатита, вируса гепатита А, вируса гепатита В, вируса гепатита С, вируса гепатита D и вирусов гепатита Е. Инфекция может быть недавней и иметь место в течение менее 6 месяцев (острый гепатит) или присутствовать в течение более 6 месяцев (хронический гепатит), и в этом случае может прогрессировать цирроз и рак печени. Передача происходит фекально-оральным путем, включая загрязнение воды, половую передачу, кровь и жидкости организма (парентеральное распространение) и от матери к ребенку во время рождения (вертикальная передача). В зависимости от вируса, диагноз подтверждается обнаружением специфических вирусных антигенов, антивирусных антител или вирусных нуклеиновых кислот в сыворотке крови.] (*<-lang_ru;;*);;
+*);;
+*);;
+concept_subClassOf01_16=>nrel_arrayOfIdentificators:[first unique idtf - last unique idtf];;
+concept_class_01=>nrel_inclusion:concept_subClassOf01_16;;
+
+concept_subClassOf01_17=>nrel_main_idtf:[Subclass XVII.Viral infections characterised by skin or mucous membrane lesions]
+(*<-lang_en;;*);;
+concept_subClassOf01_17=>nrel_main_idtf:[Подкласс XVII.Вирусные инфекции, характеризующиеся поражениями кожи или слизистой оболочки]
+(*<-lang_ru;;*);;
+concept_subClassOf01_17=>nrel_arrayOfIdentificators:[first unique idtf - last unique idtf];;
+concept_class_01=>nrel_inclusion:concept_subClassOf01_17;;
+
+concept_subClassOf01_18=>nrel_main_idtf:[Subclass XIX.Mycoses]
+(*<-lang_en;;*);;
+concept_subClassOf01_18=>nrel_main_idtf:[Подкласс XIX.Микозы]
+(*<-lang_ru;;*);;
+concept_subClassOf01_18=>nrel_arrayOfIdentificators:[first unique idtf - last unique idtf];;
+concept_class_01=>nrel_inclusion:concept_subClassOf01_18;;
+
+concept_subClassOf01_19=>nrel_main_idtf:[Subclass XIX.Parasitic diseases ]
+(*<-lang_en;;*);;
+concept_subClassOf01_19=>nrel_main_idtf:[Подкласс XIX.Паразитарные заболевания]
+(*<-lang_ru;;*);;
+concept_subClassOf01_19=>nrel_arrayOfIdentificators:[first unique idtf - last unique idtf];;
+concept_class_01=>nrel_inclusion:concept_subClassOf01_19;;
+
+concept_subClassOf01_20=>nrel_main_idtf:[Subclass XX.Sepsis]
+(*<-lang_en;;*);;
+concept_subClassOf01_20=>nrel_main_idtf:[Подкласс XX.Сепсис]
+(*<-lang_ru;;*);;
+concept_subClassOf01_20=>nrel_arrayOfIdentificators:[first unique idtf - last unique idtf];;
+concept_class_01=>nrel_inclusion:concept_subClassOf01_20;;
+
+concept_subClassOf01_21=>nrel_main_idtf:[Subclass XXI.1G60 Certain other disorders of infectious origin ]
+(*<-lang_en;;*);;
+concept_subClassOf01_21=>nrel_main_idtf:[Подкласс XXI.Вирусный гепатит]
+(*<-lang_ru;;*);;
+concept_subClassOf01_21<-rrel_sc_key_element:...
+(*<-statement;;
+=>nrel_main_idtf:[class description](*<-lang_en;;*);;
+=>nrel_main_idtf:[описание класса](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(* ->[Miscellaneous disorders of infectious origin not classifiable elsewhere including those due to algae and oomycetes ] (*<-lang_en;;*);;
+->[1G60 Некоторые другие нарушения инфекционного происхождения] (*<-lang_ru;;*);;
+*);;
+*);;
+concept_subClassOf01_21=>nrel_arrayOfIdentificators:[first unique idtf - last unique idtf];;
+concept_class_01=>nrel_inclusion:concept_subClassOf01_21;;
+
+concept_subClassOf01_22=>nrel_main_idtf:[Subclass XXII.Sequelae of infectious diseases]
+(*<-lang_en;;*);;
+concept_subClassOf01_22=>nrel_main_idtf:[Подкласс XXII.Последствия инфекционных заболеваний]
+(*<-lang_ru;;*);;
+concept_subClassOf01_22<-rrel_sc_key_element:...
+(*<-statement;;
+=>nrel_main_idtf:[class description](*<-lang_en;;*);;
+=>nrel_main_idtf:[описание класса](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(* ->[A sequela is a chronic condition resulting from an acute condition and begins during that acute condition. The acute condition is no longer present. The sequela continues after the acute phase of the condition is resolved. For infectious diseases, the original infection is no longer present. The sequelae categories indicate infections as the cause of sequelae which are themselves classified elsewhere. Not to be used for chronic infections. Code the chronic infection to chronic or active infectious disease as appropriate. Use an additional code, if desired, to identify the specific sequelae. ] (*<-lang_en;;*);;
+->[Последствия - это хроническое состояние, возникающее в результате острого состояния и начинающееся во время этого острого состояния. Острого состояния больше нет. Последствия сохраняются после того, как острая фаза состояния устранена. Для инфекционных заболеваний исходная инфекция больше не присутствует. Категории осложнений указывают на инфекции как причину осложнений, которые сами классифицируются в другом месте. Не использовать при хронических инфекциях. При необходимости закодируйте хроническую инфекцию как хроническую или активную инфекционную болезнь. При необходимости используйте дополнительный код для определения конкретных последствий.] (*<-lang_ru;;*);;
+*);;
+*);;
+concept_subClassOf01_22=>nrel_arrayOfIdentificators:[first unique idtf - last unique idtf];;
+concept_class_01=>nrel_inclusion:concept_subClassOf01_22;;
+
+concept_subClassOf01_23=>nrel_main_idtf:[Subclass XXIII.Infections of the foetus or newborn ]
+(*<-lang_en;;*);;
+concept_subClassOf01_23=>nrel_main_idtf:[Подкласс XXIII.Инфекции плода или новорожденного]
+(*<-lang_ru;;*);;
+concept_subClassOf01_23=>nrel_arrayOfIdentificators:[first unique idtf - last unique idtf];;
+concept_class_01=>nrel_inclusion:concept_subClassOf01_23;;
+
+concept_subClassOf01_24=>nrel_main_idtf:[Subclass XXIV.Human prion diseases]
+(*<-lang_en;;*);;
+concept_subClassOf01_24=>nrel_main_idtf:[Подкласс XXIV.Прионные заболевания человека]
+(*<-lang_ru;;*);;
+concept_subClassOf01_24<-rrel_sc_key_element:...
+(*<-statement;;
+=>nrel_main_idtf:[class description](*<-lang_en;;*);;
+=>nrel_main_idtf:[описание класса](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(* ->[Human prion diseases or transmissible spongiform encephalopathies are rare transmissible diseases affecting the central nervous system. The infectious agents are composed of an abnormal isoform of a host membrane protein called 'prion protein' (PrP). Their common features are a long duration of incubation and lesions limited to the central nervous system without inflammatory or immunologic reaction but with accumulation of an abnormal form of prion protein (PrPsc). ] (*<-lang_en;;*);;
+->[Человеческие прионные заболевания или трансмиссивные губчатые энцефалопатии являются редкими трансмиссивными заболеваниями, поражающими центральную нервную систему. Инфекционные агенты состоят из аномальной изоформы белка мембраны хозяина, называемого «прионным белком» (PrP). Их общими особенностями являются большая продолжительность инкубации и поражения, ограниченные центральной нервной системой без воспалительной или иммунологической реакции, но с накоплением аномальной формы прионного белка (PrPsc).] (*<-lang_ru;;*);;
+*);;
+*);;
+concept_subClassOf01_24=>nrel_arrayOfIdentificators:[first unique idtf - last unique idtf];;
+concept_class_01=>nrel_inclusion:concept_subClassOf01_24;;
+
+//Pneumonia as a sing class in class_01

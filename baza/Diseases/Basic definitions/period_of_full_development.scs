@@ -1,21 +1,33 @@
-concept_period_of_full_development=>nrel_idtf:[period of full development]
+nrel_period_of_full_development<-sc_node_norole_relation;
+=>nrel_main_idtf:[Period of full development]
 	(*
 		<-lang_en;;
 	*);;
-concept_period_of_full_development=>nrel_idtf:[Период полного развития]
+nrel_period_of_full_development<-sc_node_norole_relation;
+=>nrel_idtf:[Period of full development]
+	(*
+		<-lang_en;;
+	*);;
+nrel_period_of_full_development<-sc_node_norole_relation;
+=>nrel_idtf:[Период полного развития]
 	(*
 		<-lang_ru;;	
 	*);;
-concept_period_of_full_development=>nrel_main_idtf:[Период полного развития]
+nrel_period_of_full_development<-sc_node_norole_relation;
+=>nrel_main_idtf:[Период полного развития]
 	(*
 		<-lang_ru;;
 	*);;
-concept_period_of_full_development<-rrel_key_sc_element:...
+nrel_period_of_full_development<-rrel_key_sc_element:...
 	(*
 <-definition;;
 =>nrel_main_idtf:[Опр.(период полного развития)] 
 	(* 
 		<-lang_ru;;
+	*);;
+=>nrel_main_idtf:[Def.(period of full development)] 
+	(* 
+		<-lang_en;;
 	*);;
 <=nrel_sc_text_translation:...
 (*
@@ -23,10 +35,11 @@ concept_period_of_full_development<-rrel_key_sc_element:...
 (* 
 <-lang_ru;; 
 *);;
-	
-	*);;
-<=nrel_using_constants:...
-	(*
-		->in_dev;;
+->[The period of full development - the period of all major manifestations of the disease. Its duration varies from several days to many decades (tuberculosis, syphilis). The course of the disease is not uniform and can vary in phases, periods and nature. In this period, the most characteristic and specific signs and features of the disease stand out, which allows us to make an exact diagnosis, and vice versa, an obscure course, erased forms make it difficult to deliver the diagnosis.](*<-lang_en;;*);;
 	*);;
 *);;
+nrel_period_of_full_development<-binary_relation;;
+parameter->arity;;
+arity->binary_relation;;
+binary_relation=>nrel_measurement:2;;
+2<-number;;

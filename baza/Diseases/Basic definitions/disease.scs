@@ -23,7 +23,6 @@ concept_disease<-rrel_key_sc_element:...
 (* 
 <-lang_ru;; 
 *);;
-	
 	*);;
 *);;
-concept_disease=>nrel_inclusion:concept_chronical_disease;concept_hereditary_disease;concept_genetic_disease;concept_symptoms;concept_illness_classification;;
+concept_disease=>nrel_inclusion:concept_chronical_disease;concept_hereditary_disease;concept_genetic_disease;nrel_symptom;concept_illness_classification;;

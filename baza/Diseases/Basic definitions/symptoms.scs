@@ -1,16 +1,19 @@
-concept_symptoms=>nrel_idtf:[symptoms]
+nrel_symptom<-sc_node_norole_relation;
+=>nrel_idtf:[symptom]
 	(*
 		<-lang_en;;
 	*);;
-concept_symptoms=>nrel_main_idtf:[симптом]
+nrel_symptom<-sc_node_norole_relation;
+=>nrel_main_idtf:[симптом]
 	(*
 		<-lang_ru;;
 	*);;
-concept_symptoms=>nrel_idtf:[множество симптомов]
+nrel_symptom<-sc_node_norole_relation;
+=>nrel_idtf:[множество симптомов]
 	(*
 		<-lang_ru;;	
 	*);;
-concept_symptoms<-rrel_key_sc_element:...
+nrel_symptom<-rrel_key_sc_element:...
 	(*
 <-definition;;
 =>nrel_main_idtf:[Опр.(симпотм)] 
@@ -26,4 +29,60 @@ concept_symptoms<-rrel_key_sc_element:...
 	
 	*);;
 *);;
+nrel_symptom=>nrel_fisrt_domain:concept_illness;;
+nrel_symptom=>nrel_second_domain:concept_symptom;;
 
+nrel_symptom<-binary_relation;;
+parameter->arity;;
+arity->binary_relation;;
+binary_relation=>nrel_measurement:2;;
+2<-number;;
+
+nrel_symptom<-oriented_relation;;
+
+concept_dehidratation<-sc_node_not_relation;
+=>nrel_main_idtf:[dehidratation](*<-lang_en;;*);;
+concept_dehidratation<-sc_node_not_relation;
+=>nrel_main_idtf:[дегидратация(обезвоживание)](*<-lang_ru;;*);;
+concept_dehidratation<-rrel_key_sc_element:...
+(*<-definition;;
+=>nrel_main_idtf:[Опр.(дегидратация/обезвоживание)](*<-lang_ru;;*);;
+=>nrel_main_idtf:[Def.(dehidratation)](*<-lang_rn;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Дегидратация(обезвоживание)- это патологическое состояние организма, вызванное уменьшением количества воды в нём ниже физиологической нормы, сопровождающееся нарушениями метаболизма. ](*<-lang_ru;;*);;
+->[Dehydration is a pathological condition of the body caused by a decrease in the amount of water in physiological standards, accompanied by metabolic disorders.](*<-lang_en;;*);;
+*);;
+*);;
+
+adynamia<-sc_node_not_relation;
+=>nrel_main_idtf:[adynamia](*<-lang_en;;*);;
+adynamia<-sc_node_not_relation;
+=>nrel_main_idtf:[адинамия](*<-lang_ru;;*);;
+adynamia<-rrel_key_sc_element:...
+(*<-definition;;
+=>nrel_main_idtf:[Опр.(адинамия)](*<-lang_ru;;*);;
+=>nrel_main_idtf:[Def.(adynamia](*<-lang_rn;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Адинамия — резкий упадок сил, мышечная слабость, сопровождающаяся значительным уменьшением или полным прекращением двигательной активности.](*<-lang_ru;;*);;
+->[Adynamia - a sharp decline in strength, muscle weakness, accompanied by a significant decrease or complete cessation of motor activity.](*<-lang_en;;*);;
+*);;
+*);;
+adynamia<-concept_disease;;
+
+vomiting<-sc_node_not_relation;
+=>nrel_main_idtf:[vomiting](*<-lang_en;;*);;
+vomiting<-sc_node_not_relation;
+=>nrel_main_idtf:[рвота](*<-lang_ru;;*);;
+vomiting<-rrel_key_sc_element:...
+(*<-definition;;
+=>nrel_main_idtf:[Опр.(рвота)](*<-lang_ru;;*);;
+=>nrel_main_idtf:[Def.(vomiting](*<-lang_rn;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Рвота -  это рефлекторное извержение содержимого (эвакуация) желудка (иногда и двенадцатиперстной кишки) через рот (редко и через нос). Рвота в основном обусловливается сокращением мышц брюшного пресса; ](*<-lang_ru;;*);;
+->[Vomiting is a reflex eruption of the contents (evacuation) of the stomach (sometimes the duodenum) through the mouth (rarely and through the nose). Vomiting is mainly caused by contraction of the abdominal muscles;](*<-lang_en;;*);;
+*);;
+*);;
+vomiting=>nrel_unique_idtf:[MD90.1];;

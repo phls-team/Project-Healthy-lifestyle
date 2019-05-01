@@ -74,11 +74,13 @@ concept_ICD_11_classification=>nrel_main_idtf:[Structure of ICD-11 classificatio
 	(*
 		<-lang_en;;
 	*);;
-concept_ICD_11_classification=>nrel_main_idtf:[Структура классификации по МКБ-11 (ICD-11)]
+concept_ICD_11_classification<-sc_node_not_relation;
+=>nrel_main_idtf:[Структура классификации по МКБ-11 (ICD-11)]
 	(*
 		<-lang_ru;;
 	*);;
-concept_ICD_11_classification<-rrel_key_sc_element:...
+concept_ICD_11_classification<-sc_node_not_relation;
+<-rrel_key_sc_element:...
 	(*
 		<-explanation;;
 		<=nre_main_idtf:[Утв.(структура МКБ-11)](*<-lang_ru;; *);;

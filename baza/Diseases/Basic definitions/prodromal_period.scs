@@ -27,10 +27,5 @@ concept_prodromal_period<-rrel_key_sc_element:...
 *);;
 	
 	*);;
-<=nrel_using_constants:...
-	(*
-		->concept_incubation_period;;
-		->concept_symptoms;;
-		->concept_disease;;
-	*);;
+
 *);;

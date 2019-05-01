@@ -1,8 +1,19 @@
-nrel_arrayOfIdentificators=>nrel_main_idtf:[содержащиеся идентификаторы (с первого по последний)]
+nrel_arrayOfIdentificators<-sc_node_norole_relation;
+=>nrel_main_idtf:[содержащиеся идентификаторы (с первого по последний)*]
 (*<-lang_ru;;*);;
-nrel_arrayOfIdentificators=>nrel_idtf:[array of elements, that consist that class (from first to last)]
+nrel_arrayOfIdentificators<-sc_node_norole_relation;
+=>nrel_idtf:[array of elements, that consist that class (from first to last)*]
 (*<-lang_en;;*);;
-nrel_class_description=>nrel_idtf:[decription]
+nrel_class_description<-sc_node_norole_relation;
+=>nrel_idtf:[class decription*]
 (*<-lang_en;;*);;
-nreL_class_description=>nrel_main_idtf:[описание класса/подкласса]
+nreL_class_description<-sc_node_norole_relation;
+=>nrel_main_idtf:[описание класса]
 (*<-lang_ru;;*);;
+nrel_unique_idtf<-sc_node_norole_relation;
+=>nrel_main_idtf:[unique identificator: ](*<-lang_en;;*);;
+nrel_unique_idtf<-sc_node_norole_relation;
+=>nrel_main_idtf:[уникальный идентификатор: ](*<-lang_ru;;*);;
+
+concept_loose_stools=>nrel_main_idtf:[жидкий стул](*<-lang_ru;;*);;
+concept_loose_stools=>nrel_main_idtf:[loose stools](*<-lang_en;;*);;

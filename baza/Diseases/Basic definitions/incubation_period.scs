@@ -1,25 +1,53 @@
-concept_incubation_period=>nrel_idtf:[incubation period]
+nrel_incubation_period
+<-sc_node_norole_relation;
+=>nrel_main_idtf:[incubation period]
 	(*
 		<-lang_en;;
 	*);;
-concept_incubation_period=>nrel_main_idtf:[инкубационный период]
+nrel_incubation_period
+<-sc_node_norole_relation;
+=>nrel_main_idtf:[инкубационный период]
 	(*
 		<-lang_ru;;
 	*);;
-concept_incubation_period<-rrel_key_sc_element:...
+nrel_incubation_period<-rrel_key_sc_element:...
 	(*
 <-definition;;
 =>nrel_main_idtf:[Опр.(инкубационный период)] 
 	(* 
 		<-lang_ru;;
 	*);;
+<-definition;; 
+=>nrel_main_idtf:[Def.(incubation period)] 
+	(* 
+		<-lang_ru;;
+	*);;
 <=nrel_sc_text_translation:...
 (*
-		->[Инкубационный период (лат. incubatio высиживание птенцов; син.: инкубация, латентный период) — начальный скрытый период инфекционной болезни от момента внедрения возбудителя в макроорганизм до появления первых клинических признаков болезни.]
+->[Инкубационный период (лат. incubatio высиживание птенцов; син.: инкубация) — начальный скрытый период инфекционной болезни от момента внедрения возбудителя в макроорганизм до появления первых клинических признаков болезни.]
 (* 
 <-lang_ru;; 
 *);;
-	
+->[The incubation period (lat. Incubatio incubation of chicks; synonym: incubation) is the initial latent period of an infectious disease from the moment of introduction of the pathogen into the macroorganism until the appearance of the first clinical signs of the disease.](*<-lang_en;;*);;
 	*);;
 *);;
-
+nrel_incubation_period<-sc_node_norole_relation;
+=>nrel_first_domain:rrel_minimalPeriod;;
+nrel_incubation_period<-sc_node_norole_relation;
+=>nrel_second_domain:rrel_maximalPeriod;;
+rrel_minimalPeriod<-sc_node_role_relation; 
+=>nrel_main_idtf:[minimal incubation period](*<-lang_ru;;*);
+=>nrel_main_idtf:[минимальный инкубационный период](*<-lang_ru;;*);;
+rrel_maximalPeriod<-sc_node_role_relation;
+=>nrel_main_idtf:[максимальный инкубационный период](*<-lang_ru;;*);;
+rrel_maximalPeriod<-sc_node_role_relation;
+=>nrel_main_idtf:[maximal incubation period](*<-lang_en;;*);;
+nrel_incubation_period<-binary_relation;;
+parameter->arity;;
+arity->binary_relation;;
+binary_relation<-sc_node_norole_relation;
+=>nrel_measurement:2;;
+2<-number;;
+nrel_incubation_period<-oriented_relation;;
+concept_value->minimalPeriod;;
+concept_value->maximalPeriod;;
