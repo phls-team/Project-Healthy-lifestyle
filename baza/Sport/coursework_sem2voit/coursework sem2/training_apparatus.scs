@@ -1,0 +1,55 @@
+concept_training_apparatus=>nrel_idtf:[training apparatus]
+	(*
+		<-lang_en;;
+	*);;
+concept_training_apparatus=>nrel_main_idtf:[тренажёр]
+	(*
+		<-lang_ru;;
+	*);;
+concept_training_apparatus<-rrel_key_sc_element:...
+	(*
+		<-definition;;=>nrel_main_idtf:
+[Опр.(тренажёр)] 
+	(* 
+		<-lang_ru;;
+	*);;
+<=nrel_sc_text_translation:...
+	(*
+		->[механическое, программное, электрическое либо комбинированное учебно-тренировочное устройство, искусственно имитирующее различные нагрузки или обстоятельства (ситуацию).]
+(* 
+<-lang_ru;; 
+*);;
+	*);;
+*);;
+
+concept_training_apparatus<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://training_apparatus.png"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;
+concept_training_apparatus<- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+
+		=> nrel_main_idtf: 
+         [Утв.(виды тренажеров)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Тренажёры могут быть обучающими (имитационными) или спортивными.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+
+
+
+
+

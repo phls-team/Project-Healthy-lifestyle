@@ -1,0 +1,44 @@
+concept_sport_equipment=>nrel_idtf:[sport equipment]
+	(*
+		<-lang_en;;
+	*);;
+concept_sport_equipment=>nrel_main_idtf:[спортивный инвентарь]
+	(*
+		<-lang_ru;;
+	*);;
+concept_sport_equipment<-rrel_key_sc_element:...
+	(*
+		<-definition;;=>nrel_main_idtf:
+[Опр.(спортивный инвентарь)] 
+	(* 
+		<-lang_ru;;
+	*);;
+<=nrel_sc_text_translation:...
+	(*
+		->[устройство, приспособление узкоспециального назначения, используемое при занятии различными видами спорта.]
+(* 
+<-lang_ru;; 
+*);;
+	*);;
+*);;
+
+concept_sport_equipment<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://sport_equipment.png"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;
+
+
+
+
+
+
+
+

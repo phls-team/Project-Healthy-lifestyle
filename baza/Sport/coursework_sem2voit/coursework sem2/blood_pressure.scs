@@ -1,0 +1,44 @@
+concept_blood_pressure=>nrel_idtf:[blood pressure]
+	(*
+		<-lang_en;;
+	*);;
+concept_blood_pressure=>nrel_main_idtf:[кровяное давление]
+	(*
+		<-lang_ru;;
+	*);;
+concept_blood_pressure<-rrel_key_sc_element:...
+	(*
+		<-definition;;=>nrel_main_idtf:
+[Опр.(кровяное давление)] 
+	(* 
+		<-lang_ru;;
+	*);;
+<=nrel_sc_text_translation:...
+	(*
+		->[давление, которое кровь оказывает на стенки кровеносных сосудов]
+(* 
+<-lang_ru;; 
+*);;
+	*);;
+*);;
+
+
+concept_blood_pressure<- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+
+		=> nrel_main_idtf: 
+         [Утв.(Влияние факторов)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Артериальное давление зависит от многих факторов: времени суток, психологического состояния человека (при стрессе давление повышается), приёма различных стимулирующих веществ (кофе, чай, амфетамины) или медикаментов, которые повышают или понижают давление. ](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+
+
+
+
+

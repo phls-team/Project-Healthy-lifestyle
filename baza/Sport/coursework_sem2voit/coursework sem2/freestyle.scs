@@ -1,0 +1,61 @@
+concept_freestyle=>nrel_idtf:[freestyle]
+	(*
+		<-lang_en;;
+	*);;
+concept_freestyle=>nrel_main_idtf:[фристайл]
+	(*
+		<-lang_ru;;
+	*);;
+concept_freestyle<-rrel_key_sc_element:...
+	(*
+		<-definition;;=>nrel_main_idtf:
+[Опр.(фристайл)] 
+	(* 
+		<-lang_ru;;
+	*);;
+	
+<=nrel_sc_text_translation:...
+	(*
+		->[лыжный вид спорта, входит в программу зимних Олимпийских игр.]
+(* 
+<-lang_ru;; 
+*);;
+	
+	*);;
+*);;
+concept_freestyle->rrel_example:concept_game;;
+concept_freestyle<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://freestyle.png"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;
+concept_freestyle->rrel_key_sc_element:...
+	(*
+		->rrel_key_sc_element:nrel_aim;concept_journey;concept_person;;
+		<-statement;;
+		=>nrel_main_idtf:[Утв.(фристайл, вид спорта, возник, смесь, горные лыжи,акробатика)]
+	(*
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Фристайл, как вид спорта, первоначально возник как смесь горных лыж и акробатики.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+concept_freestyle=>nrel_inclusion:kind_of_sport;;
+sc_node_not_relation->concept_game;;
+concept_game=>nrel_main_idtf:
+[вид спорта](*<-lang_ru;; *);;
+
+
+

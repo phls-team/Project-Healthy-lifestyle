@@ -1,0 +1,30 @@
+concept_substance=>nrel_idtf:[substance]
+	(*
+		<-lang_en;;
+	*);;
+concept_substance=>nrel_main_idtf:[вещество]
+	(*
+		<-lang_ru;;
+	*);;
+concept_substance<-rrel_key_sc_element:...
+	(*
+		<-definition;;=>nrel_main_idtf:
+[Опр.(вещество)] 
+	(* 
+		<-lang_ru;;
+	*);;
+<=nrel_sc_text_translation:...
+	(*
+		->[вещество состоит из частиц, среди которых чаще всего встречаются электроны, протоны и нейтроны]
+(* 
+<-lang_ru;; 
+*);;
+	*);;
+*);;
+
+
+
+
+
+
+

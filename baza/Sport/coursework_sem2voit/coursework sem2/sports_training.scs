@@ -1,0 +1,42 @@
+concept_sports_training=>nrel_idtf:[sports_training]
+	(*
+		<-lang_en;;
+	*);;
+concept_sports_training=>nrel_main_idtf:[спортивная подготовка]
+	(*
+		<-lang_ru;;
+	*);;
+concept_sports_training<-rrel_key_sc_element:...
+	(*
+		<-definition;;=>nrel_main_idtf:
+[Опр.(спортивная подготовка)] 
+	(* 
+		<-lang_ru;;
+	*);;
+<=nrel_sc_text_translation:...
+	(*
+		->[процесс применения физических нагрузок посредством физических упражнений.]
+(* 
+<-lang_ru;; 
+*);;
+	*);;
+*);;
+concept_sports_training<- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+
+		=> nrel_main_idtf: 
+         [Утв.(цель)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[обеспечение успешного участия в соревновании.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+
+
+
+
+

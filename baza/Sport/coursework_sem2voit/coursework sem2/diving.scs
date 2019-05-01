@@ -1,0 +1,55 @@
+concept_diving=>nrel_idtf:[diving]
+	(*
+		<-lang_en;;
+	*);;
+concept_diving=>nrel_main_idtf:[прыжки в воду ]
+	(*
+		<-lang_ru;;
+	*);;
+concept_diving<-rrel_key_sc_element:...
+	(*
+		<-definition;;=>nrel_main_idtf:
+[Опр.(прыжки в воду)] 
+	(* 
+		<-lang_ru;;
+	*);;
+<=nrel_sc_text_translation:...
+	(*
+		->[вид спорта, прыжок в воду, выполняемый с различных снарядов: вышки (5-10 метров), либо трамплина (1-3 метра).]
+(* 
+<-lang_ru;; 
+*);;
+	*);;
+*);;
+
+concept_diving<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://diving.png"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;
+concept_diving <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+
+		=> nrel_main_idtf: 
+         [Утв.(время прыжка)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Во время прыжка спортсмены выполняют ряд акробатических действий (обороты, винты, вращения).](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+
+
+
+
+

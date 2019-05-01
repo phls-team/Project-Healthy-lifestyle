@@ -1,0 +1,60 @@
+concept_scating=>nrel_idtf:[scating]
+	(*
+		<-lang_en;;
+	*);;
+concept_scating=>nrel_main_idtf:[конькобежный спорт]
+	(*
+		<-lang_ru;;
+	*);;
+concept_scating<-rrel_key_sc_element:...
+	(*
+		<-definition;;=>nrel_main_idtf:
+[Опр.(конькобежный спорт)] 
+	(* 
+		<-lang_ru;;
+	*);;
+	
+<=nrel_sc_text_translation:...
+	(*
+		->[Вид спорта, в котором необходимо как можно быстрее на коньках преодолевать определённую дистанцию на льду по замкнутому кругу. ]
+(* 
+<-lang_ru;; 
+*);;
+	
+	*);;
+*);;
+concept_scating->rrel_example:concept_game;;
+concept_scating<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://scating.png"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;
+concept_scating->rrel_key_sc_element:...
+	(*
+		->rrel_key_sc_element:concept_scating;nrel_old;concept_kind_of_sport;;
+		<-statement;;
+		=>nrel_main_idtf:[Утв.(конькобежный спорт, старsq, вид спорта)]
+	(*
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Конькобежный спорт - один из старейших видов спорта.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+concept_scating=>nrel_inclusion:kind_of_sport;;
+sc_node_not_relation->concept_game;;
+concept_game=>nrel_main_idtf:
+[вид спорта](*<-lang_ru;; *);;
+
+

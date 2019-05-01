@@ -1,0 +1,60 @@
+concept_triathlon=>nrel_idtf:[triathlon]
+	(*
+		<-lang_en;;
+	*);;
+concept_triathlon=>nrel_main_idtf:[триатлон]
+	(*
+		<-lang_ru;;
+	*);;
+concept_triathlon<-rrel_key_sc_element:...
+	(*
+		<-definition;;=>nrel_main_idtf:
+[Опр.(триатлон)] 
+	(* 
+		<-lang_ru;;
+	*);;
+<=nrel_sc_text_translation:...
+	(*
+		->[определение.]
+(* 
+<-lang_ru;; 
+*);;
+	
+	*);;
+*);;
+concept_triathlon->rrel_example:concept_game;;
+concept_triathlon<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://triathlon.png"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;
+concept_triathlon->rrel_key_sc_element:...
+	(*
+		->rrel_key_sc_element:concept_victory;concept_team;nrel_throw;concept_washer;;
+		<-statement;;
+		=>nrel_main_idtf:[Утв.()]
+	(*
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[ утверждение.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+concept_holf=>nrel_inclusion:concept_game;;
+sc_node_not_relation->concept_game;;
+concept_game=>nrel_main_idtf:
+[игра](*<-lang_ru;; *);;
+
+
+

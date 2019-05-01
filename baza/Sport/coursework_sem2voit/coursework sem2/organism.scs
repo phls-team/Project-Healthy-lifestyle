@@ -1,0 +1,31 @@
+concept_organism=>nrel_idtf:[organism]
+	(*
+		<-lang_en;;
+	*);;
+concept_organism=>nrel_main_idtf:[организм]
+	(*
+		<-lang_ru;;
+	*);;
+concept_organism<-rrel_key_sc_element:...
+	(*
+		<-definition;;=>nrel_main_idtf:
+[Опр.(организм)] 
+	(* 
+		<-lang_ru;;
+	*);;
+<=nrel_sc_text_translation:...
+	(*
+		->[ живое тело, обладающее совокупностью свойств, в том числе обменом веществ, самоподдерживанием своего строения и организации, способностью воспроизводить их при размножении, сохраняя наследственные признаки]
+(* 
+<-lang_ru;; 
+*);;
+	*);;
+*);;
+
+
+
+
+
+
+
+

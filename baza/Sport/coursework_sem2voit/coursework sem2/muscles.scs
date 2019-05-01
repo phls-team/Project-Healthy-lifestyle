@@ -1,0 +1,44 @@
+concept_muscles=>nrel_idtf:[muscles]
+	(*
+		<-lang_en;;
+	*);;
+concept_muscles=>nrel_main_idtf:[мышцы]
+	(*
+		<-lang_ru;;
+	*);;
+concept_muscles<-rrel_key_sc_element:...
+	(*
+		<-definition;;=>nrel_main_idtf:
+[Опр.(мышцы)] 
+	(* 
+		<-lang_ru;;
+	*);;
+<=nrel_sc_text_translation:...
+	(*
+		->[часть опорно-двигательного аппарата в совокупности с костями организма, способная к сокращению.]
+(* 
+<-lang_ru;; 
+*);;
+	*);;
+*);;
+
+
+concept_muscles<- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+
+		=> nrel_main_idtf: 
+         [Утв.(предназначение мышц)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[ Предназначены для выполнения различных действий: движения тела, поддержания позы, сокращения голосовых связок, дыхания. ](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+
+
+
+
+

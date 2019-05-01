@@ -1,0 +1,55 @@
+concept_fencing=>nrel_idtf:[fencing]
+	(*
+		<-lang_en;;
+	*);;
+concept_fencing=>nrel_main_idtf:[фехтование]
+	(*
+		<-lang_ru;;
+	*);;
+concept_fencing<-rrel_key_sc_element:...
+	(*
+		<-definition;;=>nrel_main_idtf:
+[Опр.(фехтование)] 
+	(* 
+		<-lang_ru;;
+	*);;
+<=nrel_sc_text_translation:...
+	(*
+		->[Система приёмов владения ручным холодным оружием в рукопашном бою, нанесения и отражения ударов и уколов.]
+(* 
+<-lang_ru;; 
+*);;
+	*);;
+*);;
+
+concept_fencing<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://fencing.png"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;
+concept_fencing<- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+
+		=> nrel_main_idtf: 
+         [Утв.(цель)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[нанести укол противнику и избежать укола самому.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+
+
+
+
+

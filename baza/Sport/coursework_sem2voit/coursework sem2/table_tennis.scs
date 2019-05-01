@@ -1,0 +1,55 @@
+concept_table_tennis=>nrel_idtf:[table tennis ]
+	(*
+		<-lang_en;;
+	*);;
+concept_table_tennis=>nrel_main_idtf:[настольный  теннис ]
+	(*
+		<-lang_ru;;
+	*);;
+concept_table_tennis<-rrel_key_sc_element:...
+	(*
+		<-definition;;=>nrel_main_idtf:
+[Опр.(настольный теннис)] 
+	(* 
+		<-lang_ru;;
+	*);;
+<=nrel_sc_text_translation:...
+	(*
+		->[Спортивная игра с мячом, в которой используют специальные ракетки и игровой стол, разграниченный сеткой пополам. ]
+(* 
+<-lang_ru;; 
+*);;
+	*);;
+*);;
+
+concept_table_tennis<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://table_tennis.png"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;
+concept_table_tennis <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+
+		=> nrel_main_idtf: 
+         [Утв.(задача)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Задачей игроков является удерживать мяч в игре при помощи ракеток — каждый игрок после одного отскока мяча на своей половине стола должен отправить мяч на половину стола соперника.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+
+
+
+
+

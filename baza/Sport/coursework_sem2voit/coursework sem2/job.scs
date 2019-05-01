@@ -1,0 +1,51 @@
+concept_job=>nrel_idtf:[job]
+	(*
+		<-lang_en;;
+	*);;
+concept_job=>nrel_idtf:[множество работ]
+	(*
+		<-lang_ru;;	
+	*);;
+concept_job=>nrel_main_idtf:[работа]
+	(*
+		<-lang_ru;;
+	*);;
+concept_job<-rrel_key_sc_element:...
+	(*
+		<-definition;;=>nrel_main_idtf:
+[Опр.(работа)] 
+	(* 
+		<-lang_ru;;
+	*);;
+	
+<=nrel_sc_text_translation:...
+	(*
+		->[Комплекс задач или обязанностей, выполняемых каким-либо лицом. ]
+(* 
+<-lang_ru;; 
+*);;
+	
+	*);;
+*);;
+
+concept_job->rrel_key_sc_element:...
+	(*
+		->rrel_key_sc_element:nrel_aim;concept_journey;concept_person;;
+		<-statement;;
+		=>nrel_main_idtf:[Утв.(физическая работа, очередь, подразделяется,динамическая,мышцы,группа,растягиваться,сокращаться)]
+	(*
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Физическая работа в свою очередь подразделяется на динамическую, при которой мышцы разных групп попеременно растягиваются и сокращаются.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+
+
+
