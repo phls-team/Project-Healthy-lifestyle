@@ -51,6 +51,3 @@ binary_relation<-sc_node_norole_relation;
 nrel_incubation_period<-oriented_relation;;
 concept_value->minimalPeriod;;
 concept_value->maximalPeriod;;
-
-
-
