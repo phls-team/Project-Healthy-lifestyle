@@ -36,13 +36,10 @@ concept_curling<-rrel_key_sc_element:...
 	*);;	
 *);;
 *);;
-
-
 concept_bobsleigh=>nrel_rodina:Scotland;;
 sc_node_norole_relation->nrel_rodina;;
 nrel_rodina=>nrel_main_idtf:
 [Родина*](* <-lang_ru;; *);;
-
 concept_curling=>nrel_inclusion:concept_game;;
 sc_node_not_relation->concept_game;;
 concept_game=>nrel_main_idtf:
