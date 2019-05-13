@@ -50,6 +50,12 @@ concept_box->rrel_key_sc_element:...
 	*);;
 	*);;
 	*);;
+
+concept_box=>nrel_rodina:England;;
+England=>nrel_main_idtf:[Англия](*<-lang_ru;;*);;
+sc_node_norole_relation->nrel_rodina;;
+nrel_rodina=>nrel_main_idtf:
+[Родина*](* <-lang_ru;; *);;
 concept_box=>nrel_inclusion:concept_game;;
 sc_node_not_relation->concept_game;;
 concept_game=>nrel_main_idtf:
