@@ -1,0 +1,25 @@
+gala_potato
+
+=> nrel_main_idtf:
+          [Гала ]
+          (*<-lang_ru;;*);
+          [Gala]
+          (*<-lang_en;;*);
+
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+=> nrel_main_idtf: [Фото(Гала)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://photo/gala_potato.png"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);; 

@@ -8,6 +8,9 @@ concept_vegetable
           [vegetable]
           (*<-lang_en;;*);
 
-=> nrel_inclusion:vegetable_pea;;
+=> nrel_inclusion:vegetables_potato;
 
+=> nrel_inclusion:vegetables_cucumber;
+
+=> nrel_inclusion:vegetables_tomato;;
 

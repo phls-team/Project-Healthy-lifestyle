@@ -1,0 +1,44 @@
+fruit_passion_fruit
+
+=> nrel_main_idtf:
+          [маракуйя]
+          (*<-lang_ru;;*);
+          [passion fruit]
+          (*<-lang_en;;*);
+
+=>nrel_variety:Passiflora_edulis_flavicarpa;Passiflora_edulis;
+
+
+ <- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+=> nrel_main_idtf: [Фото(маракуйя)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://photos/passionfruit.png"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);
+
+=>nrel_calorie_content:...
+	(*
+		<-quantity;;
+		<=nrel_relevance:...
+			(*
+				->rrel_kkal:68
+					(*
+						<-number;;
+					*);;
+			*);;
+	*);	
+=>nrel_birthplace:Brazil;;
+
+Brazil=>nrel_main_idtf:
+[Бразилия](*<-lang_ru;; *);;
+

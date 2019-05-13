@@ -1,0 +1,35 @@
+vitamin_B1_content
+
+
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+          [содержание витамина B1]
+          (*<-lang_ru;;*);
+	  [vitamin B1 content]
+          (*<-lang_en;;*);;
+vitamin_B1 <= nrel_substance:vitamin_B1_content
+(* 
+	<- content;;
+	-> 0.00003mg_per_100g
+	(*
+		=> nrel_measurement: 0.00003;;
+		->fruit_jackfruit;;
+	*);;
+	-> 0.1mg_per_100g
+	(*
+		->fruit_sugar_apple;;
+		->fruit_cupuasu;;
+	*);;
+	-> 0.03mg_per_100g
+	(*
+		=> nrel_measurement: 0.03;;
+		->fruit_pitahaya;;
+		->vegetables_tomato;;
+	*);;
+	-> 0.081mg_per_100g
+	(*
+		=> nrel_measurement:0.081;;
+		->vegetables_potato;;
+	*);;
+	
+*);; 

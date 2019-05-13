@@ -1,0 +1,21 @@
+rational_diet
+<-sc_node_not_relation;
+
+rational_diet => nrel_main_idtf:
+	[рациональная диета](* <-lang_ru;; *);
+    [rational diet](* <-lang_en;; *);;
+rational_diet <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: рациональная диета] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: rational diet] (* <- lang_en;; *);;
+        <- definition;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Режим питания здорового человека, соответствующий профессии, полу, возрасту и др. (рациональная диета), составляет предмет изучения гигиены питания.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[The diet of a healthy person, corresponding to the profession, sex, age, etc. (rational diet), is the subject of study of food hygiene.](*<- lang_en;;*);;
+			*);;
+		*);;

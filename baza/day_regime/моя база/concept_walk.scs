@@ -1,0 +1,61 @@
+concept_walk=>nrel_idtf:[walk]
+	(*
+		<-lang_en;;
+	*);;
+concept_walk=>nrel_main_idtf:[прогулка]
+	(*
+		<-lang_ru;;
+	*);;
+concept_walk<-rrel_key_sc_element:...
+	(*
+		<-definition;;=>nrel_main_idtf:
+[Опр.(прогулка)] 
+	(* 
+		<-lang_ru;;
+	*);;
+	
+<=nrel_sc_text_translation:...
+	(*
+		->[Хождение или недалёкая поездка для развлечения, отдыха на открытом воздухе.]
+(* 
+<-lang_ru;; 
+*);;
+	
+	*);;
+*);;
+concept_walk->rrel_example:fresh_air_walk;;
+concept_walk<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://photo/walk.png"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;
+concept_walk->rrel_key_sc_element:...
+	(*
+		->rrel_key_sc_element:concept_healthy_sleep;concept_daily_regime;concept_health;;
+		<-statement;;
+		=>nrel_main_idtf:[Утв.(здоровый сон, режим дня,здоровье)]
+	(*
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Прогулки по свежему воздуху улучшают сон]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+concept_walk=>nrel_inclusion:concept_healthy_sleep;concept_daily_regime;;
+
+fresh_air_walk=>nrel_main_idtf:
+[прогулка на свежем воздухе](*<-lang_ru;; *);;
+
+
+

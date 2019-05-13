@@ -1,0 +1,31 @@
+vitamin_B6_content
+
+
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+          [содержание витамина B6]
+          (*<-lang_ru;;*);
+	  [vitamin B6 content]
+          (*<-lang_en;;*);;
+vitamin_B6 <= nrel_substance:vitamin_B6_content
+(* 
+	<- content;;
+	-> 0.00011mg_per_100g
+	(*
+		=> nrel_measurement: 0.00011;;
+		->fruit_jackfruit;;
+	*);;
+	-> 0.2mg_per_100g
+	(*
+		=> nrel_measurement: 0.2;;
+		->fruit_sugar_apple;;
+	*);;
+	-> 0.1mg_per_100g
+	(*
+		=> nrel_measurement: 0.1;;
+		->fruit_passion_fruit;;
+		->fruit_cupuasu;;
+	*);;
+
+	
+*);;
