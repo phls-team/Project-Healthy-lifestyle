@@ -21,7 +21,6 @@ concept_fencing<-rrel_key_sc_element:...
 *);;
 	*);;
 *);;
-
 concept_fencing<-rrel_key_sc_element:...
 	(*
 		<-illustration;;
@@ -48,9 +47,7 @@ concept_fencing<- rrel_key_sc_element:...
 *);;
 concept_fencing=>nrel_rodina:ancient_Greece;;
 ancient_Greece=>nrel_main_idtf:[Древняя Греция](*<-lang_ru;;*);;
-sc_node_norole_relation->nrel_rodina;;
-nrel_rodina=>nrel_main_idtf:
-[Родина*](* <-lang_ru;; *);;
+concept_fencing<=nrel_inclusion:battle_sport;;
 
 
 

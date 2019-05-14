@@ -47,9 +47,8 @@ concept_figure_skating<- rrel_key_sc_element:...
 *);;
 concept_figure_skating=>nrel_rodina:Switzerland;;
 Switzerland=>nrel_main_idtf:[Швейцария](*<-lang_ru;;*);;
-sc_node_norole_relation->nrel_rodina;;
-nrel_rodina=>nrel_main_idtf:
-[Родина*](* <-lang_ru;; *);;
+concept_figure_skating<=nrel_inclusion:winter_sport;;
+
 
 
 

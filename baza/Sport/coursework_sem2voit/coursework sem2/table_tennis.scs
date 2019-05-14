@@ -34,7 +34,7 @@ concept_table_tennis<-rrel_key_sc_element:...
 	*);;	
 *);;
 *);;
-concept_table_tennis <- rrel_key_sc_element:...
+concept_table_tennis<- rrel_key_sc_element:...
 		(*
         <- explanation;;
 
@@ -46,7 +46,8 @@ concept_table_tennis <- rrel_key_sc_element:...
 		[Задачей игроков является удерживать мяч в игре при помощи ракеток — каждый игрок после одного отскока мяча на своей половине стола должен отправить мяч на половину стола соперника.](*<- lang_ru;;*);;
 			*);;
 *);;
-
+concept_table_tennis=>nrel_rodina:England;;
+concept_table_tennis<=nrel_inclusion:game_sport;olimpic_sport;;
 
 
 

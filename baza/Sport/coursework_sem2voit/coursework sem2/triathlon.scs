@@ -15,14 +15,13 @@ concept_triathlon<-rrel_key_sc_element:...
 	*);;
 <=nrel_sc_text_translation:...
 	(*
-		->[определение.]
+		->[вид спорта, представляющий собой мультиспортивную гонку, состоящую из непрерывного последовательного прохождения её участниками трёх этапов: плавания, велогонки и бега, каждый из которых происходит из самостоятельного циклического вида спорта.]
 (* 
 <-lang_ru;; 
 *);;
 	
 	*);;
 *);;
-concept_triathlon->rrel_example:concept_game;;
 concept_triathlon<-rrel_key_sc_element:...
 	(*
 		<-illustration;;
@@ -35,26 +34,20 @@ concept_triathlon<-rrel_key_sc_element:...
 	*);;	
 *);;
 *);;
-concept_triathlon->rrel_key_sc_element:...
-	(*
-		->rrel_key_sc_element:concept_victory;concept_team;nrel_throw;concept_washer;;
-		<-statement;;
-		=>nrel_main_idtf:[Утв.()]
-	(*
-		<-lang_ru;;
-	*);;
-		<=nrel_sc_text_translation:...
-	(*
-		->rrel_example:[ утверждение.]
-	(*
-		<-lang_ru;; 
-	*);;
-	*);;
-	*);;
-concept_holf=>nrel_inclusion:concept_game;;
-sc_node_not_relation->concept_game;;
-concept_game=>nrel_main_idtf:
-[игра](*<-lang_ru;; *);;
+concept_triathlon<- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+
+		=> nrel_main_idtf: 
+         [Утв.(популярный триатлон)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Существуют различные модификации триатлона, различающиеся по образующим его видам спорта и их последовательности, однако в настоящее время наиболее популярной и единственной, входящей в олимпийскую программу является та, которая включает в себя плавательный этап, велогоночный этап и беговой этап.](*<- lang_ru;;*);;
+			*);;
+*);;
+concept_triathlon=>nrel_rodina:France;;
+concept_triathlon<=nrel_inclusion:cicle_sport;olimpic_sport;;
 
 
 

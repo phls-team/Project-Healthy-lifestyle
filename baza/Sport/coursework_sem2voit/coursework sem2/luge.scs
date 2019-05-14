@@ -13,17 +13,14 @@ concept_luge<-rrel_key_sc_element:...
 	(* 
 		<-lang_ru;;
 	*);;
-	
 <=nrel_sc_text_translation:...
 	(*
 		->[Зимний олимпийский вид спорта, в котором участники соревнуются в скоростном спуске на санях по специальным трассам.]
 (* 
 <-lang_ru;; 
+*);;	
 *);;
-	
-	*);;
 *);;
-concept_luge->rrel_example:concept_game;;
 concept_luge<-rrel_key_sc_element:...
 	(*
 		<-illustration;;
@@ -33,14 +30,13 @@ concept_luge<-rrel_key_sc_element:...
 "file://luge.png"
 	(*
 		=>nrel_format:format_png;;
-	*);;	
+*);;	
 *);;
 *);;
 concept_luge->rrel_key_sc_element:...
 	(*
-		->rrel_key_sc_element:nrel_weight;concept_sleigh;concept_device;concept_regulations;;
 		<-statement;;
-		=>nrel_main_idtf:[Утв.(вес, сани, устройство,регламент)]
+		=>nrel_main_idtf:[Утв.(регламент спорт-инвентаря)]
 	(*
 		<-lang_ru;;
 	*);;
@@ -52,10 +48,11 @@ concept_luge->rrel_key_sc_element:...
 	*);;
 	*);;
 	*);;
-concept_luge=>nrel_inclusion:kind_of_sport;;
-sc_node_not_relation->concept_game;;
-concept_game=>nrel_main_idtf:
-[вид спорта](*<-lang_ru;; *);;
+concept_luge<=nrel_inclusion:winter_sport;olimpic_sport;;
+concept_luge=>nrel_rodina:Switzerland;;
+
+
+
 
 
 

@@ -1,0 +1,43 @@
+extreme_sport=>nrel_idtf:[Extreme kind of sports]
+	(*
+		<-lang_en;;
+	*);;
+extreme_sport=>nrel_main_idtf:[Экстремальные виды спорта]
+	(*
+		<-lang_ru;;
+	*);;
+extreme_sport<-rrel_key_sc_element:...
+	(*
+		<-definition;;=>nrel_main_idtf:
+[Опр.(Экстремальные виды спорта)] 
+	(* 
+		<-lang_ru;;
+	*);;
+<=nrel_sc_text_translation:...
+	(*
+		->[виды спорта, занятия которыми связаны с риском для жизни.]
+(* 
+<-lang_ru;; 
+*);;
+*);;
+*);;
+
+extreme_sport<- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+		=> nrel_main_idtf: 
+         [Утв.(ощущения на занятиях)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[При занятии экстремальными видами спорта, люди получают порцию острых ощущений, которые помогают им поддерживать в себе обострённое чувство жизни.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+
+
+
+
+
+

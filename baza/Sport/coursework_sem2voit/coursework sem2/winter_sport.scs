@@ -22,10 +22,9 @@ winter_sport<-rrel_key_sc_element:...
 *);;
 *);;
 
-winter_sport <- rrel_key_sc_element:...
+winter_sport<- rrel_key_sc_element:...
 		(*
         <- explanation;;
-        -> rrel_key_sc_element:output ;;
 		=> nrel_main_idtf: 
          [Утв.(Зимние виды спорта)](* <- lang_ru;; *);;
 		<= nrel_sc_text_translation: ...
@@ -34,7 +33,7 @@ winter_sport <- rrel_key_sc_element:...
 		[Зимние виды спорта часто имеют свои собственные мультиспортивные турниры, такие как Зимние Олимпийские игры.](*<- lang_ru;;*);;
 			*);;
 *);;
-winter_sport =>nrel_inclusion:concept_bobsleigh;concept_hockey;concept_luge;concept_scating;concept_snowboarding;concept_freestyle;concept_ski_jumping;concept_curling;;
+
 
 
 

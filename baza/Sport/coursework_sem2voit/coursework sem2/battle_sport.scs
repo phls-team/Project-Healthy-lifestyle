@@ -1,0 +1,43 @@
+battle_sport=>nrel_idtf:[Battle kind of sports]
+	(*
+		<-lang_en;;
+	*);;
+battle_sport=>nrel_main_idtf:[Боевые виды спорта]
+	(*
+		<-lang_ru;;
+	*);;
+battle_sport<-rrel_key_sc_element:...
+	(*
+		<-definition;;=>nrel_main_idtf:
+[Опр.(Боевые виды спорта)] 
+	(* 
+		<-lang_ru;;
+	*);;
+<=nrel_sc_text_translation:...
+	(*
+		->[виды спорта, в которых спортсмены добиваются победы с помощью физического контакта.]
+(* 
+<-lang_ru;; 
+*);;
+*);;
+*);;
+
+battle_sport<- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+		=> nrel_main_idtf: 
+         [Утв.(разделение)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[ Боевые виды спорта можно разделить на две группы: использующие и не использующие оружие.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+
+
+
+
+
+

@@ -46,6 +46,9 @@ concept_cycling<- rrel_key_sc_element:...
 		[Основная цель гоночных дисциплин — наиболее быстрое преодоление определённой дистанции (и ландшафта) на велосипеде.](*<- lang_ru;;*);;
 			*);;
 *);;
+concept_cycling=>nrel_rodina:France;;
+concept_cycling<=nrel_inclusion:summer_sport;;
+
 
 
 

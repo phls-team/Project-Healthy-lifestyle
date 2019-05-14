@@ -34,7 +34,7 @@ concept_diving<-rrel_key_sc_element:...
 	*);;	
 *);;
 *);;
-concept_diving <- rrel_key_sc_element:...
+concept_diving<- rrel_key_sc_element:...
 		(*
         <- explanation;;
 
@@ -46,6 +46,8 @@ concept_diving <- rrel_key_sc_element:...
 		[Во время прыжка спортсмены выполняют ряд акробатических действий (обороты, винты, вращения).](*<- lang_ru;;*);;
 			*);;
 *);;
+concept_diving=>nrel_rodina:United_states_of_America;;
+concept_diving<=nrel_inclusion:water_sport;;
 
 
 

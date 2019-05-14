@@ -44,7 +44,11 @@ concept_baseball<- rrel_key_sc_element:...
 		[В состязаниях участвуют две команды по девять игроков каждая.](*<- lang_ru;;*);;
 			*);;
 *);;
-
+concept_baseball=>nrel_rodina:United_states_of_America;;
+sc_node_not_relation->United_states_of_America;;
+United_states_of_America=>nrel_main_idtf:
+[Соединенные Штаты Америки](* <-lang_ru;; *);;
+concept_baseball<=nrel_inclusion:team_sport;;
 
 
 

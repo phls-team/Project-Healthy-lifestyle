@@ -26,14 +26,6 @@ concept_standart<-rrel_key_sc_element:...
 *);;
 	
 	*);;
-		<=nrel_using_constants:...
-	(*
-		->concept_work;;
-		->nrel_result;;
-		->concept_magnitude;;
-		->rrel_indicator;;
-		->concept_characteristic;;
-	*);;
 *);;
 concept_standart->rrel_example:concept_physical_standart;;
 concept_standart<-rrel_key_sc_element:...

@@ -21,7 +21,6 @@ concept_big_tennis<-rrel_key_sc_element:...
 *);;
 	*);;
 *);;
-
 concept_big_tennis<-rrel_key_sc_element:...
 	(*
 		<-illustration;;
@@ -34,7 +33,7 @@ concept_big_tennis<-rrel_key_sc_element:...
 	*);;	
 *);;
 *);;
-concept_big_tennis <- rrel_key_sc_element:...
+concept_big_tennis<- rrel_key_sc_element:...
 		(*
         <- explanation;;
 
@@ -46,6 +45,12 @@ concept_big_tennis <- rrel_key_sc_element:...
 		[В теннис играют на прямоугольной площадке с ровной поверхностью и нанесённой разметкой — корте. Посередине корта натянута сетка, которая проходит по всей ширине, параллельно задним линиям, и разделяет корт на две равные половины.](*<- lang_ru;;*);;
 			*);;
 *);;
+concept_big_tennis=>nrel_rodina:France;;
+concept_big_tennis<=nrel_inclusion:summer_sport;;
+sc_node_not_relation->France;;
+France=>nrel_main_idtf:
+[Франция](* <-lang_ru;; *);;
+
 
 
 

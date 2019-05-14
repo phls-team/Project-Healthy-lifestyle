@@ -1,0 +1,43 @@
+sila_sport=>nrel_idtf:[power kind of sports]
+	(*
+		<-lang_en;;
+	*);;
+sila_sport=>nrel_main_idtf:[Силовые виды спорта]
+	(*
+		<-lang_ru;;
+	*);;
+sila_sport<-rrel_key_sc_element:...
+	(*
+		<-definition;;=>nrel_main_idtf:
+[Опр.(Силовые виды спорта)] 
+	(* 
+		<-lang_ru;;
+	*);;
+<=nrel_sc_text_translation:...
+	(*
+		->[виды спорта, в которых происходит сопоставление силовых качеств участников.]
+(* 
+<-lang_ru;; 
+*);;
+*);;
+*);;
+sila_sport<- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+		=> nrel_main_idtf: 
+         [Утв.(цель)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Спортсменов, отдавших предпочтение силовым тренировкам, преследуют определённые цели:
+    спортивное телосложение, развитие силы воли, ощущение внутренней гармонии (прекрасное самочувствие).](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+
+
+
+
+
+

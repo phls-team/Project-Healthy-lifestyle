@@ -1,0 +1,42 @@
+team_sport=>nrel_idtf:[Team kind of sports]
+	(*
+		<-lang_en;;
+	*);;
+team_sport=>nrel_main_idtf:[Командные виды спорта]
+	(*
+		<-lang_ru;;
+	*);;
+team_sport<-rrel_key_sc_element:...
+	(*
+		<-definition;;=>nrel_main_idtf:
+[Опр.(Командные виды спорта)] 
+	(* 
+		<-lang_ru;;
+	*);;
+<=nrel_sc_text_translation:...
+	(*
+		->[Виды спорта, в которых участники команд действуют сообща для достижения общей победы.]
+(* 
+<-lang_ru;; 
+*);;
+*);;
+*);;
+team_sport<- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+		=> nrel_main_idtf: 
+         [Утв.(Командные виды спорта)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Почти все командные виды спорта являются игровыми.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+
+
+
+
+
+

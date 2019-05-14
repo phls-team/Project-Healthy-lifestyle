@@ -24,15 +24,13 @@ concept_scill<-rrel_key_sc_element:...
 (* 
 <-lang_ru;; 
 *);;
-	
-	*);;
 *);;
-
+*);;
 concept_scill->rrel_key_sc_element:...
 	(*
 		->rrel_key_sc_element:nrel_aim;concept_journey;concept_person;;
 		<-statement;;
-		=>nrel_main_idtf:[Утв.(овладеть, навык, необходимо,тренировка)]
+		=>nrel_main_idtf:[Утв.(Овладение навыком)]
 	(*
 		<-lang_ru;;
 	*);;

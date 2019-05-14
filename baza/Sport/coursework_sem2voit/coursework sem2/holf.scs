@@ -34,22 +34,21 @@ concept_holf<-rrel_key_sc_element:...
 	*);;	
 *);;
 *);;
-concept_holf <- rrel_key_sc_element:...
+concept_holf<- rrel_key_sc_element:...
 		(*
         <- explanation;;
         
 		=> nrel_main_idtf: 
-         [Утв.(один, спортивная игра, использовать, стандарт, площадка, определенная длина, параметр)](* <- lang_ru;; *);;
+         [Утв.(отсутствие ограничений по площадкам)](* <- lang_ru;; *);;
 		<= nrel_sc_text_translation: ...
 			(*
 			    -> rrel_example: 
-		[Гольф – одна из немногих спортивных игр, для которых не используется стандартная площадка со строго определенной длиной, шириной и другими параметрами.](*<- lang_ru;;*);;
+		[Гольф, одна из немногих спортивных игр, для которых не используется стандартная площадка со строго определенной длиной, шириной и другими параметрами.](*<- lang_ru;;*);;
 			*);;
 *);;
-concept_holf <- rrel_key_sc_element:...
+concept_holf<- rrel_key_sc_element:...
 		(*
         <- explanation;;
-        
 		=> nrel_main_idtf: 
          [Утв.(площадка)](* <- lang_ru;; *);;
 		<= nrel_sc_text_translation: ...
@@ -58,10 +57,9 @@ concept_holf <- rrel_key_sc_element:...
 		[Площадка для гольфа состоит из серии лунок, каждая из которых имеет свою стартовую площадку](*<- lang_ru;;*);;
 			*);;
 *);;
-concept_holf <- rrel_key_sc_element:...
+concept_holf<- rrel_key_sc_element:...
 		(*
         <- explanation;;
-        
 		=> nrel_main_idtf: 
          [Утв.(мяч)](* <- lang_ru;; *);;
 		<= nrel_sc_text_translation: ...
@@ -70,11 +68,9 @@ concept_holf <- rrel_key_sc_element:...
 		[Поверхность обычного мяча для гольфа покрыта ямками — димпалсами](*<- lang_ru;;*);;
 			*);;
 *);;
-
-concept_holf <- rrel_key_sc_element:...
+concept_holf<- rrel_key_sc_element:...
 		(*
         <- explanation;;
-        
 		=> nrel_main_idtf: 
          [Утв.(Ти)](* <- lang_ru;; *);;
 		<= nrel_sc_text_translation: ...
@@ -83,11 +79,9 @@ concept_holf <- rrel_key_sc_element:...
 		[Деревянная или пластиковая подставка для установки мяча перед ударом. В Японии также используют ти из биоразлагаемого материала, которые через несколько дней полностью исчезают](*<- lang_ru;;*);;
 			*);;
 *);;
-
-concept_holf <- rrel_key_sc_element:...
+concept_holf<- rrel_key_sc_element:...
 		(*
         <- explanation;;
-        
 		=> nrel_main_idtf: 
          [Утв.(правила)](* <- lang_ru;; *);;
 		<= nrel_sc_text_translation: ...
@@ -97,7 +91,7 @@ concept_holf <- rrel_key_sc_element:...
 			*);;
 *);;
 
-concept_holf <- rrel_key_sc_element:...
+concept_holf<- rrel_key_sc_element:...
 		(*
         <- explanation;;
      
@@ -109,7 +103,10 @@ concept_holf <- rrel_key_sc_element:...
 		[Штрафы в гольфе обусловлены определёнными ситуациями. Штраф применяется к счёту игрока путём зачисления ему лишних ударов по мячу. Попытки добавляются за нарушение правил или в случаях, когда мяч после удара оказывается в положении, в котором им невозможно сыграть. Утерянный мяч или мяч, вылетевший за границы площадки, наказывается штрафом в один удар и потерей в расстоянии.](*<- lang_ru;;*);;
 			*);;
 *);;
-
+concept_holf=>nrel_rodina:Holland;;
+sc_node_not_relation->Holland;;
+Holland=>nrel_main_idtf:[Голандия](*<-lang_ru;;*);;
+concept_holf<=nrel_inclusion:summer_sport;;
 
 
 

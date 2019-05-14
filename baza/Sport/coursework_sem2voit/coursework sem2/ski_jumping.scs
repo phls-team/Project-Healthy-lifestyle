@@ -23,7 +23,6 @@ concept_ski_jumping<-rrel_key_sc_element:...
 	
 	*);;
 *);;
-concept_ski_jumping->rrel_example:concept_game;;
 concept_ski_jumping<-rrel_key_sc_element:...
 	(*
 		<-illustration;;
@@ -36,26 +35,14 @@ concept_ski_jumping<-rrel_key_sc_element:...
 	*);;	
 *);;
 *);;
-concept_ski_jumping->rrel_key_sc_element:...
-	(*
-		->rrel_key_sc_element:nrel_aim;concept_journey;concept_person;;
-		<-statement;;
-		=>nrel_main_idtf:[Утв.(прыжки на лыжах с трамплина, зародились, Норвегия)]
-	(*
-		<-lang_ru;;
-	*);;
-		<=nrel_sc_text_translation:...
-	(*
-		->rrel_example:[Прыжки на лыжах с трамплина зародились в Норвегии.]
-	(*
-		<-lang_ru;; 
-	*);;
-	*);;
-	*);;
-concept_ski_jumping=>nrel_inclusion:kind_of_sport;;
-sc_node_not_relation->concept_game;;
-concept_game=>nrel_main_idtf:
-[вид спорта](*<-lang_ru;; *);;
+concept_ski_jumping=>nrel_rodina:Norway;;
+sc_node_not_relation->Norway;;
+Norway=>nrel_main_idtf:[Норвегия](*<-lang_ru;;*);;
+sc_node_norole_relation->nrel_rodina;;
+nrel_rodina=>nrel_main_idtf:
+[родина*](* <-lang_ru;; *);;
+concept_ski_jumping<=nrel_inclusion:winter_sport;olimpic_sport;;
+
 
 
 

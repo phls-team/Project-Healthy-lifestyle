@@ -27,13 +27,12 @@ concept_tourism<-rrel_key_sc_element:...
 	
 	*);;
 *);;
-concept_tourism->rrel_example:concept_journey;;
 concept_tourism<- rrel_key_sc_element:...
 		(*
         <- explanation;;
         -> rrel_key_sc_element:concept_person ;;
 		=> nrel_main_idtf: 
-           [Утв.(человек, путешествие, цель, мир, территория)] (* <- lang_ru;; *);;
+           [Утв.(цель)] (* <- lang_ru;; *);;
 		<= nrel_sc_text_translation: ...
 			(*
 			    -> rrel_example: 
@@ -53,26 +52,18 @@ concept_tourism<-rrel_key_sc_element:...
 *);;
 *);;
 concept_tourism=>nrel_inclusion:health_tourism;educational_tourism;sports_tourism;business_tourism;;
-sc_node_not_relation->concept_journey;;
-concept_journey=>nrel_main_idtf:
-[путешествие](*<-lang_ru;; *);;
-
 sc_node_not_relation->concept_person;;
 concept_person=>nrel_main_idtf:
 [человек](* <-lang_ru;; *);;
-
 sc_node_not_relation->health_tourism;;
 health_tourism=>nrel_main_idtf:
 [оздоровительный туризм](* <-lang_ru;; *);;
-
 sc_node_not_relation->educational_tourism;;
 educational_tourism=>nrel_main_idtf:
 [познавательный туризм](* <-lang_ru;; *);;
-
 sc_node_not_relation->sports_tourism;;
 sports_tourism=>nrel_main_idtf:
 [спортивный туризм](* <-lang_ru;; *);;
-
 sc_node_not_relation->business_tourism;;
 business_tourism=>nrel_main_idtf:
 [бизнес туризм](* <-lang_ru;; *);;

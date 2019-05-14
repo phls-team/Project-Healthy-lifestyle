@@ -2,7 +2,7 @@ concept_badminton=>nrel_idtf:[badminton]
 	(*
 		<-lang_en;;
 	*);;
-concept_badminton=>nrel_main_idtf:[бадминтон ]
+concept_badminton=>nrel_main_idtf:[бадминтон]
 	(*
 		<-lang_ru;;
 	*);;
@@ -21,7 +21,6 @@ concept_badminton<-rrel_key_sc_element:...
 *);;
 	*);;
 *);;
-
 concept_badminton<-rrel_key_sc_element:...
 	(*
 		<-illustration;;
@@ -34,19 +33,22 @@ concept_badminton<-rrel_key_sc_element:...
 	*);;	
 *);;
 *);;
-concept_badminton <- rrel_key_sc_element:...
+concept_badminton<- rrel_key_sc_element:...
 		(*
         <- explanation;;
-
 		=> nrel_main_idtf: 
          [Утв.(волан)](* <- lang_ru;; *);;
 		<= nrel_sc_text_translation: ...
 			(*
 			    -> rrel_example: 
 		[Существует два типа воланов: пластиковые и перьевые (натуральные).](*<- lang_ru;;*);;
-			*);;
 *);;
-
+*);;
+concept_badminton<=nrel_inclusion:summer_sport;;
+concept_badminton=>nrel_rodina:India;;
+sc_node_not_relation->India;;
+India=>nrel_main_idtf:
+[Индия](* <-lang_ru;; *);;
 
 
 

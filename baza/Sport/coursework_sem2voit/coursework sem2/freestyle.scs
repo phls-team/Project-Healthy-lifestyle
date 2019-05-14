@@ -23,7 +23,6 @@ concept_freestyle<-rrel_key_sc_element:...
 	
 	*);;
 *);;
-concept_freestyle->rrel_example:concept_game;;
 concept_freestyle<-rrel_key_sc_element:...
 	(*
 		<-illustration;;
@@ -52,10 +51,12 @@ concept_freestyle->rrel_key_sc_element:...
 	*);;
 	*);;
 	*);;
-concept_freestyle=>nrel_inclusion:kind_of_sport;;
-sc_node_not_relation->concept_game;;
-concept_game=>nrel_main_idtf:
-[вид спорта](*<-lang_ru;; *);;
+concept_freestyle<=nrel_inclusion:winter_sport;olimpic_sport;;
+concept_freestyle=>nrel_rodina:Germany;;
+sc_node_not_relation->Germany;;
+Germany=>nrel_main_idtf:[Германия](*<-lang_ru;;*);;
+
+
 
 
 

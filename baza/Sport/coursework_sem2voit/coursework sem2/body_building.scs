@@ -46,6 +46,8 @@ concept_body_building<- rrel_key_sc_element:...
 		[Человека, занимающегося поднятиями тяжестей с целью увеличения объёма или качества мышц (плотность, рельеф), называют культуристом или бодибилдером,](*<- lang_ru;;*);;
 			*);;
 *);;
+concept_body_building=>nrel_rodina:United_states_of_America;;
+concept_body_building<=nrel_inclusion:sila_sport;;
 
 
 

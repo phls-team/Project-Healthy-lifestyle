@@ -21,7 +21,6 @@ concept_trainer<-rrel_key_sc_element:...
 *);;
 *);;
 *);;
-
 concept_trainer<- rrel_key_sc_element:...
 		(*
         <- explanation;;

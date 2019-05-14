@@ -21,13 +21,9 @@ concept_pulse<-rrel_key_sc_element:...
 *);;
 	*);;
 *);;
-
-
-
 concept_pulse<- rrel_key_sc_element:...
 		(*
         <- explanation;;
-
 		=> nrel_main_idtf: 
          [Утв.(биомаркер)](* <- lang_ru;; *);;
 		<= nrel_sc_text_translation: ...

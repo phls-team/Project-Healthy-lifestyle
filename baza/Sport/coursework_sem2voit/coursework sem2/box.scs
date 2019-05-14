@@ -21,7 +21,6 @@ concept_box<-rrel_key_sc_element:...
 *);;
 	*);;
 *);;
-concept_box->rrel_example:concept_game;;
 concept_box<-rrel_key_sc_element:...
 	(*
 		<-illustration;;
@@ -36,30 +35,24 @@ concept_box<-rrel_key_sc_element:...
 *);;
 concept_box->rrel_key_sc_element:...
 	(*
-		->rrel_key_sc_element:concept_victory;concept_team;nrel_throw;concept_washer;;
+		//->rrel_key_sc_element:concept_victory;concept_team;nrel_throw;concept_washer;;
 		<-statement;;
-		=>nrel_main_idtf:[Утв.(установленное количество, раунд, поединок, был, прекращен, победитель, определяться, оценка, судья)]
+		=>nrel_main_idtf:[Утв.(оперделение победителя)]
 	(*
 		<-lang_ru;;
 	*);;
 		<=nrel_sc_text_translation:...
 	(*
-		->rrel_example:[ Если после установленного количества раундов поединок не был прекращён, то победитель определяется оценками судей. .]
+		->rrel_example:[ Если после установленного количества раундов поединок не был прекращён, то победитель определяется оценками судей.]
 	(*
 		<-lang_ru;; 
 	*);;
 	*);;
 	*);;
-
 concept_box=>nrel_rodina:England;;
 England=>nrel_main_idtf:[Англия](*<-lang_ru;;*);;
-sc_node_norole_relation->nrel_rodina;;
-nrel_rodina=>nrel_main_idtf:
-[Родина*](* <-lang_ru;; *);;
-concept_box=>nrel_inclusion:concept_game;;
-sc_node_not_relation->concept_game;;
-concept_game=>nrel_main_idtf:
-[игра](*<-lang_ru;; *);;
+concept_box<=nrel_inclusion:battle_sport;;
+
 
 
 

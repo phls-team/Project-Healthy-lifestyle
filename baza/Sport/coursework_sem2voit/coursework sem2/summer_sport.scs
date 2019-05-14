@@ -1,0 +1,43 @@
+summer_sport=>nrel_idtf:[Summer kind of sports]
+	(*
+		<-lang_en;;
+	*);;
+summer_sport=>nrel_main_idtf:[Летние виды спорта]
+	(*
+		<-lang_ru;;
+	*);;
+summer_sport<-rrel_key_sc_element:...
+	(*
+		<-definition;;=>nrel_main_idtf:
+[Опр.(Летние виды спорта)] 
+	(* 
+		<-lang_ru;;
+	*);;
+<=nrel_sc_text_translation:...
+	(*
+		->[виды спорта, занятия которыми возможны, в основном, в теплое время года.]
+(* 
+<-lang_ru;; 
+*);;
+*);;
+*);;
+
+summer_sport<- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+		=> nrel_main_idtf: 
+         [Утв.()](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Соревнования по самым популярным летним видам спорта проводятся на открытом воздухе.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+
+
+
+
+
+

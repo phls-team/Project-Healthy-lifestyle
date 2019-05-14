@@ -1,0 +1,43 @@
+olimpic_sport=>nrel_idtf:[Olimpic kind of sports]
+	(*
+		<-lang_en;;
+	*);;
+olimpic_sport=>nrel_main_idtf:[Олимпийские виды спорта]
+	(*
+		<-lang_ru;;
+	*);;
+olimpic_sport<-rrel_key_sc_element:...
+	(*
+		<-definition;;=>nrel_main_idtf:
+[Опр.(Олимпийские виды спорта)] 
+	(* 
+		<-lang_ru;;
+	*);;
+<=nrel_sc_text_translation:...
+	(*
+		->[виды спорта, которые входят в программу современных Олимпийских игр.]
+(* 
+<-lang_ru;; 
+*);;
+*);;
+*);;
+
+olimpic_sport<- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+		=> nrel_main_idtf: 
+         [Утв.()](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Сегодня в программу Олимпийских игр входят 28 летних и 7 зимних видов спорта.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+
+
+
+
+
+

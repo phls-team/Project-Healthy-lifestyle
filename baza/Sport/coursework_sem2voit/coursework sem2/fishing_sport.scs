@@ -46,7 +46,8 @@ concept_fishing_sport<- rrel_key_sc_element:...
 		[Спортивное рыболовство практикуется на морях, реках и озёрах.](*<- lang_ru;;*);;
 			*);;
 *);;
-
+concept_fishing_sport=>nrel_rodina:Russia;;
+concept_fishing_sport<=nrel_inclusion:summer_sport;winter_sport;;
 
 
 
