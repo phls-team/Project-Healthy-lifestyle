@@ -16,7 +16,6 @@ vitamin_A <= nrel_substance:vitamin_A_content
 		->berry_raspberry;;
 		->berry_bilberry;;
 		->berry_gooseberry;;
-		->vegetables_cabbage;;
 	*);;
 	-> 0.26mg_per_100g
 	(*
@@ -58,7 +57,6 @@ vitamin_A <= nrel_substance:vitamin_A_content
 	(*
 		=> nrel_measurement: 0.1;;
 		->fruit_peach;;
-		->vegetables_beet;;
 	*);;
 	-> 0.002mg_per_100g
 	(*
@@ -81,13 +79,11 @@ vitamin_A <= nrel_substance:vitamin_A_content
 	(*
 		=> nrel_measurement: 0.2;;
 		->fruit_coconut;;
-		->vegetables_pumpkin;;
 	*);;
 	-> 1.2mg_per_100g
 	(*
 		=> nrel_measurement: 1.2;;
 		->fruit_persimmon;;
-		->vegetables_carrot;;
 	*);;
 	-> 0.02mg_per_100g
 	(*

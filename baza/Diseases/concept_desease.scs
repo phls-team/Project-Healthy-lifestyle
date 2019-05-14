@@ -18,7 +18,7 @@ concept_desease
 => nrel_inclusion: parodontosis;
 => nrel_inclusion: stress;
 => nrel_inclusion: heart_desease;
-=> nrel_inclusion: concept_allergy;
+
 => nrel_inclusion: asthenia;
 => nrel_inclusion: cramps_in_muscles;
 => nrel_inclusion: development_of_osteoporosis;

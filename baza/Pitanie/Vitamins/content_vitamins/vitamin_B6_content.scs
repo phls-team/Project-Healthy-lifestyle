@@ -56,8 +56,6 @@ vitamin_B6 <= nrel_substance:vitamin_B6_content
 	(*
 		->berry_bilberry;;
 		->fruit_fig;;
-		->vegetables_radish;;
-		->vegetables_carrot;;
 	*);;
 	-> 0.13mg_per_100g
 	(*
@@ -71,7 +69,6 @@ vitamin_B6 <= nrel_substance:vitamin_B6_content
 	-> 0.05mg_per_100g
 	(*
 		->berry_mulberry;;
-		->vegetables_beet;;
 	*);;
 	-> 0.043mg_per_100g
 	(*

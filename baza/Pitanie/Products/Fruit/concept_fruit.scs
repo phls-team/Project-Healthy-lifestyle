@@ -44,11 +44,4 @@ concept_fruit
 => nrel_inclusion:fruit_tangerine;
 => nrel_inclusion:fruit_bergamot;
 => nrel_inclusion:fruit_pomelo;
-=> nrel_inclusion:fruit_passion_fruit;
-=> nrel_inclusion:fruit_pitahaya;
-=> nrel_inclusion:fruit_sugar_apple;
-=> nrel_inclusion:fruit_cupuasu;
-=> nrel_inclusion:fruit_jackfruit;
-=> nrel_inclusion:fruit_star_fruit;
-
 => nrel_inclusion:berry_mulberry;;

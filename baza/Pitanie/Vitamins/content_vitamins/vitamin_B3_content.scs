@@ -14,7 +14,6 @@ vitamin_B3 <= nrel_substance:vitamin_B3_content
 		->berry_currant;;
 		->berry_gooseberry;;
 		->berry_watermelon;;
-		->vegetables_radish;;
 	*);;
 	-> 0.6mg_per_100g
 	(*
@@ -34,7 +33,6 @@ vitamin_B3 <= nrel_substance:vitamin_B3_content
 	-> 0.4mg_per_100g
 	(*
 		->berry_blackberry;;
-		->vegetables_beet;;
 	*);;
 	-> 0.04mg_per_100g
 	(*

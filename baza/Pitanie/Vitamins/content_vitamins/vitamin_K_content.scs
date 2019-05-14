@@ -11,7 +11,6 @@ vitamin_K <= nrel_substance:vitamin_K_content
 	-> 1mg_per_100g
 	(*
 		->berry_bilberry;;
-		->vegetables_cabbage;;
 	*);;
 	-> 7.8mg_per_100g
 	(*

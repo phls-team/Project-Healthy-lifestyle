@@ -39,11 +39,12 @@ binary_relation=>nrel_measurement:2;;
 2<-number;;
 
 nrel_symptom<-oriented_relation;;
-dehidratation<-sc_node_not_relation;
+
+concept_dehidratation<-sc_node_not_relation;
 =>nrel_main_idtf:[dehidratation](*<-lang_en;;*);;
-dehidratation<-sc_node_not_relation;
+concept_dehidratation<-sc_node_not_relation;
 =>nrel_main_idtf:[дегидратация(обезвоживание)](*<-lang_ru;;*);;
-dehidratation<-rrel_key_sc_element:...
+concept_dehidratation<-rrel_key_sc_element:...
 (*<-definition;;
 =>nrel_main_idtf:[Опр.(дегидратация/обезвоживание)](*<-lang_ru;;*);;
 =>nrel_main_idtf:[Def.(dehidratation)](*<-lang_rn;;*);;
@@ -85,52 +86,3 @@ vomiting<-rrel_key_sc_element:...
 *);;
 *);;
 vomiting=>nrel_unique_idtf:[MD90.1];;
-
-toxaemia<-sc_node_not_relation;
-=>nrel_main_idtf:[Toxaemia](*<-lang_en;;*);;
-toxaemia<-sc_node_not_relation;
-=>nrel_main_idtf:[Токсемия](*<-lang_ru;;*);;
-toxaemia<-rrel_key_sc_element:...
-(*
-<-defenition;;
-=>nrel_main_idtf:[Def.(Toxaemia)](*<-lang_en;;*);;
-=>nrel_main_idtf:[Опр.(Токсемия)](*<-lang_ru;;*);;
-<=nrel_sc_text_translation:...
-(*
-->[Poisoning of the body with toxins in the blood that have entered the body from the outside or formed in the body.](*<-lang_en;;*);;
-->[Отравление организма токсинами в крови, которые проникли в организм извне или образовались в организме.](*<-lang_ru;;*);;
-*);;
-*);;
-toxaemia=>nrel_unique_idtf:[MG4Y](*<-lang_en;;*);;
-toxaemia=>nrel_unique_idtf:[MG4Y](*<-lang_ru;;*);;
-
-fever<-sc_node_not_relation;
-=>nrel_main_idtf:[Fever](*<-lang_en;;*);;
-fever<-sc_node_not_relation;
-=>nrel_main_idtf:[Лихорадка](*<-lang_ru;;*);;
-fever<-rrel_key_sc_element:...
-(*
-<-defenition;;
-=>nrel_main_idtf:[Def.(Fever)](*<-lang_en;;*);;
-=>nrel_main_idtf:[Опр.(Лихорадка)](*<-lang_ru;;*);;
-<=nrel_sc_text_translation:...
-(*
-->[Fever is an increase in body temperature above 37 degrees (when measuring temperature in the armpit or in the mouth).](*<-lang_en;;*);;
-->[Лихорадка/жар – это повышение температуры тела выше 37 градусов (при измерении температуры в подмышечной впадине или во рту).](*<-lang_ru;;*);;
-*);;
-*);;
-fever=>nrel_unique_idtf:[MG26](*<-lang_en;;*);;
-fever=>nrel_unique_idtf:[MG26](*<-lang_ru;;*);;
-fever=>nrel_healing:...
-(*
-<-statement;;
-=>nrel_main_idtf:[healing](*<-lang_en;;*);;
-=>nrel_main_idtf:[лечение](*<-lang_ru;;*);;
-<=nrel_sc_text_translation:...
-(*
-->[First of all, consult your doctor. Try to relax, it is best to observe bed rest, in no case do not wrap up and do not wear too warm, drink more fluids. Be sure to eat, but better light and digestible food. Take your temperature every 4-6 hours. Take a fever-reducing medicine if you have a headache or a temperature above 38 degrees.
-If the child has a temperature above 38 degrees, use paracetamol (special children's forms). Follow the instructions and read the required dose depending on the weight and age of the child. Do not give children acetylsalicylic acid (aspirin), because it has been found that it can lead to Reye's syndrome (hepatocerebral syndrome), a serious condition that can lead to coma and even death.](*<-lang_en;;*);;
-->[Прежде всего обратитесь к врачу. Постарайтесь отдохнуть, лучше всего соблюдать постельный режим, не в коем случае не кутайтесь и не одевайтесь слишком тепло, пейте больше жидкости. Обязательно ешьте, но лучше легкую и хорошо усваиваемую пищу. Измеряйте температуру каждые 4-6 ч. Примите жаропонижающее лекарство, если у вас болит голова или температура выше 38 градусов.
-Если у ребенка температура выше 38 градусов, используйте парацетамол (специальные детские формы). Следуйте инструкции и считайте необходимую дозу в зависимости от веса и возраста ребенка. Не давайте детям ацетилсалициловую кислоту (аспирин), т.к. установлено, что она может приводить к синдрому Рейе (гепатоцеребральному синдрому), тяжелому состоянию, которое может привести к коме и даже к летальному исходу.](*<-lang_ru;;*);;
-*);;
-*);;

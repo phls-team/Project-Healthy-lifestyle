@@ -32,8 +32,6 @@ vitamin_B2 <= nrel_substance:vitamin_B2_content
 	(*
 		->berry_cherry;;
 		->berry_plum;;
-		->vegetables_radish;;
-		->vegetables_beet;;
 	*);;
 	-> 0.035mg_per_100g
 	(*
@@ -55,7 +53,6 @@ vitamin_B2 <= nrel_substance:vitamin_B2_content
 		->fruit_apricot;;
 		->fruit_banana;;
 		->berry_watermelon;;
-		->vegetables_pumpkin;;
 	*);;
 	-> 0.13mg_per_100g
 	(*
@@ -75,7 +72,6 @@ vitamin_B2 <= nrel_substance:vitamin_B2_content
 	-> 0.07mg_per_100g
 	(*
 		->berry_grape;;
-		->vegetables_cabbage;;
 	*);;
 	-> 0.08mg_per_100g
 	(*
