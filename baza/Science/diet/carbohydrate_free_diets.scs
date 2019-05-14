@@ -1,5 +1,5 @@
 carbohydrate_free_diets
-<-sc_node_not_relation;
+<-sc_node_not_relation;;
 
 carbohydrate_free_diets => nrel_main_idtf:
 	[безуглеводная диета](* <-lang_ru;; *);

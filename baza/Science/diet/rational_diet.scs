@@ -1,5 +1,5 @@
 rational_diet
-<-sc_node_not_relation;
+<-sc_node_not_relation;;
 
 rational_diet => nrel_main_idtf:
 	[рациональная диета](* <-lang_ru;; *);
