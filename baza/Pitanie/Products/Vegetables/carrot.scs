@@ -1,0 +1,66 @@
+vegetables_carrot
+
+=> nrel_main_idtf:
+          [морковь]
+          (*<-lang_ru;;*);
+          [carrot]
+          (*<-lang_en;;*);
+
+	 
+=>nrel_birthplace:afgan;
+
+=>nrel_variety:samson;shans;
+moskovskaya;
+
+
+<-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(морковь)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://photo/radish.png"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);
+
+=>nrel_calorie_content:...
+	(*
+		<-quantity;;
+		<=nrel_relevance:...
+			(*
+				->rrel_kkal:41
+					(*
+						<-number;;
+					*);;
+			*);;
+	*);;	
+
+
+afgan=>nrel_main_idtf:
+          [Афганистан]
+          (*<-lang_ru;;*);
+          [Afganistan]
+          (*<-lang_en;;*);;
+
+samson=>nrel_main_idtf:
+          [самсон]
+          (*<-lang_ru;;*);;
+shans=>nrel_main_idtf:
+          [шанс]
+          (*<-lang_ru;;*);;
+moskovskaya=>nrel_main_idtf:
+          [московская]
+          (*<-lang_ru;;*);;
+
+
+
+
+
+

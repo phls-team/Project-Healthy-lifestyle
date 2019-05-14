@@ -1,0 +1,21 @@
+carbohydrate_free_diets
+<-sc_node_not_relation;;
+
+carbohydrate_free_diets => nrel_main_idtf:
+	[безуглеводная диета](* <-lang_ru;; *);
+    [carbohydrate free diets](* <-lang_en;; *);;
+carbohydrate_free_diets <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: безуглеводная диета] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: carbohydrate free diets] (* <- lang_en;; *);;
+        <- definition;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Безуглеводная диета — это план питания, нацеленный на контроль поступления в организм источников доступной энергии, углеводов (карбо).](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[A carbohydrate-free diet is a nutrition plan aimed at controlling the intake of available energy sources, carbohydrates (carbo).](*<- lang_en;;*);;
+			*);;
+		*);;

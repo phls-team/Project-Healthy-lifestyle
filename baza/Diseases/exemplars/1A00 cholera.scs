@@ -29,15 +29,18 @@ concept_loose_stools<-sc_node_norole_relation;
 =>nrel_main_idtf:[жидкий стул](*<-lang_ru;;*);;
 concept_loose_stools<-sc_node_norole_relation;
 =>nrel_main_idtf:[loose stools](*<-lang_en;;*);;
-cholera=>nrel_symptom:concept_loose_stools;concept_dehidratation;adynamia;;
-cholera=>nrel_period_of_full_development:concept_loose_stools;concept_dehidratation;adynamia;vomiting;;
+cholera=>nrel_symptom:concept_loose_stools;dehidratation;adynamia;;
+cholera=>nrel_period_of_full_development:loose_stools;dehidratation;adynamia;vomiting;;
 nrel_healing<-sc_node_norole_relation;
 =>nrel_main_idtf:[лечение](*<-lang_ru;;*);;
 cholera<-sc_node_norole_relation;
 =>nrel_healing:...
 (*
 <-statement;;
-=>nrel_main_idtf:[лечение];;
+=>nrel_main_idtf:[лечение](*<-lang_ru;;*);;
+=>nrel_main_idtf:[healing](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
 ->[При подозрении на холеру больных срочно госпитализируют в специальное отделение.
 
 Проводят комплекс мероприятий направленных на восстановление потери жидкости – регидратационная терапия.
@@ -47,4 +50,14 @@ cholera<-sc_node_norole_relation;
 Терапия энтеросорбентами – смекта, лигнин гидролизный, и др.
 
 Выписка больных после клинического выздоровления и после 3-х отрицательных анализов кала, взятых 3 дня подряд после отмены антибиотиков.](*<-lang_ru;;*);;
+->[If you suspect cholera patients are urgently hospitalized in a special department.
+
+Conduct a set of measures aimed at restoring fluid loss - rehydration therapy.
+
+Antimicrobial (etiotropic) therapy. Drugs of choice - chloramphenicol, doxycycline, nuvuroxazide, furozolidone, tetracycline.
+
+Therapy with enterosorbents - smecta, hydrolyzed lignin, etc.
+
+Discharge of patients after clinical recovery and after 3 negative tests of feces, taken 3 days in a row after the cancellation of antibiotics.](*<-lang_en;;*);;
+*);;
 *);;

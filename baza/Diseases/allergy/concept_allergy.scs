@@ -1,0 +1,60 @@
+concept_allergy=>nrel_idtf:[allergy]
+	(*
+		<-lang_en;;
+	*);;
+concept_allergy=>nrel_main_idtf:[аллергия]
+	(*
+		<-lang_ru;;
+	*);;
+concept_allergy<-rrel_key_sc_element:...
+	(*
+		<-definition;;=>nrel_main_idtf:
+[Опр.(аллергия)] 
+	(* 
+		<-lang_ru;;
+	*);;
+	
+<=nrel_sc_text_translation:...
+	(*
+		->[Аллерги́я — типовой иммунопатологический процесс, выраженный сверхчувствительностью иммунной системы организма при повторных воздействиях аллергена на ранее сенсибилизированный этим аллергеном организм.]
+(* 
+<-lang_ru;; 
+*);;
+	
+	*);;
+*);;
+concept_allergy->rrel_example:wool_allergy;;
+concept_allergy<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://photo/allergy.png"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;
+concept_allergy<-rrel_key_sc_element:...
+	(*
+	
+		<-statement;;
+		=>nrel_main_idtf:[Утв.(Пищевая аллергия)]
+	(*
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Пищевой аллергией называют неадекватный иммунный ответ на пищу.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+concept_allergy=>nrel_inclusion:wool_allergy;food_allergies;bloom_allergy;;
+
+
+
+
+

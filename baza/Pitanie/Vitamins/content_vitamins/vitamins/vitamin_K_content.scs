@@ -1,0 +1,21 @@
+vitamin_K_content 
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+          [содержание витамина K]
+          (*<-lang_ru;;*);
+	  [vitamin K content]
+          (*<-lang_en;;*);;
+vitamin_K <= nrel_substance:vitamin_K_content
+(* 
+	<- content;;
+	-> 0.00007mg_per_100g
+	(*
+		=> nrel_measurement: 0.00007;;
+		->fruit_passion_fruit;;
+	*);;
+		-> 7.9mg_per_100g
+	(*
+		=> nrel_measurement: 7.9;;
+		->vegetables_tomato;;
+	*);;
+*);;

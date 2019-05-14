@@ -1,0 +1,59 @@
+vitamin_C_content 
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+          [содержание витамина C]
+          (*<-lang_ru;;*);
+	  [vitamin C content]
+          (*<-lang_en;;*);;
+vitamin_C <= nrel_substance:vitamin_C_content
+(* 
+	<- content;;
+	-> 3.3mg_per_100g
+	(*
+		=> nrel_measurement: 3.3;;
+		->fruit_coconut;;
+	*);;
+
+	-> 19.2mg_per_100g
+	(*
+		=> nrel_measurement: 19.2;;
+		->fruit_sugar_apple;;
+	*);;
+	-> 30mg_per_100g
+	(*
+		=> nrel_measurement: 30;;
+		->fruit_passion_fruit;;
+	*);;
+	-> 34.4mg_per_100g
+	(*
+		=> nrel_measurement: 34.4;;
+		->fruit_star_fruit;;
+	*);;
+	-> 4mg_per_100g
+	(*
+		=> nrel_measurement: 4;;
+		->fruit_pitahaya;;
+	*);;
+	-> 0.273mg_per_100g
+	(*
+		=> nrel_measurement: 0.273;;
+		->fruit_cupuasu;;
+	*);;
+	-> 19.7mg_per_100g
+	(*
+		=> nrel_measurement: 19.7;;
+		->vegetables_potato;;
+	*);;
+	-> 12.7mg_per_100g
+	(*
+		=> nrel_measurement:12.7;;
+		->vegetables_tomato;;
+	*);;
+	-> 10mg_per_100g
+	(*
+		=> nrel_measurement:10;;
+		->vegetables_cucumber;;
+	*);;
+
+
+*);;

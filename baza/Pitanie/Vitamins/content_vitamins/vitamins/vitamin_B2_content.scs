@@ -1,0 +1,45 @@
+vitamin_B2_content
+
+
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+          [содержание витамина B2]
+          (*<-lang_ru;;*);
+	  [vitamin B2 content]
+          (*<-lang_en;;*);;
+vitamin_B2 <= nrel_substance:vitamin_B2_content
+(* 
+	<- content;;
+	-> 0.0001mg_per_100g
+	(*
+		=> nrel_measurement: 0.0001;;
+		->fruit_jackfruit;;
+	*);;
+	-> 0.1mg_per_100g
+	(*
+		=> nrel_measurement: 0.1;;
+		->fruit_sugar_apple;;
+		->fruit_passion_fruit;;
+	*);;
+	-> 0.2mg_per_100g
+	(*
+		=> nrel_measurement: 0.2;;
+		->fruit_cupuasu;;
+	*);;
+	-> 0.04mg_per_100g
+	(*
+		=> nrel_measurement: 0.04;;
+		->fruit_pitahaya;;
+		->vegetables_tomato;;
+	*);;
+
+	-> 0.032mg_per_100g
+	(*
+		=> nrel_measurement:0.032;;
+		->vegetables_potato;;
+		->vegetables_carrot;;
+	*);;
+	
+
+	
+*);;

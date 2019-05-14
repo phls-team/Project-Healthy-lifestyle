@@ -17,6 +17,7 @@ vitamin_C <= nrel_substance:vitamin_C_content
 		->berry_bilberry;;
 		->berry_cherry;;
 		->berry_plum;;
+		->vegetables_beet;;
 	*);;
 	-> 10.8mg_per_100g
 	(*
@@ -68,6 +69,7 @@ vitamin_C <= nrel_substance:vitamin_C_content
 		=> nrel_measurement: 60;;
 		->fruit_orange;;
 		->berry_strawberry;;
+		->vegetables_cabbage;;
 	*);;
 	-> 200mg_per_100g
 	(*
@@ -92,6 +94,7 @@ vitamin_C <= nrel_substance:vitamin_C_content
 	-> 5mg_per_100g
 	(*
 		->fruit_pear;;
+		->vegetables_carrot;;
 	*);;
 	-> 50mg_per_100g
 	(*
