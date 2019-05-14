@@ -14,6 +14,7 @@ vitamin_B5 <= nrel_substance:vitamin_B5_content
 		->fruit_coconut;;
 		->fruit_orange;;
 		->berry_strawberry;;
+		->vegetables_carrot;;
 	*);;
 	-> 0.03mg_per_100g
 	(*
@@ -24,6 +25,7 @@ vitamin_B5 <= nrel_substance:vitamin_B5_content
 	(*
 		->berry_chokeberry;;
 		->fruit_pomegranate;;
+		->vegetables_radish;;
 	*);;
 	-> 0.2mg_per_100g
 	(*
@@ -56,6 +58,7 @@ vitamin_B5 <= nrel_substance:vitamin_B5_content
 	-> 0.08mg_per_100g
 	(*
 		->berry_mulberry;;
+		->vegetables_beet;;
 	*);;
 	-> 0.78mg_per_100g
 	(*

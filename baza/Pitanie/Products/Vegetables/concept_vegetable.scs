@@ -7,7 +7,13 @@ concept_vegetable
           (*<-lang_ru;;*);
           [vegetable]
           (*<-lang_en;;*);
+=> nrel_inclusion:vegetables_cabbage;
+=> nrel_inclusion:vegetables_pumpkin;
 
+=> nrel_inclusion:vegetables_beet;
+=> nrel_inclusion:vegetables_carrot;
+
+=> nrel_inclusion:vegetables_radish;
 => nrel_inclusion:vegetables_potato;
 
 => nrel_inclusion:vegetables_cucumber;

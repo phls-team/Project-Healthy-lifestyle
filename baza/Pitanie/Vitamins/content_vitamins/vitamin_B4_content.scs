@@ -22,7 +22,9 @@ vitamin_B4 <= nrel_substance:vitamin_B4_content
 	(*
 		=> nrel_measurement: 12.3;;
 		->berry_mulberry;;
+		->vegetables_cabbage;;
 	*);;
+
 	-> 5.1mg_per_100g
 	(*
 		=> nrel_measurement: 5.1;;

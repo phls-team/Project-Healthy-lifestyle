@@ -37,6 +37,7 @@ vitamin_B2 <= nrel_substance:vitamin_B2_content
 	(*
 		=> nrel_measurement:0.032;;
 		->vegetables_potato;;
+		->vegetables_carrot;;
 	*);;
 	
 

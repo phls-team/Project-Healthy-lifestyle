@@ -19,6 +19,7 @@ vitamin_B1 <= nrel_substance:vitamin_B1_content
 	(*
 		->fruit_sugar_apple;;
 		->fruit_cupuasu;;
+		->vegetables_carrot;;
 	*);;
 	-> 0.03mg_per_100g
 	(*

@@ -1,0 +1,70 @@
+vegetables_beet
+
+=> nrel_main_idtf:
+          [свекла]
+          (*<-lang_ru;;*);
+          [beet]
+          (*<-lang_en;;*);
+
+	 
+=>nrel_birthplace:india;
+
+=>nrel_variety:modana;pablo;
+bogema;detroid;
+
+
+<-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(свекла)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://photo/beet.png"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);
+
+=>nrel_calorie_content:...
+	(*
+		<-quantity;;
+		<=nrel_relevance:...
+			(*
+				->rrel_kkal:43
+					(*
+						<-number;;
+					*);;
+			*);;
+	*);;	
+
+
+india=>nrel_main_idtf:
+          [Индия]
+          (*<-lang_ru;;*);
+          [India]
+          (*<-lang_en;;*);;
+ 
+
+modana=>nrel_main_idtf:
+          [модана]
+          (*<-lang_ru;;*);;
+pablo=>nrel_main_idtf:
+          [пабло F1]
+          (*<-lang_ru;;*);;
+bogema=>nrel_main_idtf:
+          [богема]
+          (*<-lang_ru;;*);;
+detroid=>nrel_main_idtf:
+          [детройт]
+          (*<-lang_ru;;*);;
+
+
+
+
+
+
