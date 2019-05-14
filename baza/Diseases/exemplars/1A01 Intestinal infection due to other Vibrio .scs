@@ -13,3 +13,4 @@ intestinal_infection_due_to_other_vibrio<-rrel_sc_key_element:...
 *);;
 intestinal_infection_due_to_other_vibrio=>nrel_unique_idtf:[1A01](*<-lang_en;;*);;
 intestinal_infection_due_to_other_vibrio=>nrel_unique_idtf:[1A01](*<-lang_ru;;*);;
+intestinal_infection_due_to_other_vibrio<-concept_part1OfSubClassOf01_01;;
