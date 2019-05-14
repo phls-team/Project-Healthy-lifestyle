@@ -36,11 +36,11 @@ concept_gymnastics<-rrel_key_sc_element:...
 	*);;	
 *);;
 *);;
-concept_gymnastics->rrel_key_sc_element:...
+concept_gymnastics<-rrel_key_sc_element:...
 	(*
-		->rrel_key_sc_element:sport_gymnastics;rhythmic_gymnastics;acrobatic_gymnastics;;
+		
 		<-statement;;
-		=>nrel_main_idtf:[Утв.(спортивная гимнастика, художественная гимнастика, акробатическая гимнастика)]
+		=>nrel_main_idtf:[Утв.(спортивная гимнастика)]
 	(*
 		<-lang_ru;;
 	*);;

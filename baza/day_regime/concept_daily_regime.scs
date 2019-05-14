@@ -36,11 +36,11 @@ concept_daily_regime<-rrel_key_sc_element:...
 	*);;	
 *);;
 *);;
-concept_daily_regime->rrel_key_sc_element:...
+concept_daily_regime<-rrel_key_sc_element:...
 	(*
-		->rrel_key_sc_element:concept_healthy_sleep;concept_walk;concept_health;;
+	
 		<-statement;;
-		=>nrel_main_idtf:[Утв.(здоровый сон, прогулки по свежему воздуху,здоровье)]
+		=>nrel_main_idtf:[Утв.(режим)]
 	(*
 		<-lang_ru;;
 	*);;

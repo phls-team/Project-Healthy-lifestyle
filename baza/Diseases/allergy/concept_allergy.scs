@@ -38,9 +38,9 @@ concept_allergy<-rrel_key_sc_element:...
 *);;
 concept_allergy<-rrel_key_sc_element:...
 	(*
-		->rrel_key_sc_element:wool_allergy;food_allergies;bloom_allergy;;
+	
 		<-statement;;
-		=>nrel_main_idtf:[Утв.(аллергия на шерсть, пищевая аллергия, аллергия на цветение)]
+		=>nrel_main_idtf:[Утв.(Пищевая аллергия)]
 	(*
 		<-lang_ru;;
 	*);;

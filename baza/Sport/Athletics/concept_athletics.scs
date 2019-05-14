@@ -35,11 +35,11 @@ concept_athletics<-rrel_key_sc_element:...
 	*);;	
 *);;
 *);;
-concept_athletics->rrel_key_sc_element:...
+concept_athletics<-rrel_key_sc_element:...
 	(*
-		->rrel_key_sc_element:running; long_jump;javelin_throwing;sports_walking;;
+		
 		<-statement;;
-		=>nrel_main_idtf:[Утв.(Легкая атлетика включает в себя бег,прыжки в длину,метаниe копья,спортивную ходьбу)](*<-lang_ru;;*);;
+		=>nrel_main_idtf:[Утв.(Легкая атлетика включает)](*<-lang_ru;;*);;
 		<=nrel_sc_text_translation:...
 		(*
 			->rrel_example:[Легкая атлетика включает в себя бег,прыжки в длину,метаниe копья,спортивную ходьбу](*<-lang_ru;;*);;
