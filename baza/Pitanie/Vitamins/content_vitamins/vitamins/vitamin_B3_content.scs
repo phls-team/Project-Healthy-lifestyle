@@ -1,0 +1,49 @@
+vitamin_B3_content 
+
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+          [содержание витамина B3]
+          (*<-lang_ru;;*);
+	  [vitamin B3 content]
+          (*<-lang_en;;*);;
+vitamin_B3 <= nrel_substance:vitamin_B3_content
+(* 
+	<- content;;
+	-> 0.54mg_per_100g
+	(*
+		=> nrel_measurement: 0.54;;
+		->fruit_coconut;;
+	*);;
+	-> 0.0004mg_per_100g
+	(*
+		=> nrel_measurement: 0.0004;;
+		->fruit_jackfruit;;
+	*);;
+	-> 0.5mg_per_100g
+	(*
+		=> nrel_measurement: 0.5;;
+		->fruit_sugar_apple;;
+	*);;
+	-> 1.5mg_per_100g
+	(*
+		=> nrel_measurement: 1.5;;
+		->fruit_passion_fruit;;
+	*);;
+	-> 0.4mg_per_100g
+	(*
+		=> nrel_measurement: 0.4;;
+		->fruit_star_fruit;;
+	*);;
+	-> 0.0002mg_per_100g
+	(*
+		=> nrel_measurement: 0.0002;;
+		->fruit_pitahaya;;
+	*);;
+	-> 0.3mg_per_100g
+	(*
+		=> nrel_measurement: 0.3;;
+		->vegetables_cucumber;;
+	*);;
+	
+	
+*);;

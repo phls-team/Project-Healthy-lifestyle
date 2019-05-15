@@ -1,0 +1,23 @@
+vitamin_B4_content 
+
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+          [содержание витамина B4]
+          (*<-lang_ru;;*);
+	  [vitamin B4 content]
+          (*<-lang_en;;*);;
+vitamin_B4 <= nrel_substance:vitamin_B4_content
+(* 
+	<- content;;
+	-> 7.6mg_per_100g
+	(*
+		=> nrel_measurement: 7.6;;
+		->fruit_star_fruit;;
+	*);;
+	-> 0.04mg_per_100g
+	(*
+		=> nrel_measurement: 0.04;;
+		->vegetables_cucumber;;
+	*);;
+	
+*);;

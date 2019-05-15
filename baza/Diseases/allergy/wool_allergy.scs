@@ -1,0 +1,29 @@
+wool_allergy
+<-sc_node_not_relation;
+->diseases;;
+wool_allergy => nrel_main_idtf:
+	[аллергия на шерсть](* <-lang_ru;; *);
+    [wool allergy](* <-lang_en;; *);;
+wool_allergy <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: аллергия на шерсть] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition:wool allergy] (* <- lang_en;; *);;
+        <- definition;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Аллергия на шерсть животных – это достаточно распространенное явление. Считается, что ему подвержено примерно 15% всех людей. У детей данная форма аллергии встречается чаще, чем у взрослых, и протекает тяжелее.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Allergies to animal hair - this is quite common. It is estimated that about 15% of all people are affected. In children, this form of allergy is more common than in adults, and is more severe.](*<- lang_en;;*);;
+			*);;
+                    <= nrel_using_constants: ...
+            (*
+                -> runny_nose:rashes;;
+            *);;
+		*);;
+
+runny_nose => nrel_main_idtf:
+	[насморк](* <-lang_ru;; *);
+    [runny nose](* <-lang_en;; *);;

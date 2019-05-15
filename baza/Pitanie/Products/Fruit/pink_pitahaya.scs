@@ -1,0 +1,23 @@
+pink_pitahaya
+
+=>nrel_main_idtf:
+[розовая питахайя с малиновой мякотью]
+(*<-lang_ru;;*);
+[pink pitahaya with raspberry flesh]
+(*<-lang_en;;*);
+
+
+<-rrel_key_sc_element:...
+	(*
+		<-explanation;;
+		=>nrel_main_idtf: [Фото(розовая питахайя с малиновой мякотью)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+(*
+-> rrel_example:
+"file://photos/pink.png"
+(*
+<-lang_ru;;
+=>nrel_format: format_png;;
+*);;
+*);;
+*);;

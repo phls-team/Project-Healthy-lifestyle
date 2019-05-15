@@ -1,0 +1,42 @@
+fruit_star_fruit
+=>nrel_birthplace:central_america;
+
+=> nrel_main_idtf:
+          [звездчатое яблоко]
+          (*<-lang_ru;;*);
+          [star fruit]
+          (*<-lang_en;;*);
+
+
+ <- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://photos/star_fruit.png"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);
+
+=>nrel_calorie_content:...
+	(*
+		<-quantity;;
+		<=nrel_relevance:...
+			(*
+				->rrel_kkal:67
+					(*
+						<-number;;
+					*);;
+			*);;
+	*);;
+
+
+central_america=>nrel_main_idtf:
+[Центральная Америка](*<-lang_ru;; *);;

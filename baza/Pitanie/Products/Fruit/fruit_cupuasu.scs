@@ -1,0 +1,56 @@
+fruit_cupuasu
+
+=> nrel_main_idtf:
+          [купуасу]
+          (*<-lang_ru;;*);
+          [cupuasu]
+          (*<-lang_en;;*);
+
+
+
+
+=>nrel_variety:redondo_cupuasu;mamorana_cupuasu;mamau_cupuasu;
+
+
+ <- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://photos/kupuasu.png"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+*);
+	 
+
+=>nrel_calorie_content:...
+	(*
+		<-quantity;;
+		<=nrel_relevance:...
+			(*
+				->rrel_kkal:80
+					(*
+						<-number;;
+					*);;
+			*);;
+	*);	
+=>nrel_birthplace:amazonia;;
+
+amazonia=>nrel_main_idtf:
+[Амазония](*<-lang_ru;; *);
+[Amazonia](*<-lang_en;; *);;
+
+
+redondo_cupuasu=>nrel_main_idtf:
+[Редондо](*<-lang_ru;; *);;
+mamorana_cupuasu=>nrel_main_idtf:
+[Маморана](*<-lang_ru;; *);;
+mamau_cupuasu=>nrel_main_idtf:
+[Мамау](*<-lang_ru;; *);;

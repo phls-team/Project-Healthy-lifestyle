@@ -8,8 +8,7 @@ concept_hockey=>nrel_main_idtf:[хоккей]
 	*);;
 concept_hockey<-rrel_key_sc_element:...
 	(*
-		<-definition;;
-		=>nrel_main_idtf:
+		<-definition;;=>nrel_main_idtf:
 [Опр.(хоккей)] 
 	(* 
 		<-lang_ru;;

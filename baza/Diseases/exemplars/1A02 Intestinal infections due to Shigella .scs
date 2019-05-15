@@ -11,7 +11,14 @@ intestinal_infections_due_to_shigella<-rrel_sc_key_element:...
 ->[A disease caused by an infection with the gram-negative bacteria Shigella. This disease is characterized by an acute onset of small volume diarrhoea, accompanied by fever and nausea. This disease may also present with toxaemia, vomiting, cramps, and tenesmus. Transmission is by ingestion of contaminated food, or direct contact. Confirmation is by identification of Shigella in a faecal sample.](*<-lang_en;;*);;
 ->[Заболевание, вызванное инфекцией грамотрицательных бактерий Shigella. Это заболевание характеризуется острым началом диареи небольшого объема, сопровождающейся лихорадкой и тошнотой. Это заболевание может также сопровождаться токсемией, рвотой, судорогами и тенезмами. Передача происходит при попадании внутрь загрязненной пищи или при прямом контакте. Подтверждение - идентификация шигеллы в фекальной пробе.](*<-lang_ru;;*);;
 *);;
+<<<<<<< HEAD
 concept_part1OfSubClassOf01_01=>nrel_inclusion:intestinal_infections_due_to_shigella;;
 intestinal_infections_due_to_shigella=>nrel_symptom:vomiting;fever;toxaemia;rectal_tenesmus;cramp_or_spasm;;
 intestinal_infections_due_to_shigella=>nrel_unique_idtf:[1A02](*<-lang_en;;*);;
 intestinal_infections_due_to_shigella=>nrel_unique_idtf:[1A02](*<-lang_ru;;*);;
+=======
+intestinal_infections_due_to_shigella=>nrel_symptom:vomiting;fever;toxaemia;;
+intestinal_infections_due_to_shigella=>nrel_unique_idtf:[1A02](*<-lang_en;;*);;
+intestinal_infections_due_to_shigella=>nrel_unique_idtf:[1A02](*<-lang_ru;;*);;
+intestinal_infections_due_to_shigella<-concept_part1OfSubClassOf01_01;;
+>>>>>>> parent of 84c0203... Revert "Merge branch 'master' of https://github.com/phls-team/Project-Healthy-lifestyle"
