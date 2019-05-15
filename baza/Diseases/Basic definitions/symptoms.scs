@@ -33,7 +33,7 @@ nrel_symptom<-rrel_key_sc_element:...
 	->[A symptom is a symptom, a particular manifestation of a disease, a pathological condition, or a disruption of any process of vital activity.](*<-lang_en;;*);;
 	*);;
 *);;
-nrel_symptom=>nrel_fisrt_domain:concept_disease;;
+nrel_symptom=>nrel_first_domain:concept_disease;;
 nrel_symptom=>nrel_second_domain:concept_illness;;
 
 nrel_symptom<-binary_relation;;
