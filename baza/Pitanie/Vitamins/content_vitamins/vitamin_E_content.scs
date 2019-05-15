@@ -28,6 +28,7 @@ vitamin_E <= nrel_substance:vitamin_E_content
 	(*
 		->fruit_pear;;
 		->fruit_pomegranate;;
+		->vegetables_pumpkin;;
 	*);;
 	-> 0.6mg_per_100g
 	(*
@@ -76,6 +77,9 @@ vitamin_E <= nrel_substance:vitamin_E_content
 		->fruit_fig;;
 		->berry_melon;;
 		->berry_watermelon;;
+		->vegetables_cabbage;;
+		->vegetables_radish;;
+		->vegetables_beet;;
 	*);;
 	-> 1mg_per_100g
 	(*

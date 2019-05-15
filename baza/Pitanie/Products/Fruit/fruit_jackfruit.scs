@@ -1,0 +1,41 @@
+fruit_jackfruit
+
+=> nrel_main_idtf:
+          [джекфрукт]
+          (*<-lang_ru;;*);
+          [jackfruit]
+          (*<-lang_en;;*);
+=>nrel_birthplace:India;
+
+ <- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://photos/jackfruit.png"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*); 
+
+=>nrel_calorie_content:...
+	(*
+		<-quantity;;
+		<=nrel_relevance:...
+			(*
+				->rrel_kkal:98
+					(*
+						<-number;;
+					*);;
+			*);;
+	*);;	
+
+
+India=>nrel_main_idtf:
+[Индия](*<-lang_ru;; *);;

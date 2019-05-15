@@ -1,0 +1,40 @@
+rhythmic_gymnastics
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [rhythmic gymnastics]
+          (*<-lang_en;;*);
+          [художественная гимнастика]
+          (*<-lang_ru;;*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+=> nrel_main_idtf: [Утв.(художественная гимнастика)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://explanations/rhythmic_gym.html"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://photo/rhythmic.png"
+			(*
+				=> nrel_format : format_png ;;
+			*);;
+		*);;
+	*);;
+

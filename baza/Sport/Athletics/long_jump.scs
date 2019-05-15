@@ -1,0 +1,22 @@
+long_jump
+<-sc_node_not_relation;
+->anaerobic_excercise;;
+long_jump => nrel_main_idtf:
+	[прыжки в длину](* <-lang_ru;; *);
+    [long_jump](* <-lang_en;; *);;
+long_jump <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: прыжки в длинну] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: long_jump] (* <- lang_en;; *);;
+        <- definition;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Прыжок в длину-дисциплина технических видов легкоатлетической программы, относящаяся к горизонтальным прыжкам.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Long jump - the discipline of technical types of athletics program, related to horizontal jumps.](*<- lang_en;;*);;
+			*);;
+		*);;
+

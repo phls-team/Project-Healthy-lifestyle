@@ -135,6 +135,7 @@ concept_physical_exercises
 => nrel_inclusion: concept_physical_exercise_for_the_hands;
 => nrel_inclusion: concept_physical_exercise_for_the_back;
 => nrel_inclusion: concept_physical_exercise_for_the_abdomen;
+=> nrel_inclusion:strengthening_the_lateral_muscles;
 
 <- rrel_key_sc_element : 
 	...
@@ -311,4 +312,4 @@ concept_sport
 				(* <- lang_ru;;	*);;
 			*);;
 	*);
-=> nrel_inclusion: concept_football; concept_volleyball; concept_basketball; concept_handball; concept_biathlon;;
+=> nrel_inclusion:concept_gymnastics;concept_athletics; concept_football; concept_volleyball; concept_basketball; concept_handball; concept_biathlon;;

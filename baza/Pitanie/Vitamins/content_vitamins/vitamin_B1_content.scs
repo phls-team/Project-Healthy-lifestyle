@@ -16,6 +16,7 @@ vitamin_B1 <= nrel_substance:vitamin_B1_content
 		->berry_cherry;;
 		->berry_mulberry;;
 		->berry_strawberry;;
+		->vegetables_cabbage;;
 	*);;
 	-> 0.5mg_per_100g
 	(*
@@ -29,6 +30,7 @@ vitamin_B1 <= nrel_substance:vitamin_B1_content
 		->berry_bilberry;;
 		->berry_dog_rose;;
 		->fruit_pomelo;;
+		->vegetables_pumpkin;;
 	*);;
 	-> 0.06mg_per_100g
 	(*
@@ -46,6 +48,7 @@ vitamin_B1 <= nrel_substance:vitamin_B1_content
 		->fruit_pear;;
 		->fruit_quince;;
 		->fruit_persimmon;;
+		->vegetables_beet;;
 	*);;
 	-> 0.04mg_per_100g
 	(*
@@ -70,6 +73,7 @@ vitamin_B1 <= nrel_substance:vitamin_B1_content
 		->berry_blackberry;;
 		->berry_chokeberry;;
 		->berry_gooseberry;;
+		->vegetables_radish;;
 	*);;
 	-> 0.95mg_per_100g
 	(*

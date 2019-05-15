@@ -1,0 +1,71 @@
+vegetables_pumpkin
+
+=> nrel_main_idtf:
+          [тыква]
+          (*<-lang_ru;;*);
+          [pumpkin]
+          (*<-lang_en;;*);
+
+	 
+=>nrel_birthplace:mexico;
+
+=>nrel_variety:kroshla;din;
+ruspump;
+
+<-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(тыква)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://photo/pumpkin.png"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);
+
+=>nrel_calorie_content:...
+	(*
+		<-quantity;;
+		<=nrel_relevance:...
+			(*
+				->rrel_kkal:26
+					(*
+						<-number;;
+					*);;
+			*);;
+	*);;	
+
+
+mexico=>nrel_main_idtf:
+          [Мексика]
+          (*<-lang_ru;;*);
+          [Mexico]
+          (*<-lang_en;;*);;
+
+
+
+kroshla=>nrel_main_idtf:
+          [крошка]
+          (*<-lang_ru;;*);
+          [kroshka]
+          (*<-lang_en;;*);;
+
+din=>nrel_main_idtf:
+          [дынная]
+          (*<-lang_ru;;*);;
+
+
+ruspump=>nrel_main_idtf:
+          [россиянка]
+          (*<-lang_ru;;*);;
+     
+
+
+
+

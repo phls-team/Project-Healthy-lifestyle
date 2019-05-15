@@ -1,0 +1,40 @@
+sliding_back_and_forth
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [sliding back and forth]
+          (*<-lang_en;;*);
+          [скольжение вперед и назад]
+          (*<-lang_ru;;*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+=> nrel_main_idtf: [Утв.(скольжение вперед и назад)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://explanations/explanation_for_sliding.html"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://photos/photo_for_sliding.png"
+			(*
+				=> nrel_format : format_png ;;
+			*);;
+		*);;
+	*);;
+

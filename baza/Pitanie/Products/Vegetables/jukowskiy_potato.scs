@@ -1,0 +1,25 @@
+jukowskiy_potato
+
+=> nrel_main_idtf:
+          [Жуковский ]
+          (*<-lang_ru;;*);
+          [Jukovskiy]
+          (*<-lang_en;;*);
+
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+=> nrel_main_idtf: [Фото(Жуковский)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://photo/jukowskiy_potato.png"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);; 
