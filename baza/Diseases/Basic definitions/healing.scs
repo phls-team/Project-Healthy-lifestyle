@@ -1,0 +1,36 @@
+nrel_healing<-sc_node_norole_relation;
+=>nrel_main_idtf:[healing]
+	(*
+		<-lang_en;;
+	*);;
+nrel_shealing<-sc_node_norole_relation;
+=>nrel_main_idtf:[лечение]
+	(*
+		<-lang_ru;;
+	*);;
+nrel_healing<-sc_node_norole_relation;
+=>nrel_idtf:[множество симптомов]
+	(*
+		<-lang_ru;;	
+	*);;
+nrel_healing<-rrel_key_sc_element:...
+	(*
+<-definition;;
+=>nrel_main_idtf:[Опр.(лечение)] 
+	(* 
+		<-lang_ru;;
+	*);;
+=>nrel_main_idtf:[Def.(healing)] 
+	(* 
+		<-lang_en;;
+	*);;
+<=nrel_sc_text_translation:...
+(*
+		->[Лечение - это процесс унистранения заболевания и его пагубного влияния или восстановления повреждённых участков организма.]
+(* 
+<-lang_ru;; 
+*);;
+	->[Treatment is the process of eliminating the disease and its detrimental effect or the restoration of damaged parts of the organism.](*<-lang_en;;*);;
+	*);;
+*);;
+

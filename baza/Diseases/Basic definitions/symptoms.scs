@@ -1,5 +1,5 @@
 nrel_symptom<-sc_node_norole_relation;
-=>nrel_idtf:[symptom]
+=>nrel_main_idtf:[symptom]
 	(*
 		<-lang_en;;
 	*);;
@@ -20,17 +20,21 @@ nrel_symptom<-rrel_key_sc_element:...
 	(* 
 		<-lang_ru;;
 	*);;
+=>nrel_main_idtf:[Def.(symptom)] 
+	(* 
+		<-lang_en;;
+	*);;
 <=nrel_sc_text_translation:...
 (*
 		->[Симптом — это признак, частое проявление какого-либо заболевания, патологического состояния или нарушения какого-либо процесса жизнедеятельности.]
 (* 
 <-lang_ru;; 
 *);;
-	
+	->[A symptom is a symptom, a particular manifestation of a disease, a pathological condition, or a disruption of any process of vital activity.](*<-lang_en;;*);;
 	*);;
 *);;
-nrel_symptom=>nrel_fisrt_domain:concept_illness;;
-nrel_symptom=>nrel_second_domain:concept_symptom;;
+nrel_symptom=>nrel_fisrt_domain:concept_disease;;
+nrel_symptom=>nrel_second_domain:concept_illness;;
 
 nrel_symptom<-binary_relation;;
 parameter->arity;;
@@ -69,7 +73,7 @@ adynamia<-rrel_key_sc_element:...
 ->[Adynamia - a sharp decline in strength, muscle weakness, accompanied by a significant decrease or complete cessation of motor activity.](*<-lang_en;;*);;
 *);;
 *);;
-adynamia<-concept_disease;;
+adynamia<-concept_illness;;
 
 vomiting<-sc_node_not_relation;
 =>nrel_main_idtf:[vomiting](*<-lang_en;;*);;
@@ -86,3 +90,95 @@ vomiting<-rrel_key_sc_element:...
 *);;
 *);;
 vomiting=>nrel_unique_idtf:[MD90.1];;
+vomiting<-concept_illness;;
+
+    toxaemia<-sc_node_not_relation;
+    =>nrel_main_idtf:[Toxaemia](*<-lang_en;;*);;
+    toxaemia<-sc_node_not_relation;
+    =>nrel_main_idtf:[Токсемия](*<-lang_ru;;*);;
+    toxaemia<-rrel_key_sc_element:...
+    (*
+    <-defenition;;
+    =>nrel_main_idtf:[Def.(Toxaemia)](*<-lang_en;;*);;
+    =>nrel_main_idtf:[Опр.(Токсемия)](*<-lang_ru;;*);;
+    <=nrel_sc_text_translation:...
+    (*
+    ->[Poisoning of the body with toxins in the blood that have entered the body from the outside or formed in the body.](*<-lang_en;;*);;
+    ->[Отравление организма токсинами в крови, которые проникли в организм извне или образовались в организме.](*<-lang_ru;;*);;
+    *);;
+    *);;
+    toxaemia=>nrel_unique_idtf:[MG4Y](*<-lang_en;;*);;
+    toxaemia=>nrel_unique_idtf:[MG4Y](*<-lang_ru;;*);;
+toxaemia<-concept_illness;;
+
+    fever<-sc_node_not_relation;
+    =>nrel_main_idtf:[Fever](*<-lang_en;;*);;
+    fever<-sc_node_not_relation;
+    =>nrel_main_idtf:[Лихорадка](*<-lang_ru;;*);;
+    fever<-rrel_key_sc_element:...
+    (*
+    <-defenition;;
+    =>nrel_main_idtf:[Def.(Fever)](*<-lang_en;;*);;
+    =>nrel_main_idtf:[Опр.(Лихорадка)](*<-lang_ru;;*);;
+    <=nrel_sc_text_translation:...
+    (*
+    ->[Fever is an increase in body temperature above 37 degrees (when measuring temperature in the armpit or in the mouth).](*<-lang_en;;*);;
+    ->[Лихорадка/жар – это повышение температуры тела выше 37 градусов (при измерении температуры в подмышечной впадине или во рту).](*<-lang_ru;;*);;
+    *);;
+    *);;
+    fever=>nrel_unique_idtf:[MG26](*<-lang_en;;*);;
+    fever=>nrel_unique_idtf:[MG26](*<-lang_ru;;*);;
+    fever=>nrel_healing:...
+    (*
+    <-statement;;
+    =>nrel_main_idtf:[healing](*<-lang_en;;*);;
+    =>nrel_main_idtf:[лечение](*<-lang_ru;;*);;
+    <=nrel_sc_text_translation:...
+    (*
+    ->[First of all, consult your doctor. Try to relax, it is best to observe bed rest, in no case do not wrap up and do not wear too warm, drink more fluids. Be sure to eat, but better light and digestible food. Take your temperature every 4-6 hours. Take a fever-reducing medicine if you have a headache or a temperature above 38 degrees.
+    If the child has a temperature above 38 degrees, use paracetamol (special children's forms). Follow the instructions and read the required dose depending on the weight and age of the child. Do not give children acetylsalicylic acid (aspirin), because it has been found that it can lead to Reye's syndrome (hepatocerebral syndrome), a serious condition that can lead to coma and even death.](*<-lang_en;;*);;
+    ->[Прежде всего обратитесь к врачу. Постарайтесь отдохнуть, лучше всего соблюдать постельный режим, не в коем случае не кутайтесь и не одевайтесь слишком тепло, пейте больше жидкости. Обязательно ешьте, но лучше легкую и хорошо усваиваемую пищу. Измеряйте температуру каждые 4-6 ч. Примите жаропонижающее лекарство, если у вас болит голова или температура выше 38 градусов.
+    Если у ребенка температура выше 38 градусов, используйте парацетамол (специальные детские формы). Следуйте инструкции и считайте необходимую дозу в зависимости от веса и возраста ребенка. Не давайте детям ацетилсалициловую кислоту (аспирин), т.к. установлено, что она может приводить к синдрому Рейе (гепатоцеребральному синдрому), тяжелому состоянию, которое может привести к коме и даже к летальному исходу.](*<-lang_ru;;*);;
+    *);;
+    *);;
+fever<-concept_illness;;
+
+rectal_tenesmus<-sc_node_not_relation;
+=>nrel_main_idtf:[rectal tenesmus](*<-lang_en;;*);;
+rectal_tenesmus<-sc_node_not_relation;
+=>nrel_main_idtf:[ректальный тенезм](*<-lang_ru;;*);;
+rectal_tenesmus<-rrel_sc_key_element:...
+(*
+    <-defenition;;
+    =>nrel_main_idtf:[Def.(rectal tenesmus)](*<-lang_en;;*);;
+    =>nrel_main_idtf:[Опр.(ректальный тенезм)](*<-lang_ru;;*);;
+    <=nrel_sc_text_translation:...
+    (*
+    ->[A symptom, where there is a feeling of constantly needing to pass stools, despite an empty colon.](*<-lang_en;;*);;
+    ->[Симптом, при котором возникает ощущение постоянной необходимости высвободить стул, несмотря на пустую толстую кишку.](*<-lang_ru;;*);;
+    *);;
+*);;
+rectal_tenesmus=>nrel_unique_idtf:[ME09](*<-lang_en;;*);;
+rectal_tenesmus=>nrel_unique_idtf:[ME09](*<-lang_ru;;*);;
+rectal_tenesmus<-conept_illness;;
+
+cramp_or_spasm<-sc_node_not_relation;
+=>nrel_main_idtf:[cramp](*<-lang_en;;*);
+=>nrel_idtf:[spasm](*<-lang_en;;*);;
+cramp_or_spasm<-sc_node_not_relatin;
+=>nrel_main_idtf:[судорага](*<-lang_ru;;*);;
+cramp_or_spasm<-rrel_sc_key_element:...
+(*
+<-defenition;;
+=>nrel_main_idtf:[Def.(cramp)](*<-lang_en;;*);;
+=>nrel_idtf:[Def.(spasm)](*<-lang_en;;*);;
+=>nrel_main_idtf:[Опр.(судорога)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:..
+(*
+->[Непроизвольное судорожное сокращение мышцы или группы мышц, обычно сопровождаемое резкой и ноющей болью.](*<-lang_ru;;*);;
+->[Involuntary jerking of a muscle or muscle group, usually accompanied by sharp and aching pain.](*<-lang_en;;*);;
+*);;
+*);;
+cramp_or_spasm=>nrel_unique_idtf:[MB47.3](*<-lang_ru;;*);;
+cramp_or_spasm=>nrel_unique_idtf:[MB47.3](*<-lang_en;;*);;
+cramp_or_spasm<-concept_illness;;
