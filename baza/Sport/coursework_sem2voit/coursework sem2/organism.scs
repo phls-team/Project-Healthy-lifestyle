@@ -21,7 +21,17 @@ concept_organism<-rrel_key_sc_element:...
 *);;
 	*);;
 *);;
-
+concept_organism<- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+		=> nrel_main_idtf: 
+         [Утв.(от)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[живые организмы отличаются от тел неживой природы более сложным химическим составом](*<- lang_ru;;*);;
+			*);;
+*);;
 
 
 

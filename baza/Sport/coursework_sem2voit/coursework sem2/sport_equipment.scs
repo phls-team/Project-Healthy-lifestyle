@@ -34,6 +34,17 @@ concept_sport_equipment<-rrel_key_sc_element:...
 	*);;	
 *);;
 *);;
+concept_sport_equipment<- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+		=> nrel_main_idtf: 
+         [Утв.(использование)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[В настоящее время, многие виды спорта используют спортивный инвентарь.](*<- lang_ru;;*);;
+*);;
+*);;
 
 
 

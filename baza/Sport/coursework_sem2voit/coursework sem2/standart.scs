@@ -17,7 +17,6 @@ concept_standart<-rrel_key_sc_element:...
 	(* 
 		<-lang_ru;;
 	*);;
-	
 <=nrel_sc_text_translation:...
 	(*
 		->[Количественная характеристика показателя, устанавливающая величину ожидаемых результатов работ.]
@@ -42,8 +41,7 @@ concept_standart<-rrel_key_sc_element:...
 *);;
 concept_standart->rrel_key_sc_element:...
 	(*
-		->rrel_key_sc_element:nrel_aim;concept_journey;concept_person;;
-		<-statement;;
+		<-explanation;;
 		=>nrel_main_idtf:[Утв.(требование, спортсмен, выполнение,спорт)]
 	(*
 		<-lang_ru;;

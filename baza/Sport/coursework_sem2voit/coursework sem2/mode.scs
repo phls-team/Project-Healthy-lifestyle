@@ -2,10 +2,6 @@ concept_mode=>nrel_idtf:[mode]
 	(*
 		<-lang_en;;
 	*);;
-concept_mode=>nrel_idtf:[множество режимов]
-	(*
-		<-lang_ru;;	
-	*);;
 concept_mode=>nrel_main_idtf:[режим]
 	(*
 		<-lang_ru;;
@@ -27,12 +23,10 @@ concept_mode<-rrel_key_sc_element:...
 	
 	*);;
 *);;
-
 concept_mode->rrel_key_sc_element:...
 	(*
-		->rrel_key_sc_element:nrel_aim;concept_journey;concept_person;;
-		<-statement;;
-		=>nrel_main_idtf:[Утв.(режим, важная, тема, здоровье,образ жизни)]
+		<-explanation;;
+		=>nrel_main_idtf:[Утв.(режим)]
 	(*
 		<-lang_ru;;
 	*);;

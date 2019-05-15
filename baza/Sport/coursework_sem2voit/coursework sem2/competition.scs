@@ -21,7 +21,17 @@ concept_competition<-rrel_key_sc_element:...
 *);;
 	*);;
 *);;
-
+concept_competition<- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+		=> nrel_main_idtf: 
+         [Утв.(Пройгрыш)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Проигрыш в соревновании может не влиять на выживание субъекта соревнования.](*<- lang_ru;;*);;
+*);;
+*);;
 
 
 

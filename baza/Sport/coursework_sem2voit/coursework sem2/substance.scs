@@ -21,6 +21,17 @@ concept_substance<-rrel_key_sc_element:...
 *);;
 	*);;
 *);;
+concept_substance<- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+		=> nrel_main_idtf: 
+         [Утв.(свойства вещества)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Все вещества могут расширяться, сжиматься, превращаться в газ, жидкость или твёрдое тело.](*<- lang_ru;;*);;
+*);;
+*);;
 
 
 

@@ -20,19 +20,17 @@ concept_physical_activity<-rrel_key_sc_element:...
 	
 <=nrel_sc_text_translation:...
 	(*
-		->[Это какое-либо движение тела, производимое скелетными мышцами, которое требует расхода энергии ]
+		->[Это какое-либо движение тела, производимое скелетными мышцами, которое требует расхода энергии.]
 (* 
 <-lang_ru;; 
 *);;
 	
 	*);;
 *);;
-
 concept_physical_activity->rrel_key_sc_element:...
 	(*
-		->rrel_key_sc_element:nrel_aim;concept_journey;concept_person;;
-		<-statement;;
-		=>nrel_main_idtf:[Утв.(вид, физическая активность, польза,здоровье,)]
+		<-explanation;;
+		=>nrel_main_idtf:[Утв.(польза для здоровья)]
 	(*
 		<-lang_ru;;
 	*);;

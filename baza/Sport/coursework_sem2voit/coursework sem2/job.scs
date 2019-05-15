@@ -30,8 +30,7 @@ concept_job<-rrel_key_sc_element:...
 
 concept_job->rrel_key_sc_element:...
 	(*
-		->rrel_key_sc_element:nrel_aim;concept_journey;concept_person;;
-		<-statement;;
+		<-explanation;;
 		=>nrel_main_idtf:[Утв.(физическая работа, очередь, подразделяется,динамическая,мышцы,группа,растягиваться,сокращаться)]
 	(*
 		<-lang_ru;;

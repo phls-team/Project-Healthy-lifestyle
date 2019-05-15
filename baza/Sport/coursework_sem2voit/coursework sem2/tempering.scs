@@ -2,10 +2,6 @@ concept_tempering=>nrel_idtf:[tempering]
 	(*
 		<-lang_en;;
 	*);;
-concept_tempering=>nrel_idtf:[множество закаливаний]
-	(*
-		<-lang_ru;;	
-	*);;
 concept_tempering=>nrel_main_idtf:[закаливание]
 	(*
 		<-lang_ru;;
@@ -27,12 +23,10 @@ concept_tempering<-rrel_key_sc_element:...
 	
 	*);;
 *);;
-
 concept_tempering->rrel_key_sc_element:...
 	(*
-		->rrel_key_sc_element:nrel_aim;concept_journey;concept_person;;
-		<-statement;;
-		=>nrel_main_idtf:[Утв.(перерыв, закаливание, эффект,снижать,терять)]
+		<-explanation;;
+		=>nrel_main_idtf:[Утв.(перерыв в закаливании)]
 	(*
 		<-lang_ru;;
 	*);;

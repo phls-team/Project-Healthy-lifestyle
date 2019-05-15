@@ -21,12 +21,9 @@ concept_muscles<-rrel_key_sc_element:...
 *);;
 	*);;
 *);;
-
-
 concept_muscles<- rrel_key_sc_element:...
 		(*
         <- explanation;;
-
 		=> nrel_main_idtf: 
          [Утв.(предназначение мышц)](* <- lang_ru;; *);;
 		<= nrel_sc_text_translation: ...

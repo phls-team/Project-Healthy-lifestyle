@@ -21,12 +21,9 @@ concept_mental_activity<-rrel_key_sc_element:...
 *);;
 	*);;
 *);;
-
-
 concept_mental_activity<- rrel_key_sc_element:...
 		(*
         <- explanation;;
-
 		=> nrel_main_idtf: 
          [Утв.(проявление умственной активности)](* <- lang_ru;; *);;
 		<= nrel_sc_text_translation: ...

@@ -17,7 +17,6 @@ concept_scill<-rrel_key_sc_element:...
 	(* 
 		<-lang_ru;;
 	*);;
-	
 <=nrel_sc_text_translation:...
 	(*
 		->[способность деятельности, сформированная путём повторения и доведения до автоматизма.]
@@ -28,8 +27,7 @@ concept_scill<-rrel_key_sc_element:...
 *);;
 concept_scill->rrel_key_sc_element:...
 	(*
-		->rrel_key_sc_element:nrel_aim;concept_journey;concept_person;;
-		<-statement;;
+		<-explanation;;
 		=>nrel_main_idtf:[Утв.(Овладение навыком)]
 	(*
 		<-lang_ru;;
