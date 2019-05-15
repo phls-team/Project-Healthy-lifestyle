@@ -5,7 +5,7 @@ intestinal_nfections_due_to_escherichia_coli<-sc_node_not_relation;
 intestinal_nfections_due_to_escherichia_coli<-concept_desease;;
 intestinal_nfections_due_to_escherichia_coli<-rrel_sc_key_element:...
 (*
-<-defenition;;
+<-definition;;
 =>nrel_main_idtf:[Def.(Intestinal infections due to Escherichia coli)](*<-lang_en;;*);;
 =>nrel_main_idtf:[Опр.(Кишечные инфекции, вызванные кишечной палочкой)](*<-lang_ru;;*);;
 ->[Any condition of the gastrointestinal system, caused by an infection with the gram-negative bacteria Escherichia coli. ](*<-lang_en;;*);;
@@ -22,7 +22,7 @@ enteropathogenic_escherichia_coli_infection <-sc_node_not_relation;
 enteropathogenic_escherichia_coli_infection<-concept_desease;;
 enteropathogenic_escherichia_coli_infection<-rrel_sc_key_element:...
 (*
-<-defenition;;
+<-definition;;
 =>nrel_main_idtf:[Def.(Enteropathogenic Escherichia coli infection)](*<-lang_en;;*);;
 =>nrel_main_idtf:[Опр.(Энтеропатогенная инфекция кишечной палочки)](*<-lang_ru;;*);;
 ->[An infection of the gastrointestinal system, caused by the gram-negative bacteria Escherichia coli. It is characterized by acute, profuse, watery diarrhoea. Transmission is by the faecal-oral route from contaminated food, water, or fomites. Confirmation is by identification of the Escherichia coli in a faecal sample.](*<-lang_en;;*);;
@@ -39,7 +39,7 @@ enterotoxigenic_escherichia_coli_infection<-sc_node_not_relation;
 enterotoxigenic_escherichia_coli_infection<-concept_desease;;
 enterotoxigenic_escherichia_coli_infection<-rrel_sc_key_element:...
 (*
-<-defenition;;
+<-definition;;
 =>nrel_main_idtf:[Def.(Enterotoxigenic Escherichia coli infection)](*<-lang_en;;*);;
 =>nrel_main_idtf:[Опр.(Энтеротоксигенная инфекция кишечной палочки)](*<-lang_ru;;*);;
 ->[A condition of the gastrointestinal system, caused by an infection with the gram-negative bacteria Escherichia coli. This condition is characterized by acute, watery diarrhoea due to toxins released from the bacteria. Transmission is by the faecal-oral route from ingestion of contaminated food, water, or fomites. Confirmation is by identification of the Escherichia coli in faecal sample. ](*<-lang_en;;*);;

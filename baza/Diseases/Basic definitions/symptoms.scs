@@ -98,7 +98,7 @@ vomiting<-concept_illness;;
     =>nrel_main_idtf:[Токсемия](*<-lang_ru;;*);;
     toxaemia<-rrel_key_sc_element:...
     (*
-    <-defenition;;
+    <-definition;;
     =>nrel_main_idtf:[Def.(Toxaemia)](*<-lang_en;;*);;
     =>nrel_main_idtf:[Опр.(Токсемия)](*<-lang_ru;;*);;
     <=nrel_sc_text_translation:...
@@ -117,7 +117,7 @@ toxaemia<-concept_illness;;
     =>nrel_main_idtf:[Лихорадка](*<-lang_ru;;*);;
     fever<-rrel_key_sc_element:...
     (*
-    <-defenition;;
+    <-definition;;
     =>nrel_main_idtf:[Def.(Fever)](*<-lang_en;;*);;
     =>nrel_main_idtf:[Опр.(Лихорадка)](*<-lang_ru;;*);;
     <=nrel_sc_text_translation:...
@@ -149,7 +149,7 @@ rectal_tenesmus<-sc_node_not_relation;
 =>nrel_main_idtf:[ректальный тенезм](*<-lang_ru;;*);;
 rectal_tenesmus<-rrel_sc_key_element:...
 (*
-    <-defenition;;
+    <-definition;;
     =>nrel_main_idtf:[Def.(rectal tenesmus)](*<-lang_en;;*);;
     =>nrel_main_idtf:[Опр.(ректальный тенезм)](*<-lang_ru;;*);;
     <=nrel_sc_text_translation:...
@@ -169,7 +169,7 @@ cramp_or_spasm<-sc_node_not_relatin;
 =>nrel_main_idtf:[судорага](*<-lang_ru;;*);;
 cramp_or_spasm<-rrel_sc_key_element:...
 (*
-<-defenition;;
+<-definition;;
 =>nrel_main_idtf:[Def.(cramp)](*<-lang_en;;*);;
 =>nrel_idtf:[Def.(spasm)](*<-lang_en;;*);;
 =>nrel_main_idtf:[Опр.(судорога)](*<-lang_ru;;*);;

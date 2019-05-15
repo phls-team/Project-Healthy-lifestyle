@@ -5,7 +5,7 @@ intestinal_infections_due_to_shigella<-sc_node_not_relation;
 intestinal_infections_due_to_shigella<-concept_desease;;
 intestinal_infections_due_to_shigella<-rrel_sc_key_element:...
 (*
-<-defenition;;
+<-definition;;
 =>nrel_main_idtf:[Def.(Intestinal infections due to Shigella )](*<-lang_en;;*);;
 =>nrel_main_idtf:[Опр.(Кишечные инфекции из-за шигеллы)](*<-lang_ru;;*);;
 ->[A disease caused by an infection with the gram-negative bacteria Shigella. This disease is characterized by an acute onset of small volume diarrhoea, accompanied by fever and nausea. This disease may also present with toxaemia, vomiting, cramps, and tenesmus. Transmission is by ingestion of contaminated food, or direct contact. Confirmation is by identification of Shigella in a faecal sample.](*<-lang_en;;*);;
