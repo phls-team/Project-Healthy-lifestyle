@@ -27,12 +27,10 @@ concept_reaction<-rrel_key_sc_element:...
 	
 	*);;
 *);;
-
 concept_reaction->rrel_key_sc_element:...
 	(*
-		->rrel_key_sc_element:nrel_aim;concept_journey;concept_person;;
-		<-statement;;
-		=>nrel_main_idtf:[Утв.(различные, реакция, постоянно,природа,человек)]
+		<-explanation;;
+		=>nrel_main_idtf:[Утв.(реакции)]
 	(*
 		<-lang_ru;;
 	*);;

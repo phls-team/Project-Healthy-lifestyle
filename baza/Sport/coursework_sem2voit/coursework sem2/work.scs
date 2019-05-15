@@ -2,10 +2,6 @@ concept_work=>nrel_idtf:[work]
 	(*
 		<-lang_en;;
 	*);;
-concept_work=>nrel_idtf:[множество трудов]
-	(*
-		<-lang_ru;;	
-	*);;
 concept_work=>nrel_main_idtf:[труд]
 	(*
 		<-lang_ru;;
@@ -30,9 +26,8 @@ concept_work<-rrel_key_sc_element:...
 
 concept_work->rrel_key_sc_element:...
 	(*
-		->rrel_key_sc_element:nrel_aim;concept_journey;concept_person;;
-		<-statement;;
-		=>nrel_main_idtf:[Утв.(основа, физический труд, составляет,усилия,человек)]
+		<-explanation;;
+		=>nrel_main_idtf:[Утв.(основа труда)]
 	(*
 		<-lang_ru;;
 	*);;

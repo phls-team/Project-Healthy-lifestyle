@@ -27,23 +27,18 @@ concept_habit<-rrel_key_sc_element:...
 	
 	*);;
 *);;
+concept_habit<- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+		=> nrel_main_idtf: 
+         [Утв.(возникновение привычки)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Привычка появляется после повторения одних и тех же действий некоторое количество раз.](*<- lang_ru;;*);;
+*);;
+*);;
 
-concept_habit->rrel_key_sc_element:...
-	(*
-		->rrel_key_sc_element:nrel_aim;concept_journey;concept_person;;
-		<-statement;;
-		=>nrel_main_idtf:[Утв.(привычка, повторение, действие,количество)]
-	(*
-		<-lang_ru;;
-	*);;
-		<=nrel_sc_text_translation:...
-	(*
-		->rrel_example:[Привычка появляется после повторения одних и тех же действий некоторое количество раз.]
-	(*
-		<-lang_ru;; 
-	*);;
-	*);;
-	*);;
 
 
 
