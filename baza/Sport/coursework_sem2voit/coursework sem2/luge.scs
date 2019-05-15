@@ -33,9 +33,9 @@ concept_luge<-rrel_key_sc_element:...
 *);;	
 *);;
 *);;
-concept_luge->rrel_key_sc_element:...
+concept_luge<-rrel_key_sc_element:...
 	(*
-		<-statement;;
+		<-explanation;;
 		=>nrel_main_idtf:[Утв.(регламент спорт-инвентаря)]
 	(*
 		<-lang_ru;;

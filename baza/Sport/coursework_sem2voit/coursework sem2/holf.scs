@@ -106,7 +106,7 @@ concept_holf<- rrel_key_sc_element:...
 concept_holf=>nrel_rodina:Holland;;
 sc_node_not_relation->Holland;;
 Holland=>nrel_main_idtf:[Голандия](*<-lang_ru;;*);;
-concept_holf<=nrel_inclusion:summer_sport;;
+concept_holf<=nrel_inclusion:summer_sport;team_sport;;
 
 
 
