@@ -17,6 +17,7 @@ concept_disease<-rrel_key_sc_element:...
 	(* 
 		<-lang_ru;;
 	*);;
+=>nrel_main_idtf:[Def.(disease)](*<-lang_en;;*);;
 <=nrel_sc_text_translation:...
 (*
 		->[Заболевание - это факт возникновения болезни у отдельного человека. ]

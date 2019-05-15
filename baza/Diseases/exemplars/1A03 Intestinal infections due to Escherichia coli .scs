@@ -1,13 +1,13 @@
 intestinal_nfections_due_to_escherichia_coli<-sc_node_not_relation;
-=>nrel_main_idtf:[Intestinal infections due to Escherichia coli](*<-lang_en;;*);;
+=>nrel_main_idtf:[intestinal infections due to Escherichia coli](*<-lang_en;;*);;
 intestinal_nfections_due_to_escherichia_coli<-sc_node_not_relation;
-=>nrel_main_idtf:[Кишечные инфекции, вызванные кишечной палочкой](*<-lang_ru;;*);;
-intestinal_nfections_due_to_escherichia_coli<-concept_desease;;
+=>nrel_main_idtf:[кишечные инфекции, вызванные кишечной палочкой](*<-lang_ru;;*);;
+intestinal_nfections_due_to_escherichia_coli<-concept_disease;;
 intestinal_nfections_due_to_escherichia_coli<-rrel_sc_key_element:...
 (*
 <-definition;;
-=>nrel_main_idtf:[Def.(Intestinal infections due to Escherichia coli)](*<-lang_en;;*);;
-=>nrel_main_idtf:[Опр.(Кишечные инфекции, вызванные кишечной палочкой)](*<-lang_ru;;*);;
+=>nrel_main_idtf:[Def.(intestinal infections due to Escherichia coli)](*<-lang_en;;*);;
+=>nrel_main_idtf:[Опр.(кишечные инфекции, вызванные кишечной палочкой)](*<-lang_ru;;*);;
 ->[Any condition of the gastrointestinal system, caused by an infection with the gram-negative bacteria Escherichia coli. ](*<-lang_en;;*);;
 ->[Любое состояние желудочно-кишечного тракта, вызванное инфекцией грамотрицательных бактерий Escherichia coli.](*<-lang_ru;;*);;
 *);;
@@ -16,15 +16,15 @@ intestinal_nfections_due_to_escherichia_coli=>nrel_unique_idtf:[1A03](*<-lang_en
 intestinal_nfections_due_to_escherichia_coli=>nrel_unique_idtf:[1A03](*<-lang_ru;;*);;
 
 enteropathogenic_escherichia_coli_infection<-sc_node_not_relation;
-=>nrel_main_idtf:[Enteropathogenic Escherichia coli infection ](*<-lang_en;;*);;
+=>nrel_main_idtf:[enteropathogenic Escherichia coli infection ](*<-lang_en;;*);;
 enteropathogenic_escherichia_coli_infection <-sc_node_not_relation;
-=>nrel_main_idtf:[Энтеропатогенная инфекция кишечной палочки](*<-lang_ru;;*);;
-enteropathogenic_escherichia_coli_infection<-concept_desease;;
+=>nrel_main_idtf:[энтеропатогенная инфекция кишечной палочки](*<-lang_ru;;*);;
+enteropathogenic_escherichia_coli_infection<-concept_disease;;
 enteropathogenic_escherichia_coli_infection<-rrel_sc_key_element:...
 (*
 <-definition;;
-=>nrel_main_idtf:[Def.(Enteropathogenic Escherichia coli infection)](*<-lang_en;;*);;
-=>nrel_main_idtf:[Опр.(Энтеропатогенная инфекция кишечной палочки)](*<-lang_ru;;*);;
+=>nrel_main_idtf:[Def.(enteropathogenic Escherichia coli infection)](*<-lang_en;;*);;
+=>nrel_main_idtf:[Опр.(энтеропатогенная инфекция кишечной палочки)](*<-lang_ru;;*);;
 ->[An infection of the gastrointestinal system, caused by the gram-negative bacteria Escherichia coli. It is characterized by acute, profuse, watery diarrhoea. Transmission is by the faecal-oral route from contaminated food, water, or fomites. Confirmation is by identification of the Escherichia coli in a faecal sample.](*<-lang_en;;*);;
 ->[Инфекция желудочно-кишечного тракта, вызванная грамотрицательными бактериями Escherichia coli. Характеризуется острой, обильной, водянистой диареей. Передача происходит фекально-оральным путем от загрязненной пищи, воды или фомитов. Подтверждение - идентификация кишечной палочки в фекальной пробе.](*<-lang_ru;;*);;
 *);;
@@ -33,18 +33,60 @@ enteropathogenic_escherichia_coli_infection=>nrel_unique_idtf:[1A03.0](*<-lang_e
 enteropathogenic_escherichia_coli_infection=>nrel_unique_idtf:[1A03.0](*<-lang_ru;;*);;
 
 enterotoxigenic_escherichia_coli_infection<-sc_node_not_relation;
-=>nrel_main_idtf:[Enterotoxigenic Escherichia coli infection ](*<-lang_en;;*);;
+=>nrel_main_idtf:[enterotoxigenic Escherichia coli infection ](*<-lang_en;;*);;
 enterotoxigenic_escherichia_coli_infection<-sc_node_not_relation;
-=>nrel_main_idtf:[Энтеротоксигенная инфекция кишечной палочки](*<-lang_ru;;*);;
-enterotoxigenic_escherichia_coli_infection<-concept_desease;;
+=>nrel_main_idtf:[энтеротоксигенная инфекция кишечной палочки](*<-lang_ru;;*);;
+enterotoxigenic_escherichia_coli_infection<-concept_disease;;
 enterotoxigenic_escherichia_coli_infection<-rrel_sc_key_element:...
 (*
 <-definition;;
-=>nrel_main_idtf:[Def.(Enterotoxigenic Escherichia coli infection)](*<-lang_en;;*);;
-=>nrel_main_idtf:[Опр.(Энтеротоксигенная инфекция кишечной палочки)](*<-lang_ru;;*);;
+=>nrel_main_idtf:[Def.(enterotoxigenic Escherichia coli infection)](*<-lang_en;;*);;
+=>nrel_main_idtf:[Опр.(энтеротоксигенная инфекция кишечной палочки)](*<-lang_ru;;*);;
 ->[A condition of the gastrointestinal system, caused by an infection with the gram-negative bacteria Escherichia coli. This condition is characterized by acute, watery diarrhoea due to toxins released from the bacteria. Transmission is by the faecal-oral route from ingestion of contaminated food, water, or fomites. Confirmation is by identification of the Escherichia coli in faecal sample. ](*<-lang_en;;*);;
 ->[Состояние желудочно-кишечной системы, вызванное инфекцией грамотрицательных бактерий Escherichia coli. Это состояние характеризуется острой водянистой диареей из-за токсинов, выделяемых бактериями. Передача происходит фекально-оральным путем от приема загрязненной пищи, воды или фомитов. Подтверждение - идентификация кишечной палочки в фекальной пробе.](*<-lang_ru;;*);;
 *);;
 intestinal_nfections_due_to_escherichia_coli=>nrel_inclusion:enterotoxigenic_escherichia_coli_infection;;
 enterotoxigenic_escherichia_coli_infection=>nrel_unique_idtf:[1A03.1](*<-lang_en;;*);;
 enterotoxigenic_escherichia_coli_infection=>nrel_unique_idtf:[1A03.1](*<-lang_ru;;*);;
+
+enteroinvasive_escherichia_coli_infection<-sc_node_not_relation;
+=>nrel_main_idtf:[enteroinvasive Escherichia coli infection](*<-lang_en;;*);; 
+enteroinvasive_escherichia_coli_infection<-sc_node_not_Relation;
+=>nrel_main_idtf:[энтероинвазивная инфекция кишечной палочки](*<-lang_ru;;*);;
+enteroinvasive_escherichia_coli_infection<-concept_disease;;
+enteroinvasive_escherichia_coli_infection<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:[Def.(enteroinvasive Escherichia coli infection)](*<-lang_en;;*);;
+=>nrel_main_idtf:[Опр.(энтероинвазивная инфекция кишечной палочки)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[A condition of the gastrointestinal system, caused by an infection with the gram-negative bacteria Escherichia coli. This condition is characterized by acute and profuse diarrhoea (that may be haemorrhagic), fever, and abdominal cramps. Transmission is by the faecal-oral route from ingestion of contaminated food or water. Confirmation is by identification of the Escherichia coli in a faecal sample. ](*<-lang_en;;*);;
+->[Состояние желудочно-кишечной системы, вызванное инфекцией грамотрицательных бактерий Escherichia coli. Это состояние характеризуется острой и обильной диареей (которая может быть геморрагической), лихорадкой и спазмами в животе. Передача происходит фекально-оральным путем от приема загрязненной пищи или воды. Подтверждение - идентификация кишечной палочки в фекальной пробе.](*<-lang_ru;;*);;
+*);;
+*);;
+intestinal_nfections_due_to_escherichia_coli=>nrel_inclusion:enteroinvasive_escherichia_coli_infection;;
+enteroinvasive_escherichia_coli_infection=>nrel_unique_idtf:[1A03.2](*<-lang_en;;*);;
+enteroinvasive_escherichia_coli_infection=>nrel_unique_idtf:[1A03.2](*<-lang_ru;;*);;
+
+enterohaemorrhagic_escherichia_coli_infection<-sc_node_not_relation;
+=>nrel_main_idtf:[enterohaemorrhagic Escherichia coli infection](*<-lang_en;;*);;
+enterohaemorrhagic_escherichia_coli_infection<-sc_node_not_relation;
+=>nrel_main_idtf:[энтерогеморрагическая инфекция кишечной палочки](*<-lang_ru;;*);;
+enterohaemorrhagic_escherichia_coli_infection<-concept_disease;;
+enterohaemorrhagic_escherichia_coli_infection<-rrel_sc_key_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:[Def.(enterohaemorrhagic Escherichia coli infection)](*<-lang_en;;*);;
+=>nrel_main_idtf:[Опр.(энтерогеморрагическая инфекция кишечной палочки)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[The bacterium Escherichia coli (E. coli), which produces shigatoxin, is often found in the intestines of humans and warm-blooded animals. Most strains of E. coli are harmless. However, some strains, such as enterohemorrhagic E. coli (STEC), can cause severe foodborne illness. This bacterium is transmitted to humans, and it can consume contaminated foods, such as raw or not sufficiently heat-treated.](*<-lang_en;;*);;
+->[Бактерия Escherichia coli (кишечная палочка), продуцирующая шигатоксин, часто обнаруживается в кишечнике людей и теплокровных животных. Большинство штаммов кишечной палочки безвредны. Однако некоторые штаммы, такие как энтерогеморрагическая Е. coli (STEC), могут вызывать тяжелые болезни пищевого происхождения. Эта бактерия передается человеку, и она может потреблять зараженные пищевые продукты, такие как сырые или не прошедшие достаточную тепловую обработку.](*<-lang_ru;;*);;
+*);;
+*);;
+intestinal_nfections_due_to_escherichia_coli=>nrel_inclusion:enterohaemorrhagic_escherichia_coli_infection;;
+enterohaemorrhagic_escherichia_coli_infection=>nrel_symptom:fever;vomiting;;
+enterohaemorrhagic_escherichia_coli_infection=>nrel_unique_idtf:[1A03.3](*<-lang_en;;*);;
+enterohaemorrhagic_escherichia_coli_infection=>nrel_unique_idtf:[1A03.3](*<-lang_ru;;*);;
+

@@ -93,14 +93,14 @@ vomiting=>nrel_unique_idtf:[MD90.1];;
 vomiting<-concept_illness;;
 
     toxaemia<-sc_node_not_relation;
-    =>nrel_main_idtf:[Toxaemia](*<-lang_en;;*);;
+    =>nrel_main_idtf:[toxaemia](*<-lang_en;;*);;
     toxaemia<-sc_node_not_relation;
-    =>nrel_main_idtf:[Токсемия](*<-lang_ru;;*);;
+    =>nrel_main_idtf:[токсемия](*<-lang_ru;;*);;
     toxaemia<-rrel_key_sc_element:...
     (*
     <-definition;;
-    =>nrel_main_idtf:[Def.(Toxaemia)](*<-lang_en;;*);;
-    =>nrel_main_idtf:[Опр.(Токсемия)](*<-lang_ru;;*);;
+    =>nrel_main_idtf:[Def.(toxaemia)](*<-lang_en;;*);;
+    =>nrel_main_idtf:[Опр.(токсемия)](*<-lang_ru;;*);;
     <=nrel_sc_text_translation:...
     (*
     ->[Poisoning of the body with toxins in the blood that have entered the body from the outside or formed in the body.](*<-lang_en;;*);;
@@ -112,14 +112,14 @@ vomiting<-concept_illness;;
 toxaemia<-concept_illness;;
 
     fever<-sc_node_not_relation;
-    =>nrel_main_idtf:[Fever](*<-lang_en;;*);;
+    =>nrel_main_idtf:[fever](*<-lang_en;;*);;
     fever<-sc_node_not_relation;
-    =>nrel_main_idtf:[Лихорадка](*<-lang_ru;;*);;
+    =>nrel_main_idtf:[лихорадка](*<-lang_ru;;*);;
     fever<-rrel_key_sc_element:...
     (*
     <-definition;;
-    =>nrel_main_idtf:[Def.(Fever)](*<-lang_en;;*);;
-    =>nrel_main_idtf:[Опр.(Лихорадка)](*<-lang_ru;;*);;
+    =>nrel_main_idtf:[Def.(fever)](*<-lang_en;;*);;
+    =>nrel_main_idtf:[Опр.(лихорадка)](*<-lang_ru;;*);;
     <=nrel_sc_text_translation:...
     (*
     ->[Fever is an increase in body temperature above 37 degrees (when measuring temperature in the armpit or in the mouth).](*<-lang_en;;*);;
