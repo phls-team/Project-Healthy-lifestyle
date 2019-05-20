@@ -13,6 +13,11 @@ nrel_symptom<-sc_node_norole_relation;
 	(*
 		<-lang_ru;;	
 	*);;
+nrel_symptom<-sc_node_norole_relation;
+=>nrel_idtf:[amount of symptoms]
+	(*
+		<-lang_en;;	
+	*);;
 nrel_symptom<-rrel_key_sc_element:...
 	(*
 <-definition;;
