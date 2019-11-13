@@ -1,0 +1,55 @@
+concept_cycling=>nrel_idtf:[cycling]
+	(*
+		<-lang_en;;
+	*);;
+concept_cycling=>nrel_main_idtf:[велоспорт ]
+	(*
+		<-lang_ru;;
+	*);;
+concept_cycling<-rrel_key_sc_element:...
+	(*
+		<-definition;;=>nrel_main_idtf:
+[Опр.(велоспорт)] 
+	(* 
+		<-lang_ru;;
+	*);;
+<=nrel_sc_text_translation:...
+	(*
+		->[перемещение по земле с использованием транспортных средств (велосипедов), движимых мускульной силой человека. ]
+(* 
+<-lang_ru;; 
+*);;
+	*);;
+*);;
+
+concept_cycling<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://cycling.png"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;
+concept_cycling<- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+
+		=> nrel_main_idtf: 
+         [Утв.(цель)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Основная цель гоночных дисциплин — наиболее быстрое преодоление определённой дистанции (и ландшафта) на велосипеде.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+
+
+
+
+

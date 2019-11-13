@@ -1,0 +1,44 @@
+concept_dope=>nrel_idtf:[dope]
+	(*
+		<-lang_en;;
+	*);;
+concept_dope=>nrel_main_idtf:[допинг]
+	(*
+		<-lang_ru;;
+	*);;
+concept_dope<-rrel_key_sc_element:...
+	(*
+		<-definition;;=>nrel_main_idtf:
+[Опр.(допинг)] 
+	(* 
+		<-lang_ru;;
+	*);;
+<=nrel_sc_text_translation:...
+	(*
+		->[вещества, которые временно усиливают физическую или психологическую деятельность организма]
+(* 
+<-lang_ru;; 
+*);;
+	*);;
+*);;
+
+
+concept_dope<- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+
+		=> nrel_main_idtf: 
+         [Утв.(запрещенные лекарственные средства)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[  Огромное количество лекарственных средств имеет статус запрещённых для спортсменов во время тренировок и соревнований.  ](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+
+
+
+
+

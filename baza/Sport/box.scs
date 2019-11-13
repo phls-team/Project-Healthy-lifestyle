@@ -1,0 +1,60 @@
+concept_box=>nrel_idtf:[box]
+	(*
+		<-lang_en;;
+	*);;
+concept_box=>nrel_main_idtf:[бокс]
+	(*
+		<-lang_ru;;
+	*);;
+concept_box<-rrel_key_sc_element:...
+	(*
+		<-definition;;=>nrel_main_idtf:
+[Опр.(бокс)] 
+	(* 
+		<-lang_ru;;
+	*);;
+<=nrel_sc_text_translation:...
+	(*
+		->[контактный вид спорта, единоборство, в котором спортсмены наносят друг другу удары кулаками в специальных перчатках. ]
+(* 
+<-lang_ru;; 
+*);;
+	*);;
+*);;
+concept_box->rrel_example:concept_game;;
+concept_box<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://box.png"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;
+concept_box->rrel_key_sc_element:...
+	(*
+		->rrel_key_sc_element:concept_victory;concept_team;nrel_throw;concept_washer;;
+		<-statement;;
+		=>nrel_main_idtf:[Утв.(установленное количество, раунд, поединок, был, прекращен, победитель, определяться, оценка, судья)]
+	(*
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[ Если после установленного количества раундов поединок не был прекращён, то победитель определяется оценками судей. .]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+concept_box=>nrel_inclusion:concept_game;;
+sc_node_not_relation->concept_game;;
+concept_game=>nrel_main_idtf:
+[игра](*<-lang_ru;; *);;
+
+
+
+

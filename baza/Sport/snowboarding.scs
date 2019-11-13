@@ -1,0 +1,89 @@
+concept_snowboarding=>nrel_idtf:[snowboarding]
+	(*
+		<-lang_en;;
+	*);;
+concept_snowboarding=>nrel_main_idtf:[сноубординг]
+	(*
+		<-lang_ru;;
+	*);;
+concept_snowboarding<-rrel_key_sc_element:...
+	(*
+		<-definition;;=>nrel_main_idtf:
+[Опр.(сноубординг)] 
+	(* 
+		<-lang_ru;;
+	*);;
+	
+<=nrel_sc_text_translation:...
+	(*
+		->[зимний олимпийский вид спорта, заключающийся в спуске с заснеженных склонов и гор на сноуборде.]
+(* 
+<-lang_ru;; 
+*);;
+	
+	*);;
+*);;
+concept_snowboarding->rrel_example:concept_game;;
+concept_snowboarding<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://snowboarding.png"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;
+concept_snowboarding <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element: health_tourism;;
+		=> nrel_main_idtf: 
+           [Утв.(сноуборд, сопряжён,риск,здоровье)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Cноуборд сопряжён с риском для здоровья.](*<- lang_ru;;*);;
+			*);;
+*);;
+concept_snowboarding <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:equipment ;;
+		=> nrel_main_idtf: 
+           [Утв.(выход, гора, проверка,оборудование)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Вы должны выходить на гору только после полной проверки всего оборудования.](*<- lang_ru;;*);;
+			*);;
+*);;
+concept_snowboarding <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+           [Утв.(кататься, снегопад, туман,столкновение, препятствие)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[кататься во время снегопада или тумана не рекомендуется, потому что вы можете столкнуться с разными препятствиями.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+sc_node_not_relation->concept_game;;
+concept_game=>nrel_main_idtf:
+[вид спорта](*<-lang_ru;; *);;
+
+sc_node_not_relation->equipment;;
+equipment=>nrel_main_idtf:
+[оборудование](*<-lang_ru;; *);;
+
+sc_node_not_relation->output;;
+output=>nrel_main_idtf:
+[выход](*<-lang_ru;; *);;
+
+

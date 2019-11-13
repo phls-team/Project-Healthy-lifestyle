@@ -17,25 +17,17 @@ concept_illness<-rrel_key_sc_element:...
 	(* 
 		<-lang_ru;;
 	*);;
-=>nrel_main_idtf:[Опр.(illness)] 
-	(* 
-		<-lang_en;;
-	*);;
 <=nrel_sc_text_translation:...
 (*
 		->[К сложному понятию «болезнь» подходят с весьма различных сторон, важных и теоретически, и практически. Попытки представить все основные стороны этого понятия в одном определении оказывались до сих пор неудачными, т. к. оно по своей громоздкости перестает быть определением. Краткие же определения неизбежно односторонни, выявляя лишь те или иные стороны понятия.
 
 Представление о болезни связано с качественно отличающейся от здоровья формой существования организма. Но в то же время эти состояния находятся в тесном диалектическом единстве, т. к. состояния здоровья и болезни представляют хотя и различные, но неразрывно связанные между собой формы проявления жизни.
 
-Самое краткое из известных определений болезни — «жизнь при ненормальных условиях» — принадлежит Р. Вирхову. Это определение входит в состав многих старых и современных определений, но само по себе оно весьма недостаточно, т. к. касается только этиологического аспекта понятия, не затрагивая характеристики болезни как таковой.]
+Самое краткое из известных определений болезни — «жизнь при ненормальных условиях» — принадлежит Р. Вирхову. Это определение входит в состав многих старых и современных определений, но само по себе оно весьма недостаточно, т. к. касается только этиологического аспекта понятия, не затрагивая характеристики болезни как таковой. ]
 (* 
 <-lang_ru;; 
 *);;
-->[The disease notion of “disease” is treated from different angles, important both theoretically and practically. Attempts to present all the main aspects of this concept. to. it by its bulkiness ceases to be a definition. Short definitions are inevitably one-sided, only those or other parties are revealed.
-
-The notion of disease is associated with a qualitatively different form of organism existence from health. These states are in close dialectic unity, because the state of health and illness manifest themselves in different manifestations of life.
-
-The shortest of the known diseases - "life under abnormal conditions" - belongs to R. Virkhov. This is very small, since it concerns only the etiological aspect.](*<-lang_en;;*);;
+	
 	*);;
 <=nrel_using_constants:...
 	(*

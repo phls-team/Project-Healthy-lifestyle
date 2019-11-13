@@ -1,0 +1,55 @@
+concept_baseball=>nrel_idtf:[baseball]
+	(*
+		<-lang_en;;
+	*);;
+concept_baseball=>nrel_main_idtf:[бейсбол]
+	(*
+		<-lang_ru;;
+	*);;
+concept_baseball<-rrel_key_sc_element:...
+	(*
+		<-definition;;=>nrel_main_idtf:
+[Опр.(бейсбол)] 
+	(* 
+		<-lang_ru;;
+	*);;
+<=nrel_sc_text_translation:...
+	(*
+		->[Командная спортивная игра с бейсбольным мячом и битой.]
+(* 
+<-lang_ru;; 
+*);;
+	*);;
+*);;
+
+concept_baseball<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://baseball.png"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;
+concept_baseball<- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+
+		=> nrel_main_idtf: 
+         [Утв.(состав команды)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[В состязаниях участвуют две команды по девять игроков каждая.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+
+
+
+
+

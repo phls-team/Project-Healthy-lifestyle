@@ -1,0 +1,32 @@
+concept_competition=>nrel_idtf:[competition]
+	(*
+		<-lang_en;;
+	*);;
+concept_competition=>nrel_main_idtf:[соревнование]
+	(*
+		<-lang_ru;;
+	*);;
+concept_competition<-rrel_key_sc_element:...
+	(*
+		<-definition;;=>nrel_main_idtf:
+[Опр.(соревнование)] 
+	(* 
+		<-lang_ru;;
+	*);;
+<=nrel_sc_text_translation:...
+	(*
+		->[состязание среди спортсменов или команд спортсменов по различным видам спорта  в целях выявления лучшего участника состязания, проводимое по утвержденному его организатором положению]
+(* 
+<-lang_ru;; 
+*);;
+	*);;
+*);;
+
+
+
+
+
+
+
+
+

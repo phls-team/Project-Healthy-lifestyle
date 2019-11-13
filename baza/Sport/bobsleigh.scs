@@ -1,0 +1,51 @@
+concept_bobsleigh=>nrel_idtf:[bobsleigh]
+	(*
+		<-lang_en;;
+	*);;
+concept_bobsleigh=>nrel_main_idtf:[бобслей]
+	(*
+		<-lang_ru;;
+	*);;
+concept_bobsleigh<-rrel_key_sc_element:...
+	(*
+		<-definition;;=>nrel_main_idtf:
+[Опр.(бобслей)] 
+	(* 
+		<-lang_ru;;
+	*);;
+	
+<=nrel_sc_text_translation:...
+	(*
+		->[зимний олимпийский вид спорта, представляющий собой скоростной спуск с гор по специально оборудованным ледовым трассам на управляемых санях.]
+(* 
+<-lang_ru;; 
+*);;
+	
+	*);;
+*);;
+concept_bobsleigh->rrel_example:concept_homeland;nrel_appear;;
+concept_bobsleigh<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://bobsleigh.png"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;
+
+concept_bobsleigh=>nrel_rodina:Switzerland;;
+sc_node_norole_relation->nrel_rodina;;
+nrel_rodina=>nrel_main_idtf:
+[Родина*](* <-lang_ru;; *);;
+
+concept_bobsleigh=>nrel_inclusion:concept_game;;
+sc_node_not_relation->concept_game;;
+concept_game=>nrel_main_idtf:
+[игра](*<-lang_ru;; *);;
+
+
+

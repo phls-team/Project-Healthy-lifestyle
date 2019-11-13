@@ -1,0 +1,55 @@
+concept_body_building=>nrel_idtf:[body building]
+	(*
+		<-lang_en;;
+	*);;
+concept_body_building=>nrel_main_idtf:[бодибилдинг]
+	(*
+		<-lang_ru;;
+	*);;
+concept_body_building<-rrel_key_sc_element:...
+	(*
+		<-definition;;=>nrel_main_idtf:
+[Опр.(бодибилдинг)] 
+	(* 
+		<-lang_ru;;
+	*);;
+<=nrel_sc_text_translation:...
+	(*
+		->[процесс наращивания (гипертрофии скелетных мышц) и развития мускулатуры, путём выполнения физических упражнений с отягощениями, приёма большого количества пищи, высокоэнергетического специального питания (с повышенным содержанием питательных веществ, в частности, белков), иногда фармакологических препаратов (в том числе в форме инъекций).]
+(* 
+<-lang_ru;; 
+*);;
+	*);;
+*);;
+
+concept_body_building<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://body_building.png"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;
+concept_body_building<- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+
+		=> nrel_main_idtf: 
+         [Утв.(бодибилдер)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Человека, занимающегося поднятиями тяжестей с целью увеличения объёма или качества мышц (плотность, рельеф), называют культуристом или бодибилдером,](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+
+
+
+
+

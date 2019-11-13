@@ -1,0 +1,55 @@
+concept_big_tennis=>nrel_idtf:[big tennis ]
+	(*
+		<-lang_en;;
+	*);;
+concept_big_tennis=>nrel_main_idtf:[большой теннис ]
+	(*
+		<-lang_ru;;
+	*);;
+concept_big_tennis<-rrel_key_sc_element:...
+	(*
+		<-definition;;=>nrel_main_idtf:
+[Опр.(большой теннис)] 
+	(* 
+		<-lang_ru;;
+	*);;
+<=nrel_sc_text_translation:...
+	(*
+		->[вид спорта, в котором соперничают либо два игрока («одиночная игра»), либо две команды, состоящие из двух игроков («парная игра»). Задачей соперников (теннисистов или теннисисток) является при помощи ракеток отправлять мяч на сторону соперника так, чтобы тот не смог его отразить не более чем после первого падения мяча на игровом поле на половине соперника. ]
+(* 
+<-lang_ru;; 
+*);;
+	*);;
+*);;
+
+concept_big_tennis<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://big_tennis.png"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;
+concept_big_tennis <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+
+		=> nrel_main_idtf: 
+         [Утв.(корт)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[В теннис играют на прямоугольной площадке с ровной поверхностью и нанесённой разметкой — корте. Посередине корта натянута сетка, которая проходит по всей ширине, параллельно задним линиям, и разделяет корт на две равные половины.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+
+
+
+
+

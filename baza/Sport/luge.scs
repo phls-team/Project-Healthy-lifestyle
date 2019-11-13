@@ -1,0 +1,61 @@
+concept_luge=>nrel_idtf:[luge]
+	(*
+		<-lang_en;;
+	*);;
+concept_luge=>nrel_main_idtf:[санный спорт]
+	(*
+		<-lang_ru;;
+	*);;
+concept_luge<-rrel_key_sc_element:...
+	(*
+		<-definition;;=>nrel_main_idtf:
+[Опр.(санный спорт)] 
+	(* 
+		<-lang_ru;;
+	*);;
+	
+<=nrel_sc_text_translation:...
+	(*
+		->[Зимний олимпийский вид спорта, в котором участники соревнуются в скоростном спуске на санях по специальным трассам.]
+(* 
+<-lang_ru;; 
+*);;
+	
+	*);;
+*);;
+concept_luge->rrel_example:concept_game;;
+concept_luge<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://luge.png"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;
+concept_luge->rrel_key_sc_element:...
+	(*
+		->rrel_key_sc_element:nrel_weight;concept_sleigh;concept_device;concept_regulations;;
+		<-statement;;
+		=>nrel_main_idtf:[Утв.(вес, сани, устройство,регламент)]
+	(*
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Вес саней и их устройство регламентированы.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+concept_luge=>nrel_inclusion:kind_of_sport;;
+sc_node_not_relation->concept_game;;
+concept_game=>nrel_main_idtf:
+[вид спорта](*<-lang_ru;; *);;
+
+
+

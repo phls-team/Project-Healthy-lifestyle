@@ -1,0 +1,55 @@
+concept_curling=>nrel_idtf:[curling]
+	(*
+		<-lang_en;;
+	*);;
+concept_curling=>nrel_main_idtf:[кёрлинг]
+	(*
+		<-lang_ru;;
+	*);;
+concept_curling<-rrel_key_sc_element:...
+	(*
+		<-definition;;=>nrel_main_idtf:
+[Опр.(кёрлинг)] 
+	(* 
+		<-lang_ru;;
+	*);;
+	
+<=nrel_sc_text_translation:...
+	(*
+		->[Командная спортивная игра на ледяной площадке.]
+(* 
+<-lang_ru;; 
+*);;
+	
+	*);;
+*);;
+concept_curling->rrel_example:concept_game;;
+concept_curling<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://curling.png"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;
+
+
+concept_curling=>nrel_rodina:Scotland;;
+
+Scotland=>nrel_main_idtf:[Шотландия](*<-lang_ru;;*);;
+
+sc_node_norole_relation->nrel_rodina;;
+nrel_rodina=>nrel_main_idtf:
+[Родина*](* <-lang_ru;; *);;
+
+concept_curling=>nrel_inclusion:concept_game;;
+sc_node_not_relation->concept_game;;
+concept_game=>nrel_main_idtf:
+[игра](*<-lang_ru;; *);;
+
+
+
