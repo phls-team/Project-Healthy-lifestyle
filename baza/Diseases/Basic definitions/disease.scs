@@ -1,4 +1,4 @@
-concept_disease=>nrel_idtf:[disease]
+concept_disease=>nrel_main_idtf:[disease]
 	(*
 		<-lang_en;;
 	*);;
@@ -17,12 +17,14 @@ concept_disease<-rrel_key_sc_element:...
 	(* 
 		<-lang_ru;;
 	*);;
+=>nrel_main_idtf:[Def.(disease)](*<-lang_en;;*);;
 <=nrel_sc_text_translation:...
 (*
-		->[Заболевание — болезнь у отдельного человека, возникновение болезни. ]
+		->[Заболевание - это факт возникновения болезни у отдельного человека.]
 (* 
 <-lang_ru;; 
 *);;
+->[A disease is a fact of occurrence of a disease in an individual.](*<-lang_en;;*);;
 	*);;
 *);;
 concept_disease=>nrel_inclusion:concept_chronical_disease;concept_hereditary_disease;concept_genetic_disease;nrel_symptom;concept_illness_classification;;
