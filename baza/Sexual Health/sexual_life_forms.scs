@@ -1,0 +1,48 @@
+sexual_life_forms
+
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+[Классификация форм половой жизни](*<-lang_ru;;*);
+[Sexual life form classification](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(Классификация форм половой жизни)](*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        -> rrel_example: [Классификацией форм половой жизни является разбиение форм на отдельные подкатегории.](*<-lang_ru;;*);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...(*
+    <- statement;;
+    => nrel_main_idtf: [Утв. 1 о классификации форм половой жизни](*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        -> rrel_example: [Каких-либо общепринятых классификаций форм половой жизни, полового поведения и половых расстройств не существует. Классификации сексуальных расстройств, обычно применяемые в клинической деятельности урологов, гинекологов и психиатров, отражают соответствующую специфику специальностей, во многом противоречивы и всегда дают поводы для их критики.](*<-lang_ru;;*);;
+    *);;
+*);
+<- rrel_key_sc_element: ...(*
+    <- statement;;
+    => nrel_main_idtf: [Утв. 2 о классификации форм половой жизни](*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        -> rrel_example: [Все формы полового поведения можно подразделить на: <br>
+
+- относительно объекта влечения; <br>
+
+- относительно возраста объекта влечения;<br>
+
+- относительно пола объекта влечения;<br>
+
+- по способу реализации сексуальных потребностей.](*<-lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);;
+/*
+<- rrel_key_sc_element: ...(*
+    <- illustration;;
+    <=nrel_sc_text_translation: ...(*
+        -> "file://sexual_life_forms.jpg"(*=>nrel_format: format_jpg;;*);;
+    *);;
+*);;
+*/
+sexual_life_forms -> rrel_example: heterosexuality;;
+sexual_life_forms -> rrel_example: homosexuality;;

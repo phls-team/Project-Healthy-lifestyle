@@ -1,0 +1,32 @@
+emergency_contraception
+
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+[экстренная контрацепция](*<-lang_ru;;*);
+[emergency contraception](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(экстренная контрацепция)](*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        -> rrel_example: [Экстренная контрацепция (англ. emergency contraception) — метод предотвращения нежелательной беременности, применяемый после совершения незащищенного полового акта, при неэффективном применении методов постоянной контрацепции.](*<-lang_ru;;*);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...(*
+    <- statement;;
+    => nrel_main_idtf: [Утв. 1 об Экстренной контрацепции](*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        -> rrel_example: [Суть экстренной контрацепции заключается в приеме лекарственных препаратов, специально для этого разработанных, в установленный срок (не позднее 72 часов после незащищенного полового акта), либо установке внутриматочной спирали не позднее 120 часов после незащищенного полового акта.](*<-lang_ru;;*);;
+    *);;
+*);;
+/*
+<- rrel_key_sc_element: ...(*
+    <- illustration;;
+    <=nrel_sc_text_translation: ...(*
+        -> "file://emergency_contraception.jpg"(*=>nrel_format: format_jpg;;*);;
+    *);;
+*);;
+*/
+emergency_contraception -> rrel_example: mifepristone;;

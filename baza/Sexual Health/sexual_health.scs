@@ -1,0 +1,32 @@
+sexual_health
+
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+[Сексуальное здоровье](*<-lang_ru;;*);
+[Sexual Health](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(Сексуальное Здоровье)](*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        -> rrel_example: [Сексуальное здоровье — это состояние полного соматического, эмоционального, интеллектуального благополучия в отношении сексуальности.](*<-lang_ru;;*);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...(*
+    <- statement;;
+    => nrel_main_idtf: [Утв. о Сексуальном Здоровье 1](*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        -> rrel_example: [Сексуальное здоровье подразумевает, что люди способны вести безопасную сексуальную жизнь, и что они способны к самостоятельному решению, когда, и как часто заниматься сексом.](*<-lang_ru;;*);;
+    *);;
+*);;
+/*
+<- rrel_key_sc_element: ...(*
+    <- illustration;;
+    <=nrel_sc_text_translation: ...(*
+        -> "file://sexual_health.jpg"(*=>nrel_format: format_jpg;;*);;
+    *);;
+*);;
+*/
+sexual_health -> rrel_example: safe_sex;;
