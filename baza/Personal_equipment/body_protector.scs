@@ -1,0 +1,41 @@
+concept_body_protector
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [body protector](*<-lang_en;;*);
+          [защитный жилет](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(защитный жилет)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Защитный жилет – это специализированный (не базовый) элемент экипировки спортсмена, занимающегося контактными единоборствами.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_personal_equipment;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. 1 (О защитном жилете)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Защитный жилет востребован во всех полноконтактных дисциплинах, где упор делается на работу в стойке.Body Protector](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://Image/body_protector.png"
+			(*
+				=> nrel_format : format_png ;;
+			*);;
+		*);;
+	*);;

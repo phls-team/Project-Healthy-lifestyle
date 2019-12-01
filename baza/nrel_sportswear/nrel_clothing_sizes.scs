@@ -1,0 +1,93 @@
+nrel_clothing_sizes
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [clothing sizes](*<-lang_en;;*);
+          [размеры одежды](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(размеры одежды)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Размеры одежды — некоторый буквенный или цифровой код, соответствующий определённым линейным параметрам человеческого тела либо его частей, для которого (которых) предназначена данная деталь одежды.](*<- lang_ru;;*);;
+			*);;
+            <= nrel_using_constants: {
+                concept_wear;
+                concept_body
+            };;
+		*);
+
+<=nrel_inclusion:concept_sportswear;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. 1 (О размере одежды)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Для упрощения выбора подходящей тому или иному человеку одежды и обуви производителями используются системы обозначений размеров. В большинстве случаев размер наносится на бирку, прикрепленную к одежде, а в случае обуви он может находиться на подошве или стельке.](*<- lang_ru;;*);;
+			*);;
+            <= nrel_using_constants: {
+                concept_wear;
+                concept_person
+            };;
+		*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. 2 (О размере одежды)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Единой системы для буквенных обозначений нет, поэтому данные таблицы условны и разные производители одежды используют разные соотношения.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://Image/nrel_clothing_sizes.png"
+			(*
+				=> nrel_format : format_png ;;
+			*);;
+		*);;
+	*);;
+
+concept_wear -> concept_rashguard;;
+concept_letter -> M;;
+
+concept_rashguard=>nrel_clothing_sizes:M;
+
+=> nrel_first_domain: concept_wear;
+=> nrel_second_domain: concept_size;
+=>nrel_definitional_domain:...
+(*
+  <= nrel_combination:... 
+    (*
+	->concept_wear;;
+	->concept_size;;
+    *);;
+*);;
+
+sc_node_not_relation->arity;;
+sc_node_not_relation->arity_2;;
+arity_2=>nrel_measurement:2;;
+arity_2->nrel_clothing_sizes;;
+arity_2<-arity;;
+number->2;;
+
+relation => nrel_inclusion: oriented_relation;;
+relation => nrel_inclusion: binary_relation;;
+binary_relation => nrel_inclusion: antireflexive_relation;;
+binary_relation => nrel_inclusion: antitransitive_relation;;
+binary_relation => nrel_inclusion: antisymmetric_relation;;
+antireflexive_relation -> nrel_clothing_sizes;;
+transitive_relation -> nrel_clothing_sizes;;
+antisymmetric_relation -> nrel_clothing_sizes;;
+binary_relation -> nrel_clothing_sizes;;
+oriented_relation -> nrel_clothing_sizes;;

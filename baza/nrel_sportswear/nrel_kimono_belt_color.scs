@@ -1,0 +1,68 @@
+nrel_kimono_belt_color
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [kimono belt color](*<-lang_en;;*);
+          [цвет пояса для кимоно](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(цвет пояса для кимоно)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Каждой ученической и мастерской степени соответствует пояс определённого цвета.](*<- lang_ru;;*);;
+			*);;
+            <= nrel_using_constants: {
+                concept_kimono_belt
+            };;
+		*);
+
+<=nrel_inclusion:concept_kimono_belt;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. 1 (О цвете пояса для кимоно)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Для присвоения ученических и мастерских степеней претенденты должны сдать экзамены.](*<- lang_ru;;*);;
+			*);;
+            <= nrel_using_constants: {
+                concept_exam
+            };;
+		*);;
+
+concept_color -> black;;
+
+concept_kimono_belt=>nrel_kimono_belt_color:black;
+
+=> nrel_first_domain: concept_kimono_belt;
+=> nrel_second_domain: concept_color;
+=>nrel_definitional_domain:...
+(*
+  <= nrel_combination:... 
+    (*
+	->concept_kimono_belt;;
+	->concept_color;;
+    *);;
+*);;
+
+sc_node_not_relation->arity;;
+sc_node_not_relation->arity_2;;
+arity_2=>nrel_measurement:2;;
+arity_2->nrel_kimono_belt_color;;
+arity_2<-arity;;
+number->2;;
+
+relation => nrel_inclusion: oriented_relation;;
+relation => nrel_inclusion: binary_relation;;
+binary_relation => nrel_inclusion: antireflexive_relation;;
+binary_relation => nrel_inclusion: antitransitive_relation;;
+binary_relation => nrel_inclusion: antisymmetric_relation;;
+antireflexive_relation -> nrel_kimono_belt_color;;
+transitive_relation -> nrel_kimono_belt_color;;
+antisymmetric_relation -> nrel_kimono_belt_color;;
+binary_relation -> nrel_kimono_belt_color;;
+oriented_relation -> nrel_kimono_belt_color;;

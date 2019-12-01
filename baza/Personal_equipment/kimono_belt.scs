@@ -1,0 +1,41 @@
+concept_kimono_belt
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [kimono belt](*<-lang_en;;*);
+          [пояс для кимоно](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(пояс для кимоно)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Пояс для кимоно - это пояс, который служит для того, чтобы удерживать кимоно запахнутым](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_personal_equipment;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. 1 (О поясе для кимоно)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Сейчас поясов по крайней мере семь (белый, жёлтый, оранжевый, зелёный, синий, тёмно-синий, коричневый).](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://Image/kimono_belt.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
