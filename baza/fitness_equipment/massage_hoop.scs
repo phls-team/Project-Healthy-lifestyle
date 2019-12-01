@@ -1,0 +1,41 @@
+massage_hoop
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [massage hoop](*<-lang_en;;*);
+          [обруч массажный](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(обруч массажный)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Спортивный снаряд кольцеобразной формы, используемый в фитнесе и гимнастике и имеющий выступы, оказывающие дополнительное влияние на косые мышцы живота](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_fitness_equipment;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(обруч массажный)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Всего за 10 минут занятий с обручем массажным его рельефная внутренняя часть делает 40 тысяч акупунктурных нажатий на проблемную зону](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://massage_hoop.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

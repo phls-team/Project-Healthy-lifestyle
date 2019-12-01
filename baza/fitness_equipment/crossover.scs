@@ -1,0 +1,41 @@
+crossover
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [crossover](*<-lang_en;;*);
+          [кроссовер](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(кроссовер)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Тренажёр кроссовер представляет собой две грузоблочные рамы, стоящие напротив друг друга и соединенные между собой сверху перемычкой](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_training_apparatus;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(кроссовер)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Конструкция кроссовера позволяет выполнять большое число упражнений для растяжения мышц, суставов, а также регулировать требуемую нагрузку](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://crossover.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

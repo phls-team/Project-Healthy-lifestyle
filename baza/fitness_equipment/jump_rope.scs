@@ -1,0 +1,41 @@
+jump_rope
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [jump rope](*<-lang_en;;*);
+          [скакалка](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(скакалка)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Спортивный снаряд для физических упражнений, состоящий из кожаного или синтетического шнура и ручек](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_fitness_equipment;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(скакалка)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Упражнения со скакалкой развивают не только выносливость и координацию, гибкость и равновесие, но и осанку](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://jump_rope.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
