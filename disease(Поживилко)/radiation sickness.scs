@@ -1,0 +1,31 @@
+
+radiation_sickness<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+[лучевая болезнь](*<-lang_ru;;*);
+[radiation sickness](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ...(*
+<- definition;;
+=> nrel_main_idtf: [Опр.(лучевая болезнь)](*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...(*
+-> rrel_example: [Лучева́я боле́знь — заболевание, возникающее в результате воздействия различных видов ионизирующих излучений и характеризующееся симптоматикой, зависящей от вида поражающего излучения, его дозы, локализации источника излучения, распределения дозы во времени и теле живого существа (например, человека).](*<-lang_ru;;*);;
+*);;
+*);
+
+<- rrel_key_sc_element: ...(*
+<- statement;;
+=> nrel_main_idtf: [Утв. 1 о лучевой болезни](*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...(*
+-> rrel_example: [У человека лучевая болезнь может быть обусловлена внешним облучением или внутренним — при попадании радиоактивных веществ в организм с вдыхаемым воздухом, через желудочно-кишечный тракт или через кожу и слизистые оболочки, а также в результате инъекции.](*<-lang_ru;;*);;
+*);;
+*);;
+/*
+radiation_sickness<- rrel_key_sc_element: ...(*
+<- illustration;;
+<=nrel_sc_text_translation: ...(*
+-> "file://radiation sickness.jpg"(*=>nrel_format: format_jpg;;*);;
+*);;
+*);;
+*/
+concept_desease=>nrel_inclusion:radiation_sickness;;

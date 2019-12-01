@@ -1,0 +1,31 @@
+
+asthma<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+[астма](*<-lang_ru;;*);
+[Asthma](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ...(*
+<- definition;;
+=> nrel_main_idtf: [Опр.(астма)](*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...(*
+-> rrel_example: [Астма — хроническое воспалительное заболевание дыхательных путей. Ключевым звеном является бронхоспазм (сужение просвета бронхов), обусловленный специфическими иммунологическими (сенсибилизация и аллергия) или неспецифическими механизмами, проявляющаяся повторяющимися эпизодами свистящих хрипов, одышки, чувства заложенности в груди и кашля. Бронхиальная обструкция обратима частично или полностью, спонтанно или под влиянием лечения. ](*<-lang_ru;;*);;
+*);;
+*);
+
+<- rrel_key_sc_element: ...(*
+<- statement;;
+=> nrel_main_idtf: [Утв. 1 об астме](*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...(*
+-> rrel_example: [По оценкам ВОЗ, 235 миллионов человек страдают от астмы.](*<-lang_ru;;*);;
+*);;
+*);;
+
+asthma<- rrel_key_sc_element: ...(*
+<- illustration;;
+<=nrel_sc_text_translation: ...(*
+-> "file://asthma.jpg"(*=>nrel_format: format_jpg;;*);;
+*);;
+*);;
+
+concept_desease=>nrel_inclusion:asthma;;

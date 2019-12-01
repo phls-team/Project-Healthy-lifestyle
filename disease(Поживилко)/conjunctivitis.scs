@@ -1,0 +1,30 @@
+conjunctivitis<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+[конъюнктивит](*<-lang_ru;;*);
+[conjunctivitis](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ...(*
+<- definition;;
+=> nrel_main_idtf: [Опр.(конъюнктивит)](*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...(*
+-> rrel_example: [Конъюнктивит — воспаление слизистой оболочки глаза, вызванное аллергической реакцией или инфекцией (вирусной, реже бактериальной). ](*<-lang_ru;;*);;
+*);;
+*);
+
+<- rrel_key_sc_element: ...(*
+<- statement;;
+=> nrel_main_idtf: [Утв. 1 о конъюнктивите](*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...(*
+-> rrel_example: [Чаще всего конъюнктивиты имеют вирусную природу, другие причины — бактерии, аллергия, раздражители и синдром сухого глаза. И вирусные, и бактериальные конъюнктивиты — заразны. Как правило, конъюнктивиты передаются от одного человека к другому при несоблюдении правил личной гигиены контактным путем.](*<-lang_ru;;*);;
+*);;
+*);;
+
+conjunctivitis<- rrel_key_sc_element: ...(*
+<- illustration;;
+<=nrel_sc_text_translation: ...(*
+-> "file://conjunctivitis.jpg"(*=>nrel_format: format_jpg;;*);;
+*);;
+*);;
+
+concept_desease=>nrel_inclusion:conjunctivitis;;

@@ -1,0 +1,31 @@
+
+myopia<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+[миопия](*<-lang_ru;;*);
+[myopia](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ...(*
+<- definition;;
+=> nrel_main_idtf: [Опр.(миопия)](*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...(*
+-> rrel_example: [Миопи́я — это дефект зрения, при котором человек вблизи видит хорошо, а вдали - плохо. Этот дефект заключается в том, что из-за аномалии рефракции изображение фокусируется не на сетчатке глаза, а перед ней.](*<-lang_ru;;*);;
+*);;
+*);
+
+<- rrel_key_sc_element: ...(*
+<- statement;;
+=> nrel_main_idtf: [Утв. 1 о миопии](*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...(*
+-> rrel_example: [Для решения проблемы миопии можно пользоваться очками или контактными линзами с отрицательными значениями оптической силы. ](*<-lang_ru;;*);;
+*);;
+*);;
+
+myopia<- rrel_key_sc_element: ...(*
+<- illustration;;
+<=nrel_sc_text_translation: ...(*
+-> "file://myopia.png"(*=>nrel_format: format_png;;*);;
+*);;
+*);;
+
+concept_desease=>nrel_inclusion:myopia;;

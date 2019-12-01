@@ -1,0 +1,30 @@
+hemophilia<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+[гемофилия](*<-lang_ru;;*);
+[hemophilia](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ...(*
+<- definition;;
+=> nrel_main_idtf: [Опр.(гемофилия)](*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...(*
+-> rrel_example: [Гемофили́я — редкое наследственное заболевание, связанное с нарушением коагуляции (процессом свёртывания крови). При этом заболевании возникают кровоизлияния в суставы, мышцы и внутренние органы, как спонтанные, так и в результате травмы или хирургического вмешательства.](*<-lang_ru;;*);;
+*);;
+*);
+
+<- rrel_key_sc_element: ...(*
+<- statement;;
+=> nrel_main_idtf: [Утв. 1 о гемофилии](*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...(*
+-> rrel_example: [Хотя болезнь на сегодняшний день неизлечима, её течение контролируется с помощью инъекций недостающего фактора свёртываемости крови, чаще всего выделенного из донорской крови. ](*<-lang_ru;;*);;
+*);;
+*);;
+/*
+hemophilia<- rrel_key_sc_element: ...(*
+<- illustration;;
+<=nrel_sc_text_translation: ...(*
+-> "file://.jpg"(*=>nrel_format: format_jpg;;*);;
+*);;
+*);;
+*/
+concept_desease=>nrel_inclusion:hemophilia;;

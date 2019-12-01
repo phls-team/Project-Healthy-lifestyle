@@ -1,0 +1,31 @@
+
+diabetes<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+[сахарный диабет](*<-lang_ru;;*);
+[diabetes](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ...(*
+<- definition;;
+=> nrel_main_idtf: [Опр.(сахарный диабет)](*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...(*
+-> rrel_example: [Са́харный диабе́т — группа эндокринных заболеваний, связанных с нарушением усвоения глюкозы и развивающихся вследствие абсолютной или относительной (нарушение взаимодействия с клетками-мишенями) недостаточности гормона инсулина, в результате чего развивается гипергликемия — стойкое увеличение содержания глюкозы в крови.](*<-lang_ru;;*);;
+*);;
+*);
+
+<- rrel_key_sc_element: ...(*
+<- statement;;
+=> nrel_main_idtf: [Утв. 1 о сахарном диабете](*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...(*
+-> rrel_example: [Кроме человека сахарному диабету подвержены также некоторые животные, например кошки и собаки.](*<-lang_ru;;*);;
+*);;
+*);;
+/*
+diabetes<- rrel_key_sc_element: ...(*
+<- illustration;;
+<=nrel_sc_text_translation: ...(*
+-> "file://glaucoma.jpg"(*=>nrel_format: format_jpg;;*);;
+*);;
+*);;
+*/
+concept_desease=>nrel_inclusion:diabetes;;

@@ -1,0 +1,31 @@
+
+flu<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+[грипп](*<-lang_ru;;*);
+[flu](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ...(*
+<- definition;;
+=> nrel_main_idtf: [Опр.(грипп)](*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...(*
+-> rrel_example: [Грипп — острое инфекционное заболевание дыхательных путей, вызываемое вирусом гриппа. Входит в группу острых респираторных вирусных инфекций (ОРВИ). Периодически распространяется в виде эпидемий и пандемий.](*<-lang_ru;;*);;
+*);;
+*);
+
+<- rrel_key_sc_element: ...(*
+<- statement;;
+=> nrel_main_idtf: [Утв. 1 о гриппе](*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...(*
+-> rrel_example: [В настоящее время выявлено более 2000 вариантов вируса гриппа, различающихся между собой антигенным спектром.](*<-lang_ru;;*);;
+*);;
+*);;
+
+flu<- rrel_key_sc_element: ...(*
+<- illustration;;
+<=nrel_sc_text_translation: ...(*
+-> "file://flu.jpg"(*=>nrel_format: format_jpg;;*);;
+*);;
+*);;
+
+concept_desease=>nrel_inclusion:flu;;

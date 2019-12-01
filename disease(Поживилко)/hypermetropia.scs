@@ -1,0 +1,30 @@
+
+hypermetropia<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+[гиперметропия](*<-lang_ru;;*);
+[hypermetropia](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ...(*
+<- definition;;
+=> nrel_main_idtf: [Опр.(гиперметропия)](*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...(*
+-> rrel_example: [Гиперметропи́я — это дефект зрения, при котором хорошо видно лишь расположенные вдали объекты, а близко расположенные объекты видно плохо. Этот дефект заключается в том, что из-за аномалии рефракции в покое аккомодации изображение фокусируется не на сетчатке глаза, а за сетчаткой. Люди, страдающие лишь возрастной гиперметропией, хорошо видят вдаль.](*<-lang_ru;;*);;
+*);;
+*);
+
+<- rrel_key_sc_element: ...(*
+<- statement;;
+=> nrel_main_idtf: [Утв. 1 о гиперметропии](*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...(*
+-> rrel_example: [Для решения проблемы с видимостью объектов вблизи, можно пользоваться очками или контактными линзами с положительными значениями оптической силы.](*<-lang_ru;;*);;
+*);;
+*);;
+hypermetropia<- rrel_key_sc_element: ...(*
+<- illustration;;
+<=nrel_sc_text_translation: ...(*
+-> "file://hypermetropia.png"(*=>nrel_format: format_png;;*);;
+*);;
+*);;
+
+concept_desease=>nrel_inclusion:hypermetropia;;
