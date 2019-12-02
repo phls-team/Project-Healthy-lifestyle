@@ -9,7 +9,9 @@ ui_menu_zoj_search_agents <- ui_user_command_class_noatom;
 	ui_menu_file_for_finding_fruit_by_variety_and_ripening_time;
 	ui_menu_file_for_finding_disease_by_symptom_and_minimal_incubation_period;
 	ui_menu_file_for_finding_disease_by_symptom_and_maximal_incubation_period;
-	ui_menu_file_for_findind_vagetables_by_birthplace_and_ripening_time
+	ui_menu_file_for_findind_vagetables_by_birthplace_and_ripening_time;
+	ui_menu_file_for_finding_vagetable_by_variety_and_ripening_time
+	
 	
 
 };

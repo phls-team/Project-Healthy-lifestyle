@@ -27,9 +27,9 @@ ui_menu_file_for_finding_fruit_by_birthplace_and_ripening_time => ui_nrel_comman
 	*];;
 
 ui_menu_file_for_finding_fruit_by_birthplace_and_ripening_time => ui_nrel_command_lang_template: 
-	[Какие виды спорта с родиной $ui_arg_1 были официально открыты в $ui_arg_2 ?] 
+	[Какие фрукты со страной произростания $ui_arg_1 соответствуют времени созревания $ui_arg_2 ?] 
 	(* <- lang_ru;; *);;
 
 ui_menu_file_for_finding_fruit_by_birthplace_and_ripening_time => ui_nrel_command_lang_template: 
-	[What sports with the homeland of $ ui_arg_1 were officially opened in $ ui_arg_2?] 
+	[What fruits with the country of $ ui_arg_1 and ripening time $ ui_arg_2?] 
 	(* <- lang_en;; *);;
