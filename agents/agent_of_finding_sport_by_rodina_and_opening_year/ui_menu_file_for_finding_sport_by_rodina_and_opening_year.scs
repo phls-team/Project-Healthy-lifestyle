@@ -1,0 +1,35 @@
+ui_menu_file_for_finding_sport_by_rodina_and_opening_year <- ui_user_command_class_atom; ui_user_command_class_view_kb; ui_one_argument_command_class;;
+
+ui_menu_file_for_finding_sport_by_rodina_and_opening_year
+=> nrel_main_idtf: 
+	[Какие виды спорта соответствуют указанной стране и году открытия?] 
+	(* <- lang_ru;; *);
+=> nrel_idtf: 
+	[Запрос всех видов спорта с указанной страной и годом открытия.] 
+	(* <- lang_ru;; *);;
+
+ui_menu_file_for_finding_sport_by_rodina_and_opening_year
+=> nrel_main_idtf: 
+	[Which sports correspond to the specified country and year of opening?] 
+	(* <- lang_en;; *);
+=> nrel_idtf: 
+	[Request all sports with the specified country and year of opening.] 
+	(* <- lang_en;; *);;
+
+ui_menu_file_for_finding_sport_by_rodina_and_opening_year => ui_nrel_command_template:
+	[*
+		action_of_finding_sport_by_rodina_and_opening_year _-> ._action_of_finding_sport_by_rodina_and_opening_year
+			(*
+			_-> rrel_1:: ui_arg_1;;	
+			_-> rrel_2:: ui_arg_2;;			
+			*);;
+		._action_of_finding_sport_by_rodina_and_opening_year _<- question;;
+	*];;
+
+ui_menu_file_for_finding_sport_by_rodina_and_opening_year => ui_nrel_command_lang_template: 
+	[Какие виды спорта с родиной $ui_arg_1 были официально открыты в $ui_arg_2 ?] 
+	(* <- lang_ru;; *);;
+
+ui_menu_file_for_finding_sport_by_rodina_and_opening_year => ui_nrel_command_lang_template: 
+	[What sports with the homeland of $ ui_arg_1 were officially opened in $ ui_arg_2?] 
+	(* <- lang_en;; *);;

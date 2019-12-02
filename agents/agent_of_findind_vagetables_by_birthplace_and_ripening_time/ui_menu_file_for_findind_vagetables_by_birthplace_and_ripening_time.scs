@@ -1,0 +1,35 @@
+ui_menu_file_for_findind_vagetables_by_birthplace_and_ripening_time <- ui_user_command_class_atom; ui_user_command_class_view_kb; ui_one_argument_command_class;;
+
+ui_menu_file_for_findind_vagetables_by_birthplace_and_ripening_time
+=> nrel_main_idtf: 
+	[Какие фрукты соответствуют стране произростания и времени созревания?] 
+	(* <- lang_ru;; *);
+=> nrel_idtf: 
+	[Запрос всех фруктов с указанной страной произростания  и временем созревания.] 
+	(* <- lang_ru;; *);;
+
+ui_menu_file_for_findind_vagetables_by_birthplace_and_ripening_time
+=> nrel_main_idtf: 
+	[Which fruits correspond to the specified country and time of ripening?] 
+	(* <- lang_en;; *);
+=> nrel_idtf: 
+	[Request all fruits with the specified country and time of ripening.] 
+	(* <- lang_en;; *);;
+
+ui_menu_file_for_findind_vagetables_by_birthplace_and_ripening_time => ui_nrel_command_template:
+	[*
+		action_of_findind_vagetables_by_birthplace_and_ripening_time _-> ._action_of_findind_vagetables_by_birthplace_and_ripening_time
+			(*
+			_-> rrel_1:: ui_arg_1;;	
+			_-> rrel_2:: ui_arg_2;;			
+			*);;
+		._action_of_findind_vagetables_by_birthplace_and_ripening_time _<- question;;
+	*];;
+
+ui_menu_file_for_findind_vagetables_by_birthplace_and_ripening_time => ui_nrel_command_lang_template: 
+	[Какие виды спорта с родиной $ui_arg_1 были официально открыты в $ui_arg_2 ?] 
+	(* <- lang_ru;; *);;
+
+ui_menu_file_for_findind_vagetables_by_birthplace_and_ripening_time => ui_nrel_command_lang_template: 
+	[What sports with the homeland of $ ui_arg_1 were officially opened in $ ui_arg_2?] 
+	(* <- lang_en;; *);;
