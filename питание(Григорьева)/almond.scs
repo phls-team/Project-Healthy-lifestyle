@@ -1,0 +1,79 @@
+
+concept_almond => nrel_main_idtf: [миндаль](*<- lang_ru;;*);;
+concept_almond => nrel_main_idtf: [almond](*<- lang_en;;*);;
+concept_almond =>nrel_calorie_content:579;;
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_almond;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Миндаль активизирует рост и обмен веществ в организме, поэтому его часто назначают для категории детей, у которых наблюдается проблема отсталости в развитии. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(миндаль)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            
+            -> concept_metabolism;;
+        *);;
+*);;
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_almond;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Миндаль не только влияет на состав крови и работу поджелудочной железы, но также очищает кишечник, предупреждая развитие запоров и нормализуя микрофлору ЖКТ.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.2(миндаль)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            -> concept_intestines;;
+           
+        *);;
+*);;
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_almond ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Наличие у миндаля мононасыщенных жиров обеспечивает своевременность обмена веществ в клетке, усиливая тем самым иммунитет и затормаживая процесс старения.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.3(миндаль)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            -> concept_immunity;;
+            -> concept_fats;;
+        *);;
+*);;
+
+concept_almond <-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(миндаль)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://almond.jpg"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+nuts=>nrel_inclusion:concept_almond;;
+concept_almond=> nrel_vitamin_B3_content:3.6mg_per_100g;;
+concept_almond=> nrel_vitamin_B2_content:1.1mg_per_100g;;
+concept_almond=> nrel_vitamin_B1_content:0.2mg_per_100g;;
+concept_almond=> nrel_vitamin_E_content:25.6mg_per_100g;;
+concept_almond=> nrel_vitamin_B5_content:0.5mg_per_100g;;
+concept_almond=> nrel_vitamin_B4_content:52.1mg_per_100g;;

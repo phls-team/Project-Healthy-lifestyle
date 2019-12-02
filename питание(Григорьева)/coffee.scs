@@ -1,0 +1,75 @@
+
+
+concept_coffee => nrel_main_idtf: [кофе](*<- lang_ru;;*);;
+concept_coffee => nrel_main_idtf: [coffee](*<- lang_en;;*);;
+
+concept_coffee=>nrel_calorie_content:2;;
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_coffee;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Кофе значительно снижает риск развития цирроза печени.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(кофе)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            
+            -> concept_cirrhosis;;
+        *);;
+*);;
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_coffee;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Систематическое употребление кофе способно улучшить чувствительность к инсулину и снизить риск развития сахарного диабета 2 типа](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.2(кофе)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            -> concept_insulin;;
+        *);;
+*);;
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_coffee;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Кофе влияет на метаболизм кальция, и его не рекомендуется употреблять лицам преклонного возраста, а также детям.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.3(кофе)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            -> concept_calcium;;
+           
+        *);;
+*);;
+
+concept_coffee<-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(кофе)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://coffee.jpg"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+concept_product=>nrel_inclusion:concept_coffee;;
+concept_coffee=> nrel_vitamin_B3_content:0.8mg_per_100g;;
+

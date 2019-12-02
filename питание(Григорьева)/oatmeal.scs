@@ -1,0 +1,81 @@
+
+concept_oatmeal => nrel_main_idtf: [овсяная каша](*<- lang_ru;;*);
+=> nrel_main_idtf: [oatmeal](*<- lang_en;;*);
+
+ =>nrel_calorie_content:71;;
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_oatmeal ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [В овсяной каше содержатся авентрамиды, которые снимают зуд и воспаления. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(воспаления)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+            
+            -> concept_inflammation;;
+        *);;
+*);;
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_oatmeal ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Овсяная каша снижает уровень сахара в крови, особенно у людей с избыточным весом и диабетом 2 типа. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(диабет)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            -> concept_diabetes;;
+            
+        *);;
+*);;
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_oatmeal;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Овсяная каша богата полифенолами и волокнами, которые снижают уровень холестерина и артериальное давление.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(давление)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            -> concept_pressure;;
+            
+        *);;
+ *);;
+
+
+concept_oatmeal <-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(овсяная каша)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://oatmeal.jpg"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+
+
+concept_product=>nrel_inclusion:concept_oatmeal;;
+concept_oatmeal=> nrel_vitamin_B3_content:0.2mg_per_100g;
+=> nrel_vitamin_B5_content:0.3mg_per_100g;
+=> nrel_vitamin_B1_content:0.1mg_per_100g;
+=> nrel_vitamin_E_content:0.1mg_per_100g;
+=> nrel_vitamin_B4_content:7.4mg_per_100g;;

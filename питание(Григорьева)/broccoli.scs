@@ -1,0 +1,80 @@
+concept_broccoli => nrel_system_idtf: [concept_broccoli](*<- lang_en;;*);;
+concept_broccoli => nrel_main_idtf: [брокколи](*<- lang_ru;;*);;
+concept_broccoli=> nrel_main_idtf: [broccoli ](*<- lang_en;;*);;
+
+concept_broccoli =>nrel_calorie_content:28;;
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_broccoli ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Сульфорафан, содержащийся в брокколи, обладает противовоспалительным эффектом
+ и способствует предотвращению развития атеросклеротических бляшек, в особенности у пациентов с сахарным диабетом 2 типа. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(брокколь)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            
+            -> concept_diabetes;;
+        *);;
+*);;
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_broccoli;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Из капусты брокколи выделили анетолтритион, способствующий снижению случаев заболевания раком прямой кишки, опухоли груди.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.2(брокколи)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+                     -> concept_disease;;
+        *);;
+*);;
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_broccoli ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Систематическое употребление брокколи в пищу предупреждает развитие атеросклероза и
+ наступление преждевременной старости (содержащиеся в ней метионин и холин препятствуют накоплению холестерина в организме).](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.3(брокколи)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            -> concept_cholesterol;;
+        *);;
+*);;
+
+concept_broccoli <-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(брокколи)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://broccoli.jpg"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+concept_product=>nrel_inclusion:concept_broccoli;;
+concept_broccoli=> nrel_vitamin_K_content:0.1mg_per_100g;;
+concept_broccoli=> nrel_vitamin_B4_content:18.7mg_per_100g;;
+concept_broccoli=> nrel_vitamin_C_content:89.2mg_per_100g;;
+concept_broccoli=> nrel_vitamin_E_content:0.8mg_per_100g;;
+concept_broccoli=> nrel_vitamin_B5_content:0.6mg_per_100g;;
+concept_broccoli=> nrel_vitamin_B9_content:0.063mg_per_100g;;

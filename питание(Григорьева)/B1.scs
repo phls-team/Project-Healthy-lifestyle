@@ -1,0 +1,12 @@
+nrel_vitamin_B1_content 
+<-sc_node_norole_relation;
+=> nrel_main_idtf:
+          [содержание витамина B1*]
+          (*<-lang_ru;;*);
+	  [vitamin B1 content*]
+          (*<-lang_en;;*);;
+parameter -> arity;;
+arity -> binary_relation;;
+binary_relation -> nrel_vitamin_B1_content;;
+binary_relation => nrel_measurement: 2;;
+number -> 2;;

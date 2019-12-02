@@ -1,0 +1,71 @@
+
+concept_champignon=> nrel_main_idtf: [шампиньоны](*<- lang_ru;;*);
+ => nrel_main_idtf: [champignon](*<- lang_en;;*);
+
+ =>nrel_calorie_content:28;;
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_champignon;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Рекомендованы блюда из шампиньонов для людей, страдающих различной степенью анемии, а также при сахарном диабете и атеросклерозе.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(шампиньоны)](*<- lang_ru;;*);;
+   
+*);;
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_champignon ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Полезные свойства шампиньонов помогают освободить организм от шлаков, поскольку грибы представляют собой отличный антиоксидант. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.2(шампиньоны)](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_champignon;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Благодаря группе витаминов B шампиньоны благотворно воздействуют на нервные клетки, приводя их в нормальное состояние.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.3(шампиньоны)](*<- lang_ru;;*);;
+
+            
+        *);;
+
+
+concept_champignon<-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(шампиньоны)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://champignon.jpg"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+
+
+concept_product=>nrel_inclusion:concept_champignon;;
+concept_champignon
+=> nrel_vitamin_B3_content:4.5mg_per_100g;
+=> nrel_vitamin_B1_content:0.1mg_per_100g;
+=> nrel_vitamin_C_content:4mg_per_100g;
+=> nrel_vitamin_B4_content:20.4mg_per_100g;
+=> nrel_vitamin_B6_content:0.1mg_per_100g;
+=> nrel_vitamin_B2_content:0.3mg_per_100g;
+=> nrel_vitamin_B5_content:2.2mg_per_100g;;
