@@ -1,0 +1,99 @@
+concept_weightlifting
+<- sc_node_not_relation;;
+concept_weightlifting=>nrel_main_idtf:[тяжёлая атлетика]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[weightlifting]
+        (*
+                <-lang_en;;
+        *);;
+concept_weightlifting=>nrel_idtf:[olympic-style weightlifting]
+        (*
+                <-lang_en;;
+        *);;
+concept_weightlifting<-rrel_key_sc_element:...
+        (*
+                <-definition;;=>nrel_main_idtf:
+[Опр.(тяжелая атлетика)]
+        (*
+                <-lang_ru;;
+        *);;
+
+<=nrel_sc_text_translation:...
+        (*
+                ->[тяжёлая атле́тика — олимпийский вид спорта, в основе которого лежит выполнение упражнений по поднятию штанги над головой.Весовые категории у мужчин и женщин разные.]
+(*
+<-lang_ru;;
+*);;
+
+        *);;
+*);;
+
+concept_weightlifting<-rrel_key_sc_element:...
+        (*
+                <-definition;;=>nrel_main_idtf:
+[Definition.(weightlifting)]
+        (*
+                <-lang_en;;
+        *);;
+
+<=nrel_sc_text_translation:...
+        (*
+                ->[weightlifting, is an athletic discipline in the modern Olympic program in which the athlete attempts a maximum-weight single lift of a barbell loaded with weight plates. ]
+(*
+<-lang_en;;
+*);;
+
+        *);;
+*);;
+concept_weightlifting<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Lasha_Talakhadze_Rio_2016.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+*);;
+*);;
+
+concept_weightlifting<-rrel_key_sc_element:...
+        (*
+
+                <-statement;;
+                =>nrel_main_idtf:[Утв.(тяжёлая атлетика)](*<-lang_ru;;*);;
+                <=nrel_sc_text_translation:...
+                (*
+                        ->rrel_example:[В тяжелой атлетике тяжелоатлеты имеют три попытки в каждом упражнении.](*<-lang_ru;;*);;
+                *);;
+        *);;
+
+concept_weightlifting<-rrel_key_sc_element:...
+        (*
+
+                <-statement;;
+                =>nrel_main_idtf:[Утв.(тяжёлая атлетика)](*<-lang_ru;;*);;
+                <=nrel_sc_text_translation:...
+                (*
+                        ->rrel_example:[Включают в себя два упражнения: рывок и толчок.](*<-lang_ru;;*);;
+                *);;
+        *);;
+
+
+concept_weightlifting<-rrel_key_sc_element:...
+        (*
+
+                <-statement;;
+                =>nrel_main_idtf:[Statement.(Olympic weightlifting)](*<-lang_en;;*);;
+                <=nrel_sc_text_translation:...
+                (*
+                        ->rrel_example:[The two competition lifts in order are the snatch and the clean and jerk. The snatch is a wide-grip, one-move lift. The clean and jerk is a close-grip, two-move lift.](*<-lang_en;;*);;
+                *);;
+        *);;
+
+concept_weightlifting<=nrel_inclusion:concept_sport;;
+concept_weightlifting<=nrel_inclusion:olimpic_sport;;
+concept_weightlifting<=nrel_inclusion:sila_sport;;

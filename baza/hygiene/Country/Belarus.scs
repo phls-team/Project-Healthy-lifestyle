@@ -1,0 +1,19 @@
+
+Belarus=>nrel_main_idtf:[Республика Беларусь]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[Rebunlic of Belarus]
+        (*
+                <-lang_en;;
+        *);
+        nrel_idtf:[Беларусь]
+        (*
+                <-lang_ru;;
+        *);
+        nrel_idtf:[Belarus]
+        (*
+                <-lang_en;;
+        *);;
+
+
