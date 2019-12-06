@@ -1,4 +1,4 @@
-concept_broccoli => nrel_system_idtf: [concept_broccoli](*<- lang_en;;*);;
+
 concept_broccoli => nrel_main_idtf: [брокколи](*<- lang_ru;;*);;
 concept_broccoli=> nrel_main_idtf: [broccoli ](*<- lang_en;;*);;
 
