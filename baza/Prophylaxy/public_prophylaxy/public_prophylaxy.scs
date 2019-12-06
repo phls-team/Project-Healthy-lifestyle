@@ -1,0 +1,37 @@
+concept_public_prophylaxy<-sc_node_not_relation;;
+
+concept_public_prophylaxy => nrel_main_idtf: [общественная профилактика](*<- lang_ru;;*);;
+concept_public_prophylaxy => nrel_main_idtf: [public_prophylaxy](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_public_prophylaxy;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Комплекс мероприятий по охране здоровья коллективов. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Общественная профилактика)](*<- lang_ru;;*);;
+*);;
+
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_public_prophylaxy;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Эффективность мер общественной профилактики во многом зависит от сознательного отношения человека к охране своего здоровья и здоровья других](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(общественная профилактика, человек, здоровье)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+	    -> concept_person;;
+            -> concept_health;;
+        *);;
+*);;
+
+
+
+concept_public_prophylaxy => nrel_inclusion:concept_occupational_health;;
+
