@@ -1,0 +1,41 @@
+concept_mouthguard
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [mouthguard](*<-lang_en;;*);
+          [капа](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(капа)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Капа - приспособление из гибкой пластмассы, надеваемое на зубы с целью защиты от спортивных травм.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_personal_equipment;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. 1 (О капе)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Во время спортивных тренировок и соревнований, а также развлекательных спортивных занятий капы надевают на зубы для предотвращения травмы.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://Image/mouthguard.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

@@ -1,0 +1,41 @@
+concept_fist_gear_for_karate
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [fist gear for karate](*<-lang_en;;*);
+          [накладки для каратэ](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(накладки для каратэ)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Накладки для каратэ - вид спортивной экипировки для кистей рук при занятиях каратэ](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_personal_equipment;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. 1 (О накладках для каратэ)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Удобная застежка накладок для каратэ дает возможность надежно зафиксировать их на руке спортсмена.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://Image/fist_gear_for_karate.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
