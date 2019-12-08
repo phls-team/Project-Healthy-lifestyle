@@ -1,0 +1,41 @@
+stops
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [stops](*<-lang_en;;*);
+          [упоры](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(упоры)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Спортивный снаряд для физических упражнений, с помощью которого можно качественно прокачивать грудные мышцы, дельты, мышцы верхней части спины, руки, пресс](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_fitness_equipment;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(упоры)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Упоры для отжиманий хорошо подойдут тем спортсменам, у которых слабые кисти рук, они снимают нежелательную нагрузку с кистей и риск получения травм во время тренировок](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://stops.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

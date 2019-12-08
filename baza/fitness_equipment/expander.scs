@@ -1,0 +1,41 @@
+expander
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [expander](*<-lang_en;;*);
+          [эспандер](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(эспандер)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Снаряд для фитнеса, упражнения с которым основаны на упругой деформации](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_fitness_equipment;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(эспандер)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Тренировки с эспандером, как правило, направлены на небольшие группы мышц и относятся к изолирующим упражнениям](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://expander.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

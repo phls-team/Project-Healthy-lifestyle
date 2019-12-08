@@ -1,0 +1,41 @@
+elliptical_trainer
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [elliptical trainer](*<-lang_en;;*);
+          [эллиптический тренажёр](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(эллиптический тренажёр)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Тренажёр, имитирующий ходьбу на лыжах](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_cardiotraining_apparatus;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(эллиптический тренажёр)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Эллиптический тренажёр не даёт ударной нагрузки на суставы, что важно людям с проблемами суставов и позвоночника.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://elliptical_trainer.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

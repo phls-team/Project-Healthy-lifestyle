@@ -1,0 +1,41 @@
+exercise_mat
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [exercise mat](*<-lang_en;;*);
+          [коврик для занятий спортом](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(коврик для занятий спортом)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Снаряд для фитнеса, который предназначен для удобства выполнения упражнений в положениях лежа и сидя](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_fitness_equipment;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(коврик для занятий спортом)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Коврик смягчяет поверхность, обеспечивает безопасность выполнения упражнений](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://exercise_mat.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

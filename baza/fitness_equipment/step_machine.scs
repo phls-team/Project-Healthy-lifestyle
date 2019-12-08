@@ -1,0 +1,41 @@
+step_machine
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [step machine](*<-lang_en;;*);
+          [степ-тренажёр](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(степ-тренажёр)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Домашний тренажёр, имеющий две педали и имитирующий ходьбу по ступеням](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_cardiotraining_apparatus;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(степ-тренажёр)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Степ-тренажёр используется как тренажёр для похудения, для подтяжки икроножных и ягодичных мышц.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://step_machine.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

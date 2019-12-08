@@ -1,0 +1,41 @@
+hammer_machine
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [hammer machine](*<-lang_en;;*);
+          [тренажёр Хаммера](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(тренажёр Хаммера)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Тренажёр, используемый для прокачки грудных мышц](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_training_apparatus;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(тренажёр Хаммера)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[При работе на тренажёре Хаммера спина должна быть четко зафиксирована, плотно прижата к спинке](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://hammer_machine.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
