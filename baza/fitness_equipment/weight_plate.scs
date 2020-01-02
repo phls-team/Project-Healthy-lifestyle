@@ -1,0 +1,41 @@
+weight_plate
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [weight plate](*<-lang_en;;*);
+          [блин](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(блин)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Металлические, чаще всего круглые диски, которые надеваются на гриф](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_power_sports_equipment;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(блин)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Блины можно сочетать в различной комплектации по массе и количеству](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://weight_plate.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

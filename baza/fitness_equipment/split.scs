@@ -1,0 +1,52 @@
+sc_node_not_relation->split;;
+sc_node_not_relation->side;;
+sc_node_not_relation->figure;;
+sc_node_not_relation->floor;;
+sc_node_not_relation->leg;;
+sc_node_not_relation->concept_gymnastics;;
+sc_node_not_relation->acrobatic_gymnastics;;
+sc_node_not_relation->arm;;
+sc_node_not_relation->press;;
+sc_node_not_relation->back;;
+sc_node_not_relation->concept_muscles;;
+sc_node_not_relation->gymnastic_exercise;;
+
+sc_node_norole_relation->nrel_skill;;
+
+split=> nrel_main_idtf: [шпагат](* <- lang_ru;; *);
+     => nrel_main_idtf: [split](* <- lang_en;; *);;
+
+definition ->...
+(*
+->rrel_key_sc_element: split;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Шпагат - это фигура в гимнастике и акробатике, при которой ноги вытягиваются в стороны  и касаются пола](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Опр. (шпагат)](*<- lang_ru;;*);;
+=> nrel_using_constants: 
+	{
+ 	side;
+ 	figure;
+ 	floor;
+ 	leg;
+	concept_gymnastics;
+ 	acrobatic_gymnastics
+	};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: split;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Шпагат укрепляет мышцы, не только мышцы ног, но и мышцы и пресса, и спины, и рук](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(шпагат)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+	{
+	leg;
+	arm;
+	press;
+	back;
+	concept_muscles
+	};;
+*);;
+
+famous_gymnast=>nrel_skill:transverse_split;;
+transverse_split<-rrel_example:split;;
+gymnastic_exercise=>nrel_inclusion:split;;

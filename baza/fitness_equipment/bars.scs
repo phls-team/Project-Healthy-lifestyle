@@ -1,0 +1,41 @@
+bars
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [bars](*<-lang_en;;*);
+          [брусья](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(брусья)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Тренажёр, представляющий собой две жерди, укрепленные на стойках](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_training_apparatus;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(брусья)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Этот тренажёр позволит прокачать практически все мышцы верхней части туловища: плечевого пояса, спины, груди, бицепс и трицепс, а также пресс](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://bars.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
