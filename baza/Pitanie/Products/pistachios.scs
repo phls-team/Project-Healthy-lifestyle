@@ -1,0 +1,81 @@
+
+concept_pistachios => nrel_main_idtf: [фисташки](*<- lang_ru;;*);;
+concept_pistachios=> nrel_main_idtf: [pistachios](*<- lang_en;;*);;
+
+concept_pistachios =>nrel_calorie_content:560;;
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_pistachios ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Фисташки – единственные орехи, которые содержат значительное количество каротиноидов, известных как лютеин и зеаксантин. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(фисташки)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            
+            -> concept_lutein;;
+        *);;
+*);;
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_pistachios;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Умеренное употребление фисташек (не более 10-15 штук в день) снизит отечность, боли в конечностях, усталость и раздражительность благодаря содержанию витаминов группы В.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.2(фисташки)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            -> concept_fatigue;;
+           
+        *);;
+*);;
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_pistachios ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержащийся в фисташках витамин В6 насыщает кровь кислородом и повышает уровень гемоглобина. Это предотвращает анемию.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.3(фисташки)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            -> concept_anemia;;
+            
+        *);;
+*);;
+
+concept_pistachios<-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(фисташки)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://pistachios.png"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);;
+
+nuts=>nrel_inclusion:concept_pistachios;;
+concept_pistachios=> nrel_vitamin_B1_content:0.9mg_per_100g;;
+concept_pistachios=> nrel_vitamin_B9_content:0.051mg_per_100g;;
+concept_pistachios=> nrel_vitamin_C_content:5.6mg_per_100g;;
+concept_pistachios=> nrel_vitamin_E_content:2.9mg_per_100g;;
+concept_pistachios=> nrel_vitamin_B5_content:0.5mg_per_100g;;
+concept_pistachios=> nrel_vitamin_B6_content:1.7mg_per_100g;;
+concept_pistachios=> nrel_vitamin_B3_content:1.3mg_per_100g;;

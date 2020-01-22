@@ -1,0 +1,80 @@
+
+concept_zucchini => nrel_main_idtf: [цукини](*<- lang_ru;;*);;
+concept_zucchini=> nrel_main_idtf: [zucchini ](*<- lang_en;;*);;
+
+concept_zucchini =>nrel_calorie_content:21;;
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_zucchini ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [В цукини содержится огромное количество пищевых волокон, которые исключительно благотворно влияют на деятельность желудочно-кишечного тракта. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(пищевые волокна)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            -> concept_alimentary_fiber;;
+        *);;
+*);;
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_zucchini;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Цукини выводят желчь и обладают мочегонным действием, что полезно для тех, кто страдает мочекаменной болезнью.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(желчь)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            -> concept_bile;;
+            -> concept_disease;;
+        *);;
+*);;
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_zucchini ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Цукини помогает улучшить работу печени и активно участвует в детоксикации организма — благодаря антиоксидантным свойствам из организма выводятся токсины и свободные радикалы, снимаются воспалительные процессы.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(детоксикация)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            -> concept_detoxification;;
+       
+        *);;
+*);;
+
+concept_zucchini <-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(цукини)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://zucchini.jpg"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+
+concept_product=>nrel_inclusion:concept_zucchini;;
+concept_zucchini=> nrel_vitamin_B3_content:0.71mg_per_100g;;
+concept_zucchini=> nrel_vitamin_B1_content:0.04mg_per_100g;;
+concept_zucchini=> nrel_vitamin_C_content:34.1mg_per_100g;;
+concept_zucchini=> nrel_vitamin_A_content:0.025mg_per_100g;;
+concept_zucchini=> nrel_vitamin_B5_content:0.37mg_per_100g;;
+concept_zucchini=> nrel_vitamin_B9_content:0.02mg_per_100g;;

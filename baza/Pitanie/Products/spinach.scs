@@ -1,0 +1,80 @@
+
+concept_spinach => nrel_main_idtf: [шпинат](*<- lang_ru;;*);;
+concept_spinach=> nrel_main_idtf: [spinach](*<- lang_en;;*);;
+
+concept_spinach =>nrel_calorie_content:23;;
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_spinach ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Шпинат способен замедлять образование раковых клеток, поскольку он защищает от повреждения клетки ДНК и ограничивает окислительный стресс при наличии таких антиоксидантов, как неоксантин и виолаксантин.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(раковые клетки)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            
+            -> concept_cancer_cells;;
+        *);;
+*);;
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_spinach;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Шпинат в изобилии содержит антиоксиданты лютеин и зеаксантин, которые защищают глаза от возникновения катаракты и возрастной макулярной дегенерации.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(глаза)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            -> concept_eyes;;
+        *);;
+*);;
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_spinach;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Шпинат богат витамином К, который жизненно необходим для поддержания целостности костей.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(кости)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            -> concept_bones;;
+        *);;
+*);;
+
+concept_spinach <-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(шпинат)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://spinach.jpg"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+concept_spinach=>nrel_vitamin_A_content:0.47mg_per_100g;;
+concept_spinach=> nrel_vitamin_B9_content:0.19mg_per_100g;;
+concept_spinach=>nrel_vitamin_C_content:28.1mg_per_100g;;
+concept_spinach=> nrel_vitamin_E_content:2mg_per_100g;;
+concept_spinach=> nrel_vitamin_B4_content:19.3mg_per_100g;;
+concept_spinach=> nrel_vitamin_B6_content:0.2mg_per_100g;;
+concept_spinach=> nrel_vitamin_B3_content:0.7mg_per_100g;;
+concept_spinach=> nrel_vitamin_K_content:0.48mg_per_100g;;
+concept_product=>nrel_inclusion:concept_spinach;;

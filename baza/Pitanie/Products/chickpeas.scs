@@ -1,0 +1,71 @@
+
+concept_chickpeas => nrel_main_idtf: [нут](*<- lang_ru;;*);
+ => nrel_main_idtf: [chickpeas](*<- lang_en;;*);
+
+ =>nrel_calorie_content:164;;
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_chickpeas;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Нут содержит селен и марганец, что делает продукт незаменимым компонентом для питания людей после инсультов, перенесенных заболеваний, стрессов.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(нут)](*<- lang_ru;;*);;
+   
+*);;
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_chickpeas ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Нерастворимая клетчатка нута дает быстрое насыщение и препятствует перееданию. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.2(нут)](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_chickpeas;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [В нуте содержится метионин, натуральный гепатопротектор, улучшающий работу печени и состояние сосудов](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.3(нут)](*<- lang_ru;;*);;
+
+            
+        *);;
+
+
+concept_chickpeas<-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(нут)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://chickpeas.jpg"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+
+
+concept_product=>nrel_inclusion:concept_chickpeas;;
+concept_chickpeas
+=> nrel_vitamin_B3_content:0.5mg_per_100g;
+=> nrel_vitamin_K_content:4mg_per_100g;
+=> nrel_vitamin_C_content:1.3mg_per_100g;
+=> nrel_vitamin_B4_content:42.8mg_per_100g;
+=> nrel_vitamin_E_content:0.4mg_per_100g;
+=> nrel_vitamin_B2_content:0.1mg_per_100g;
+=> nrel_vitamin_B5_content:0.3mg_per_100g;;

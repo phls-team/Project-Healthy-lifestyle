@@ -1,0 +1,79 @@
+
+concept_cashew => nrel_main_idtf: [кешью](*<- lang_ru;;*);;
+concept_cashew=> nrel_main_idtf: [cashew](*<- lang_en;;*);;
+
+concept_cashew =>nrel_calorie_content:553;;
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_cashew ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Кешью улучшают состояние при заболеваниях кожи, развившихся из-за нарушения обмена веществ.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(кешью)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            
+            -> concept_skin;;
+        *);;
+*);;
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_cashew;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Кешью борется с холестериновыми бляшками на сосудах, регулирует уровень просвета сосудов.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.2(кешью)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            -> concept_vessels;;
+        *);;
+*);;
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_cashew ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Японские ученые установили, что в орехах присутствуют вещества, которые уничтожают бактерии, разрушающие эмаль зубов.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.3(кешью)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            -> concept_teeth;;
+        *);;
+*);;
+
+concept_cashew<-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(кешью)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://cashew.jpg"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+nuts=>nrel_inclusion:concept_cashew;;
+concept_cashew=> nrel_vitamin_B1_content:0.4mg_per_100g;;
+concept_cashew=> nrel_vitamin_B9_content:0.025mg_per_100g;;
+concept_cashew=> nrel_vitamin_C_content:0.5mg_per_100g;;
+concept_cashew=> nrel_vitamin_E_content:0.9mg_per_100g;;
+concept_cashew=> nrel_vitamin_B5_content:0.9mg_per_100g;;
+concept_cashew=> nrel_vitamin_B6_content:0.4mg_per_100g;;
+concept_cashew=> nrel_vitamin_B3_content:1.1mg_per_100g;;
+concept_cashew=> nrel_vitamin_K_content:0.034mg_per_100g;;

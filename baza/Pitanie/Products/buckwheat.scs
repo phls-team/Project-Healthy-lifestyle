@@ -1,0 +1,79 @@
+
+concept_buckwheat => nrel_main_idtf: [гречневая каша](*<- lang_ru;;*);;
+concept_buckwheat => nrel_main_idtf: [buckwheat ](*<- lang_en;;*);;
+
+concept_buckwheat =>nrel_calorie_content:92;;
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_buckwheat ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Гречка, благодаря магнию, является природным средством для защиты от развития астмы.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(гречневая каша)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*     
+            -> concept_asthma;;
+        *);;
+*);;
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_buckwheat ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Гречка устраняет синдром раздражённого кишечника, выводит избыток газов и избавляет от диареи.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.2(греневая каша)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            -> concept_diarrhea;;
+            
+        *);;
+*);;
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_buckwheat ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Гречневая крупа способна оказывать детоксикационное действие на организм,
+ укреплять стенки кровеносных сосудов, повышать уровень нейромедиатора допамина, способного предотвратить развитие депрессии.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.3(гречневая каша)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            -> concept_depression;;
+            
+        *);;
+*);;
+
+concept_buckwheat <-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(гречневая каша)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://buckwheat.jpg"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+concept_product=>nrel_inclusion:concept_buckwheat;;
+concept_buckwheat=> nrel_vitamin_B2_content:0.039mg_per_100g;;
+concept_buckwheat=> nrel_vitamin_B9_content:0.014mg_per_100g;;
+concept_buckwheat=> nrel_vitamin_B3_content:0.94mg_per_100g;;
+concept_buckwheat=> nrel_vitamin_B1_content:0.04mg_per_100g;;
+concept_buckwheat=> nrel_vitamin_B6_content:0.077mg_per_100g;;
+
