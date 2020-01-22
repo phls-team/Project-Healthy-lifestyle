@@ -1,0 +1,33 @@
+concept_survey<-sc_node_not_relation;;
+concept_survey => nrel_main_idtf: [обследование](*<- lang_ru;;*);;
+concept_survey => nrel_main_idtf: [survey](*<- lang_en;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_survey;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Обследование - это исследование состояния здоровья и физического развития граждан в целях установления диагноза, осуществляемое в государственных организациях здравоохранения.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Обследование)](*<- lang_ru;;*);;
+*);;
+
+
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_survey;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Результаты обследования – это индивидуальные рекомендации по ведению здорового образа жизни и назначение лечения с учетом выявленных нарушений.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(обследование, здоровый образ жизни, лечение)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+            -> healthy_style_of_life;;
+            -> nrel_healing;;
+        *);;
+*);;
+
+

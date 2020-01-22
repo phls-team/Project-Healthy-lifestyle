@@ -1,0 +1,75 @@
+concept_hygiene<-sc_node_not_relation;;
+
+concept_hygiene => nrel_main_idtf: [гигиена](*<- lang_ru;;*);;
+concept_hygiene => nrel_main_idtf: [hygiene](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_hygiene;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Гигиена - профилактика заболеваний всего организма, направленная на поддержание и повышение иммунитета.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Гигиена)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+	    -> concept_disease;;
+            ->concept_organism;;
+        *);;
+*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_hygiene;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Гигиена - это поведение человека, направленное на гигиеническое содержание тела (кожи, волос, ногтей, зубов), обуви и одежды, жилища, закаливание организма.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Гигиена)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+	    -> concept_hardening;;
+            ->concept_organism;;
+        *);;
+*);;
+
+
+
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_hygiene;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Регулярная правильная гигиена обеспечивает здоровье организма.](*<- lang_ru;;*);;
+            => nrel_using_constants:concept_health;;
+
+        *);;
+    => nrel_main_idtf: [Утв.(гигиена,здоровье)](*<- lang_ru;;*);;
+*);;
+
+
+concept_hygiene->rrel_example:[Мытье рук один из самых эффективных методов индивидуальной гигиены];;
+
+
+
+concept_hygiene<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://hygiene.png"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;
+
+
+
+
+
