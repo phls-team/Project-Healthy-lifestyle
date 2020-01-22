@@ -1,0 +1,31 @@
+
+schizophrenia<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+[шизофрения](*<-lang_ru;;*);
+[schizophrenia](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ...(*
+<- definition;;
+=> nrel_main_idtf: [Опр.(шизофрения)](*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...(*
+-> rrel_example: [Шизофрени́я — эндогенное полиморфное психическое расстройство (или группа психических расстройств), характеризующееся распадом процессов мышления и эмоциональных реакций.](*<-lang_ru;;*);;
+*);;
+*);
+
+<- rrel_key_sc_element: ...(*
+<- statement;;
+=> nrel_main_idtf: [Утв. 1 о шизофрении](*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...(*
+-> rrel_example: [Многообразие симптоматики породило дебаты о том, является ли шизофрения единым заболеванием или представляет собой диагноз, за которым кроется ряд отдельных синдромов. Эта неоднозначность была отражена при выборе названия: Блейлер использовал множественное число, именуя болезнь шизофрениями.](*<-lang_ru;;*);;
+*);;
+*);;
+/*
+schizophrenia<- rrel_key_sc_element: ...(*
+<- illustration;;
+<=nrel_sc_text_translation: ...(*
+-> "file://schizophrenia.jpg"(*=>nrel_format: format_jpg;;*);;
+*);;
+*);;
+*/
+concept_desease=>nrel_inclusion:schizophrenia;;

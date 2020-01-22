@@ -1,0 +1,30 @@
+anemia<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+[анемия](*<-lang_ru;;*);
+[anemia](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ...(*
+<- definition;;
+=> nrel_main_idtf: [Опр.(анемия)](*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...(*
+-> rrel_example: [Анеми́я — состояние, для которого характерно уменьшение количества эритроцитов и снижение содержания гемоглобина в единице объема крови.  ](*<-lang_ru;;*);;
+*);;
+*);
+
+<- rrel_key_sc_element: ...(*
+<- statement;;
+=> nrel_main_idtf: [Утв. 1 об анемии](*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...(*
+-> rrel_example: [Снижение концентрации гемоглобина в крови часто происходит при одновременном уменьшении количества эритроцитов и изменении их качественного состава. Любая анемия приводит к снижению дыхательной функции крови и развитию кислородного голодания тканей. В зависимости от пола и возраста норма показателя содержания гемоглобина в литре крови может отличаться.](*<-lang_ru;;*);;
+*);;
+*);;
+
+anemia<- rrel_key_sc_element: ...(*
+<- illustration;;
+<=nrel_sc_text_translation: ...(*
+-> "file://anemia.jpg"(*=>nrel_format: format_jpg;;*);;
+*);;
+*);;
+
+concept_desease=>nrel_inclusion:anemia;;

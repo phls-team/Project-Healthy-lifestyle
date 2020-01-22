@@ -1,0 +1,31 @@
+
+cataract<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+[катаракта](*<-lang_ru;;*);
+[сataract](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ...(*
+<- definition;;
+=> nrel_main_idtf: [Опр.(катаракта)](*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...(*
+-> rrel_example: [Катара́кта — патологическое состояние, связанное с помутнением хрусталика глаза и вызывающее различные степени расстройства зрения вплоть до полной его утраты. Помутнение хрусталика обусловлено денатурацией белка, входящего в его состав.](*<-lang_ru;;*);;
+*);;
+*);
+
+<- rrel_key_sc_element: ...(*
+<- statement;;
+=> nrel_main_idtf: [Утв. 1 о катаркте](*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...(*
+-> rrel_example: [Существует много причин, способствующих развитию катаракты. К ним относятся: пожилой возраст, неблагоприятные воздействия окружающей среды, генетическая предрасположенность, приём некоторых лекарственных средств, сопутствующие общие заболевания, заболевания или травмы глаз ](*<-lang_ru;;*);;
+*);;
+*);;
+
+cataract<- rrel_key_sc_element: ...(*
+<- illustration;;
+<=nrel_sc_text_translation: ...(*
+-> "file://cataract.jpg"(*=>nrel_format: format_jpg;;*);;
+*);;
+*);;
+
+concept_desease=>nrel_inclusion:cataract;;

@@ -1,0 +1,31 @@
+
+glaucoma<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+[глаукома](*<-lang_ru;;*);
+[glaucoma](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ...(*
+<- definition;;
+=> nrel_main_idtf: [Опр.(глаукома)](*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...(*
+-> rrel_example: [Глауко́ма — большая группа глазных заболеваний, характеризующаяся постоянным или периодическим повышением внутриглазного давления выше приемлемого для данного человека уровня с последующим развитием типичных дефектов поля зрения, снижением остроты зрения и атрофией зрительного нерва.](*<-lang_ru;;*);;
+*);;
+*);
+
+<- rrel_key_sc_element: ...(*
+<- statement;;
+=> nrel_main_idtf: [Утв. 1 о глаукоме](*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...(*
+-> rrel_example: [Повышенное внутриглазное давление приводит к потере зрения в пораженном глазу и ведёт к слепоте, если его не лечить. Лечение способно лишь приостановить или замедлить потерю зрения. Это, как правило, связано с повышенным давлением жидкости в глазу.](*<-lang_ru;;*);;
+*);;
+*);;
+
+glaucoma<- rrel_key_sc_element: ...(*
+<- illustration;;
+<=nrel_sc_text_translation: ...(*
+-> "file://glaucoma.jpg"(*=>nrel_format: format_jpg;;*);;
+*);;
+*);;
+
+concept_desease=>nrel_inclusion:glaucoma;;

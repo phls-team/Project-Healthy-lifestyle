@@ -1,0 +1,31 @@
+
+pneumonia<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+[пневмония](*<-lang_ru;;*);
+[pneumonia](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ...(*
+<- definition;;
+=> nrel_main_idtf: [Опр.(пневмония)](*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...(*
+-> rrel_example: [Пневмони́я — воспаление лёгочной ткани, как правило, инфекционного происхождения с преимущественным поражением альвеол (развитием в них воспалительной экссудации) и интерстициальной ткани лёгкого.](*<-lang_ru;;*);;
+*);;
+*);
+
+<- rrel_key_sc_element: ...(*
+<- statement;;
+=> nrel_main_idtf: [Утв. 1 о пневмонии](*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...(*
+-> rrel_example: [Во всём мире пневмонией заболевают около 17 миллионов человек в год, около 265 тысяч случаев заканчиваются смертельным исходом. От пневмонии умирает каждый 64 заболевший этой опасной болезнью. В добавление к этому, пневмония даёт опасные осложнения различным органам заболевшего человека.](*<-lang_ru;;*);;
+*);;
+*);;
+
+pneumonia<- rrel_key_sc_element: ...(*
+<- illustration;;
+<=nrel_sc_text_translation: ...(*
+-> "file://pneumonia.png"(*=>nrel_format: format_png;;*);;
+*);;
+*);;
+
+concept_desease=>nrel_inclusion:pneumonia;;
