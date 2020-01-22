@@ -1,0 +1,41 @@
+concept_t_shirt
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [t-shirt](*<-lang_en;;*);
+          [футблока](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(футболка)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Футболка — предмет нательной одежды для обоих полов, обычно не имеющий пуговиц, воротника и карманов, с короткими либо длинными рукавами, закрывающий туловище, часть рук и верх бёдер, надевается через голову.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_sportswear;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. 1 (О футболках)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Футболки делятся на два типа в зависимости от того, к какой категории белья они относятся — нижние](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://Image/t-shirt.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

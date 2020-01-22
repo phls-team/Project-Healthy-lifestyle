@@ -1,0 +1,41 @@
+concept_athletic_belt
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [athletic belt](*<-lang_en;;*);
+          [атлетический пояс](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(атлетический пояс)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Атлетический пояс — высокоэффективный аксессуар, важная часть спортивного снаряжения тяжелоатлета и пауэрлифтёра.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_personal_equipment;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. 1 (Об атлетическом поясе)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Назначение атлетического пояса в том, чтобы поддерживать брюшное давление. Тем самым крепится ремень в центре брюшного пояса. Это позволяет фиксировать позвоночник в вертикальном положении и избегать травм, связанных с высокими нагрузками.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://Image/athletic_belt.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

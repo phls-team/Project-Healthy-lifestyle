@@ -1,0 +1,41 @@
+concept_jockstrap
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [jockstrap](*<-lang_en;;*);
+          [ракушка](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(ракушка)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Ракушка - элемент защиты паховой области (главным образом половых органов) от различных травм.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_personal_equipment;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. 1 (О ракушке)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[В зависимости от конструкции закрепляется с помощью специальных ремешков или встраивается в специальные трусы, надеваемые под защитные шорты.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://Image/jockstrap.png"
+			(*
+				=> nrel_format : format_png ;;
+			*);;
+		*);;
+	*);;

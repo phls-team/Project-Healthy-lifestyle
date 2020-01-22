@@ -1,0 +1,57 @@
+lab4_2_microcycle=[*
+sc_node_not_relation->microcycle;;
+sc_node_not_relation->cycle;;
+sc_node_not_relation->training_sessions;;
+sc_node_not_relation->training;;
+sc_node_not_relation->session;;
+sc_node_not_relation->recovery_phase;;
+sc_node_not_relation->stimulation_phase;;
+sc_node_not_relation->preparetion_period;;
+
+microcycle=> nrel_main_idtf: [микроцикл](* <- lang_ru;; *);;
+microcycle=> nrel_main_idtf: [microcycle](* <- lang_en;; *);;
+
+definition ->...
+(*
+->rrel_key_sc_element: microcycle;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Микроцикл - это самый короткий тренировочный цикл.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (Микроцикл)](*<- lang_ru;;*);;
+=> nrel_using_constants: ...
+(* 
+ ->cycle;;
+ ->training_sessions;;
+*);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: microcycle;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Микроцикл — это малый цикл тренировки, чаще всего с не­дельной или околонедельной продолжительностью, включающий обычно от двух до нескольких занятий.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утв. 1 О микроцикле](*<- lang_ru;;*);;
+=> nrel_using_constants: ...
+(* 
+->cycle;;
+->training;;
+->session;;
+*);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: microcycle;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Микроцикл состоит из стимуляционной и восстановительной фаз, причем в подготовительном периоде длительность стимуляционной фазы должна значительно превышать длительность восстановительной фазы.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утв. 2 О микроцикле](*<- lang_ru;;*);;
+=> nrel_using_constants: ...
+(* 
+->recovery_phase;;
+->stimulation_phase;;
+->preparetion_period;;
+*);;
+*);;
+
+microcycle->rrel_example: explosive_force_development_mycrocycle;;
+cycle=>nrel_inclusion:microcycle;;
+
+*];;
+
+

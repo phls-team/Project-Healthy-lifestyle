@@ -1,0 +1,41 @@
+concept_sneakers
+
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [sneakers](*<-lang_en;;*);
+          [кроссовки](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(кроссовки)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Кроссовки — спортивная обувь.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_personal_equipment;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. 1 (О кроссовках)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Усилия разработчиков направлены на снижение веса кроссовок, разработку новых концепций удобства обуви, отход от традиционного построения: подметка+подошва+верх, использование новейших материалов и систем шнуровки, постоянное совершенствование производства.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://Image/sneakers.png"
+			(*
+				=> nrel_format : format_png ;;
+			*);;
+		*);;
+	*);;

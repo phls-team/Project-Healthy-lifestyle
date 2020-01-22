@@ -1,0 +1,41 @@
+concept_leggings
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [leggings](*<-lang_en;;*);
+          [леггинсы](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(леггинсы)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Леггинсы - изделия чулочно-носочной группы, которые можно также носить в сочетании с платьем или юбкой.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_sportswear;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. 1 (О леггинсах)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Существуют как мужские, так и женские спортивные леггинсы для бега, гимнастики, акробатики и других видов спорта.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://Image/leggings.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

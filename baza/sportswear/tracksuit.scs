@@ -1,0 +1,41 @@
+concept_tracksuit
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [tracksuit](*<-lang_en;;*);
+          [cпортивный костюм](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(cпортивный костюм)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Спортивный костюм - это предмет гардероба, состоящий из двух частей: штаны и куртка, как правило, с передней застежкой-молнией.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_sportswear;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. 1 (О cпортивном костюме)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Изначально предназначался для использования в спорте, в основном, как одежда поверх основного спортивного костюма для соревнований (купальник, шорты и майка для бегуна и т.д.) и снимался перед соревнованиями.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://Image/tracksuit.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
