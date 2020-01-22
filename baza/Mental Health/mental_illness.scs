@@ -1,0 +1,32 @@
+mental_illness
+
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+[Психическое Расстройство](*<-lang_ru;;*);
+[Mental Disorder](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(Психическое Расстройство)](*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        -> rrel_example: [Психи́ческое расстро́йство (мента́льное расстро́йство, психи́ческое заболева́ние, душе́вная боле́знь; в некоторых авторитетных источниках, в частности в МКБ-10, утверждается, что это не вполне синонимы) — в широком смысле состояние психики, отличное от нормального, здорового.](*<-lang_ru;;*);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...(*
+    <- statement;;
+    => nrel_main_idtf: [Утв. 1 о психическом расстройстве](*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        -> rrel_example: [Противоположностью психического расстройства является психическое здоровье.](*<-lang_ru;;*);;
+    *);;
+*);;
+/*
+<- rrel_key_sc_element: ...(*
+    <- illustration;;
+    <=nrel_sc_text_translation: ...(*
+        -> "file://mental_illness.jpg"(*=>nrel_format: format_jpg;;*);;
+    *);;
+*);;
+*/
+mental_illness -> rrel_example: depression;;

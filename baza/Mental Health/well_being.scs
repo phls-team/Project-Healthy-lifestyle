@@ -1,0 +1,33 @@
+well_being
+
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+[Благополучие](*<-lang_ru;;*);
+[Well-being](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(Благополучие)](*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        -> rrel_example: [Благополучие - состояние человека или объективная ситуация, когда у человека есть все то, что благоприятно характеризует его жизнь в глазах окружающих, его близких и его самого. ](*<-lang_ru;;*);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...(*
+    <- statement;;
+    => nrel_main_idtf: [Утв. 1 о Благополучии](*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        -> rrel_example: [Душевное благополучие связано с такими личными особенностями, как уверенность в себе, адекватная самооценка, позитивный взгляд на жизнь, доброжелательность, общительность, эмоциональная стабильность.](*<-lang_ru;;*);;
+    *);;
+*);;
+/*
+<- rrel_key_sc_element: ...(*
+    <- illustration;;
+    <=nrel_sc_text_translation: ...(*
+        -> "file://well_being.jpg"(*=>nrel_format: format_jpg;;*);;
+    *);;
+*);;
+
+well_being -> rrel_example: ;;
+*/

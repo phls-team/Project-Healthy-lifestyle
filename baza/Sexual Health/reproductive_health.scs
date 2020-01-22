@@ -1,0 +1,33 @@
+reproductive_health
+
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+[Репродуктивное здоровье](*<-lang_ru;;*);
+[Reproductive Health](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(Репродуктивное здоровье)](*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        -> rrel_example: [Репродуктивное здоровье — состояние полного физического, умственного и социального благополучия в производстве потомства и психосексуальных отношениях в семье.](*<-lang_ru;;*);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...(*
+    <- statement;;
+    => nrel_main_idtf: [Утв. 1 о Репродуктивном здоровье](*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        -> rrel_example: [Основным проявлением функциональной целостности репродуктивной системы семейной пары является наступление беременности в желаемый срок, ее нормальное физическое течение и рождение здорового ребенка.](*<-lang_ru;;*);;
+    *);;
+*);;
+/*
+<- rrel_key_sc_element: ...(*
+    <- illustration;;
+    <=nrel_sc_text_translation: ...(*
+        -> "file://reproductive_health.jpg"(*=>nrel_format: format_jpg;;*);;
+    *);;
+*);;
+
+reproductive_health -> rrel_example: ;;
+*/

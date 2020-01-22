@@ -1,0 +1,33 @@
+human_sexual_activity
+
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+[Сексуальное поведение человека](*<-lang_ru;;*);
+[Human Sexual Activity](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(Сексуальное поведение человека)](*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        -> rrel_example: [Сексуальное или половое поведение человека (от лат. sexus «пол») — совокупность психических реакций, установок и поступков, связанных с проявлением и удовлетворением полового влечения человека.](*<-lang_ru;;*);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...(*
+    <- statement;;
+    => nrel_main_idtf: [Утв. 1 о Сексуальном поведении человека](*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        -> rrel_example: [Сексуальное поведение является одной из форм взаимодействия индивидов и представляет собой практическую реализацию сексуальности человека, являясь одним из вариантов социального поведения.](*<-lang_ru;;*);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...(*
+    <- illustration;;
+    <=nrel_sc_text_translation: ...(*
+        -> "file://images/human_sexual_activity.jpg"(*=>nrel_format: format_jpg;;*);;
+    *);;
+*);;
+/*
+human_sexual_activity -> rrel_example: ;;
+*/
