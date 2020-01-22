@@ -1,0 +1,48 @@
+hypertension=>nrel_main_idtf:[артериальная гипертензия]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[hypertension]
+        (*
+                <-lang_en;;
+        *);;
+        definition ->...
+        (*
+        ->rrel_key_sc_element:hypertension;;
+        <= nrel_sc_text_translation: ...(*->rrel_example:[Артериальная гипертензия (гипертония, АГ) - состояние, при котором артериальное давление равно или превышает 140 мм рт.ст. (в результате как минимум трех измерений, произведенных в различное время на фоне спокойной обстановки; при этом нельзя принимать лекарств, как повышающих, так и понижающих давление).](*<-lang_ru;;*);;*);;
+        => nrel_main_idtf: [Опр.(артериальная гипертензия)](*<-lang_ru;;*);;
+*);;
+
+hypertension<-rrel_key_sc_element:...
+        (*
+
+                <-statement;;
+                =>nrel_main_idtf:[Утв.(артериальная гипертензия)](*<-lang_ru;;*);;
+                <=nrel_sc_text_translation:...
+                (*
+                        ->rrel_example:[Может быть вторичной или симптоматической.](*<-lang_ru;;*);;
+                *);;
+        *);;
+
+hypertension<-rrel_key_sc_element:...
+        (*
+
+                <-statement;;
+                =>nrel_main_idtf:[Утв.(артериальная гипертензия)](*<-lang_ru;;*);;
+                <=nrel_sc_text_translation:...
+                (*
+                        ->rrel_example:[Артериальной гипертензией страдает 30-45% взрослого населения. До 50-летнего возраста заболевание чаще наблюдается у мужчин, после 50 лет – у женщин.](*<-lang_ru;;*);;
+                *);;
+        *);;
+
+hypertension<-rrel_key_sc_element:...
+        (*
+
+                <-statement;;
+                =>nrel_main_idtf:[Утв.(артериальная гипертензия)](*<-lang_ru;;*);;
+                <=nrel_sc_text_translation:...
+                (*
+                        ->rrel_example:[Основные сиптомы артериальной гипертензии-головная боль,головокружение,нарушение зрения,мурашек,шум в ушах,сердцебиение,одышка.](*<-lang_ru;;*);;
+                *);;
+        *);;
+hypertension<=nrel_inclusion:concept_desease;;

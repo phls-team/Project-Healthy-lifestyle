@@ -1,0 +1,59 @@
+concept_live_activity<-sc_node_not_relation;;
+
+concept_live_activity=>nrel_main_idtf:[жизнедеятельность]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[live activity]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_live_activity<-rrel_key_sc_element:...
+        (*
+                <-definition;;=>nrel_main_idtf:
+[Опр.(жизнидеятельность)]
+        (*
+                <-lang_ru;;
+        *);;
+
+<=nrel_sc_text_translation:...
+        (*
+                ->[совокупность процессов, протекающих в живом организме, служащих поддержанию в нём жизни и являющихся проявлениями жизни. ]
+(*
+<-lang_ru;;
+*);;
+
+        *);;
+*);;
+
+concept_live_activity<-rrel_key_sc_element:...
+        (*
+                <-definition;;=>nrel_main_idtf:
+[Опр.(жизнидеятельность человека)]
+        (*
+                <-lang_ru;;
+        *);;
+
+<=nrel_sc_text_translation:...
+        (*
+                ->[Жизнедеятельность человека — это способ его существования, и нормальная повседневная деятельность и отдых. Жизнедеятельность протекает в постоянном контакте со средой обитания. ]
+(*
+<-lang_ru;;
+*);;
+
+        *);;
+*);;
+
+concept_live_activity<-rrel_key_sc_element:...
+        (*
+
+                <-statement;;
+                =>nrel_main_idtf:[Утв.(жизнидеятельность)](*<-lang_ru;;*);;
+                <=nrel_sc_text_translation:...
+                (*
+                        ->rrel_example:[Жизнедеятельность организма поддерживается биологическими процессами, составленными из некоторого числа химических, физико-химических и электро-химических реакций, обуславливающих трансформацию их элементов. ](*<-lang_ru;;*);;
+                *);;
+        *);;
+
+

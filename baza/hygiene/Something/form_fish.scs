@@ -1,0 +1,8 @@
+fish_body_shape=>nrel_main_idtf:[форма рыбы]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[fish_body_shape]
+        (*
+                <-lang_en;;
+        *);;

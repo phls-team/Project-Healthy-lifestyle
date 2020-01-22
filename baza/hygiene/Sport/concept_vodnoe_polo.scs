@@ -1,0 +1,125 @@
+concept_water_polo
+<- sc_node_not_relation;;
+concept_water_polo=>nrel_main_idtf:[водное поло]
+	(*
+		<-lang_ru;;
+	*);
+nrel_main_idtf:[water polo]
+	(*
+		<-lang_en;;
+	*);;
+
+concept_water_polo<-rrel_key_sc_element:...
+	(*
+		<-definition;;=>nrel_main_idtf:
+[Опр.(водное поло)] 
+	(* 
+		<-lang_ru;;
+	*);;
+	
+<=nrel_sc_text_translation:...
+	(*
+                ->[водное поло — командный водный олимпийский вид спорта, целью в котором является забросить мяч в ворота соперника большее число раз, чем это сделает оппонент в установленное время. Игра проходит в воде, а мяч держат и забрасывают в ворота одной рукой.]
+(* 
+<-lang_ru;; 
+*);;
+=> nrel_using_constants:
+        {
+        concept_sport;
+	team_sport;
+	olimpic_sport;
+        water_sport;
+        concept_water_polo
+        };;
+	
+	*);;
+*);;
+
+concept_water_polo<-rrel_key_sc_element:...
+	(*
+		<-definition;;=>nrel_main_idtf:
+[Definition.(water polo)] 
+	(* 
+		<-lang_en;;
+	*);;
+	
+<=nrel_sc_text_translation:...
+	(*
+                ->[water polo is a competitive team sport played in the water between two teams. The game consists of four quarters in which the two teams attempt to score goals by throwing the ball into the opposing team's goal. The team with the most goals at the end of the game wins the match. Each team is made up of six field players and one goalkeeper. ]
+(* 
+<-lang_en;; 
+*);;
+=> nrel_using_constants:
+        {
+        concept_sport;
+	team_sport;
+	olimpic_sport;
+        water_sport;
+        concept_water_polo
+        };;
+	
+	*);;
+*);;
+
+concept_water_polo<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://RIAN_archive_8772_Hungary_vs_Holland_water_polo_match.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;
+
+concept_water_polo<-rrel_key_sc_element:...
+        (*
+
+                <-statement;;
+                =>nrel_main_idtf:[Утв.(Водное поло)](*<-lang_ru;;*);;
+                <=nrel_sc_text_translation:...
+                (*
+                        ->rrel_example:[Водное поло может проходить как в естественных водоёмах, так и в бассейнах. ](*<-lang_ru;;*);;
+                *);;
+        *);;
+
+
+concept_water_polo<-rrel_key_sc_element:...
+	(*
+		
+		<-statement;;
+		=>nrel_main_idtf:[Утв.(Водное поло)](*<-lang_ru;;*);;
+		<=nrel_sc_text_translation:...
+		(*
+			->rrel_example:[Матч в водном поло состоит из четырех периодов длительностью по 8 минут каждый.](*<-lang_ru;;*);;
+		*);;
+	*);;
+
+concept_water_polo<-rrel_key_sc_element:...
+	(*
+		
+		<-statement;;
+		=>nrel_main_idtf:[Утв.(Водное поло)](*<-lang_ru;;*);;
+		<=nrel_sc_text_translation:...
+		(*
+			->rrel_example:[Каждой команде выделяется всего 25 секунд на атаку, по истечении 25 секунд мяч переходит команде соперника. Правила позволяют каждой команде взять 4 тайм-аута за игру в основное время и 1 тайм-аут в дополнительное. Тайм-аут может взять только команда владеющая мячом.](*<-lang_ru;;*);;
+		*);;
+	*);;
+concept_water_polo<-rrel_key_sc_element:...
+	(*
+		
+		<-statement;;
+		=>nrel_main_idtf:[Утв.(Водное поло)](*<-lang_ru;;*);;
+		<=nrel_sc_text_translation:...
+		(*
+			->rrel_example:[Размер игрового поля (бассейна) для мужчин составляет 30 в длину и 20 метров в ширину, для женщин 25 и 17 метров. Глубина бассейна в водном поло должна быть не менее 1,8 метра. Указанные размеры бассейнов актуальны для всех крупных соревнований, в том числе и Олимпийских игр.
+.](*<-lang_ru;;*);;
+		*);;
+	*);;
+concept_water_polo<=nrel_inclusion:team_sport;
+	water_sport;;
+        concept_water_polo<=olimpic_sport;;
+concept_water_polo<=nrel_prototype:concept_rugby;;
+concept_water_polo=>nrel_rodina:Great_Britain;;

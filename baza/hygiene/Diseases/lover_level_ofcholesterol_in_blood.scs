@@ -1,0 +1,51 @@
+
+lover_level_of_cholesterol_in_blood
+
+<-sc_node_not_relation;;
+
+
+lover_level_of_cholesterol_in_blood=>nrel_main_idtf:[пониженый уровень холестерина в крови]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[lover level of cholesterol in blood]
+        (*
+                <-lang_en;;
+        *);;
+
+
+
+lover_level_of_cholesterol_in_blood<-rrel_key_sc_element:...
+        (*
+
+                <-statement;;
+                =>nrel_main_idtf:[Утв.(пониженый уровень холестерина в крови)](*<-lang_ru;;*);;
+                <=nrel_sc_text_translation:...
+                (*
+                        ->rrel_example:[Последствиями пониженного холестерина крови будут дистрофия, гормональный дисбаланс (холестерол – это основа для синтеза гормонов), нарушение целостности тканей.](*<-lang_ru;;*);;
+                *);;
+        *);;
+
+lover_level_of_cholesterol_in_blood<-rrel_key_sc_element:...
+        (*
+
+                <-statement;;
+                =>nrel_main_idtf:[Утв.(пониженый уровень холестерина в крови)](*<-lang_ru;;*);;
+                <=nrel_sc_text_translation:...
+                (*
+                        ->rrel_example:[Основыными причинами низкого содержания холестерина в крови являються: наследственность, анорексия, жесткие диеты, малое количество жиров и большое сахара в рационе, болезни желудочно-кишечного тракта, подразумевающие проблемы усвоения потребленной еды, инфекционные заболевания, симптомом которых является лихорадка (туберкулез и т.п.), гипертиреоз, нарушения функций печени, нарушения нервной системы (постоянный стресс и т.п.), отравление тяжелыми металлами, анемия.](*<-lang_ru;;*);;
+                *);;
+        *);;
+
+lover_level_of_cholesterol_in_blood<-rrel_key_sc_element:...
+        (*
+
+                <-statement;;
+                =>nrel_main_idtf:[Утв.(пониженый уровень холестерина в крови)](*<-lang_ru;;*);;
+                <=nrel_sc_text_translation:...
+                (*
+                        ->rrel_example:[Одним из самых серьезных последствий дефицита ЛПНП является геморрагический инсульт.](*<-lang_ru;;*);;
+                *);;
+        *);;
+lover_level_of_cholesterol_in_blood<=nrel_inclusion:concept_desease;;
+

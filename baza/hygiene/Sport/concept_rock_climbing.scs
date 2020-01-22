@@ -1,0 +1,77 @@
+concept_rock_climbing
+<- sc_node_not_relation;;
+concept_rock_climbing=>nrel_main_idtf:[cкалолазание]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[rock climbing]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_rock_climbing<-rrel_key_sc_element:...
+        (*
+                <-definition;;=>nrel_main_idtf:
+[Опр.(скалолазанье)]
+        (*
+                <-lang_ru;;
+        *);;
+
+<=nrel_sc_text_translation:...
+        (*
+                ->[cкалолазанье - это вид спорта и вид активного отдыха, который заключается в лазании по естественному (скалы) или искусственному (скалодром) рельефу.]
+(*
+<-lang_ru;;
+*);;
+
+        *);;
+*);;
+
+
+concept_rock_climbing<-rrel_key_sc_element:...
+        (*
+                <-definition;;=>nrel_main_idtf:
+[Definition.(rock climbing)]
+        (*
+                <-lang_en;;
+        *);;
+
+<=nrel_sc_text_translation:...
+        (*
+                ->[rock climbing is a sport in which participants climb up, down or across natural rock formations or artificial rock walls. The goal is to reach the summit of a formation or the endpoint of a usually pre-defined route without falling.]
+(*
+<-lang_en;;
+*);;
+
+        *);;
+*);;
+
+
+concept_rock_climbing<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Under_a_roof.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+*);;
+*);;
+concept_rock_climbing<-rrel_key_sc_element:...
+        (*
+
+                <-statement;;
+                =>nrel_main_idtf:[Утв.(скалолазанье)](*<-lang_ru;;*);;
+                <=nrel_sc_text_translation:...
+                (*
+                        ->rrel_example:[Являеться разновидностью альпинизма](*<-lang_ru;;*);;
+                *);;
+        *);;
+
+
+concept_rock_climbing<=nrel_inclusion:extreme_sport;;
+concept_rock_climbing<=nrel_inclusion:winter_sport;;
+concept_rock_climbing<=nrel_inclusion:concept_sport;;
+concept_rock_climbing=>nrel_species:concept_mountaineering;;
