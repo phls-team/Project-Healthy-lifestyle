@@ -1,0 +1,31 @@
+delusional_disorder=>nrel_main_idtf:[delusional disorder](*<-lang_en;;*);;
+concept_SubClassOf06_02=>nrel_inclusion:delusional_disorder;;
+delusional_disorder<-concept_disease;;
+delusional_disorder<-rrel_sc_key_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:[Def.(Delusional Disorder)](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Delusional disorder is characterized by the development of a delusion or set of related delusions that persist for at least 3 months (usually much longer), which occur in the absence of a Depressive, Manic, or Mixed mood episode.](*<-lang_en;;*);;
+*);;
+*);;
+delusional_disorder<-sc_node_norole_relation;;
+
+delusional_disorder<-sc_node_norole_relation;
+=>nrel_unique_idtf:[6A24](*<-lang_en;;*);;
+concept_delusion<-sc_node_norole_relation;
+=>nrel_main_idtf:[delusion](*<-lang_en;;*);;
+delusional_disorder=>nrel_symptom:concept_delusion;;
+nrel_treatment<-sc_node_norole_relation;
+=>nrel_main_idtf:[treatment](*<-lang_en;;*);;
+delusional_disorder<-sc_node_norole_relation;
+=>nrel_treatment:...
+(*
+<-statement;;
+=>nrel_main_idtf:[treatment](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Treatment for delusional disorder most often includes medication and psychotherapy (a type of counseling); however, delusional disorder is highly resistant to treatment with medication alone. People with severe symptoms or who are at risk of hurting themselves or others might need to be in the hospital until the condition is stabilized.](*<-lang_en;;*);;
+*);;
+*);;

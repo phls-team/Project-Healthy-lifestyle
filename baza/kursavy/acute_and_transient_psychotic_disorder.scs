@@ -1,0 +1,41 @@
+acute_and_transient_psychotic_disorder=>nrel_main_idtf:[acute and transient psychotic disorder](*<-lang_en;;*);;
+concept_SubClassOf06_02=>nrel_inclusion:acute_and_transient_psychotic_disorder;;
+acute_and_transient_psychotic_disorder<-concept_disease;;
+acute_and_transient_psychotic_disorder<-rrel_sc_key_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:[Def.(Acute and transient psychotic disorder)](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Acute and transient psychotic disorder is characterized by acute onset of psychotic symptoms that emerge without a prodrome and reach their maximal severity within two weeks.](*<-lang_en;;*);;
+*);;
+*);;
+acute_and_transient_psychotic_disorder<-sc_node_norole_relation;;
+
+acute_and_transient_psychotic_disorder<-sc_node_norole_relation;
+=>nrel_unique_idtf:[6A22](*<-lang_en;;*);;
+concept_delusion<-sc_node_norole_relation;
+=>nrel_main_idtf:[delusion](*<-lang_en;;*);;
+disorganization<-sc_node_norole_relation;
+=>nrel_main_idtf:[disorganization](*<-lang_en;;*);;
+hallucination<-sc_node_norole_relation;
+=>nrel_main_idtf:[hallucination](*<-lang_en;;*);;
+perplexity<-sc_node_norole_relation;
+=>nrel_main_idtf:[perplexity](*<-lang_en;;*);;
+acute_and_transient_psychotic_disorder=>nrel_symptom:concept_delusion;disorganization;hallucination;perplexity;;
+nrel_treatment<-sc_node_norole_relation;
+=>nrel_main_idtf:[treatment](*<-lang_en;;*);;
+acute_and_transient_psychotic_disorder<-sc_node_norole_relation;
+=>nrel_treatment:...
+(*
+<-statement;;
+=>nrel_main_idtf:[treatment](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Acute psychotic syndromes require early hospitalization in either an inpatient psychiatric unit or a crisis centre. These syndromes are to be considered as psychiatric emergencies. The decision to admit to hospital is taken in order to make a careful physical and mental examination clinical evaluation, to separate the patient from his or her environment, to provide a reassuring setting, and to prevent any suicidal or aggressive tendencies.(28)
+
+The goals are to prevent auto or heteroagressivity (suicidal potential, affective symptoms, agitation, aggressive behaviour, command hallucinations, etc.), to reduce the acute psychotic symptoms, to suppress the causal factors and to establish an early therapeutic alliance with the patient and his family. Antipsychotic drugs medications are prescribed.(29) Some clinicians wait for a day or two before starting neuroleptic therapy in order to eliminate an organic cause (a general medical condition or substance abuse disorder can be present with acute and transient psychoticsymptoms) and prescribe benzodiazepines rather than neuroleptics. More often, however, antipsychotic treatment starts immediately after physical, electrophysical, radiological assessments, and laboratory tests (CBC, blood electrolytes, cholesterol, triglycerides, toxicology screen, etc.) to evaluate health status.
+
+The choice of antipsychotic medication depends on the clinician's experience and the clinical features. Second-generation antipsychotic medications (amisulpride, aripiprazole, olanzapine, quetiapine, risperidone, ziprasidone) are commonly prescribed as first-line treatment; clozapine is reserved to schizophrenia with high suicidal potential or to resistant schizophrenia. First-generation antipsychotic medications (chlorpromazine, haloperidol, etc.) are second choice or adjunctive medications.](*<-lang_en;;*);;
+*);;
+*);;
