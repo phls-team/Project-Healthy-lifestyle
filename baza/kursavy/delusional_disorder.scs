@@ -1,5 +1,5 @@
 delusional_disorder=>nrel_main_idtf:[delusional disorder](*<-lang_en;;*);;
-concept_SubClassOf06_02=>nrel_inclusion:delusional_disorder;;
+concept_subClassOf06_02=>nrel_inclusion:delusional_disorder;;
 delusional_disorder<-concept_disease;;
 delusional_disorder<-rrel_sc_key_element:...
 (*

@@ -1,0 +1,29 @@
+disorders_of_intellectual_development_moderate=>nrel_main_idtf:[disorders of intellectual development, moderate](*<-lang_en;;*);;
+disorders_of_intellectual_development_moderate<-concept_disease;;
+disorders_of_intellectual_development_moderate<-rrel_sc_key_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:[Def.(Disorders of intellectual development, moderate)](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[A moderate disorder of intellectual development is a condition originating during the developmental period characterized by significantly below average intellectual functioning and adaptive behaviour that are approximately three to four standard deviations below the mean (approximately 0.003 – 0.1 percentile), based on appropriately normed, individually administered standardized tests or by comparable behavioural indicators when standardized testing is unavailable.](*<-lang_en;;*);;
+*);;
+*);;
+
+disorders_of_intellectual_development_moderate<-sc_node_norole_relation;
+=>nrel_unique_idtf:[6A00.1](*<-lang_en;;*);;
+concept_basic_skills_limitation<-sc_node_norole_relation;
+=>nrel_main_idtf:[capacity of learning are generally limited to basic skills](*<-lang_en;;*);;
+disorders_of_intellectual_development_moderate=>nrel_symptom:concept_basic_skills_limitation;;
+nrel_treatment<-sc_node_norole_relation;
+=>nrel_main_idtf:[treatment](*<-lang_en;;*);;
+disorders_of_intellectual_development_moderate<-sc_node_norole_relation;
+=>nrel_treatment:...
+(*
+<-statement;;
+=>nrel_main_idtf:[treatment](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Intellectual development disorder is a lifelong disorder. It is treated through management and rehabilitation programs (including special education programs) aimed at helping children with the disorder acquire adaptive skills so they can live healthy, happy, relatively independent lives.](*<-lang_en;;*);;
+*);;
+*);;

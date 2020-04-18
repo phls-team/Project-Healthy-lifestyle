@@ -1,0 +1,21 @@
+disorders_of_intellectual_development=>nrel_main_idtf:[disorders of intellectual development](*<-lang_en;;*);;
+concept_subClassOf06_01=>nrel_inclusion:disorders_of_intellectual_development;;
+disorders_of_intellectual_development<-concept_disease;;
+disorders_of_intellectual_development<-rrel_sc_key_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:[Def.(Disorders of intellectual development)](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Disorders of intellectual development are a group of etiologically diverse conditions originating during the developmental period characterized by significantly below average intellectual functioning and adaptive behavior that are approximately two or more standard deviations below the mean (approximately less than the 2.3rd percentile), based on appropriately normed, individually administered standardized tests.](*<-lang_en;;*);;
+*);;
+*);;
+disorders_of_intellectual_development<-sc_node_norole_relation;;
+
+disorders_of_intellectual_development<-sc_node_norole_relation;
+=>nrel_unique_idtf:[6A00](*<-lang_en;;*);;
+
+disorders_of_intellectual_development
+=>nrel_inclusion:
+disorders_of_intellectual_development_mild;
+disorders_of_intellectual_development_moderate;;

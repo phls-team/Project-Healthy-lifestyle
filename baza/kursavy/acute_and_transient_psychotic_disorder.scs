@@ -1,5 +1,5 @@
 acute_and_transient_psychotic_disorder=>nrel_main_idtf:[acute and transient psychotic disorder](*<-lang_en;;*);;
-concept_SubClassOf06_02=>nrel_inclusion:acute_and_transient_psychotic_disorder;;
+concept_subClassOf06_02=>nrel_inclusion:acute_and_transient_psychotic_disorder;;
 acute_and_transient_psychotic_disorder<-concept_disease;;
 acute_and_transient_psychotic_disorder<-rrel_sc_key_element:...
 (*

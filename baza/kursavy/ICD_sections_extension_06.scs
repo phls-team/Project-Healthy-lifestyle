@@ -1,0 +1,31 @@
+// 3 PANIATKI
+
+concept_class_06=>nrel_main_idtf:[Class 06. Mental, behavioural or neurodevelopmental disorders]
+(*<-lang_en;;*);;
+concept_ICD_11_classification=>nrel_inclusion:concept_class_06;;
+
+concept_subClassOf06_01=>nrel_main_idtf:[Subclass I. Neurodevelopmental disorders]
+(*<-lang_en;;*);;
+concept_subClassOf06_01=>nrel_arrayOfIdentificators:[6A00 - 6A06];;
+concept_class_06=>nrel_inclusion:concept_subClassOf06_01;;
+
+concept_subClassOf06_01<-rrel_sc_key_element:...
+(*<-statement;;
+=>nrel_main_idtf:[class description](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(* ->[Neurodevelopmental disorders are behavioural and cognitive disorders that arise during the developmental period that involve significant difficulties in the acquisition and execution of specific intellectual, motor, or social functions.] (*<-lang_en;;*);;
+*);;
+*);;
+
+concept_subClassOf06_02=>nrel_main_idtf:[Subclass II. Schizophrenia of other primary psychotic disorders]
+(*<-lang_en;;*);;
+concept_subClassOf06_02=>nrel_arrayOfIdentificators:[6A20 - 6A25];;
+concept_class_06=>nrel_inclusion:concept_subClassOf06_02;;
+
+concept_subClassOf06_02<-rrel_sc_key_element:...
+(*<-statement;;
+=>nrel_main_idtf:[class description](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(* ->[Schizophrenia and other primary psychotic disorders are characterized by significant impairments in reality testing and alterations in behavior manifest in positive symptoms such as persistent delusions, persistent hallucinations, disorganized thinking (typically manifest as disorganized speech), grossly disorganized behavior, and experiences of passivity and control, negative symptoms such as blunted or flat affect and avolition, and psychomotor disturbances.] (*<-lang_en;;*);;
+*);;
+*);;

@@ -1,5 +1,5 @@
 schizotypal_disorder=>nrel_main_idtf:[schizotypal disorder](*<-lang_en;;*);;
-concept_SubClassOf06_02=>nrel_inclusion:schizotypal_disorder;;
+concept_subClassOf06_02=>nrel_inclusion:schizotypal_disorder;;
 schizotypal_disorder<-concept_disease;;
 schizotypal_disorder<-rrel_sc_key_element:...
 (*

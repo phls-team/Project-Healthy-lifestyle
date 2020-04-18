@@ -1,5 +1,5 @@
 schizophrenia=>nrel_main_idtf:[schizophrenia](*<-lang_en;;*);;
-concept_SubClassOf06_02=>nrel_inclusion:schizophrenia;;
+concept_subClassOf06_02=>nrel_inclusion:schizophrenia;;
 schizophrenia<-concept_disease;;
 schizophrenia<-rrel_sc_key_element:...
 (*

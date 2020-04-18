@@ -1,5 +1,5 @@
-schizoaffective_discorder=>nrel_main_idtf:[schizoaffective_discorder](*<-lang_en;;*);;
-concept_SubClassOf06_02=>nrel_inclusion:schizoaffective_discorder;;
+schizoaffective_discorder=>nrel_main_idtf:[schizoaffective discorder](*<-lang_en;;*);;
+concept_subClassOf06_02=>nrel_inclusion:schizoaffective_discorder;;
 schizoaffective_discorder<-concept_disease;;
 schizoaffective_discorder<-rrel_sc_key_element:...
 (*
