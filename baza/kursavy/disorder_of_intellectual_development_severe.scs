@@ -1,0 +1,31 @@
+disorders_of_intellectual_development_severe=>nrel_main_idtf:[disorders of intellectual development, severe](*<-lang_en;;*);;
+disorders_of_intellectual_development_severe<-concept_disease;;
+disorders_of_intellectual_development_severe<-rrel_sc_key_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:[Def.(Disorders of intellectual development, severe)](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[A severe disorder of intellectual development is a condition originating during the developmental period characterized by significantly below average intellectual functioning and adaptive behaviour that are approximately four of more standard deviations below the mean (less than approximately the 0.003rd percentile), based on appropriately normed, individually administered standardized tests or by comparable behavioural indicators when standardized testing is unavailable. Affected persons exhibit very limited language and capacity for acquisition of academic skills. They may also have motor impairments and typically require daily support in a supervised environment for adequate care, but may acquire basic self-care skills with intensive training. Severe and profound disorders of intellectual development are differentiated exclusively on the basis of adaptive behaviour differences because existing standardized tests of intelligence cannot reliably or validly distinguish among individuals with intellectual functioning below the 0.003rd percentile. ](*<-lang_en;;*);;
+*);;
+*);;
+
+disorders_of_intellectual_development_severe<-sc_node_norole_relation;
+=>nrel_unique_idtf:[6A00.2](*<-lang_en;;*);;
+concept_difficulty_in_acqusition_of_complex_language_skills<-sc_node_norole_relation;
+=>nrel_main_idtf:[difficulty in acqusition of complex language skills](*<-lang_en;;*);;
+concept_difficulty_in_acqusition_of_academic_skills<-sc_node_norole_relation;
+=>nrel_main_idtf:[difficulty in acqusition of academic skills](*<-lang_en;;*);;
+disorders_of_intellectual_development_severe=>nrel_symptom:concept_difficulty_in_acqusition_of_complex_language_skills;concept_difficulty_in_acqusition_of_academic_skills;;
+nrel_treatment<-sc_node_norole_relation;
+=>nrel_main_idtf:[treatment](*<-lang_en;;*);;
+disorders_of_intellectual_development_severe<-sc_node_norole_relation;
+=>nrel_treatment:...
+(*
+<-statement;;
+=>nrel_main_idtf:[treatment](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Intellectual development disorder is a lifelong disorder. It is treated through management and rehabilitation programs (including special education programs) aimed at helping children with the disorder acquire adaptive skills so they can live healthy, happy, relatively independent lives.](*<-lang_en;;*);;
+*);;
+*);;

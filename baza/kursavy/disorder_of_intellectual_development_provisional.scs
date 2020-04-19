@@ -1,0 +1,31 @@
+disorders_of_intellectual_development_provisional=>nrel_main_idtf:[disorders of intellectual development, provisional](*<-lang_en;;*);;
+disorders_of_intellectual_development_provisional<-concept_disease;;
+disorders_of_intellectual_development_provisional<-rrel_sc_key_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:[Def.(Disorders of intellectual development, provisional)](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Disorder of intellectual development, provisional is assigned when there is evidence of a disorder of intellectual development but the individual is an infant or child under the age of four or it is not possible to conduct a valid assessment of intellectual functioning and adaptive behaviour because of sensory or physical impairments (e.g., blindness, pre-lingual deafness), locomotor disability, severe problem behaviours or co-occurring mental and behavioural disorders. ](*<-lang_en;;*);;
+*);;
+*);;
+
+disorders_of_intellectual_development_provisional<-sc_node_norole_relation;
+=>nrel_unique_idtf:[6A00.4](*<-lang_en;;*);;
+concept_difficulty_in_acqusition_of_complex_language_skills<-sc_node_norole_relation;
+=>nrel_main_idtf:[difficulty in acqusition of complex language skills](*<-lang_en;;*);;
+concept_difficulty_in_acqusition_of_academic_skills<-sc_node_norole_relation;
+=>nrel_main_idtf:[difficulty in acqusition of academic skills](*<-lang_en;;*);;
+disorders_of_intellectual_development_provisional=>nrel_symptom:concept_difficulty_in_acqusition_of_complex_language_skills;concept_difficulty_in_acqusition_of_academic_skills;;
+nrel_treatment<-sc_node_norole_relation;
+=>nrel_main_idtf:[treatment](*<-lang_en;;*);;
+disorders_of_intellectual_development_provisional<-sc_node_norole_relation;
+=>nrel_treatment:...
+(*
+<-statement;;
+=>nrel_main_idtf:[treatment](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Intellectual development disorder is a lifelong disorder. It is treated through management and rehabilitation programs (including special education programs) aimed at helping children with the disorder acquire adaptive skills so they can live healthy, happy, relatively independent lives.](*<-lang_en;;*);;
+*);;
+*);;
