@@ -18,4 +18,5 @@ developmental_speech_or_language_disorder<-sc_node_norole_relation;
 developmental_speech_or_language_disorder
 =>nrel_inclusion:
 developmental_speech_sound_disorder;
-developmental_speech_fluency_disorder;;
+developmental_speech_fluency_disorder;
+developmental_language_disorder;;

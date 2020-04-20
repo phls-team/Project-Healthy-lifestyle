@@ -1,0 +1,26 @@
+developmental_language_disorder_with_other_sprecified_language_impairments=>nrel_main_idtf:[developmental language disorder, with other sprecified language impairment](*<-lang_en;;*);;
+developmental_language_disorder_with_other_sprecified_language_impairments<-concept_disease;;
+developmental_language_disorder_with_other_sprecified_language_impairments<-rrel_sc_key_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:[Def.(Developmental language disorder, with other specified language impairment)](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Developmental language disorder with other specified language impairment is characterized by persistent difficulties in the acquisition, understanding, production or use of language (spoken or signed), that arise during the developmental period and cause significant limitations in the individual’s ability to communicate. The pattern of specific deficits in language abilities is not adequately captured by any of the other developmental language disorder categories.](*<-lang_en;;*);;
+*);;
+*);;
+
+developmental_language_disorder_with_other_sprecified_language_impairments<-sc_node_norole_relation;
+=>nrel_unique_idtf:[6A01.23](*<-lang_en;;*);;
+nrel_treatment<-sc_node_norole_relation;
+=>nrel_main_idtf:[treatment](*<-lang_en;;*);;
+developmental_language_disorder_with_other_sprecified_language_impairments<-sc_node_norole_relation;
+=>nrel_treatment:...
+(*
+<-statement;;
+=>nrel_main_idtf:[treatment](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Treatment is usually carried out by speech and language therapists/pathologists, who use a wide range of techniques to stimulate language learning.](*<-lang_en;;*);;
+*);;
+*);;
