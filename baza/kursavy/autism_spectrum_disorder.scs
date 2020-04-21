@@ -1,0 +1,41 @@
+autism_spectrum_disorder=>nrel_main_idtf:[autism spectrum disorder](*<-lang_en;;*);;
+concept_subClassOf06_01=>nrel_inclusion:autism_spectrum_disorder;;
+autism_spectrum_disorder<-concept_disease;;
+autism_spectrum_disorder<-rrel_sc_key_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:[Def.(Autism spectrum disorder)](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Autism spectrum disorder is characterized by persistent deficits in the ability to initiate and to sustain reciprocal social interaction and social communication, and by a range of restricted, repetitive, and inflexible patterns of behaviour and interests.](*<-lang_en;;*);;
+*);;
+*);;
+autism_spectrum_disorder<-sc_node_norole_relation;;
+
+autism_spectrum_disorder<-sc_node_norole_relation;
+=>nrel_unique_idtf:[6A02](*<-lang_en;;*);;
+
+concept_deficit_in_the_ability_to_initiate_social_interaction_and_social_communication<-sc_node_norole_relation;
+=>nrel_main_idtf:[deficit in the ability to initiate social interaction and social communication](*<-lang_en;;*);;
+concept_deficit_in_the_ability_to_sustain_social_interaction_and_social_communication<-sc_node_norole_relation;
+=>nrel_main_idtf:[deficit in the ablity to sustain social interaction and social communication](*<-lang_en;;*);;
+
+autism_spectrum_disorder=>nrel_symptom:concept_deficit_in_the_ability_to_initiate_social_interaction_and_social_communication;concept_deficit_in_the_ability_to_sustain_social_interaction_and_social_communication;;
+nrel_treatment<-sc_node_norole_relation;
+=>nrel_main_idtf:[treatment](*<-lang_en;;*);;
+autism_spectrum_disorder<-sc_node_norole_relation;
+=>nrel_treatment:...
+(*
+<-statement;;
+=>nrel_main_idtf:[treatment](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[No cure exists for autism spectrum disorder, and there is no one-size-fits-all treatment. The goal of treatment is to maximize your child's ability to function by reducing autism spectrum disorder symptoms and supporting development and learning. Early intervention during the preschool years can help your child learn critical social, communication, functional and behavioral skills.](*<-lang_en;;*);;
+*);;
+*);;
+
+autism_spectrum_disorder=>nrel_inclusion:
+6A02.0;
+6A02.1;
+6A02.2;
+6A02.3;;
