@@ -1,0 +1,33 @@
+6A03.2=>nrel_main_idtf:[developmental learning disorder with impairment in mathematics](*<-lang_en;;*);;
+6A03.2<-concept_disease;;
+6A03.2<-rrel_sc_key_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:[Def.(Developmental learning disorder with impairment in mathematics)](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Developmental learning disorder with impairment in mathematics is characterized by significant and persistent difficulties in learning academic skills related to mathematics or arithmetic, such as number sense, memorization of number facts, accurate calculation, fluent calculation, and accurate mathematic reasoning.](*<-lang_en;;*);;
+*);;
+*);;
+6A03.2<-sc_node_norole_relation;;
+
+6A03.2<-sc_node_norole_relation;
+=>nrel_unique_idtf:[6A03.2](*<-lang_en;;*);;
+
+concept_difficulty_in_learning_mathematics<-sc_node_norole_relation;
+=>nrel_main_idtf:[significant and persistent difficulty in learning mathematics](*<-lang_en;;*);;
+
+6A03.2=>nrel_symptom:concept_difficulty_in_learning_mathematics;;
+
+nrel_treatment<-sc_node_norole_relation;
+=>nrel_main_idtf:[treatment](*<-lang_en;;*);;
+6A03.2<-sc_node_norole_relation;
+=>nrel_treatment:...
+(*
+<-statement;;
+=>nrel_main_idtf:[treatment](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Treatment options include: extra help, individualized education programs, accomodations, therapies, medications and complementary and alternative medicine.](*<-lang_en;;*);;
+*);;
+*);;

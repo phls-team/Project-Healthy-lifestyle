@@ -1,0 +1,39 @@
+developmental_learning_disorder=>nrel_main_idtf:[developmental learning disorder](*<-lang_en;;*);;
+concept_subClassOf06_01=>nrel_inclusion:developmental_learning_disorder;;
+developmental_learning_disorder<-concept_disease;;
+developmental_learning_disorder<-rrel_sc_key_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:[Def.(Developmental learning disorder)](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Developmental learning disorder is characterized by significant and persistent difficulties in learning academic skills, which may include reading, writing, or arithmetic. Developmental learning disorder is not due to a disorder of intellectual development, sensory impairment (vision or hearing), neurological or motor disorder, lack of availability of education, lack of proficiency in the language of academic instruction, or psychosocial adversity.](*<-lang_en;;*);;
+*);;
+*);;
+developmental_learning_disorder<-sc_node_norole_relation;;
+
+developmental_learning_disorder<-sc_node_norole_relation;
+=>nrel_unique_idtf:[6A03](*<-lang_en;;*);;
+
+concept_difficulty_in_learning_academic_skills<-sc_node_norole_relation;
+=>nrel_main_idtf:[persistent difficulty in learning academic skills, which may include reading, writing or arithemtic](*<-lang_en;;*);;
+
+developmental_learning_disorder=>nrel_symptom:concept_difficulty_in_learning_academic_skills;;
+
+nrel_treatment<-sc_node_norole_relation;
+=>nrel_main_idtf:[treatment](*<-lang_en;;*);;
+developmental_learning_disorder<-sc_node_norole_relation;
+=>nrel_treatment:...
+(*
+<-statement;;
+=>nrel_main_idtf:[treatment](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Treatment options include: extra help, individualized education programs, accomodations, therapies, medications and complementary and alternative medicine.](*<-lang_en;;*);;
+*);;
+*);;
+
+developmental_learning_disorder=>nrel_inclusion:
+6A03.0;
+6A03.1;
+6A03.2;;
