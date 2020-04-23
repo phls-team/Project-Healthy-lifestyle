@@ -1,0 +1,36 @@
+developmental_motor_coordination_disorder=>nrel_main_idtf:[developmental motor coordination disorder](*<-lang_en;;*);;
+concept_subClassOf06_01=>nrel_inclusion:developmental_motor_coordination_disorder;;
+developmental_motor_coordination_disorder<-concept_disease;;
+developmental_motor_coordination_disorder<-rrel_sc_key_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:[Def.(Developmental motor coordination disorder)](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Developmental motor coordination disorder is characterized by a significant delay in the acquisition of gross and fine motor skills and impairment in the execution of coordinated motor skills that manifest in clumsiness, slowness, or inaccuracy of motor performance. Coordinated motor skills are substantially below that expected given the individual's chronological age and level of intellectual functioning. ](*<-lang_en;;*);;
+*);;
+*);;
+developmental_motor_coordination_disorder<-sc_node_norole_relation;;
+
+developmental_motor_coordination_disorder<-sc_node_norole_relation;
+=>nrel_unique_idtf:[6A04](*<-lang_en;;*);;
+
+delay_in_the_acquisition_of_gross_and_fine_motor_skills<-sc_node_norole_relation;
+=>nrel_main_idtf:[delay in the acquisition of gross and fine motor skills](*<-lang_en;;*);;
+impairment_in_the_execution_of_coordinated_motor_skills<-sc_node_norole_relation;
+=>nrel_main_idtf:[impairment in the execution of coordinated motor skills](*<-lang_en;;*);;
+
+developmental_motor_coordination_disorder=>nrel_symptom:delay_in_the_acquisition_of_gross_and_fine_motor_skills;impairment_in_the_execution_of_coordinated_motor_skills;;
+
+nrel_treatment<-sc_node_norole_relation;
+=>nrel_main_idtf:[treatment](*<-lang_en;;*);;
+developmental_motor_coordination_disorder<-sc_node_norole_relation;
+=>nrel_treatment:...
+(*
+<-statement;;
+=>nrel_main_idtf:[treatment](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Occupational therapy is the primary treatment for DCD. It helps kids gain motor skills and learn to do basic tasks that are needed for school and everyday living. These tasks include things like writing, typing, tying shoes and getting dressed.](*<-lang_en;;*);;
+*);;
+*);;

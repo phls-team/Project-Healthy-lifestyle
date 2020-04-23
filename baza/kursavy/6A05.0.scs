@@ -1,0 +1,32 @@
+6A05.0=>nrel_main_idtf:[attention deficit hyperactivity disorder, predominantly inattentive presentation](*<-lang_en;;*);;
+6A05.0<-concept_disease;;
+6A05.0<-rrel_sc_key_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:[Def.(Attention deficit hyperactivity disorder, predominantly inattentive presentation)](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[All definitional requirements for attention deficit hyperactivity disorder are met and inattentive symptoms are predominant in the clinical presentation. Inattention refers to significant difficulty in sustaining attention to tasks that do not provide a high level of stimulation or frequent rewards, distractibility and problems with organization.](*<-lang_en;;*);;
+*);;
+*);;
+6A05.0<-sc_node_norole_relation;;
+
+6A05.0<-sc_node_norole_relation;
+=>nrel_unique_idtf:[6A05.0](*<-lang_en;;*);;
+
+
+
+6A05.0=>nrel_symptom:pattern_of_inattention_or_hyperactivity_impulsivity;;
+
+nrel_treatment<-sc_node_norole_relation;
+=>nrel_main_idtf:[treatment](*<-lang_en;;*);;
+6A05.0<-sc_node_norole_relation;
+=>nrel_treatment:...
+(*
+<-statement;;
+=>nrel_main_idtf:[treatment](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[For children with ADHD younger than 6 years of age, the American Academy of Pediatrics (AAP) recommends parent training in behavior management as the first line of treatment, before medication is tried. For children 6 years of age and older, the recommendations include medication and behavior therapy together — parent training in behavior management for children up to age 12 and other types of behavior therapy and training for adolescents.  Schools can be part of the treatment as well. AAP recommendations also include adding behavioral classroom intervention and school supports.](*<-lang_en;;*);;
+*);;
+*);;
