@@ -1,0 +1,36 @@
+6A06.1=>nrel_main_idtf:[stereotyped movement disorder with self-injury](*<-lang_en;;*);;
+6A06.1<-concept_disease;;
+6A06.1<-rrel_sc_key_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:[Def.(Stereotyped movement disorder with self-injury)](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[This category should be applied to forms of Stereotyped movement disorder in which stereotyped behaviours result in self-inflicted bodily injury that is significant enough to require medical treatment, or would result in such injury if protective measures (e.g., helmet to prevent head injury) were not employed.](*<-lang_en;;*);;
+*);;
+*);;
+6A06.1<-sc_node_norole_relation;;
+
+6A06.1<-sc_node_norole_relation;
+=>nrel_unique_idtf:[6A06.1](*<-lang_en;;*);;
+
+
+
+6A06.1=>nrel_symptom:
+head_banging;
+face_slapping;
+eye_poking;
+biting_of_the_body_parts;;
+
+nrel_treatment<-sc_node_norole_relation;
+=>nrel_main_idtf:[treatment](*<-lang_en;;*);;
+6A06.1<-sc_node_norole_relation;
+=>nrel_treatment:...
+(*
+<-statement;;
+=>nrel_main_idtf:[treatment](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[The most successful approaches to treating Stereotyped Movement Disorder are behavioral in nature and utilize reward and punishment principles drawn from learning theory to decrease the likelihood that children will engage in inappropriate stereotyped movements while simultaneously increasing their appropriate behaviors. Clinical research suggests that behavioral treatment can reduce symptoms of the disorder by up to 90%, and completely eliminate the disorder in 40 to 70% of affected children. ](*<-lang_en;;*);;
+*);;
+*);;

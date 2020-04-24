@@ -1,0 +1,60 @@
+stereotyped_movement_disorder=>nrel_main_idtf:[stereotyped movement disorder](*<-lang_en;;*);;
+concept_subClassOf06_01=>nrel_inclusion:stereotyped_movement_disorder;;
+stereotyped_movement_disorder<-concept_disease;;
+stereotyped_movement_disorder<-rrel_sc_key_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:[Def.(Stereotyped movement disorder)](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Stereotyped movement disorder is characterized by voluntary, repetitive, stereotyped, apparently purposeless (and often rhythmic) movements that arise during the early developmental period, are not caused by the direct physiological effects of a substance or medication (including withdrawal), and markedly interfere with normal activities or result in self-inflicted bodily injury.](*<-lang_en;;*);;
+*);;
+*);;
+stereotyped_movement_disorder<-sc_node_norole_relation;;
+
+stereotyped_movement_disorder<-sc_node_norole_relation;
+=>nrel_unique_idtf:[6A06](*<-lang_en;;*);;
+
+body_rocking<-sc_node_norole_relation;
+=>nrel_main_idtf:[body rocking](*<-lang_en;;*);;
+head_rocking<-sc_node_norole_relation;
+=>nrel_main_idtf:[head rocking](*<-lang_en;;*);;
+finger_flicking<-sc_node_norole_relation;
+=>nrel_main_idtf:[finger flicking](*<-lang_en;;*);;
+hand_flapping<-sc_node_norole_relation;
+=>nrel_main_idtf:[hand flapping](*<-lang_en;;*);;
+head_banging<-sc_node_norole_relation;
+=>nrel_main_idtf:[dead banging](*<-lang_en;;*);;
+face_slapping<-sc_node_norole_relation;
+=>nrel_main_idtf:[face slapping](*<-lang_en;;*);;
+eye_poking<-sc_node_norole_relation;
+=>nrel_main_idtf:[eye poking](*<-lang_en;;*);;
+biting_of_the_body_parts<-sc_node_norole_relation;
+=>nrel_main_idtf:[biting of the body parts](*<-lang_en;;*);;
+
+stereotyped_movement_disorder=>nrel_symptom:
+body_rocking;
+head_rocking;
+finger_flicking;
+hand_flapping;
+head_banging;
+face_slapping;
+eye_poking;
+biting_of_the_body_parts;;
+
+nrel_treatment<-sc_node_norole_relation;
+=>nrel_main_idtf:[treatment](*<-lang_en;;*);;
+stereotyped_movement_disorder<-sc_node_norole_relation;
+=>nrel_treatment:...
+(*
+<-statement;;
+=>nrel_main_idtf:[treatment](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[The most successful approaches to treating Stereotyped Movement Disorder are behavioral in nature and utilize reward and punishment principles drawn from learning theory to decrease the likelihood that children will engage in inappropriate stereotyped movements while simultaneously increasing their appropriate behaviors. Clinical research suggests that behavioral treatment can reduce symptoms of the disorder by up to 90%, and completely eliminate the disorder in 40 to 70% of affected children. ](*<-lang_en;;*);;
+*);;
+*);;
+
+stereotyped_movement_disorder=>nrel_inclusion:
+6A06.0;
+6A06.1;;

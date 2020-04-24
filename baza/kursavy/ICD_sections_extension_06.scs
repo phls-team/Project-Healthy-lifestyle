@@ -1,4 +1,4 @@
-// 3 PANIATKI
+// 4 PANIATKI
 
 concept_class_06=>nrel_main_idtf:[Class 06. Mental, behavioural or neurodevelopmental disorders]
 (*<-lang_en;;*);;
@@ -27,5 +27,18 @@ concept_subClassOf06_02<-rrel_sc_key_element:...
 =>nrel_main_idtf:[class description](*<-lang_en;;*);;
 <=nrel_sc_text_translation:...
 (* ->[Schizophrenia and other primary psychotic disorders are characterized by significant impairments in reality testing and alterations in behavior manifest in positive symptoms such as persistent delusions, persistent hallucinations, disorganized thinking (typically manifest as disorganized speech), grossly disorganized behavior, and experiences of passivity and control, negative symptoms such as blunted or flat affect and avolition, and psychomotor disturbances.] (*<-lang_en;;*);;
+*);;
+*);;
+
+concept_subClassOf06_04=>nrel_main_idtf:[Subclass IV. Mood disorders]
+(*<-lang_en;;*);;
+concept_subClassOf06_04=>nrel_arrayOfIdentificators:[6A60 - 6A80];;
+concept_class_06=>nrel_inclusion:concept_subClassOf06_04;;
+
+concept_subClassOf06_04<-rrel_sc_key_element:...
+(*<-statement;;
+=>nrel_main_idtf:[class description](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(* ->[Mood Disorders refers to a superordinate grouping of Bipolar and Depressive Disorders. Mood disorders are defined according to particular types of mood episodes and their pattern over time. The primary types of mood episodes are Depressive episode, Manic episode, Mixed episode, and Hypomanic episode. Mood episodes are not independently diagnosable entities, and therefore do not have their own diagnostic codes. Rather, mood episodes make up the primary components of most of the Depressive and Bipolar Disorders.] (*<-lang_en;;*);;
 *);;
 *);;

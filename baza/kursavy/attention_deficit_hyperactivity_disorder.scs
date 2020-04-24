@@ -35,4 +35,5 @@ attention_deficit_hyperactivity_disorder<-sc_node_norole_relation;
 
 attention_deficit_hyperactivity_disorder=>nrel_inclusion:
 6A05.0;
-6A05.1;;
+6A05.1;
+6A05.2;;
