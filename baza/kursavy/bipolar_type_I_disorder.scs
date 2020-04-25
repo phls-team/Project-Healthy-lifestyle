@@ -1,0 +1,77 @@
+bipolar_type_I_disorder=>nrel_main_idtf:[bipolar type I disorder](*<-lang_en;;*);;
+concept_subClassOf06_04_01=>nrel_inclusion:bipolar_type_I_disorder;;
+bipolar_type_I_disorder<-concept_disease;;
+bipolar_type_I_disorder<-rrel_sc_key_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:[Def.(Bipolar type I disorder)](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Bipolar type I disorder is an episodic mood disorder defined by the occurrence of one or more manic or mixed episodes. A manic episode is an extreme mood state lasting at least one week unless shortened by a treatment intervention characterized by euphoria, irritability, or expansiveness, and by increased activity or a subjective experience of increased energy, accompanied by other characteristic symptoms such as rapid or pressured speech, flight of ideas, increased self-esteem or grandiosity, decreased need for sleep, distractibility, impulsive or reckless behavior, and rapid changes among different mood states (i.e., mood lability). A mixed episode is characterized by either a mixture or very rapid alternation between prominent manic and depressive symptoms on most days during a period of at least 2 weeks. Although the diagnosis can be made based on evidence of a single manic or mixed episode, typically manic or mixed episodes alternate with depressive episodes over the course of the disorder.](*<-lang_en;;*);;
+*);;
+*);;
+bipolar_type_I_disorder<-sc_node_norole_relation;;
+
+bipolar_type_I_disorder<-sc_node_norole_relation;
+=>nrel_unique_idtf:[6A60](*<-lang_en;;*);;
+
+rapid_speech<-sc_node_norole_relation;
+=>nrel_main_idtf:[rapid speech](*<-lang_en;;*);;
+euphoria<-sc_node_norole_relation;
+=>nrel_main_idtf:[euphoria](*<-lang_en;;*);;
+irritability<-sc_node_norole_relation;
+=>nrel_main_idtf:[irritability](*<-lang_en;;*);;
+expansiveness<-sc_node_norole_relation;
+=>nrel_main_idtf:[expansiveness](*<-lang_en;;*);;
+increased_activity<-sc_node_norole_relation;
+=>nrel_main_idtf:[increased activity](*<-lang_en;;*);;
+subjective_experience_of_increased_energy<-sc_node_norole_relation;
+=>nrel_main_idtf:[subjective experience of increased energy](*<-lang_en;;*);;
+pressured_speech<-sc_node_norole_relation;
+=>nrel_main_idtf:[pressured speech](*<-lang_en;;*);;
+flight_of_ideas<-sc_node_norole_relation;
+=>nrel_main_idtf:[flight of ideas](*<-lang_en;;*);;
+increased_self_esteem<-sc_node_norole_relation;
+=>nrel_main_idtf:[increased self esteem](*<-lang_en;;*);;
+grandiosity<-sc_node_norole_relation;
+=>nrel_main_idtf:[grandiosity](*<-lang_en;;*);;
+decreased_need_for_sleep<-sc_node_norole_relation;
+=>nrel_main_idtf:[decreased need for sleep](*<-lang_en;;*);;
+distractibility<-sc_node_norole_relation;
+=>nrel_main_idtf:[distractibility](*<-lang_en;;*);;
+impulsive_behaviour<-sc_node_norole_relation;
+=>nrel_main_idtf:[impulsive behaviour](*<-lang_en;;*);;
+reckless_behaviour<-sc_node_norole_relation;
+=>nrel_main_idtf:[reckless behaviour](*<-lang_en;;*);;
+rapid_changes_among_different_mood_states<-sc_node_norole_relation;
+=>nrel_main_idtf:[rapid changes among different mood states](*<-lang_en;;*);;
+
+bipolar_type_I_disorder=>nrel_symptom:
+rapid_speech;
+euphoria;
+irritability;
+expansiveness;
+increased_activity;
+subjective_experience_of_increased_energy;
+pressured_speech;
+flight_of_ideas;
+increased_self_esteem;
+grandiosity;
+decreased_need_for_sleep;
+distractibility;
+impulsive_behaviour;
+reckless_behaviour;
+rapid_changes_among_different_mood_states;;
+
+nrel_treatment<-sc_node_norole_relation;
+=>nrel_main_idtf:[treatment](*<-lang_en;;*);;
+bipolar_type_I_disorder<-sc_node_norole_relation;
+=>nrel_treatment:...
+(*
+<-statement;;
+=>nrel_main_idtf:[treatment](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Treatment is best guided by a medical doctor who specializes in diagnosing and treating mental health conditions (psychiatrist) who is skilled in treating bipolar and related disorders. You may have a treatment team that also includes a psychologist, social worker and psychiatric nurse.](*<-lang_en;;*);;
+*);;
+*);;
