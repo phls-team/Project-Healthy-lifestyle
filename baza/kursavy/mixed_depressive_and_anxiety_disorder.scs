@@ -1,0 +1,32 @@
+mixed_depressive_and_anxiety_disorder=>nrel_main_idtf:[mixed depressive and anxiety disorder](*<-lang_en;;*);;
+concept_subClassOf06_04_02=>nrel_inclusion:mixed_depressive_and_anxiety_disorder;;
+mixed_depressive_and_anxiety_disorder<-concept_disease;;
+mixed_depressive_and_anxiety_disorder<-rrel_sc_key_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:[Def.(Mixed depressive and anxiety disorder)](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Mixed depressive and anxiety disorder is characterized by symptoms of both anxiety and depression more days than not for a period of two weeks or more. Neither set of symptoms, considered separately, is sufficiently severe, numerous, or persistent to justify a diagnosis of a depressive episode, dysthymia or an anxiety and fear-related disorder. Depressed mood or diminished interest in activities must be present accompanied by additional depressive symptoms as well as multiple symptoms of anxiety. The symptoms result in significant distress or significant impairment in personal, family, social, educational, occupational or other important areas of functioning. There have never been any prior manic, hypomanic, or mixed episodes, which would indicate the presence of a bipolar disorder.](*<-lang_en;;*);;
+*);;
+*);;
+mixed_depressive_and_anxiety_disorder<-sc_node_norole_relation;;
+
+mixed_depressive_and_anxiety_disorder<-sc_node_norole_relation;
+=>nrel_unique_idtf:[6A73](*<-lang_en;;*);;
+
+mixed_depressive_and_anxiety_disorder=>nrel_symptom:
+depressed_mood;
+anxiety;;
+nrel_treatment<-sc_node_norole_relation;
+=>nrel_main_idtf:[treatment](*<-lang_en;;*);;
+mixed_depressive_and_anxiety_disorder<-sc_node_norole_relation;
+=>nrel_treatment:...
+(*
+<-statement;;
+=>nrel_main_idtf:[treatment](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[The two main treatments for persistent depressive disorder are medications and talk therapy (psychotherapy).](*<-lang_en;;*);;
+*);;
+*);;
