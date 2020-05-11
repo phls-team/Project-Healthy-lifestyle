@@ -1,0 +1,65 @@
+concept_psychological_treatment
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+
+ 	[психологическая помощь]
+	(*<-lang_ru;;*);
+
+	[psychological treatment]
+ 	(*<-lang_en;;*);
+
+
+
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (психологическая помощь) ] (*<-lang_ru;;*);;
+
+	=> nrel_using_constants: {
+    	psychiatry
+
+};;
+	 <= nrel_sc_text_translation: ... (*
+
+      -> rrel_example:
+	  
+	[Психологическая помощь — область практического применения <b><sc_element sys_idtf="psychiatry" >психиатрии</b></sc_element>, ориентированная на повышение социально-психологической компетентности людей и оказания психологической помощи как отдельному человеку, так и группе или организации. ] (* <- lang_ru;; => nrel_format: format_html;; 
+
+	*);;
+
+    *);;
+
+ *);
+
+
+
+
+<- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=>nrel_main_idtf:
+	[Утв. ] (*<-lang_ru;;*);;
+
+	<=nrel_sc_text_translation: ... (*
+
+	->rrel_example:
+
+	[ Это непосредственная работа с людьми, направленная на решение различного рода психологических проблем, связанных с трудностями в межличностных отношениях, а также глубинных личностных проблем. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+
+    *);;
+ *);
+
+
+<- rrel_key_sc_element: ...(*
+    <- illustration;;
+    <=nrel_sc_text_translation: ...(*
+        -> "file://images/psychological_treatment.jpg"(*=>nrel_format: format_jpg;;*);;
+    *);;
+*);;
+
+psychiatry => nrel_inclusion:concept_psychological_treatment;;
+
+
+
+	

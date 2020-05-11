@@ -1,0 +1,85 @@
+concept_altered_state_of_consciousness
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+
+ 	[измененное состояние сознания]
+	(*<-lang_ru;;*);
+
+	[altered state of consciousness]
+ 	(*<-lang_en;;*);
+
+
+
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (измененное состояние сознания) ] (*<-lang_ru;;*);;
+
+	=> nrel_using_constants: {
+    	concept_person
+
+};;
+
+	 <= nrel_sc_text_translation: ... (*
+
+      -> rrel_example:
+	  
+	[ Изменённые состояния сознания — качественные изменения в субъективных переживаниях или психологическом функционировании от определённых генерализованных для данного субъекта норм, рефлексируемые самим <b><sc_element sys_idtf="concept_person">человеком</b></sc_element> или отмечаемые наблюдателями. ] (* <- lang_ru;; => nrel_format: format_html;; 
+
+	*);;
+
+    *);;
+
+ *);
+
+
+
+
+<- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=>nrel_main_idtf:
+	[Утв. ] (*<-lang_ru;;*);;
+
+	=> nrel_using_constants: {
+    	concept_psyche;
+	concept_consciousness
+
+};;
+
+	<=nrel_sc_text_translation: ... (*
+
+	->rrel_example:
+
+	[ Кратковременные переживания измененных состояний сознания являются характерным свойством <b><sc_element sys_idtf="concept_consciousness">сознания</b></sc_element> и <b><sc_element sys_idtf="concept_psyche">психики</b></sc_element> здоровых людей. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+
+    *);;
+ *);
+
+
+
+
+<- rrel_key_sc_element: ...(*
+    <- illustration;;
+    <=nrel_sc_text_translation: ...(*
+        -> "file://images/altered_state_of_consciousness.jpg"(*=>nrel_format: format_jpg;;*);;
+    *);;
+*);;
+
+
+
+
+concept_consciousness => nrel_inclusion:concept_altered_state_of_consciousness;;
+
+
+
+
+
+
+
+
+
+
+
+	

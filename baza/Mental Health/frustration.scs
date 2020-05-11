@@ -1,0 +1,64 @@
+concept_frustration
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+
+ 	[фрустрация]
+	(*<-lang_ru;;*);
+
+	[frustration]
+ 	(*<-lang_en;;*);
+
+
+
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (фрустрация) ] (*<-lang_ru;;*);;
+
+
+	 <= nrel_sc_text_translation: ... (*
+
+      -> rrel_example:
+	  
+	[Фрустра́ция — психическое состояние, возникающее в ситуации реальной или предполагаемой невозможности удовлетворения тех или иных потребностей, или, проще говоря, в ситуации несоответствия желаний имеющимся возможностям. ] (* <- lang_ru;; => nrel_format: format_html;; 
+
+	*);;
+
+    *);;
+
+ *);
+
+
+
+
+<- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=>nrel_main_idtf:
+	[Утв. ] (*<-lang_ru;;*);;
+
+	=>nrel_using_constants :{
+	anxiety
+};;
+	<=nrel_sc_text_translation: ... (*
+
+	->rrel_example:
+
+	[ Фрустрация проявляется в ряде эмоциональных процессов, таких как разочарование, <b><sc_element sys_idtf="anxiety" >тревожность</b></sc_element> и даже отчаяние. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+
+    *);;
+ *);
+
+
+<- rrel_key_sc_element: ...(*
+    <- illustration;;
+    <=nrel_sc_text_translation: ...(*
+        -> "file://images/frustration.jpg"(*=>nrel_format: format_jpg;;*);;
+    *);;
+*);;
+
+
+
+
+	

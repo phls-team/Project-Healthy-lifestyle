@@ -1,0 +1,70 @@
+concept_excitator
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+
+ 	[раздражитель]
+	(*<-lang_ru;;*);
+
+	[excitator]
+ 	(*<-lang_en;;*);
+
+
+
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (раздражитель) ] (*<-lang_ru;;*);;
+
+	=> nrel_using_constants: {
+    	concept_organism
+
+};;
+
+	 <= nrel_sc_text_translation: ... (*
+
+      -> rrel_example:
+	  
+	[Раздражитель -- то, что вызывает в <b><sc_element sys_idtf="concept_organism">организме</b></sc_element> какую-либо реакцию, раздражение. ] (* <- lang_ru;; => nrel_format: format_html;; 
+
+	*);;
+
+    *);;
+
+ *);
+
+
+
+
+<- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=>nrel_main_idtf:
+	[Утв. ] (*<-lang_ru;;*);;
+
+	<=nrel_sc_text_translation: ... (*
+
+	->rrel_example:
+
+	[ В зависимости от субстрата, на который воздействует раздражитель, он может рассматриваться как адекватный и неадекватный для данного типа рецепторов. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+
+    *);;
+ *);
+
+
+
+
+
+<- rrel_key_sc_element: ...(*
+    <- illustration;;
+    <=nrel_sc_text_translation: ...(*
+        -> "file://images/excitator.jpg"(*=>nrel_format: format_jpg;;*);;
+    *);;
+*);;
+
+
+
+
+
+
+	

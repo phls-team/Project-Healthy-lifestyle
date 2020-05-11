@@ -1,0 +1,73 @@
+concept_nervous_system
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+
+ 	[нервная система]
+	(*<-lang_ru;;*);
+
+	[nervous system]
+ 	(*<-lang_en;;*);
+
+
+
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (нервная система) ] (*<-lang_ru;;*);;
+
+	=> nrel_using_constants: {
+    	concept_organism
+
+};;
+
+	 <= nrel_sc_text_translation: ... (*
+
+      -> rrel_example:
+	  
+	[Не́рвная систе́ма — целостная морфологическая и функциональная совокупность различных взаимосвязанных нервных структур, которая совместно с эндокринной системой обеспечивает взаимосвязанную регуляцию деятельности всех систем <b><sc_element sys_idtf="concept_organism" >организма</b></sc_element> и реакцию на изменение условий внутренней и внешней среды. ] (* <- lang_ru;; => nrel_format: format_html;; 
+
+	*);;
+
+    *);;
+
+ *);
+
+
+
+
+<- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=>nrel_main_idtf:
+	[Утв. ] (*<-lang_ru;;*);;
+
+	<=nrel_sc_text_translation: ... (*
+
+	->rrel_example:
+
+	[ Нервная система действует как интегративная система, связывая в одно целое чувствительность, двигательную активность и работу других регуляторных систем (эндокринной и иммунной). ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+
+    *);;
+ *);
+
+
+
+<- rrel_key_sc_element: ...(*
+    <- illustration;;
+    <=nrel_sc_text_translation: ...(*
+        -> "file://images/nervous_system.jpg"(*=>nrel_format: format_jpg;;*);;
+    *);;
+*);;
+
+
+
+
+
+concept_organism => nrel_inclusion:concept_nervous_system;;
+
+
+
+
+
+	

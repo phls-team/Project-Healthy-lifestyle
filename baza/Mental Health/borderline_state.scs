@@ -1,0 +1,72 @@
+concept_borderline_state
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+
+ 	[пограничное состояние]
+	(*<-lang_ru;;*);
+
+	[borderline state]
+ 	(*<-lang_en;;*);
+
+
+
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (пограничное состояние) ] (*<-lang_ru;;*);;
+
+	=> nrel_using_constants: {
+    	mental_illness
+
+};;
+
+	 <= nrel_sc_text_translation: ... (*
+
+      -> rrel_example:
+	  
+	[ Пограни́чное состоя́ние — относительно слабый уровень выраженности <b><sc_element sys_idtf="mental_illness">психического расстройства</b></sc_element>, не доходящий до уровня выраженной патологии. ] (* <- lang_ru;; => nrel_format: format_html;; 
+
+	*);;
+
+    *);;
+
+ *);
+
+
+
+
+<- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=>nrel_main_idtf:
+	[Утв. ] (*<-lang_ru;;*);;
+
+	=>nrel_using_constants :{
+	mental_health
+};;
+	<=nrel_sc_text_translation: ... (*
+
+	->rrel_example:
+
+	[ В отечественной традиции к пограничным относят состояния, начиная с <b><sc_element sys_idtf="mental_health">психического здоровья</b></sc_element> и заканчивая выраженной патологией. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+
+    *);;
+ *);
+
+
+
+<- rrel_key_sc_element: ...(*
+    <- illustration;;
+    <=nrel_sc_text_translation: ...(*
+        -> "file://images/borderline_state.jpg"(*=>nrel_format: format_jpg;;*);;
+    *);;
+*);;
+
+
+
+
+
+
+
+	

@@ -1,0 +1,82 @@
+concept_phlegmatic
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+
+ 	[флегматик]
+	(*<-lang_ru;;*);
+
+	[phlegmatic]
+ 	(*<-lang_en;;*);
+
+
+
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (флегматик) ] (*<-lang_ru;;*);;
+
+	=> nrel_using_constants: {
+    	concept_temperament
+
+};;
+
+	 <= nrel_sc_text_translation: ... (*
+
+      -> rrel_example:
+	  
+	[ Флегматик -- один из четырёх типов <b><sc_element sys_idtf="concept_temperament">темперамента</b></sc_element> в классификации Гиппократа (преобладание лимфы). ] (* <- lang_ru;; => nrel_format: format_html;; 
+
+	*);;
+
+    *);;
+
+ *);
+
+
+
+
+<- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=>nrel_main_idtf:
+	[Утв. ] (*<-lang_ru;;*);;
+
+	=> nrel_using_constants: {
+	concept_temperament;
+	concept_person;
+	concept_mood
+
+};;
+
+	<=nrel_sc_text_translation: ... (*
+
+	->rrel_example:
+
+	[ <b><sc_element sys_idtf="concept_person">Человека</b></sc_element> флегматического <b><sc_element sys_idtf="concept_temperament">темперамента</b></sc_element> можно охарактеризовать как  медлительного, спокойного, с устойчивыми стремлениями и более или менее постоянным <b><sc_element sys_idtf="concept_mood">настроением</b></sc_element>, со слабым внешним выражением душевных состояний. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+
+    *);;
+ *);
+
+
+
+
+
+
+<- rrel_key_sc_element: ...(*
+    <- illustration;;
+    <=nrel_sc_text_translation: ...(*
+        -> "file://images/phlegmatic.jpg"(*=>nrel_format: format_jpg;;*);;
+    *);;
+*);;
+
+
+
+
+concept_temperament => nrel_inclusion:concept_phlegmatic;;
+
+
+
+
+
+	

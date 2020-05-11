@@ -1,0 +1,81 @@
+concept_sanguine
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+
+ 	[сангвиник]
+	(*<-lang_ru;;*);
+
+	[sanguine]
+ 	(*<-lang_en;;*);
+
+
+
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (сангвиник) ] (*<-lang_ru;;*);;
+
+	=> nrel_using_constants: {
+    	concept_temperament
+
+};;
+
+	 <= nrel_sc_text_translation: ... (*
+
+      -> rrel_example:
+	  
+	[ Сангвиник -- один из четырёх типов <b><sc_element sys_idtf="concept_temperament">темперамента</b></sc_element> в классификации Гиппократа (преобладание крови). ] (* <- lang_ru;; => nrel_format: format_html;; 
+
+	*);;
+
+    *);;
+
+ *);
+
+
+
+
+<- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=>nrel_main_idtf:
+	[Утв. ] (*<-lang_ru;;*);;
+
+	=> nrel_using_constants: {
+	concept_temperament;
+	concept_person
+
+};;
+
+	<=nrel_sc_text_translation: ... (*
+
+	->rrel_example:
+
+	[ <b><sc_element sys_idtf="concept_person">Человека</b></sc_element> сангвинического <b><sc_element sys_idtf="concept_temperament">темперамента</b></sc_element> можно охарактеризовать как живого, подвижного, сравнительно легко переживающего неудачи и неприятности. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+
+    *);;
+ *);
+
+
+
+
+
+<- rrel_key_sc_element: ...(*
+    <- illustration;;
+    <=nrel_sc_text_translation: ...(*
+        -> "file://images/sanguine.jpg"(*=>nrel_format: format_jpg;;*);;
+    *);;
+*);;
+
+
+
+
+
+concept_temperament => nrel_inclusion:concept_sanguine;;
+
+
+
+
+
+	

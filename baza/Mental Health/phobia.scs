@@ -1,0 +1,74 @@
+concept_phobia
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+
+ 	[фобия]
+	(*<-lang_ru;;*);
+
+	[phobia]
+ 	(*<-lang_en;;*);
+
+
+
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (фобия) ] (*<-lang_ru;;*);;
+
+	=> nrel_using_constants: {
+    	concept_fear;
+	concept_worry
+
+};;
+
+	 <= nrel_sc_text_translation: ... (*
+
+      -> rrel_example:
+	  
+	[ Фо́бия — симптом, сутью которого является иррациональный неконтролируемый <b><sc_element sys_idtf="concept_fear">страх</b></sc_element> или устойчивое переживание излишней <b><sc_element sys_idtf="concept_worry">тревоги</b></sc_element> в определённых ситуациях или в присутствии (ожидании) некоего известного объекта. ] (* <- lang_ru;; => nrel_format: format_html;; 
+
+	*);;
+
+    *);;
+
+ *);
+
+
+
+
+<- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=>nrel_main_idtf:
+	[Утв. ] (*<-lang_ru;;*);;
+
+	=>nrel_using_constants :{
+	concept_fear
+};;
+	<=nrel_sc_text_translation: ... (*
+
+	->rrel_example:
+
+	[ Фобия обычно приводит к быстрому возникновению <b><sc_element sys_idtf="concept_fear">страха</b></sc_element> и присутствует в течение более шести месяцев. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+
+    *);;
+ *);
+
+
+
+<- rrel_key_sc_element: ...(*
+    <- illustration;;
+    <=nrel_sc_text_translation: ...(*
+        -> "file://images/phobia.jpg"(*=>nrel_format: format_jpg;;*);;
+    *);;
+*);;
+
+
+
+
+
+
+
+
+	

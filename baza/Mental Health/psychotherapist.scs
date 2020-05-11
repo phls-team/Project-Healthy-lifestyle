@@ -1,0 +1,75 @@
+concept_psychotherapist
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+
+ 	[психотерапевт]
+	(*<-lang_ru;;*);
+
+	[psychotherapist]
+ 	(*<-lang_en;;*);
+
+
+
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (психотерапевт) ] (*<-lang_ru;;*);;
+
+	=> nrel_using_constants: {
+    	concept_psychotherapy;
+	nrel_healing;
+	mental_illness
+
+	
+
+};;
+
+	 <= nrel_sc_text_translation: ... (*
+
+      -> rrel_example:
+	  
+	[ Психотерапевт -- специалист с высшим медицинским и психологическим образованием и дополнительной специализацией в области <b><sc_element sys_idtf="concept_psychotherapy"> психотерапии </b></sc_element>, который осуществляет профессиональную помощь в <b><sc_element sys_idtf="nrel_healing"> лечении </b></sc_element> <b><sc_element sys_idtf="mental_illness"> психических заболеваний </b></sc_element>. ] (* <- lang_ru;; => nrel_format: format_html;; 
+
+	*);;
+
+    *);;
+
+ *);
+
+
+
+
+<- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=>nrel_main_idtf:
+	[Утв. ] (*<-lang_ru;;*);;
+
+	=>nrel_using_constants :{
+    	concept_person
+};;
+	<=nrel_sc_text_translation: ... (*
+
+	->rrel_example:
+
+	[ Психотерапевтом себя называть имеет право лишь <b><sc_element sys_idtf="concept_person"> человек </b></sc_element>, который имеет медицинское образование. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+
+    *);;
+ *);
+
+
+
+<- rrel_key_sc_element: ...(*
+    <- illustration;;
+    <=nrel_sc_text_translation: ...(*
+        -> "file://images/psychotherapist.jpg"(*=>nrel_format: format_jpg;;*);;
+    *);;
+*);;
+
+
+
+
+
+
+	

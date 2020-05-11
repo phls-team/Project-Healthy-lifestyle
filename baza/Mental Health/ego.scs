@@ -1,0 +1,76 @@
+concept_ego
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+
+ 	[Эго]
+	(*<-lang_ru;;*);
+
+	[ego]
+ 	(*<-lang_en;;*);
+
+
+
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (Эго) ] (*<-lang_ru;;*);;
+
+	=> nrel_using_constants: {
+	concept_personality;
+	concept_perception
+
+};;
+	
+
+	 <= nrel_sc_text_translation: ... (*
+
+      -> rrel_example:
+	  
+	[ Эго — часть человеческой <b><sc_element sys_idtf="concept_personality">личности</b></sc_element>, которая находится в контакте с окружающим миром посредством <b><sc_element sys_idtf="concept_perception">восприятия</b></sc_element>. ] (* <- lang_ru;; => nrel_format: format_html;; 
+
+	*);;
+
+    *);;
+
+ *);
+
+
+
+
+<- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=>nrel_main_idtf:
+	[Утв. ] (*<-lang_ru;;*);;
+
+
+
+
+	<=nrel_sc_text_translation: ... (*
+
+	->rrel_example:
+
+	[ Эго осуществляет планирование, оценку, запоминание и иными путями реагирует на воздействие физического и социального окружения. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+
+    *);;
+ *);
+
+
+
+
+
+
+<- rrel_key_sc_element: ...(*
+    <- illustration;;
+    <=nrel_sc_text_translation: ...(*
+        -> "file://images/ego.jpg"(*=>nrel_format: format_jpg;;*);;
+    *);;
+*);;
+
+
+
+
+
+concept_psychoanalyse => nrel_inclusion:concept_ego;;
+

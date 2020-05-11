@@ -1,0 +1,65 @@
+concept_coping
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+
+ 	[копинг]
+	(*<-lang_ru;;*);
+
+	[coping]
+ 	(*<-lang_en;;*);
+
+
+
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (копинг) ] (*<-lang_ru;;*);;
+
+	=> nrel_using_constants: {
+    	concept_person;
+	stress
+
+};;
+	 <= nrel_sc_text_translation: ... (*
+
+      -> rrel_example:
+	  
+	[Копинг — это то, что делает <b><sc_element sys_idtf="concept_person" >человек</b></sc_element>, чтобы справиться со <b><sc_element sys_idtf="stress" >стрессом</b></sc_element>. ] (* <- lang_ru;; => nrel_format: format_html;; 
+
+	*);;
+
+    *);;
+
+ *);
+
+
+
+
+<- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=>nrel_main_idtf:
+	[Утв. ] (*<-lang_ru;;*);;
+
+	<=nrel_sc_text_translation: ... (*
+
+	->rrel_example:
+
+	[ Co временем понятие «копинг» стало включать в себя реакцию не только на «чрезмерные или превышающие ресурсы требования», но и на каждодневные стрессовые ситуации. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+
+    *);;
+ *);
+
+
+
+<- rrel_key_sc_element: ...(*
+    <- illustration;;
+    <=nrel_sc_text_translation: ...(*
+        -> "file://images/coping.jpg"(*=>nrel_format: format_jpg;;*);;
+    *);;
+*);;
+
+
+
+	

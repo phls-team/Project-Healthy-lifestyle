@@ -1,0 +1,78 @@
+concept_temperament
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+
+ 	[темперамент]
+	(*<-lang_ru;;*);
+
+	[temperament]
+ 	(*<-lang_en;;*);
+
+
+
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (темперамент) ] (*<-lang_ru;;*);;
+
+	=> nrel_using_constants: {
+    	concept_personality;
+	concept_mental_process
+
+};;
+
+	 <= nrel_sc_text_translation: ... (*
+
+      -> rrel_example:
+	  
+	[ Темпера́мент — устойчивая совокупность индивидуальных психофизиологических особенностей <b><sc_element sys_idtf="concept_personality">личности</b></sc_element>, связанных с динамическими (то есть темпом, ритмом, интенсивностью <b><sc_element sys_idtf="concept_mental_process">психических процессов</b></sc_element>), а не содержательными аспектами деятельности. ] (* <- lang_ru;; => nrel_format: format_html;; 
+
+	*);;
+
+    *);;
+
+ *);
+
+
+
+
+<- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=>nrel_main_idtf:
+	[Утв. ] (*<-lang_ru;;*);;
+
+	=> nrel_using_constants: {
+	concept_character
+
+};;
+
+	<=nrel_sc_text_translation: ... (*
+
+	->rrel_example:
+
+	[ Темперамент составляет основу формирования и развития <b><sc_element sys_idtf="concept_character">характера</b></sc_element>. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+
+    *);;
+ *);
+
+
+
+<- rrel_key_sc_element: ...(*
+    <- illustration;;
+    <=nrel_sc_text_translation: ...(*
+        -> "file://images/temperament.jpg"(*=>nrel_format: format_jpg;;*);;
+    *);;
+*);;
+
+
+
+
+concept_character => nrel_inclusion:concept_temperament;;
+
+
+
+
+
+	

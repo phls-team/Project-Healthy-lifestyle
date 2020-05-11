@@ -1,0 +1,72 @@
+concept_mental_process
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+
+ 	[психический процесс]
+	(*<-lang_ru;;*);
+
+	[mental process]
+ 	(*<-lang_en;;*);
+
+
+
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (психический процесс) ] (*<-lang_ru;;*);;
+
+	=> nrel_using_constants: {
+    	concept_psyche
+
+};;
+
+	 <= nrel_sc_text_translation: ... (*
+
+      -> rrel_example:
+	  
+	[ Психи́ческие проце́ссы — одна из групп психических явлений, объединяемых по функциональному назначению в целостной структуре <b><sc_element sys_idtf="concept_psyche">психики</b></sc_element>. ] (* <- lang_ru;; => nrel_format: format_html;; 
+
+	*);;
+
+    *);;
+
+ *);
+
+
+
+
+<- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=>nrel_main_idtf:
+	[Утв. ] (*<-lang_ru;;*);;
+
+
+	<=nrel_sc_text_translation: ... (*
+
+	->rrel_example:
+
+	[ В настоящее время в науке разрабатываются интегративные подходы к психике, и классификация психических явлений имеет скорее педагогическую и пропедевтическую ценность, нисходящую по мере развития науки. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+
+    *);;
+ *);
+
+
+<- rrel_key_sc_element: ...(*
+    <- illustration;;
+    <=nrel_sc_text_translation: ...(*
+        -> "file://images/mental_process.jpg"(*=>nrel_format: format_jpg;;*);;
+    *);;
+*);;
+
+
+concept_psyche => nrel_inclusion:concept_mental_process;;
+
+
+
+
+
+
+
+	

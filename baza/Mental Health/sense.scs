@@ -1,0 +1,80 @@
+concept_sense
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+
+ 	[ощущение]
+	(*<-lang_ru;;*);
+
+	[sense]
+ 	(*<-lang_en;;*);
+
+
+
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (ощущение) ] (*<-lang_ru;;*);;
+
+	=> nrel_using_constants: {
+    	concept_mental_process;
+	concept_nervous_system;
+	concept_excitator
+
+};;
+
+	 <= nrel_sc_text_translation: ... (*
+
+      -> rrel_example:
+	  
+	[ Ощущение -- это <b><sc_element sys_idtf="concept_mental_process">психический процесс</b></sc_element>, представляющий собой психическое отражение отдельных свойств и состояний внешней среды субъектом внутренних или внешних стимулов и <b><sc_element sys_idtf="concept_excitator">раздражителей</b></sc_element>, поступающих в виде сигналов посредством сенсорной системы, при участии <b><sc_element sys_idtf="concept_nervous_system">нервной системы</b></sc_element> в целом. ] (* <- lang_ru;; => nrel_format: format_html;; 
+
+	*);;
+
+    *);;
+
+ *);
+
+
+
+
+<- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=>nrel_main_idtf:
+	[Утв. ] (*<-lang_ru;;*);;
+
+	=>nrel_using_constants :{
+	concept_memory;
+	concept_perception;
+	concept_thought
+};;
+	<=nrel_sc_text_translation: ... (*
+
+	->rrel_example:
+
+	[ Ощущение относится к основным познавательным процессам, таким, как <b><sc_element sys_idtf="concept_memory">память</b></sc_element>, <b><sc_element sys_idtf="concept_perception">восприятие</b></sc_element> и <b><sc_element sys_idtf="concept_thought">мышление</b></sc_element>, привлекающим большее внимание исследователей. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+
+    *);;
+ *);
+
+
+<- rrel_key_sc_element: ...(*
+    <- illustration;;
+    <=nrel_sc_text_translation: ...(*
+        -> "file://images/sense.jpg"(*=>nrel_format: format_jpg;;*);;
+    *);;
+*);;
+
+
+
+
+concept_cognitive_process => nrel_inclusion:concept_sense;;
+
+
+
+
+
+
+
+	

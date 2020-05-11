@@ -1,0 +1,83 @@
+concept_psyche
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+
+ 	[психика]
+	(*<-lang_ru;;*);
+
+	[psyche]
+ 	(*<-lang_en;;*);
+
+
+
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (психика) ] (*<-lang_ru;;*);;
+
+	=> nrel_using_constants: {
+    	concept_psyche;
+	concept_live_activity;
+	concept_person;
+	concept_sense;
+	concept_thought
+
+};;
+
+	 <= nrel_sc_text_translation: ... (*
+
+      -> rrel_example:
+	  
+	[<b><sc_element sys_idtf="concept_psyche" > Психика</b></sc_element> -- особая сторона <b><sc_element sys_idtf="concept_live_activity" > жизнедеятельности</b></sc_element>
+	животных и <b><sc_element sys_idtf="concept_person" > человека</b></sc_element> и их взаимодействия с окружающей средой, основанная на высшей нервной деятельности и проявляющаяся в способности отражать действительность
+	в <b><sc_element sys_idtf="concept_sense"> ощущениях </b></sc_element>, <b><sc_element sys_idtf="concept_perception"> восприятиях </b></sc_element>, 
+	в  чувствах, а у <b><sc_element sys_idtf="concept_person" > людей</b></sc_element> также в <b><sc_element sys_idtf="concept_thought"> мышлении </b></sc_element> и воле. ] (* <- lang_ru;; => nrel_format: format_html;; 
+
+	*);;
+
+    *);;
+
+ *);
+
+
+
+
+<- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=>nrel_main_idtf:
+	[Утв. ] (*<-lang_ru;;*);;
+
+	=>nrel_using_constants :{
+    	concept_psyche;
+	intellect
+};;
+	<=nrel_sc_text_translation: ... (*
+
+	->rrel_example:
+
+	[ Верхней границей <b><sc_element sys_idtf="concept_psyche" > психики</b></sc_element> выступает <b><sc_element sys_idtf="intellect" > интеллект</b></sc_element>, содержанием которого является знание. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+
+    *);;
+ *);
+
+
+<- rrel_key_sc_element: ...(*
+    <- illustration;;
+    <=nrel_sc_text_translation: ...(*
+        -> "file://images/psyche.jpg"(*=>nrel_format: format_jpg;;*);;
+    *);;
+*);;
+
+
+
+
+
+physiology => nrel_inclusion:concept_psyche;;
+
+
+
+
+
+	

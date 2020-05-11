@@ -1,0 +1,73 @@
+concept_shock
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+
+ 	[шок]
+	(*<-lang_ru;;*);
+
+	[shock]
+ 	(*<-lang_en;;*);
+
+
+
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (шок) ] (*<-lang_ru;;*);;
+
+	=> nrel_using_constants: {
+    	concept_nervous_system;
+	concept_excitator
+
+};;
+
+	 <= nrel_sc_text_translation: ... (*
+
+      -> rrel_example:
+	  
+	[Шок — патологический процесс, развивающийся в ответ на воздействие чрезвычайных <b><sc_element sys_idtf="concept_excitator" >раздражителей</b></sc_element> и сопровождающийся прогрессивным нарушением жизненно важных функций <b><sc_element sys_idtf="concept_nervous_system" >нервной системы</b></sc_element>, кровообращения, дыхания, обмена веществ и некоторых других функций. ] (* <- lang_ru;; => nrel_format: format_html;; 
+
+	*);;
+
+    *);;
+
+ *);
+
+
+
+
+<- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=>nrel_main_idtf:
+	[Утв. ] (*<-lang_ru;;*);;
+
+	<=nrel_sc_text_translation: ... (*
+
+	->rrel_example:
+
+	[ Шок происходит при нарушении снабжения кислородом органов. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+
+    *);;
+ *);
+
+
+
+<- rrel_key_sc_element: ...(*
+    <- illustration;;
+    <=nrel_sc_text_translation: ...(*
+        -> "file://images/shock.jpg"(*=>nrel_format: format_jpg;;*);;
+    *);;
+*);;
+
+
+
+
+concept_excitator => nrel_inclusion:concept_shock;;
+
+concept_shock=>nrel_stressor:anxiety;;
+
+
+
+	

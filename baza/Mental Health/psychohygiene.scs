@@ -1,0 +1,64 @@
+concept_psychohygiene
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+
+ 	[психогигиена]
+	(*<-lang_ru;;*);
+
+	[psychohygiene]
+ 	(*<-lang_en;;*);
+
+
+
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (психогигиена) ] (*<-lang_ru;;*);;
+
+	=> nrel_using_constants: {
+    	well_being
+
+};;
+	 <= nrel_sc_text_translation: ... (*
+
+      -> rrel_example:
+	  
+	[Психогигиена — наука о сохранении и достижении психического <b><sc_element sys_idtf="well_being" >благополучия</b></sc_element>. ] (* <- lang_ru;; => nrel_format: format_html;; 
+
+	*);;
+
+    *);;
+
+ *);
+
+
+
+
+<- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=>nrel_main_idtf:
+	[Утв. ] (*<-lang_ru;;*);;
+
+	<=nrel_sc_text_translation: ... (*
+
+	->rrel_example:
+
+	[ Первый Международный конгресс по психогигиене состоялся в мае 1930 года в Вашингтоне, округ Колумбия. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+
+    *);;
+ *);
+
+
+<- rrel_key_sc_element: ...(*
+    <- illustration;;
+    <=nrel_sc_text_translation: ...(*
+        -> "file://images/psychohygiene.jpg"(*=>nrel_format: format_jpg;;*);;
+    *);;
+*);;
+
+
+
+
+	
