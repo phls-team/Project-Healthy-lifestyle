@@ -1,0 +1,35 @@
+match<-sc_node_not_relation;
+=>nrel_main_idtf:[матч] (*<-lang_ru;;*);
+[match] (*<-lang_en;;*);
+
+<-rrel_key_sc_element:..(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(матч)](*<-lang_ru;;*);;
+
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[  <b>матч</b> – состязание между двумя или несколькими <b><sc_element_idtf="sportsman">спортсменами</b></sc_element>, командами.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+<-rrel_key_sc_element:...
+	(*
+<-illustration;;
+<=nrel_sc_text_translation:...
+	(*
+->rrel_example: "file://match.JPG"
+	(*
+=>nrel_format:format_png;;
+	*);;	
+*);;
+*);
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(матч)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[Целью товарищеских матчей является тренировка тактики, сыгранности, наигрывания игровых и стандартных комбинаций, проверка в деле кандидатов в команду, определение основного состава команды в командных соревнованиях.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);;
+match->{rrel_example:[футбольный матч]};;

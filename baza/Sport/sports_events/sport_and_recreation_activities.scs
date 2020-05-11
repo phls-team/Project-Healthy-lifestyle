@@ -1,0 +1,35 @@
+sport_and_recreation_activities<-sc_node_not_relation;
+=>nrel_main_idtf:[физкультурно-оздоровительное мероприятие] (*<-lang_ru;;*);
+[sport and recreation activities] (*<-lang_en;;*);
+
+<-rrel_key_sc_element:..(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(физкультурно-оздоровительное мероприятие)](*<-lang_ru;;*);;
+
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[  <b>физкультурно-оздоровительное мероприятие</b> – мероприятие оздоровительного характера, направленное на укрепление <b><sc_element sys_idtf="concept_health">здоровья</b></sc_element> в процессе физического воспитания.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+<-rrel_key_sc_element:...
+	(*
+<-illustration;;
+<=nrel_sc_text_translation:...
+	(*
+->rrel_example: "file://activities.jpeg"
+	(*
+=>nrel_format:format_png;;
+	*);;	
+*);;
+*);
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(физкультурно-оздоровительное мероприятие)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[Спортивно-массовые  и  физкультурно-оздоровительные  мероприятия  могут  носить  соревновательный  познавательно-краеведческий , итогово-тестовый, прикладной характер.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);;
+sport_and_recreation_activities->{rrel_example:[марафон]};;

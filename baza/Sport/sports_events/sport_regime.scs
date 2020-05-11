@@ -1,0 +1,26 @@
+sport_regime<-sc_node_not_relation;
+=>nrel_main_idtf:[спортивный режим] (*<-lang_ru;;*);
+[sport regime] (*<-lang_en;;*);
+
+<-rrel_key_sc_element:..(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(спортивный режим)](*<-lang_ru;;*);;
+=>nrel_using_constants:{
+sportsman
+};;
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[  <b>спортивный режим</b> –порядок поведения <b><sc_element_idtf="sportsman">спортсмена</b></sc_element> во время проведения спортивных мероприятий и распорядок дня спортсмена, включающий режим тренировочной и (или) соревновательной работы, периоды отдыха, питания, восстановления, участия в медицинских осмотрах.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(спортивный режим)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[Режим не может быть одинаковым для всех спортсменов. Его составляет спортсмен совместно с тренером.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);;

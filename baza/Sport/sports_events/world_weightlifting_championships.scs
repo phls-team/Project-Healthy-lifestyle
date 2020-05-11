@@ -1,0 +1,35 @@
+world_weightlifting_championships<-sc_node_not_relation;
+=>nrel_main_idtf:[Чемпионат мира по тяжёлой атлетике] (*<-lang_ru;;*);
+[World Weightlifting Championships] (*<-lang_en;;*);
+<=nrel_inclusion: championship;
+<-rrel_key_sc_element:..(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Чемпионат мира по тяжёлой атлетике)](*<-lang_ru;;*);;
+
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[  <b>Чемпионат мира по тяжёлой атлетике</b> – главное международное <b><sc_element_idtf="sports_event"> соревнование</b></sc_element> по <b><sc_element_idtf="concept_weightlifting"> тяжелой атлетике</b></sc_element>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+<-rrel_key_sc_element:...
+	(*
+<-illustration;;
+<=nrel_sc_text_translation:...
+	(*
+->rrel_example: "file://world_weightlifting_championships.jpeg"
+	(*
+=>nrel_format:format_png;;
+	*);;	
+*);;
+*);
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Чемпионат мира по тяжёлой атлетике)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[У мужчин за всю историю проведения чемпионатов мира наибольшее количество медалей завоевали атлеты Советского Союза — 331 золотую, 208 серебряных и 93 бронзовых медалей. ](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);;
+world_weightlifting_championships->{rrel_example:[чемпионат мира 2017]};;

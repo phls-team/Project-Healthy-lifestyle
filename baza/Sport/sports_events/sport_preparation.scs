@@ -1,0 +1,27 @@
+sport_preparation<-sc_node_not_relation;
+=>nrel_main_idtf:[спортивная подготовка] (*<-lang_ru;;*);
+[sport preparation] (*<-lang_en;;*);
+
+<-rrel_key_sc_element:..(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(спортивная подготовка)](*<-lang_ru;;*);;
+=>nrel_using_constants:{
+sportsman
+};;
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[  <b>спортивная подготовка</b> –целенаправленная деятельность по подготовке <b><sc_element sys_idtf="sportsman">спортсменов</b></sc_element> к спортивным соревнованиям путем формирования и совершенствования их спортивного мастерства.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(спортивная подготовка)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[спортивная подготовка включает физическое воспитание спортсменов, участие в спортивных соревнованиях, а также материально-техническое, медицинское, научно-методическое обеспечение.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);;
+
+sport_preparation->{rrel_example:[участие в соревнованиях]};;

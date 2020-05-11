@@ -1,0 +1,29 @@
+marker<-sc_node_not_relation;
+=>nrel_main_idtf:[маркер] (*<-lang_ru;;*);
+[marker] (*<-lang_en;;*);
+
+<-rrel_key_sc_element:..(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(маркер)](*<-lang_ru;;*);;
+=>nrel_using_constants:{
+prohibited_substanse;
+prohibited_method
+};;
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[  <b>маркер</b> –компонент, группа компонентов или биологические параметры, которые свидетельствуют о применении <b><sc_element sys_idtf="prohibited_substance">запрещенной субстанции</b> </sc_element>или <b><sc_element sys_idtf="prohibited_method">запрещенного метода</b></sc_element>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(маркер)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[Понятие биомаркера было предложено в 2001 году Национальным институтом здоровья США](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);;
+
+marker->{rrel_example:[кровяное давление]};;

@@ -1,0 +1,35 @@
+croquet<-sc_node_not_relation;
+=>nrel_main_idtf:[крокет] (*<-lang_ru;;*);
+[croquet] (*<-lang_en;;*);
+<=nrel_inclusion: concept_game;
+<=nrel_place_of_appearence_of_the_sport:[Англия];
+<-rrel_key_sc_element:..(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(крокет)](*<-lang_ru;;*);;
+
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[  <b>крокет</b> – спортивная игра, участники которой ударами специальных молотков на длинной ручке проводят шары через воротца, расставленные на площадке в определённом порядке.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+<-rrel_key_sc_element:...
+	(*
+<-illustration;;
+<=nrel_sc_text_translation:...
+	(*
+->rrel_example: "file://croquet.jpg"
+	(*
+=>nrel_format:format_png;;
+	*);;	
+*);;
+*);
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(крокет)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[Самое ранее упоминание,  документально зафиксированное, в котором встречается слово "крокет" с описанием игры, является свод правил, зарегистрированный Исааком Шпроттом в ноябре 1856 года в Лондоне . ](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);;

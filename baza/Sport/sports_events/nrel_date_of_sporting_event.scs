@@ -1,0 +1,24 @@
+nrel_date_of_sporting_event
+<-sc_node_norole_relation;
+=>nrel_main_idtf:
+[date of sporting event*](*<-lang_en;;*);
+[дата проведения спортивного мероприятия*](*<-lang_ru;;*);
+
+
+=>nrel_definitional_domain:..(*
+<=nrel_combination:{ concept_date(*<=nrel_first_domain:nrel_date_of_sporting_event;;*);
+ sports_event(*<=nrel_second_domain:nrel_date_of_sporting_event;;*)
+};;
+*);;
+nrel_date_of_sporting_event<-antisymmetric_relation(*<=nrel_inclusion:binary_relation(*<=nrel_inclusion:relation;;*);;*);;
+nrel_date_of_sporting_event<-antireflexive_relation(*<=nrel_inclusion:binary_relation;;*);;
+nrel_date_of_sporting_event<-oriented_relation(*<=nrel_inclusion:relation;;*);; 
+
+arity->...(*=>nrel_measurement:2(*<-number;;*);;
+->nrel_date_of_sporting_event;;
+*);;
+
+concept_date<-sc_node_not_relation;
+=>nrel_main_idtf:
+[дата] (*<-lang_ru;;*);
+[date] (*<-lang_en;;*);;

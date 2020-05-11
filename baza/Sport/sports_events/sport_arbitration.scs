@@ -1,0 +1,24 @@
+sport_arbitration<-sc_node_not_relation;
+=>nrel_main_idtf:[спортивный арбитраж] (*<-lang_ru;;*);
+[sport arbitration] (*<-lang_en;;*);
+
+<-rrel_key_sc_element:..(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(спортивный арбитраж)](*<-lang_ru;;*);;
+
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[  <b>спортивный арбитраж</b> –постоянно действующий третейский суд или третейский суд, образованный сторонами для решения конкретного спора, разрешающий споры в области физической культуры и спорта.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(спортивный арбитраж)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[спортивный арбитраж в Беларуси появился в 2012 году.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);;

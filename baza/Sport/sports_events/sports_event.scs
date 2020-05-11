@@ -1,0 +1,35 @@
+sports_event<-sc_node_not_relation;
+=>nrel_main_idtf:[спортивное мероприятие] (*<-lang_ru;;*);
+[sports event] (*<-lang_en;;*);
+=>nrel_inclusion:championship;tournament;sport_and_recreation_activities;spartakiad;
+<-rrel_key_sc_element:..(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(спортивное мероприятие)](*<-lang_ru;;*);;
+
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[  <b>спортивное мероприятие</b> –официальное спортивное мероприятие общенационального и (или) международного уровня, имеющее важное международное, государственное и общественное значение.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+<-rrel_key_sc_element:...
+	(*
+<-illustration;;
+<=nrel_sc_text_translation:...
+	(*
+->rrel_example: "file://sports_event.jpeg"
+	(*
+=>nrel_format:format_png;;
+	*);;	
+*);;
+*);
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(спортивное мероприятие)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[Массовые физкультурно-спортивные мероприятия рассматриваются в качестве эффективного метода приобщения широких масс населения к регулярным занятиям физическими упражнениями, спортом и туризмом, повышения уровня их физической подготовленности, воспитания у них полезных двигательных умений и навыков, формирования здорового образа жизни.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);;
+sports_event->{rrel_example:world_chess_championship};;

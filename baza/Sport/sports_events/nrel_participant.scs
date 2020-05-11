@@ -1,0 +1,45 @@
+nrel_participant
+<-sc_node_norole_relation;
+=>nrel_main_idtf:
+[participant](*<-lang_en;;*);
+[участник*](*<-lang_ru;;*);
+
+<-rrel_key_sc_element:...(*
+<-definition;;
+
+=>nrel_main_idtf:
+[Опр.(участник)](*<-lang_ru;;*);;
+=>nrel_using_constants:{
+activity
+};;
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[<b>участник</b> -тот, кто <b><sc_element sys_idtf="nrel_participantion">участвует</b></sc_element> в чём-либо, то есть занимается чем-либо совместно с другими](* <- lang_ru;; => nrel_format: format_html;;*);;
+*);;
+*);
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:[Утв.(участник)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...(*
+->rrel_example:[принимать участиe можно как индивидуально, так и группой.](* <- lang_ru;; => nrel_format: format_html;;*);;
+*);;
+*);
+
+=>nrel_definitional_domain:..(*
+<=nrel_combination:{ activity(*<=nrel_first_domain:nrel_participant;;*);
+ concept_person(*<=nrel_second_domain:nrel_participant;;*)
+};;
+*);;
+nrel_participant<-antisymmetric_relation(*<=nrel_inclusion:binary_relation(*<=nrel_inclusion:relation;;*);;*);;
+nrel_participant<-antitransitive_relation(*<=nrel_inclusion:binary_relation;;*);;
+nrel_participant<-antireflexive_relation(*<=nrel_inclusion:binary_relation;;*);;
+nrel_participant<-oriented_relation(*<=nrel_inclusion:relation;;*);; 
+
+arity->...(*=>nrel_measurement:2(*<-number;;*);;
+->nrel_participant;;
+*);;
+
+activity<-sc_node_not_relation;
+=>nrel_main_idtf:
+[активность] (*<-lang_ru;;*);
+[activity] (*<-lang_en;;*);;

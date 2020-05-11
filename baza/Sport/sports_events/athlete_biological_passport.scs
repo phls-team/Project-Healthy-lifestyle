@@ -1,0 +1,29 @@
+athlete_biological_passport<-sc_node_not_relation;
+=>nrel_main_idtf:[Биологический паспорт спортсмена] (*<-lang_ru;;*);
+[Athlete Biological Passport] (*<-lang_en;;*);
+
+<-rrel_key_sc_element:..(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Биологический паспорт спортсмена)](*<-lang_ru;;*);;
+=>nrel_using_constants:{
+prohibited_substanse;
+marker;
+drug_test;
+sportsman
+};;
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[  <b>Биологический паспорт спортсмена</b> –индивидуальная электронная запись спортсмена-профессионала, содержащая профили биологических <b><sc_element sys_idtf="marker">маркеров</b></sc_element> <b><sc_element sys_idtf="prohibited_substanse">запрещенных веществ</b></sc_element> в соотнесении с результатами <b><sc_element sys_idtf="drug_test">допинг-контроля</b></sc_element> <b><sc_element sys_idtf="sportsman">спортсмена</b></sc_element> за определенный период времени.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Биологический паспорт спортсмена)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[Паспорт состоит из стероидного и гематологического модулей. ](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);;
+

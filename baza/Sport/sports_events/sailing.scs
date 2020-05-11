@@ -1,0 +1,36 @@
+sailing<-sc_node_not_relation;
+=>nrel_main_idtf:[Сэйлинг] (*<-lang_ru;;*);
+[па́русный спорт] (*<-lang_ru;;*);
+[Sailing] (*<-lang_en;;*);
+<=nrel_inclusion: concept_game;olimpic_sport;
+<=nrel_place_of_appearence_of_the_sport:[Нидерланды];
+<-rrel_key_sc_element:..(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Па́русный спорт)](*<-lang_ru;;*);;
+
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[  <b>Па́русный спорт</b> – активный водный  <b><sc_element  sys_idtf="concept_game">вид спорта</b></sc_element>, в котором <b><sc_element  sys_idtf="sportsman">спортсмены</b></sc_element> соревнуются, используя парусное снаряжение, установленное, главным образом, на яхтах.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+<-rrel_key_sc_element:...
+	(*
+<-illustration;;
+<=nrel_sc_text_translation:...
+	(*
+->rrel_example: "file://sailing.jpg"
+	(*
+=>nrel_format:format_png;;
+	*);;	
+*);;
+*);
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Па́русный спорт)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[Конструкция яхт и аэродинамическая форма парусов, конструкция парусного вооружения дают возможность яхтам двигаться не только в направлении ветра, но и под углом к нему. Современные яхты позволяют идти под острым углом к направлению ветра. Благодаря этому, меняя галсы (делая повороты), яхта как бы лесенкой (в лавировку) может продвигаться и против ветра.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);;

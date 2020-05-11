@@ -1,0 +1,25 @@
+sports_education<-sc_node_not_relation;
+=>nrel_main_idtf:[спортивное воспитание] (*<-lang_ru;;*);
+[sports education] (*<-lang_en;;*);
+
+<-rrel_key_sc_element:..(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(спортивное воспитание)](*<-lang_ru;;*);;
+
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[  <b>спортивное воспитание</b>-это деятельность, направленная на формирование спортивной культуры, нравственных основ личности ребенка, подростка, молодого человека в процессе спортивной деятельности..](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(спортивное воспитание)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[Спортивное воспитание предполагает решение ряда образовательных задач. Тренировочный процесс связан с творческой, поисковой деятельностью.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);;
+ 

@@ -1,0 +1,41 @@
+olimpic_sport<-sc_node_not_relation;
+=>nrel_main_idtf:[олимпийские виды спорта] (*<-lang_ru;;*);
+[olimpic sport] (*<-lang_en;;*);
+<=nrel_inclusion:concept_game;
+=>nrel_inclusion:winter_sport;
+
+<-rrel_key_sc_element:..(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(олимпийские виды спорта)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[  <b>олимпийские виды спорта</b> – <b><sc_element sys_idtf="concept_game">виды спорта</b></sc_element>, которые входят в программу современных Олимпийских игр.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-illustration;;
+<=nrel_sc_text_translation:...(*
+->rrel_example: "file://olimpic_sport.jpeg"
+	(*
+=>nrel_format:format_png;;
+	*);;	
+*);;
+*);
+
+<-rrel_key_sc_element:..(*
+<-definition;;
+=>nrel_main_idtf:
+[Утв.(олимпийские виды спорта)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[На сегодняшний день в программу Олимпийских игр входят 28 летних (41 дисциплина) и 7 зимних (15 дисциплин) <b><sc_element sys_idtf="concept_game">видов спорта</b></sc_element>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);;
+
+
+
+
+
+

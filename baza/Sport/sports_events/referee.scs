@@ -1,0 +1,35 @@
+referee<-sc_node_not_relation;
+=>nrel_main_idtf:[спортивный судья] (*<-lang_ru;;*);
+[арбитр] (*<-lang_ru;;*);
+[рефери] (*<-lang_ru;;*);
+[Referee] (*<-lang_en;;*);
+
+<-rrel_key_sc_element:..(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(спортивный судья)](*<-lang_ru;;*);;
+
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[  <b>спортивный судья</b> –  физическое лицо, уполномоченное организатором <b><sc_element_idtf="sport_competitions">  спортивного  соревнования</b></sc_element> обеспечить соблюдение правил вида спорта и положения (регламента) соревнований, прошедшее специальную подготовку и получившее соответствующую квалификационную категорию. ](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+<-rrel_key_sc_element:..(*
+<-illustration;;
+<=nrel_sc_text_translation:...
+	(*
+->rrel_example: "file://referee.jpg"
+	(*
+=>nrel_format:format_png;;
+	*);;	
+*);;
+*);
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(спортивный судья)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[Одновременно соревнования могут обслуживать несколько судей, как, например, в футбольном судействе. В этом случае назначается главный судья этапа соревнований, за которым остаётся решающее слово.  ](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);;

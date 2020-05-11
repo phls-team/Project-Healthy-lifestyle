@@ -1,0 +1,34 @@
+sport_competitions<-sc_node_not_relation;
+=>nrel_main_idtf:[спортивные соревнования] (*<-lang_ru;;*);
+[sport competitions] (*<-lang_en;;*);
+
+<-rrel_key_sc_element:..(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(спортивные соревнования)](*<-lang_ru;;*);;
+
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[  <b>спортивные соревнования</b> – совокупность или отдельные мероприятия (состязания) в области профессионального спорта, проводимые под эгидой международных спортивных федераций, национальных спортивных федераций, профессиональных спортивных организаций и иных организаций в игровой или неигровой форме с целью достижения высоких спортивных результатов и выяснения преимущества в степени физической, психофизиологической или организационной подготовленности отдельных профессиональных спортсменов или их групп.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+<-rrel_key_sc_element:..(*
+<-illustration;;
+<=nrel_sc_text_translation:...
+	(*
+->rrel_example: "file://sport_competitions.jpeg"
+	(*
+=>nrel_format:format_png;;
+	*);;	
+*);;
+*);
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(спортивные соревнования)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[Спортивные соревонования проводятся по каждому виду спорта.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);;
+sport_competitions->{rrel_example:[чемпионат мира по легкой атлетике]};;

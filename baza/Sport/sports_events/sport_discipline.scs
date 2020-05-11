@@ -1,0 +1,28 @@
+sport_discipline<-sc_node_not_relation;
+=>nrel_main_idtf:[спортивная дисциплина] (*<-lang_ru;;*);
+[sport discipline] (*<-lang_en;;*);
+
+<-rrel_key_sc_element:..(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(спортивная дисциплина)](*<-lang_ru;;*);;
+=>nrel_using_constants:{
+sport_type
+};;
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[  <b>спортивная дисциплина</b> –часть вида спорта, имеющая отличительные признаки и включающая в себя один или несколько видов (программ) соревнований.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(спортивная дисциплина)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[ Перечень дисциплин в том или ином виде спорта утверждается соответствующими спортивными федерациями.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);;
+
+sport_discipline->{rrel_example:[мужской и женский бег на 100 метров]};;

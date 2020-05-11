@@ -1,0 +1,29 @@
+prohibited_method<-sc_node_not_relation;
+=>nrel_main_idtf:[запрещенный метод] (*<-lang_ru;;*);
+[prohibited method] (*<-lang_en;;*);
+
+<-rrel_key_sc_element:..(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(запрещенный метод)](*<-lang_ru;;*);;
+=>nrel_using_constants:{
+substanse;
+method
+};;
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[  <b>запрещенный метод</b> – метод, включенный в список <b><sc_element sys_idtf="prohibited_substance">запрещенных субстанций</b> </sc_element>или <b><sc_element sys_idtf="prohibited_method">запрещенных методов</b></sc_element>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(запрещенный метод)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[Список запрещенных субстанций и запрещенных методов составляет ВАДА](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);;
+
+prohibited_method->{rrel_example:[манипуляции с кровью и ее компонентами]};;

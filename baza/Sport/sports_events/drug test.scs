@@ -1,0 +1,31 @@
+drug_test<-sc_node_not_relation;
+=>nrel_main_idtf:[допинг-контроль] (*<-lang_ru;;*);
+[drug test] (*<-lang_en;;*);
+
+<-rrel_key_sc_element:..(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(допинг-контроль)](*<-lang_ru;;*);;
+=>nrel_using_constants:{
+process;
+test;
+analysis;
+proceding;
+appeal
+};;
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[<b>допинг-контроль</b> - процесс, включающий планирование проведения тестов, взятие проб и обращение с ними, лабораторный анализ, послетестовые процедуры, слушания и апелляции.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(допинг-контроль)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[Борьба с употреблением допинга ведётся для обеспечения честности спортивных соревнований и для сохранения здоровья спортсменов.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);;
+
+drug_test->{rrel_example:[взятие пробы перед соревнованием]};;

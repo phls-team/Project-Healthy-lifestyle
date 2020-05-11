@@ -1,0 +1,29 @@
+prohibited_substance<-sc_node_not_relation;
+=>nrel_main_idtf:[Запрещенная субстанция] (*<-lang_ru;;*);
+[prohibited substance] (*<-lang_en;;*);
+
+<-rrel_key_sc_element:..(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(допинг-контроль)](*<-lang_ru;;*);;
+=>nrel_using_constants:{
+prohibited_substanse;
+prohibited_method
+};;
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[  <b>Запрещенная субстанция</b> – субстанция, включенная в список <b><sc_element sys_idtf="prohibited_substance">запрещенных субстанций</b> </sc_element>или <b><sc_element sys_idtf="prohibited_method">запрещенных методов</b></sc_element>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+=>nrel_inclusion:  anabolic_agents;stimulants;
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Запрещенная субстанция)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[Список запрещенных субстанций и запрещенных методов составляет ВАДА](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);;
+
+prohibited_substance->{rrel_example:[гормоны]};;

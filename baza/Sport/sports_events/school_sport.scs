@@ -1,0 +1,34 @@
+school_sport<-sc_node_not_relation;
+=>nrel_main_idtf:[школьный  спорт] (*<-lang_ru;;*);
+[school sport] (*<-lang_en;;*);
+
+<-rrel_key_sc_element:..(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(школьный спорт)](*<-lang_ru;;*);;
+
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[  <b>школьный спорт</b>-часть физической культуры и спорта, направленная на физическое воспитание обучающихся в учреждениях общего среднего образования, в том числе <b><sc_element_idtf="sportsman">спортсменов</b></sc_element>, их подготовку к участию и участие в <b><sc_element_idtf="sport_and_recreation_activites">физкультурно-оздоровительных</b></sc_element>, спортивно-массовых, <b><sc_element_idtf="sport_event">спортивных мероприятиях</b></sc_element>. ](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+<-rrel_key_sc_element:..(*
+<-illustration;;
+<=nrel_sc_text_translation:...
+	(*
+->rrel_example: "file://school_sport.jpeg"
+	(*
+=>nrel_format:format_png;;
+	*);;	
+*);;
+*);
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(школьный спорт)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[Благодаря школьным видам спорта учащиеся могут приобретать навыки, улучшать свои физические возможности, повышать самооценку и формировать здоровые привычки. Спорт также обеспечивает интеграцию и обучает основным понятиям уважения.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);;
+ 
