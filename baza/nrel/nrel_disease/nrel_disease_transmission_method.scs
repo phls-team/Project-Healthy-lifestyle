@@ -1,0 +1,22 @@
+nrel_disease_transmission_method<-sc_node_norole_relation;;
+nrel_disease_transmission_method=> nrel_main_idtf: [способ передачи заболевания*](*<- lang_ru;;*);;
+nrel_disease_transmission_method=> nrel_main_idtf: [disease transmission method*](*<- lang_en;;*);;
+
+definition ->...
+(*
+->rrel_key_sc_element: nrel_disease_transmission_method;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Способ передачи заболевания - способ перемещения возбудителя инфекционной или паразитарной болезни из зараженного организма в восприимчивый.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Опр.(способ передачи заболевания*)](*<- lang_ru;;*);;
+
+*);;
+
+nrel_disease_transmission_method => nrel_first_domain: concept_disease;;
+nrel_disease_transmission_method=> nrel_second_domain: concept_transmission_path;;
+
+nrel_disease_transmission_method<-binary_relation;;
+parameter->arity;;
+arity->binary_relation;;
+binary_relation=>nrel_measurement:2;;
+2<-number;;
+
+nrel_disease_transmission_method<-oriented_relation;;

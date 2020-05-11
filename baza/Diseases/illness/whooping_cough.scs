@@ -1,0 +1,80 @@
+concept_whooping_cough <-sc_node_not_relation;;
+concept_whooping_cough => nrel_main_idtf: [коклюш](*<- lang_ru;;*);;
+concept_whooping_cough => nrel_main_idtf: [whooping cough](*<- lang_en;;*);;
+
+concept_whooping_cough=>nrel_mortality:[Коэффициент летальности достигает 1%.];;
+
+concept_subClassOf01_07=>nrel_inclusion:concept_whooping_cough;;
+
+concept_whooping_cough<-sc_node_norole_relation;
+=>nrel_unique_idtf:[1C12](*<-lang_en;;*);;
+concept_whooping_cough<-sc_node_norole_relation;
+=>nrel_unique_idtf:[1C12](*<-lang_ru;;*);;
+
+
+concept_whooping_cough<-sc_node_norole_relation;
+=>nrel_incubation_period:...
+(*
+=>rrel_minimalPeriod:[2 days](*<-lang_en;;*);;
+=>rrel_minimalPeriod:[2 дня](*<-lang_ru;;*);;
+=>rrel_maximalPeriod:[21 days](*<-lang_en;;*);;
+=>rrel_maximalPeriod:[21 день](*<-lang_ru;;*);;
+*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_whooping_cough;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Коклюш — острая антропонозная воздушно-капельная бактериальная инфекция, наиболее характерным признаком которой является приступообразный спазматический кашель.](*<- lang_ru;;*);;
+	    -> [Whooping cough is an acute anthroponous airborne bacterial infection, the most characteristic sign of which is a paroxysmal spasmodic cough.](*<- lang_en;;*);;
+	   *);;
+    => nrel_main_idtf: [Опр.(коклюш)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(whooping cough)](*<- lang_en;;*);;
+*);;
+
+
+
+concept_whooping_cough=>nrel_source_of_infection:[Источниками инфекции являются больные (дети и взрослые) типичными и атипичными формами коклюша.];;
+
+concept_whooping_cough=>nrel_susceptibility:[Восприимчивость к коклюшу сохраняется высокой у детей до 1 года, у лиц, не привитых против коклюша, а также утративших иммунитет к коклюшной инфекции с возрастом.];;
+
+concept_whooping_cough=>nrel_period_of_full_development:fever;cough;difficulty_swallowing;
+runny_nose;vomiting;;
+
+concept_whooping_cough=>nrel_symptom:fever;cough;difficulty_swallowing;pain_and_weakness_in_muscles;
+runny_nose;;
+
+concept_whooping_cough=>nrel_healing:concept_diets;concept_drug_therapy;;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_whooping_cough;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Больной не заразен для окружающих. Эпидемиологических мероприятий в очаге болезни не проводят. Иммунитет после болезни не развивается.](*<- lang_ru;;*);;
+	    -> [The patient is not contagious to others. Epidemiological measures in the outbreak are not carried out. Immunity after illness does not develop.](*<- lang_en;;*);;
+
+
+        *);;
+    => nrel_main_idtf: [Утв.(коклюш)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(whooping cough)](*<- lang_en;;*);;
+*);;
+
+
+concept_whooping_cough=>nrel_disease_prevention:[В большинстве развитых стран для вакцинации населения от коклюша используются ацеллюлярная (бесклеточная) вакцина и различные её комбинации с другими педиатрическими вакцинами против полиомиелита, гепатита В, гемофильной инфекции.];;
+
+
+concept_whooping_cough<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://картинки/cough.png"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;

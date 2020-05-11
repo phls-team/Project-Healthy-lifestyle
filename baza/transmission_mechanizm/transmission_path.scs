@@ -1,0 +1,168 @@
+concept_transmission_path<-sc_node_not_relation;;
+concept_transmission_path => nrel_main_idtf: [путь передачи заболевания](*<- lang_ru;;*);;
+concept_transmission_path => nrel_main_idtf: [transmission path](*<- lang_en;;*);;
+
+concept_transmission_path=>nrel_inclusion:concept_airborne;concept_airborne_dust;concept_waterway;
+concept_alimentary;concept_household;concept_inoculation;concept_contagious;concept_artificial;;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_transmission_path;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Путь передачи — определённая совокупность и последовательность факторов передачи, с помощью которых реализуется механизм передачи.](*<- lang_ru;;*);;
+	    -> [A transmission path is a specific set and sequence of transmission factors by which a transmission mechanism is realized.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(путь передачи заболевания)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [Def.(transmission path)](*<- lang_en;;*);;
+    => nrel_using_constants: ...
+        (*
+            ->concept_transmission_mechanism;;
+        *);;
+*);;
+
+
+
+concept_airborne<-sc_node_not_relation;;
+concept_airborne => nrel_main_idtf: [воздушно-капельный путь передачи](*<- lang_ru;;*);;
+concept_airborne => nrel_main_idtf: [airborne transmission](*<- lang_en;;*);;
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_airborne;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [При воздушно-капельном пути передачи возбудитель поступает в воздушную среду при кашле, чихании и т. п., пребывает в ней в форме аэрозоля и внедряется в организм человека при вдыхании зараженного воздуха. ](*<- lang_ru;;*);;
+	    -> [With an airborne droplet transmission, the pathogen enters the air when coughing, sneezing, etc., is in the form of an aerosol in it and is introduced into the human body by inhaling contaminated air.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(воздушно-капельный путь передачи)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [Def.(airborne transmission)](*<- lang_en;;*);;
+    => nrel_using_constants: ...
+        (*
+            ->cough;;
+	    ->concept_organism;;
+        *);;
+*);;
+
+concept_airborne_dust<-sc_node_not_relation;;
+concept_airborne_dust => nrel_main_idtf: [воздушно-пылевой путь передачи](*<- lang_ru;;*);;
+concept_airborne_dust => nrel_main_idtf: [airborne dust transmission](*<- lang_en;;*);;
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_airborne_dust;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [При воздушно-пылевом пути заражения возбудитель попадает в макроорганизм с частицами пыли (в случае возможности длительного его сохранения во внешней среде, например при туберкулёзе).](*<- lang_ru;;*);;
+	    -> [During the airborne dust path of infection, the pathogen enters the macroorganism with dust particles (if it can be stored for a long time in the external environment, such as tuberculosis).](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(воздушно-пылевой путь передачи)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [Def.(airborne dust transmission)](*<- lang_en;;*);;
+    => nrel_using_constants: ...
+        (*
+            ->tuberculosis;;
+        *);;
+*);;
+
+
+concept_waterway<-sc_node_not_relation;;
+concept_waterway => nrel_main_idtf: [водный путь передачи](*<- lang_ru;;*);;
+concept_waterway => nrel_main_idtf: [waterway transmission](*<- lang_en;;*);;
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_waterway;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Проникновение в восприимчивый организм происходит через рот, главным образом при заглатывании загрязненной воды .](*<- lang_ru;;*);;
+	    -> [Penetration into a susceptible organism occurs through the mouth, mainly by ingestion of contaminated water.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(водный путь передачи)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [Def.(waterway transmission)](*<- lang_en;;*);;
+*);;
+
+concept_alimentary<-sc_node_not_relation;;
+concept_alimentary => nrel_main_idtf: [алиментарный путь передачи](*<- lang_ru;;*);;
+concept_alimentary => nrel_main_idtf: [alimentary transmission](*<- lang_en;;*);;
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_alimentary;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Проникновение в восприимчивый организм происходит через рот, главным образом при заглатывании загрязненной пищи .](*<- lang_ru;;*);;
+	    -> [Penetration into a susceptible organism occurs through the mouth, mainly by ingestion of contaminated food.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(алиментарный путь передачи)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [Def.(alimentary transmission)](*<- lang_en;;*);;
+*);;
+
+
+concept_household<-sc_node_not_relation;;
+concept_household => nrel_main_idtf: [контактно-бытовой путь передачи](*<- lang_ru;;*);;
+concept_household => nrel_main_idtf: [contact household transmission](*<- lang_en;;*);;
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_household;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Проникновение в восприимчивый организм происходит через рот, главным образом при заглатывании загрязненной пищи с грязными руками и предметами обихода.](*<- lang_ru;;*);;
+	    -> [Penetration into a susceptible organism occurs through the mouth, mainly when swallowing contaminated food with dirty hands and household items.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(контактно-бытовой путь передачи)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [Def.(contact household transmission)](*<- lang_en;;*);;
+*);;
+
+
+concept_inoculation<-sc_node_not_relation;;
+concept_inoculation => nrel_main_idtf: [инокуляционный путь передачи](*<- lang_ru;;*);;
+concept_inoculation=> nrel_main_idtf: [inoculation transmission](*<- lang_en;;*);;
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_inoculation;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Проникновение возбудителя происходит со слюной.](*<- lang_ru;;*);;
+	    -> [The penetration of the pathogen occurs with saliva.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(инокуляционный путь передачи)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [Def.(inoculation transmission)](*<- lang_en;;*);;
+*);;
+
+
+concept_contagious<-sc_node_not_relation;;
+concept_contagious => nrel_main_idtf: [контамитивный путь передачи](*<- lang_ru;;*);;
+concept_contagious => nrel_main_idtf: [contagious transmission](*<- lang_en;;*);;
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_contagious;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Возбудитель выделяется с фекалиями переносчика.](*<- lang_ru;;*);;
+	    -> [The causative agent is mentioned with the feces of the carrier.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(контамитивный путь передачи)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [Def.(contagious transmission)](*<- lang_en;;*);;
+*);;
+
+concept_artificial<-sc_node_not_relation;;
+concept_artificial => nrel_main_idtf: [искусственный путь передачи](*<- lang_ru;;*);;
+concept_artificial => nrel_main_idtf: [artificial transmission](*<- lang_en;;*);;
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_artificial;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Связан с медицинскими манипуляциями: инъекционный, ассоциированный с операцией, ассоциированный с диагностической манипуляцией, трансфузионный, трансплантационный.](*<- lang_ru;;*);;
+	    -> [Associated with medical manipulations: injection, associated with surgery, associated with diagnostic manipulation, transfusion, transplant.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(искусственный путь передачи)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [Def.(artificial transmission)](*<- lang_en;;*);;
+*);;
+
+
+
+
+
+
+
+
+
+
+

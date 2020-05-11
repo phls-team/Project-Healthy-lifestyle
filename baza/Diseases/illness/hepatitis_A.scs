@@ -1,0 +1,97 @@
+concept_hepatitis_A <-sc_node_not_relation;;
+concept_hepatitis_A => nrel_main_idtf: [Гепатит А](*<- lang_ru;;*);;
+concept_hepatitis_A => nrel_main_idtf: [hepatitis A](*<- lang_en;;*);;
+
+concept_hepatitis_A<-sc_node_norole_relation;
+=>nrel_unique_idtf:[1E50.0](*<-lang_en;;*);;
+concept_hepatitis_A<-sc_node_norole_relation;
+=>nrel_unique_idtf:[1E50.0](*<-lang_ru;;*);;
+
+concept_hepatitis_A<-concept_disease;;
+
+concept_hepatitis_A<-sc_node_norole_relation;
+=>nrel_incubation_period:...
+(*
+=>rrel_minimalPeriod:[2 weeks](*<-lang_en;;*);;
+=>rrel_minimalPeriod:[2 недели](*<-lang_ru;;*);;
+=>rrel_maximalPeriod:[6 weeks](*<-lang_en;;*);;
+=>rrel_maximalPeriod:[6 недель](*<-lang_ru;;*);;
+*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_hepatitis_A;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Гепатит A (также называемый Болезнью Боткина) — острое инфекционное заболевание печени, вызываемое вирусом гепатита A.](*<- lang_ru;;*);;
+	    -> [Hepatitis A (also called Botkin's Disease) is an acute infectious liver disease caused by the hepatitis A virus.](*<- lang_en;;*);;
+	   *);;
+    => nrel_main_idtf: [Опр.(Гепатит А)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(hepatitis A)](*<- lang_en;;*);;
+*);;
+
+
+
+concept_hepatitis_A=>nrel_source_of_infection:[Больной человек, который выделяет вирус в окружающую среду с каловыми массами.];;
+                                             
+
+concept_hepatitis_A=>nrel_symptom:loss_of_appetite;general_weakness_and_fatigue;vomiting;pain_and_weakness_in_muscles;
+icterus;;
+
+concept_hepatitis_A=>nrel_period_of_full_development:fever;loss_of_appetite;general_weakness_and_fatigue;vomiting;pain_and_weakness_in_muscles;
+icterus;;
+
+
+concept_hepatitis_A=>nrel_healing:[Не существует специфического способа лечения гепатита A. Около 6-10 % людей с диагнозом «гепатит A» могут иметь один или несколько симптомов заболевания в течение до сорока недель после начала заболевания.];;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_hepatitis_A;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Почти у всех пациентов с гепатитом А достигается полное излечение и формируется пожизненный иммунитет. Однако в очень редких случаях заражение вирусом гепатита А может приводить к фульминантному гепатиту с летальным исходом.](*<- lang_ru;;*);;
+	    -> [In almost all patients with hepatitis A, a complete cure is achieved and lifelong immunity is formed. However, in very rare cases, hepatitis A virus infection can lead to fulminant hepatitis with fatal outcome.](*<- lang_en;;*);;
+	 *);;
+    => nrel_main_idtf: [Утв.(Гепатит А)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(hepatitis A)](*<- lang_en;;*);;
+*);;
+
+concept_hepatitis_A=>nrel_disease_transmission_method:concept_alimentary;concept_waterway;;
+
+
+concept_hepatitis_A=>nrel_disease_prevention:concept_vaccination;[обеспечение достаточного снабжения безопасной питьевой водой];[надлежащее удаление сточных вод внутри населенных пунктов];
+[соблюдение правил личной гигиены, таких как регулярное мытье рук перед едой и после посещения туалета];;
+
+
+concept_hepatitis_A<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://картинки/hepA.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;
+
+
+concept_hepatitis_A=>nrel_susceptibility:[Вирусом гепатита А могут заразиться лица, которые не прошли вакцинацию или ранее не были инфицированы ВГА. В районах с широким распространением вируса (высокой эндемичностью), большинство случаев инфицирования гепатитом А происходит в раннем детстве. Факторы риска включают в себя:
+
+    плохую санитарию;
+    отсутствие безопасного водоснабжения;
+    проживание в семье с инфицированным лицом;
+    сексуальное партнерство с лицом, инфицированным острым гепатитом А
+    рекреационное использование психоактивных веществ;
+    сексуальные контакты между мужчинами;
+    поездки в районы с высокой эндемичностью без предварительной иммунизации.];;
+
+concept_hepatitis_A=>nrel_mortality:[Коэффициент летальности достигает 0,5%.];;
+
+
+
+
+
+

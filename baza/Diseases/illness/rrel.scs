@@ -1,0 +1,10 @@
+rrel_role_in_nature<-sc_node_role_relation;;
+rrel_role_in_nature=> nrel_main_idtf: [роль в природе'](*<- lang_ru;;*);;
+rrel_role_in_nature => nrel_main_idtf: [role in nature'](*<- lang_en;;*);;
+
+rrel_role_in_human_life<-sc_node_role_relation;;
+rrel_role_in_human_life=> nrel_main_idtf: [роль в жизни человека'](*<- lang_ru;;*);;
+rrel_role_in_human_life => nrel_main_idtf: [role in human life'](*<- lang_en;;*);;
+
+
+

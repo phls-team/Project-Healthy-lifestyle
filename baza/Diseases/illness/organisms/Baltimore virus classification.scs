@@ -1,0 +1,43 @@
+Baltimore_virus_classification<-sc_node_not_relation;;
+Baltimore_virus_classification => nrel_main_idtf: [Классификация вирусов по Балтимору](*<- lang_ru;;*);;
+Baltimore_virus_classification => nrel_main_idtf: [Baltimore virus classification](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: Baltimore_virus_classification;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Классификация вирусов по Балтимору  — способ классификации вирусов в группы в зависимости от типа геномной нуклеиновой кислоты (ДНК, РНК, одноцепочечная, двуцепочечная) и способа её репликации.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Классификация вирусов по Балтимору)](*<- lang_ru;;*);;
+    *);;
+
+Baltimore_virus_classification=>nrel_year_of_creation:[1971 г.];;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: Baltimore_virus_classification;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Классификация подразделяет вирусы на 7 групп в зависимости от механизма образования вирусной МРНК(молекулы матричной РНК ,по которой производится синтез белка) в клетке-хозяине.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Классификация вирусов по Балтимору)](*<- lang_ru;;*);;
+*);;
+
+Baltimore_virus_classification=>nrel_author:baltimore;;
+
+Baltimore_virus_classification=>nrel_inclusion:[(I) Вирусы, содержащие двуцепочечную ДНК и не имеющие РНК-стадии.];[(II) Вирусы, содержащие одноцепочечную молекулу ДНК. В этом случае ДНК всегда положительной полярности.];[(III) Вирусы, содержащие двуцепочечную РНК.];[(IV) Вирусы, содержащие одноцепочечную молекулу РНК положительной полярности.];[(V) Вирусы, содержащие одноцепочечную молекулу РНК негативной или двойной полярности.];[(VI) Вирусы, содержащие одноцепочечную молекулу РНК положительной полярности и имеющие в своем жизненном цикле стадию синтеза ДНК на матрице РНК, ретровирусы.];[(VII) Вирусы, содержащие частично двуцепочечную, частично одноцепочечную ДНК и имеющие в своём жизненном цикле стадию синтеза ДНК на матрице РНК, ретроидные вирусы.];;
+
+Baltimore_virus_classification<-rrel_key_sc_element:...
+(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://картинки/VirusBaltimore.png"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;

@@ -1,0 +1,35 @@
+baltimore<-sc_node_not_relation;;
+baltimore => nrel_main_idtf: [Дейвид Балтимор](*<- lang_ru;;*);;
+baltimore => nrel_main_idtf: [David Baltimore](*<- lang_en;;*);;
+
+concept_person=>nrel_belonging:baltimore;;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: baltimore;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Дейвид Балтимор — американский биохимик, молекулярный биолог и вирусолог, педагог, управленец, популяризатор науки. В 1971 году предложил классификацию вирусов в зависимости от типа геномной нуклеиновой кислоты и способа её репликации.](*<- lang_ru;;*);;
+
+	-> [David Baltimore - аmerican biochemist, molecular biologist and virologist, teacher, manager, popularizer of science. In 1971, he proposed the classification of viruses depending on the type of genomic nucleic acid and its replication method.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Кто такой Дейвид Балтимор)](*<- lang_ru;;*);;
+    *);;
+
+baltimore=>nrel_date_of_birth:[7 марта 1938 г.];;
+
+baltimore=>nrel_award:[Gustav Stern Award in Virology (1970)];[Warren Triennial Prize (1971)];[Международная премия Гайрднера (1974)];[Нобелевская премия по физиологии и медицине (1975)];[Behring-Heidelberger Prize Американской ассоциации иммунологов (1990)];[Sir Hans Krebs Medal[en] (1997)];[Национальная научная медаль США (1999)];[Warren Alpert Foundation Prize[en] (2000)];[Excellence in Mentoring Award Американской ассоциации иммунологов (2009)];;
+
+baltimore<-rrel_key_sc_element:...
+(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://картинки/baltimore.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;

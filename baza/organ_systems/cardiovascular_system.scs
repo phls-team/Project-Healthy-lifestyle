@@ -1,0 +1,55 @@
+concept_cardiovascular_system<-sc_node_not_relation;;
+concept_cardiovascular_system => nrel_main_idtf: [сердечно-сосудистая система](*<- lang_ru;;*);;
+concept_cardiovascular_system => nrel_main_idtf: [cardiovascular system](*<- lang_en;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_cardiovascular_system;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Сердечно-сосудистая система — система органов, обеспечивающая циркуляцию крови в организме человека.](*<- lang_ru;;*);;
+-> [Cardiovascular system - a system of organs that provides blood circulation in the human body.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(сердечно-сосудистая система)](*<- lang_ru;;*);;
+=> nrel_main_idtf: [St.(cardiovascular system)](*<- lang_en;;*);;
+*);;
+
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_cardiovascular_system;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Сердечно-сосудистые заболевания являются основной причиной смерти во всем мире – ежегодно от них умирает больше людей, чем от какой-либо другой болезни.](*<- lang_ru;;*);;
+    -> [Cardiovascular disease is the leading cause of death worldwide - more people die from them each year than from any other disease.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(сердечно-сосудистая система)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(cardiovascular system)](*<- lang_ru;;*);;
+*);;
+
+concept_cardiovascular_system=>nrel_system_organs:heart;blood_vessels;;
+
+
+concept_cardiovascular_system=>nrel_diseases_of_system:heart_arythmy;heart_desease;hypotension;
+hypertension;;
+
+concept_cardiovascular_system=>nrel_system_functions:[доставка полезных веществ];[доставка кислорода и углекислого газа];[транспорт конечных продуктов обмена веществ к органам выделения];[доставка биологически активных веществ];;
+
+
+concept_cardiovascular_system<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://картинки/cardio.png"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;
+
+concept_cardiovascular_system=>nrel_structure:"file://картинки/cardio2.jpg";;
+
+

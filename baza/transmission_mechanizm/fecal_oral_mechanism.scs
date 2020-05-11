@@ -1,0 +1,52 @@
+concept_fecal_oral_mechanism<-sc_node_not_relation;;
+concept_fecal_oral_mechanism => nrel_main_idtf: [фекально-оральный механизм](*<- lang_ru;;*);;
+concept_fecal_oral_mechanism => nrel_main_idtf: [fecal-oral mechanism](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_fecal_oral_mechanism;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Фекально-оральный механизм передачи инфекции — механизм передачи инфекции, при котором возбудитель инфекции локализуется преимущественно в желудочно-кишечном тракте, определяет его выведение из зараженного организма с испражнениями (фекалиями, мочой) или рвотными массами. ](*<- lang_ru;;*);;
+-> [The fecal-oral infection transmission mechanism is the infection transmission mechanism in which the pathogen is localized mainly in the gastrointestinal tract, determines its excretion from the infected body with feces (feces, urine) or vomit.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(фекально-оральный механизм)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(fecal-oral mechanism)](*<- lang_en;;*);;
+*);;
+
+
+
+concept_fecal_oral_mechanism<-rrel_key_sc_element:...
+(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://кар/fecal.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;
+
+
+concept_fecal_oral_mechanism=>nrel_inclusion:concept_waterway;concept_alimentary;;
+
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_fecal_oral_mechanism;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Основные причины передачи фекально-оральным заболевания включают отсутствие адекватной санитарии (ведущей к открытой дефекации ), а также плохие гигиенические практики. ](*<- lang_ru;;*);;
+    -> [The main causes of transmission of fecal-oral disease include a lack of adequate sanitation (leading to open defecation), as well as poor hygiene practices.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(фекально-оральный механизм)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(fecal-oral mechanism)](*<- lang_en;;*);;
+    => nrel_using_constants: ...
+        (*
+            ->concept_hygiene;;
+        *);;
+*);;

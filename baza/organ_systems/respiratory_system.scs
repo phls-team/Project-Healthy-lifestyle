@@ -1,0 +1,38 @@
+concept_respiratory_system<-sc_node_not_relation;;
+concept_respiratory_system => nrel_main_idtf: [дыхательная система](*<- lang_ru;;*);;
+concept_respiratory_system => nrel_main_idtf: [respiratory system](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_respiratory_system;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Дыхательная система - совокупность органов, обеспечивающих функцию внешнего дыхания человека (газообмен между вдыхаемым атмосферным воздухом и циркулирующей по малому кругу кровообращения кровью).](*<- lang_ru;;*);;
+-> [The respiratory system is a set of organs providing the function of the person’s external respiration (gas exchange between the inhaled atmospheric air and the blood circulating in the small circle of blood circulation).](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(дыхательная система)](*<- lang_ru;;*);;
+=> nrel_main_idtf: [St.(respiratory system)](*<- lang_en;;*);;
+*);;
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_respiratory_system;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Взрослый человек, находясь в состоянии покоя, совершает в среднем 14 дыхательных движений в минуту, однако частота дыхания может претерпевать значительные колебания (от 10 до 18 за минуту). Взрослый человек делает 15—17 вдохов-выдохов в минуту, а новорождённый ребёнок делает 1 вдох в секунду.](*<- lang_ru;;*);;
+    -> [An adult, at rest, makes an average of 14 respiratory movements per minute, but the respiratory rate can undergo significant fluctuations (from 10 to 18 per minute). An adult takes 15-17 breaths per minute, and a newborn takes 1 breath per second.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(дыхательная система)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(respiratory system)](*<- lang_ru;;*);;
+*);;
+
+concept_respiratory_system=>nrel_structure:"file://картинки/resp.jpg";;
+
+concept_respiratory_system=>nrel_diseases_of_system:concept_orvi;concept_whooping_cough;
+asthma;tuberculosis;pneumonia;;
+
+concept_respiratory_system=>nrel_system_functions:[поступление в организм кислорода];[выведение из организма углекислого газа];[выведение из организма газообразных продуктов метаболизма];[голосообразование];[терморегуляция];[синтез гормонов];[водно-солевой и липидный обмен];;
+
+concept_respiratory_system=>nrel_system_organs:nasal_cavity;nasopharynx;larynx;trachea;bronchi;lungs;;

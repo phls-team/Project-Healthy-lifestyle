@@ -1,0 +1,19 @@
+
+definition ->...
+(*
+->rrel_key_sc_element: nrel_source_of_infection;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Восприимчивость —  способность к заболеванию от внешнего источника.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Опр.(восприимчивость*)](*<- lang_ru;;*);;
+
+*);;
+
+nrel_susceptibility => nrel_first_domain: men;;
+nrel_susceptibility=> nrel_second_domain: concept_disease;;
+
+nrel_susceptibility<-binary_relation;;
+parameter->arity;;
+arity->binary_relation;;
+binary_relation=>nrel_measurement:2;;
+2<-number;;
+
+nrel_susceptibility<-oriented_relation;;

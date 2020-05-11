@@ -1,0 +1,81 @@
+concept_lyme_borreliosis<-sc_node_not_relation;;
+concept_lyme_borreliosis => nrel_main_idtf: [Болезнь Лайма](*<- lang_ru;;*);;
+concept_lyme_borreliosis => nrel_main_idtf: [Lyme borreliosis](*<- lang_en;;*);;
+
+concept_lyme_borreliosis<-sc_node_norole_relation;
+=>nrel_unique_idtf:[1C1G](*<-lang_en;;*);;
+concept_lyme_borreliosis<-sc_node_norole_relation;
+=>nrel_unique_idtf:[1C1G](*<-lang_ru;;*);;
+
+concept_lyme_borreliosis<-concept_disease;;
+
+concept_subClassOf01_07=>nrel_inclusion:concept_lyme_borreliosis;;
+
+concept_lyme_borreliosis<-sc_node_norole_relation;
+=>nrel_incubation_period:...
+(*
+=>rrel_minimalPeriod:[2 days](*<-lang_en;;*);;
+=>rrel_minimalPeriod:[2 дня](*<-lang_ru;;*);;
+=>rrel_maximalPeriod:[30 days](*<-lang_en;;*);;
+=>rrel_maximalPeriod:[30 дней](*<-lang_ru;;*);;
+*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_lyme_borreliosis;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Болезнь Лайма (Лайм-боррелиоз) — инфекционное заболевание, вызываемое бактериями рода Borrelia, переносимое иксодовыми клещами, а также оленьими кровососками. ](*<- lang_ru;;*);;
+	    -> [Lyme disease (Lyme borreliosis) is an infectious disease caused by the bacterial species of borrelia carried by ixodid ticks and deer bloodsuckers.](*<- lang_en;;*);;
+	   *);;
+    => nrel_main_idtf: [Опр.(Болезнь Лайма)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(Lyme borreliosis)](*<- lang_en;;*);;
+*);;
+
+
+concept_lyme_borreliosis=>nrel_source_of_infection:[Вызывается бактериями рода Borrelia.];[В природе многие позвоночные являются естественными хозяевами возбудителя болезни Лайма: белохвостые олени (в Америке), грызуны, собаки, овцы, птицы, крупный рогатый скот. Основные векторы боррелий — кровососки и иксодовые клещи: Ixodes damini — в США, Ixodes ricinus, Ixodes persulcatus — в Европе. ];;
+
+
+concept_lyme_borreliosis=>nrel_symptom:[Мигрирующая эритема, основной клинический признак болезни Лайма, является первым симптомом болезни.];[Кольцевые вторичные поражения кожи без уплотнения в центре.];fever;chills;vomiting;"file://картинки/lyme.png";;
+
+
+concept_lyme_borreliosis=>nrel_healing:[Лечение болезни Лайма должно быть комплексным, включать в себя адекватные этиотропные и патогенетические средства. Необходимо учитывать стадию болезни.
+Если лечение антибактериальными препаратами начато уже на I стадии при условии отсутствия признаков поражения нервной системы, сердца, суставов, то значительно снижается вероятность развития неврологических, кардиальных и артралгических осложнений. .];;
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_lyme_borreliosis;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Болезнь Лайма является самым распространённым среди заболеваний, передаваемых при укусах клещей. ](*<- lang_ru;;*);;
+	    -> [Lyme disease is the most common among tick-borne diseases. ](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Болезнь Лайма)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(Lyme borreliosis)](*<- lang_en;;*);;
+*);;
+
+
+concept_lyme_borreliosis=>nrel_disease_prevention:[Специфической профилактики боррелиоза не существует.
+В настоящее время усилия по профилактике болезни Лайма сочетают несколько методов и подходов: акарицидная обработка территорий, управление ландшафтом, управление популяциями разносчиков клещей, а также персональные меры защиты.];[Персональная профилактика представляет собой меры предосторожности против укусов клещей в эндемичных регионах. В первую очередь это поиск и оперативное удаление клещей после посещения мест, где они могут попасть на человека.];;
+
+
+concept_lyme_borreliosis<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://картинки/lyme.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;
+
+
+concept_lyme_borreliosis=>nrel_disease_transmission_method:concept_transmissible_mechanism;;
+
+concept_lyme_borreliosis=>nrel_mortality:[Коэффициент летальности достигает 20%-25%.];;
+

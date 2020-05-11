@@ -1,0 +1,117 @@
+concept_virus<-sc_node_not_relation;;
+concept_virus => nrel_main_idtf: [вирус](*<- lang_ru;;*);;
+concept_virus => nrel_main_idtf: [virus](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_regression_hypothesis;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Согласно этой гипотезе, вирусы когда-то были мелкими клетками, паразитирующими в более крупных клетках. С течением времени эти клетки предположительно утратили гены, которые были «лишними» при паразитическом образе жизни. Эта гипотеза основывается на наблюдении, что некоторые бактерии, а именно риккетсии и хламидии, представляют собой клеточные организмы, которые, тем не менее, подобно вирусам могут размножаться только внутри другой клетки. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(регрессивная гипотеза)](*<- lang_ru;;*);;
+    *);;
+concept_regression_hypothesis<-rrel_key_sc_element:...
+(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://картинки/regres.png"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_cell_origin_hypothesis;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Некоторые вирусы могли появиться из фрагментов ДНК или РНК, которые «высвободились» из генома более крупного организма. Такие фрагменты могут происходить от плазмид (молекул ДНК, способных передаваться от клетки к клетке) или от транспозонов (молекул ДНК, реплицирующихся и перемещающихся с места на место внутри генома). Транспозоны, которые раньше называли «прыгающими генами», являются примерами мобильных генетических элементов, возможно, от них могли произойти некоторые вирусы. Транспозоны были открыты Барбарой Мак-Клинток в 1950 году в кукурузе.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(гипотеза клеточного происхождения)](*<- lang_ru;;*);;
+    *);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_hypothesis_of_coevolution;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Эта гипотеза предполагает, что вирусы возникли из сложных комплексов белков и нуклеиновых кислот в то же время, что и первые на Земле живые клетки, и зависят от клеточной жизни вот уже миллиарды лет. Помимо вирусов, существуют и другие неклеточные формы жизни. Например, вироиды — это молекулы РНК, которые не рассматриваются как вирусы, потому что у них нет белковой оболочки. Тем не менее, ряд характеристик сближает их с некоторыми вирусами, а потому их относят к субвирусным частица.   Вироиды являются важными патогенами растений. Они не кодируют собственные белки, однако взаимодействуют с клеткой-хозяином и используют её для осуществлениярепликации своей РНК. Вирус гепатита D имеет РНК-геном, схожий с геномом вироидов, однако сам не способен синтезировать белок оболочки. Для формирования вирусных частиц он использует белок капсида вируса гепатита B и может размножаться только в клетках, заражённых этим вирусом. Таким образом, вирус гепатита D является дефектным вирусом. Вирофаг спутник схожим образом зависит от мимивируса, поражающего простейшее Acanthamoeba castellanii. Эти вирусы зависят от присутствия в клетке-хозяине другого вируса и называются вирусами-сателлитами. Подобные вирусы демонстрируют, как может выглядеть промежуточное звено между вирусами и вироидами.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(гипотеза коэволюции)](*<- lang_ru;;*);;
+    *);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_virus;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Вирус - это неклеточная форма жизни, которая распространяет инфекцию на клетки живых организмов, включая бактерии](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(вирус)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            -> concept_acute_diseases;;
+	    -> concept_disease;;
+        *);;
+*);;
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_virus;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Вирусы поражают все типы организмов, от растений и животных до бактерий и архей ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(вирус)](*<- lang_ru;;*);;
+    => nrel_using_constants: concept_organism;;
+*);;
+
+concept_virus<-rrel_key_sc_element:...
+(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://картинки/virus.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;
+
+
+concept_virus=>nrel_origin_hypothesis:concept_regression_hypothesis;concept_cell_origin_hypothesis;concept_hypothesis_of_coevolution;;
+concept_virus=>nrel_structure:concept_glycoproteins;concept_supercapsid;concept_RNA;concept_capsid;concept_reverse_transcriptase;;
+
+
+concept_virus<-rrel_key_sc_element:...
+(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://картинки/str.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;
+
+concept_virus=>nrel_life_cycle:concept_attachment;concept_penetration_into_the_cell;concept_deprivation_of_shells;concept_replication;
+concept_assembly;concept_exit_from_the_cell;;
+
+concept_virus=>nrel_budding_virus:"file://картинки/Virus.gif";;
+
+concept_virus=>nrel_scope_of_application:concept_molecular_biology;concept_cell_biology;concept_genetic_research;
+concept_virotherapy;concept_nanotechnology;concept_biological_weapons;;
+

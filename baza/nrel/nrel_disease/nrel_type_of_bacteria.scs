@@ -1,0 +1,18 @@
+definition ->...
+(*
+->rrel_key_sc_element: nrel_type_of_bacteria;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Разновидность бактерий](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Опр.(тип бактерий*)](*<- lang_ru;;*);;
+
+*);;
+
+nrel_type_of_bacteria => nrel_first_domain: concept_bacterium;;
+nrel_type_of_bacteria=> nrel_second_domain: concept_bacterium;;
+
+nrel_type_of_bacteria<-binary_relation;;
+parameter->arity;;
+arity->binary_relation;;
+binary_relation=>nrel_measurement:2;;
+2<-number;;
+
+nrel_type_of_bacteria<-oriented_relation;;

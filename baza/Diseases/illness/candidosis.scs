@@ -1,0 +1,63 @@
+concept_candidosis<-sc_node_not_relation;;
+concept_candidosis => nrel_main_idtf: [кандидоз](*<- lang_ru;;*);;
+concept_candidosis => nrel_main_idtf: [candidosis](*<- lang_en;;*);;
+
+concept_candidosis<-sc_node_norole_relation;
+=>nrel_unique_idtf:[1F23](*<-lang_en;;*);;
+concept_candidosis<-sc_node_norole_relation;
+=>nrel_unique_idtf:[1F23](*<-lang_ru;;*);;
+
+concept_candidosis<-concept_disease;;
+
+
+concept_candidosis<-sc_node_norole_relation;
+=>nrel_incubation_period:...
+(*
+=>rrel_minimalPeriod:[4 days](*<-lang_en;;*);;
+=>rrel_minimalPeriod:[4 дня](*<-lang_ru;;*);;
+=>rrel_maximalPeriod:[2 months](*<-lang_en;;*);;
+=>rrel_maximalPeriod:[2 месяца](*<-lang_ru;;*);;
+*);;
+
+
+concept_candidosis=>nrel_disease_transmission_method:concept_fecal_oral_mechanism;;
+
+concept_candidosis=>nrel_mortality:[Коэффициент летальности достигает до 34%.];;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_candidosis;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Кандидоз — инфекционное заболевание с поражением кожи, слизистых оболочек и/или внутренних органов, вызываемое дрожжеподобными грибками рода Candida.](*<- lang_ru;;*);;
+ 	-> [Candidiasis is an infectious disease with damage to the skin, mucous membranes and / or internal organs caused by yeast-like fungi of the genus Candida.](*<- lang_en;;*);;
+
+        *);;
+    => nrel_main_idtf: [Опр.(кандидоз)](*<- lang_ru;;*);;
+   => nrel_main_idtf: [Def.(candidosis)](*<- lang_ru;;*);; 
+*);;
+
+
+concept_candidosis=>nrel_healing:[При лёгком течении заболевания рекомендуются препараты для местного лечения.];;
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_candidosis;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Если рецидивы грибковой инфекции возникают у регулярно, это серьёзный повод для обследования на эндокринные и другие хронические заболевания.](*<- lang_ru;;*);;
+-> [If relapses of fungal infection occur regularly, this is a serious reason for examination for endocrine and other chronic diseases.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(кандидоз)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(candidosis)](*<- lang_en;;*);;
+*);;
+
+
+concept_candidosis=>nrel_disease_prevention:concept_hardening;concept_personal_hygiene;concept_drug_therapy;;
+
+
+concept_subClassOf01_18=>nrel_inclusion:concept_candidosis;;
+
+

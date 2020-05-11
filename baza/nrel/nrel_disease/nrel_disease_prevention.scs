@@ -1,0 +1,19 @@
+
+definition ->...
+(*
+->rrel_key_sc_element: nrel_disease_prevention;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Профилактика заболевания - мероприятия, которые следует проводить для недопущения появления болезни.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Опр.(профилактика заболевания*)](*<- lang_ru;;*);;
+
+*);;
+
+nrel_disease_prevention => nrel_first_domain: concept_disease;;
+nrel_disease_prevention=> nrel_second_domain: concept_prophylaxy;;
+
+nrel_disease_prevention<-binary_relation;;
+parameter->arity;;
+arity->binary_relation;;
+binary_relation=>nrel_measurement:2;;
+2<-number;;
+
+nrel_disease_prevention<-oriented_relation;;

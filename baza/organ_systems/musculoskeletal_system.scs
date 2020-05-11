@@ -1,0 +1,45 @@
+concept_musculoskeletal_system<-sc_node_not_relation;;
+concept_musculoskeletal_system => nrel_main_idtf: [опорно-двигательная система](*<- lang_ru;;*);;
+concept_musculoskeletal_system => nrel_main_idtf: [musculoskeletal system](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_musculoskeletal_system;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Опорно-двигательная система - функциональная совокупность костей скелета, их соединений (суставов и синартрозов) и соматической мускулатуры со вспомогательными приспособлениями, осуществляющих посредством нервной регуляции локомоции поддержание позы, мимики и других двигательных действий, наряду с другими системами органов, образует человеческое тело. ](*<- lang_ru;;*);;
+	-> [The musculoskeletal system is a functional set of skeleton bones, their joints (joints and synarthrosis) and somatic muscles with auxiliary devices that, by means of nervous regulation of locomotion, maintain the posture of a person’s lifestyle, facial expressions and other motor actions.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(опорно-двигательная система)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Опр.(musculoskeletal system)](*<- lang_en;;*);;
+=> nrel_using_constants: concept_organ_system;;
+*);;
+
+concept_musculoskeletal_system=>nrel_system_functions:[опорная-фиксация мышц и внутренних органов];
+[защитная — защита жизненно важных органов];
+[двигательная — обеспечение простых движений,двигательных действий];
+[рессорная — смягчение толчков и сотрясений];
+[функция кроветворения — образование крови в красном костном мозге];
+[метаболическая функция — участие в обмене кальция, железа, меди и фосфора];
+[биологическая — участие в обеспечении жизненно важных процессов, такие как минеральный обмен, кровообращение, кроветворение и другие];;
+
+concept_musculoskeletal_system=>nrel_diseases_of_system:t_arthritis;scoliosis;osteoporosis;;
+
+
+
+concept_musculoskeletal_system=>nrel_structure:"file://картинки/oporno.jpg";;
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_musculoskeletal_system;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Среди наук, изучающих опорно-двигательную систему человека, — медицина (анатомия, физиология, ортопедия, травматология, спортивная медицина, протезирование, клиническая биомеханика), биомеханика и физическая культура (теория физической культуры, биомеханика физических упражнений). ](*<- lang_ru;;*);;
+-> [Among the sciences that study the human musculoskeletal system are medicine (anatomy, physiology, orthopedics, traumatology, sports medicine, prosthetics, clinical biomechanics), biomechanics and physical culture (theory of physical culture, biomechanics of physical exercises.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(опорно-двигательная система)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [Утв.(musculoskeletal system)](*<- lang_en;;*);;
+*);;
+

@@ -1,0 +1,72 @@
+concept_immunity<-sc_node_not_relation;;
+concept_immunity => nrel_main_idtf: [иммунитет](*<- lang_ru;;*);;
+concept_immunity => nrel_main_idtf: [immunity](*<- lang_en;;*);;
+
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_immunity;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Иммунитет — способность организма поддерживать свою целостность и биологическую индивидуальность пу­тём рас­по­зна­ва­ния и уда­ле­ния чу­же­род­ных ве­ществ и кле­ток (в том числе болезнетворных бактерий и вирусов).](*<- lang_ru;;*);;
+	    -> [Immunity - the ability of an organism to maintain its integrity and biological identity by recognizing and removing foreign substances and cells (including pathogenic bacteria and viruses).](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(иммунитет)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(immunity)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            -> concept_virus;;
+	    -> concept_bacterium;;
+	    ->concept_organism;;
+        *);;
+*);;
+
+concept_immunity=>nrel_cells_in_the_immune:[T-Лимфоциты];[B-Лимфоциты];[Натуральные киллеры];
+[Нейтрофилы];[Эозинофилы];[Базофилы];[Моноциты];;
+
+concept_immunity=>nrel_classification_of_immun:[Врождённый (неспецифический, наследственный) иммунитет -  обусловлен способностью идентифицировать и обезвреживать разнообразные патогены по наиболее консервативным, общим для них признакам, дальности эволюционного родства, до первой встречи с ними.];
+[Приобретённый активный иммунитет - возникает после перенесённого заболевания или после введения вакцины.];[Приобретённый пассивный иммунитет - развивается при введении в организм готовых антител в виде сыворотки или передаче их новорождённому с молозивом матери или внутриутробным способом.];;
+
+
+
+concept_immunity<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://картинки/immunity.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;
+
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_immunity;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Характерные признаки иммунной системы:
+
+    способность отличать «своё» от «чужого»;
+    формирование памяти после первичного контакта с чужеродным антигенным материалом;
+    клональная организация иммунокомпетентных клеток, при которой отдельный клеточный клон способен, как правило, реагировать лишь на одну из множества антигенных детерминант.](*<- lang_ru;;*);;
+       -> [Characteristic features of the immune system:
+
+the ability to distinguish “one's own” from “another's”;
+national memory after another's antigenic attack;
+clonal organization of immunocompetent cells, in which a single cell clone is able, as a rule, to respond only to one of the many antigenic determinants.](*<- lang_en;;*);;
+
+ *);;
+    => nrel_main_idtf: [Утв.(иммунитет)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(immunity)](*<- lang_ru;;*);;
+*);;
+
+
+
+

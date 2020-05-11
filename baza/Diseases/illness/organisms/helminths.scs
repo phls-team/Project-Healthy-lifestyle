@@ -1,0 +1,41 @@
+concept_helminths<-sc_node_not_relation;;
+concept_helminths => nrel_main_idtf: [гельминты](*<- lang_ru;;*);;
+concept_helminths => nrel_main_idtf: [helminths](*<- lang_en;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_helminths;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Гельминты — общее название паразитических червей, обитающих в организме человека, других животных и растений, вызывающих гельминтозы. ](*<- lang_ru;;*);;
+	    -> [Helminths - the general name for parasitic worms that live in the human body, other animals and plants that cause helminth infections.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(гельминты)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(helminths)](*<- lang_ru;;*);;
+       
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_helminths;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [По результатам некоторых исследований, наличие в организме человека гельминтов необходимо для нормального развития иммунной системы, что объясняется развитием симбиоза с этими организмами в процессе эволюции человека как вида. ](*<- lang_ru;;*);;
+            -> [According to the results of some studies, the presence of helminths in the human body is necessary for the normal development of the immune system, which is explained by the development of symbiosis with these organisms during the evolution of humans as a species.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(гельминты)](*<- lang_ru;;*);;
+     => nrel_main_idtf: [St.(helminths)](*<- lang_en;;*);;
+	=>nrel_using_constans:concept_immune_system;;
+*);;
+
+
+concept_helminths=>nrel_size:[несколько миллиметров - 10-15 метров в длину];;
+
+concept_helminths=>nrel_cell_shape:"file://картинки/gel.jpg";;
+
+
+concept_helminths->rrel_role_in_human_life:[Человек может быть хозяином почти 270 видов гельминтов.];;
+
+concept_helminths=>nrel_propagation:[Развитие гельминтов происходит в несколько стадий, в результате которых они меняют несколько хозяев (биогельминты) или развиваются без смены хозяев (геогельминты). Обычно незрелые яйца выделяются во внешнюю среду, где дозревают, попадают в промежуточного хозяина, образуют личинку, которая растёт и тем или иным путём попадает в основного хозяина, где и образует половозрелую особь.];"file://картинки/bak-propagation.png";;
+
+concept_helminths=>nrel_life_cycle:"file://картинки/lifeg.png";;

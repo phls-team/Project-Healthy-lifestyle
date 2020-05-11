@@ -1,0 +1,31 @@
+concept_transmission_mechanism<-sc_node_not_relation;;
+concept_transmission_mechanism => nrel_main_idtf: [механизм передачи заболевания](*<- lang_ru;;*);;
+concept_transmission_mechanism => nrel_main_idtf: [transmission mechanism](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_transmission_mechanism;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Механизм передачи - способ перемещения возбудителя инфекционной или паразитарной болезни из зараженного организма в восприимчивый.](*<- lang_ru;;*);;
+-> [Transmission mechanism - a method of moving the causative agent of an infectious or parasitic disease from an infected organism to a susceptible one.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(механизм передачи заболевания)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(transmission mechanism)](*<- lang_en;;*);;
+*);;
+
+
+concept_transmission_mechanism=>nrel_inclusion:concept_aerogenic_mechanism;concept_contact_mechanism;
+concept_transmissible_mechanism;concept_vertical_mechanism;concept_blood_contact_mechanism;concept_fecal_oral_mechanism;;
+
+concept_transmission_mechanism=>nrel_stage:[выведение возбудителя из организма источника в окружающую среду];[пребывание возбудителя в абиотических или биотических объектах окружающей среды];[внедрение (введение) возбудителя в восприимчивый организм];;
+
+
+
+
+
+
+
+
+

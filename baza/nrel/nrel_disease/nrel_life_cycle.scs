@@ -1,0 +1,19 @@
+
+definition ->...
+(*
+->rrel_key_sc_element: nrel_life_cycle;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Жизненный цикл - закономерная смена всех поколений (онтогенезов), характерных для данного вида живых организмов.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Опр.(жизненный цикл*)](*<- lang_ru;;*);;
+
+*);;
+
+nrel_life_cycle => nrel_first_domain: concept_organism;;
+nrel_life_cycle=> nrel_second_domain: concept_live_activity;;
+
+nrel_life_cycle<-binary_relation;;
+parameter->arity;;
+arity->binary_relation;;
+binary_relation=>nrel_measurement:2;;
+2<-number;;
+
+nrel_life_cycle<-oriented_relation;;

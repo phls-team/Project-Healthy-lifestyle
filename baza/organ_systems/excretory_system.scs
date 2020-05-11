@@ -1,0 +1,37 @@
+concept_excretory_system<-sc_node_not_relation;;
+concept_excretory_system => nrel_main_idtf: [выделительная система](*<- lang_ru;;*);;
+concept_excretory_system => nrel_main_idtf: [excretory system](*<- lang_en;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_excretory_system;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Выделительная система — система органов, обеспечивающая циркуляцию крови в организме человекасовокупность органов, выводящих из организма избыток воды, продукты обмена веществ, соли, а также ядовитые вещества, попавшие в организм или образовавшиеся в нём.](*<- lang_ru;;*);;
+-> [Excretory system - a system of organs that provides blood circulation in the human body, a collection of organs that remove excess water, metabolic products, salts, as well as toxic substances that enter the body or are formed in it.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(выделительная система)](*<- lang_ru;;*);;
+=> nrel_main_idtf: [St.(excretory system)](*<- lang_en;;*);;
+*);;
+
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_excretory_system;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [В выведении продуктов обмена принимает участие и кожа.](*<- lang_ru;;*);;
+    -> [In the removal of metabolic products and skin takes part.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(выделительная система)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(excretory system)](*<- lang_ru;;*);;
+*);;
+
+concept_excretory_system=>nrel_system_organs:urethra;bladder;kidneys;;
+
+
+concept_excretory_system=>nrel_system_functions:[Обеспечивает выведение из организма конечных продуктов обмена веществ.];[Регулируя водно- солевой обмен, поддерживает кислотно- щелочное равновесие между кровью и тканями.];[Участвует в эндокринной функции, продуцируя и выделяя в кровь вещества: ренин, регулирующие кровяное давление и эритропоэтин, регулирующий кроветворение.];;
+
+
+concept_excretory_system=>nrel_structure:"file://картинки/excretory.jpg";;

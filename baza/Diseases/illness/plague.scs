@@ -1,0 +1,74 @@
+concept_plague <-sc_node_not_relation;;
+concept_plague  => nrel_main_idtf: [чума](*<- lang_ru;;*);;
+concept_plague  => nrel_main_idtf: [plague](*<- lang_en;;*);;
+
+
+concept_plague<-sc_node_norole_relation;
+=>nrel_unique_idtf:[1B93](*<-lang_en;;*);;
+concept_plague<-sc_node_norole_relation;
+=>nrel_unique_idtf:[1B93](*<-lang_ru;;*);;
+
+concept_plague<-concept_disease;;
+
+
+
+concept_plague<-sc_node_norole_relation;
+=>nrel_incubation_period:...
+(*
+=>rrel_minimalPeriod:[2 days](*<-lang_en;;*);;
+=>rrel_minimalPeriod:[2 дня](*<-lang_ru;;*);;
+=>rrel_maximalPeriod:[12 days](*<-lang_en;;*);;
+=>rrel_maximalPeriod:[12 дней](*<-lang_ru;;*);;
+*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_plague;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Чума - острое природно-очаговое инфекционное заболевание группы карантинных инфекций, протекающее с исключительно тяжёлым общим состоянием, лихорадкой, поражением лимфоузлов, лёгких и других внутренних органов, часто с развитием сепсиса. ](*<- lang_ru;;*);;
+	    -> [Plague is an acute natural focal infectious disease of the group of quarantine infections, proceeding with an extremely severe general condition, fever, damage to the lymph nodes, lungs, and other internal organs, often with the development of sepsis. ](*<- lang_en;;*);;
+	   *);;
+    => nrel_main_idtf: [Опр.(чума)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(plague)](*<- lang_en;;*);;
+*);;
+
+
+
+concept_plague=>nrel_source_of_infection:[В природных очагах источниками и резервуарами возбудителя инфекции являются в основном грызуны — сурки, суслики и песчанки, мышевидные грызуны, а также зайцеобразные.];[В синантропных очагах основными источниками и резервуарами возбудителя являются серые и чёрные крысы, а также мыши, кошки, верблюды.];[Возбудителем является чумная палочка.];;
+
+concept_plague=>nrel_susceptibility:[Восприимчивость людей к чуме очень высокая.];;
+
+concept_plague=>nrel_symptom:fever;chills;vomiting;general_weakness_and_fatigue;;
+
+concept_plague=>nrel_healing:[Лечение больных чумой в настоящее время осуществляется при помощи антибиотиков, сульфаниламидов и лечебной противочумной сыворотки];;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_plague;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [После перенесенного заболевания остается относительный иммунитет, который не предохраняет от массивного повторного заражения. ](*<- lang_ru;;*);;
+	    -> [After the disease, relative immunity remains, which does not protect against massive re-infection.](*<- lang_en;;*);;
+
+
+        *);;
+    => nrel_main_idtf: [Утв.(чума)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(plague)](*<- lang_en;;*);;
+*);;
+
+
+concept_plague=>nrel_disease_prevention:concept_vaccination;[Профилактика возможных очагов заболевания заключается в проведении специальных карантинных мероприятий в портовых городах, дератизации всех судов, которые ходят международными рейсами, создании специальных противочумных учреждений в степных местностях, где водятся грызуны, выявлении эпизоотий чумы среди грызунов и борьбе с ними.];;
+
+
+concept_subClassOf01_09=>nrel_inclusion:concept_plague;;
+
+concept_plague=>nrel_inclusion:concept_bubonic_plague;concept_cellulocutaneous_plague;
+concept_pneumonic_plague;concept_plague_meningitis;;
+
+concept_plague =>nrel_arrayOfIdentificators:[1B93-last unique idtf];;
+
+concept_plague=>nrel_disease_transmission_method:concept_airborne;concept_transmissible_mechanism;;
+
+concept_plague=>nrel_mortality:[Коэффициент летальности достигает 5%-10%.];;

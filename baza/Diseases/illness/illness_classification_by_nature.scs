@@ -1,0 +1,76 @@
+concept_illness_classification_by_nature<-sc_node_not_relation;;
+concept_illness_classification_by_nature => nrel_main_idtf: [классификация болезней по характеру течения](*<- lang_ru;;*);;
+concept_illness_classification_by_nature=> nrel_main_idtf: [classification of diseases by the nature of the course](*<- lang_en;;*);;
+
+concept_illness_classification=>nrel_inclusion:concept_illness_classification_by_nature;;
+
+concept_illness_classification_by_nature=>nrel_inclusion:concept_acute_course;
+concept_subacute_course;concept_chronic_course;;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_illness_classification_by_nature;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Классификация болезней по характеру течения - классификация болезней в зависимости от формы тяжести.](*<- lang_ru;;*);;
+-> [Classification of diseases by the nature of the course - classification of diseases depending on the form of severity.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(классификация болезней по характеру течения)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(classification of diseases by the nature of the course)](*<- lang_en;;*);;
+*);;
+
+
+concept_acute_course<-sc_node_not_relation;;
+concept_acute_course => nrel_main_idtf: [острое течение](*<- lang_ru;;*);;
+concept_acute_course=> nrel_main_idtf: [acute course](*<- lang_en;;*);;
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_acute_course;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Характеризуется генерализованным поражением мускулатуры вплоть до полной обездвиженности, поражением сердца и других органов с летальным исходом через 2-6 месяцев от начала заболевания.](*<- lang_ru;;*);;
+-> [It is characterized by generalized muscle damage up to complete immobility, damage to the heart and other organs with a fatal outcome 2-6 months after the onset of the disease.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(острое течение)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(acute course)](*<- lang_en;;*);;
+*);;
+
+
+
+concept_subacute_course<-sc_node_not_relation;;
+concept_subacute_course => nrel_main_idtf: [подострое течение](*<- lang_ru;;*);;
+concept_subacute_course=> nrel_main_idtf: [subacute course](*<- lang_en;;*);;
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_subacute_course;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Характеризуется медленным, постепенным нарастанием симптомов, через 1-2 года от начала заболевания проявляется развернутая клиническая картина.](*<- lang_ru;;*);;
+-> [It is characterized by a slow, gradual increase in symptoms, after 1-2 years from the onset of the disease, a detailed clinical picture appears.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(подострое течение)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(subacute course)](*<- lang_en;;*);;
+*);;
+
+
+
+concept_chronic_course<-sc_node_not_relation;;
+concept_chronic_course => nrel_main_idtf: [хроническое течение](*<- lang_ru;;*);;
+concept_chronic_course=> nrel_main_idtf: [chronic course](*<- lang_en;;*);;
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_chronic_course;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Хроническим называют длительное заболевание, поддающееся контролю, но не полному исцелению.](*<- lang_ru;;*);;
+-> [Chronic is a long-term disease that can be controlled, but not completely cured.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(хроническое течение)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(chronic course)](*<- lang_en;;*);;
+*);;
+
+
+
+
+

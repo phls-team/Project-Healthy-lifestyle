@@ -1,0 +1,34 @@
+concept_reproductive_system<-sc_node_not_relation;;
+concept_reproductive_system => nrel_main_idtf: [репродуктивная система](*<- lang_ru;;*);;
+concept_reproductive_system => nrel_main_idtf: [reproductive system](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_reproductive_system;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Репродуктивная система человека — комплекс органов мужского и женского организмов, которые главным образом, обеспечивают воспроизводство людей (их репродукцию, получение потомства, продолжение рода).](*<- lang_ru;;*);;
+-> [The human reproductive system is a complex of organs of male and female organisms, which mainly ensure the reproduction of people (their reproduction, procreation, procreation).](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(репродуктивная система)](*<- lang_ru;;*);;
+=> nrel_main_idtf: [St.(reproductive system)](*<- lang_en;;*);;
+*);;
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_reproductive_system;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Это комплекс органов и систем, которые обеспечивают процесс оплодотворения, способствуют воспроизводству человека.](*<- lang_ru;;*);;
+    -> [This is a complex of organs and systems that provide the fertilization process, contribute to human reproduction.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(репродуктивная система)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(reproductive system)](*<- lang_ru;;*);;
+*);;
+
+
+concept_reproductive_system=>nrel_system_functions:[выработкой половых клеток и секрецией гормонов занимаются половые железы (яичники у женщин и яички у мужчин)];[Контролидоставка выработанных железами клеток в зону оплодотворения осуществляется выводными протоками желез, представляющими собой полые (трубчатые) органы — семявыносящие протоки и мочеиспускательный канал у мужчин и фаллопиевы трубы у женщин];[защиту внутренних структур от нежелательных воздействий внешней среды обеспечивают покровные элементы репродуктивной системы];;
+
+
