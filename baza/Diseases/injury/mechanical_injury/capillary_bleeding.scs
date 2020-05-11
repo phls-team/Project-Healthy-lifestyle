@@ -1,0 +1,15 @@
+capillary_bleeding<-concept_bleeding;;
+capillary_bleeding=>nrel_source_of_bleeding:capillary;;
+capillary_bleeding=>nrel_main_idtf:[капиллярное кровотечение](*<-lang_ru;;*);[capillary bleeding](*<-lang_en;;*);;
+capillary_bleeding<-rrel_key_sc_element:...
+	(*
+<-definition;;
+=>nrel_main_idtf:[Опр.(капиллярное кровотечение)] (* <-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Капиллярное кровотечение-кровь истекает из раны медленной струей, не угрожает жизни человека](*<-lang_ru;;*);;
+->[Capillary bleeding - blood flows out of the wound with a slow stream, does not threaten human life.](*<-lang_en;;*);;
+	
+*);;
+*);;
+

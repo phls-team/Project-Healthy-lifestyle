@@ -1,0 +1,14 @@
+headache=>nrel_main_idtf:[headache](*<-lang_en;;*);;
+headache=>nrel_main_idtf:[головная боль](*<-lang_ru;;*);;
+headache<-rrel_key_sc_element:...
+(*<-definition;;
+=>nrel_main_idtf:[Опр.(головная боль)](*<-lang_ru;;*);;
+=>nrel_main_idtf:[Def.(headache)](*<-lang_rn;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Головная боль - то мучительное и лишающее возможностей нормально функционировать состояние, возникающее в случае немногочисленных типов первичной головной боли.](*<-lang_ru;;*);;
+->[Headache - that is a painful and depriving ability to function normally condition that occurs in the case of a few types of primary headache.](*<-lang_en;;*);;
+*);;
+*);;
+//vomiting=>nrel_unique_idtf:[MD90.1];;
+headache<-concept_illness;;

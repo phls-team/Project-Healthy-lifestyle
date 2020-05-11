@@ -1,0 +1,17 @@
+concept_dislocation<-sc_node_not_relation;;
+concept_dislocation=>nrel_main_idtf:[вывих](*<-lang_ru;;*);[dislocation](*<-lang_en;;*);;
+concept_dislocation<-rrel_key_sc_element:...
+	(*
+<-definition;;
+=>nrel_main_idtf:[Опр.(вывих)] (* <-lang_ru;;*);;
+=>nrel_main_idtf:[Def.(dislocation)] (* <-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Вывих-нарушение конгруэнтности суставных поверхностей костей, как с нарушением целостности суставной капсулы, так и без нарушения, под действием механических сил](*<-lang_ru;;*);;
+->[Dislocation-violation of the congruence of the articular surfaces of the bones, both with a violation of the integrity of the articular capsule, and without violation, under the influence of mechanical forces.](*<-lang_ru;;*);;
+	
+*);;
+*);;
+
+
+

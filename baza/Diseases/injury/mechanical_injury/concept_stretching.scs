@@ -1,0 +1,18 @@
+concept_stretching<-sc_node_not_relation;;
+concept_stretching=>nrel_main_idtf:[растяжение](*<-lang_ru;;*);;
+concept_stretching=>nrel_main_idtf:[stretching](*<-lang_en;;*);;
+concept_stretching<-rrel_key_sc_element:...
+	(*
+<-definition;;
+=>nrel_main_idtf:[Опр.(растяжение)] (* <-lang_ru;;*);;
+=>nrel_main_idtf:[Def.(stretching)] (* <-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Растяжение обычно возникает при резких движениях в суставе, превышающих его нормальную амплитуду.](*<-lang_ru;;*);;
+->[Stretching usually occurs with sudden movements in the joint exceeding its normal amplitude.](*<-lang_ru;;*);;
+	
+*);;
+*);;
+
+
+

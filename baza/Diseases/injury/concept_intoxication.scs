@@ -1,0 +1,18 @@
+concept_intoxication<-sc_node_not_relation;;
+concept_intoxication=>nrel_main_idtf:[intoxication](*<-lang_en;;*);[отравление](*<-lang_ru;;*);;
+concept_intoxication<-rrel_key_sc_element:...
+	(*
+<-definition;;
+=>nrel_main_idtf:[Опр.(отравление)] (* <-lang_ru;;*);;
+=>nrel_main_idtf:[Def.(intoxication)](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Отравление-расстройство жизнедеятельности организма, возникшее вследствие попадания в организм яда или токсина, а также действие, вызвавшее такое заболевание (например, убийство или самоубийство с помощью яда)](*<-lang_ru;;*);;
+->[Intoxication-a disorder of the body’s vital activity resulting from the ingestion of poison or toxin, as well as the action that caused the disease.](*<-lang_en;;*);;
+	
+*);;
+*);;
+
+
+
+

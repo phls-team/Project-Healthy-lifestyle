@@ -1,0 +1,25 @@
+concept_thermal_injury<-sc_node_not_relation;;
+concept_thermal_injury=>nrel_idtf:[thermal injury]
+	(*
+		<-lang_en;;
+	*);;
+concept_thermal_injury=>nrel_idtf:[множество термических травм]
+	(*
+		<-lang_ru;;	
+	*);;
+concept_thermal_injury=>nrel_main_idtf:[термическая травма]
+	(*
+		<-lang_ru;;
+	*);;
+concept_thermal_injury<-rrel_key_sc_element:...
+	(*
+<-definition;;
+=>nrel_main_idtf:[Опр.(термическая травма)] 
+	(* <-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+		->[Термическая травма - повреждение тканей организма, вызванное действием высокой или низкой температуры.]
+(* <-lang_ru;; *);;
+		->[Thermal injury - damage of human tissue,caused by high or low temperature.](*<-lang_en;;*);;
+	*);;
+*);;

@@ -1,0 +1,14 @@
+dyspnea=>nrel_main_idtf:[dyspnea](*<-lang_en;;*);;
+dyspnea=>nrel_main_idtf:[одышка](*<-lang_ru;;*);;
+dyspnea<-rrel_key_sc_element:...
+(*<-definition;;
+=>nrel_main_idtf:[Опр.(одышка)](*<-lang_ru;;*);;
+=>nrel_main_idtf:[Def.(dyspnea)](*<-lang_rn;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Одышка-одна из приспособительных функций организма, которая выражается в изменении частоты, ритма и глубины дыхания, нередко в сопровождении ощущений нехватки воздуха.](*<-lang_ru;;*);;
+->[Dyspnea is one of the adaptive functions of the body, which is expressed in a change in the frequency, rhythm and depth of breathing, often accompanied by feelings of lack of air.](*<-lang_en;;*);;
+*);;
+*);;
+dyspnea=>nrel_unique_idtf:[MD11.5];;
+dyspnea<-concept_illness;;

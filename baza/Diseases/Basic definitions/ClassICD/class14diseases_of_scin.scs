@@ -1,0 +1,61 @@
+concept_class_14=>nrel_main_idtf:[Class 14.Diseases of the scin  ]
+(*<-lang_en;;*);;
+concept_class_14=>nrel_main_idtf:[Класс 14.Заболевания кожи]
+(*<-lang_ru;;*);;
+concept_ICD_11_classification=>nrel_inclusion:concept_class_14;;
+
+concept_subClassOf14_01=>nrel_main_idtf:[Subclass I.Certain skin disorders attributable to infection or infestation]
+(*<-lang_en;;*);;
+concept_subClassOf14_01=>nrel_main_idtf:[Подкласс I.Некоторые кожные заболевания, связанные с инфекцией или заражением]
+(*<-lang_ru;;*);;
+concept_subClassOf14_01=>nrel_arrayOfIdentificators:[EA00 - EA6Y];;
+concept_class_14=>nrel_inclusion:concept_subClassOf14_01;;
+
+concept_subClassOf14_02=>nrel_main_idtf:[Subclass II.Inflammatory dermatoses]
+(*<-lang_en;;*);;
+concept_subClassOf14_02=>nrel_main_idtf:[Подкласс II.Воспалительные дерматозы]
+(*<-lang_ru;;*);;
+concept_subClassOf14_02=>nrel_arrayOfIdentificators:[EA80 - EB7Z];;
+concept_class_14=>nrel_inclusion:concept_subClassOf14_02;;
+
+concept_subClassOf14_03=>nrel_main_idtf:[Subclass III.Metabolic and nutritional disorders affecting the skin]
+(*<-lang_en;;*);;
+concept_subClassOf14_03=>nrel_main_idtf:[Подкласс III.Нарушения обмена веществ и питания кожи]
+(*<-lang_ru;;*);;
+concept_subClassOf14_03=>nrel_arrayOfIdentificators:[EB90 - EB9Y];;
+concept_class_14=>nrel_inclusion:concept_subClassOf14_03;;
+
+concept_subClassOf14_04=>nrel_main_idtf:[Subclass IV.Genetic and developmental disorders affecting the skin]
+(*<-lang_en;;*);;
+concept_subClassOf14_04=>nrel_main_idtf:[Подкласс IV.Генетические нарушения и нарушения развития, влияющие на кожу]
+(*<-lang_ru;;*);;
+concept_subClassOf14_04=>nrel_arrayOfIdentificators:[EC10 - EC7Y];;
+concept_class_14=>nrel_inclusion:concept_subClassOf14_04;;
+
+concept_subClassOf14_05=>nrel_main_idtf:[Subclass V.Sensory and psychological disorders affecting the skin.]
+(*<-lang_en;;*);;
+concept_subClassOf14_05=>nrel_main_idtf:[Подкласс V.Сенсорные и психологические расстройства, влияющие на кожу.]
+(*<-lang_ru;;*);;
+concept_subClassOf14_05=>nrel_arrayOfIdentificators:[EC90 - ED3Y];;
+concept_class_14=>nrel_inclusion:concept_subClassOf14_05;;
+
+concept_subClassOf14_06=>nrel_main_idtf:[Subclass VI.Skin disorders involving specific cutaneous structures.]
+(*<-lang_en;;*);;
+concept_subClassOf14_06=>nrel_main_idtf:[Подкласс VI.Кожные заболевания с участием определенных кожных структур.]
+(*<-lang_ru;;*);;
+concept_subClassOf14_06=>nrel_arrayOfIdentificators:[ED50 - EG1Z];;
+concept_class_14=>nrel_inclusion:concept_subClassOf14_06;;
+
+concept_subClassOf14_07=>nrel_main_idtf:[Subclass VII.Skin disorders involving certain specific body regions.]
+(*<-lang_en;;*);;
+concept_subClassOf14_07=>nrel_main_idtf:[Подкласс VII.Кожные заболевания, связанные с определенными областями тела.]
+(*<-lang_ru;;*);;
+concept_subClassOf14_07=>nrel_arrayOfIdentificators:[EG30 - EG9Z];;
+concept_class_14=>nrel_inclusion:concept_subClassOf14_07;;
+
+concept_subClassOf14_08=>nrel_main_idtf:[Subclass VIII.Skin disorders associated with pregnancy, the neonatal period and infancy.]
+(*<-lang_en;;*);;
+concept_subClassOf14_08=>nrel_main_idtf:[Подкласс VIII.Кожные расстройства, связанные с беременностью, периодом новорожденности и младенчеством.]
+(*<-lang_ru;;*);;
+concept_subClassOf14_08=>nrel_arrayOfIdentificators:[EG30 - EG9Z];;
+concept_class_14=>nrel_inclusion:concept_subClassOf14_08;;

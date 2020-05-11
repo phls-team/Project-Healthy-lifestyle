@@ -1,0 +1,16 @@
+concept_bleeding<-sc_node_not_relation;;
+concept_bleeding=>nrel_main_idtf:[кровотечение](*<-lang_ru;;*);[bleeding](*<-lang_en;;*);;
+concept_bleeding<-rrel_key_sc_element:...
+	(*
+<-definition;;
+=>nrel_main_idtf:[Опр.(кровотечение)] (* <-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Кровотечение-выход крови за пределы сосудистого русла или сердца в окружающую среду, в полость тела или просвет полого органа](*<-lang_ru;;*);;
+->[Bleeding - the exit of blood beyond the vascular bed or heart into the environment, into the body cavity or lumen of a hollow organ.](*<-lang_en;;*);;
+	
+*);;
+*);;
+
+
+

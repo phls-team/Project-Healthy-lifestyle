@@ -1,0 +1,14 @@
+gangrene=>nrel_main_idtf:[gangrene](*<-lang_en;;*);;
+gangrene=>nrel_main_idtf:[гангрена](*<-lang_ru;;*);;
+gangrene<-rrel_key_sc_element:...
+(*<-definition;;
+=>nrel_main_idtf:[Опр.(гангрена)](*<-lang_ru;;*);;
+=>nrel_main_idtf:[Def.(gangrene)](*<-lang_rn;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Гангрена-некроз тканей живого организма чёрного или очень тёмного цвета, развивающийся в тканях органов, прямо или через анатомические каналы связанных с внешней средой (кожа, лёгкие, кишечник и др.)](*<-lang_ru;;*);;
+->[Gangrene-necrosis of tissues of a living organism of black or very dark color, developing in the tissues of organs, directly or through the anatomical channels associated with the external environment (skin, lungs, intestines, etc.)](*<-lang_en;;*);;
+*);;
+*);;
+gangrene=>nrel_unique_idtf:[MC85];;
+gangrene<-concept_illness;;

@@ -1,0 +1,14 @@
+fainting=>nrel_main_idtf:[fainting](*<-lang_en;;*);;
+fainting=>nrel_main_idtf:[обморок](*<-lang_ru;;*);;
+fainting<-rrel_key_sc_element:...
+(*<-definition;;
+=>nrel_main_idtf:[Опр.(обморок)](*<-lang_ru;;*);;
+=>nrel_main_idtf:[Def.(fainting)](*<-lang_rn;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Обморок — приступ кратковременной утраты сознания, обусловленный временным нарушением мозгового кровотока.](*<-lang_ru;;*);;
+->[Fainting is an attack of short-term loss of consciousness due to a temporary violation of cerebral blood flow.](*<-lang_en;;*);;
+*);;
+*);;
+fainting=>nrel_unique_idtf:[MG45.Z];;
+fainting<-concept_illness;;

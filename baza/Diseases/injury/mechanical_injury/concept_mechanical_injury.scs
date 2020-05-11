@@ -1,0 +1,16 @@
+concept_mechanical_injury<-sc_node_not_relation;;
+concept_mechanical_injury=>nrel_idtf:[mechanical injury](*<-lang_en;;*);;
+concept_mechanical_injury=>nrel_idtf:[множество механических травм](*<-lang_ru;;*);;
+concept_mechanical_injury=>nrel_main_idtf:[механическая травма](*<-lang_ru;;*);;
+concept_mechanical_injury<-rrel_key_sc_element:...
+	(*
+<-definition;;
+=>nrel_main_idtf:[Опр.(механическая травма)] (* <-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Механическая травма-травма возникающая под внешним физическим воздействием.](*<-lang_ru;;*);;
+->[Mechanical trauma-injury arising under external physical impact.](*<-lang_en;;*);;
+	
+*);;
+*);;
+concept_mechanical_injury=>nrel_inclusion:concept_dislocation;concept_stretching;concept_bleeding;concept_bone_fracture;concept_head_injury;concept_cut;concept_hurt;;

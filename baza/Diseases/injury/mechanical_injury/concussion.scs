@@ -1,0 +1,32 @@
+concussion=>nrel_main_idtf:[сотрясение мозга](*<-lang_ru;;*);
+[concussion](*<-lang_en;;*);;
+concussion<-rrel_key_sc_element:...
+	(*
+<-definition;;
+=>nrel_main_idtf:[Опр.(сотрясение мозга)] (* <-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Сотрясение мозга-лёгкая форма черепно-мозговой травмы с кратковременной потерей сознания.](*<-lang_ru;;*);;
+->[Concussion is a mild form of traumatic brain injury with short-term loss of consciousness.](*<-lang_en;;*);;
+	
+*);;
+
+*);;
+
+concussion=>nrel_symptom:headache;vomiting;;
+concussion<-concept_head_injury;;
+
+
+
+
+concussion=>nrel_healing:...
+(*
+<-statement;;
+=>nrel_main_idtf:[лечение сотрясения](*<-lang_ru;;*);;
+=>nrel_main_idtf:[healing of the concussion](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Пациентам с сотрясением мозга предписывают постельный режим на 5 суток, который затем, с учетом особенностей клинического течения, постепенно расширяют. При отсутствии осложнений возможна выписка из стационара на 7—10-е сутки на амбулаторное лечение длительностью до 2 недель.](*<-lang_ru;;*);;
+->[Patients with concussion are prescribed bed rest for 5 days, which then, taking into account the characteristics of the clinical course, is gradually expanded. In the absence of complications, discharge from the hospital on the 7-10th day for outpatient treatment lasting up to 2 weeks is possible.](*<-lang_en;;*);;
+*);;
+*);;

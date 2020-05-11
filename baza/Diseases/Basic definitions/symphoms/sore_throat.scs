@@ -1,0 +1,14 @@
+sore_throat=>nrel_main_idtf:[sore throat](*<-lang_en;;*);;
+sore_throat=>nrel_main_idtf:[больное горло](*<-lang_ru;;*);;
+sore_throat<-rrel_key_sc_element:...
+(*<-definition;;
+=>nrel_main_idtf:[Опр.(больное горло)](*<-lang_ru;;*);;
+=>nrel_main_idtf:[Def.(sore throat)](*<-lang_rn;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Больное горло-боль или раздражение в горле. Это часто встречающийся симптом, обычно вызван острым фарингитом (воспалением глотки) или воспалением миндалин, хотя также может быть результатом травмы, дифтерии и других заболеваний.](*<-lang_ru;;*);;
+->[Sore throat - pain or sore throat. This is a common symptom, usually caused by acute pharyngitis (inflammation of the pharynx) or inflammation of the tonsils, although it can also be the result of trauma, diphtheria and other diseases.](*<-lang_en;;*);;
+*);;
+*);;
+//cough=>nrel_unique_idtf:[MD12];;
+sore_throat<-concept_illness;;

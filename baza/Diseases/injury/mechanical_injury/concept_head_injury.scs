@@ -1,0 +1,15 @@
+concept_head_injury<-sc_node_not_relation;;
+concept_head_injury=>nrel_main_idtf:[черепно-мозговая травма](*<-lang_ru;;*);[head injury](*<-lang_en;;*);;
+concept_head_injury<-rrel_key_sc_element:...
+	(*
+<-definition;;
+=>nrel_main_idtf:[Опр.(черепно-мозговая)] (* <-lang_ru;;*);;
+=>nrel_main_idtf:[Def.(head injury)] (* <-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Черепно-мозговая травма-комплекс контактных повреждений (мягких тканей лица и головы, костей черепа и лицевого скелета) и внутричерепных повреждений (повреждений вещества головного мозга и его оболочек), имеющих единый механизм и давность образования.](*<-lang_ru;;*);;
+->[Head injury is a complex of contact injuries (soft tissues of the face and head, bones of the skull and facial skeleton) and intracranial injuries (damage to the substance of the brain and its membranes), which have a single mechanism and prescription.](*<-lang_en;;*);;
+	
+*);;
+*);;
+

@@ -1,0 +1,26 @@
+burn_fourth_degree=>nrel_main_idtf:[ожог четвертой степени](*<-lang_ru;;*);[burn of the fourth degree](*<-lang_en;;*);;
+burn_fourth_degree<-concept_thermal_injury;;
+burn_fourth_degree<-rrel_sc_key_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:[Опр.(Ожог четвертой степени)](*<-lang_ru;;*);;
+=>nrel_main_idtf:[Def.(Burn of the fourth degree)](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[ожог четвертой степени сопровождается обугливанием кожи и глубоким поражением мышц, подкожных тканей и костей.](*<-lang_ru;;*);;
+->[a fourth degree burn is accompanied by charring of the skin and deep damage to the muscles, subcutaneous tissues and bones.](*<-lang_en;;*);;
+	
+*);;
+*);;
+number_4
+	=> nrel_main_idtf: [четыре](*<-lang_ru;;*);
+	<-concept_number;
+	<=nrel_identification: ...
+		(*
+		->rrel_binary_system: [4];;
+		*)
+;;
+burn_fourth_degree=>nrel_burn_degree:number_4;;
+
+
+

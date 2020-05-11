@@ -1,0 +1,17 @@
+venous_bleeding=>nrel_main_idtf:[венозное кровотечение](*<-lang_ru;;*);[venous bleeding](*<-lang_en;;*);;
+venous_bleeding<-rrel_key_sc_element:...
+	(*
+<-definition;;
+=>nrel_main_idtf:[Опр.(венозное кровотечение)] (* <-lang_ru;;*);;
+=>nrel_main_idtf:[Def.(venous bleeding)] (* <-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Венозное кровотечение-кровотечение при котором из раны постоянным потоком струится тёмная по цвету венозная кровь](*<-lang_ru;;*);;
+->[Venous bleeding-bleeding in which dark venous blood flows from a wound in a constant stream.](*<-lang_en;;*);;
+	
+*);;
+*);;
+venous_bleeding<-concept_bleeding;;
+venous_bleeding=>nrel_source_of_bleeding:vein;;
+
+

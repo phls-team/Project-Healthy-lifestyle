@@ -1,0 +1,14 @@
+diarrhea=>nrel_main_idtf:[diarrhea](*<-lang_en;;*);;
+diarrhea=>nrel_main_idtf:[диарея](*<-lang_ru;;*);;
+diarrhea<-rrel_key_sc_element:...
+(*<-definition;;
+=>nrel_main_idtf:[Опр.(диарея)](*<-lang_ru;;*);;
+=>nrel_main_idtf:[Def.(diarrhea)](*<-lang_rn;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Диарея- патологическое состояние, при котором у больного наблюдается учащённая (более 3 раз в сутки) дефекация, при этом стул становится водянистым, имеет объём более 200 мл и часто сопровождается болевыми ощущениями в области живота, экстренными позывами и анальным недержанием.](*<-lang_ru;;*);;
+->[Diarrhea is a pathological condition in which the patient has rapid (more than 3 times a day) bowel movements, while the stool becomes watery, has a volume of more than 200 ml and is often accompanied by pain in the abdomen, urges and anal incontinence.](*<-lang_en;;*);;
+*);;
+*);;
+diarrhea=>nrel_unique_idtf:[ME05.1];;
+diarrhea<-concept_illness;;

@@ -1,0 +1,19 @@
+concept_electrical_injury<-sc_node_not_relation;;
+concept_electrical_injury=>nrel_idtf:[electrical injury]
+(*<-lang_en;;*);;
+concept_electrical_injury=>nrel_idtf:[множество электрических травм]
+(*<-lang_ru;;*);;
+concept_electrical_injury=>nrel_main_idtf:[электрическая травма]
+(*<-lang_ru;;*);;
+concept_electrical_injury<-rrel_key_sc_element:...
+(*<-definition;;
+=>nrel_main_idtf:[Опр.(электрическая травма)] 
+	(* <-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Электрическая травма-травма возникающая под воздействием электрического тока.]
+(* <-lang_ru;; *);;
+->[Electrical trauma-traume arising under the influence of electric current.](*<-lang_en;;*);;
+	
+*);;
+*);;

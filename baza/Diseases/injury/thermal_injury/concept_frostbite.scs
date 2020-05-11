@@ -1,0 +1,18 @@
+concept_frostbite<-sc_node_not_relation;;
+concept_frostbite=>nrel_main_idtf:[frostbite](*<-lang_en;;*);[обморожение](*<-lang_ru;;*);;
+concept_frostbite<-rrel_key_sc_element:...
+	(*
+<-definition;;
+=>nrel_main_idtf:[Опр.(обморожение)] (* <-lang_ru;;*);;
+=>nrel_main_idtf:[Def.(frostbite)](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Обморожение-повреждение тканей организма под воздействием низких температур. Нередко сопровождается общим переохлаждением организма и особенно часто затрагивает выступающие части тела.](*<-lang_ru;;*);;
+->[Frostbite - damage to body tissues under the influence of low temperatures. Often accompanied by general hypothermia of the body and especially often affects the protruding parts of the body.](*<-lang_en;;*);;
+	
+*);;
+*);;
+
+
+
+

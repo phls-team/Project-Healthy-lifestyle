@@ -1,0 +1,48 @@
+nrel_burn_degree<-sc_node_norole_relation;
+=>nrel_main_idtf:[degree of burn]
+(*<-lang_en;;*);;
+nrel_burn_degree<-sc_node_norole_relation;
+=>nrel_main_idtf:[степень ожога]
+(*<-lang_ru;;*);;
+nrel_burn_degree<-rrel_key_sc_element:...
+	(*
+<-definition;;
+=>nrel_main_idtf:[Опр.(степень ожога)] 
+	(* 
+		<-lang_ru;;
+	*);;
+=>nrel_main_idtf:[Def.(degree of burn)] 
+	(* 
+		<-lang_en;;
+	*);;
+<=nrel_sc_text_translation:...
+(*
+		->[Степень ожога - то насколько серьезны повреждения тканей человека.]
+(* 
+<-lang_ru;; 
+*);;
+	->[Degree of burn, is the severity of human tissues damage.](*<-lang_en;;*);;
+	*);;
+*);;
+nrel_burn_degree=>nrel_first_domain:concept_burn;;
+nrel_burn_degree=>nrel_second_domain:concept_number;;
+
+nrel_burn_degree<-binary_relation;;
+parameter->arity;;
+arity->binary_relation;;
+binary_relation=>nrel_measurement:2;;
+2<-number;;
+
+nrel_burn_degree<-oriented_relation;;
+
+
+
+
+
+
+
+
+
+    
+
+
