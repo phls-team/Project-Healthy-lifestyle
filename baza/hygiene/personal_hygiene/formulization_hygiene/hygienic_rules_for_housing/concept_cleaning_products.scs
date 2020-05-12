@@ -1,0 +1,68 @@
+concept_cleaning_product<-sc_node_not_relation;;
+
+concept_cleaning_product=>nrel_main_idtf:[чистящее средство]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[cleaning product]
+        (*
+                <-lang_en;;
+*);;
+
+
+defenition ->...
+(*
+->rrel_key_sc_element: concept_cleaning_product;concept_detergent;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Чистящие и моющие средства - это химические препараты, предназначенные для чистки и мытья металлических, эмалированных, деревянных, пластиковых и других поверхностей. При воздействии чистящего средства на поверхностный слой происходит сложный комплекс физико-химических процессов, в их числе - смачивание очищаемой поверхности, диспергирование и сорбция частиц загрязнений, предотвращение их обратного осаждения на обрабатываемую поверхность.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Чистящее средство)](*<- lang_ru;;*);;
+*);; 
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_cleaning_product;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Чистящие средства применяют в виде порошков, жидкостей, паст, суспензий, эмульсий, ряд препаратов выпускают на гибких подложках, в аэрозольных и беспропеллентных упаковках.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Чистящее средство)](*<- lang_ru;;*);;
+*);; 
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_cleaning_product;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[При выборе чистящего средства необходимо в первую очередь подумать о здоровье, средство должно быть нейтральным, с низкой кислотно-щелочной концентрацией, т.е. pH чистящих средств должен быть ниже 8-го уровня. В противном случае, оно может навредить коже и очищаемой поверхности.
+
+Содержание тензидов в чистящем средстве не должно превышать 15%, а фосфатов – 4%. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Чистящее средство)](*<- lang_ru;;*);;
+*);; 
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_cleaning_product;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Совершенно безвредным и почти универсальным средством для чистки является сода. Содой можно чистить посуду, водопроводные трубы, щетки, швабры, удалять водоросли, а горячий содовый раствор – это отличный антисептик. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Безвредное чистящее средство)](*<- lang_ru;;*);;
+*);; 
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_cleaning_product;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Одними из самых вредных чистящих средств являются средства для дезинфекции, обычно применяемые при уборке туалета и ванной комнаты.
+Почему они такие вредные? Потому что содержат хлор, а хлор, как известно, портит здоровье, воздух и обжигает дыхательные пути.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Вредные чистящее средства)](*<- lang_ru;;*);;
+*);; 
+
+concept_cleaning_product=>nrel_classification:cleaning_product_for_furniture;;
+
+concept_cleaning_product=>nrel_inclusion:abrasive_cleaning_product;non_abrasive_cleaning_product;;
+
+concept_cleaning_product<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://pictures//dffd.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Химические чистящее средства )](*<- lang_ru;;*);;
+        
+*);;
+*);;

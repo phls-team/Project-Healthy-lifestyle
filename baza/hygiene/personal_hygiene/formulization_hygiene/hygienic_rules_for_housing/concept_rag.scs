@@ -1,0 +1,35 @@
+concept_rag<-sc_node_not_relation;;
+
+concept_rag=>nrel_main_idtf:[тряпка]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[rag]
+        (*
+                <-lang_en;;
+*);;
+
+
+defenition ->...
+(*
+->rrel_key_sc_element:concept_rag ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Тря́пка — кусок материи (ткани), как правило, используемый для вытирания, уборки, очистки, мытья.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Тряпка)](*<- lang_ru;;*);;
+*);; 
+
+concept_rag<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://pictures//220px-Feudel_01.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Половая тряпка)](*<- lang_ru;;*);;
+        
+*);;
+*);;
+
+concept_rag=>nrel_consist:concept_cotton;concept_linum;;

@@ -1,0 +1,36 @@
+concept_hygroscopic_cotton_wool<-sc_node_not_relation;;
+
+concept_hygroscopic_cotton_wool=>nrel_main_idtf:[гигроскопическая вата]
+        (*
+                <-lang_ru;;
+        *);
+
+nrel_main_idtf:[hygroscopic сotton wool]
+        (*
+                <-lang_en;;
+        *);;
+
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_hygroscopic_cotton_wool;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Гигроскопическая вата белая, легко расслаивается, употребляется как материал, впитывающий жидкие выделения (гной, сукровицу) при перевязке ран поверх слоёв перевязочной марли.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утвержедние(Характеристика и применение гигроскопической ваты)](*<- lang_ru;;*);;
+*);;
+
+concept_hygroscopic_cotton_wool<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//aj.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+        => nrel_main_idtf: [Иллюстрация(Гигроскопическая гигиеническая нестерильная вата)](*<- lang_ru;;*);;
+*);;
+*);;
+
+
+concept_hygroscopic_cotton_wool=>nrel_inclusion:ophthalmic_hygroscopic_cotton_wool;surgical_hygroscopic_cotton_wool;hygiene_hygroscopic_cotton_wool;;

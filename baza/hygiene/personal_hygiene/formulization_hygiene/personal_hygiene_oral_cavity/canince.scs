@@ -1,0 +1,50 @@
+canine=>nrel_main_idtf:[клыки]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[canine]
+        (*
+                <-lang_en;;
+        *);;
+
+definition ->...
+(*
+->rrel_key_sc_element:canine ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Клыки — конусовидные зубы, которые служат для разрывания и удержания пищи.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Клыки)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+concept_human_tooth
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:canine ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Кроме участия в пищеварительной системе, клыки также используются животными для обороны.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утв(Клыки)](*<- lang_ru;;*);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:canine ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[У человека 4 клыка, 2 на нижней челюсти 2 на верхней челюсти. Это третьи зубы от средней линии, которые завершают фронтальную группу зубов[1]. Клыки относительно резцов удлинённые. Они имеют копьевидную коронку, с утолщением в виде продольного вестибулярного валика. Клыки также обеспечивают поддерживающий каркас для круговой мышцы рта.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утв(Сколько у человека клыков)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+concept_human
+};;
+*);;
+
+
+canine<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://фото//EckzahnH04.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+=> nrel_main_idtf: [Иллюстрация(Клыки человека)](*<- lang_ru;;*);;
+*);;
+*);;

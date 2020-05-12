@@ -1,0 +1,75 @@
+concept_human_tooth<-sc_node_not_relation;;
+
+concept_human_tooth=>nrel_main_idtf:[зубы человека]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[human tooth]
+        (*
+                <-lang_en;;
+        *);;
+concept_human_tooth=>nrel_idtf:[зубы]
+        (*
+                <-lang_ru;;
+        *);;
+concept_human_tooth<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://фото//300px-06-10-06smile.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+        => nrel_main_idtf: [Иллюстрация(Зубы человека)](*<- lang_ru;;*);;
+*);;
+*);;
+
+concept_human_tooth<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://фото//Cross_sections_of_teeth_ru.svg.png"
+        (*
+                =>nrel_format:format_png;;
+        *);;
+        => nrel_main_idtf: [Иллюстрация(Из чего состоит человеческий зуб)](*<- lang_ru;;*);;
+*);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_human_tooth;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[По основной функции зубы делятся на 4 типа:резцы,клыки,пермоляр,моляры](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(зубы человека)](*<- lang_ru;;*);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_human_tooth;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Механическая обработка пищи
+    Удержание пищи
+    Участие в образовании звуков речи
+    Эстетическая — являются важной частью рта](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Общие функции зубов человека)](*<- lang_ru;;*);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_human_tooth;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Зубы человека не регенерируют, в то время как у некоторых животных, например, акул, они обновляются постоянно в течение всей жизни.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Регенерация зубов человека)](*<- lang_ru;;*);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_human_tooth;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Развитие зубов у эмбриона человека начинается примерно на 7 неделе.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Развитие зубов человека)](*<- lang_ru;;*);;
+*);;
+
+concept_human_tooth=>nrel_consist:incisor;canine;premolar;molars;;
+concept_human_tooth=>nrel_inclusion:tooth_enamel;;

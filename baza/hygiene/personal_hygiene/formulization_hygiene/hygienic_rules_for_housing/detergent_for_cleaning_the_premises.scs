@@ -1,0 +1,49 @@
+detergent_for_cleaning_the_premises<-sc_node_not_relation;;
+
+detergent_for_cleaning_the_premises=>nrel_main_idtf:[моющие средства для уборки помещений]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[detergent for cleaning the premises]
+        (*
+                <-lang_en;;
+*);;
+
+detergent_for_cleaning_the_premises<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://pictures//moushie-i-chistiashie-sredstva-9-400x300.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Моющие средства для уборки помещений)](*<- lang_ru;;*);;
+        
+*);;
+*);;
+
+detergent_for_cleaning_the_premises->rrel_example:domestos;;
+
+frosh<-sc_node_not_relation;;
+
+domestos=>nrel_main_idtf:[Domestos]
+        (*
+                <-lang_en;;
+*);;
+
+domestos<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://pictures//40052.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+     => nrel_main_idtf: [Иллюстрация(Пример моющего средства Domestos)](*<- lang_ru;;*);;
+        
+*);;
+*);;

@@ -1,0 +1,32 @@
+premolar=>nrel_main_idtf:[премоляр]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[premolar]
+        (*
+                <-lang_en;;
+        *);;
+
+definition ->...
+(*
+->rrel_key_sc_element:premolar ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Премоляр, зуб коренной малый (лат. premolar, dentes premolares) — один из двух зубов, расположенных в зубном ряду взрослых людей с обеих сторон челюстей за клыками перед большими коренными зубами. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Премоляры)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+concept_human_tooth
+};;
+*);;
+
+premolar<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://фото//274px-Zahn_34.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+        => nrel_main_idtf: [Иллюстрация(Премоляр)](*<- lang_ru;;*);;
+*);;
+*);;

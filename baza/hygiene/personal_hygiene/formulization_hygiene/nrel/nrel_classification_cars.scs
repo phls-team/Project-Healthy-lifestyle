@@ -1,0 +1,27 @@
+nrel_classification_cars
+<- sc_node_norole_relation;
+=> nrel_main_idtf: 
+	[классификация автомобилей*] 
+	(* 
+	<- lang_ru;; 
+	*);
+=> nrel_main_idtf: 
+	[classification cars*] 
+	(* 
+	<- lang_en;; 
+	*);
+
+    <- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(Классификация автомобией*)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[1.По типу двигателя.
+            2.По типу двигателя/шасси.
+            3.По общему числу колёс и числу ведущий колёс.
+            4.По числу осей.
+            5.По назначению.
+            6.По степени приспособления к работе в различных дорожных условиях.](*<- lang_ru;;*);;
+			*);;
+		*);;

@@ -1,0 +1,32 @@
+incisor=>nrel_main_idtf:[резцы]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[incisor]
+        (*
+                <-lang_en;;
+        *);;
+
+definition ->...
+(*
+->rrel_key_sc_element:incisor ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[зубы, функция которых заключается в откусывании пищи.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Резцы)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+concept_human_tooth
+};;
+*);;
+
+incisor<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://фото//6864.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+=> nrel_main_idtf: [Иллюстрация(Резцы человека)](*<- lang_ru;;*);;
+*);;
+*);;

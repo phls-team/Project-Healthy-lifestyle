@@ -1,0 +1,22 @@
+middle_brush=>nrel_main_idtf:[щётка средней жесткости]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[medium hard brush]
+        (*
+                <-lang_en;;
+        *);;
+
+statement ->...
+(*
+->rrel_key_sc_element:middle_brush;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Щётка средней жесткости подходят для людей, которые не имеют каких-либо отклонений или патологий в ротовой полости](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Кому подходит щётка средней жесткости)](*<- lang_ru;;*);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:middle_brush ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Зубная щетка со средней степенью жесткости (медиум) считается самой популярной и используется многими. Но такая щетка разрешена при здоровой полости рта.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Зубная щётка средней жесткости)](*<- lang_ru;;*);;
+*);;

@@ -1,0 +1,97 @@
+otitis_media<-sc_node_not_relation;;
+otitis_media=>nrel_main_idtf:[cредний отит]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[medium otitis]
+        (*
+                <-lang_en;;
+        *);;
+
+otitis_media<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//274px-Otitis_media_entdifferenziert2.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+        => nrel_main_idtf: [Иллюстрация(Острый средний отит)](*<- lang_ru;;*);;
+*);;
+*);;
+
+definition ->...
+(*
+->rrel_key_sc_element:otitis_media ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Средний отит – это воспалительный процесс, который развивается в среднем ухе.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Средний отит)](*<- lang_ru;;*);;
+*);;
+
+statement->...
+(*
+->rrel_key_sc_element:otitis_media ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Средний отит крайне распространена в отоларингологии и составляет до 30% случаев всех болезней ЛОР-органов. К тому же, отит часто является сопутствующим заболеванием и присоединяется к другим патологиям уха – как правило, это происходит в 30% случаев.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Распространение среднего отита в оториноларингологии)](*<- lang_ru;;*);;
+*);;
+
+otitis_media=>nrel_classification:catarrhal_media_otitis;media_serous_otitis;purulent_otitis_media;;
+otitis_media=>nrel_symptom:hearing_loss;ear_discharge;sensation_of_splashing_in_the_ear;general_weakness;sleep_disturbance;lack_of_appetite;;
+
+hearing_loss=>nrel_main_idtf:[потеря слуха]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[hearing loss]
+        (*
+                <-lang_en;;
+        *);;
+
+ear_discharge=>nrel_main_idtf:[повреждение уха-разрыв барабаной перепонки]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[ear discharge]
+        (*
+                <-lang_en;;
+        *);;
+
+
+sensation_of_splashing_in_the_ear=>nrel_main_idtf:[шум воды в ухе]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[sensation of splashing in the ear]
+        (*
+                <-lang_en;;
+        *);;
+
+
+general_weakness=>nrel_main_idtf:[общая усталость]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[general weakness]
+        (*
+                <-lang_en;;
+        *);;
+
+sleep_disturbance=>nrel_main_idtf:[нарушение сна]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[sleep disturbance]
+        (*
+                <-lang_en;;
+        *);;
+
+lack_of_appetite=>nrel_main_idtf:[отсутствие аппетита]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[lack of appetite]
+        (*
+                <-lang_en;;
+        *);;
+

@@ -1,0 +1,26 @@
+concept_sterile_cotton_wool<-sc_node_not_relation;;
+
+concept_sterile_cotton_wool=>nrel_main_idtf:[стерильная вата]
+        (*
+                <-lang_ru;;
+        *);
+
+nrel_main_idtf:[sterile сotton wool]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_sterile_cotton_wool<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//1w.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+        => nrel_main_idtf: [Иллюстрация(Стерильная вата)](*<- lang_ru;;*);;
+*);;
+*);;
+

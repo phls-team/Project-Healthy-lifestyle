@@ -1,0 +1,33 @@
+concept_cotton<-sc_node_not_relation;;
+
+concept_cotton=>nrel_main_idtf:[хлопок]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[сotton]
+        (*
+                <-lang_en;;
+*);;
+
+
+defenition ->...
+(*
+->rrel_key_sc_element:concept_rag ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Хло́пок — волокно растительного происхождения, покрывающее семена хлопчатника; важнейшее и наиболее дешёвое из распространённых растительных волокон.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Хлопок)](*<- lang_ru;;*);;
+*);; 
+
+concept_rag<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://pictures//CottonBoll.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Хлопок)](*<- lang_ru;;*);;
+        
+*);;
+*);;

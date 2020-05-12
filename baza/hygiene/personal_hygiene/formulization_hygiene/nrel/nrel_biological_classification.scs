@@ -1,0 +1,105 @@
+nrel_classification_biological
+<- sc_node_norole_relation;
+=> nrel_main_idtf: 
+	[биологическая классификация*] 
+	(* 
+	<- lang_ru;; 
+	*);
+=> nrel_main_idtf: 
+	[biological classification*] 
+	(* 
+	<- lang_en;; 
+	*);
+
+<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://220px-Biological_classification_L_Pengo-ru.svg.png"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+        => nrel_main_idtf: [Иллюстрация(Биологическая классификация*)](*<- lang_ru;;*);;
+*);;
+*);
+
+    <- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(Биологическая классификация*)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Систе́ма органи́ческого ми́ра — это систематическое описание всех существующих в настоящее время и существовавших ранее организмов.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+->rrel_example:concept_virus;concept_bacteria;;
+
+nrel_classification_biological=>nrel_consist:
+concept_virus;
+concept_bacteria;
+concept_mushrooms;
+concept_plants;
+concept_animals;;
+
+concept_virus<-sc_node_not_relation;
+=> nrel_main_idtf: 
+	[вирусы] 
+	(* 
+	<- lang_ru;; 
+	*);
+=> nrel_main_idtf: 
+	[viruses] 
+	(* 
+	<- lang_en;; 
+	*);;
+
+concept_bacteria<-sc_node_not_relation;
+=> nrel_main_idtf: 
+	[бактерии] 
+	(* 
+	<- lang_ru;; 
+	*);
+=> nrel_main_idtf: 
+	[bacterias] 
+	(* 
+	<- lang_en;; 
+	*);;
+
+concept_mushrooms<-sc_node_not_relation;
+=> nrel_main_idtf: 
+	[грибы] 
+	(* 
+	<- lang_ru;; 
+	*);
+=> nrel_main_idtf: 
+	[mushrooms] 
+	(* 
+	<- lang_en;; 
+	*);;
+
+concept_plants<-sc_node_not_relation;
+=> nrel_main_idtf: 
+	[растения] 
+	(* 
+	<- lang_ru;; 
+	*);
+=> nrel_main_idtf: 
+	[plants] 
+	(* 
+	<- lang_en;; 
+	*);;
+
+concept_animals<-sc_node_not_relation;
+=> nrel_main_idtf: 
+	[животные] 
+	(* 
+	<- lang_ru;; 
+	*);
+=> nrel_main_idtf: 
+	[animals] 
+	(* 
+	<- lang_en;; 
+	*);;

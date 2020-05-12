@@ -1,0 +1,11 @@
+purulent_otitis_media<-sc_node_not_relation;;
+purulent_otitis_media=>nrel_main_idtf:[cредний гнойный отит]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[purulent otitis media]
+        (*
+                <-lang_en;;
+        *);;
+
+purulent_otitis_media=>nrel_unique_idtf:[AA90](*<-lang_en;;*);;

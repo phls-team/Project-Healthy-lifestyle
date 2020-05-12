@@ -1,0 +1,41 @@
+regular_visits_to_the_dentist_and_hygienist=>nrel_main_idtf:[регулярное посещение стоматолога и гигиениста]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[regular visits to the dentist and hygienist]
+        (*
+                <-lang_en;;
+        *);;
+
+regular_visits_to_the_dentist_and_hygienist<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://фото//4SxHPntPBM0.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+        => nrel_main_idtf: [Иллюстрация(Регулярное посещение стоматолога и гигиениста)](*<- lang_ru;;*);;
+*);;
+*);;
+
+definition ->...
+(*
+->rrel_key_sc_element: regular_visits_to_the_dentist_and_hygienist;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Посещение стоматолога - это обязательная процедура, необходимая практически каждому человеку.
+Только стоматолог сможет оказать Вам помощь в лечении зуба.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Посещение стоматолога)](*<- lang_ru;;*);;
+
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: regular_visits_to_the_dentist_and_hygienist;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Обычный осмотр с целью профилактики следует проводить не реже, чем 1-2 раза в год. Но при появлении боли, дискомфорта или очень неприятного запаха изо рта не следует откладывать с визитом к врачу.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Как часто необходимо посещать стоматолога)](*<- lang_ru;;*);;
+*);;
+
+regular_visits_to_the_dentist_and_hygienist=>nrel_inclusion:monitor_teeth;follow_the_state_of_enamel;;
+regular_visits_to_the_dentist_and_hygienist=>nrel_consist:dentist;hygienist;;

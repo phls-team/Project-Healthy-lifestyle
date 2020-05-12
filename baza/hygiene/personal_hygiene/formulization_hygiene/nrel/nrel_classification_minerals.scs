@@ -1,0 +1,27 @@
+nrel_classification_minerals
+<- sc_node_norole_relation;
+=> nrel_main_idtf: 
+	[классификация минералов*] 
+	(* 
+	<- lang_ru;; 
+	*);
+=> nrel_main_idtf: 
+	[classification minerals*] 
+	(* 
+	<- lang_en;; 
+	*);
+
+    <- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(Классификация минералов*)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Современные классификации минералов проводятся на структурно-химической основе. Классификация, утверждённая Международной минералогической ассоциацией (IMA) в 2009 году, периодически обновляется и утверждается заново. ](*<- lang_ru;;*);;
+			*);;
+            =>nrel_using_constants:{
+            concept_minerals
+            };;
+		*);
+
+=>nrel_inclusion:concept_neorganic_mineral;concept_organic_mineral;;

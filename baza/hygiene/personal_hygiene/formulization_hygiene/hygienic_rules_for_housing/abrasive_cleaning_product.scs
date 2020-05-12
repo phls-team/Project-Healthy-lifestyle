@@ -1,0 +1,24 @@
+abrasive_cleaning_product<-sc_node_not_relation;;
+
+abrasive_cleaning_product=>nrel_main_idtf:[абразивные чистящее средства]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[abrasive cleaning product]
+        (*
+                <-lang_en;;
+*);;
+
+defenition ->...
+(*
+->rrel_key_sc_element:abrasive_cleaning_product;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Абразивные чистящее средства - это средства, в котором количества абразива может превышать 95% по массе.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Абразивные чистящее средства)](*<- lang_ru;;*);;
+*);; 
+
+statement ->...
+(*
+->rrel_key_sc_element: abrasive_cleaning_product;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Различают абразивы природные (тонкомолотые кварцевый песок, пемза, мел и т.д.) и искусственные (например, порошки электрокорундов, саморассыпающиеся шлаки электропечей).](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Какие бывают абразивные чистящее средства)](*<- lang_ru;;*);;
+*);; 

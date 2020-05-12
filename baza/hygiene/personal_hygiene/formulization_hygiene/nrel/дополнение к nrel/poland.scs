@@ -1,0 +1,49 @@
+poland=>nrel_main_idtf:[Польша]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[Poland]
+        (*
+                <-lang_en;;
+        *);;
+
+poland<-rrel_key_sc_element:...
+        (*
+
+                <-definition;;
+                =>nrel_main_idtf:[Опр.(Польша)](*<-lang_ru;;*);;
+                <=nrel_sc_text_translation:...
+                (*
+                        ->rrel_example:[По́льша (польск. Polska), официальное название — Респу́блика По́льша (польск. Rzeczpospolita Polska) — государство в Центральной Европе[9]. Население, по итогам 2015 года, составляет 38 623 221 человек[10], территория — 312 679 км². Занимает сорок третье место в мире по численности населенияПерейти к разделу «#Численность, расселение» и шестьдесят девятое по территории.](*<-lang_ru;;*);;
+                *);;
+        *);;
+
+poland=>nrel_rodina:concept_cotton_swab;;
+
+poland<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//1024px-Flag_of_Poland.png"
+        (*
+                =>nrel_format:format_png;;
+        *);;
+        => nrel_main_idtf: [Иллюстрация(Флаг Польши)](*<- lang_ru;;*);;
+*);;
+*);;
+
+poland<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//800px-Herb_Polski.png"
+        (*
+                =>nrel_format:format_png;;
+        *);;
+        => nrel_main_idtf: [Иллюстрация(Герб Польши)](*<- lang_ru;;*);;
+*);;
+*);;

@@ -1,0 +1,30 @@
+ordinary_solid_soap=>nrel_main_idtf:[обыкновенное твердое мыло]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[ordinary solid soap]
+        (*
+                <-lang_en;;
+        *);;
+
+statement->...
+(*
+->rrel_key_sc_element:ordinary_solid_soap;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Самое бюджетное мыло. Полученное из дешевого сырья, оно способно выполнять единственную задачу — мытье рук. Увы, оно часто не способно доставить эстетическое удовольствие: ароматическая отдушка не может перебить неприятный запах мыльной основы и сильно сушит кожу рук. Обыкновенное мыло с каждым годом теряет свои позиции, уступая место «продвинутым» по составу моделям.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Обыкновенное твердое мыло)](*<- lang_ru;;*);;
+*);;
+
+ordinary_solid_soap<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//c9717798-95f4-4755-b286-f8640ca69c60_600.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+        => nrel_main_idtf: [Иллюстрация(Обыкновенное твердое мыло)](*<- lang_ru;;*);;
+*);;
+*);;
+

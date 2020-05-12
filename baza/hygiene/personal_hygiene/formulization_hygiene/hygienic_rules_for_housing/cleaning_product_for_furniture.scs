@@ -1,0 +1,33 @@
+cleaning_product_for_furniture<-sc_node_not_relation;;
+
+cleaning_product_for_furniture=>nrel_main_idtf:[чистящее средство для мебели]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[cleaning product for furniture]
+        (*
+                <-lang_en;;
+*);;
+
+
+cleaning_product_for_furniture<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://pictures//moushie-i-chistiashie-sredstva-16.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Чистящее средство для ковров и мягкой мебели "Сияние")](*<- lang_ru;;*);;
+        
+*);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: cleaning_product_for_furniture ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Бытовая химия, предназначенная для ухода за мебелью, выполняет двойную функцию: удаляет загрязнения и ухаживает за поверхностями. В средствах для корпусной мебели содержаться полироли и антистатики, а средства для мягкой мебели по своим свойствам похожи на те, что предназначены для ковров. Кстати, чаще всего одно и то же средство подходит и для ковролина, и для мебельной обивки. Все средства для мебели требуется применять исключительно в согласии с инструкцией.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Функция чистящего средства для мебели)](*<- lang_ru;;*);;
+*);; 

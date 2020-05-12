@@ -1,0 +1,33 @@
+concept_linum<-sc_node_not_relation;;
+
+concept_linum=>nrel_main_idtf:[лён]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[linum]
+        (*
+                <-lang_en;;
+*);;
+
+
+defenition ->...
+(*
+->rrel_key_sc_element:concept_linum ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Лён (лат. Línum) — род растений семейства Льновые (Linaceae). ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Лён)](*<- lang_ru;;*);;
+*);; 
+
+concept_rag<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://pictures//275px-Flax_flowers.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Лён обыкновенный)](*<- lang_ru;;*);;
+        
+*);;
+*);;

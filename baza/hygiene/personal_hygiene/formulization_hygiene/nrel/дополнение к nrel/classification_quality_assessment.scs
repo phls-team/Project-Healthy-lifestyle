@@ -1,0 +1,22 @@
+classification_quality_assessment=>nrel_main_idtf:[оценка качества классификации]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[classification quality assessment]
+        (*
+                <-lang_en;;
+        *);;
+
+definition ->...
+(*
+->rrel_key_sc_element:classification_quality_assessment ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Оценка качества классификации-это количественная характеристика одного или нескольких свойств продукции, входящих в её качество, рассматриваемая применительно к определённым условиям её создания и эксплуатации или потребления.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Оценка качества классификации)](*<- lang_ru;;*);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:classification_quality_assessment ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Можно оценивать по критериям полноты, точности, сравнивать классификаторы по специальным тестовым наборам.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Оценка качества классификации)](*<- lang_ru;;*);;
+*);;

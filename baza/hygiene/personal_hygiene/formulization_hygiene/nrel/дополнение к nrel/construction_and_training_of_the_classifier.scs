@@ -1,0 +1,16 @@
+construction_and_training_of_the_classifier=>nrel_main_idtf:[построение и обучение классификатора]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[construction and training of the classifier]
+        (*
+                <-lang_en;;
+        *);;
+
+
+statement ->...
+(*
+->rrel_key_sc_element:construction_and_training_of_the_classifier ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Могут использоваться различные методы машинного обучения: решающие деревья, наивный байесовский классификатор, нейронные сети, метод опорных векторов и др.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Что может использоваться для построения и обучения классификатора)](*<- lang_ru;;*);;
+*);;

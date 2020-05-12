@@ -1,0 +1,59 @@
+nrel_consist
+<- sc_node_norole_relation;
+=> nrel_main_idtf: 
+	[состоять из*] 
+	(* 
+	<- lang_ru;; 
+	*);
+=> nrel_main_idtf: 
+	[consist is*] 
+	(* 
+	<- lang_en;; 
+	*);
+
+    <- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(Состоять*)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Иметь кого-что-нибудь в своём составе.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<-arity2;;
+arity->arity2;;
+arity2=>nrel_measurement:2;;
+number->2;;
+
+concept_object<-sc_node_not_relation;;
+
+concept_object=> nrel_main_idtf: 
+	[объект] 
+	(* 
+	<- lang_ru;; 
+	*);
+=> nrel_main_idtf: 
+	[an object] 
+	(* 
+	<- lang_en;; 
+	*);;
+
+concept_elements<-sc_node_not_relation;;
+concept_elements=> nrel_main_idtf: 
+	[элемент] 
+	(* 
+	<- lang_ru;; 
+	*);
+=> nrel_main_idtf: 
+	[element] 
+	(* 
+	<- lang_en;; 
+	*);;
+
+nrel_consist=> nrel_first_domain:concept_object;
+=> nrel_second_domain:concept_elements;;
+
+antireflexive_relation -> nrel_consist;;
+transitive_relation -|> nrel_consist;;
+asymmetric_relation -> nrel_consist;;

@@ -1,0 +1,59 @@
+
+concept_mouthwash<-sc_node_not_relation;;
+
+concept_mouthwash=>nrel_main_idtf:[жидкость для полоскания рта]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[mouthwash]
+        (*
+                <-lang_en;;
+        *);;
+
+        concept_mouthwash=>nrel_idtf:[ополаскиватель для полости рта]
+        (*
+                <-lang_ru;;
+        *);;
+
+concept_mouthwash<=nrel_use:concept_personal_hygiene_oral_cavity;;
+concept_mouthwash=>nrel_use:follow_the_state_of_enamel;mouthwash;;
+
+concept_mouthwash<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://фото//Fertiges_Mundwasser_dosiert_in_zugehöriger_Verschlusskappe.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+        => nrel_main_idtf: [Иллюстрация(Ополаскиватель для полости рта в пластиковом стаканчике)](*<- lang_ru;;*);;
+*);;
+*);;
+
+concept_mouthwash<-rrel_key_sc_element:...
+        (*
+
+                <-definition;;
+                =>nrel_main_idtf:[Опр.(Ополаскиватель для полости рта)](*<-lang_ru;;*);;
+                <=nrel_sc_text_translation:...
+                (*
+                        ->rrel_example:[Ополаскиватель для полости рта — это жидкое вещество, которое держат во рту или промывают им рот посредством сокращения околоротовых мышц и/или движения головы. Жидкостью также можно полоскать горло, если запрокинуть голову слегка назад, тогда жидкость будет удерживаться в задней части горла. ](*<-lang_ru;;*);;
+                *);;
+        *);;
+
+
+concept_mouthwash ->...
+(*
+->rrel_key_sc_element:...;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Наиболее распространенное использование жидкостей для полоскания рта — в качестве коммерческих антисептиков, которыми обычно пользуются дома для соблюдения гигиены полости рта. Некоторые производители жидкостей для полости рта заявляют, что их средство обладает антисептическим и противоналетным действием, что убивает бактериальный налет, который приводит к появлению кариеса, гингивита и неприятного запаха изо рта. В состав жидкостей, которые борются с кариесом, входят фториды, которые защищают зубы от появления кариеса. Однако по мнению специалистов, жидкость для полоскания рта не должна заменять чистку зубов щеткой и использование зубной нити.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Для чего используется ополаскиватель)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+    concept_caries;
+    concept_toothbrush;
+    concept_dental_floss
+};;
+*);;
+
+concept_mouthwash<=nrel_rodina:china;;

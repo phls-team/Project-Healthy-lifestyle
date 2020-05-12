@@ -1,0 +1,67 @@
+concept_earplug<-sc_node_not_relation;;
+concept_earplug=>nrel_main_idtf:[беруши]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[earplug]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_earplug=>nrel_idtf:[береги уши]
+    (* <- lang_ru;; *);
+    nrel_idtf:[вкладыши]
+    (* <- lang_ru;; *);;
+
+
+definition ->...
+(*
+->rrel_key_sc_element:concept_earplug ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Беру́ши — приспособления, вставляемые в слуховые проходы, защищающие от шума, попадания воды и посторонних предметов.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Беруши)](*<- lang_ru;;*);;
+*);;
+
+statement->...
+(*
+->rrel_key_sc_element:concept_earplug ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Беруши используются как средство защиты слуха от шума низкой частоты, считающегося наиболее вредным для человека, поскольку при равной громкости низкие частоты кажутся тише; тогда как аналогичное средство защиты слуха — антифоны[3] — приглушают высокочастотный шум. Беруши могут подавлять шум на 20-40 дБ в зависимости от качества материала и частотного диапазона, но на практике их эффективность значительно ниже (см. диаграмму). ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Для чего испольщуются беруши)](*<- lang_ru;;*);;           
+<-illustration;;
+<=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//dco.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+        => nrel_main_idtf: [Иллюстрация(Диаграмма показывает низкую эффективность противошумных вкладышей при их использовании на практике — по сравнению с лабораторной эффективностью.)](*<- lang_ru;;*);;
+*);;
+*);;
+
+concept_earplug<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//swim.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+        => nrel_main_idtf: [Иллюстрация(Беруши для плавания)](*<- lang_ru;;*);;
+*);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_earplug ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Пропускание воды.
+Чувство давления в ушах.
+Возможность использовать несколько раз.
+Продолжительность однократного ношения и общая продолжительность эксплуатации.
+Грязеустойчивость.
+Наличие слуховых фильтров по частотам. Это делается, чтобы при подавлении шумов можно было разобрать человеческую речь. Также используется музыкантами.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Характеристика)](*<- lang_ru;;*);;
+*);;
+
+concept_earplug=>nrel_inclusion:earplugs_for_musicians;earplugs_for_slepp;earplugs_for_swimming;defend_earplugs;earplugs_for_diving;earplugs_for_agents;;

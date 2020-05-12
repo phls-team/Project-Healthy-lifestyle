@@ -1,0 +1,56 @@
+concept_cotton_wool<-sc_node_not_relation;;
+
+concept_cotton_wool=>nrel_main_idtf:[вата]
+        (*
+                <-lang_ru;;
+        *);
+
+nrel_main_idtf:[сotton wool]
+        (*
+                <-lang_en;;
+        *);;
+
+
+concept_cotton_wool<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//Cotton.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+        => nrel_main_idtf: [Иллюстрация(Сырьё для производства хлопковой ваты)](*<- lang_ru;;*);;
+*);;
+*);;
+
+definition ->...
+(*
+->rrel_key_sc_element:concept_cotton_wool;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Ва́та (от нем. Watte) — пушистая масса волокон, слабо переплетённых между собой в различных направлениях. В просторечии под ватой чаще всего понимается медицинская вата (лат. Gossypium) — волокно из выростов клеток эпидермы семян (волосков) культивируемых видов хлопчатника (Gossypium L.), более чем на 95 % состоящее из клетчатки. До распространения искусственных выбеленных волокон медицинская вата изготавливалась из сырого хлопка. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Вата)](*<- lang_ru;;*);;
+*);;
+
+concept_cotton_wool<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//226707932_11544f8b594b78ad0e7e56f1bb4c8b27_800.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+        => nrel_main_idtf: [Иллюстрация(Вата)](*<- lang_ru;;*);;
+*);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_cotton_wool;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Помимо медицины, искусственная вата широко применяется в строительстве в качестве тепло- и звукоизоляционного материала; в химической промышленности — для фильтрации жидкостей и газов.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утвержедние(Применение вата)](*<- lang_ru;;*);;
+*);;
+
+concept_cotton_wool=>nrel_inclusion:concept_hygroscopic_cotton_wool;concept_compressor_cotton_wool;concept_sterile_cotton_wool;concept_non_sterile_cotton_wool;;

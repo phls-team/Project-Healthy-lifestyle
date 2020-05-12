@@ -1,0 +1,36 @@
+mineralogy<-sc_node_not_relation;;
+
+mineralogy=>nrel_main_idtf:[минералогия]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[mineralogy]
+        (*
+                <-lang_en;;
+        *);;
+
+mineralogy<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//330px-Mineralogy_between_its_other_sciences_around.png"
+        (*
+                =>nrel_format:format_png;;
+        *);;
+        => nrel_main_idtf: [Иллюстрация(Минералогия)](*<- lang_ru;;*);;
+*);;
+*);;
+
+mineralogy<-rrel_key_sc_element:...
+        (*
+
+                <-definition;;
+                =>nrel_main_idtf:[Опр.(Минералогия)](*<-lang_ru;;*);;
+                <=nrel_sc_text_translation:...
+                (*
+                        ->rrel_example:[Минерало́гия (от лат. minera «руда» + др.-греч. λόγος «учение, наука») — наука о минералах, изучает их внешний вид, геометрические формы (кристаллография), физические свойства (кристаллофизика) и химические состав и свойства (кристаллохимия).](*<-lang_ru;;*);;
+                *);;
+        *);;
+

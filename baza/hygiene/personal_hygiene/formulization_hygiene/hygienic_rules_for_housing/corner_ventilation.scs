@@ -1,0 +1,30 @@
+corner_ventilation=>nrel_main_idtf:[угловое проветривание]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[corner ventilate]
+        (*
+                <-lang_en;;
+*);;
+
+defenition ->...
+(*
+->rrel_key_sc_element: corner_ventilation;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Угловое проветривание — создание движения воздуха при закрытых дверях через форточки или фрамуги, используется кратковременно при необходимости.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Угловое проветривание)](*<- lang_ru;;*);;
+*);; 
+
+corner_ventilation<-rrel_key_sc_element:...
+(*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://pictures//delete.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+     => nrel_main_idtf: [Иллюстрация(Схема углового проветривания)](*<- lang_ru;;*);;
+        
+*);;
+*);;

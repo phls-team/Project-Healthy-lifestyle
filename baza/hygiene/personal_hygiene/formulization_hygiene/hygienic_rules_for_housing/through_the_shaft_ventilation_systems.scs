@@ -1,0 +1,30 @@
+through_the_shaft_ventilation_systems=>nrel_main_idtf:[шахта систем вентиляции]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[through the shaft ventilation systems]
+        (*
+                <-lang_en;;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:through_the_shaft_ventilation_systems ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Прохождение воздуха через шахты систем вентиляции это самый распространенный вид непрерывного воздухообмена, который усиливается при открывании окон или приточных устройств.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Шахта систем вентиляции)](*<- lang_ru;;*);;
+*);; 
+
+through_the_shaft_ventilation_systems<-rrel_key_sc_element:...
+(*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://pictures//nxt.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+     => nrel_main_idtf: [Иллюстрация(Схема проветривания через шахту)](*<- lang_ru;;*);;
+        
+*);;
+*);;

@@ -1,0 +1,38 @@
+remineralization<-sc_node_not_relation;;
+
+remineralization=>nrel_main_idtf:[реминирализация]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[remineralization]
+        (*
+                <-lang_en;;
+        *);;
+
+definition ->...
+(*
+->rrel_key_sc_element: remineralization;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[это комплекс процедур, которые помогают восстановить целостность эмали и предотвратить развитие зубных патологий.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(реминирализация)](*<- lang_ru;;*);;
+=>nrel_using_constants:{concept_human_tooth;tooth_enamel};;
+*);;
+
+remineralization=>nrel_consist:macroelement_kalium_K;macroelement_magnesium_Mg;macroelement_phosphorus_P;;
+
+remineralization=>nrel_treat:concept_caries;enamel_damage;;
+
+remineralization<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://фото//89e0fdf013d75ffddfb077332dd2c53c.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+        => nrel_main_idtf: [Иллюстрация(Реминирализация зубов)](*<- lang_ru;;*);;
+*);;
+*);;
+
+remineralization=>nrel_classification:natural_remineralization;artifical_remineralization;;

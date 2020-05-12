@@ -1,0 +1,9 @@
+external_spilled_otitis_media<-sc_node_not_relation;;
+external_spilled_otitis_media=>nrel_main_idtf:[наружный разлитой (диффузный) отит]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[external spilled otitis]
+        (*
+                <-lang_en;;
+        *);;

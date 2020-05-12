@@ -1,0 +1,49 @@
+detergent_for_carpets<-sc_node_not_relation;;
+
+detergent_for_carpets=>nrel_main_idtf:[моющее средство для ковров]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[detergent for carpets]
+        (*
+                <-lang_en;;
+*);;
+
+detergent_for_carpets<-rrel_key_sc_element:...
+(*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://pictures//moushie-i-chistiashie-sredstva-12-400x300.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+     => nrel_main_idtf: [Иллюстрация(Шампунь для ковров Vanish)](*<- lang_ru;;*);;
+        
+*);;
+*);;
+
+detergent_for_carpets->rrel_example:vanish;;
+
+vanish<-sc_node_not_relation;;
+
+vanish=>nrel_main_idtf:nrel_main_idtf:[Vanish]
+        (*
+                <-lang_en;;
+*);;
+
+vanish<-rrel_key_sc_element:...
+(*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://pictures//moushie-i-chistiashie-sredstva-12-400x300.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+     => nrel_main_idtf: [Иллюстрация(Шампунь для ковров Vanish)](*<- lang_ru;;*);;
+        
+*);;
+*);;

@@ -1,0 +1,9 @@
+earplugs_for_agents<-sc_node_not_relation;;
+earplugs_for_agents=>nrel_main_idtf:[беруши для агентов] 
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[earplugs for agents]
+        (*
+                <-lang_en;;
+        *);;

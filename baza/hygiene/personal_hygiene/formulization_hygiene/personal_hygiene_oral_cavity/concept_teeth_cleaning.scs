@@ -1,0 +1,104 @@
+concept_teeth_cleaning<-sc_node_norole_relation;;
+concept_teeth_cleaning=>nrel_main_idtf:[чистка зубов]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[teeth cleaning]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_teeth_cleaning<=nrel_use:concept_mouthwash;;
+
+concept_teeth_cleaning<-rrel_key_sc_element:...
+        (*
+
+                <-definition;;
+                =>nrel_main_idtf:[Опр(Чистка зубов))](*<-lang_ru;;*);;
+                <=nrel_sc_text_translation:...
+                (*
+                        ->rrel_example:[Чистка зубов — процедура личной гигиены для очистки поверхности зубов от остатков пищи и мягкого зубного налёта. Обычно выполняется с помощью зубной щётки или/и зубной нити.](*<-lang_ru;;*);;
+                *);;
+                =>nrel_using_constants:{
+                    concept_dental_floss;
+                    concept_toothbrush
+                };;
+        *);;
+
+        concept_teeth_cleaning<-rrel_key_sc_element:...
+        (*
+                <-gif;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://фото//010.gif"
+        (*
+                =>nrel_format:format_gif;;
+        *);;
+        => nrel_main_idtf: [Гифка(Мама чистит зубы своим детям)](*<- lang_ru;;*);;
+*);;
+*);;
+
+concept_teeth_cleaning<-rrel_key_sc_element:...
+        (*
+
+                <-definition;;
+                =>nrel_main_idtf:[Опр(Чистка зубов))](*<-lang_ru;;*);;
+                <=nrel_sc_text_translation:...
+                (*
+                        ->rrel_example:[Чистка зубов — процедура личной гигиены для очистки поверхности зубов от остатков пищи и мягкого зубного налёта. Обычно выполняется с помощью зубной щётки или/и зубной нити.](*<-lang_ru;;*);;
+                *);;
+                =>nrel_using_constants:{
+                    concept_dental_floss;
+                    concept_toothbrush
+                };;
+        *);;
+
+        concept_teeth_cleaning<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://фото//000.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+        => nrel_main_idtf: [Иллюстрация(Чистка зубов)](*<- lang_ru;;*);;
+*);;
+*);;
+
+gif<-sc_node_norole_relation;;
+gif=>nrel_main_idtf:[gif]
+        (*
+                <-lang_en;;
+        *);
+        nrel_main_idtf:[гиф-изображение]
+        (*
+                <-lang_ru;;
+        *);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_teeth_cleaning;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Большинство зубных врачей рекомендуют чистить зубы два раза в день, после еды. Основной гигиенической процедурой является вечерняя чистка зубов перед сном, так как неубранный налёт и пища, образовавшиеся в течение дня, способствует бурному размножению бактерий и, следовательно, развитию кариеса и воспалению дёсен. Во время посещения пациентом зубоврачебного кабинета стоматолог или медсестра могут показать наиболее правильный способ чистки зубов. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Когда рекомендуется чистить зубы)](*<- lang_ru;;*);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_teeth_cleaning;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[При заболевании дёсен врач может рекомендовать чистить межзубные промежутки специальным ёршиком.
+
+Щётку рекомендуют заменять на новую по мере износа, но не реже чем каждые 3-4 месяца. Некоторые современные зубные щётки снабжены цветовым индикатором изношенности — цветная полоска щетины, обесцвечивающаяся наполовину примерно через три месяца нормального использования. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Когда рекомендуется менять щетку)](*<- lang_ru;;*);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_teeth_cleaning;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Кроме чистки зубов щёткой необходимо прочищать промежутки между зубами зубной нитью и регулярно (два раза в год) посещать зубного врача для профессиональной чистки. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Что можно ещё использовать кроме щетки)](*<- lang_ru;;*);;
+*);;
+
+        

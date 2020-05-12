@@ -1,0 +1,56 @@
+concept_hygienic_toothpaste<-sc_node_norole_relation;;
+concept_hygienic_toothpaste=>nrel_main_idtf:[гигиеническая зубная паста]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[hygienic toothpaste]
+        (*
+                <-lang_en;;
+        *);;
+
+
+statement->...
+(*
+->rrel_key_sc_element:concept_hygienic_toothpaste;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Гигиеническая зубная паста оказывает на зубы, собственно, гигиенический эффект, способствуя их очищению и дезодорированию полости рта (то есть устранению неприятного запаха). Именно поэтому среди гигиенических зубных паст чаще всего можно встретить такие, которые имеют, к примеру, мятный, клубничный или апельсиновый аромат.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Гигиеническая зубная паста)](*<- lang_ru;;*);;
+*);;
+
+concept_hygienic_toothpaste=>nrel_classification:cleansing;deodorizing;;
+
+cleansing<-sc_node_norole_relation;;
+deodorizing<-sc_node_norole_relation;;
+
+cleansing=>nrel_main_idtf:[очищающая гигиеническая зубная паста]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[hygienic toothpaste]
+        (*
+                <-lang_en;;
+        *);;
+
+deodorizing=>nrel_main_idtf:[дезодорирующая гигиеническая зубная паста]
+        (*
+                <-lang_ru;;
+        *);
+
+nrel_main_idtf:[deodorizing hygienic toothpaste]
+        (*
+                <-lang_en;;
+        *);;
+
+definition->...
+(*
+->rrel_key_sc_element:deodorizing;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Дезодорирующая гигиеническая зубная паста - это паста ,которая обеспечивают мягкое очищение, устраняют неприятный запах изо рта.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Дезодорирующая гигиеническая зубная паста)](*<- lang_ru;;*);;
+*);;
+
+
+definition->...
+(*
+->rrel_key_sc_element:cleansing;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Очищающая гигиеническая зубная паста – это паста , которая устраняют налет.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Очищающая гигиеническая зубная паста)](*<- lang_ru;;*);;
+*);;

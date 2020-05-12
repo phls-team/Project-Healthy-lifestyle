@@ -1,0 +1,144 @@
+
+concept_neorganic_mineral<-sc_node_not_relation;;
+
+concept_neorganic_mineral=>nrel_main_idtf:[неорганические минералы]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[neorganic minerals]
+        (*
+                <-lang_en;;
+        *);;
+
+
+concept_neorganic_mineral<-rrel_key_sc_element:...
+        (*
+
+                <-definition;;
+                =>nrel_main_idtf:[Опр.(Минерал)](*<-lang_ru;;*);;
+                <=nrel_sc_text_translation:...
+                (*
+                        ->rrel_example:[Неорганические минералы - это «камни», минеральные породы. Эти вещества, разумеется, природного происхождения, находятся в природе, но их принимать и использовать могут только растения.](*<-lang_ru;;*);;
+                *);;
+        *);;
+
+concept_neorganic_mineral<-rrel_key_sc_element:...
+        (*
+
+                <-statement;;
+                =>nrel_main_idtf:[Утверждение.(Неорганические минералы)](*<-lang_ru;;*);;
+                <=nrel_sc_text_translation:...
+        (*
+                        ->rrel_example:[Неорганические минералы наш организм не может переработать. Принимая такие минералы, мы тем самым лишь обременяем наш организм. Организму необходимо приложить усилия, чтобы вывести их!](*<-lang_ru;;*);;
+                *);;
+        *);;
+
+concept_neorganic_mineral->rrel_example:concept_carbide;;
+
+concept_neorganic_mineral=>nrel_inclusion:concept_carbide;cocept_nitride;concept_phosphide;concept_halide_mineral;;
+
+
+concept_carbide<-sc_node_not_relation;;
+
+concept_carbide=>nrel_main_idtf:[карбид]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[carbide]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_carbide<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//TiC-xtal-3D-vdW.png"
+        (*
+                =>nrel_format:format_png;;
+        *);;
+        => nrel_main_idtf: [Иллюстрация(Структурная модель карбида)](*<- lang_ru;;*);;
+*);;
+*);;
+
+
+cocept_nitride<-sc_node_not_relation;;
+
+cocept_nitride=>nrel_main_idtf:[нитрид]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[nitride]
+        (*
+                <-lang_en;;
+        *);;
+
+cocept_nitride<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//nitrid-kremniya-2.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+        => nrel_main_idtf: [Иллюстрация(Структурная модель нитрид кремния)](*<- lang_ru;;*);;
+*);;
+*);;
+
+
+
+
+concept_phosphide<-sc_node_not_relation;;
+
+concept_phosphide=>nrel_main_idtf:[фосфиды]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[phosphide]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_phosphide<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//429048-ICSD.png"
+        (*
+                =>nrel_format:format_png;;
+        *);;
+        => nrel_main_idtf: [Иллюстрация(Структурная модель фосфида кальция)](*<- lang_ru;;*);;
+*);;
+*);;
+
+
+concept_halide_mineral<-sc_node_not_relation;;
+
+concept_halide_mineral=>nrel_main_idtf:[галогидные соеденения минералы]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[halide mineral]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_halide_mineral<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//51478e94284625389fabba9a2dp1--materialy-dlya-tvorchestva-opal-blagorodnyj-gidrofan-krupnyj-.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+        => nrel_main_idtf: [Иллюстрация(Пример галоидного соеденения)](*<- lang_ru;;*);;
+*);;
+*);;

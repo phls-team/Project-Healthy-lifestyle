@@ -1,0 +1,24 @@
+non_abrasive_cleaning_product<-sc_node_not_relation;;
+
+non_abrasive_cleaning_product=>nrel_main_idtf:[безабразивные чистящее средства]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[non-abrasive cleaning product]
+        (*
+                <-lang_en;;
+*);;
+
+defenition ->...
+(*
+->rrel_key_sc_element:non_abrasive_cleaning_product;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Безабразивные чистящее средства - это средства, в котором количества абразива может меньше 95% по массе.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Безабразивные чистящее средства)](*<- lang_ru;;*);;
+*);; 
+
+statement ->...
+(*
+->rrel_key_sc_element: non_abrasive_cleaning_product;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Порошкообразные безабразивные средства включают триполифосфат натрия, Na2CO3, дезинфектанты (например, калиевая соль дихлоризоциануровой кислоты) и другие. Жидкие средства могут содержать ПАВ, мочевину, органические растворители и другие. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Какие бывают безабразивные чистящее средства)](*<- lang_ru;;*);;
+*);; 

@@ -1,0 +1,99 @@
+labyrinthitis<-sc_node_not_relation;;
+labyrinthitis=>nrel_main_idtf:[лабиринтит]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[labyrinthitis]
+        (*
+                <-lang_en;;
+        *);;
+
+labyrinthitis=>nrel_idtf:[воспаление внутреннего уха]
+        (*
+                <-lang_ru;;
+        *);;
+
+labyrinthitis<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//boli-v-uhe1-4-768x489.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+        => nrel_main_idtf: [Иллюстрация(Расположение лабиринтита)](*<- lang_ru;;*);;
+*);;
+*);;
+
+definition ->...
+(*
+->rrel_key_sc_element:labyrinthitis ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Лабиринтит — воспалительное поражение структур внутреннего уха, возникающее в результате проникновения в него инфекции или являющееся следствием травмы.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Лабиринтит)](*<- lang_ru;;*);;
+*);;
+
+statement->...
+(*
+->rrel_key_sc_element:labyrinthitis ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Основная причина лабиринтита – это инфекция.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Причина лабиринтита)](*<- lang_ru;;*);;
+*);;
+
+
+statement->...
+(*
+->rrel_key_sc_element:labyrinthitis ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Основная профилактика лабиринтитов – это своевременное лечение отитов. Любые боли в ухе – это повод немедленного обращения к ЛОР – врачу. В свою очередь,мв среднее ухо инфекция попадает через слуховую трубу из носоглотки. Поэтому необходимо серьезнее относиться к лечению любого насморка.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Профилактика лабиринтита)](*<- lang_ru;;*);;
+*);;
+
+labyrinthitis=>nrel_symptom:loud_tinnitus;hearing_loss_up_to_hearing_loss;severe_dizziness;vomiting;out_of_balance;;
+
+loud_tinnitus=>nrel_main_idtf:[сильный шум в ушах]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[loud tinnitus]
+        (*
+                <-lang_en;;
+        *);;
+
+hearing_loss_up_to_hearing_loss=>nrel_main_idtf:[снижается слух вплоть до потери слуха]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[hearing loss up to hearing loss]
+        (*
+                <-lang_en;;
+        *);;
+
+severe_dizziness=>nrel_main_idtf:[сильное головокружение]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[severe dizziness]
+        (*
+                <-lang_en;;
+        *);;
+
+vomiting=>nrel_main_idtf:[рвота]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[vomiting]
+        (*
+                <-lang_en;;
+        *);;
+
+out_of_balance=>nrel_main_idtf:[нарушается равновесие – неустойчивость при ходьбе]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[disturbed balance - instability when walking.]
+        (*
+                <-lang_en;;
+        *);;
+
+labyrinthitis=>nrel_unique_idtf:[AB30.1](*<-lang_en;;*);;
