@@ -1,0 +1,49 @@
+concept_alcoholism<-sc_node_not_relation;;
+
+concept_alcohol<-sc_node_not_relation; => nrel_main_idtf: [алкоголь](*<- lang_ru;;*);;
+
+concept_alcoholism => nrel_main_idtf: [алкоголизм](*<- lang_ru;;*);;
+concept_alcoholism => nrel_main_idtf: [alcoholism](*<- lang_en;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_alcoholism;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Алкоголизм -  хроническое психическое заболевание, характеризующееся пристрастием к алкоголю (этиловому спирту), с психической и физической зависимостью от него.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(алкоголизм)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            -> concept_alcohol;;
+	    -> concept_disease;;
+        *);;
+*);;
+
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_alcoholism;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Всемирной организацией здравоохранения в 1979 году термин «алкоголизм» изъят из Международной классификации болезней (МКБ), и заменён термином «синдром алкогольной зависимости».](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(алкоголизм)](*<- lang_ru;;*);;
+*);;
+
+
+concept_alcoholism<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://alcoholism.png"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;
+

@@ -1,0 +1,66 @@
+concept_recreation <- sc_node_not_relation;=> nrel_main_idtf:[рекреация](*<-lang_ru;;*);;
+
+concept_recreation_resources <- sc_node_not_relation;=> nrel_main_idtf:[рекреационные ресурсы](*<-lang_ru;;*);;
+concept_spa_treatment <- sc_node_not_relation;=> nrel_main_idtf:[санаторно-культурное лечение](*<-lang_ru;;*);;
+concept_amateur_sport <- sc_node_not_relation;=> nrel_main_idtf:[любительский спорт](*<-lang_ru;;*);;
+concept_rest <- sc_node_not_relation;=> nrel_main_idtf:[отдых](*<-lang_ru;;*);;
+
+concept_recreation -> concept_recreation_resources;;
+concept_recreation => nrel_kind:concept_tourism;concept_spa_treatment;concept_amateur_sport;;
+concept_recreation <=> concept_rest;;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_recreation;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Рекреация — восстановление израсходованных в процессе труда и развитие физических и духовных сил человека, повышение уровня здоровья и работоспособности.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(рекреация)](*<- lang_ru;;*);;
+    => nrel_using_constants:{concept_health;concept_recovery;concept_efficiency};;
+*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_recreation;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Рекреация — комплекс оздоровительных мероприятий, осуществляемых с целью восстановления нормального самочувствия и работоспособности здорового, но утомлённого человека.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(рекреация)](*<- lang_ru;;*);;
+    => nrel_using_constants:{concept_complex;concept_human;concept_efficiency};;
+*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_recreation;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Рекреация —  расширенное понятие отдыха после рабочего дня, рабочей недели, отдых и восстановление способности к активному труду во время очередного отдыха трудящихся.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(рекреация)](*<- lang_ru;;*);;
+    => nrel_using_constants:{concept_rest;concept_working_day;concept_recovery};;
+*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_recreation;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Рекреация —  отдых учащихся между занятиями и после них.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(рекреация)](*<- lang_ru;;*);;
+    => nrel_using_constants:{concept_rest};;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_recreation;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Рекреация самым непосредственным образом связана с проблемой свободного времени, т.е. с той частью внерабочего времени, которая свободна от исполнения разного рода «непреложных»обязанностей.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(рекреация)](*<- lang_ru;;*);;
+    => nrel_using_constants:{concept_spare_time;concept_recovery;concept_efficiency};;
+*);;

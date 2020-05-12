@@ -1,0 +1,50 @@
+concept_mouth => nrel_idtf:[рот](*<-lang_ru;;*);;
+
+upper_lip<-sc_node_not_relation;=> nrel_main_idtf:[верхняя губа](*<-lang_ru;;*);;
+lower_lip<-sc_node_not_relation;=> nrel_main_idtf:[нижняя губа](*<-lang_ru;;*);;
+gum<-sc_node_not_relation;=> nrel_main_idtf:[десна](*<-lang_ru;;*);;
+hard_palate<-sc_node_not_relation;=> nrel_main_idtf:[твердое нёбо](*<-lang_ru;;*);;
+soft_palate<-sc_node_not_relation;=> nrel_main_idtf:[мягкое нёбо](*<-lang_ru;;*);;
+uvula<-sc_node_not_relation;=> nrel_main_idtf:[нёбный язычок](*<-lang_ru;;*);;
+palatine_tonsil<-sc_node_not_relation;=> nrel_main_idtf:[нёбная миндалина](*<-lang_ru;;*);;
+teeth<-sc_node_not_relation;=> nrel_main_idtf:[зубы](*<-lang_ru;;*);;
+tongue<-sc_node_not_relation;=> nrel_main_idtf:[язык](*<-lang_ru;;*);;
+mucous_membrane<-sc_node_not_relation;=> nrel_main_idtf:[слизистая оболочка](*<-lang_ru;;*);;
+masticatory_apparatus<-sc_node_not_relation;=> nrel_main_idtf:[жевательный аппарат](*<-lang_ru;;*);;
+speech_apparatus<-sc_node_not_relation;=> nrel_main_idtf:[речевой аппарат](*<-lang_ru;;*);;
+microflora<-sc_node_not_relation;=> nrel_main_idtf:[микрофлора](*<-lang_ru;;*);;
+mouth_threshold<-sc_node_not_relation;=> nrel_main_idtf:[преддверие рта](*<-lang_ru;;*);;
+cavity<-sc_node_not_relation;=> nrel_main_idtf:[полость рта](*<-lang_ru;;*);;
+speech_function<-sc_node_not_relation;=> nrel_main_idtf:[речевая функция](*<-lang_ru;;*);;
+chewing_function<-sc_node_not_relation;=> nrel_main_idtf:[жевательная функция](*<-lang_ru;;*);;
+digestive_function<-sc_node_not_relation;=> nrel_main_idtf:[пищеварительная функция](*<-lang_ru;;*);;
+
+concept_mouth => nrel_inclusion: upper_lip;lower_lip;gum;hard_palate;soft_palate;uvula;palatine_tonsil;teeth;tongue;;
+concept_mouth => nrel_anatomical_structure:mouth_threshold;cavity;;
+concept_mouth -> mucous_membrane;masticatory_apparatus;speech_apparatus;microflora;;
+concept_mouth => nrel_function:speech_function;chewing_function;digestive_function;;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_mouth;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Ротовая полость — начальный участок переднего отдела пищеварительной системы человека.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(ротовая полость)](*<- lang_ru;;*);;
+    => nrel_using_constants:{concept_system};;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_mouth;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Служит для приёма пищи и её первичной обработки (включающей механическое измельчение при пережёвывании и начальный этап переваривания, в ходе которого содержащиеся в пище полисахариды расщепляются под действием амилазы и мальтазы, присутствующих в слюне).](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(ротовая полость)](*<- lang_ru;;*);;
+    => nrel_using_constants:{concept_food};;
+*);;
+
+

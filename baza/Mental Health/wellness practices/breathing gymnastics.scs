@@ -1,0 +1,112 @@
+concept_breathing_gymnastics=>nrel_improvement:cocnept_activeness;concept_concentration;concept_sleep;concept_physical_indicator;;
+
+cocnept_activeness <- sc_node_not_relation; => nrel_main_idtf:[активность](*<-lang_ru;;*);;
+concept_concentration <- sc_node_not_relation; => nrel_main_idtf:[концентрация](*<-lang_ru;;*);;
+concept_sleep <- sc_node_not_relation; => nrel_main_idtf:[сон](*<-lang_ru;;*);;
+concept_physical_indicator <- sc_node_not_relation; => nrel_main_idtf:[физические показатели](*<-lang_ru;;*);;
+concept_muscles <- sc_node_not_relation; => nrel_main_idtf:[мышцы](*<-lang_ru;;*);;
+concept_blood_pressure <- sc_node_not_relation; => nrel_main_idtf:[кровяное давление](*<-lang_ru;;*);;
+concept_anxiety <- sc_node_not_relation; => nrel_main_idtf:[беспокойство](*<-lang_ru;;*);;
+concept_blood_circulation <- sc_node_not_relation; => nrel_main_idtf:[кровообращение](*<-lang_ru;;*);;
+concept_breathing_exercises_for_the_stomach <- sc_node_not_relation; => nrel_main_idtf:[дыхательные упражнения для жвиота](*<-lang_ru;;*);;
+concept_attentive_breathing <- sc_node_not_relation; => nrel_main_idtf:["внимательное дыхание](*<-lang_ru;;*);;
+concept_square_breathing_exercises <- sc_node_not_relation; => nrel_main_idtf:[квадратная дыхательная гимнастика](*<-lang_ru;;*);;
+concept_breathing_exercises_turn_the_nostrils <- sc_node_not_relation; => nrel_main_idtf:[дыхательная гимнастика через ноздри](*<-lang_ru;;*);;
+concept_method_4_7_8 <- sc_node_not_relation; => nrel_main_idtf:[метод 4,7,8](*<-lang_ru;;*);;
+concept_method_of_breathing_exercises_from_WIM_Hof <- sc_node_not_relation; => nrel_main_idtf:[метод дыхательной гимнастики от Вим Хофа](*<-lang_ru;;*);;
+concept_Strelnikovas_breathing_exercises <- sc_node_not_relation; => nrel_main_idtf:[дыхательная гимнастика Стрельниковой](*<-lang_ru;;*);;
+concept_Buteyko_method <- sc_node_not_relation; => nrel_main_idtf:[метод Бутейко](*<-lang_ru;;*);;
+concept_breathing_exercises_for_weight_loss <- sc_node_not_relation; => nrel_main_idtf:[дыхательная гимнастика для похудения](*<-lang_ru;;*);;
+concept_Mueller_system <- sc_node_not_relation; => nrel_main_idtf:[система Мюллера](*<-lang_ru;;*);;
+concept_practice_of_yoga <- sc_node_not_relation; => nrel_main_idtf:[практика йогов](*<-lang_ru;;*);;
+concept_breathing_exercises_for_relaxation_and_anxiety_relief <- sc_node_not_relation; => nrel_main_idtf:[дыхательная гимнастика для релаксации и снятия тревожности](*<-lang_ru;;*);;
+
+concept_brain_injury <- sc_node_not_relation; => nrel_main_idtf:[травмы головного мозга](*<-lang_ru;;*);;
+concept_high_pressure <- sc_node_not_relation; => nrel_main_idtf:[повышенное давление](*<-lang_ru;;*);;
+concept_radiculitis <- sc_node_not_relation; => nrel_main_idtf:[радикулит](*<-lang_ru;;*);;
+concept_spinal_injury <- sc_node_not_relation; => nrel_main_idtf:[травмы позвоночника](*<-lang_ru;;*);;
+concept_severe_osteochondrosis <- sc_node_not_relation; => nrel_main_idtf:[выраженный остеохондроз](*<-lang_ru;;*);;
+concept_acute_thrombophlebitis <- sc_node_not_relation; => nrel_main_idtf:[острый тромбофлебит](*<-lang_ru;;*);;
+concept_post_infarction_condition <- sc_node_not_relation; => nrel_main_idtf:[постинфарктное состояние](*<-lang_ru;;*);;
+concept_bleedings <- sc_node_not_relation; => nrel_main_idtf:[кровотечения](*<-lang_ru;;*);;
+concept_mental_illness <- sc_node_not_relation; => nrel_main_idtf:[психические заболевания](*<-lang_ru;;*);;
+concept_serious_somatic_pathologies <- sc_node_not_relation; => nrel_main_idtf:[серьезные соматические патологии](*<-lang_ru;;*);;
+
+concept_breathing_gymnastics => nrel_principle:[искусственное затруднение];[задержка дыхания];[замедление дыхания];;
+concept_breathing_gymnastics => nrel_relaxation:concept_muscles;;
+concept_breathing_gymnastics => nrel_reducing:concept_blood_pressure;concept_anxiety;concept_stress;;
+concept_breathing_gymnastics =>  nrel_improvement: concept_blood_circulation;;
+
+concept_breathing_gymnastics => nrel_methods:concept_breathing_exercises_for_the_stomach; concept_attentive_breathing;concept_square_breathing_exercises;;
+concept_breathing_gymnastics => nrel_methods:concept_breathing_exercises_turn_the_nostrils;concept_method_4_7_8;concept_method_of_breathing_exercises_from_WIM_Hof;;
+concept_breathing_gymnastics => nrel_methods:concept_Strelnikovas_breathing_exercises;concept_Buteyko_method;concept_breathing_exercises_for_weight_loss;;
+concept_breathing_gymnastics => nrel_methods:concept_Mueller_system;concept_practice_of_yoga;concept_breathing_exercises_for_relaxation_and_anxiety_relief;;
+concept_breathing_gymnastics => nrel_rules_for_the_implementation:[Начинайте с самого лёгкого, постепенно увеличивая нагрузку.];;
+concept_breathing_gymnastics => nrel_rules_for_the_implementation:[Тренируйтесь на свежем воздухе (или в хорошо проветриваемом помещении) и в удобной одежде.];;
+concept_breathing_gymnastics => nrel_rules_for_the_implementation:[Не отвлекайтесь во время занятий. Для достижения максимального эффекта важна концентрация.];;
+concept_breathing_gymnastics => nrel_rules_for_the_implementation:[Дышите не торопясь. Наибольшему насыщению организма кислородом способствует именно медленное дыхание.];;
+concept_breathing_gymnastics => nrel_rules_for_the_implementation:[Делайте упражнения с удовольствием. При появлении неприятных симптомов остановите тренировку. Проконсультируйтесь со специалистом касательно сокращения нагрузки или увеличения паузы между подходами. Единственный допустимый дискомфорт — лёгкое головокружение.];;
+concept_breathing_gymnastics => nrel_contraindications:concept_brain_injury;concept_high_pressure;concept_radiculitis;concept_spinal_injury;concept_severe_osteochondrosis;;
+concept_breathing_gymnastics => nrel_contraindications:concept_acute_thrombophlebitis;concept_post_infarction_condition;concept_bleedings;concept_mental_illness;concept_serious_somatic_pathologies;;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_breathing_gymnastics;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Дыхательная гимнастика — это определенная последовательность дыхательных упражнений.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(дыхательная гимнастика)](*<- lang_ru;;*);;
+    => nrel_using_constants:{concept_exercises};;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_breathing_gymnastics;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Следует быть внимательным и осторожным при выборе своего метода лечения дыхательной гимнастикой. Проконсультируйтесь с врачом и подберите подходящий именно вашему организму блок дыхательных упражнений.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(дыхательная гимнастика)](*<- lang_ru;;*);;
+    => nrel_using_constants: {nrel_methods; concept_exercises};;
+*);;
+
+
+concept_Strelnikovas_breathing_exercises => nrel_rules_for_the_implementation:[Одно занятие — минимум 1300 вдохов и выдохов.];;
+concept_Strelnikovas_breathing_exercises => nrel_rules_for_the_implementation:[Одно занятие — не меньше 30 минут.];;
+concept_Strelnikovas_breathing_exercises => nrel_rules_for_the_implementation:[Каждое упражнение — не меньше 3 подходов, по 30 повторений.];;
+concept_Strelnikovas_breathing_exercises => nrel_rules_for_the_implementation:[Одно занятие должно включать весь комплекс дыхательной гимнастики.];;
+concept_Strelnikovas_breathing_exercises => nrel_rules_for_the_implementation:[Практику нужно повторять по 2 и больше раз в день — зависит от ощущений и самочувствия.];;
+concept_Strelnikovas_breathing_exercises => nrel_rules_for_the_implementation:[Делаем практику утром до еды.];;
+
+concept_palms <- sc_node_not_relation; => nrel_main_idtf:["ладошки"](*<-lang_ru;;*);;
+concept_epaulettes <- sc_node_not_relation; => nrel_main_idtf:["погончики"](*<-lang_ru;;*);;
+concept_pump <- sc_node_not_relation; => nrel_main_idtf:["насос"](*<-lang_ru;;*);;
+concept_cat <- sc_node_not_relation; => nrel_main_idtf:["кошка"](*<-lang_ru;;*);;
+concept_hug_your_shoulders <- sc_node_not_relation; => nrel_main_idtf:["обними плечи"](*<-lang_ru;;*);;
+concept_large_pendulum <- sc_node_not_relation; => nrel_main_idtf:["большой маятник"](*<-lang_ru;;*);;
+concept_head_turns <- sc_node_not_relation; => nrel_main_idtf:["повороты головы"](*<-lang_ru;;*);;
+concept_ears <- sc_node_not_relation; => nrel_main_idtf:["ушки"](*<-lang_ru;;*);;
+concept_little_pendulum <- sc_node_not_relation; => nrel_main_idtf:["маленький маятник"](*<-lang_ru;;*);;
+concept_rifts <- sc_node_not_relation; => nrel_main_idtf:["перекаты"](*<-lang_ru;;*);;
+concept_forward_step <- sc_node_not_relation; => nrel_main_idtf:["передний шаг"](*<-lang_ru;;*);;
+concept_back_step <- sc_node_not_relation; => nrel_main_idtf:["задний шаг"](*<-lang_ru;;*);;
+
+concept_Strelnikovas_breathing_exercises => nrel_inclusion:concept_palms;concept_epaulettes;concept_pump;concept_cat;concept_hug_your_shoulders;concept_large_pendulum;;
+concept_Strelnikovas_breathing_exercises => nrel_inclusion:concept_head_turns;concept_ears;concept_little_pendulum;concept_rifts;concept_forward_step;concept_back_step;;
+
+concept_standing <- sc_node_not_relation; => nrel_main_idtf:[стоя](*<-lang_ru;;*);;
+concept_arms_are_bent_at_the_elbows <- sc_node_not_relation; => nrel_main_idtf:[руки согнуты в локтях](*<-lang_ru;;*);;
+concept_palms_facing_away_from_you <- sc_node_not_relation; => nrel_main_idtf:[ладони напрвлены от себя](*<-lang_ru;;*);;
+
+concept_clenching_your_hands_into_fists <- sc_node_not_relation; => nrel_main_idtf:[сжимание ладоней в кулаки](*<-lang_ru;;*);;
+concept_sharp_breath_in <- sc_node_not_relation; => nrel_main_idtf:[резкий вдох](*<-lang_ru;;*);;
+
+rrel_first_step <-sc_node_role_relation; => nrel_main_idtf:[1 шаг](*<-lang_ru;;*);;
+nrel_number_of_repetitions <-sc_node_norole_relation; => nrel_main_idtf:[количество повторений](*<-lang_ru;;*);;
+nrel_number_of_series <-sc_node_norole_relation; => nrel_main_idtf:[количество подходов](*<-lang_ru;;*);;
+
+concept_palms => nrel_starting_position: concept_standing;concept_arms_are_bent_at_the_elbows;concept_palms_facing_away_from_you;;
+concept_palms -> rrel_first_step:concept_clenching_your_hands_into_fists;concept_sharp_breath_in;;
+concept_palms => nrel_number_of_repetitions:8;;
+concept_palms => nrel_number_of_series:20;;

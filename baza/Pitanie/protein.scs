@@ -1,0 +1,58 @@
+concept_protein <-sc_node_not_relation;=> nrel_main_idtf:[белки](*<-lang_ru;;*);;
+concept_protein => nrel_main_idtf:[protein](*<-lang_en;;*);;
+concept_protein => nrel_idtf:[протеины](*<-lang_ru;;*);;
+concept_protein => nrel_idtf:[полипептиды](*<-lang_ru;;*);;
+
+concept_amphoteric_character <- sc_node_not_relation;=> nrel_main_idtf:[амфотерность](*<-lang_ru;;*);;
+concept_solubility <- sc_node_not_relation;=> nrel_main_idtf:[растворимость](*<-lang_ru;;*);;
+concept_denaturation <- sc_node_not_relation;=> nrel_main_idtf:[денатурация](*<-lang_ru;;*);;
+
+concept_simple_proteins <- sc_node_not_relation;=> nrel_main_idtf:[простые белки](*<-lang_ru;;*);;
+concept_complex_proteins <- sc_node_not_relation;=> nrel_main_idtf:[сложные белки](*<-lang_ru;;*);;
+
+concept_fibrillar_proteins <-sc_node_not_relation;=> nrel_main_idtf:[фибриллярные белки](*<-lang_ru;;*);;
+concept_globular_proteins <-sc_node_not_relation;=> nrel_main_idtf:[глобулярные белки](*<-lang_ru;;*);;
+concept_membrane_proteins <-sc_node_not_relation;=> nrel_main_idtf:[мембранные белки](*<-lang_ru;;*);;
+
+concept_primary_structure <-sc_node_not_relation;=> nrel_main_idtf:[первичная структура](*<-lang_ru;;*);;
+concept_secondary_structure <-sc_node_not_relation;=> nrel_main_idtf:[вторичная структура](*<-lang_ru;;*);;
+concept_tertiary_structure <-sc_node_not_relation;=> nrel_main_idtf:[третичная структура](*<-lang_ru;;*);;
+concept_quaternary_structure <-sc_node_not_relation;=> nrel_main_idtf:[четвертичная структура](*<-lang_ru;;*);;
+
+concept_catalytic_function <-sc_node_not_relation;=> nrel_main_idtf:[каталитическая функция](*<-lang_ru;;*);;
+concept_structure_function <-sc_node_not_relation;=> nrel_main_idtf:[структурная функия](*<-lang_ru;;*);;
+concept_protective_function <-sc_node_not_relation;=> nrel_main_idtf:[защитная функция](*<-lang_ru;;*);;
+concept_regulatory_function <-sc_node_not_relation;=> nrel_main_idtf:[регуляторная функция](*<-lang_ru;;*);;
+concept_signal_function <-sc_node_not_relation;=> nrel_main_idtf:[сигнальная функция](*<-lang_ru;;*);;
+concept_transport_function <-sc_node_not_relation;=> nrel_main_idtf:[транспортная функция](*<-lang_ru;;*);;
+concept_backup_function <-sc_node_not_relation;=> nrel_main_idtf:[резервная функция](*<-lang_ru;;*);;
+concept_receptor_function <-sc_node_not_relation;=> nrel_main_idtf:[рецепторная функция](*<-lang_ru;;*);;
+
+concept_protein => nrel_inclusion:concept_simple_proteins;concept_complex_proteins;;
+concept_protein => nrel_physical_and_chemical_properties:concept_amphoteric_character;concept_solubility;concept_denaturation;;
+concept_protein => nrel_classification_by_building_typ:concept_fibrillar_proteins;concept_globular_proteins;concept_membrane_proteins;;
+concept_protein => nrel_function:concept_catalytic_function;concept_structure_function;concept_protective_function;concept_regulatory_function;;
+concept_protein => nrel_function:concept_signal_function;concept_transport_function;concept_backup_function;concept_receptor_function;;
+concept_protein => nrel_structure:concept_primary_structure; concept_secondary_structure;concept_tertiary_structure;concept_quaternary_structure;;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_protein;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Белки — высокомолекулярные органические вещества, состоящие из альфа-аминокислот, соединённых в цепочку пептидной связью.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(белки)](*<- lang_ru;;*);;
+    => nrel_using_constants:{concept_substance;concept_chain;concept_peptide_bond};;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_protein;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Белки — важная часть питания животных и человека (основные источники: мясо, птица, рыба, молоко, орехи, бобовые, зерновые; в меньшей степени: овощи, фрукты, ягоды и грибы), поскольку в их организмах не могут синтезироваться все незаменимые аминокислоты и часть должна поступать с белковой пищей. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(белки)](*<- lang_ru;;*);;
+    => nrel_using_constants:{concept_human;concept_fruit;concept_meat;concept_vegetable;concept_amino_acid};;
+*);;

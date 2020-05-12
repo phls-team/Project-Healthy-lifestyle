@@ -1,0 +1,223 @@
+concept_therapeutic_fasting<-sc_node_not_relation; => nrel_main_idtf: [лечебное голодание](*<- lang_ru;;*);;
+concept_therapeutic_fasting => nrel_main_idtf: [therapeutic fasting](*<- lang_en;;*);;
+concept_wellness_practices =>  nrel_inclusion: concept_therapeutic_fasting;;
+concept_wellness_practices<-sc_node_not_relation; => nrel_main_idtf: [оздоровительные практики](*<- lang_ru;;*);;
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_therapeutic_fasting;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Лечебное голодание — метод альтернативной медицины, заключающийся в добровольном отказе от пищи, а иногда и воды, с последующим облегчённым (диетическим) питанием в течение определённого периода.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(лечебное голодание)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+	  			->concept_medicine;;
+        *);;
+*);;
+
+concept_only_fasting <- sc_node_not_relation; => nrel_main_idtf:[полное голодание](*<-lang_ru;;*);;
+concept_only_fasting => nrel_idft:[водное голодание](*<-lang_ru;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_only_fasting;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Полное голодание — воздержании от приема пищи с неограниченным употреблением воды.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(полное голодание)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+	  			->concept_food;;
+				->concept_water;;
+        *);;
+*);;
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_only_fasting;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Чаще называют «водным» голоданием. Считается целесообразным достижение «кетоацидотического криза», который у большинства пациентов при полном («влажном») голодании наблюдается на 5-7-е сутки.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(полное голодание)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+	  			->concept_patient;;
+        *);;
+*);;
+
+concept_absolute_fasting <- sc_node_not_relation; => nrel_main_idtf:[абсолютное голодание](*<-lang_ru;;*);;
+concept_absolute_fasting => nrel_idft:[сухое голодание](*<-lang_ru;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_absolute_fasting;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [абсолютное голодание — воздержание от приема и пищи, и воды.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(абсолютное голодание)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+	  			->concept_food;;
+				->concept_water;;
+        *);;
+*);;
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_absolute_fasting;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Также называют «сухим» голоданием. Обычно применяется непродолжительные, 1—2-суточные голодания такого вида, потому что более продолжительное сухое голодание приводит к обезвоживанию. Потеря воды, вызывающая снижение массы тела на 10—20 %, опасна для жизни; лишение воды исходно здорового человека приводит к смерти через 7—10 дней, а в условиях жаркой сухой атмосферы — через 3—5 дней](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(абсолютное голодание)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+	  			->concept_dehydration;;
+        *);;
+*);;
+
+nrel_kind <- sc_node_norole_relation; => nrel_main_idtf:[вид*](*<-lang_ru;;*);;
+
+concept_absolute_fasting => nrel_kind:concept_partial_dry_fasting;concept_complete_dry_fasting;;
+concept_partial_dry_fasting <- sc_node_not_relation; => nrel_main_idtf:[частичное "сухое" голодание](*<-lang_ru;;*);;
+concept_complete_dry_fasting <- sc_node_not_relation; => nrel_main_idtf:[полное "сухое" голодание](*<-lang_ru;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_partial_dry_fasting;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [частичное «сухое» лечебное голодание — назначаются ванны, души, обливания, якобы позволяющие лучше «расшлаковывать» кожу.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(частичное "сухое" голодание)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+	  			->concept_skin;;
+        *);;
+*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_complete_dry_fasting;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [полное «сухое» лечебное голодание — полное отсутствие контакта с водой.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(полное "сухое" голодание)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+	  			->concept_water;;
+        *);;
+*);;
+
+
+concept_combined_fasting <- sc_node_not_relation; => nrel_main_idtf:[комбинированное голодание](*<-lang_ru;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_combined_fasting;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Комбинированное голодание — одновременное применение «сухого» и «водного» вариантов.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(комбинированное голодание)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+	  			->concept_variant;;
+        *);;
+*);;
+
+statement -> ...
+(*  
+    -> rrel_key_sc_element: concept_combined_fasting;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ В течение первых 1-3 суток (по индивидуальной переносимости) пациентам предлагается воздерживаться от приёма пищи и воды; начиная со 2-4-х суток приём воды возобновляют. Такая последовательность позволяет достичь более быстрого наступления «кетоацидотического криза», что сокращает сроки лечения больных.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(комбинированное голодание)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+	  		->concept_food;;
+			->concept_water;;
+        *);;
+*);;
+
+
+
+statement -> ...
+(*  
+    -> rrel_key_sc_element: concept_therapeutic_fasting;;
+    <= nrel_sc_text_translation:...
+        (*
+        -> [Выделяют следующие стадии:](*<- lang_ru;;*);;
+	->[1. Вход](*<- lang_ru;;*);;
+	->[2. Воздержание](*<- lang_ru;;*);;
+	->[3. Выход](*<- lang_ru;;*);;
+        *);;
+    
+    => nrel_using_constants: ...
+        (*
+	  		->nrel_stage;;
+        *);;
+*);;
+
+
+
+
+concept_therapeutic_fasting => nrel_varieties_of_fasting_in_relation_to_water: concept_only_fasting; concept_absolute_fasting;;
+nrel_varieties_of_fasting_in_relation_to_water <- sc_node_norole_relation; => nrel_main_idtf:[разновидности голодания по отношению к воде*](*<-lang_ru;;*);;
+
+concept_technique_of_fasting <-sc_node_not_relation;=>nrel_main_idtf:[техники голодания](*<-lang_ru;;*);;
+concept_technique_of_fasting_in_time<-sc_node_not_relation;=>nrel_main_idtf:[техники голодания по периоду времени](*<-lang_ru;;*);;
+concept_therapeutic_fasting -> concept_technique_of_fasting;;
+concept_technique_of_fasting->concept_technique_of_fasting_in_time;;
+nrel_techniques<-sc_node_norole_relation;=>nrel_main_idtf:[техники*](*<-lang_ru;;*);;
+
+concept_therapeutic_fasting=>nrel_techniques:concept_one_day;concept_three_day;concept_seven_day; concept_ten_day;concept_fourty_day;;
+concept_technique_of_fasting=>nrel_inclusion:concept_technique_of_fasting_in_time;;
+concept_technique_of_fasting_in_time->concept_one_day;concept_three_day;concept_seven_day; concept_ten_day;concept_fourty_day;;
+concept_one_day=>nrel_main_idtf:[однодневное](*<-lang_ru;;*);;
+concept_three_day=>nrel_main_idtf:[трехдневное](*<-lang_ru;;*);;
+concept_seven_day=>nrel_main_idtf:[семидневное](*<-lang_ru;;*);;
+concept_ten_day=>nrel_main_idtf:[десятидневное](*<-lang_ru;;*);;
+concept_fourty_day=>nrel_main_idtf:[сорокадневное](*<-lang_ru;;*);;
+
+concept_technique_of_fasting_in_time->concept_one_day;concept_three_day;concept_seven_day;concept_ten_day;concept_fourty_day;;
+
+nrel_methods<-sc_node_norole_relation;=>nrel_main_idtf:[методики*](*<-lang_ru;;*);;
+concept_therapeutic_fasting=>nrel_methods:concept_Marva_Oganyans_method;concept_Nykolaevs_method;concept_Filonovs_method;concept_S_Borodins_method;concept_Schennikovs_method;concept_Porfiry_Ivanovs_method;concept_Lavrovas_method;;
+
+concept_therapeutic_fasting<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://lechebnoe_golodanie.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;
+
+ concept_therapeutic_fasting => nrel_stage:...
+(*
+		->[Вход];;
+		->[Воздержание];;
+		->[Выход];;
+*);;
+
+concept_Marva_Oganyans_method<-sc_node_not_relation;=>nrel_main_idtf:[методика Марвы Огонян](*<-lang_ru;;*);;
+concept_Nykolaevs_method<-sc_node_not_relation;=>nrel_main_idtf:[метод Николаева](*<-lang_ru;;*);;
+concept_S_Borodins_method<-sc_node_not_relation;=>nrel_main_idtf:[метод С. Бородина](*<-lang_ru;;*);;
+concept_Schennikovs_method<-sc_node_not_relation;=>nrel_main_idtf:[метод Щенникову](*<-lang_ru;;*);;
+concept_Filonovs_method<-sc_node_not_relation;=>nrel_main_idtf:[метод Филонова](*<-lang_ru;;*);;
+concept_Porfiry_Ivanovs_method<-sc_node_not_relation;=>nrel_main_idtf:[методика Порфия Иванова](*<-lang_ru;;*);;
+concept_Lavrovas_method<-sc_node_not_relation;=>nrel_main_idtf:[метод Лавровой](*<-lang_ru;;*);;

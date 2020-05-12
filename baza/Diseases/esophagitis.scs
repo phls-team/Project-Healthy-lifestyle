@@ -1,0 +1,52 @@
+concept_esophagitis => nrel_main_idtf:[esophagitis](*<-lang_en;;*);;
+
+concept_acute_esophagitis <- sc_node_not_relation; => nrel_main_idtf:[острый эзофагит](*<-lang_ru;;*);;
+concept_chronic_esophagitis <- sc_node_not_relation; => nrel_main_idtf:[хронический эзофагит](*<-lang_ru;;*);;
+
+concept_nausea <- sc_node_not_relation; => nrel_main_idtf:[тошнота](*<-lang_ru;;*);;
+concept_vomiting <- sc_node_not_relation; => nrel_main_idtf:[рвота](*<-lang_ru;;*);;
+concept_pain_in_the_mouth <- sc_node_not_relation; => nrel_main_idtf:[боль во рту](*<-lang_ru;;*);;
+concept_difficulties_in_swallowing <- sc_node_not_relation; => nrel_main_idtf:[трудности при глотании](*<-lang_ru;;*);;
+concept_painful_sensations_when_swallowing <- sc_node_not_relation; => nrel_main_idtf:[болезненные ощущения при глотании](*<-lang_ru;;*);;
+
+concept_antacid <- sc_node_not_relation; => nrel_main_idtf:[антацид](*<-lang_ru;;*);;
+concept_alginic_acid_derivatives <- sc_node_not_relation; => nrel_main_idtf:[производные альгиновой кислоты](*<-lang_ru;;*);;
+concept_antisecretory_drug <- sc_node_not_relation; => nrel_main_idtf:[антисектреторные препараты](*<-lang_ru;;*);;
+concept_prokinetics <- sc_node_not_relation; => nrel_main_idtf:[прокинетики](*<-lang_ru;;*);;
+
+concept_catarrhal_form <- sc_node_not_relation; => nrel_main_idtf:[катаральная форма](*<-lang_ru;;*);;
+concept_edematous_form <- sc_node_not_relation; => nrel_main_idtf:[отечная форма](*<-lang_ru;;*);;
+concept_erosive_form <- sc_node_not_relation; => nrel_main_idtf:[эрозивная форма](*<-lang_ru;;*);;
+concept_hemorrhagic_form <- sc_node_not_relation; => nrel_main_idtf:[геморрагическая форма](*<-lang_ru;;*);;
+concept_pseudomembranous_form <- sc_node_not_relation; => nrel_main_idtf:[псевдомембранозная форма](*<-lang_ru;;*);;
+concept_exfoliative_form <- sc_node_not_relation; => nrel_main_idtf:[эксфолиативная форма](*<-lang_ru;;*);;
+concept_necrotic_form <- sc_node_not_relation; => nrel_main_idtf:[некротическая форма](*<-lang_ru;;*);;
+concept_phlegmonous_form <- sc_node_not_relation; => nrel_main_idtf:[флегмонозная форма](*<-lang_ru;;*);;
+
+concept_chemical_burn <- sc_node_not_relation; => nrel_main_idtf:[химический ожог](*<-lang_ru;;*);;
+concept_infection <- sc_node_not_relation; => nrel_main_idtf:[инфекция](*<-lang_ru;;*);;
+concept_gastro_esophageal_reflux <- sc_node_not_relation; => nrel_main_idtf:[желудочно-пищеводный рефлюкс](*<-lang_ru;;*);;
+concept_physical_injury <- sc_node_not_relation; => nrel_main_idtf:[физическое повреждение](*<-lang_ru;;*);;
+
+nrel_therapy <-sc_node_norole_relation;=> nrel_main_idtf:[терапия*](*<-lang_ru;;*);;
+nrel_form <-sc_node_norole_relation;=> nrel_main_idtf:[форма*](*<-lang_ru;;*);;
+
+concept_esophagitis => nrel_kind: concept_acute_esophagitis;concept_chronic_esophagitis;;
+concept_esophagitis => nrel_form:concept_catarrhal_form;concept_edematous_form;concept_erosive_form;concept_hemorrhagic_form;;
+concept_esophagitis => nrel_form: concept_pseudomembranous_form;concept_exfoliative_form;concept_necrotic_form;concept_phlegmonous_form;;
+concept_esophagitis => nrel_cause_of_disease:concept_chemical_burn;concept_infection;concept_gastro_esophageal_reflux;concept_physical_injury;;
+concept_esophagitis => nrel_symptom:concept_vomiting;concept_nausea;concept_pain_in_the_mouth;concept_painful_sensations_when_swallowing;;
+concept_esophagitis => nrel_symptom:concept_difficulties_in_swallowing; concept_heartburn;;
+concept_esophagitis => nrel_therapy:concept_antacid;concept_alginic_acid_derivatives;concept_antisecretory_drug;concept_prokinetics;;
+concept_disease -> concept_esophagitis;;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_esophagitis;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Эзофагит — заболевание пищевода, сопровождающееся воспалением его слизистой оболочки](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(эзофагит)](*<- lang_ru;;*);;
+    => nrel_using_constants:{concept_esophagus};;
+*);;

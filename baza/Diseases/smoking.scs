@@ -1,0 +1,47 @@
+concept_smoking<-sc_node_not_relation;;
+
+concept_smoking => nrel_main_idtf: [табакокурение](*<- lang_ru;;*);;
+concept_smoking => nrel_main_idtf: [smoking](*<- lang_en;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_smoking;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Табакокурение -это привычка, в большинстве случаев переходящая в болезнь, то есть в химическую зависимость организма от психоактивного вещества, название которому - никотин.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(табакокурение)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            -> concept_habit;;
+	    -> concept_desease;;
+        *);;
+*);;
+
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_smoking;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Зависимость от курения развивается после того, как привычка пройдет предварительный этап привыкания к табаку, включающий эпизодическое и систематическое курение.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(табакокурение)](*<- lang_ru;;*);;
+*);;
+
+
+concept_smoking<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://smoking.png"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;
+

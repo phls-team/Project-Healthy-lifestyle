@@ -1,0 +1,56 @@
+concept_rest <- sc_node_not_relation; => nrel_main_idtf:[rest](*<-lang_en;;*);;
+
+concept_seconds <- sc_node_not_relation; => nrel_main_idtf:[секунды](*<-lang_ru;;*);;
+concept_minutes <- sc_node_not_relation; => nrel_main_idtf:[минтуы](*<-lang_ru;;*);;
+concept_hours <- sc_node_not_relation; => nrel_main_idtf:[часы](*<-lang_ru;;*);;
+concept_days <- sc_node_not_relation; => nrel_main_idtf:[дни](*<-lang_ru;;*);;
+concept_weeks <- sc_node_not_relation; => nrel_main_idtf:[недели](*<-lang_ru;;*);;
+concept_months <- sc_node_not_relation; => nrel_main_idtf:[месяца](*<-lang_ru;;*);;
+concept_years <- sc_node_not_relation; => nrel_main_idtf:[годы](*<-lang_ru;;*);;
+
+concept_outdoor_activity <- sc_node_not_relation; => nrel_main_idtf:[активный отдых](*<-lang_ru;;*);;
+concept_passive_rest <- sc_node_not_relation; => nrel_main_idtf:[пассивный отдых](*<-lang_ru;;*);;
+concept_mixed_rest <- sc_node_not_relation; => nrel_main_idtf:[смешанный отдых](*<-lang_ru;;*);;
+concept_collective_rest <- sc_node_not_relation; => nrel_main_idtf:[коллективный отдых](*<-lang_ru;;*);;
+concept_individual_rest <- sc_node_not_relation; => nrel_main_idtf:[индивидуальный отдых](*<-lang_ru;;*);;
+concept_couples_getaway <- sc_node_not_relation; => nrel_main_idtf:[парный отдых](*<-lang_ru;;*);;
+
+concept_rest => nrel_classification_by_duration:concept_days;concept_seconds;concept_minutes;concept_hours;concept_days;concept_weeks;concept_months;concept_years;;
+concept_rest => nrel_classification_by_activity:concept_outdoor_activity;concept_passive_rest;concept_mixed_rest;;
+concept_rest => nrel_classification_by_number_of_people:concept_collective_rest;concept_individual_rest;concept_couples_getaway;;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_rest;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [О́тдых — состояние покоя, либо времяпрепровождение, целью которого является восстановление сил, достижение работоспособного состояния организма.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(отдых)](*<- lang_ru;;*);;
+    => nrel_using_constants:{concept_calmness;concept_recovery;concept_efficiency};;
+*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_rest;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [О́тдых — время, свободное от работы.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(отдых)](*<- lang_ru;;*);;
+    => nrel_using_constants:{concept_time;concept_work};;
+*);;
+
+
+concept_rest<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://rest.png"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;

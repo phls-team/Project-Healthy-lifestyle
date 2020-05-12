@@ -1,0 +1,74 @@
+concept_human_digestive_system <- sc_node_not_relation; => nrel_main_idtf:[пищеварительная система человека](*<-lang_ru;;*);;
+concept_human_digestive_system => nrel_main_idtf:[human digestive system](*<-lang_en;;*);;
+
+concept_gastrointestinal_tract <- sc_node_not_relation; => nrel_main_idtf:[желудочно-кишечный тракт человека](*<-lang_ru;;*);;
+concept_subsidiary_bodies <- sc_node_not_relation; => nrel_main_idtf:[вспомогательные органы пищеварительной системы человека](*<-lang_ru;;*);;
+concept_mouth <- sc_node_not_relation; => nrel_main_idtf:[рот](*<-lang_ru;;*);;
+concept_pharynx <- sc_node_not_relation; => nrel_main_idtf:[глотка](*<-lang_ru;;*);;
+concept_esophagus <- sc_node_not_relation; => nrel_main_idtf:[пищевод](*<-lang_ru;;*);;
+concept_stomach <- sc_node_not_relation; => nrel_main_idtf:[желудок](*<-lang_ru;;*);;
+concept_small_intestine <- sc_node_not_relation; => nrel_main_idtf:[тонкая кишка](*<-lang_ru;;*);;
+concept_large_intestine <- sc_node_not_relation; => nrel_main_idtf:[толстая кишка](*<-lang_ru;;*);;
+concept_rectum <- sc_node_not_relation; => nrel_main_idtf:[прямая кишка](*<-lang_ru;;*);;
+concept_anus <- sc_node_not_relation; => nrel_main_idtf:[анальное отверстие](*<-lang_ru;;*);;
+concept_secretory_function <- sc_node_not_relation; => nrel_main_idtf:[сектреторная функция](*<-lang_ru;;*);;
+concept_suction_function <- sc_node_not_relation; => nrel_main_idtf:[всасывающая](*<-lang_ru;;*);;
+concept_excretory_function <- sc_node_not_relation; => nrel_main_idtf:[выделительная](*<-lang_ru;;*);;
+concept_motor_mechanical_function <- sc_node_not_relation; => nrel_main_idtf:[моторно-механическая](*<-lang_ru;;*);;
+concept_probing <- sc_node_not_relation; => nrel_main_idtf:[зондирование](*<-lang_ru;;*);;
+concept_radiography <- sc_node_not_relation; => nrel_main_idtf:[рентгенография](*<-lang_ru;;*);;
+concept_endoscopy <- sc_node_not_relation; => nrel_main_idtf:[эндоскопия](*<-lang_ru;;*);;
+concept_ultrasonic_location <- sc_node_not_relation; => nrel_main_idtf:[ультразвуковая локация](*<-lang_ru;;*);;
+concept_scanning_tomography <- sc_node_not_relation; => nrel_main_idtf:[сканирующая томография](*<-lang_ru;;*);;
+concept_radio_electronic_methods <- sc_node_not_relation; => nrel_main_idtf:[радиоэлектронные методы](*<-lang_ru;;*);;
+helminthic<-sc_node_not_relation;=> nrel_main_idtf:[глистные заболевания](*<-lang_ru;;*);;
+infectious <- sc_node_not_relation; => nrel_main_idtf:[инфекционные заболевания](*<-lang_ru;;*);;
+food_poisoning <- sc_node_not_relation; => nrel_main_idtf:[пищевые отравления](*<-lang_ru;;*);;
+metabolic_disorder<- sc_node_not_relation; => nrel_main_idtf:[нарушения обмена веществ](*<-lang_ru;;*);;
+
+nrel_function <- sc_node_norole_relation; => nrel_main_idtf:[функция*](*<-lang_ru;;*);;
+nrel_method_of_research <- sc_node_norole_relation; => nrel_main_idtf:[метод исследования*](*<-lang_ru;;*);;
+nrel_diseases <- sc_node_norole_relation; => nrel_main_idtf:[заболевания*](*<-lang_ru;;*);;
+
+
+concept_human_digestive_system => nrel_inclusion:concept_gastrointestinal_tract;concept_subsidiary_bodies;;
+concept_human_digestive_system => nrel_function:concept_motor_mechanical_function;concept_secretory_function;concept_suction_function;concept_excretory_function;;
+concept_human_digestive_system => nrel_method_of_research:concept_probing;concept_radiography;concept_endoscopy;concept_ultrasonic_location;concept_scanning_tomography;concept_radio_electronic_methods;;
+concept_human_digestive_system => nrel_diseases:helminthic;infectious;food_poisoning;metabolic_disorder;;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_human_digestive_system;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Пищеварительная система человека - одна из основнох систем человека.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(пищеварительная система человека)](*<- lang_ru;;*);;
+    => nrel_using_constants:{concept_system};;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_human_digestive_system;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Пищеварительная система человека осуществляет переваривание пищи (путём её физической и химической обработки), всасывание продуктов расщепления через слизистую оболочку в кровь и лимфу, выведение непереваренных остатков.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(пищеварительная система человека)](*<- lang_ru;;*);;
+    => nrel_using_constants:{concept_food;concept_blood};;
+*);;
+
+concept_human_digestive_system<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://hds.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;
+

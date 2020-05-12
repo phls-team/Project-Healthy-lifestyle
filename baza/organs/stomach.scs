@@ -1,0 +1,13 @@
+concept_stomach<-sc_node_not_relation;=> nrel_main_idtf:[stomach](*<-lang_en;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_stomach;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Желудок — полый мышечный орган, часть пищеварительного тракта, лежит между пищеводом и двенадцатиперстной кишкой.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(желудок)](*<- lang_ru;;*);;
+    => nrel_using_constants:{concept_esophagus; concept_body};;
+*);;
+

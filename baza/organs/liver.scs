@@ -1,0 +1,53 @@
+concept_liver <- sc_node_not_relation;=>nrel_main_idtf:[l1iver](*<-lang_en;;*);;
+
+concept_left_lobe <- sc_node_not_relation;=>nrel_main_idtf:[левая доля](*<-lang_ru;;*);;
+concept_right_lobe <- sc_node_not_relation;=>nrel_main_idtf:[правая доля](*<-lang_ru;;*);;
+
+nrel_lobe <-sc_node_norole_relation; => nrel_main_idtf:[доля*](*<-lang_ru;;*);;
+
+concept_liver => nrel_lobe:concept_left_lobe;concept_right_lobe;;
+
+
+concept_liver_plates <- sc_node_not_relation;=>nrel_main_idtf:[печеночные пластинки](*<-lang_ru;;*);;
+concept_intralobular_sinusoidal_hemocapillaries <- sc_node_not_relation;=>nrel_main_idtf:[внутридольковые синусоидные гемокапилляры](*<-lang_ru;;*);;
+concept_gall_capillaries <- sc_node_not_relation;=>nrel_main_idtf:[жёлчные капилляры](*<-lang_ru;;*);;
+concept_perisinusoidal_Disse_space <- sc_node_not_relation;=>nrel_main_idtf:[перисинусоидное пространство Диссе](*<-lang_ru;;*);;
+concept_central_vein <- sc_node_not_relation;=>nrel_main_idtf:[центральная вена](*<-lang_ru;;*);;
+
+concept_liver => nrel_structure:concept_liver_plates;concept_intralobular_sinusoidal_hemocapillaries;concept_gall_capillaries;concept_perisinusoidal_Disse_space;concept_central_vein;;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_liver;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Печень — жизненно важная железа внешней секреции позвоночных животных, в том числе и человека, находящаяся в брюшной полости (полости живота) под диафрагмой и выполняющая большое количество различных физиологических функций. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(печень)](*<- lang_ru;;*);;
+    => nrel_using_constants:{concept_human};;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_liver;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Печень является самой крупной железой позвоночных.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(печень)](*<- lang_ru;;*);;
+*);;
+
+
+concept_liver<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://liver.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;
+

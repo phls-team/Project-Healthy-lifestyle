@@ -1,0 +1,39 @@
+concept_subsidiary_bodies=> nrel_main_idtf:[subsidiary bodies](*<-lang_en;;*);;
+
+concept_salivary_glands <- sc_node_not_relation;=>nrel_main_idtf:[слюнные железы](*<-lang_ru;;*);;
+concept_liver <- sc_node_not_relation;=>nrel_main_idtf:[печень](*<-lang_ru;;*);;
+concept_pancreas <- sc_node_not_relation;=>nrel_main_idtf:[поджелудочная железа](*<-lang_ru;;*);;
+concept_gallbladder <- sc_node_not_relation;=>nrel_main_idtf:[желчный пузырь](*<-lang_ru;;*);;
+concept_cholecystitis <- sc_node_not_relation;=>nrel_main_idtf:[холецистит](*<-lang_ru;;*);;
+concept_biliary_dyskinesia <- sc_node_not_relation;=>nrel_main_idtf:[дискинезия желчных путей](*<-lang_ru;;*);;
+concept_pancreatitis <- sc_node_not_relation;=>nrel_main_idtf:[панкреатит](*<-lang_ru;;*);;
+concept_cholelithiasis <- sc_node_not_relation;=>nrel_main_idtf:[желчнокаменная болезнь](*<-lang_ru;;*);;
+concept_cirrhosis <- sc_node_not_relation;=>nrel_main_idtf:[цирроз печени](*<-lang_ru;;*);;
+concept_aflatoxicosis <- sc_node_not_relation;=>nrel_main_idtf:[афлатоксикоз](*<-lang_ru;;*);;
+concept_liver_hemangiomas <- sc_node_not_relation;=>nrel_main_idtf:[гемангиомы печени](*<-lang_ru;;*);;
+concept_hydatid_echinococcosis_of_the_liver <- sc_node_not_relation;=>nrel_main_idtf:[гидатидный эхинококкоз печени](*<-lang_ru;;*);;
+concept_clonorchiasis <- sc_node_not_relation;=>nrel_main_idtf:[клонорхоз](*<-lang_ru;;*);;
+concept_opisthorchiasis <- sc_node_not_relation;=>nrel_main_idtf:[описторхоз](*<-lang_ru;;*);;
+concept_cancer <- sc_node_not_relation;=>nrel_main_idtf:[рак](*<-lang_ru;;*);;
+concept_mucoviscidosis <- sc_node_not_relation;=>nrel_main_idtf:[муковисцидоз](*<-lang_ru;;*);;
+concept_pancreatic_necrosis <- sc_node_not_relation;=>nrel_main_idtf:[панкреанекроз](*<-lang_ru;;*);;
+concept_diabetes <- sc_node_not_relation;=>nrel_main_idtf:[диабет](*<-lang_ru;;*);;
+concept_polyp_of_the_gallbladder <- sc_node_not_relation;=>nrel_main_idtf:[полип желчного пузыря](*<-lang_ru;;*);;
+
+
+concept_subsidiary_bodies => nrel_inclusion:concept_liver;concept_pancreas;concept_gallbladder;concept_salivary_glands;;
+concept_subsidiary_bodies => nrel_diseases:concept_cholecystitis;concept_pancreatitis;concept_biliary_dyskinesia;concept_cholelithiasis;concept_cirrhosis;;
+concept_subsidiary_bodies => nrel_diseases:concept_aflatoxicosis;concept_liver_hemangiomas;concept_hydatid_echinococcosis_of_the_liver;concept_clonorchiasis;;
+concept_subsidiary_bodies => nrel_diseases:concept_opisthorchiasis;concept_cancer;concept_mucoviscidosis;concept_pancreatic_necrosis;concept_diabetes;concept_polyp_of_the_gallbladder;;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_subsidiary_bodies;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Вспомогательные органы пищеварительной системы вырабатывают ряд веществ  — ферменты, под действием которых происходит переваривание пищи.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(вспомогательные органы)](*<- lang_ru;;*);;
+   => nrel_using_constants:{concept_food;concept_enzymes;concept_digestion};;
+
+*);;

@@ -1,0 +1,62 @@
+concept_stress<-sc_node_not_relation;;
+
+concept_stress => nrel_main_idtf: [стресс](*<- lang_ru;;*);;
+concept_stress => nrel_main_idtf: [stress](*<- lang_en;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_stress;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Стресс - совокупность неспецифических адаптационных (нормальных) реакций организма на воздействие различных неблагоприятных факторов-стрессоров (физических или психологических), нарушающее его гомеостаз, а также соответствующее состояние нервной системы организма (или организма в целом)](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Стресс)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            -> concept_reaction;;
+	    -> concept_nervous_system;;
+        *);;
+*);;
+
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_stress;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ В медицине, физиологии, психологии выделяют положительную (эустресс от др.-греч. εὖ- «хорошо») и отрицательную (дистресс от др.-греч. δυσ «потеря») формы стресса. По характеру воздействия выделяют нервно-психический, тепловой или холодовой (температурный), световой, голодовой, лишение сна и другие стрессы (облучения и т. д.).](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Стресс)](*<- lang_ru;;*);;
+*);;
+
+concept_stress<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://stress.png"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;
+
+concept_stress<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://stress1.png"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;
+
+
+
+

@@ -1,0 +1,19 @@
+concept_body_mass_index <- sc_node_not_relation; => nrel_main_idtf:[индекс массы тела](*<-lang_ru;;*);;
+
+concept_weight<- sc_node_not_relation; => nrel_main_idtf:[масса](*<-lang_ru;;*);;
+concept_height<- sc_node_not_relation; => nrel_main_idtf:[рост](*<-lang_ru;;*);;
+
+nrel_using_parameters <-sc_node_norole_relation;=>nrel_main_idtf:[используемые параметры*](*<-lang_ru;;*);;
+
+concept_body_mass_index => nrel_using_parameters:concept_height;concept_weight;;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_body_mass_index;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Индекс массы тела — величина, позволяющая оценить степень соответствия массы человека и его роста и тем самым косвенно судить о том, является ли масса недостаточной, нормальной или избыточной.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(индекс массы тела)](*<- lang_ru;;*);;
+    => nrel_using_constants:{concept_value};;
+*);;

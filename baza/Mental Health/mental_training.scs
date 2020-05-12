@@ -1,0 +1,28 @@
+concept_mental_training<-sc_node_not_relation;;
+
+concept_mental_training => nrel_main_idtf: [ментальные тренировки](*<- lang_ru;;*);;
+concept_mental_training => nrel_main_idtf: [mental_training](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_mental_training;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Ментальные тренеровки - ряд мероприятий и упражнений, предпринимаемых с целью улучшения психического здоровья человека](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(ментальные тренировки)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+	    -> concept_exercises;;
+	    -> concept_person;;
+	    -> concept_mental_health;;
+        *);;
+*);;
+
+
+
+
+concept_mental_training => nrel_inclusion:concept_meditation;concept_yoga;concept_body_hardening;concept_breathing_gymnastics;;
+
+

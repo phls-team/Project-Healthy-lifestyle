@@ -1,0 +1,54 @@
+concept_antibiotics <-sc_node_not_relation;=> nrel_main_idtf:[антибиотики](*<-lang_ru;;*);;
+concept_antibiotics => nrel_main_idtf:[antibiotics](*<-lang_en;;*);;
+
+concept_bacteriostatic_antibiotics <-sc_node_not_relation;=> nrel_main_idtf:[бактериостатические антибиотики](*<-lang_ru;;*);;
+concept_bactericidal_antibiotics <-sc_node_not_relation;=> nrel_main_idtf:[бактерицидные антибиотики](*<-lang_ru;;*);;
+
+concept_beta_lactam_antibiotics <-sc_node_not_relation;=> nrel_main_idtf:[бета-лактамные антибиотики](*<-lang_ru;;*);;
+concept_macrolides <-sc_node_not_relation;=> nrel_main_idtf:[макролиды](*<-lang_ru;;*);;
+concept_tetracycline <-sc_node_not_relation;=> nrel_main_idtf:[тетрациклины](*<-lang_ru;;*);;
+concept_aminoglycosides <-sc_node_not_relation;=> nrel_main_idtf:[аминогликозиды](*<-lang_ru;;*);;
+concept_levomycetinums <-sc_node_not_relation;=> nrel_main_idtf:[левомицетины](*<-lang_ru;;*);;
+concept_glycopeptide_antibiotics <-sc_node_not_relation;=> nrel_main_idtf:[гликопептидные антибиотики](*<-lang_ru;;*);;
+concept_lincosamides <-sc_node_not_relation;=> nrel_main_idtf:[линкозамиды](*<-lang_ru;;*);;
+concept_fluoroquinolones <-sc_node_not_relation;=> nrel_main_idtf:[фторхинолоны ](*<-lang_ru;;*);;
+concept_antibiotics_of_different_groups <-sc_node_not_relation;=> nrel_main_idtf:[антибиотики разных групп](*<-lang_ru;;*);;
+
+concept_penicillins <-sc_node_not_relation;=> nrel_main_idtf:[пенициллины](*<-lang_ru;;*);;
+concept_cephalosporins <-sc_node_not_relation;=> nrel_main_idtf:[цефалоспорины](*<-lang_ru;;*);;
+concept_carbapenem <-sc_node_not_relation;=> nrel_main_idtf:[карбапенемы](*<-lang_ru;;*);;
+
+concept_poisoning_of_the_body <-sc_node_not_relation; => nrel_main_idtf:[отравление организма](*<-lang_ru;;*);;
+concept_metabolism <- sc_node_not_relation; => nrel_main_idtf:[метаболизм](*<-lang_ru;;*);;
+
+concept_antibiotics => nrel_classification_by_type_of_exposure:concept_bacteriostatic_antibiotics; concept_bactericidal_antibiotics;;
+concept_antibiotics => nrel_classification_by_chemical_structure:concept_beta_lactam_antibiotics;concept_macrolides;concept_tetracycline;concept_aminoglycosides;concept_levomycetinums;;
+concept_antibiotics => nrel_classification_by_chemical_structure:concept_glycopeptide_antibiotics;concept_lincosamides;concept_fluoroquinolones;concept_antibiotics_of_different_groups;;
+
+concept_alcohol => nrel_decrease_in_the_activity: concept_antibiotics;;
+concept_poisoning_of_the_body <= nrel_unity:{concept_alcohol;concept_antibiotics};;
+concept_metabolism <= nrel_reducing:{concept_alcohol;concept_antibiotics};;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_antibiotics;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Антибиотики — это препараты, применяемые для лечения бактериальных инфекций. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(антибиотики)](*<- lang_ru;;*);;
+    => nrel_using_constants:{concept_infection;concept_treatment};;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_antibiotics;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Не действуют против вирусных и многих других инфекций.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(антибиотики)](*<- lang_ru;;*);;
+    => nrel_using_constants:{concept_infection};;
+*);;
+
+
