@@ -17,7 +17,7 @@ definition -> ...
 *);;
 
 concept_only_fasting <- sc_node_not_relation; => nrel_main_idtf:[полное голодание](*<-lang_ru;;*);;
-concept_only_fasting => nrel_idft:[водное голодание](*<-lang_ru;;*);;
+concept_only_fasting => nrel_idtf:[водное голодание](*<-lang_ru;;*);;
 
 definition -> ...
 (*
@@ -50,7 +50,7 @@ statement -> ...
 *);;
 
 concept_absolute_fasting <- sc_node_not_relation; => nrel_main_idtf:[абсолютное голодание](*<-lang_ru;;*);;
-concept_absolute_fasting => nrel_idft:[сухое голодание](*<-lang_ru;;*);;
+concept_absolute_fasting => nrel_idtf:[сухое голодание](*<-lang_ru;;*);;
 
 definition -> ...
 (*
@@ -171,7 +171,7 @@ statement -> ...
 
 
 
-concept_therapeutic_fasting => nrel_varieties_of_fasting_in_relation_to_water: concept_only_fasting; concept_absolute_fasting;;
+concept_therapeutic_fasting => nrel_varieties_of_fasting_in_relation_to_water: concept_only_fasting; concept_absolute_fasting;concept_combined_fasting;;
 nrel_varieties_of_fasting_in_relation_to_water <- sc_node_norole_relation; => nrel_main_idtf:[разновидности голодания по отношению к воде*](*<-lang_ru;;*);;
 
 concept_technique_of_fasting <-sc_node_not_relation;=>nrel_main_idtf:[техники голодания](*<-lang_ru;;*);;

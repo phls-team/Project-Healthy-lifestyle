@@ -1,6 +1,5 @@
-concept_fats <-sc_node_not_relation;=> nrel_main_idtf:[жиры](*<-lang_ru;;*);;
 concept_fats => nrel_main_idtf:[fats](*<-lang_en;;*);;
-concept_fats => nrel_idtf:[ триглицериды](*<-lang_ru;;*);;
+concept_fats => nrel_idtf:[триглицериды](*<-lang_ru;;*);;
 concept_fats => nrel_idtf:[триацилглицериды](*<-lang_ru;;*);;
 
 concept_animal_fats <-sc_node_not_relation;=> nrel_main_idtf:[животные жиры](*<-lang_ru;;*);;
@@ -44,4 +43,17 @@ definition -> ...
         *);;
     => nrel_main_idtf: [Опр.(жиры)](*<- lang_ru;;*);;
     => nrel_using_constants:{concept_nutrition:concept_protein; concept_carbohydrates};;
+*);;
+
+concept_fats<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://fats.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
 *);;

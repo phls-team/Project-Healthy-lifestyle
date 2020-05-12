@@ -24,13 +24,12 @@ concept_starch <-sc_node_not_relation;=> nrel_main_idtf:[крахмал](*<-lang
 concept_cellulose <-sc_node_not_relation;=> nrel_main_idtf:[целлюлоза](*<-lang_ru;;*);;
 concept_galactomannan <-sc_node_not_relation;=> nrel_main_idtf:[галактоманнаны](*<-lang_ru;;*);;
 concept_glucomannan <-sc_node_not_relation;=> nrel_main_idtf:[глюкоманнан](*<-lang_ru;;*);;
-concept_ <-sc_node_not_relation;=> nrel_main_idtf:[](*<-lang_ru;;*);;
 
 concept_carbohydrates => nrel_classification:concept_monosaccharides;concept_disaccharides;concept_oligosaccharides;concept_polysaccharides;;
 concept_carbohydrates => nrel_function:concept_osmotic_function;concept_energy_function;concept_plastic_function;concept_support_function;concept_structure_function;;
 concept_carbohydrates => nrel_function:concept_protective_function;concept_receptor_function;concept_backup_function;; 
-concept_carbohydrates = nrel_inclusion:concept_lactulose;concept_isomaltose;concept_starch;concept_glycogen;concept_maltose;concept_galactose;concept_galactomannan;;
-concept_carbohydrates = nrel_inclusion:concept_fructose;concept_dextrin;concept_cellulose;concept_glucose;concept_mannose;concept_glucomannan;concept_sucrose;concept_lactose;;
+concept_carbohydrates => nrel_inclusion:concept_lactulose;concept_isomaltose;concept_starch;concept_glycogen;concept_maltose;concept_galactose;concept_galactomannan;;
+concept_carbohydrates => nrel_inclusion:concept_fructose;concept_dextrin;concept_cellulose;concept_glucose;concept_mannose;concept_glucomannan;concept_sucrose;concept_lactose;;
 
 concept_oligosaccharides -> concept_disaccharides;;
 concept_monosaccharides => nrel_inclusion:concept_glucose;concept_fructose;concept_galactose;concept_mannose;;
@@ -57,4 +56,17 @@ statement -> ...
         *);;
     => nrel_main_idtf: [Утв.(углеводы)](*<- lang_ru;;*);;
     => nrel_using_constants:{concept_cell};;
+*);;
+
+concept_carbohydrates<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://carbo.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
 *);;

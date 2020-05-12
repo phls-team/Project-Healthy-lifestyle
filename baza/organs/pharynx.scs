@@ -2,7 +2,7 @@ concept_pharynx<-sc_node_not_relation;=> nrel_main_idtf:[pharynx](*<-lang_en;;*)
 
 motor_function<-sc_node_not_relation;=> nrel_main_idtf:[моторная функция](*<-lang_ru;;*);;
 
-concept_pharynx => nrel_function: motor_function;
+concept_pharynx => nrel_function: motor_function;;
 
 definition -> ...
 (*

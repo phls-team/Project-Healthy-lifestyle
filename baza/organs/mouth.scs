@@ -1,4 +1,4 @@
-concept_mouth => nrel_idtf:[рот](*<-lang_ru;;*);;
+concept_mouth => nrel_idtf:[ротовая полость](*<-lang_ru;;*);;
 
 upper_lip<-sc_node_not_relation;=> nrel_main_idtf:[верхняя губа](*<-lang_ru;;*);;
 lower_lip<-sc_node_not_relation;=> nrel_main_idtf:[нижняя губа](*<-lang_ru;;*);;
@@ -47,4 +47,16 @@ statement -> ...
     => nrel_using_constants:{concept_food};;
 *);;
 
+concept_mouth<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://mouth.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;
 

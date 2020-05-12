@@ -1,6 +1,5 @@
 concept_workout<-sc_node_not_relation;=>nrel_main_idtf:[воркаут](*<-lang_ru;;*);;
 concept_workout<-sc_node_not_relation;=>nrel_main_idtf:[workout](*<-lang_en;;*);;
-physical_excercises => nrel_inclusion:concept_workout;;
 concept_physical_exercises=>nrel_inclusion:concept_workout;;
 concept_static_exercise<-sc_node_not_relation;=>nrel_main_idtf:[статические упражнения](*<-lang_ru;;*);;
 concept_dynamic_exercise <-sc_node_not_relation;=>nrel_main_idtf:[динамические упражнения](*<-lang_ru;;*);;

@@ -30,7 +30,7 @@ concept_receptor_function <-sc_node_not_relation;=> nrel_main_idtf:[рецепт
 
 concept_protein => nrel_inclusion:concept_simple_proteins;concept_complex_proteins;;
 concept_protein => nrel_physical_and_chemical_properties:concept_amphoteric_character;concept_solubility;concept_denaturation;;
-concept_protein => nrel_classification_by_building_typ:concept_fibrillar_proteins;concept_globular_proteins;concept_membrane_proteins;;
+concept_protein => nrel_classification_by_building_type:concept_fibrillar_proteins;concept_globular_proteins;concept_membrane_proteins;;
 concept_protein => nrel_function:concept_catalytic_function;concept_structure_function;concept_protective_function;concept_regulatory_function;;
 concept_protein => nrel_function:concept_signal_function;concept_transport_function;concept_backup_function;concept_receptor_function;;
 concept_protein => nrel_structure:concept_primary_structure; concept_secondary_structure;concept_tertiary_structure;concept_quaternary_structure;;
@@ -55,4 +55,17 @@ statement -> ...
         *);;
     => nrel_main_idtf: [Утв.(белки)](*<- lang_ru;;*);;
     => nrel_using_constants:{concept_human;concept_fruit;concept_meat;concept_vegetable;concept_amino_acid};;
+*);;
+
+concept_protein<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://protein.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
 *);;

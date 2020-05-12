@@ -1,0 +1,53 @@
+concept_salivary_glands <- sc_node_not_relation;=>nrel_main_idtf:[salivary glands](*<-lang_en;;*);;
+
+concept_small_salivary_glands <- sc_node_not_relation;=>nrel_main_idtf:[малые слюнные железы](*<-lang_ru;;*);;
+concept_big_salivary_glands <- sc_node_not_relation;=>nrel_main_idtf:[большие слюнные железы](*<-lang_ru;;*);;
+
+concept_exocrine_function <- sc_node_not_relation;=>nrel_main_idtf:[экзокринная функция](*<-lang_ru;;*);;
+concept_endocrine_function <- sc_node_not_relation;=>nrel_main_idtf:[эндрокринная функция](*<-lang_ru;;*);;
+concept_filtration_function <- sc_node_not_relation;=>nrel_main_idtf:[фильтрационная функция](*<-lang_ru;;*);;
+concept_excretory_function <- sc_node_not_relation;=>nrel_main_idtf:[экскреторная функция](*<-lang_ru;;*);;
+
+concept_sialadenitis <- sc_node_not_relation;=>nrel_main_idtf:[сиаладенит](*<-lang_ru;;*);;
+concept_sialolithiasis <- sc_node_not_relation;=>nrel_main_idtf:[сиалолитиаз](*<-lang_ru;;*);;
+concept_mumps <- sc_node_not_relation;=>nrel_main_idtf:[паротит](*<-lang_ru;;*);;
+
+concept_salivary_glands => nrel_inclusion: concept_small_salivary_glands;concept_big_salivary_glands;;
+concept_salivary_glands => nrel_function:concept_exocrine_function;concept_endocrine_function;concept_filtration_function;concept_excretory_function;;
+concept_salivary_glands => nrel_disease:concept_sialadenitis;concept_sialolithiasis;concept_mumps;;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_salivary_glands;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Слюнные железы — железы в ротовой полости, выделяющие слюну.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(слюнные железы)](*<- lang_ru;;*);;
+    => nrel_using_constants:{concept_oral_cavity};;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_salivary_glands;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [У человека, кроме многочисленных мелких слюнных желёз в слизистой оболочке языка, нёба, щёк и губ, имеется 3 пары крупных слюнных желёз: околоушная, подчелюстная и подъязычная.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(слюнные железы)](*<- lang_ru;;*);;
+    => nrel_using_constants:{concept_oral_cavity};;
+*);;
+
+
+concept_salivary_glands<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://salivary.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;

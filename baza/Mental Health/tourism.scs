@@ -1,4 +1,4 @@
-concept_turism => nrel_main_idtf:[turism](*<-lang_en;;*);;
+concept_tourism => nrel_main_idtf:[tourism](*<-lang_en;;*);;
 
 concept_outbound_tourism <- sc_node_not_relation;=> nrel_main_idtf:[выездной туризм](*<-lang_ru;;*);;
 concept_inbound_tourism <- sc_node_not_relation;=> nrel_main_idtf:[въездной туризм](*<-lang_ru;;*);;
@@ -9,7 +9,7 @@ concept_domestic_tourism <- sc_node_not_relation;=> nrel_main_idtf:[внутре
 
 nrel_basic_criterion <- sc_node_norole_relation;=> nrel_main_idtf:[базовый критерий](*<-lang_ru;;*);;
 
-concept_turism => nrel_classification:nrel_classification_by_purpose_of_travel;nrel_classification_by_landscape_feature;nrel_classification_by_geographical_feature;nrel_classification_by_mode_of_travel;
+concept_tourism => nrel_classification:nrel_classification_by_purpose_of_travel;nrel_classification_by_landscape_feature;nrel_classification_by_geographical_feature;nrel_classification_by_mode_of_travel;;
 
 
 

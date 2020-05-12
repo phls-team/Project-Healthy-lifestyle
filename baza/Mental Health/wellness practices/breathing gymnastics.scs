@@ -9,7 +9,7 @@ concept_blood_pressure <- sc_node_not_relation; => nrel_main_idtf:[кровян�
 concept_anxiety <- sc_node_not_relation; => nrel_main_idtf:[беспокойство](*<-lang_ru;;*);;
 concept_blood_circulation <- sc_node_not_relation; => nrel_main_idtf:[кровообращение](*<-lang_ru;;*);;
 concept_breathing_exercises_for_the_stomach <- sc_node_not_relation; => nrel_main_idtf:[дыхательные упражнения для жвиота](*<-lang_ru;;*);;
-concept_attentive_breathing <- sc_node_not_relation; => nrel_main_idtf:["внимательное дыхание](*<-lang_ru;;*);;
+concept_attentive_breathing <- sc_node_not_relation; => nrel_main_idtf:["внимательное дыхание"](*<-lang_ru;;*);;
 concept_square_breathing_exercises <- sc_node_not_relation; => nrel_main_idtf:[квадратная дыхательная гимнастика](*<-lang_ru;;*);;
 concept_breathing_exercises_turn_the_nostrils <- sc_node_not_relation; => nrel_main_idtf:[дыхательная гимнастика через ноздри](*<-lang_ru;;*);;
 concept_method_4_7_8 <- sc_node_not_relation; => nrel_main_idtf:[метод 4,7,8](*<-lang_ru;;*);;
@@ -101,12 +101,17 @@ concept_palms_facing_away_from_you <- sc_node_not_relation; => nrel_main_idtf:[�
 
 concept_clenching_your_hands_into_fists <- sc_node_not_relation; => nrel_main_idtf:[сжимание ладоней в кулаки](*<-lang_ru;;*);;
 concept_sharp_breath_in <- sc_node_not_relation; => nrel_main_idtf:[резкий вдох](*<-lang_ru;;*);;
+concept_hands_down <- sc_node_not_relation; => nrel_main_idtf:[руки опущены](*<-lang_ru;;*);;
+concept_calm_breath_out <- sc_node_not_relation; => nrel_main_idtf:[спокойный выдох](*<-lang_ru;;*);;
 
-rrel_first_step <-sc_node_role_relation; => nrel_main_idtf:[1 шаг](*<-lang_ru;;*);;
+rrel_first_step <-sc_node_role_relation; => nrel_main_idtf:[1 шаг'](*<-lang_ru;;*);;
+rrle_second_step <-sc_node_role_relation; => nrel_main_idtf:[2 шаг'](*<-lang_ru;;*);;
 nrel_number_of_repetitions <-sc_node_norole_relation; => nrel_main_idtf:[количество повторений](*<-lang_ru;;*);;
 nrel_number_of_series <-sc_node_norole_relation; => nrel_main_idtf:[количество подходов](*<-lang_ru;;*);;
 
 concept_palms => nrel_starting_position: concept_standing;concept_arms_are_bent_at_the_elbows;concept_palms_facing_away_from_you;;
 concept_palms -> rrel_first_step:concept_clenching_your_hands_into_fists;concept_sharp_breath_in;;
+concept_palms -> rrel_second_step:concept_hands_down;concept_calm_breath_out;;
 concept_palms => nrel_number_of_repetitions:8;;
 concept_palms => nrel_number_of_series:20;;
+

@@ -1,6 +1,6 @@
 concept_esophagus <- sc_node_not_relation; => nrel_main_idtf:[esophagus](*<-lang_en;;*);;
 
-concept_esophagus => nrel_function: motor_function;
+concept_esophagus => nrel_function: motor_function;;
 
 definition -> ...
 (*
