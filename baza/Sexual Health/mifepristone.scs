@@ -1,0 +1,33 @@
+mifepristone
+
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+[мифепристон](*<-lang_ru;;*);
+[mifepristone](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(мифепристон)](*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        -> rrel_example: [Мифепристон — синтетическое стероидное антипрогестагенное средство, не обладающее гестагенной активностью.](*<-lang_ru;;*);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...(*
+    <- statement;;
+    => nrel_main_idtf: [Утв. 1 о мифепристоне](*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        -> rrel_example: [Мифепристон используется для подготовки и индукции родов при нормальной доношенной беременности, для посткоитальной (экстренной, пожарной) контрацепции, для прерывания нежелательной беременности, а также при неразвивающейся беременности на ранних сроках без хирургического вмешательства — см. Медикаментозный аборт, см. также Экстренная контрацепция.](*<-lang_ru;;*);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...(*
+    <- illustration;;
+    <=nrel_sc_text_translation: ...(*
+        -> "file://images/mifepristone.jpg"(*=>nrel_format: format_jpg;;*);;
+    *);;
+*);;
+/*
+mifepristone -> rrel_example: ;;
+*/

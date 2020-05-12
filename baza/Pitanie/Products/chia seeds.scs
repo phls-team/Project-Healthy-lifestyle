@@ -1,0 +1,80 @@
+concept_chia_seeds => nrel_main_idtf: [семена чиа](*<- lang_ru;;*);;
+concept_chia_seeds => nrel_main_idtf: [chia seeds](*<- lang_en;;*);;
+
+concept_chia_seeds  =>nrel_calorie_content:486;;
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_chia_seeds ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Активные вещества в составе семян чиа способствуют ускоренному восстановлению поврежденных тканей в случае спортивных травм или обычных растяжений. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(чиа)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+            
+            -> concept_injuries;;
+        *);;
+*);;
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_chia_seeds ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Семена чиа также являются отличным источником витаминов группы В, лучшим, чем большинство других круп и злаков. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.2(чиа)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            -> concept_vitamins;;
+            
+        *);;
+*);;
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_chia_seeds;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Антиоксидантные свойства семян чиа отвечают за целый ряд функций в организме, в том числе за защиту от повреждения клеток свободными радикалами и вредными жирами.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.3(чиа)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            -> concept_unhealthy_fats;;
+            
+        *);;
+
+*);;
+concept_chia_seeds <-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(семеня чиа)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://chia seeds.jpg"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+
+
+concept_product=>nrel_inclusion:concept_chia_seeds;;
+concept_chia_seeds=> nrel_vitamin_B3_content:8.8mg_per_100g;
+=> nrel_vitamin_B9_content:0.05mg_per_100g;
+=> nrel_vitamin_C_content:1.6mg_per_100g;
+=> nrel_vitamin_B1_content:0.6mg_per_100g;
+=> nrel_vitamin_E_content:0.5mg_per_100g;
+=> nrel_vitamin_B2_content:0.2mg_per_100g;;

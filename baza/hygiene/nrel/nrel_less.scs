@@ -1,0 +1,36 @@
+nrel_less
+<- sc_node_norole_relation;;
+nrel_less=>nrel_main_idtf:[меньше*]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[less*]
+        (*
+                <-lang_en;;
+        *);
+nrel_idtf:[не в такой мере*]
+        (*
+                <-lang_ru;;
+        *);;
+
+
+nrel_less<-rrel_key_sc_element:...
+                       (*
+                               <-definition;;=>nrel_main_idtf:
+[Опр.(меньше*)]
+        (*
+                <-lang_ru;;
+        *);;
+
+<=nrel_sc_text_translation:...
+        (*
+                ->[меньше - это уменьшение указанного количества.]
+(*
+<-lang_ru;;
+*);;
+
+        *);;
+*);;
+
+
+

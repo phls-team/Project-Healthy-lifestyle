@@ -1,0 +1,41 @@
+dumbbell
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [dumbbell](*<-lang_en;;*);
+          [гантель](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(гантель)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Спортивный снаряд для выполнения физических упражнений с отягощениями, направленных на развитие мышц, укрепление суставов и общей работоспособности организма](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_fitness_equipment;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(гантель)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Целями при занятиях с sгантелями могут быть гармоническое развитие всех мышц тела человека, нормализация веса, укрепление здоровья](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://dumbbell.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

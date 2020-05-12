@@ -1,0 +1,78 @@
+
+concept_walnut => nrel_main_idtf: [грецкий орех](*<- lang_ru;;*);;
+concept_walnut=> nrel_main_idtf: [walnut](*<- lang_en;;*);;
+
+concept_walnut =>nrel_calorie_content:654;;
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_walnut;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Грецкие орехи имеют больше белка, чем мясо. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(белок)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            
+            -> concept_protein;;
+        *);;
+*);;
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_walnut;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [За счет комплекса биологически-активных веществ и лецитина, грецкие орехи способны снимать нервное напряжение, укрепляют память, улучшают работу мозга.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(лецитин)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            -> concept_lecithin;;
+        *);;
+*);;
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_walnut;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Потребление омега-3, в том числе в виде альфа-линоленовой кислоты, содержащейся в грецких орехах, помогает улучшить сердечно-сосудистую функцию, включая кровяное давление.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(кровяное давление)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            -> concept_blood_pressure;;
+        *);;
+*);;
+
+concept_walnut <-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(грецкий орех)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://walnut.jpg"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+nuts=>nrel_inclusion:concept_walnut;;
+concept_walnut=> nrel_vitamin_K_content:2.7mg_per_100g;;
+concept_walnut=> nrel_vitamin_B4_content:39.2mg_per_100g;;
+concept_walnut=> nrel_vitamin_C_content:1.3mg_per_100g;;
+concept_walnut=> nrel_vitamin_E_content:0.7mg_per_100g;;
+concept_walnut=> nrel_vitamin_B5_content:0.6mg_per_100g;;
+concept_walnut=> nrel_vitamin_B3_content:1.1mg_per_100g;;

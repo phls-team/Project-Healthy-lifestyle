@@ -1,0 +1,40 @@
+hypotension=>nrel_main_idtf:[артериальная гипотония]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[hypotension]
+        (*
+                <-lang_en;;
+        *);;
+        definition ->...
+        (*
+        ->rrel_key_sc_element:hypotension;;
+        <= nrel_sc_text_translation: ...(*->rrel_example:[Артериальная гипотензия - снижение артериального давления более, чем на 20 % от исходного/обычных значений или в абсолютных цифрах — ниже 90 мм рт. ст. систолического давления или 60 мм рт. ст. среднего артериального давления. Снижение давления может быть острым и хроническим.](*<-lang_ru;;*);;*);;
+        => nrel_main_idtf: [Опр.(артериальная гипотония)](*<-lang_ru;;*);;
+*);;
+
+hypotension<-rrel_key_sc_element:...
+        (*
+
+                <-statement;;
+                =>nrel_main_idtf:[Утв.(артериальная гипотония)](*<-lang_ru;;*);;
+                <=nrel_sc_text_translation:...
+                (*
+                        ->rrel_example:[Нижние границы нормы артериального давления при хорошем самочувствии и полноценной работоспособности:
+
+100/60 мм рт.ст. у мужчин
+95/60 мм рт.ст. у женщин.](*<-lang_ru;;*);;
+                *);;
+        *);;
+        hypotension<-rrel_key_sc_element:...
+                (*
+
+                        <-statement;;
+                        =>nrel_main_idtf:[Утв.(артериальная гипотония)](*<-lang_ru;;*);;
+                        <=nrel_sc_text_translation:...
+                        (*
+                                ->rrel_example:[Артериальная гипотония в основном болеют спортсмены.](*<-lang_ru;;*);;
+                        *);;
+                *);;
+
+hypotension<=nrel_inclusion:concept_desease;;

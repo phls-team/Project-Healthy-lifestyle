@@ -1,0 +1,44 @@
+concept_berry
+<- sc_node_not_relation;;
+concept_berry=>nrel_main_idtf:[ягода]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[berry]
+        (*
+                <-lang_en;;
+        *);;
+        concept_berry<-rrel_key_sc_element:...
+                       (*
+                               <-definition;;=>nrel_main_idtf:
+[Опр.(ягода)]
+        (*
+                <-lang_ru;;
+        *);;
+
+<=nrel_sc_text_translation:...
+        (*
+                ->[Ягода-это маленький сочный или мясистый плод, обычно кустарниковых или травянистых растений, который при употреблении в пищу не требуется откусывать или разрезать.]
+(*
+<-lang_ru;;
+*);;
+
+        *);;
+*);;
+
+
+concept_berry<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Berry_Raspberry_499402.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+*);;
+*);;
+concept_berry<=nrel_inclusion:concept_product;;
+concept_berry=>nrel_inclusion:berry_raspberry;berry_strawberry;berry_bilberry;berry_blackberry;;
+

@@ -1,0 +1,49 @@
+concept_sportswear
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [sportswear](*<-lang_en;;*);
+          [спортивная одежда](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(спортивная одежда)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Спортивная одежда – это одежда, предназначенная для активного отдыха и занятий спортом.](*<- lang_ru;;*);;
+			*);;
+        	<= nrel_using_constants: {
+                concept_wear;
+                concept_active_leisure;
+                concept_playing_sports
+            };;
+		*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. 1 (О спортивной одежде)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Родиной современной спортивной одежды считается Великобритания.](*<- lang_ru;;*);;
+			*);;
+            <= nrel_using_constants: {
+                concept_modern_sportswear;
+                concept_homeland;
+                concept_Great_Britain
+            };;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://Image/sportswear.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

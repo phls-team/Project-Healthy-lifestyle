@@ -1,0 +1,41 @@
+sports_tire
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [sports tire](*<-lang_en;;*);
+          [шина](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(шина)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Спортивное оборудование, которое представляет собой автомобильную шину](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_power_sports_equipment;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(шина)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Упражнения с шиной дают возможность задействовать ряд мышц, обычно не включенных в стандартные упражнения; либо включать мышцы в работу в непривычных сочетаниях](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://sports_tire.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

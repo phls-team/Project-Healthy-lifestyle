@@ -1,0 +1,54 @@
+concept_target_archery
+<- sc_node_not_relation;;
+concept_target_archery=>nrel_main_idtf:[cтрельба из лука]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[target archery]
+        (*
+                <-lang_en;;
+        *);;
+concept_target_archery<-rrel_key_sc_element:...
+        (*
+                <-definition;;=>nrel_main_idtf:
+[Опр.(стрельба из лука)]
+        (*
+                <-lang_ru;;
+        *);;
+
+<=nrel_sc_text_translation:...
+        (*
+                ->[Стрельба из лука — вид спорта, в котором производится стрельба из лука стрелами на точность или дальность. Победителем является спортсмен или команда, которая наберёт больше очков, согласно правилам соревнований. Олимпийский вид спорта с 1900 года.]
+(*
+<-lang_ru;;
+*);;
+
+        *);;
+*);;
+concept_target_archery<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Archery_competition.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+*);;
+*);;
+
+concept_target_archery<-rrel_key_sc_element:...
+        (*
+
+                <-statement;;
+                =>nrel_main_idtf:[Утв.(Стрельба из лука)](*<-lang_ru;;*);;
+                <=nrel_sc_text_translation:...
+                (*
+                        ->rrel_example:[Стрельба из лука может проходить как и в личном зачёте,так и в командном зачёте.](*<-lang_ru;;*);;
+                *);;
+        *);;
+
+concept_target_archery<=nrel_inclusion:concept_sport;;
+concept_target_archery<=nrel_inclusion:olimpic_sport;;
+concept_target_archery<=nrel_inclusion:team_sport;;

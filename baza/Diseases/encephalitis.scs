@@ -1,0 +1,31 @@
+
+encephalitis<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+[энцефалит](*<-lang_ru;;*);
+[encephalitis](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ...(*
+<- definition;;
+=> nrel_main_idtf: [Опр.(энцефалит)](*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...(*
+-> rrel_example: [Энцефали́т — группа заболеваний, характеризующихся воспалением головного мозга](*<-lang_ru;;*);;
+*);;
+*);
+
+<- rrel_key_sc_element: ...(*
+<- statement;;
+=> nrel_main_idtf: [Утв. 1 об энцефалит](*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...(*
+-> rrel_example: [Наиболее рациональным принципом классификации инфекционных заболеваний является классификация по их причинам.](*<-lang_ru;;*);;
+*);;
+*);;
+/*
+encephalitis<- rrel_key_sc_element: ...(*
+<- illustration;;
+<=nrel_sc_text_translation: ...(*
+-> "file://encephalitis.jpg"(*=>nrel_format: format_jpg;;*);;
+*);;
+*);;
+*/
+concept_desease=>nrel_inclusion:encephalitis;;

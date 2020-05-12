@@ -1,0 +1,55 @@
+manuel_duocastella=>nrel_main_idtf:[Мануэ́ль (Мане́ль) Эстиа́рте Дуокасте́лья]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[Manuel Estiarte Duocastella]
+        (*
+                <-lang_en;;
+        *);;
+        definition ->...
+        (*
+        ->rrel_key_sc_element:manuel_duocastella;;
+        <= nrel_sc_text_translation: ...(*->rrel_example:[Мануэ́ль (Мане́ль) Эстиа́рте Дуокасте́лья-испанский ватерполист, олимпийский чемпион 1996 года и чемпион мира 1998 года. Родился  26 сентября 1961, Манреса, Барселона, Испания](*<-lang_ru;;*);;*);;
+        => nrel_main_idtf: [Опр.(Кто такой Мануэ́ль (Мане́ль) Эстиа́рте Дуокасте́лья)](*<-lang_ru;;*);;
+*);;
+manuel_duocastella<-rrel_key_sc_element:...
+        (*
+                <-definition;;=>nrel_main_idtf:
+[Definición(quien es Manuel Estiarte Duocastella)]
+        (*
+                <-lang_es;;
+        *);;
+        <=nrel_sc_text_translation:...
+                (*
+                        ->[Manel Estiarte Duocastella es un ex jugador español de waterpolo. Desde 2016 forma parte del cuerpo técnico de Josep Guardiola en el Manchester City..]
+        (*
+        <-lang_es;;
+        *);;
+                *);;
+        *);;
+
+manuel_duocastella<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://manuel-estiarte-b828cb6f-87d1-452e-915c-9f2e0d103ce-resize-750.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+*);;
+*);;
+
+manuel_duocastella<-rrel_key_sc_element:...
+        (*
+
+                <-statement;;
+                =>nrel_main_idtf:[Утв.(Мануэль Эстиарте)](*<-lang_ru;;*);;
+                <=nrel_sc_text_translation:...
+                (*
+                        ->rrel_example:[Взял серебро на Олимпийских играх 1992г. в Барселоне и золото на Олимпийских играх 1996г. в Атланте.](*<-lang_ru;;*);;
+                *);;
+        *);;
+manuel_duocastella=>nrel_play:concept_water_polo;;
+manuel_duocastella=>nrel_belonging:concept_person;;

@@ -1,0 +1,32 @@
+homosexuality
+
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+[гомосексуальность](*<-lang_ru;;*);
+[homosexuality](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(гомосексуальность)](*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        -> rrel_example: [Гомосексуа́льность (от др.-греч. ὁμός — тот же, одинаковый и лат. sexus — пол), — романтическое и сексуальное влечение и/или сексуальная поведение между представителями одного пола или гендера.](*<-lang_ru;;*);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...(*
+    <- statement;;
+    => nrel_main_idtf: [Утв. 1 о гомосексуальности](*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        -> rrel_example: [Как сексуальная ориентация, «гомосексуальность — это „устойчивый образец эмоциональных, романтических и / или сексуальных влечений“ для людей того же пола».](*<-lang_ru;;*);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...(*
+    <- illustration;;
+    <=nrel_sc_text_translation: ...(*
+        -> "file://images/homosexuality.jpg"(*=>nrel_format: format_jpg;;*);;
+    *);;
+*);;
+/*
+homosexuality -> rrel_example: ;;*/

@@ -1,0 +1,130 @@
+smetana=>nrel_main_idtf:[сметана]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[smetana]
+        (*
+                <-lang_en;;
+        *);
+nrel_main_idtf:[смятана]
+        (*
+                <-lang_b;;
+        *);;
+
+
+smetana<-rrel_key_sc_element:...
+                       (*
+                               <-definition;;=>nrel_main_idtf:
+[Опр.(сметана)]
+        (*
+                <-lang_ru;;
+        *);;
+
+<=nrel_sc_text_translation:...
+        (*
+                ->[Сметана- это густой жидкий кисломолочный продукт белого цвета, получаемый из сливок и закваски. По степени жирности варьируется от 10 до обычно 30 (реже 58) %.Сметана представляет собой сливки, подвергшиеся молочнокислому брожению. Традиционный продукт славянской и французской кухни. В новейшее время простота получения привела к широкому распространению сметаны в других странах. Продукт используется не только в гастрономии, но и в домашних косметических средствах.]
+(*
+<-lang_ru;;
+*);;
+*);;
+*);;
+smetana<-rrel_key_sc_element:...
+                       (*
+                               <-definition;;=>nrel_main_idtf:
+[Defenition.(smetana)]
+        (*
+                <-lang_en;;
+        *);;
+
+<=nrel_sc_text_translation:...
+        (*
+                ->[Smetana is a type of sour cream from Central and Eastern Europe. It is a dairy product produced by souring heavy cream. It is similar to crème fraîche (28% fat), but nowadays mainly sold with 9% to 36% milkfat content depending on the country.Its cooking properties are different from crème fraîche and the lighter sour creams sold in the US, which contain 12 to 16% butterfat. It is widely used in cooking and baking. ]
+(*
+<-lang_en;;
+*);;
+*);;
+*);;
+smetana<-rrel_key_sc_element:...
+                       (*
+                               <-definition;;=>nrel_main_idtf:
+[Вызначэнне.(смятана)]
+        (*
+                <-lang_by;;
+        *);;
+
+<=nrel_sc_text_translation:...
+        (*
+                ->[Смятана-гэта кісламалочны выраб з высокім утрыманнем тлушчу, які вырабляюць з верхняга пласта згуслага (скіслага) малака, па сутнасці ўяўляе сабой вяршкі, якія падвергліся малочнакісламу бражэнню. Пры прамысловай вытворчасці смятаны малако спачатку сепаруюць (дзеляюць на вяршкі і абястлушчанае малако), затым атрыманыя вяршкі пастэрызуюць з мэтай знішчэння шкодных мікробаў і сквашваюць, уносячы закваску з малочнакіслых мікраарганізмаў. ]
+(*
+<-lang_be;;
+*);;
+*);;
+*);;
+
+smetana<=nrel_inclusion:concept_product;;
+smetana<=nrel_rodina:Russia;Belarus;Ukraine;;
+smetana=>nrel_inclusion:macroelement_phosphorus_P;macroelement_calcium_Ca;macroelement_kalium_K;fats;concept_protein_product;concept_carbohydrate_product;;
+
+
+smetana<-rrel_key_sc_element:...
+        (*
+
+                <-statement;;
+                =>nrel_main_idtf:[Утв.(сметана)](*<-lang_ru;;*);;
+                <=nrel_sc_text_translation:...
+                (*
+                        ->rrel_example:[Сметану считают одним из наиболее характерных русских, украинских и белорусских национальных продуктов.](*<-lang_ru;;*);;
+                *);;
+        *);;
+
+smetana<-rrel_key_sc_element:...
+        (*
+
+                <-statement;;
+                =>nrel_main_idtf:[Утв.(сметана)](*<-lang_ru;;*);;
+                <=nrel_sc_text_translation:...
+                (*
+                        ->rrel_example:[Сметана является популярным соусом к первым блюдам(щам, борщу, солянке, окрошке, рассольнику, супу-лапше, другим супам), к блинам, оладьям и сырникам, к пельменям и вареникам, к голубцам и фаршированному перцу.](*<-lang_ru;;*);;
+                *);;
+        *);;
+
+smetana<-rrel_key_sc_element:...
+        (*
+
+                <-statement;;
+                =>nrel_main_idtf:[Утв.(сметана)](*<-lang_ru;;*);;
+                <=nrel_sc_text_translation:...
+                (*
+                        ->rrel_example:[Сметана содержит витамины E, A, B12, B2, С, PP, а также макро- и микроэлементы, органические кислоты - калий, юиотин, лицетин, фосфор, цинк, кальций. Также присутствуют сахара, животные белки, углеводы и жиры. ](*<-lang_ru;;*);;
+                *);;
+        *);;
+
+smetana<-rrel_key_sc_element:...
+        (*
+
+                <-statement;;
+                =>nrel_main_idtf:[Утв.(сметана)](*<-lang_ru;;*);;
+                <=nrel_sc_text_translation:...
+                (*
+                        ->rrel_example:[
+    Улучшает работу ЖКТ, нормализует аппетит и помогает усваивать пищу.
+    Способствует очищению кишечника
+    Как наружное срдество помогает при солнечных ожогах
+    Стимулирует физическую и умственную деятельность. Из-за высокого содержания жира она нередко применяется при малокровии и истощении организма.
+    Приводит в норму гормональную систему.
+](*<-lang_ru;;*);;
+                *);;
+        *);;
+
+smetana<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://Borscht_served.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;

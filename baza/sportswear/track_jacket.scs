@@ -1,0 +1,41 @@
+concept_track_jacket
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [track_jacket](*<-lang_en;;*);
+          [олимпийка](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(олимпийка)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Олимпийка - Легкая спортивная куртка с застежкой-молнией, длинными рукавами, манжетами на резинке и воротником-стойкой](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_sportswear;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. 1 (Об олимпийке)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Для производства олимпиек используются обычно синтетические ткани нейлон, эластан и полиэстер.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://Image/track_jacket.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

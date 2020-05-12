@@ -1,0 +1,64 @@
+concept_mineral_nutrient
+<-sc_node_not_relation;;
+
+concept_mineral_nutrient=>nrel_main_idtf:[биогенные элементы]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[Mineral nutrient]
+        (*
+                <-lang_en;;
+        *);
+nrel_idtf:[биологически значимые элементы]
+        (*
+                <-lang_ru;;
+        *);;
+
+
+concept_mineral_nutrient<-rrel_key_sc_element:...
+        (*
+                <-definition;;=>nrel_main_idtf:
+[Опр.(биогенные элементы)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+                ->[ Биогенные элементы - это химические элементы, необходимые живым организмам для обеспечения нормальной жизнедеятельности.]
+(*
+<-lang_ru;;
+*);;
+
+        *);;
+*);;
+
+concept_mineral_nutrient<-rrel_key_sc_element:...
+        (*
+                <-definition;;=>nrel_main_idtf:
+[Опр.(биогенные элементы)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+                ->[ Биогенные элементы- это химические элементы, постоянно входящие в состав организмов и выполняющие жизненно необходимые биологические функции (кислород, углерод, фосфор, азот и др.)]
+(*
+<-lang_ru;;
+*);;
+
+        *);;
+*);;
+
+concept_mineral_nutrient<-rrel_key_sc_element:...
+        (*
+
+                <-statement;;
+                =>nrel_main_idtf:[Утв.(биогенные элементы)](*<-lang_ru;;*);;
+                <=nrel_sc_text_translation:...
+                (*
+                        ->rrel_example:[Биогенными являються все элементы, постоянно присутствующие в живых организмах и играющие какую-либо биологическую роль.](*<-lang_ru;;*);;
+                *);;
+        *);;
+concept_mineral_nutrient=>nrel_inclusion:concept_macroelement;concept_microelement;;
+concept_mineral_nutrient->rrel_example:microelement_iodum_I;macroelement_kalium_K;;
+

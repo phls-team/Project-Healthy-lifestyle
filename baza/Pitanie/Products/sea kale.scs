@@ -1,0 +1,69 @@
+concept_sea_kale => nrel_main_idtf: [морская капуста](*<- lang_ru;;*);
+ => nrel_main_idtf: [sea kale](*<- lang_en;;*);
+
+ =>nrel_calorie_content:43;;
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_sea_kale ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Морская капуста хорошо чистит кишечник и активизирует метаболизм. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(морская капуста)](*<- lang_ru;;*);;
+   
+*);;
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_sea_kale ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [При регулярном употреблении морской капусты выраженно улучшаются показатели крови, нормализуется менструальный цикл у женщин, снижается вероятность образования тромбов. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(морская капуста)](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_sea_kale;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Морскую капусту применяют как эффективное средства избавления от ангины, и как хорошее средство для укрепления иммунитета, который, как известно, стоит на защите нашего организма от простуды и инфекций.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(морская капуста )](*<- lang_ru;;*);;
+
+            
+        *);;
+
+
+concept_sea_kale<-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(морская капуста)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://sea_kale.jpg"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+
+
+concept_product=>nrel_inclusion:concept_sea_kale;;
+concept_sea_kale=> nrel_vitamin_B3_content:0.5mg_per_100g;
+=> nrel_vitamin_B9_content:0.18mg_per_100g;
+=> nrel_vitamin_C_content:3mg_per_100g;
+=> nrel_vitamin_B4_content:12.8mg_per_100g;
+=> nrel_vitamin_E_content:0.9mg_per_100g;
+=> nrel_vitamin_B2_content:0.2mg_per_100g;
+=> nrel_vitamin_B5_content:0.6mg_per_100g;;

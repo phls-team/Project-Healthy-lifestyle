@@ -1,0 +1,41 @@
+climber
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [climber](*<-lang_en;;*);
+          [климбер](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(климбер)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Тренажёр, который представляет собой лестницу-тренажёр с имитацией подъема по ней](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_cardiotraining_apparatus;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(климбер)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Упражнения на климбере не только повышается выносливость, но и натренируются почти все группы мышц](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://climber.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

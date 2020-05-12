@@ -1,0 +1,41 @@
+concept_polo_shirt
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [polo_shirt](*<-lang_en;;*);
+          [рубашка поло](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(рубашка поло)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Рубашка поло - трикотажный предмет одежды, имеющий короткую застёжку со стояче-отложным воротником и коротким рукавом.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_sportswear;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. 1 (О рубашке поло)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Является повседневной и спортивной одеждой, например, для игры в теннис или гольф.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://Image/Polo_shirt.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

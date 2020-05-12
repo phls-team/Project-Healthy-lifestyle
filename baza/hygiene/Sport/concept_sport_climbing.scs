@@ -1,0 +1,85 @@
+concept_sport_climbing
+<- sc_node_not_relation;;
+concept_sport_climbing=>nrel_main_idtf:[спортивное скалолазанье]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[sport climbing]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_sport_climbing<-rrel_key_sc_element:...
+        (*
+                <-definition;;=>nrel_main_idtf:
+[Опр.(спортивное скалолазанье)]
+        (*
+                <-lang_ru;;
+        *);;
+
+<=nrel_sc_text_translation:...
+        (*
+                ->[спортивное скалолазанье — разновидность скалолазания, суть которого состоит в организации и проведении соревнований по определённым правилам. Современные международные правила проведения соревнований по спортивному скалолазанию предполагают проведение соревнований по дисциплинам:
+
+лазание на трудность
+лазание на скорость
+боулдеринг
+многоборье.]
+(*
+<-lang_ru;;
+*);;
+
+        *);;
+*);;
+
+
+concept_sport_climbing<-rrel_key_sc_element:...
+        (*
+                <-definition;;=>nrel_main_idtf:
+[Definition.(sport climbing)]
+        (*
+                <-lang_en;;
+        *);;
+
+<=nrel_sc_text_translation:...
+        (*
+                ->[sport climbing is a form of rock climbing that relies on permanent anchors fixed to the rock for protection, in which a rope that is attached to the climber is clipped into the anchors to arrest a fall. This is in contrast to traditional climbing where climbers must place removable protection as they climb. Sport climbing usually involves lead climbing techniques, but free solo and deep-water solo (no protection) climbing on sport routes is also sometimes possible.
+
+Sport climbing emphasises strength, endurance, gymnastic ability and technique. ]
+(*
+<-lang_en;;
+*);;
+
+        *);;
+*);;
+
+
+concept_sport_climbing<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Sport_Climbing.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+*);;
+*);;
+
+concept_ice_climbing<-rrel_key_sc_element:...
+        (*
+
+                <-statement;;
+                =>nrel_main_idtf:[Утв.(ледолазанье)](*<-lang_ru;;*);;
+                <=nrel_sc_text_translation:...
+                (*
+                        ->rrel_example:[Являеться разновидностью скалолазанья.](*<-lang_ru;;*);;
+                *);;
+        *);;
+
+
+concept_sport_climbing<=nrel_inclusion:concept_sport;;
+concept_sport_climbing<=nrel_inclusion:winter_sport;;
+concept_sport_climbing=>nrel_species:concept_rock_climbing;;
+concept_sport_climbing=>nrel_species:concept_mountaineering;;

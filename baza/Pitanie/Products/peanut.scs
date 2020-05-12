@@ -1,0 +1,79 @@
+
+concept_peanut => nrel_main_idtf: [арахис](*<- lang_ru;;*);;
+concept_peanut => nrel_main_idtf: [peanut ](*<- lang_en;;*);;
+
+concept_peanut =>nrel_calorie_content:567;;
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_peanut ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Арахис снижает риск развития болезней сердца. Ценные жиры снижают уровень вредного холестерина, улучшают состояние сосудов, предотвращают развитие инфаркта.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(арахис)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            
+            -> concept_disease;;
+        *);;
+*);;
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_peanut ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Большое количество железа в арахисе дает все основания для введения его в свой рацион людям с пониженным гемоглобином.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.2(арахис)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            -> concept_hemoglobin;;
+            
+        *);;
+*);;
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_peanut ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [С помощью арахиса восполняются запасы триптофана в организме, «отвечающего» за качество сна и выработку гормона радости и счастья серотонина.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.3(арахис)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            -> concept_sleep;;
+        *);;
+*);;
+
+concept_peanut <-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(арахис)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://peanut.png"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);;
+
+nuts=>nrel_inclusion:concept_peanut;;
+concept_peanut=> nrel_vitamin_B1_content:0.6mg_per_100g;;
+concept_peanut=> nrel_vitamin_B4_content:52.5mg_per_100g;;
+concept_peanut=> nrel_vitamin_B3_content:12.1mg_per_100g;;
+concept_peanut=> nrel_vitamin_E_content:8.3mg_per_100g;;
+concept_peanut=> nrel_vitamin_B5_content:1.8mg_per_100g;;
+concept_peanut=>nrel_vitamin_B6_content:0.35mg_per_100g;;

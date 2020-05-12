@@ -1,0 +1,31 @@
+
+tuberculosis<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+[туберкулез](*<-lang_ru;;*);
+[tuberculosis](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ...(*
+<- definition;;
+=> nrel_main_idtf: [Опр.(туберкулез)](*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...(*
+-> rrel_example: [Туберкулёз — широко распространённое в мире инфекционное заболевание человека и животных, вызываемое различными видами микобактерий из группы Mycobacterium tuberculosis complex (M. tuberculosis и другими близкородственными видами) или иначе палочками Коха.](*<-lang_ru;;*);;
+*);;
+*);
+
+<- rrel_key_sc_element: ...(*
+<- statement;;
+=> nrel_main_idtf: [Утв. 1 о туберкулезе](*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...(*
+-> rrel_example: [Для человека заболевание является социально зависимым. До XX века туберкулёз был практически неизлечим. В настоящее время разработана комплексная программа, позволяющая выявить и вылечить заболевание на ранних стадиях его развития.](*<-lang_ru;;*);;
+*);;
+*);;
+
+tuberculosis<- rrel_key_sc_element: ...(*
+<- illustration;;
+<=nrel_sc_text_translation: ...(*
+-> "file://tuberculosis.jpg"(*=>nrel_format: format_jpg;;*);;
+*);;
+*);;
+
+concept_desease=>nrel_inclusion:tuberculosis;;

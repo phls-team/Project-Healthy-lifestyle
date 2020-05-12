@@ -1,0 +1,31 @@
+
+dementia<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+[деменция](*<-lang_ru;;*);
+[dementia](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ...(*
+<- definition;;
+=> nrel_main_idtf: [Опр.(деменция)](*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...(*
+-> rrel_example: [Деме́нция — приобретённое слабоумие, стойкое снижение познавательной деятельности с утратой в той или иной степени ранее усвоенных знаний и практических навыков и затруднением или невозможностью приобретения новых.](*<-lang_ru;;*);;
+*);;
+*);
+
+<- rrel_key_sc_element: ...(*
+<- statement;;
+=> nrel_main_idtf: [Утв. 1 о деменции](*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...(*
+-> rrel_example: [В отличие от умственной отсталости (олигофрении), слабоумия врождённого или приобретённого в младенчестве, представляющей собой недоразвитие психики, деменция — распад психических функций, происходящий в результате поражений мозга.](*<-lang_ru;;*);;
+*);;
+*);;
+/*
+dementia<- rrel_key_sc_element: ...(*
+<- illustration;;
+<=nrel_sc_text_translation: ...(*
+-> "file://glaucoma.jpg"(*=>nrel_format: format_jpg;;*);;
+*);;
+*);;
+*/
+concept_desease=>nrel_inclusion:dementia;;

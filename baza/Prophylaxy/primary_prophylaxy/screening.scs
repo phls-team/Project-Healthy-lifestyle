@@ -1,0 +1,47 @@
+concept_screening<-sc_node_not_relation;;
+
+concept_screening => nrel_main_idtf: [скрининг](*<- lang_ru;;*);;
+concept_screening => nrel_main_idtf: [screening](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_screening;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Скрининг - метод активного выявления лиц с какой либо патологией или факторами риска ее развития.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Скрининг)](*<- lang_ru;;*);;
+    => nrel_using_constants:concept_method;;
+
+*);;
+
+
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_screening;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Результаты скрининга используют также для изучения распространенности заболевания.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(скрининг)](*<- lang_ru;;*);;
+    => nrel_using_constants:concept_disease;;
+*);;
+
+
+
+concept_screening<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://photo/screening.png"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;
+

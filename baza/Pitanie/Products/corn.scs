@@ -1,0 +1,78 @@
+
+concept_corn => nrel_main_idtf: [кукуруза](*<- lang_ru;;*);;
+concept_corn => nrel_main_idtf: [corn](*<- lang_en;;*);;
+concept_corn=>nrel_calorie_content:96;;
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_corn;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Регулярное употребление кукурузы снижает риск развития сердечно-сосудистых заболеваний, диабета 2 типа и ожирения.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(кукуруза)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            
+            -> concept_diabetes;;
+        *);;
+*);;
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_corn;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Употребление кукурузы позволяет быстро избавляться от лишнего веса](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.2(кукуруза)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            -> concept_overweight;;
+        *);;
+*);;
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_corn;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [В кукурузе содержатся каротиноиды лютеин и зеаксантин, которые обеспечивают здоровье глаз.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.3(кукуруза)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+          
+            -> concept_eyes;;
+        *);;
+*);;
+
+concept_corn <-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(кукуруза)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://corn.jpg"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+concept_product=>nrel_inclusion:concept_corn;;
+concept_corn=> nrel_vitamin_C_content:5.5mg_per_100g;;
+concept_corn=> nrel_vitamin_B9_content:0.023mg_per_100g;;
+concept_corn=> nrel_vitamin_B3_content:1.7mg_per_100g;;
+concept_corn=> nrel_vitamin_B4_content:29.1mg_per_100g;;
+concept_corn=> nrel_vitamin_A_content:0.01mg_per_100g;;
+concept_corn=> nrel_vitamin_B5_content:0.8mg_per_100g;;

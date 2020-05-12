@@ -1,0 +1,93 @@
+concept_rugby
+<- sc_node_not_relation;;
+concept_rugby=>nrel_main_idtf:[регби]
+	(*
+		<-lang_ru;;
+	*);
+nrel_main_idtf:[rugby]
+	(*
+		<-lang_en;;
+	*);;
+
+concept_rugby<-rrel_key_sc_element:...
+	(*
+		<-definition;;=>nrel_main_idtf:
+[Опр.(регби)] 
+	(* 
+		<-lang_ru;;
+	*);;
+	
+<=nrel_sc_text_translation:...
+	(*
+		->[спортивная командная игра с овальным мячом, который игроки каждой команды, передавая друг другу руками и ногами, причем пас руками осуществляется только назад, стараются приземлить в зачётном поле за воротами соперника или забить его в Н-образные ворота (выше перекладины).]
+(* 
+<-lang_ru;; 
+*);;
+	
+	*);;
+*);;
+
+concept_rugby<-rrel_key_sc_element:...
+	(*
+		<-definition;;=>nrel_main_idtf:
+[Definition.(rugby)] 
+	(* 
+		<-lang_ru;;
+	*);;
+	
+<=nrel_sc_text_translation:...
+	(*
+                ->[rugby is a sport played between two teams that try to score points by advancing a ball past the opposing team's goal line or by kicking the ball through a pair of uprights on the opponent's goal line. Players can run with the ball, kick it or pass it backward or sideways to a teammate. Opposing players try to tackle the player who has the ball or gain possession of the ball.]
+(* 
+<-lang_en;; 
+*);;
+	
+	*);;
+*);;
+concept_rugby<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://regbi2.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;
+
+concept_rugby<-rrel_key_sc_element:...
+	(*
+		
+		<-statement;;
+                =>nrel_main_idtf:[Утв.(Правила регби)](*<-lang_ru;;*);;
+		<=nrel_sc_text_translation:...
+		(*
+			->rrel_example:[В регби играет по 15 человек в команде, 8 из которых являются нападающими и участвуют в розыгрышах схваток и аутов ( коридоров), игроков с 9 - 15 номер называют игроками веера или трехчетвертными.Цель игры - набрать больше очков, чем соперник.
+Наибольшее количество очков - 5 дается за попытку, занос мяча на или за линии зачетного поля соперника. Необходимо именно приземлить мяч, не потеряв над ним контроль. В случае, если в момент приземления мяч выпадает из рук, он переходит другой команде.
+
+За точные удары по воротам после попытки ( мяч относится на любое расстояние назад , параллельно точке приземления ) дается 2 очка.
+
+Если быть по воротам со штрафного - дается 3 очка, также можно исполнить дроп-гол - удар по мячу в ворота, после отскока от земли. Удары исполняются со специальной подставки.](*<-lang_ru;;*);;
+		*);;
+	*);;
+concept_rugby<-rrel_key_sc_element:...
+	(*
+		
+		<-statement;;
+                =>nrel_main_idtf:[Statement.(Rugby rules)](*<-lang_en;;*);;
+		<=nrel_sc_text_translation:...
+		(*
+			->rrel_example:[Each rugby team will consist of 15 players. The team is split into two groups known as forwards and backs. There are 8 forwards (positions include Hooker, Prop, Second Row, Flanker and Number Eight) and 7 backs (positions include Scrum Half, Fly Half, Inside Centre, Outside Centre, Wingers and a Full Back).
+
+The pitch is split up into three sections; one main playing area which must not exceed 100 metres and two dead goal areas which can range from 10 to 20 m. The pitch must then be equal to 70 metres wide. The goal posts are in an ‘H’ shape and are roughly 5 to 6 meters apart with no restrictions on height.
+
+Studded boots can be worn along with gum shields, head guards, shoulder pads and shin pads. Each team must wear the same coloured jerseys with matching shorts and socks.](*<-lang_en;;*);;
+		*);;
+	*);;
+concept_rugby<=nrel_inclusion:team_sport;;
+concept_rugby<=nrel_inclusion:concept_sport;;
+concept_rugby=>nrel_rodina:Great_Britain;;
+concept_rugby<=nrel_inclusion:olimpic_sport;;
+concept_rugby<=nrel_inclusion:summer_sport;;

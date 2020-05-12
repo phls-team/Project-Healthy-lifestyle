@@ -1,0 +1,78 @@
+concept_celery => nrel_main_idtf: [сельдерей](*<- lang_ru;;*);;
+concept_celery => nrel_main_idtf: [celery](*<- lang_en;;*);;
+
+concept_celery  =>nrel_calorie_content:16;;
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_celery ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Сельдерей помогает выводить лишнюю воду, попутно снимая любые отёки и предотвращая артрит, подагру и ревматизм, а также ряд серьёзных заболеваний почек](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(сельдерей)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            
+            -> concept_disease;;
+        *);;
+*);;
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_celery ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Сельдерей укрепляет стенки сосудов, делает их более эластичными и подвижными, что в свою очередь приводит к нормализации кровяного давления (со временем)](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.2(сельдерей)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            -> concept_vessels;;
+        *);;
+*);;
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_celery ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Сельдерей содержит эфирные масла, которые могут спровоцировать возникновение аллергических реакций.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.3(сельдерей)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            -> concept_allergy;;
+        *);;
+*);;
+concept_celery<-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(сельдерей)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://celery.jpg"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+
+
+concept_product=>nrel_inclusion:concept_celery;;
+concept_celery=> nrel_vitamin_B2_content:0.1mg_per_100g;;
+concept_celery=> nrel_vitamin_B9_content:36mg_per_100g;;
+concept_celery=> nrel_vitamin_C_content:3.1mg_per_100g;;
+concept_celery=> nrel_vitamin_K_content:29.3mg_per_100g;;
+concept_celery=> nrel_vitamin_A_content:22mg_per_100g;;
+concept_celery=> nrel_vitamin_B4_content:6.1mg_per_100g;;

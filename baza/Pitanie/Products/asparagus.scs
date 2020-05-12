@@ -1,0 +1,70 @@
+concept_asparagus => nrel_main_idtf: [спаржа](*<- lang_ru;;*);
+ => nrel_main_idtf: [asparagus](*<- lang_en;;*);
+
+ =>nrel_calorie_content:22;;
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_asparagus ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Высокая щелочность спаржи позволяет очень эффективно снижать кислотность крови и способствует очищению тканей и мышц от отходов.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(спаржа)](*<- lang_ru;;*);;
+   
+*);;
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_asparagus ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Спаржа содержит множество аминокислот – аспарагинов, которые помогают очистить организм от различных отходов. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.2(спаржа)](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_asparagus;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Мочегонное действие спаржи и сока из спаржи помогает облегчить предменструальный отек и вздутие живота.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.3(спаржа)](*<- lang_ru;;*);;
+
+            
+        *);;
+
+
+concept_asparagus <-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(спаржа)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://asparagus.jpg"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+
+
+concept_product=>nrel_inclusion:concept_asparagus;;
+concept_asparagus
+=> nrel_vitamin_B3_content:1.1mg_per_100g;
+=> nrel_vitamin_B6_content:0.1mg_per_100g;
+=> nrel_vitamin_C_content:7.7mg_per_100g;
+=> nrel_vitamin_B4_content:26.1mg_per_100g;
+=> nrel_vitamin_E_content:1.5mg_per_100g;
+=> nrel_vitamin_B2_content:0.1mg_per_100g;
+=> nrel_vitamin_B5_content:0.2mg_per_100g;;

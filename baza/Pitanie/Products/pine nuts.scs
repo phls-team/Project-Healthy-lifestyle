@@ -1,0 +1,69 @@
+concept_pine_nuts => nrel_main_idtf: [кедровые орехи](*<- lang_ru;;*);
+ => nrel_main_idtf: [pine nuts](*<- lang_en;;*);
+
+ =>nrel_calorie_content:673;;
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_pine_nuts ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Олеиновая кислота в кедровых орехах помогает печени удалять триглицериды из организма.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(кедровые орехи)](*<- lang_ru;;*);;
+   
+*);;
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_pine_nuts ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Кедровые орехи являются поставщиками высококачественного белка растительного происхождения, который быстро и практически полностью усваивается организмом. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.2(кедровые орехи)](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_pine_nuts;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Кедровые орехи содержат большое количество антиоксидантов, которые борятся со свободными радикалами, поддерживает обмен веществ, уничтожают вредоносные бактерии.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.3(кедровые орехи )](*<- lang_ru;;*);;
+
+            
+        *);;
+
+
+concept_pine_nuts <-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(кедровые орехи)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://pine_nuts.png"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);;
+
+
+
+nuts=>nrel_inclusion:concept_pine_nuts;;
+concept_pine_nuts=> nrel_vitamin_B3_content:4.4mg_per_100g;
+=> nrel_vitamin_B6_content:0.1mg_per_100g;
+=> nrel_vitamin_C_content:0.8mg_per_100g;
+=> nrel_vitamin_B4_content:55.8mg_per_100g;
+=> nrel_vitamin_E_content:9.3mg_per_100g;
+=> nrel_vitamin_B2_content:0.2mg_per_100g;
+=> nrel_vitamin_B5_content:0.3mg_per_100g;;

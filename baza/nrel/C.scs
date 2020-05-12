@@ -1,0 +1,12 @@
+nrel_vitamin_C_content 
+<-sc_node_norole_relation;
+=> nrel_main_idtf:
+          [содержание витамина C*]
+          (*<-lang_ru;;*);
+	  [vitamin C content*]
+          (*<-lang_en;;*);;
+parameter -> arity;;
+arity -> binary_relation;;
+binary_relation -> nrel_vitamin_C_content;;
+binary_relation => nrel_measurement: 2;;
+number -> 2;;

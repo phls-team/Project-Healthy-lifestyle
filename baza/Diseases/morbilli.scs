@@ -1,0 +1,31 @@
+
+morbilli<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+[корь](*<-lang_ru;;*);
+[morbilli](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ...(*
+<- definition;;
+=> nrel_main_idtf: [Опр.(корь)](*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...(*
+-> rrel_example: [Корь — острое инфекционное вирусное заболевание с очень высоким уровнем заразности, которое характеризуется высокой температурой (до 40,5 °C), воспалением слизистых оболочек полости рта и верхних дыхательных путей, конъюнктивитом и характерной пятнисто-папулёзной сыпью кожных покровов, общей интоксикацией.](*<-lang_ru;;*);;
+*);;
+*);
+
+<- rrel_key_sc_element: ...(*
+<- statement;;
+=> nrel_main_idtf: [Утв. 1 о кори](*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...(*
+-> rrel_example: [По оценкам Всемирной организации здравоохранения, в 2017 году в мире от кори погибло около 110 тысяч человек, 92 тысячи из них — дети в возрасте до пяти лет.](*<-lang_ru;;*);;
+*);;
+*);;
+
+morbilli<- rrel_key_sc_element: ...(*
+<- illustration;;
+<=nrel_sc_text_translation: ...(*
+-> "file://morbilli.png"(*=>nrel_format: format_png;;*);;
+*);;
+*);;
+
+concept_desease=>nrel_inclusion:morbilli;;

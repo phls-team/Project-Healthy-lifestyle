@@ -1,0 +1,30 @@
+astigmatism<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+[астигматизм](*<-lang_ru;;*);
+[astigmatism](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ...(*
+<- definition;;
+=> nrel_main_idtf: [Опр.(астигматизм)](*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...(*
+-> rrel_example: [Астигмати́зм — дефект зрения, связанный с нарушением формы хрусталика, роговицы или глаза, в результате чего человек теряет способность к чёткому видению. Оптическими линзами сферической формы дефект компенсируется не полностью. Если астигматизм не лечить, он может привести к амблиопии и резкому падению зрения. Без коррекции астигматизм может вызвать головные боли и резь в глазах.](*<-lang_ru;;*);;
+*);;
+*);
+
+<- rrel_key_sc_element: ...(*
+<- statement;;
+=> nrel_main_idtf: [Утв. 1 об астигматизме](*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...(*
+-> rrel_example: [Астигматизм легко диагностировать, рассматривая одним глазом лист бумаги с тёмными параллельными линиями — вращая такой лист, астигматик заметит, что тёмные линии то размываются, то становятся чётче. ](*<-lang_ru;;*);;
+*);;
+*);;
+
+astigmatism<- rrel_key_sc_element: ...(*
+<- illustration;;
+<=nrel_sc_text_translation: ...(*
+-> "file://astigmatism.jpg"(*=>nrel_format: format_jpg;;*);;
+*);;
+*);;
+
+concept_desease=>nrel_inclusion:astigmatism;;

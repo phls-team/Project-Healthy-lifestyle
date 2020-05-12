@@ -1,0 +1,33 @@
+concept_occupational_health<-sc_node_not_relation;;
+
+concept_occupational_health => nrel_main_idtf: [гигиена труда](*<- lang_ru;;*);;
+concept_occupational_health => nrel_main_idtf: [occupational_health](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_occupational_health;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Гигиена труда - наука, изучающая воздействие трудовой деятельности и окружающей производственной среды на организм работающих с целью разработки санитарно-гигиенических нормативов и практических мероприятий, направленных на создание наиболее благоприятных условий труда и обеспечение высокого уровня состояния здоровья и трудоспособности коллектива.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Гигиена труда)](*<- lang_ru;;*);;
+    => nrel_using_constants:concept_organism;concept_health_level;;
+*);;
+
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_occupational_health;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Гигиена труда является основой для изучения организации труда и практической деятельности в области санитарной охраны труда.](*<- lang_ru;;*);;
+            => nrel_using_constants:concept_physical_exercises;concept_disease;;
+
+        *);;
+    => nrel_main_idtf: [Утв.(гигиена труда)](*<- lang_ru;;*);;
+*);;
+
+
+

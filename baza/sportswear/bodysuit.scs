@@ -1,0 +1,41 @@
+concept_bodysuit
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [bodysuit](*<-lang_en;;*);
+          [боди](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(боди)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Боди — вид обтягивающей нижней одежды, закрывающей верхнюю часть туловища, похож на купальник или комбинацию майки и трусиков.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_sportswear;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. 1 (О боди)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Боди может иметь короткие либо длинные рукава, воротник-стойка может присутствовать или отсутствовать.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://Image/bodysuit.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

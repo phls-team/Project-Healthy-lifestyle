@@ -1,0 +1,60 @@
+concept_drug_therapy<-sc_node_not_relation;;
+
+concept_drug_therapy => nrel_main_idtf: [медикаментозная терапия](*<- lang_ru;;*);;
+concept_drug_therapy => nrel_main_idtf: [drug_therapy](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_drug_therapy;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Медикаментозная терапия - это вид лечения с применением лекарственных средств в форме таблеток, инъекций и т.д.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Медикаментозная терапия)](*<- lang_ru;;*);;
+    => nrel_using_constants: nrel_healing;;
+
+*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_drug_therapy;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Медикаментозной терапией также называется раздел фармакологии, изучающий терапию лекарственными препаратами. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(медикаментозная терапия)](*<- lang_ru;;*);;
+    => nrel_using_constants:concept_pharmacology;;
+*);;
+
+
+concept_pharmacology=>nrel_inclusion:concept_drug_therapy;;
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_drug_therapy;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Врач, назначая медикаментозную терапию,учитывает имеющиеся данные о соотношении польза/вред для каждого препарата.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(медикаментозная терапия,препарат)](*<- lang_ru;;*);;
+    => nrel_using_constants:concept_medicine;;
+*);;
+
+
+concept_drug_therapy->rrel_example:[Медикаментозная терапия включает cимптоматическую терапию , иммунотерапию,патогенетическую терапию.](*<- lang_ru;;*);;
+
+concept_drug_therapy<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://photo/drug_therapy.png"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;
