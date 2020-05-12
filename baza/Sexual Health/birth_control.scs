@@ -1,0 +1,32 @@
+birth_control
+
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+[контрацепция](*<-lang_ru;;*);
+[birth Control](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(контрацепция)](*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        -> rrel_example: [Контраце́пция (от новолат. contraceptio — исключение) — предотвращение беременности и заражения от болезней механическими (презервативы, шеечные колпачки и другое), химическими (например, влагалищные шарики, грамицидиновая паста) и другими противозачаточными средствами и способами.](*<-lang_ru;;*);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...(*
+    <- statement;;
+    => nrel_main_idtf: [Утв. 1 о контрацепции](*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        -> rrel_example: [Для оценки эффективности метода контрацепции служит индекс Перля.](*<-lang_ru;;*);;
+    *);;
+*);;
+/*
+<- rrel_key_sc_element: ...(*
+    <- illustration;;
+    <=nrel_sc_text_translation: ...(*
+        -> "file://birth_control.jpg"(*=>nrel_format: format_jpg;;*);;
+    *);;
+*);;
+*/
+birth_control -> rrel_example: condom;;

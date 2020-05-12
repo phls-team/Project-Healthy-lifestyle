@@ -1,0 +1,91 @@
+149kcal_per_100g=> nrel_main_idtf: [149 ккал на 100 г](*<- lang_ru;;*);;
+concept_garlic=> nrel_main_idtf: [чеснок](*<- lang_ru;;*);
+=> nrel_main_idtf: [garlic](*<- lang_en;;*);
+
+  =>nrel_calorie_content:149kcal_per_100g;
+=> nrel_vitamin_E_content:0.1mg_per_100g;
+=> nrel_vitamin_C_content:31.2mg_per_100g;
+=> nrel_vitamin_B1_content:0.2mg_per_100g;
+=> nrel_vitamin_B2_content:0.1mg_per_100g;
+=> nrel_vitamin_B3_content:0.7mg_per_100g;
+=> nrel_vitamin_B4_content:23.2mg_per_100g;
+=> nrel_vitamin_B5_content:0.6mg_per_100g;
+=> nrel_vitamin_B6_content:1.2mg_per_100g;
+
+=> nrel_Ca_content:181mg_per_100g;
+=> nrel_Fe_content:1.7mg_per_100g;
+=> nrel_Mg_content:25mg_per_100g;
+=> nrel_P_content:153mg_per_100g;
+=> nrel_K_content:401mg_per_100g;
+=> nrel_Na_content:17mg_per_100g;
+=> nrel_Zn_content:1.2mg_per_100g;
+=> nrel_Cu_content:0.3mg_per_100g;
+=> nrel_Mn_content:1.7mg_per_100g;
+
+
+=> nrel_carbohydrates_content:33.06g_per_100g;
+=> nrel_fats_content:0.5g_per_100g;
+=> nrel_protein_content:6.36g_per_100g;
+    
+
+ <- rrel_key_sc_element:...
+(*
+  <-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Чеснок снижает уровень сахара в крови, помогает при повышенном давлении, сводит к минимуму риск образования тромбов, является прекрасной профилактикой инфарктов и инсультов. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(чеснок)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+            
+           -> insult;;
+        *);;
+*);
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+   
+        (*
+            -> [Аллицин, который входит в состав чеснока, блокирует образование ферментов, способствующих попаданию вирусов в организм.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.2(чеснок)](*<- lang_ru;;*);;
+  
+*);
+
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Положительное влияние оказывает чеснок на выработку мужского гормона – тестостерона.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.3(чеснок)](*<- lang_ru;;*);;
+  
+
+*);
+ <-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(чеснок)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://garlic.jpg"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+
+<=nrel_inclusion:concept_product;;
+

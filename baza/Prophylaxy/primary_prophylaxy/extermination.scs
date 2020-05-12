@@ -1,0 +1,49 @@
+concept_extermination<-sc_node_not_relation;;
+
+concept_extermination => nrel_main_idtf: [дезинcекция](*<- lang_ru;;*);;
+concept_extermination => nrel_main_idtf: [extermination](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_extermination;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Дезинcекция — комплекс процедур, нацеленных на создание неблагоприятных условий для появления, развития и размножения на объекте насекомых и клещей.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Дезинcекция)](*<- lang_ru;;*);;
+   
+*);;
+
+
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_extermination;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Относится к распространенным видам обеззараживания, которые нацелены на уничтожение разнообразных насекомых, как правило, зараженных.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(дезинcекция)](*<- lang_ru;;*);;
+ 
+*);;
+
+
+
+concept_extermination->rrel_example:[Очаговая дезинсекция проводится в местах вспышки острых инфекционных заболеваний, переносчиками которых являются членистоногие.](*<- lang_ru;;*);;
+
+
+concept_extermination<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://photo/extermination.png"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;
+

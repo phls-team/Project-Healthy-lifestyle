@@ -1,0 +1,41 @@
+concept_kimono
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [kimono](*<-lang_en;;*);
+          [кимоно](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(Кимоно)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Кимоно - это национальная японская одежда, для занятий единоборствами](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_sportswear;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. 1 (О кимоно)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Куртка в традиционном кимоно шьётся распашной](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://Image/kimono.png"
+			(*
+				=> nrel_format : format_png ;;
+			*);;
+		*);;
+	*);;

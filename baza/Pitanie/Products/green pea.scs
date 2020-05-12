@@ -1,0 +1,107 @@
+81kcal_per_100g=> nrel_main_idtf: [81 ккал на 100 г](*<- lang_ru;;*);;
+0.4mg_per_100g=> nrel_main_idtf: [0.4 мг на 100 г](*<- lang_ru;;*);;
+33mg_per_100g=> nrel_main_idtf: [33 мг на 100 г](*<- lang_ru;;*);;
+244mg_per_100g=> nrel_main_idtf: [244 мг на 100 г](*<- lang_ru;;*);;
+2.1mg_per_100g=> nrel_main_idtf: [2.1 мг на 100 г](*<- lang_ru;;*);;
+28.4mg_per_100g=> nrel_main_idtf: [28.4 мг на 100 г](*<- lang_ru;;*);;
+108mg_per_100g=> nrel_main_idtf: [108 мг на 100 г](*<- lang_ru;;*);;
+5.42g_per_100g=> nrel_main_idtf: [5.42 мг на 100 г](*<- lang_ru;;*);;
+0.4g_per_100g=> nrel_main_idtf: [0.4 мг на 100 г](*<- lang_ru;;*);;
+14.45g_per_100g=> nrel_main_idtf: [14.45 мг на 100 г](*<- lang_ru;;*);;
+14.45mg_per_100g=> nrel_main_idtf: [14.45 мг на 100 г](*<- lang_ru;;*);;
+
+
+concept_green_pea=> nrel_main_idtf: [зелёный горошек](*<- lang_ru;;*);
+=> nrel_main_idtf: [green pea](*<- lang_en;;*);
+
+  =>nrel_calorie_content:81kcal_per_100g;
+=> nrel_vitamin_B3_content:2.1mg_per_100g;
+=> nrel_vitamin_C_content:40mg_per_100g;
+=> nrel_vitamin_B1_content:0.3mg_per_100g;
+=> nrel_vitamin_B2_content:0.1mg_per_100g;
+=> nrel_vitamin_B5_content:0.1mg_per_100g;
+=> nrel_vitamin_B4_content:28.4mg_per_100g;
+=> nrel_vitamin_E_content:0.1mg_per_100g;
+=> nrel_vitamin_B6_content:0.2mg_per_100g;
+
+=> nrel_Ca_content:25mg_per_100g;
+=> nrel_Fe_content:1.5mg_per_100g;
+=> nrel_Mg_content:33mg_per_100g;
+=> nrel_P_content:108mg_per_100g;
+=> nrel_Zn_content:1.2mg_per_100g;
+=> nrel_Na_content:5mg_per_100g;
+=> nrel_K_content:244mg_per_100g;
+
+
+=> nrel_Cu_content:0.2mg_per_100g;
+=> nrel_Mn_content:0.4mg_per_100g;
+
+=> nrel_carbohydrates_content:14.45g_per_100g;
+=> nrel_fats_content:0.4g_per_100g;
+=> nrel_protein_content:5.42g_per_100g;
+    <- rrel_key_sc_element:...
+(*
+  <-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Белок в горохе помогает бороться с высоким кровяным давлением, вызванным хроническим заболеванием почек.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(зелёный горошек)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+            
+            -> concept_blood_pressure;;
+        *);;
+*);
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+   
+        (*
+            -> [Горох содержит куместрол – вещество, которое на 50% снижает риск развития рака желудка.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.2(зелёный гороше)](*<- lang_ru;;*);;
+   
+*);
+
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [В горохе содержатся сапонины, фенольные кислоты и флавонолы, которые снимают воспаления и борются с диабетом.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.3(зелёный гороше)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+                 -> diabetes;;
+        *);;
+
+*);
+ <-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(зелёный гороше)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://green pea.jpg"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+
+
+
+<=nrel_inclusion:concept_product;;

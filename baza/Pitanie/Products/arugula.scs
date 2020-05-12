@@ -1,0 +1,92 @@
+25kcal_per_100g=> nrel_main_idtf: [25 ккал на 100 г](*<- lang_ru;;*);;
+concept_arugula => nrel_main_idtf: [руккола](*<- lang_ru;;*);
+=> nrel_main_idtf: [arugula](*<- lang_en;;*);
+
+  =>nrel_calorie_content:25kcal_per_100g;
+=> nrel_vitamin_B3_content:0.3mg_per_100g;
+=> nrel_vitamin_C_content:15mg_per_100g;
+=> nrel_vitamin_B5_content:0.4mg_per_100g;
+=> nrel_vitamin_B4_content:15.3mg_per_100g;
+=> nrel_vitamin_E_content:0.4mg_per_100g;
+
+=> nrel_Na_content:27mg_per_100g;
+=> nrel_K_content:369mg_per_100g;
+=> nrel_Ca_content:160mg_per_100g;
+=> nrel_P_content:52mg_per_100g;
+=> nrel_Mg_content:47mg_per_100g;
+
+=> nrel_carbohydrates_content:3.65g_per_100g;
+=> nrel_fats_content:0.66g_per_100g;
+=> nrel_protein_content:2.58g_per_100g;
+    <- rrel_key_sc_element:...
+(*
+  <-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Из-за высокого содержания сахара руккола не подходит людям, страдающим сахарным диабетом.  ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(руккола)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+            
+            -> diabetes;;
+        *);;
+*);
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+   
+        (*
+            -> [Руккола нормализует работу желудочно-кишечного тракта, борется с вредными микробами и вирусами. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.2(руккола)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            -> concept_vitamins;;
+            
+        *);;
+*);
+
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Рукколу активно используют в борьбе с лишним весом, ее причисляют к жиросжигающим продуктам.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.3(руккола)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            -> concept_unhealthy_fats;;
+            
+        *);;
+
+*);
+ <-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(руккола)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://arugula.jpg"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+
+
+<=nrel_inclusion:concept_product;;
+

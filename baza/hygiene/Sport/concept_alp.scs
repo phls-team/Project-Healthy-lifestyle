@@ -1,0 +1,73 @@
+concept_mountaineering
+<- sc_node_not_relation;;
+concept_mountaineering=>nrel_main_idtf:[альпини́зм]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[mountaineering]
+        (*
+                <-lang_en;;
+        *);;
+concept_mountaineering=>nrel_idtf:[промальп]
+        (*
+                <-lang_ru;;
+        *);;
+
+
+concept_mountaineering<-rrel_key_sc_element:...
+        (*
+                <-definition;;=>nrel_main_idtf:
+[Опр.(альпинизм)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+                ->[альпинизм — вид спорта и активного отдыха, целью которого является восхождение на вершины гор.Спортивная сущность альпинизма состоит в преодолении естественных препятствий, созданных природой (высоты, рельефа, погодных условий), на пути к вершине. В спортивных соревнованиях по альпинизму объектом состязания являются высота вершины, техническая сложность пройденного маршрута, его характер и протяжённостьОснова альпинизма состовляет преодоление различных природных препятствии: реки, скалы, снег, ледники, ледопады,которые вызывают опастность человека.]
+(*
+<-lang_ru;;
+*);;
+
+        *);;
+*);;
+
+
+concept_mountaineering<-rrel_key_sc_element:...
+        (*
+                <-definition;;=>nrel_main_idtf:
+[Definition.(mountaineering)]
+        (*
+                <-lang_en;;
+        *);;
+
+<=nrel_sc_text_translation:...
+        (*
+                ->[mountaineering is the set of activities that involves ascending mountains. Mountaineering-related activities include traditional outdoor climbing, skiing, and traversing via ferratas.]
+(*
+<-lang_en;;
+*);;
+
+        *);;
+*);;
+
+
+concept_mountaineering<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://800px-Summitting_Island_Peak.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+*);;
+*);;
+
+
+
+concept_mountaineering<=nrel_inclusion:extreme_sport;;
+concept_mountaineering<=nrel_inclusion:concept_sport;;
+concept_mountaineering<=nrel_inclusion:winter_sport;;
+
+

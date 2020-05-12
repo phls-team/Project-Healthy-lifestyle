@@ -1,0 +1,54 @@
+running_machine
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [running machine](*<-lang_en;;*);
+          [беговая дорожка](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(беговая дорожка)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Спортивный тренажёр для занятий бегом или ходьбой в помещении, имитирующий беговую трассу](*<- lang_ru;;*);;
+			*);;
+            /*=> nrel_using_constants: 
+                {
+                concept_training_apparatus;
+                running;
+                sports_walking;
+                concept_room;
+                concept_running_track
+                };;*/
+		*);
+
+<=nrel_inclusion:concept_cardiotraining_apparatus;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(беговая дорожка)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Беговая дорожка дает эффективный вид кардионагрузки с точки зрения похудения](*<- lang_ru;;*);;
+			*);;
+           /* => nrel_using_constants: 
+                {
+                concept_cardio;
+                concept_losing_weight
+                };;*/
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://running_machine.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

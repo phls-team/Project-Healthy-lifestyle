@@ -1,0 +1,33 @@
+nrel_pearl_index
+
+<- sc_node_norole_relation;
+
+=> nrel_main_idtf:
+[индекс Перля*](*<-lang_ru;;*);
+[Pearl index*](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(индекс Перля)](*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        -> rrel_example: [И́ндекс Пе́рля (индекс Перла), коэффициент неудач — индекс, показывающий эффективность выбранного метода контрацепции.](*<-lang_ru;;*);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...(*
+    <- statement;;
+    => nrel_main_idtf: [Утв. 1 об индексе Перля](*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        -> rrel_example: [Чем ниже этот показатель, тем надёжней метод контрацепции.](*<-lang_ru;;*);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...(*
+    <- illustration;;
+    <=nrel_sc_text_translation: ...(*
+        -> "file://images/pearl_index.jpg"(*=>nrel_format: format_jpg;;*);;
+    *);;
+*);;
+/*
+pearl_index -> rrel_example: ;;
+*/

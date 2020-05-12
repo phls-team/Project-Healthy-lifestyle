@@ -1,0 +1,85 @@
+80kcal_per_100g=> nrel_main_idtf: [80 ккал на 100 г](*<- lang_ru;;*);;
+concept_ginger=> nrel_main_idtf: [имбирь](*<- lang_ru;;*);
+=> nrel_main_idtf: [ginger](*<- lang_en;;*);
+
+  =>nrel_calorie_content:80kcal_per_100g;
+=> nrel_vitamin_B3_content:0.8mg_per_100g;
+=> nrel_vitamin_E_content:0.3mg_per_100g;
+=> nrel_vitamin_B6_content:0.2mg_per_100g;
+=> nrel_vitamin_C_content:5mg_per_100g;
+=> nrel_vitamin_B4_content:28.8mg_per_100g;
+
+=> nrel_Na_content:13mg_per_100g;
+=> nrel_K_content:415mg_per_100g;
+=> nrel_Ca_content:16mg_per_100g;
+=> nrel_P_content:34mg_per_100g;
+=> nrel_Mg_content:43mg_per_100g;
+=> nrel_Mn_content:0.2mg_per_100g;
+=> nrel_Fe_content:0.6mg_per_100g;
+
+=> nrel_carbohydrates_content:17.77g_per_100g;
+=> nrel_fats_content:0.75g_per_100g;
+=> nrel_protein_content:1.82g_per_100g;
+    <- rrel_key_sc_element:...
+(*
+  <-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Имбирь полезен при сгущении крови, так как разжижает ее и улучшает циркуляцию в сосудах, снижает риск образования тромбов. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(имбирь)](*<- lang_ru;;*);;
+
+*);
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+   
+        (*
+            -> [Алкалоид гингерол в составе имбиря обладает антибактериальным действием, усиливает выработку тепла в организме и согревает при ознобе. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.2(имбирь)](*<- lang_ru;;*);;
+
+*);
+
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Благодаря высокому содержанию магния имбирь ускоряется выведение токсинов из организма, а также улучшается состояние нервной системы. Пектины и клетчатка также стимулируют перистальтику и активное выделение пищеварительных соков, что снижает газообразование и ускоряет метаболизм.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.3(имбирь)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            -> concept_Mg;;
+            
+        *);;
+
+*);
+ <-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(имбирь)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://ginger.jpg"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+
+
+<=nrel_inclusion:concept_product;;
+

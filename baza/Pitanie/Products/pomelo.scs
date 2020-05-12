@@ -1,0 +1,79 @@
+concept_pomelo=> nrel_main_idtf: [помело](*<- lang_ru;;*);
+=> nrel_main_idtf: [pomelo](*<- lang_en;;*);
+
+  =>nrel_calorie_content:38kcal_per_100g;
+=> nrel_vitamin_B3_content:0.2mg_per_100g;
+=> nrel_vitamin_C_content:61mg_per_100g;
+
+
+=> nrel_Ca_content:4mg_per_100g;
+=> nrel_Fe_content:0.1mg_per_100g;
+=> nrel_Mg_content:6mg_per_100g;
+=> nrel_P_content:17mg_per_100g;
+=> nrel_K_content:216mg_per_100g;
+=> nrel_Na_content:1mg_per_100g;
+=> nrel_Zn_content:0.1mg_per_100g;
+
+
+
+=> nrel_carbohydrates_content:9.62g_per_100g;
+=> nrel_fats_content:0.04g_per_100g;
+=> nrel_protein_content:0.76g_per_100g;
+    <- rrel_key_sc_element:...
+(*
+  <-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Помело положительно влияет на работу сердечно-сосудистой системы, укрепляя сердечную мышцу и уменьшая риск инфаркта. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(помело)](*<- lang_ru;;*);;
+
+*);
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+   
+        (*
+            -> [Помело борется с онкологическими заболеваниями, останавливая деление раковых клеток. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.2(помело)](*<- lang_ru;;*);;
+   
+*);
+
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Если существуют проблемы с ЖКТ, язва желудка или повышенная кислотность, помело может стать возбудителем проблем и способствовать их обострению.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.3(помело)](*<- lang_ru;;*);;
+  
+
+*);
+ <-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(помело)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://pomelo.jpg"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+
+
+<=nrel_inclusion:concept_fruit;;
+

@@ -1,0 +1,41 @@
+barbell
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [barbell](*<-lang_en;;*);
+          [штанга](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(штанга)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Спортивный снаряд для поднятия веса в тяжёлой атлетике и пауэрлифтинге](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_power_sports_equipment;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(штанга)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Гриф разборной штанги имеет на концах втулки для закрепления нагрузки, состоящей из дисков (блинов) различной массы и замков](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://barbell.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

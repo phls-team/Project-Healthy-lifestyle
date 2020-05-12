@@ -1,0 +1,93 @@
+9.17g_per_100g=> nrel_main_idtf: [9.17 г на 100 г](*<- lang_ru;;*);;
+71.97g_per_100g=> nrel_main_idtf: [71.97 г на 100 г](*<- lang_ru;;*);;
+13.86g_per_100g=> nrel_main_idtf: [13.86 г на 100 г](*<- lang_ru;;*);;
+0.7mg_per_100g=> nrel_main_idtf: [0.7 мг на 100 г](*<- lang_ru;;*);;
+121mg_per_100g=> nrel_main_idtf: [121 мг на 100 г](*<- lang_ru;;*);;
+2.5mg_per_100g=> nrel_main_idtf: [2.5 мг на 100 г](*<- lang_ru;;*);;
+410mg_per_100g=> nrel_main_idtf: [410 мг на 100 г](*<- lang_ru;;*);;
+70mg_per_100g=> nrel_main_idtf: [70 мг на 100 г](*<- lang_ru;;*);;
+40.5mg_per_100g=> nrel_main_idtf: [40.5 мг на 100 г](*<- lang_ru;;*);;
+277mg_per_100g=> nrel_main_idtf: [277 мг на 100 г](*<- lang_ru;;*);;
+691kcal_per_100g=> nrel_main_idtf: [691 ккал на 100 г](*<- lang_ru;;*);;
+
+concept_pecan => nrel_main_idtf: [пекан](*<- lang_ru;;*);
+=> nrel_main_idtf: [pecan](*<- lang_en;;*);
+
+  =>nrel_calorie_content:691kcal_per_100g;
+=> nrel_vitamin_B3_content:1.2mg_per_100g;
+=> nrel_vitamin_C_content:1.1mg_per_100g;
+=> nrel_vitamin_B5_content:0.9mg_per_100g;
+=> nrel_vitamin_B1_content:0.7mg_per_100g;
+=> nrel_vitamin_B2_content:0.1mg_per_100g;
+=> nrel_vitamin_B4_content:40.5mg_per_100g;
+=> nrel_vitamin_E_content:1.4mg_per_100g;
+
+=> nrel_Cu_content:1.2mg_per_100g;
+=> nrel_K_content:410mg_per_100g;
+=> nrel_Ca_content:70mg_per_100g;
+=> nrel_P_content:277mg_per_100g;
+=> nrel_Mg_content:121mg_per_100g;
+=> nrel_Mn_content:4.5mg_per_100g;
+=> nrel_Fe_content:2.5mg_per_100g;
+
+=> nrel_carbohydrates_content:13.86g_per_100g;
+=> nrel_fats_content:71.97g_per_100g;
+=> nrel_protein_content:9.17g_per_100g;
+    <- rrel_key_sc_element:...
+(*
+  <-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Орехи пекан и получаемое из них масло рекомендовано к употреблению пожилым людям. Они способствуют укреплению иммунной системы и защищают клетки тканей от пагубного воздействия канцерогенов. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(пекан)](*<- lang_ru;;*);;
+   
+*);
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+   
+        (*
+            -> [Антиоксиданты, входящие в состав пекана, защищают стенки кровеносных сосудов от свободных радикалов, что предотвращает появление и дальнейшее развитие заболеваний сердечнососудистой системы. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.2(пекан)](*<- lang_ru;;*);;
+  
+*);
+
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Пекан содержат олеиновую кислоту, которая приводит к снижению риска развития рака молочной железы.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.3(пекан)](*<- lang_ru;;*);;
+  
+
+*);
+ <-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(пекан)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://pecan.jpg"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+
+
+<=nrel_inclusion:nuts;;
+

@@ -71,7 +71,7 @@ concept_zucchini <-rrel_key_sc_element:
 	*);;
 
 
-concept_product=>nrel_inclusion:concept_zucchini;;
+concept_vegetable=>nrel_inclusion:concept_zucchini;;
 concept_zucchini=> nrel_vitamin_B3_content:0.71mg_per_100g;;
 concept_zucchini=> nrel_vitamin_B1_content:0.04mg_per_100g;;
 concept_zucchini=> nrel_vitamin_C_content:34.1mg_per_100g;;

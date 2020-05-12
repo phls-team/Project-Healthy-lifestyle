@@ -1,0 +1,37 @@
+concept_secondary_prophylaxy<-sc_node_not_relation;;
+
+concept_secondary_prophylaxy => nrel_main_idtf: [вторичная профилактика](*<- lang_ru;;*);;
+concept_secondary_prophylaxy => nrel_main_idtf: [secondary_prophylaxy](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_secondary_prophylaxy;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Вторичная профилактика - комплекс мероприятий, направленных на устранение выраженных факторов риска, которые при определенных условиях (стресс, ослабление иммунитета, чрезмерные физические нагрузки) могут привести к возникновению, обострению и рецидиву заболевания.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Вторичная профилактика)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+	    -> concept_disease;;
+            ->concept_physical_exercises;;
+        *);;
+*);;
+
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_secondary_prophylaxy;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Эффективность вторичной профилактики отценивают по продолжительности ремиссии.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(вторичная профилактика)](*<- lang_ru;;*);;*);;
+
+
+concept_secondary_prophylaxy->rrel_example:[Наиболее эффективным методом вторичной профилактики является диспансеризация как комплексный метод раннего выявления заболеваний.](*<- lang_ru;;*);;
+
+concept_secondary_prophylaxy => nrel_inclusion:concept_clinical_examination;concept_survey;concept_drug_therapy;;
+

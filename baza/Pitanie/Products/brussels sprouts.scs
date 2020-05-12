@@ -1,0 +1,87 @@
+36kcal_per_100g=> nrel_main_idtf: [36 ккал на 100 г](*<- lang_ru;;*);;
+concept_brussels_sprouts => nrel_main_idtf: [брюссельская капуста](*<- lang_ru;;*);
+=> nrel_main_idtf: [brussels sprouts](*<- lang_en;;*);
+
+  =>nrel_calorie_content:36kcal_per_100g;
+=> nrel_vitamin_B3_content:0.6mg_per_100g;
+=> nrel_vitamin_C_content:62mg_per_100g;
+=> nrel_vitamin_B5_content:0.3mg_per_100g;
+=> nrel_vitamin_B4_content:40.6mg_per_100g;
+=> nrel_vitamin_E_content:0.4mg_per_100g;
+
+=> nrel_Na_content:21mg_per_100g;
+=> nrel_K_content:317mg_per_100g;
+=> nrel_Ca_content:36mg_per_100g;
+=> nrel_P_content:56mg_per_100g;
+=> nrel_Mg_content:20mg_per_100g;
+
+=> nrel_carbohydrates_content:7.1g_per_100g;
+=> nrel_fats_content:0.5g_per_100g;
+=> nrel_protein_content:2.55g_per_100g;
+    <- rrel_key_sc_element:...
+(*
+  <-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Брюссельская капуста богата клетчаткой, что поддерживает здоровье пищеварительной системы и снижает риск сердечных заболеваний и диабета. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(брюссельская капуста)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+            
+            -> diabetes;;
+        *);;
+*);
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+   
+        (*
+            -> [Брюссельская капуста вредна людям с повышенной кислотностью желудка, не рекомендована при обострении ЖКТ и при проблемах с щитовидной железой, при подагре и гастрите. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.2(брюссельская капуста)](*<- lang_ru;;*);;
+    
+*);
+
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Брюссельская капуста содержит кемпферол, антиоксидант, который может уменьшить риск рака, снять воспаление и укрепить здоровье сердца.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.3(брюссельская капуста)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            -> heart_desease;;
+            
+        *);;
+
+*);
+ <-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(брюссельская капуста)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://brussels sprouts.jpg"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+
+
+<=nrel_inclusion:concept_vegetable;;
+

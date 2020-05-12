@@ -1,0 +1,53 @@
+concept_disinfection<-sc_node_not_relation;;
+
+concept_disinfection => nrel_main_idtf: [дезинфекция](*<- lang_ru;;*);;
+concept_disinfection => nrel_main_idtf: [disinfection](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_disinfection;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Дезинфекция — это комплекс мероприятий, направленный на уничтожение возбудителей инфекционных заболеваний ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Дезинфекция)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            -> concept_complex;;
+        *);;
+*);;
+
+
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_disinfection;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Проведение дезинфекции возможно как своими силами (силами учреждения), так и специализированными службами.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Дезинфекция)](*<- lang_ru;;*);;
+ 
+*);;
+
+
+
+concept_disinfection->rrel_example:[Средства профилактической дезинфекции, как правило, выпускают в форме раствора и таблеток.](*<- lang_ru;;*);;
+
+
+concept_disinfection<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://photo/disinfection.png"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;
+

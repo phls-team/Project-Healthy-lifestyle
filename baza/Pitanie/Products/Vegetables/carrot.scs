@@ -22,7 +22,7 @@ moskovskaya;
 		...
 		(*
 		-> rrel_example:
-			"file://photo/radish.png"
+			"file://photo/carrot.png"
 			(*
 			<- lang_ru;;
 			=> nrel_format: format_png;;

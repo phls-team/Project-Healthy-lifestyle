@@ -1,0 +1,36 @@
+behavior_people=>nrel_main_idtf:[поведение человека]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[human behavior]
+        (*
+                <-lang_en;;
+        *);;
+
+behavior_people<-rrel_key_sc_element:...
+                (*
+                        <-definition;;=>nrel_main_idtf:
+        [Опр.(поведение человека)]
+                (*
+                        <-lang_ru;;
+                *);;
+
+<=nrel_sc_text_translation:...
+        (*
+                ->[Поведе́ние человека — определённый сложившийся образ взаимодействия с окружающей средой.]
+(*
+<-lang_ru;;
+*);;
+*);;
+*);;
+behavior_people<-rrel_key_sc_element:...
+        (*
+
+                <-statement;;
+                =>nrel_main_idtf:[Утв.(поведение человека)](*<-lang_ru;;*);;
+                <=nrel_sc_text_translation:...
+                (*
+                        ->rrel_example:[Человек может по разному взаимодействовать с окружающей средой.](*<-lang_ru;;*);;
+                *);;
+        *);;
+

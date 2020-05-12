@@ -1,0 +1,92 @@
+
+139mg_per_100g=> nrel_main_idtf: [139 мг на 100 г](*<- lang_ru;;*);;
+
+
+179mg_per_100g=> nrel_main_idtf: [179 мг на 100 г](*<- lang_ru;;*);;
+
+10.1mg_per_100g=> nrel_main_idtf: [10.1 мг на 100 г](*<- lang_ru;;*);;
+19.44g_per_100g=> nrel_main_idtf: [19.44 г на 100 г](*<- lang_ru;;*);;
+0.96g_per_100g=> nrel_main_idtf: [0.96 г на 100 г](*<- lang_ru;;*);;
+247mg_per_100g=> nrel_main_idtf: [247 мг на 100 г](*<- lang_ru;;*);;
+29.3mg_per_100g=> nrel_main_idtf: [29.3 мг на 100 г](*<- lang_ru;;*);;
+86kcal_per_100g=> nrel_main_idtf: [86 ккал на 100 г](*<- lang_ru;;*);;
+concept_tuna => nrel_main_idtf: [тунец](*<- lang_ru;;*);
+=> nrel_main_idtf: [tuna](*<- lang_en;;*);
+
+  =>nrel_calorie_content:86kcal_per_100g;
+=> nrel_vitamin_B3_content:10.1mg_per_100g;
+=> nrel_vitamin_B6_content:0.3mg_per_100g;
+=> nrel_vitamin_B4_content:29.3mg_per_100g;
+=> nrel_vitamin_E_content:0.3mg_per_100g;
+
+=> nrel_Na_content:247mg_per_100g;
+=> nrel_K_content:179mg_per_100g;
+=> nrel_P_content:139mg_per_100g;
+
+=> nrel_carbohydrates_content:0g_per_100g;
+=> nrel_fats_content:0.96g_per_100g;
+=> nrel_protein_content:19.44g_per_100g;
+    <- rrel_key_sc_element:...
+(*
+  <-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Особенно полезнен тунец для пожилых людей, которая очищает артерии и не дает возможности образования холестериновых бляшек, являющихся причиной формирования тромбов. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(тунец)](*<- lang_ru;;*);;
+
+*);
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+   
+        (*
+            -> [Прием в пищу тунца прекрасно способствует укреплению иммунитета и провоцирует выработку антител, что особо ценно для аллергиков. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.2(тунец)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            -> concept_allergy;;
+            
+        *);;
+*);
+
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Систематическое употребление тунца в пищу восстанавливает нарушенные процессы метаболизма и нормализует уровень сахара в организме.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.3(тунец)](*<- lang_ru;;*);;
+ 
+
+
+*);
+ <-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(тунец)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://tuna.jpg"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+
+
+<=nrel_inclusion:fish;;
+

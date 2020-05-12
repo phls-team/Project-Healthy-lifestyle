@@ -1,0 +1,103 @@
+concept_ice_climbing
+<- sc_node_not_relation;;
+concept_ice_climbing=>nrel_main_idtf:[ледолазание]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[ice climbing]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_ice_climbing<-rrel_key_sc_element:...
+        (*
+                <-definition;;=>nrel_main_idtf:
+[Опр.(ледолазанье)]
+        (*
+                <-lang_ru;;
+        *);;
+
+<=nrel_sc_text_translation:...
+        (*
+                ->[ледолазание — экстремальный вид спорта, заключающийся в преодолении крутых ледовых склонов с помощью специального снаряжения. Ледовые склоны могут быть естественного происхождения: замерзшими водопадами, большими сосульками; или искусственно создаваемыми ледовыми сооружениями.]
+(*
+<-lang_ru;;
+*);;
+
+        *);;
+*);;
+
+
+concept_ice_climbing<-rrel_key_sc_element:...
+        (*
+                <-definition;;=>nrel_main_idtf:
+[Definition.(ice climbing)]
+        (*
+                <-lang_en;;
+        *);;
+
+<=nrel_sc_text_translation:...
+        (*
+                ->[ice climbing is the activity of ascending inclined ice formations. Usually, ice climbing refers to roped and protected climbing of features such as icefalls, frozen waterfalls, and cliffs and rock slabs covered with ice refrozen from flows of water.]
+(*
+<-lang_en;;
+*);;
+
+        *);;
+*);;
+
+
+concept_ice_climbing<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://190px-Eisklettern_kl_engstligenfall.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+*);;
+*);;
+
+concept_ice_climbing<-rrel_key_sc_element:...
+        (*
+
+                <-statement;;
+                =>nrel_main_idtf:[Утв.(ледолазанье)](*<-lang_ru;;*);;
+                <=nrel_sc_text_translation:...
+                (*
+                        ->rrel_example:[Являеться разновидностью альпинизма.](*<-lang_ru;;*);;
+                *);;
+        *);;
+
+concept_ice_climbing<-rrel_key_sc_element:...
+        (*
+
+                <-statement;;
+                =>nrel_main_idtf:[Утв.(скалолазанье)](*<-lang_ru;;*);;
+                <=nrel_sc_text_translation:...
+                (*
+                        ->rrel_example:[Соревнования по ледолазанию проводятся по трём видам:
+
+трудность
+скорость
+боулдеринг.](*<-lang_ru;;*);;
+                *);;
+        *);;
+
+concept_ice_climbing<-rrel_key_sc_element:...
+        (*
+
+                <-statement;;
+                =>nrel_main_idtf:[Утв.(скалолазанье)](*<-lang_ru;;*);;
+                <=nrel_sc_text_translation:...
+                (*
+                        ->rrel_example:[С целью обеспечения безопасности участник пристегивается к верёвке, которая не даёт ему упасть вниз в случае срыва. Для участника обязательна каска.]
+                        (*<-lang_ru;;*);;
+                *);;
+        *);;
+
+concept_mountaineering<=nrel_inclusion:concept_sport;;
+concept_mountaineering<=nrel_inclusion:winter_sport;;
+concept_ice_climbing=>nrel_species:concept_mountaineering;;

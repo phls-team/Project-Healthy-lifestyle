@@ -54,7 +54,7 @@ concept_eggplant<-rrel_key_sc_element:
 		*);;
 	*);;
 
-concept_product=>nrel_inclusion:concept_eggplant;;
+concept_vegetable=>nrel_inclusion:concept_eggplant;;
 concept_eggplant=> nrel_vitamin_B3_content:0.6mg_per_100g;;
 concept_eggplant=> nrel_vitamin_B4_content:6.9mg_per_100g;;
 concept_eggplant=> nrel_vitamin_C_content:2.2mg_per_100g;;

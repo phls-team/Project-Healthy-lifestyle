@@ -59,7 +59,7 @@ concept_asparagus <-rrel_key_sc_element:
 
 
 
-concept_product=>nrel_inclusion:concept_asparagus;;
+concept_vegetable=>nrel_inclusion:concept_asparagus;;
 concept_asparagus
 => nrel_vitamin_B3_content:1.1mg_per_100g;
 => nrel_vitamin_B6_content:0.1mg_per_100g;

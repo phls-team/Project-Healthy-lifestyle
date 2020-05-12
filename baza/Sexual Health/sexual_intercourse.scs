@@ -1,0 +1,33 @@
+sexual_intercourse
+
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+[Половой акт](*<-lang_ru;;*);
+[Sexual Intercourse](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(Половой акт)](*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        -> rrel_example: [Полово́й акт (также половое сноше́ние, совокупле́ние, разг. секс), в традиционном понимании — генитальный контакт двух особей с целью получения полового удовлетворения (наслаждения), а также для продолжения рода.](*<-lang_ru;;*);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...(*
+    <- statement;;
+    => nrel_main_idtf: [Утв. 1 о Половом акте](*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        -> rrel_example: [В современном обществе под половым актом может пониматься также и анальный половой акт, при котором половой член вводится не во влагалище, а в анус партнёра (мужчины или женщины), а также оральный половой акт и другие. Таким образом, можно говорить как о гетеросексуальном, так и гомосексуальном половом акте.](*<-lang_ru;;*);;
+    *);;
+*);;
+/*
+<- rrel_key_sc_element: ...(*
+    <- illustration;;
+    <=nrel_sc_text_translation: ...(*
+        -> "file://sexual_intercourse.jpg"(*=>nrel_format: format_jpg;;*);;
+    *);;
+*);;
+
+sexual_intercourse -> rrel_example: ;;
+*/

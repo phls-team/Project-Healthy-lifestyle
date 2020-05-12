@@ -1,0 +1,79 @@
+concept_poppy_seeds=> nrel_main_idtf: [семена мака ](*<- lang_ru;;*);
+=> nrel_main_idtf: [poppy seeds](*<- lang_en;;*);
+
+  =>nrel_calorie_content:525kcal_per_100g;
+=> nrel_vitamin_B3_content:0.9mg_per_100g;
+=> nrel_vitamin_E_content:1.8mg_per_100g;
+=> nrel_vitamin_B5_content:0.3mg_per_100g;
+=> nrel_vitamin_B1_content:0.9mg_per_100g;
+=> nrel_vitamin_B4_content:8.8mg_per_100g;
+
+=> nrel_Na_content:26mg_per_100g;
+=> nrel_K_content:719mg_per_100g;
+=> nrel_Ca_content:1438mg_per_100g;
+=> nrel_P_content:870mg_per_100g;
+=> nrel_Mg_content:347mg_per_100g;
+=> nrel_Mn_content:6.7mg_per_100g;
+=> nrel_Fe_content:9.8mg_per_100g;
+
+=> nrel_carbohydrates_content:28.13g_per_100g;
+=> nrel_fats_content:41.56g_per_100g;
+=> nrel_protein_content:17.99g_per_100g;
+    <- rrel_key_sc_element:...
+(*
+  <-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Семена мака способствуют успокоению судорожного кашля при любых бронхолёгочных заболеваниях и неплохо снимают боль.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(семена мака)](*<- lang_ru;;*);;
+   
+*);
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+   
+        (*
+            -> [Семена мака успокаивают нервную систему и помогают легче засыпать людям с бессонницей. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.2(семена мака)](*<- lang_ru;;*);;
+    
+*);
+
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Семена мака усиливают сопротивляемость организма раковым клеткам и инфекциям.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.3(семена мака)](*<- lang_ru;;*);;
+ 
+
+*);
+ <-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(семена мака)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://poppy seeds.jpg"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+
+
+<=nrel_inclusion:concept_product;;
+

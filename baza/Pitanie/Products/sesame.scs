@@ -1,0 +1,85 @@
+concept_sesame=> nrel_main_idtf: [кунжут](*<- lang_ru;;*);
+=> nrel_main_idtf: [sesame](*<- lang_en;;*);
+
+  =>nrel_calorie_content:631kcal_per_100g;
+=> nrel_vitamin_E_content:1.7mg_per_100g;
+
+=> nrel_vitamin_B1_content:0.7mg_per_100g;
+=> nrel_vitamin_B2_content:0.1mg_per_100g;
+=> nrel_vitamin_B3_content:5.8mg_per_100g;
+=> nrel_vitamin_B4_content:25.6mg_per_100g;
+=> nrel_vitamin_B5_content:0.3mg_per_100g;
+=> nrel_vitamin_B6_content:0.4mg_per_100g;
+
+=> nrel_Ca_content:60mg_per_100g;
+=> nrel_Fe_content:6.4mg_per_100g;
+=> nrel_Mg_content:345mg_per_100g;
+=> nrel_P_content:667mg_per_100g;
+=> nrel_K_content:370mg_per_100g;
+=> nrel_Na_content:47mg_per_100g;
+=> nrel_Zn_content:6.7mg_per_100g;
+=> nrel_Cu_content:1.4mg_per_100g;
+=> nrel_Mn_content:1.4mg_per_100g;
+
+
+=> nrel_carbohydrates_content:11.73g_per_100g;
+=> nrel_fats_content:61.21g_per_100g;
+=> nrel_protein_content:20.45g_per_100g;
+    <- rrel_key_sc_element:...
+(*
+  <-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Мощные антиоксиданты в составе кунжута (сезамин, сквален, лецитин) защищают ткани от внешних воздействий среды. Эти вещества также стимулируют рост коллагеновых и эластиновых волокон. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(кунжут)](*<- lang_ru;;*);;
+  
+*);
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+   
+        (*
+            -> [ Кунжутные семечки содержат лигнаны – особые растительные соединения, которые влияют на гормональный фон. Они регулируют уровень эстрогенов при их переизбытке и недостатке. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.2(кунжут)](*<- lang_ru;;*);;
+    
+*);
+
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Семена кунжута в изобилии включают пищевые волокна, способствующие очистке организма от шлаков и токсинов. Клетчатка связывает жировые молекулы и улучшает моторику органов ЖКТ.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.3(кунжут)](*<- lang_ru;;*);;
+   
+
+*);
+ <-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(кунжут)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://sesame.jpg"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+
+
+<=nrel_inclusion:concept_product;;
+

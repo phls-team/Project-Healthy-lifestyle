@@ -1,0 +1,89 @@
+51kcal_per_100g=> nrel_main_idtf: [51 ккал на 100 г](*<- lang_ru;;*);;
+concept_oysters=> nrel_main_idtf: [устрицы](*<- lang_ru;;*);
+=> nrel_main_idtf: [oysters](*<- lang_en;;*);
+
+  =>nrel_calorie_content:51kcal_per_100g;
+=> nrel_vitamin_E_content:0.9mg_per_100g;
+
+=> nrel_vitamin_B2_content:0.1mg_per_100g;
+=> nrel_vitamin_B3_content:0.9mg_per_100g;
+=> nrel_vitamin_B4_content:65mg_per_100g;
+=> nrel_vitamin_B5_content:0.2mg_per_100g;
+
+
+=> nrel_Ca_content:59mg_per_100g;
+=> nrel_Fe_content:4.6mg_per_100g;
+=> nrel_Mg_content:18mg_per_100g;
+=> nrel_P_content:97mg_per_100g;
+=> nrel_K_content:156mg_per_100g;
+=> nrel_Na_content:85mg_per_100g;
+=> nrel_Zn_content:39.3mg_per_100g;
+=> nrel_Cu_content:2.9mg_per_100g;
+=> nrel_Mn_content:0.3mg_per_100g;
+
+
+=> nrel_carbohydrates_content:2.7g_per_100g;
+=> nrel_fats_content:1.7g_per_100g;
+=> nrel_protein_content:5.7g_per_100g;
+    <- rrel_key_sc_element:...
+(*
+  <-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Поскольку устрицы содержат много йода, этот продукт является хорошим профилактическим средством болезней щитовидной железы. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(устирицы)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+            
+            -> microelement_iodum_I;;
+        *);;
+*);
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+   
+        (*
+            -> [Устрицы имеют успокаивающее действие на нервную систему человека ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.2(устирицы)](*<- lang_ru;;*);;
+  
+*);
+
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [В сыром мясе устриц содержатся особенные аминокислоты, которые стимулируют организм вырабатывать половые гормоны.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.3(устирицы)](*<- lang_ru;;*);;
+  
+
+*);
+ <-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(устрицы)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://oysters.jpg"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+
+
+<=nrel_inclusion:concept_product;;
+

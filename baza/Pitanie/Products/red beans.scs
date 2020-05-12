@@ -1,0 +1,85 @@
+concept_red_beans=> nrel_main_idtf: [красная фасоль](*<- lang_ru;;*);
+=> nrel_main_idtf: [red beans](*<- lang_en;;*);
+
+  =>nrel_calorie_content:127kcal_per_100g;
+=> nrel_vitamin_B3_content:0.6mg_per_100g;
+=> nrel_vitamin_B5_content:0.2mg_per_100g;
+=> nrel_vitamin_B1_content:0.2mg_per_100g;
+=> nrel_vitamin_C_content:1.2mg_per_100g;
+=> nrel_vitamin_B4_content:30.5mg_per_100g;
+
+=> nrel_Ca_content:35mg_per_100g;
+=> nrel_Fe_content:2.2mg_per_100g;
+=> nrel_Mg_content:42mg_per_100g;
+=> nrel_P_content:138mg_per_100g;
+=> nrel_K_content:405mg_per_100g;
+=> nrel_Na_content:1mg_per_100g;
+
+
+
+=> nrel_carbohydrates_content:22.8g_per_100g;
+=> nrel_fats_content:0.5g_per_100g;
+=> nrel_protein_content:8.67g_per_100g;
+    <- rrel_key_sc_element:...
+(*
+  <-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Регулярное включение красной фасоли в меню предотвращает появление мышечных спазмов и предупреждает атеросклероз. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(красная фасоль)](*<- lang_ru;;*);;
+ 
+*);
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+   
+        (*
+            -> [Тирозин, входящий в состав красной фосоли, обеспечивает нормальный обмен веществ, регулирует работу эндокринной системы и предотвращает набор излишних килограммов.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.2(красная фасоль)](*<- lang_ru;;*);;
+
+*);
+
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержащийся в красной фасоли аргинин участвует в процессах азотистого обмена, оказывая инсулиноподобное действие, что помогает снизить уровень сахара в крови и снижает риск развития сахарного диабета.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.3(красная фасоль)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            -> diabetes;;
+            
+        *);;
+
+*);
+ <-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(красная фасоль)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://red beans.jpg"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+
+
+<=nrel_inclusion:concept_product;;
+

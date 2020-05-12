@@ -1,0 +1,77 @@
+230kcal_per_100g=> nrel_main_idtf: [230 ккал на 100 г](*<- lang_ru;;*);;
+concept_coconut_milk=> nrel_main_idtf: [кокосовое молоко](*<- lang_ru;;*);
+=> nrel_main_idtf: [coconut milk](*<- lang_en;;*);
+
+  =>nrel_calorie_content:230kcal_per_100g;
+=> nrel_vitamin_B3_content:0.8mg_per_100g;
+=> nrel_vitamin_C_content:2.8mg_per_100g;
+
+=> nrel_vitamin_B4_content:8.5mg_per_100g;
+=> nrel_vitamin_B5_content:0.2mg_per_100g;
+=> nrel_vitamin_E_content:0.2mg_per_100g;
+
+=> nrel_Ca_content:16mg_per_100g;
+=> nrel_K_content:263mg_per_100g;
+=> nrel_Cu_content:0.3mg_per_100g;
+=> nrel_P_content:100mg_per_100g;
+=> nrel_Mg_content:37mg_per_100g;
+=> nrel_Mn_content:0.9mg_per_100g;
+=> nrel_Fe_content:1.6mg_per_100g;
+=> nrel_Na_content:15mg_per_100g;
+=> nrel_Zn_content:0.7mg_per_100g;
+
+=> nrel_carbohydrates_content:5.54g_per_100g;
+=> nrel_fats_content:23.84g_per_100g;
+=> nrel_protein_content:2.29g_per_100g;
+    <- rrel_key_sc_element:...
+(*
+  <-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Кокосовое молоко мягко избавляет от отёков.   ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(кокосовое молоко)](*<- lang_ru;;*);;
+  
+*);
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+   
+        (*
+            -> [ В период беременности кокосовое молоко поможет избежать резких скачков гормонального фона, насытит необходимыми витаминами и поможет избежать анемии у беременных. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.2(кокосовое молоко)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            -> concept_vitamins;;
+            
+        *);;
+*);
+
+
+
+ <-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(кокосовое молоко)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://coconut milk.jpg"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+
+
+<=nrel_inclusion:concept_product;;
+

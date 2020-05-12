@@ -1,0 +1,93 @@
+concept_rutabaga=> nrel_main_idtf: [брюква](*<- lang_ru;;*);
+=> nrel_main_idtf: [rutabaga](*<- lang_en;;*);
+
+  =>nrel_calorie_content:37kcal_per_100g;
+=> nrel_vitamin_E_content:0.3mg_per_100g;
+=> nrel_vitamin_C_content:25mg_per_100g;
+=> nrel_vitamin_B1_content:0.1mg_per_100g;
+
+=> nrel_vitamin_B3_content:0.7mg_per_100g;
+=> nrel_vitamin_B4_content:14.1mg_per_100g;
+=> nrel_vitamin_B5_content:0.2mg_per_100g;
+=> nrel_vitamin_B6_content:0.1mg_per_100g;
+
+=> nrel_Ca_content:43mg_per_100g;
+=> nrel_Fe_content:0.4mg_per_100g;
+=> nrel_Mg_content:20mg_per_100g;
+=> nrel_P_content:53mg_per_100g;
+=> nrel_K_content:305mg_per_100g;
+=> nrel_Na_content:12mg_per_100g;
+=> nrel_Zn_content:0.2mg_per_100g;
+=> nrel_Mn_content:0.1mg_per_100g;
+
+
+=> nrel_carbohydrates_content:8.62g_per_100g;
+=> nrel_fats_content:0.16g_per_100g;
+=> nrel_protein_content:1.08g_per_100g;
+    <- rrel_key_sc_element:...
+(*
+  <-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Брюква укрепляет иммунитет человека, лечит простуду и хронические заболевания дыхательных органов, выводит мокроту. Поэтому ее часто советуют принимать при бронхиальной астме. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(брюква)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+            
+            -> asthma;;
+        *);;
+*);
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+   
+        (*
+            -> [Брюква оказывает слабительный эффект. Это свойство делает ее особенно полезной для людей с нарушенным пищеварением.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.2(брюква)](*<- lang_ru;;*);;
+    
+*);
+
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Брюква способна снижать артериальное давление, а также чистить кровь от холестерина.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.3(брюква)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            -> cholesterol;;
+            
+        *);;
+
+*);
+ <-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(брюква)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://rutabaga.jpg"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+
+
+<=nrel_inclusion:concept_vegetable;;
+

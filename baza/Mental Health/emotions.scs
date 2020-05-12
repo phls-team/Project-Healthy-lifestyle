@@ -1,0 +1,33 @@
+emotion
+
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+[Эмоция](*<-lang_ru;;*);
+[Emotion](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(Эмоция)](*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        -> rrel_example: [Эмо́ция (от лат. emoveo — потрясаю, волную) — психический процесс средней продолжительности, отражающий субъективное оценочное отношение к существующим или возможным ситуациям и объективному миру.](*<-lang_ru;;*);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...(*
+    <- statement;;
+    => nrel_main_idtf: [Утв. 1 об Эмоции](*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        -> rrel_example: [Эмоции характеризуются тремя компонентами: переживаемым или осознаваемым в психике ощущением эмоции; процессами, происходящими в нервной, эндокринной, дыхательной, пищеварительной и других системах организма; наблюдаемыми выразительными комплексами эмоций, в том числе, на лице.](*<-lang_ru;;*);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...(*
+    <- illustration;;
+    <=nrel_sc_text_translation: ...(*
+        -> "file://images/emotion.jpg"(*=>nrel_format: format_jpg;;*);;
+    *);;
+*);;
+/*
+emotion -> rrel_example: ;;
+*/

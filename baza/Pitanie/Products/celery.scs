@@ -69,7 +69,7 @@ concept_celery<-rrel_key_sc_element:
 
 
 
-concept_product=>nrel_inclusion:concept_celery;;
+concept_vegetable=>nrel_inclusion:concept_celery;;
 concept_celery=> nrel_vitamin_B2_content:0.1mg_per_100g;;
 concept_celery=> nrel_vitamin_B9_content:36mg_per_100g;;
 concept_celery=> nrel_vitamin_C_content:3.1mg_per_100g;;

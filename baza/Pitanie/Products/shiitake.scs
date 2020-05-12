@@ -1,0 +1,88 @@
+concept_shiitake=> nrel_main_idtf: [грибы шиитаке](*<- lang_ru;;*);
+=> nrel_main_idtf: [shiitake](*<- lang_en;;*);
+
+  =>nrel_calorie_content:34kcal_per_100g;
+
+=> nrel_vitamin_B2_content:0.2mg_per_100g;
+=> nrel_vitamin_B3_content:3.9mg_per_100g;
+
+=> nrel_vitamin_B5_content:1.5mg_per_100g;
+=> nrel_vitamin_B6_content:0.3mg_per_100g;
+
+=> nrel_Ca_content:2mg_per_100g;
+=> nrel_Fe_content:0.4mg_per_100g;
+=> nrel_Mg_content:20mg_per_100g;
+=> nrel_P_content:112mg_per_100g;
+=> nrel_K_content:304mg_per_100g;
+=> nrel_Na_content:9mg_per_100g;
+=> nrel_Zn_content:1mg_per_100g;
+=> nrel_Cu_content:0.1mg_per_100g;
+=> nrel_Mn_content:0.2mg_per_100g;
+
+
+=> nrel_carbohydrates_content:6.79g_per_100g;
+=> nrel_fats_content:0.49g_per_100g;
+=> nrel_protein_content:2.24g_per_100g;
+    <- rrel_key_sc_element:...
+(*
+  <-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Грибы шиитаке способствуют нормализации обмена веществ, благотворно влияют на работу пищеварительной системы, способствуют активному расщеплению жиров. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(грибы шиитаке)](*<- lang_ru;;*);;
+  
+*);
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+   
+        (*
+            -> [При регулярном употреблении грибов шиитаке уровень холестерина в крови снижается более чем на 35 — 45%.  ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.2(грибы шиитаке)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            -> cholesterol;;
+            
+        *);;
+*);
+
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Входящие в состав грибов шиитаке полисахариды оказывают положительное влияние на синтез интерферона в организме, благодаря чему улучшается иммунитет, повышается устойчивость к инфекционным заболеваниям. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.3(грибы шиитаке)](*<- lang_ru;;*);;
+
+
+*);
+ <-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(грибы шиитаке)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://shiitake.jpg"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+
+
+<=nrel_inclusion:concept_product;;
+

@@ -1,0 +1,83 @@
+concept_sauerkraut=> nrel_main_idtf: [квашеная капуста](*<- lang_ru;;*);
+=> nrel_main_idtf: [sauerkraut](*<- lang_en;;*);
+
+  =>nrel_calorie_content:19kcal_per_100g;
+=> nrel_vitamin_E_content:0.1mg_per_100g;
+=> nrel_vitamin_C_content:14.7mg_per_100g;
+=> nrel_vitamin_B3_content:0.1mg_per_100g;
+=> nrel_vitamin_B4_content:10.4mg_per_100g;
+=> nrel_vitamin_B5_content:0.1mg_per_100g;
+=> nrel_vitamin_B6_content:0.1mg_per_100g;
+
+=> nrel_Ca_content:30mg_per_100g;
+=> nrel_Fe_content:1.5mg_per_100g;
+=> nrel_Mg_content:13mg_per_100g;
+=> nrel_P_content:20mg_per_100g;
+=> nrel_K_content:170mg_per_100g;
+=> nrel_Na_content:661mg_per_100g;
+=> nrel_Zn_content:0.2mg_per_100g;
+=> nrel_Cu_content:0.1mg_per_100g;
+=> nrel_Mn_content:0.2mg_per_100g;
+
+
+=> nrel_carbohydrates_content:4.28g_per_100g;
+=> nrel_fats_content:0.14g_per_100g;
+=> nrel_protein_content:0.91g_per_100g;
+    <- rrel_key_sc_element:...
+(*
+  <-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Большое содержание витамина С в квашеной капусте помогает укрепить иммунную систему и предупреждает старение клеток и тканей ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(квашеная капуста)](*<- lang_ru;;*);;
+ 
+*);
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+   
+        (*
+            -> [Образующаяся в процессе сквашивания капусты молочная кислота стимулирует обмен веществ и делает кожу более свежей и упругой .](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.2(квашеная капуста)](*<- lang_ru;;*);;
+   
+*);
+
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Квашеная капуста, повышая иммунитет, усиливает стрессоустойчивость организма, активизирует обмен веществ и способствует стимуляции выработки красных кровяных телец.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.3(квашеная капуста)](*<- lang_ru;;*);;
+ 
+
+*);
+ <-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(квашеная капуста)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://sauerkraut.jpg"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+
+
+<=nrel_inclusion:concept_product;;
+

@@ -1,0 +1,50 @@
+concept_recreation<-sc_node_not_relation;;
+
+concept_recreation => nrel_main_idtf: [отдых](*<- lang_ru;;*);;
+concept_recreation => nrel_main_idtf: [recreation](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_recreation;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Отдых - состояние покоя, либо времяпрепровождение, целью которого является восстановление сил, достижение работоспособного состояния организма](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(отдых)](*<- lang_ru;;*);;
+*);;
+
+
+
+
+statement -> ...
+(*
+   -> rrel_key_sc_element: concept_recreation;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Здоровый сон один из лучших видов отдыха.](*<- lang_ru;;*);;
+            => nrel_using_constants:concept_healthy_sleep;;
+
+        *);;
+    => nrel_main_idtf: [Утв.(отдых,здоровый сон)](*<- lang_ru;;*);;
+*);;
+
+
+concept_recreation->rrel_example:[Обычно отдых включает в себя следующие стадии: усталость, расслабление, восстановление сил, развлечение и/или перемена вида деятельности.];;
+
+
+
+concept_recreation<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://recreation.png"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;
+
+

@@ -1,0 +1,86 @@
+172kcal_per_100g=> nrel_main_idtf: [172 ккал на 100 г](*<- lang_ru;;*);;
+concept_mussels => nrel_main_idtf: [мидии](*<- lang_ru;;*);
+=> nrel_main_idtf: [mussels](*<- lang_en;;*);
+
+  =>nrel_calorie_content:172kcal_per_100g;
+=> nrel_vitamin_B3_content:3mg_per_100g;
+=> nrel_vitamin_C_content:13.6mg_per_100g;
+=> nrel_vitamin_B5_content:1mg_per_100g;
+=> nrel_vitamin_B1_content:0.3mg_per_100g;
+=> nrel_vitamin_B2_content:0.4mg_per_100g;
+
+=> nrel_Na_content:369mg_per_100g;
+=> nrel_K_content:268mg_per_100g;
+=> nrel_Ca_content:33mg_per_100g;
+=> nrel_P_content:285mg_per_100g;
+=> nrel_Mg_content:37mg_per_100g;
+=> nrel_Mn_content:6.8mg_per_100g;
+=> nrel_Fe_content:6.7mg_per_100g;
+
+=> nrel_carbohydrates_content:7.39g_per_100g;
+=> nrel_fats_content:4.48g_per_100g;
+=> nrel_protein_content:23.8g_per_100g;
+    <- rrel_key_sc_element:...
+(*
+  <-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Мидии содержат именно полиненасыщенные жирные кислоты, которые требуются для хорошей работы мозга. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(мидии)](*<- lang_ru;;*);;
+    
+*);
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+   
+        (*
+            -> [Мидии особенно полезны людям с недостаточной функцией щитовидной железы.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.2(мидии)](*<- lang_ru;;*);;
+ 
+        
+*);
+
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [В мидиях самое минимальное содержание холестерина, что позволяет его без опаски включать в меню людей, склонных к атеросклерозу.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.3(мидии)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            ->cholesterol;;
+            
+        *);;
+
+*);
+ <-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(мидии)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://mussels.jpg"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+
+
+<=nrel_inclusion:concept_product;;
+

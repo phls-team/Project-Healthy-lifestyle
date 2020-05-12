@@ -1,0 +1,92 @@
+concept_dried_fruits
+<- sc_node_not_relation;;
+concept_dried_fruits=>nrel_main_idtf:[сухофрукты]
+	(*
+		<-lang_ru;;
+	*);
+nrel_main_idtf:[dried fruits]
+	(*
+		<-lang_en;;
+	*);;
+concept_dried_fruits<-rrel_key_sc_element:...
+	(*
+		<-definition;;=>nrel_main_idtf:
+[Опр.(сухофрукты)] 
+	(* 
+		<-lang_ru;;
+	*);;
+	
+<=nrel_sc_text_translation:...
+	(*
+		->[Сухофрукты — высушенные фрукты или ягоды, с остаточной влажностью около 20 %. Сушатся или естественным путём (например, на солнце), или с применением промышленных методов (например, с помощью дегидратора или сушилки для овощей).]
+(* 
+<-lang_ru;; 
+*);;
+	
+	*);;
+*);;
+
+
+concept_dried_fruits<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://200px-Dry_fruit.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;
+
+concept_dried_fruits<-rrel_key_sc_element:...	(*
+		
+		<-statement;;
+		=>nrel_main_idtf:[Утв.(Cухофрукты)](*<-lang_ru;;*);;
+		<=nrel_sc_text_translation:...
+		(*
+			->rrel_example:[Сухофрукты имеют длительный срок хранения и не требуют хранения в холодном месте. В этом — одно из их главных преимуществ, и в этом отношении они являются удобной альтернативой свежим фруктам (особенно во время неурожайного сезона).](*<-lang_ru;;*);;
+		*);;
+	*);;
+
+concept_dried_fruits<-rrel_key_sc_element:...
+        (*
+
+                <-statement;;
+                =>nrel_main_idtf:[Утв.(Cухофрукты)](*<-lang_ru;;*);;
+                <=nrel_sc_text_translation:...
+                (*
+                        ->rrel_example:[Сухофрукты обладают  витаминами (A, B1, B2, B3, B5, B6) и минеральными элементами (железо, кальций, магний, фосфор, калий, натрий).](*<-lang_ru;;*);;
+                *);;
+        *);;
+
+
+concept_dried_fruits<-rrel_key_sc_element:...
+	(*
+		
+		<-statement;;
+		=>nrel_main_idtf:[Утв.(Cухофрукты)](*<-lang_ru;;*);;
+		<=nrel_sc_text_translation:...
+		(*
+			->rrel_example:[Добавляются в выпечку, фруктовый хлеб, сухие завтраки, мюсли, сладости, используются для приготовления компота.](*<-lang_ru;;*);;
+		*);;
+	*);;
+
+concept_dried_fruits<-rrel_key_sc_element:...
+	(*
+		
+		<-statement;;
+		=>nrel_main_idtf:[Утв.(Cухофрукты)](*<-lang_ru;;*);;
+		<=nrel_sc_text_translation:...
+		(*
+			->rrel_example:[Сухофрукты обладают интенсивным, часто приторно-сладким или кисло-сладким вкусом и своеобразным ароматом.](*<-lang_ru;;*);;
+		*);;
+	*);;
+
+concept_dried_fruits=>nrel_inclusion:vitamin_B1;vitamin_B2;vitamin_B3;vitamin_B5;vitamin_B6;vitamin_A;;
+concept_dried_fruits=>nrel_inclusion:microelement_ferrum_Fe;macroelement_phosphorus_P;macroelement_magnesium_Mg;macroelement_calcium_Ca;macroelement_kalium_K;macroelement_natrium_Na;;
+concept_dried_fruits=>nrel_losing:vitamin_C;;
+concept_dried_fruits=>nrel_inclusion:concept_fruit;;
+concept_dried_fruits=>nrel_inclusion:concept_berry;;
+concept_dried_fruits=>nrel_have_inclusion:fruit_apricot;fruit_apple;fruit_pear;fruit_pear;berry_melon;fruit_fig;fruit_mango;fruit_persimmon;fruit_pineapple;fruit_coconut;berry_cranberry;berry_strawberry;berry_dog_rose;raisins;;

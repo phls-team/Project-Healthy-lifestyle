@@ -1,0 +1,55 @@
+coloring_animal=>nrel_main_idtf:[цвет животного]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[animal color]
+        (*
+                <-lang_en;;
+        *);;
+
+coloring_animal<-rrel_key_sc_element:...
+        (*
+                <-definition;;=>nrel_main_idtf:
+[Опр.(цвет животного)]
+        (*
+                <-lang_ru;;
+        *);;
+
+<=nrel_sc_text_translation:...
+        (*
+                ->[Окраска животных – это общий вид животного в результате отражения или испускания света с его поверхностей.]
+(*
+<-lang_ru;;
+*);;
+
+        *);;
+*);;
+coloring_animal<-rrel_key_sc_element:...
+        (*
+                <-definition;;=>nrel_main_idtf:
+[Опр.(цвет животного)]
+        (*
+                <-lang_ru;;
+        *);;
+
+<=nrel_sc_text_translation:...
+        (*
+                ->[Окраска животных – это окраска и форма животных, обеспечивающая наибольшее их приспособление к условиям среды .]
+(*
+<-lang_ru;;
+*);;
+
+        *);;
+*);;
+
+coloring_animal<-rrel_key_sc_element:...
+        (*
+
+                <-statement;;
+                =>nrel_main_idtf:[Утв.(цвет животного)](*<-lang_ru;;*);;
+                <=nrel_sc_text_translation:...
+                (*
+                        ->rrel_example:[Окраска может меняться в зависимости от сезона ](*<-lang_ru;;*);;
+                *);;
+        *);;
+

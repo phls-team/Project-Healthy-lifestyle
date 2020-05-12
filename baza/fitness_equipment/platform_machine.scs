@@ -1,0 +1,41 @@
+platform_machine
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [platform machine](*<-lang_en;;*);
+          [тренажёр-платформа](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(тренажёр-платформа)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Тренажёр, используемый для упражнения "жим ногами"](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_training_apparatus;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(тренажёр-платформа)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Не рекомендуется использовать тренажёр-платформу спортсменам, перенесшим травмы коленных суставов и связок](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://platform_machine.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

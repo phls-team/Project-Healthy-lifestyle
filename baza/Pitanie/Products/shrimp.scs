@@ -1,0 +1,74 @@
+concept_shrimp=> nrel_main_idtf: [креветки ](*<- lang_ru;;*);
+=> nrel_main_idtf: [shrimp](*<- lang_en;;*);
+
+  =>nrel_calorie_content:99kcal_per_100g;
+
+=> nrel_Na_content:111mg_per_100g;
+=> nrel_K_content:259mg_per_100g;
+=> nrel_Ca_content:70mg_per_100g;
+=> nrel_P_content:237mg_per_100g;
+=> nrel_Mg_content:39mg_per_100g;
+=> nrel_Cu_content:0.4mg_per_100g;
+=> nrel_Fe_content:0.5mg_per_100g;
+
+=> nrel_carbohydrates_content:13.38g_per_100g;
+=> nrel_fats_content:76.08g_per_100g;
+=> nrel_protein_content:7.79g_per_100g;
+    <- rrel_key_sc_element:...
+(*
+  <-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [При систематическом употреблении креветок уменьшается риск формирования костной дистрофии, при этом связки становятся эластичными. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(креветки)](*<- lang_ru;;*);;
+ 
+*);
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+   
+        (*
+            -> [Входящие в состав креветок аминокислоты уменьшают боль во время менструального цикла. При регулярном употреблении приходят в норму женские гормоны. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.2(креветки)](*<- lang_ru;;*);;
+
+*);
+
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Жирные кислоты в креветках положительно влияют на деятельность головного мозга. Большое наличие жирных кислот Омега-3 активизирует умственную работоспособность, защищает от слабоумия и болезни Альцгеймера.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.3(креветки)](*<- lang_ru;;*);;
+   
+
+*);
+ <-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(креветки)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://shrimp.jpg"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+
+
+<=nrel_inclusion:concept_product;;
+

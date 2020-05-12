@@ -1,0 +1,54 @@
+concept_vaccination<-sc_node_not_relation;;
+
+concept_variola<-sc_node_not_relation;=> nrel_main_idtf: [оспа](*<- lang_ru;;*);;
+
+
+concept_vaccination => nrel_main_idtf: [вакцинация](*<- lang_ru;;*);;
+concept_vaccination => nrel_main_idtf: [vaccination](*<- lang_en;;*);;
+concept_vaccination => nrel_idtf: [иммунизация](*<- lang_ru;;*);;
+concept_vaccination => nrel_idtf: [ immunization](*<- lang_en;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_vaccination;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Вакцинация - введение вакцины с целью стимулировать иммунную систему организма к защите его от болезни.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Вакцинация)](*<- lang_ru;;*);;
+    => nrel_using_constants:concept_desease;;
+*);;
+
+
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_vaccination;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Первым заболеванием, побеждённым вакцинацией, была натуральная оспа.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(вакцинация)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+            -> concept_disease;;
+            -> concept_variola;;
+        *);;
+*);;
+
+
+
+concept_vaccination<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://photo/vaccination.png"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;
+

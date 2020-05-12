@@ -1,0 +1,120 @@
+concept_field_hockey
+<- sc_node_not_relation;;
+
+concept_field_hockey=>nrel_main_idtf:[хоккей на траве]
+	(*
+		<-lang_ru;;
+	*);
+
+nrel_main_idtf:[field hockey]
+	(*
+		<-lang_en;;
+	*);;
+
+concept_field_hockey<-rrel_key_sc_element:...
+	(*
+		<-definition;;=>nrel_main_idtf:
+[Опр.(регби)] 
+	(* 
+		<-lang_ru;;
+	*);;
+	
+<=nrel_sc_text_translation:...
+	(*
+                ->[хоккей на траве — командный вид спорта (по одиннадцать человек в каждой команде), в который играют две команды, используя клюшку и мяч.]
+(* 
+<-lang_ru;; 
+*);;
+
+=> nrel_using_constants:
+        {
+concept_sport
+        };;
+	
+	*);;
+*);;
+
+concept_field_hockey<-rrel_key_sc_element:...
+	(*
+		<-definition;;=>nrel_main_idtf:
+[Definition.(field hockey)] 
+	(* 
+		<-lang_en;;
+	*);;
+	
+<=nrel_sc_text_translation:...
+	(*
+                ->[field hockey is a sport in which two opposing teams, of 11 players each, attempt to score goals. They do this by manoeuvring a small hard ball with sticks, and getting into the opponent's goal. More information can be found at the related links.]
+(* 
+<-lang_en;; 
+*);;
+	
+	*);;
+*);;
+
+concept_field_hockey<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://220px-HOCKEY_ARGENTINA_PAKISTAN.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;
+
+concept_field_hockey<-rrel_key_sc_element:...
+	(*
+		
+		<-statement;;
+		=>nrel_main_idtf:[Утв.(Хоккей на траве)](*<-lang_ru;;*);;
+		<=nrel_sc_text_translation:...
+		(*
+                        ->rrel_example:[хоккей на траве пользуется большой популярностью в Голландии, Германии, Испании, Бельгии, Англии, Ирландии, Аргентине, Австралии, Новой Зеландии, ЮАР, Индии, Пакистане, Малайзии.](*<-lang_ru;;*);;
+		*);;
+	*);;
+
+concept_field_hockey<-rrel_key_sc_element:...
+        (*
+
+                <-statement;;
+                =>nrel_main_idtf:[Утв.(Хоккей на траве)](*<-lang_ru;;*);;
+                <=nrel_sc_text_translation:...
+                (*
+                        ->rrel_example:[хоккей на траве играют на искусственном покрытии. ](*<-lang_ru;;*);;
+                *);;
+        *);;
+
+
+concept_field_hockey<-rrel_key_sc_element:...
+	(*
+		
+		<-statement;;
+		=>nrel_main_idtf:[Statement.(Field hockey)](*<-lang_en;;*);;
+		<=nrel_sc_text_translation:...
+		(*
+                        ->rrel_example:[field hockey is played globally, mainly in parts of Western Europe, South Asia, Southern Africa, Australia, New Zealand, Argentina, and parts of the United States (primarily New England and the Mid-Atlantic states).](*<-lang_en;;*);;
+		*);;
+	*);;
+
+concept_field_hockey<=nrel_inclusion:team_sport;;
+concept_field_hockey<=nrel_inclusion:concept_sport;;
+concept_field_hockey=>nrel_rodina:Great_Britain;;
+concept_field_hockey<=nrel_inclusion:olimpic_sport;;
+concept_field_hockey<=nrel_inclusion:summer_sport;;
+
+concept_field_hockey<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://5500.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;
+

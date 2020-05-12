@@ -1,0 +1,126 @@
+cholesterol=>nrel_main_idtf:[холестерин]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[cholesterol]
+        (*
+                <-lang_en;;
+        *);;
+
+cholesterol<-rrel_key_sc_element:...
+        (*
+                <-definition;;=>nrel_main_idtf:
+[Опр.(холестерин)]
+        (*
+                <-lang_ru;;
+        *);;
+
+<=nrel_sc_text_translation:...
+        (*
+                ->[Холестери́н- органическое соединение, природный полициклический липофильный спирт, содержащийся в клеточных мембранах всех животных и человека, однако его нет в клеточных мембранах растений, грибов, а также у прокариотических организмов (археи, бактерии и т.д.).]
+(*
+<-lang_ru;;
+*);;
+
+        *);;
+*);;
+
+cholesterol<-rrel_key_sc_element:...
+        (*
+                <-definition;;=>nrel_main_idtf:
+[Definition.(cholesterol)]
+        (*
+                <-lang_en;;
+        *);;
+
+<=nrel_sc_text_translation:...
+        (*
+                ->[Cholesterol is an organic molecule. It is a sterol (or modified steroid),a type of lipid.Cholesterol is biosynthesized by all animal cells and is an essential structural component of animal cell membranes. It is also a precursor molecule for all steroid hormones and vitamin D.]
+(*
+<-lang_en;;
+*);;
+        *);;
+*);;
+
+cholesterol<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://scale_1200.png"
+        (*
+                =>nrel_format:format_png;;
+        *);;
+*);;
+*);;
+
+cholesterol<-rrel_key_sc_element:...
+        (*
+
+                <-statement;;
+                =>nrel_main_idtf:[Утв.(холестерин)](*<-lang_ru;;*);;
+                <=nrel_sc_text_translation:...
+                (*
+                        ->rrel_example:[Холестерин обеспечивает устойчивость клеточных мембран в широком интервале температур. Он необходим для выработки витамина D, выработки надпочечниками различных стероидных гормонов (включая кортизол, альдостерон, половые гормоны: эстрогены, прогестерон, тестостерон), жёлчных кислот.](*<-lang_ru;;*);;
+                *);;
+        *);;
+
+
+cholesterol<-rrel_key_sc_element:...
+        (*
+
+                <-statement;;
+                =>nrel_main_idtf:[Утв.(холестерин)](*<-lang_ru;;*);;
+                <=nrel_sc_text_translation:...
+                (*
+                        ->rrel_example:[Содержится в клеточных мембранах всех животных и человека, однако его нет в клеточных мембранах растений, грибов, а также у прокариотических организмов (археи, бактерии и т.д.).](*<-lang_ru;;*);;
+                *);;
+        *);;
+
+cholesterol<-rrel_key_sc_element:...
+        (*
+
+                <-statement;;
+                =>nrel_main_idtf:[Утв.(холестерин)](*<-lang_ru;;*);;
+                <=nrel_sc_text_translation:...
+                (*
+                        ->rrel_example:[Нерастворим в воде, растворим в жирах и органических растворителях.](*<-lang_ru;;*);;
+                *);;
+        *);;
+
+cholesterol<-rrel_key_sc_element:...
+        (*
+
+                <-statement;;
+                =>nrel_main_idtf:[Утв.(холестерин)](*<-lang_ru;;*);;
+                <=nrel_sc_text_translation:...
+                (*
+                        ->rrel_example:[Холестерин легко синтезируется в организме из жиров, глюкозы, аминокислот.](*<-lang_ru;;*);;
+                *);;
+        *);;
+
+cholesterol<-rrel_key_sc_element:...
+        (*
+
+                <-statement;;
+                =>nrel_main_idtf:[Statement(cholesterol)](*<-lang_en;;*);;
+                <=nrel_sc_text_translation:...
+                (*
+                        ->rrel_example:[Cholesterol also serves as a precursor for the biosynthesis of steroid hormones, bile acid and vitamin D.](*<-lang_en;;*);;
+                *);;
+        *);;
+
+cholesterol<-rrel_key_sc_element:...
+        (*
+
+                <-statement;;
+                =>nrel_main_idtf:[Statement(cholesterol)](*<-lang_en;;*);;
+                <=nrel_sc_text_translation:...
+                (*
+                        ->rrel_example:[Cholesterol is the principal sterol synthesized by all animals. In vertebrates, hepatic cells typically produce the greatest amounts.](*<-lang_en;;*);;
+                *);;
+        *);;
+
+cholesterol=>nrel_inclusion:higher_level_of_cholesterol_in_blood;;
+cholesterol=>nrel_inclusion:lover_level_of_cholesterol_in_blood;;

@@ -1,0 +1,83 @@
+241kcal_per_100g=> nrel_main_idtf: [241 ккал на 100 г](*<- lang_ru;;*);;
+concept_dried_apricots => nrel_main_idtf: [курага](*<- lang_ru;;*);
+=> nrel_main_idtf: [dried apricots](*<- lang_en;;*);
+
+  =>nrel_calorie_content:241kcal_per_100g;
+=> nrel_vitamin_B3_content:2.6mg_per_100g;
+=> nrel_vitamin_C_content:1mg_per_100g;
+=> nrel_vitamin_B5_content:0.5mg_per_100g;
+=> nrel_vitamin_B4_content:13.9mg_per_100g;
+=> nrel_vitamin_E_content:4.3mg_per_100g;
+
+=> nrel_Na_content:10mg_per_100g;
+=> nrel_K_content:1162mg_per_100g;
+=> nrel_Ca_content:55mg_per_100g;
+=> nrel_P_content:71mg_per_100g;
+=> nrel_Mg_content:32mg_per_100g;
+
+=> nrel_carbohydrates_content:62.64g_per_100g;
+=> nrel_fats_content:0.51g_per_100g;
+=> nrel_protein_content:3.39g_per_100g;
+    <- rrel_key_sc_element:...
+(*
+  <-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Из-за высокой калорийности необходимо ограничивать порции кураги людям с проблемами лишнего веса. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(курага)](*<- lang_ru;;*);;
+   
+*);
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+   
+        (*
+            -> [Курага незаменима в случае анемии, поскольку содержит в себе достаточное количество железа. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.2(курага)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            -> anemia;;
+            
+        *);;
+*);
+
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Курага благотворно действует на пищеварение, очищая кишечник и улучшая обмен веществ.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.3(курага)](*<- lang_ru;;*);;
+ 
+
+*);
+ <-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(курага)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://dried apricots.jpg"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+
+
+<=nrel_inclusion:concept_product;;
+

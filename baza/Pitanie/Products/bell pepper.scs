@@ -1,0 +1,109 @@
+concept_hemoglobin=> nrel_main_idtf: [гемоглобин](*<- lang_ru;;*);;
+6.32g_per_100g=> nrel_main_idtf: [6.3 г на 100 г](*<- lang_ru;;*);;
+1g_per_100g=> nrel_main_idtf: [1 г на 100 г](*<- lang_ru;;*);;
+0.21g_per_100g=> nrel_main_idtf: [0.21 г на 100 г](*<- lang_ru;;*);;
+20.77g_per_100g=> nrel_main_idtf: [20.77 г на 100 г](*<- lang_ru;;*);;
+11mg_per_100g=> nrel_main_idtf: [11 мг на 100 г](*<- lang_ru;;*);;
+12mg_per_100g=> nrel_main_idtf: [12 мг на 100 г](*<- lang_ru;;*);;
+212mg_per_100g=> nrel_main_idtf: [212 мг на 100 г](*<- lang_ru;;*);;
+0.9mg_per_100g=> nrel_main_idtf: [0.9 мг на 100 г](*<- lang_ru;;*);;
+183.5mg_per_100g=> nrel_main_idtf: [183.5 мг на 100 г](*<- lang_ru;;*);;
+27kcal_per_100g=> nrel_main_idtf: [27 ккал на 100 г](*<- lang_ru;;*);;
+concept_bacteria=> nrel_main_idtf: [бактерии](*<- lang_ru;;*);;
+concept_bell_pepper=> nrel_main_idtf: [перец болгарский](*<- lang_ru;;*);
+=> nrel_main_idtf: [bell pepper](*<- lang_en;;*);
+
+  =>nrel_calorie_content:27kcal_per_100g;
+
+=> nrel_vitamin_C_content:183.5mg_per_100g;
+
+=> nrel_vitamin_B3_content:0.9mg_per_100g;
+
+=> nrel_vitamin_B5_content:0.2mg_per_100g;
+=> nrel_vitamin_B6_content:0.2mg_per_100g;
+
+=> nrel_Ca_content:11mg_per_100g;
+=> nrel_Fe_content:0.5mg_per_100g;
+=> nrel_Mg_content:12mg_per_100g;
+=> nrel_P_content:24mg_per_100g;
+=> nrel_K_content:212mg_per_100g;
+=> nrel_Na_content:2mg_per_100g;
+=> nrel_Zn_content:0.2mg_per_100g;
+=> nrel_Cu_content:0.1mg_per_100g;
+=> nrel_Mn_content:0.1mg_per_100g;
+
+=> nrel_fats_content:0.21g_per_100g;
+=> nrel_carbohydrates_content:6.32g_per_100g;
+=> nrel_protein_content:1g_per_100g;
+    <- rrel_key_sc_element:...
+(*
+  <-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Болгарский перец помогает повысить сопротивляемость организма вирусам и бактериям. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(перец болгарский)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+            
+            -> concept_bacteria;;
+        *);;
+*);
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+   
+        (*
+            -> [Болгарский перец помогает справиться с проблемой низкого гемоглобина в крови.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.2(перец болгарский)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            -> concept_hemoglobin;;
+            
+        *);;
+*);
+
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Болгарский перец способен разжижать кровь, снижает вероятность образования тромбов, помогает довести до нормы показатель холестерина.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.3(перец болгарский)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            -> cholesterol;;
+            
+        *);;
+
+*);
+ <-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(перец болгарский)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://bell pepper.png"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);
+
+
+
+<=nrel_inclusion:concept_vegetable;;
+

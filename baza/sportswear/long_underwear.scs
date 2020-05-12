@@ -1,0 +1,41 @@
+concept_long_underwear
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [long_underwear](*<-lang_en;;*);
+          [кальсоны](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(кальсоны)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Мужское нижнее бельё в виде длинных штанов.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_sportswear;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. 1 (О кальсонах)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Носятся под брюками для создания благоприятных условий, сохранения тепла, защиты тела от ветра и холода, предохранения верхней одежды от выделений организма.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://Image/long_underwear.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

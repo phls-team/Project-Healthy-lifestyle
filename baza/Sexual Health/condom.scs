@@ -1,0 +1,33 @@
+condom
+
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+[презерватив](*<-lang_ru;;*);
+[condom](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ...(*
+    <- definition;;
+    => nrel_main_idtf: [Опр.(презерватив)](*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        -> rrel_example: [Презервати́в (фр. préservatif, от позднелат. praeservo — "предохраняю"), также кондо́м (фр. condom) — медицинское изделие в виде небольшой тонкостенной эластичной трубки с одним закрытым концом и входным отверстием на другом, предназначенное главным образом для использования в качестве средства контрацепции барьерного типа, а также средства защиты от многих патогенов, передающихся половым путём.](*<-lang_ru;;*);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...(*
+    <- statement;;
+    => nrel_main_idtf: [Утв. 1 о Презервативе](*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ...(*
+        -> rrel_example: [Представляет собой непроницаемый для спермы и патогенов эластичный чехол, который для контрацепции надевается на эрегированный половой член.](*<-lang_ru;;*);;
+    *);;
+*);
+
+<- rrel_key_sc_element: ...(*
+    <- illustration;;
+    <=nrel_sc_text_translation: ...(*
+        -> "file://images/condom.jpg"(*=>nrel_format: format_jpg;;*);;
+    *);;
+*);;
+/*
+condom -> rrel_example: ;;
+*/

@@ -1,0 +1,87 @@
+68kcal_per_100g=> nrel_main_idtf: [68 ккал на 100 г](*<- lang_ru;;*);;
+417mg_per_100g=> nrel_main_idtf: [417 мг на 100 г](*<- lang_ru;;*);;
+18mg_per_100g=> nrel_main_idtf: [18 мг на 100 г](*<- lang_ru;;*);;
+228.3mg_per_100g=> nrel_main_idtf: [228.3 мг на 100 г](*<- lang_ru;;*);;
+2.55g_per_100g=> nrel_main_idtf: [2.55 г на 100 г](*<- lang_ru;;*);;
+14.32g_per_100g=> nrel_main_idtf: [14.32 г на 100 г](*<- lang_ru;;*);;
+0.95g_per_100g=> nrel_main_idtf: [0.95 г на 100 г](*<- lang_ru;;*);;
+concept_guava=> nrel_main_idtf: [гуава](*<- lang_ru;;*);
+=> nrel_main_idtf: [guava](*<- lang_en;;*);
+
+  =>nrel_calorie_content:68kcal_per_100g;
+=> nrel_vitamin_B3_content:1.1mg_per_100g;
+=> nrel_vitamin_E_content:0.7mg_per_100g;
+=> nrel_vitamin_B5_content:0.5mg_per_100g;
+=> nrel_vitamin_C_content:228.3mg_per_100g;
+=> nrel_vitamin_B4_content:7.6mg_per_100g;
+
+=> nrel_Ca_content:18mg_per_100g;
+=> nrel_Fe_content:0.3mg_per_100g;
+=> nrel_Mg_content:22mg_per_100g;
+=> nrel_P_content:40mg_per_100g;
+=> nrel_K_content:417mg_per_100g;
+=> nrel_Na_content:2mg_per_100g;
+=> nrel_Mn_content:0.2mg_per_100g;
+
+
+=> nrel_carbohydrates_content:14.32g_per_100g;
+=> nrel_fats_content:0.95g_per_100g;
+=> nrel_protein_content:2.55g_per_100g;
+    <- rrel_key_sc_element:...
+(*
+  <-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Мякоть плода содержит в себе огромное количество тиамина, который играет важную роль в нормальной работе нервной системы, а пектин способствует улучшению пищеварения и восстановлению работы кишечника. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(гуава)](*<- lang_ru;;*);;
+ 
+*);
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+   
+        (*
+            -> [ Постоянное употребление гуавы поможет нормализовать сердечные ритмы, улучшить питание миокарда и сделать кровеносные сосуды более гибкими и эластичными. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.2(гуава)](*<- lang_ru;;*);;
+
+*);
+
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Гуава полезна для кишечника и желудка из-за наличия пищевых волокон. Фрукт помогает насытить организм и дать ему заряд бодрости на весь день.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.3(гуава)](*<- lang_ru;;*);;
+
+
+*);
+ <-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(гуава)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://guava.jpg"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+
+
+<=nrel_inclusion:concept_fruit;;
+
