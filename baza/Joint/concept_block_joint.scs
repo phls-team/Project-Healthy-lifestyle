@@ -1,0 +1,37 @@
+concept_block_joint
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [block joint](*<-lang_en;;*);
+          [блоковидный сустав](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(блоковидный сустав)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Суставная поверхность - отрезок цилиндра, на которой имеется гребешок, на суставной впадине - бороздка](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_monoaxial;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. 1 (О движении блоковидного сустава)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Поворот вокруг поперечной (фронтальной) оси (сгибание, разгибание)](*<- lang_ru;;*);;
+			*);;
+		*);
+
+->rrel_example: interphalangeal_brushes; interphalangeal_feet; ankle_joint;;
+interphalangeal_brushes=>nrel_main_idtf:
+[межфаланговые кисти](*<-lang_ru;; *);;
+interphalangeal_feet=>nrel_main_idtf:
+[межфаланговые стопы](*<-lang_ru;; *);;
+ankle_joint=>nrel_main_idtf:
+[голеностопный сустав](*<-lang_ru;; *);;

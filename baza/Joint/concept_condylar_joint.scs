@@ -1,0 +1,35 @@
+concept_condylar_joint
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [condylar joint](*<-lang_en;;*);
+          [мыщелковый сустав](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(мыщелковый сустав)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Переходная форма от блоковидного к эллипсоидному, две суставные головки](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_biaxial;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. 1 (Движение мыщелкового сустава)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Вокруг поперечной (фронтальной) оси (сгибаное, разгибание), продольной оси (вращение))](*<- lang_ru;;*);;
+			*);;
+		*);
+
+->rrel_example: knee_joint; atlantooccipital_joint;;
+knee_joint=>nrel_main_idtf:
+[коленный сустав](*<-lang_ru;; *);;
+atlantooccipital_joint=>nrel_main_idtf:
+[атлантозатылочный сустав](*<-lang_ru;; *);;

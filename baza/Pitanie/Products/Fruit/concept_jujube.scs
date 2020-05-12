@@ -1,0 +1,55 @@
+concept_jujube
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [jujube](*<-lang_en;;*);
+          [ююба](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(ююба)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Ююба — это древнейшее плодовое растение, распространившееся по всему земному шару в районах с теплым климатом, окультурено, вероятно, семь-восемь тысяч лет назад. В Китае издавна унаби признано одной из ведущих плодовых культур. В Никитском ботаническом саду в Крыму создана коллекция крупноплодных китайских сортов зизифуса.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_fruit;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. 1 (О ююбе)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Растения отличаются скороплодностью и засухоустойчивостью. Плоды очень питательны, богаты сахарами, витаминами, имеют лечебные свойства. Для лечебных целей используют также корни и кору. Важнее других видов зизифуса – ююба, или Зизифус настоящий.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+=>nrel_calorie_content:79;
+
+=> nrel_vitamin_C_content:69mg_per_100g;
+=> nrel_vitamin_B1_content:0.02mg_per_100g;
+=> nrel_vitamin_B2_content:0.04mg_per_100g;
+=> nrel_vitamin_B3_content:0.9mg_per_100g;
+=> nrel_vitamin_B6_content:0.08mg_per_100g;
+=> nrel_vitamin_A_content:0.04mg_per_100g;
+
+=>nrel_birthplace:Colombia;;
+southeast_asia=>nrel_main_idtf:
+[Австралия](*<-lang_ru;; *);
+[Australia](*<-lang_en;; *);;
+concept_jujube
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://Image/jujube.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

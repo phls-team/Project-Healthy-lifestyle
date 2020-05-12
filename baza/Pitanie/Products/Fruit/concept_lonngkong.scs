@@ -1,0 +1,49 @@
+concept_lonngkong
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [lonngkong](*<-lang_en;;*);
+          [лонгконг](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(лонгконг)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Лонгконг — экзотический фрукт, распространенный в Юго-Восточной Азии. Эти светло-желтые плоды гроздьями растут на высоких деревьях. Под плотной кожурой у них находится светлая мякоть, разделенная на несколько долек, вроде чесночных.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_fruit;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. 1 (О лонгконге)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Внутри можно найти твердые косточки. Вкус у лонгконга сладкий с кислинкой, немного напоминающей грейпфрут. Этот экзотический фрукт прекрасно утоляет жажду и, кроме того, поднимает настроение. Семена лонгконга помогают от высокой температуры. Едят лонгконг в свежем виде, но иногда из этих плодов варят джемы, варенье или компоты. В домашних условиях лонгконг вырастить невозможно, да и на прилавках магазинов его встретишь не часто.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+=>nrel_calorie_content:60;
+
+=> nrel_vitamin_C_content:84mg_per_100g;
+=> nrel_vitamin_B1_content:0.03mg_per_100g;
+=> nrel_vitamin_B2_content:0.14mg_per_100g;
+
+=>nrel_birthplace:southeast_asia;;
+concept_lonngkong
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://Image/lonngkong.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

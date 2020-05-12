@@ -1,0 +1,59 @@
+concept_hazelnut
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [hazelnut](*<-lang_en;;*);
+          [фундук](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(фундук)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Фундук – это лесной орех, плоды лещины крупной. Это южный собрат лесной лещины, ее окультуренный потомок. Фундук получен путем скрещивания нескольких сортов лещины, в процессе которого были получены самые крупные виды с самой тонкой кожурой.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:nuts;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. 1 (О фундуке)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Листья этого кустарника напоминают туловище рыбы – леща. Отсюда и название «лещина». Он растет преимущественно в южных странах, на плодородных почвах.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+=>nrel_calorie_content:651;
+
+=> nrel_vitamin_A_content:20mg_per_100g;
+=> nrel_vitamin_B1_content:0.64mg_per_100g;
+=> nrel_vitamin_B2_content:0.11mg_per_100g;
+=> nrel_vitamin_B3content:1.8mg_per_100g;
+=> nrel_vitamin_B4_content:45.6mg_per_100g;
+=> nrel_vitamin_B5_content:0.92mg_per_100g;
+=> nrel_vitamin_B6_content:0.56mg_per_100g;
+=> nrel_vitamin_B9_content:0.01mg_per_100g;
+=> nrel_vitamin_C_content:6.30mg_per_100g;
+=> nrel_vitamin_E_content:15.03mg_per_100g;
+
+=>nrel_birthplace:Caucasus;;
+Caucasus=>nrel_main_idtf:
+[Кавказ](*<-lang_ru;; *);
+[Caucasus](*<-lang_en;; *);;
+concept_hazelnut
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://Image/hazelnut.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

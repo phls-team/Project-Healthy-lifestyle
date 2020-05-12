@@ -1,0 +1,47 @@
+nrel_weight
+ 
+<-sc_node_norole_relation;
+
+=> nrel_main_idtf:
+          [weight*](*<-lang_en;;*);
+          [вес*](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(вес)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Вес - масса тела человека, выраженная в единицах массы](*<- lang_ru;;*);;
+			*);;
+			<= nrel_using_constants: {
+                concept_person
+            };;
+		*);
+
+<=nrel_inclusion:concept_person;
+<=nrel_inclusion:concept_athlete;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. 1 (О весе)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Индекса массы тела (ИМТ): вес в килограммах / (рост в метрах х рост в метрах).
+
+Эта формула оценивает уже имеющийся вес и указывает, в какую сторону его надо менять. Полученный результат сравните с таблицей.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://Image/weight.png"
+			(*
+				=> nrel_format : format_png ;;
+			*);;
+		*);;
+	*);;

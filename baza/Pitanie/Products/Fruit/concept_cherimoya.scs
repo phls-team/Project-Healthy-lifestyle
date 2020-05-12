@@ -1,0 +1,56 @@
+concept_cherimoya
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [cherimoya](*<-lang_en;;*);
+          [черимойя](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(черимойя)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Черимойя — дерево рода Аннона, семейство Анноновые. Другие названия этого растения чиримола, сыча, жемчужина Анд, чирмолия и золотое перуанское яблоко. Название произошло из двух слов языка индейцев кечуа: chiri — «холодный» и moya — «семечко». Объясняется такое название выносливостью дерева к погодным условиям. Оно прекрасно растет в засушливых и прохладных местностях.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_fruit;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. 1 (О черимойе)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[На вкус мякоть черимойи напоминает одновременно банан, клубнику, ананас, папайю и манго с молоком. Некоторые сорта имеют легкий аромат корицы. Черимойю часто называют дерево-мороженое, потому что мякоть, особенно если ее заморозить, очень похожа по консистенции и вкусу на сливочное мороженое с фруктовым вкусом.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+=>nrel_calorie_content:74;
+
+=> nrel_vitamin_PP_content:0.57mg_per_100g;
+=> nrel_vitamin_C_content:11.5mg_per_100g;
+=> nrel_vitamin_B1_content:0.09mg_per_100g;
+=> nrel_vitamin_B2_content:0.12mg_per_100g;
+=> nrel_vitamin_B5_content:0.24mg_per_100g;
+=> nrel_vitamin_B6_content:0.21mg_per_100g;
+=> nrel_vitamin_B9_content:0.02mg_per_100g;
+
+=>nrel_birthplace:Colombia;;
+Colombia=>nrel_main_idtf:
+[Колумбия](*<-lang_ru;; *);
+[Colombia](*<-lang_en;; *);;
+concept_cherimoya
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://Image/cherimoya.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

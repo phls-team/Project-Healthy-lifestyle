@@ -1,0 +1,83 @@
+Darya_Domracheva
+
+<-sc_node_not_relation;
+<=nrel_inclusion:concept_person;
+<=nrel_inclusion:concept_athlete;
+
+=> nrel_main_idtf:
+          [Darya Domracheva](*<-lang_en;;*);
+          [Дарья Домрачева](*<-lang_ru;;*);
+
+=> nrel_sport:concept_biathlon;
+=> nrel_weight:58;
+=> nrel_age:33;
+=> nrel_sports_rank:international_master_of_sports;
+=> nrel_height:168;
+=> nrel_birthplace: Belarus;
+=> nrel_sports_achivments: ...
+(*
+<= concept_competition: ...
+	(*
+		<-[Чемпионат Европы 2007](*<-lang_ru;;*);;
+		<=nrel_sports_awards:gold_medal;;
+		<=nrel_sports_awards:gold_medal;;
+	*);;
+
+<= concept_competition: ...
+	(*
+		<-[Чемпионат Мира 2011](*<-lang_ru;;*);;
+		<=nrel_sports_awards:silver_medal;;
+		<=nrel_sports_awards:bronze_medal;;
+	*);;
+
+<= concept_competition: ...
+	(*
+		<-[Чемпионат Мира 2012](*<-lang_ru;;*);;
+		<=nrel_sports_awards:gold_medal;;
+		<=nrel_sports_awards:silver_medal;;
+	*);;
+
+<= concept_competition: ...
+	(*
+		<-[Чемпионат Мира 2013](*<-lang_ru;;*);;
+		<=nrel_sports_awards:gold_medal;;
+	*);;
+
+<= concept_competition: ...
+	(*
+		<-[Олимпиада в Сочи 2014](*<-lang_ru;;*);;
+		<=nrel_sports_awards:gold_medal;;
+		<=nrel_sports_awards:gold_medal;;
+		<=nrel_sports_awards:gold_medal;;
+	*);;
+		
+<= concept_competition: ...
+	(*
+		<-[Кубок Мира 2015](*<-lang_ru;;*);;
+		<=nrel_sports_awards:gold_medal;;
+	*);;
+		
+<= concept_competition: ...
+	(*
+		<-[Чемпионат Мира 2017](*<-lang_ru;;*);;
+		<=nrel_sports_awards:silver_medal;;
+	*);;
+		
+<= concept_competition: ...
+	(*
+		<-[Олимпиада в Пхёнчхане 2018](*<-lang_ru;;*);;
+		<=nrel_sports_awards:gold_medal;;
+	*);;
+*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://Image/Darya_Domracheva.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

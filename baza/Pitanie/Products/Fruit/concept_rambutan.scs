@@ -1,0 +1,54 @@
+concept_rambutan
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [rambutan](*<-lang_en;;*);
+          [рамбутан](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(рамбутан)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Рамбутан (Nephelium lappaceum) принадлежит семейству сапиндовых, которое для нашего климата абсолютно неизвестно, однако в странах с жарким климатом выращивают не один вид из этого семейства для употребления плодов в пищу.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_fruit;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. 1 (О рамбутане)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Прежде чем насладится вкусом рамбутана, чтобы добраться до сочной студенистой сладкой мякоти фрукта, с него надо снять осторожно шкурку. Для этого острым ножом делают неглубокий круговой надрез посередине плода. Одну половинку кожуры снимают, оставляя другую, чтобы было удобно держать скользкую плодовую мякоть.
+Рамбутан едят осторожно, чтобы случайно не откусить вместе с мякотью мягкую косточку и не испортить тем самым вкус плода. Для тех, кто впервые «пробует» рамбутан, можно надрезать кожицу плода вдоль на сегменты в виде лепестков.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+=>nrel_calorie_content:82;
+
+=> nrel_vitamin_C_content:60mg_per_100g;
+=> nrel_vitamin_B1_content:0.01mg_per_100g;
+=> nrel_vitamin_B2_content:0.02mg_per_100g;
+=> nrel_vitamin_B5_content:0.02mg_per_100g;
+=> nrel_vitamin_B6_content:0.02mg_per_100g;
+=> nrel_vitamin_B9_content:0.08mg_per_100g;
+=> nrel_vitamin_A_content:0.02mg_per_100g;
+
+=>nrel_birthplace:southeast_asia;;
+concept_rambutan
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://Image/rambutan.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

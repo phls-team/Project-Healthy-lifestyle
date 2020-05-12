@@ -1,0 +1,59 @@
+concept_solanum_muricatum
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [solanum muricatum](*<-lang_en;;*);
+          [пепино](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(пепино)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Пепино имеет несколько названий – дынная груша или сладкий огурец. Этот представитель семейства Пасленовые является многолетним вечнозеленым кустарником. Кожистые листья пепино имеют продолговатую форму, а его цветки окрашены в фиолетово-синий цвет. Родина растения - Южная Америка. Здесь его выращивают ради получения съедобных сладких плодов, аромат и вкус которых напоминают дыню.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_fruit;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. 1 (О пепино)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[В традиционной медицине с помощью плодов пепино лечат заболевания кожи, бронхит и прочие инфекции дыхательных путей. Дынная груша особенно полезна при сахарном диабете, остеопорозе, ревматизме и гемофилии. Благодаря невысокой кислотности пепино можно употреблять людям с желудочно-кишечными заболеваниями.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+=>nrel_calorie_content:80;
+
+=> nrel_vitamin_PP_content:0.4mg_per_100g;
+=> nrel_vitamin_C_content:60mg_per_100g;
+=> nrel_vitamin_B2_content:0.12mg_per_100g;
+=> nrel_vitamin_B6_content:0.08mg_per_100g;
+=> nrel_vitamin_B9_content:0.05mg_per_100g;
+=> nrel_vitamin_A_content:0.02mg_per_100g;
+
+=>nrel_birthplace:South_America;;
+concept_solanum_muricatum
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://Image/solanum_muricatum.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);
+
+=>nrel_variety:consuello;ramzes;;
+
+consuello=>nrel_main_idtf:
+[Консуэло](*<-lang_ru;; *);;
+ramzes=>nrel_main_idtf:
+[Рамзес](*<-lang_ru;; *);;

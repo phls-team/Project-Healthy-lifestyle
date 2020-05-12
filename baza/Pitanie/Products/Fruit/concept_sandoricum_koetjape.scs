@@ -1,0 +1,52 @@
+concept_sandoricum_koetjape
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [sandoricum koetjape](*<-lang_en;;*);
+          [сантол](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(сантол)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Сантол — это экзотическое растение, которое можно встретить на юго-востоке Азии. Плоды этого вечнозеленого дара природы относятся к классу Двудольных и семейству Мелиевых. Растет фруктовое дерево довольно быстро и может достигать в высоту 45 метров. Внешне оно выглядит достаточно привлекательно, потому что состоит из крупных продолговатых листьев и желто-зеленых или ярко-розовых цветов.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_fruit;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. 1 (О сантоле)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Плоды сантола имеют сферическую форму красного или желтого оттенка с присутствующими в них семенами, которые есть нельзя — употребление приводит к серьезным расстройствам желудка и даже к более существенным проблемам со здоровьем. Сама же их мякоть белой консистенции обладает нежным и сладковатым вкусом.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+=>nrel_calorie_content:40;
+
+=> nrel_vitamin_C_content:86mg_per_100g;
+=> nrel_vitamin_B1_content:0.05mg_per_100g;
+=> nrel_vitamin_B3_content:0.74mg_per_100g;
+
+=>nrel_birthplace:Vietnam;;
+Vietnam=>nrel_main_idtf:
+[Вьетнам](*<-lang_ru;; *);
+[Vietnam](*<-lang_en;; *);;
+concept_sandoricum_koetjape
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://Image/sandoricum_koetjape.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

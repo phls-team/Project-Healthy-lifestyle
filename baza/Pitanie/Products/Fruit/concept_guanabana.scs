@@ -1,0 +1,66 @@
+concept_guanabana
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [guanabana](*<-lang_en;;*);
+          [гуанабана](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(гуанабана)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Гаунабана – экзотическое дерево, которое в комнатных условиях обычно не достигает больше тридцати сантиметров в высоту. Что касается дикой природы, растение может достигать девять-десять метров, плоды при этом могут весить больше семи килограммов. В дикой природе саусеп можно встретить на территории Латинской Америки, эта же страна является исторической родиной растения. Кроме этого, можно также встретить дерево на любой территории с тропическим жарким климатом.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_fruit;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. 1 (О гуанабано)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Фрукты могут иметь овальную или сердцевидную форму. При этом они могут в длину достигать примерно 25 см, а в диаметре около 15 см. Вес плодов дерева гравиола составляет около 3-х кг. Фрукт зеленого цвета в период созревания приобретает желтоватый оттенок. Жесткая, но при этом тонкая кожура покрыта мягкими колючками. Под ней находится сочная мякоть бежевого цвета, которая похожа на крем. Внутри плоды разделены на сегменты, в которых есть овальное семечко черного цвета. Мякоть обладает неповторимым ароматом, который отдаленно напоминает ананас.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. 2 (О гуанабано)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Фрукты собирают еще в недозрелом состоянии, так как спелые плоды опадают с дерева и могут повредиться.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+=>nrel_calorie_content:66;
+
+=> nrel_vitamin_C_content:11.1mg_per_100g;
+=> nrel_vitamin_B2_content:0.01mg_per_100g;
+=> nrel_vitamin_B3_content:0.12mg_per_100g;
+=> nrel_vitamin_B4_content:2.2mg_per_100g;
+=> nrel_vitamin_B5_content:0.07mg_per_100g;
+=> nrel_vitamin_B6_content:0.01mg_per_100g;
+=> nrel_vitamin_B9_content:0.06mg_per_100g;
+
+=>nrel_birthplace:South_America;;
+South_America=>nrel_main_idtf:
+[Южная Америка](*<-lang_ru;; *);
+[South America](*<-lang_en;; *);;
+concept_guanabana
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://Image/guanabana.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

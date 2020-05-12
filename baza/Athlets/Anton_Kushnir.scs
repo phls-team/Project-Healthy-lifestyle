@@ -1,0 +1,42 @@
+Anton_Kushnir
+
+<-sc_node_not_relation;
+<=nrel_inclusion:concept_person;
+<=nrel_inclusion:concept_athlete;
+
+=> nrel_main_idtf:
+          [Anton Kushnir](*<-lang_en;;*);
+          [Антон Кушнир](*<-lang_ru;;*);
+
+=> nrel_sport:concept_freestyle;
+=> nrel_weight:66;
+=> nrel_age:35;
+=> nrel_sports_rank:honored_master_of_sport;
+=> nrel_height:176;
+=> nrel_birthplace: Ukraine;
+=> nrel_sports_achivments: ...
+(*
+<= concept_competition: ...
+	(*
+		<-[Олимпиада в Сочи 2014](*<-lang_ru;;*);;
+		<=nrel_sports_awards:gold_medal;;
+	*);;
+
+<= concept_competition: ...
+	(*
+		<-[Чемпионат Мира 2011](*<-lang_ru;;*);;
+		<=nrel_sports_awards:bronze_medal;;
+	*);;
+*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://Image/Anton_Kushnir.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

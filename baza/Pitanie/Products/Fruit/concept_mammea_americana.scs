@@ -1,0 +1,55 @@
+concept_mammea_americana
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [mammea americana](*<-lang_en;;*);
+          [маммея американская](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(маммея американская)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Маммея американская представляет собой вечнозеленое деревце, высота которого варьируется от восемнадцати до двадцати одного метра. Древесина у данного растения очень тяжелая и твердая. А глянцевые эллиптические листочки этой культуры обычно кожистые и окрашены в темно-зеленые тона. Ширина листочков составляет в среднем десять сантиметров, а длина – двадцать.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_fruit;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. 1 (О маммее американской)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Диаметр круглых плодов маммеи американской достигает от десяти до двадцати сантиметров. Характеризующаяся выраженной кислинкой оранжевая мякоть плодов напоминает по вкусу абрикос или манго. Вес каждого фрукта обычно не превышает полутора килограммов, а толщина мягенькой бледно-коричневой горькой кожицы плодов при этом достигает порядка 3 мм. У несозревших фруктов кожица обычно очень тугая. А прямо под кожицей располагаются беленькие сухие и тоненькие оболочки, плотно охватывающие сочную мякоть оранжевых оттенков. Внутри каждого плода можно обнаружить по четыре коричневатых округлых деревянистых семечка, диаметр которых нередко достигает семи сантиметров.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+=>nrel_calorie_content:51;
+
+=> nrel_vitamin_PP_content:0.48mg_per_100g;
+=> nrel_vitamin_E_content:0.5mg_per_100g;
+=> nrel_vitamin_C_content:14mg_per_100g;
+=> nrel_vitamin_B1_content:0.02mg_per_100g;
+=> nrel_vitamin_B2_content:0.04mg_per_100g;
+=> nrel_vitamin_B3_content:0.4mg_per_100g;
+=> nrel_vitamin_B5_content:0.1mg_per_100g;
+=> nrel_vitamin_B6_content:0.1mg_per_100g;
+=> nrel_vitamin_B9_content:14mg_per_100g;
+
+=>nrel_birthplace:america;;
+concept_mammea_americana
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://Image/mammea_americana.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

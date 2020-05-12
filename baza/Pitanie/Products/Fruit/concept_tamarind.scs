@@ -1,0 +1,58 @@
+concept_tamarind
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [tamarind](*<-lang_en;;*);
+          [тамаринд](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(тамаринд)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Тамаринд, единственный представитель рода Тамаринд. Это тропическое дерево, родиной которого является восточная Африка. В диком виде произрастает в Судане, но в настоящее время растение распространено на территории большинства тропических стран Азии, куда он попал благодаря культивированию еще за несколько тысяч лет до нашей эры. В XVI веке интродуцирован в Мексике и в Южной Америке. В Таиланде тамаринд является символом тайской провинции Пхетчабун. ](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_fruit;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. 1 (О тамаринде)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Крупное вечнозеленое медленнорастущее, долгоживущее дерево высотой до 20-30 м с раскидистой кроной. Плоды тамаринда образуются из кистевидных соцветий и представляют собой коричнево-бурые изогнутые стручки, заостряющиеся к концу. В стручке под достаточно хрупкой кожицей расположена белая мякоть – пульпа и множество плотных коричневых семян. ](*<- lang_ru;;*);;
+			*);;
+		*);
+
+=>nrel_calorie_content:239;
+
+=> nrel_vitamin_PP_content:1.94mg_per_100g;
+=> nrel_vitamin_E_content:0.1mg_per_100g;
+=> nrel_vitamin_C_content:3.5mg_per_100g;
+=> nrel_vitamin_B1_content:0.43mg_per_100g;
+=> nrel_vitamin_B2_content:0.15mg_per_100g;
+=> nrel_vitamin_B3_content:0.14mg_per_100g;
+=> nrel_vitamin_B6_content:0.07mg_per_100g;
+=> nrel_vitamin_B9_content:0.04mg_per_100g;
+=> nrel_vitamin_A_content:0.02mg_per_100g;
+
+=>nrel_birthplace:East_Africa;;
+East_Africa=>nrel_main_idtf:
+[Восточная Африка](*<-lang_ru;; *);
+[East Africa](*<-lang_en;; *);;
+concept_tamarind
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://Image/tamarind.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

@@ -1,0 +1,49 @@
+concept_marula
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [marula](*<-lang_en;;*);
+          [марула](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(марула)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Марула – растение семейства Сумаховые. Впервые об этом фрукте узнали в Южной и Западной Африке. Плоды шарообразной формы покрыты тонкой кожурой желтого цвета, под которой находится белая мякоть. Она достаточно сочная и терпкая и ее запах очень похож на скипидар. Внутри расположена достаточно большая косточка, которая отличается своей твердостью.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_fruit;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. 1 (О маруле)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Поскольку в состав марулы входит большое количество аскорбиновой кислоты, ее рекомендуется употреблять в период вирусных и инфекционных заболеваний. Кроме этого регулярное употребление плодов положительно сказывается на общем состоянии человека, и укрепляют иммунитет.  ](*<- lang_ru;;*);;
+			*);;
+		*);
+
+=>nrel_calorie_content:48;
+
+=> nrel_vitamin_PP_content:0.4mg_per_100g;
+=> nrel_vitamin_E_content:0.5mg_per_100g;
+=> nrel_vitamin_C_content:60mg_per_100g;
+
+=>nrel_birthplace:East_Africa;;
+concept_marula
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://Image/marula.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
