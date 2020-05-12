@@ -1,9 +1,13 @@
 fruit_lime
-
 => nrel_main_idtf:
           [лайм]
           (*<-lang_ru;;*);
           [lime]
-          (*<-lang_en;;*);;
+          (*<-lang_en;;*);
 
+=> nrel_birthplace:india;;
+fruit_lime<-concept_fruit;;
+fruit_lime=>nrel_ripening_time:...(* -> rrel_number_of_month:2;;*);;
+
+fruit_lime=> nrel_variety:kaffir;taiti;;
 

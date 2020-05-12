@@ -1,0 +1,12 @@
+lisbon
+=> nrel_main_idtf: 
+	[лисбон] 
+	(* 
+	<- lang_ru;; 
+	*);
+=> nrel_main_idtf: 
+	[lisbon] 
+	(* 
+	<- lang_en;; 
+	*);;
+lisbon<-concept_product;;

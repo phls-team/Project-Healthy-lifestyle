@@ -1,0 +1,73 @@
+typhoid_fever=>nrel_main_idtf:[брюшной тиф](*<-lang_ru;;*);[typhoid fever](*<-lang_en;;*);;
+concept_part1OfSubClassOf01_01=>nrel_inclusion:typhoid_fever;;
+typhoid_fever<-concept_disease;;
+typhoid_fever<-rrel_sc_key_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:[Опр.(Брюшной тиф)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Состояние, вызванное инфекцией грамотрицательных бактерий Salmonella typhi. Это состояние характеризуется острой устойчивой лихорадкой. Это состояние может сопровождаться слабостью, болями в животе, головной болью, потерей аппетита или плоскими пятнами розового цвета. Передача происходит фекально-оральным путем от приема зараженной пищи или воды. Подтверждение - идентификация Salmonella typhi в пробе фекалий или крови.](*<-lang_ru;;*);;
+*);;
+=>nrel_main_idtf:[Def.(Typhoid fever)](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[A condition caused by an infection with the gram-negative bacteria Salmonella typhi. This condition is characterized by an acute sustained fever. This condition may present with weakness, stomach pains, headache, loss of appetite, or flat, rose-coloured spots. Transmission is by the faecal-oral route from the ingestion of contaminated food or water. Confirmation is by identification of Salmonella typhi in a faecal or blood sample.](*<-lang_en;;*);;
+*);;
+*);;
+typhoid_fever<-sc_node_norole_relation;
+=>nrel_incubation_period:...
+(*
+->rrel_minimalPeriod: 6_days;;
+->rrel_maximalPeriod: 30_days;;
+*);;
+
+typhoid_fever<-sc_node_norole_relation;
+=>nrel_unique_idtf:[1A07](*<-lang_en;;*);;
+typhoid_fever<-sc_node_norole_relation;
+=>nrel_unique_idtf:[1A07](*<-lang_ru;;*);;
+typhoid_fever=>nrel_symptom:sepsis_without_septic_shock;rash;;
+typhoid_fever=>nrel_period_of_full_development:rash;;
+nrel_healing<-sc_node_norole_relation;;
+nrel_healing=>nrel_main_idtf:[лечение](*<-lang_ru;;*);;
+nrel_healing=>nrel_main_idtf:[healing](*<-lang_en;;*);;
+typhoid_fever<-sc_node_norole_relation;
+=>nrel_healing:...
+(*
+<-statement;;
+=>nrel_main_idtf:[Утв.(лечение)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...	
+(*
+->[Госпитализация. Режим в остром периоде и до 10-го дня нормальной температуры тела постельный, а при осложнениях — строгий постельный. Расширение режима — с осторожностью: не производить резких движений, не поднимать тяжестей, не натуживаться во время дефекации.
+
+Резкое ограничение механических и химических раздражителей слизистой оболочки желудочно-кишечного тракта, исключение продуктов и блюд, усиливающих процессы брожения и гниения в кишечнике. При неосложненных формах стол № 4а бт, за 5—7 дней до выписки замена на № 15. Приём комплекса витаминов (аскорбиновая кислота — до 900 мг/сут, витамины В1 и В2 по 9 мг, РР — 60 мг, Р — 300 мг/сут).
+
+Курс терапии до 10-го дня нормальной температуры тела вне зависимости от тяжести течения и быстроты клинического выздоровления больного. Если в течение 4—5 дней нет перелома в состоянии — отменить и назначить другой.
+
+Левомицетин (хлорамфеникол). взрослым внутрь за 20—30 мин до еды 50 мг/кг/сут, на 4 приёма. После нормализации температуры тела − 30 мг/кг/сут. В случаях невозможности перорального приёма (тошнота, рвота, боли в эпигастрии) парентерально — левомицетина сукцината 3 г в сутки или ампициллин: взрослым внутрь после еды по 1—1,5 г 4—6 р/с или парентерально 6 г/с. триметоприма (80 мг в таблетках) и сульфаметоксазола (400 мг в таблетках) — бисептола, бактрима, септрина, котримоксазола. взрослым внутрь по 2 таблетки 2 р/д после еды (при тяжелых формах 3 таб) 3—4 недели.
+
+Лечение тяжелых, осложнённых и сочетанных форм эффективно парентерально комбинации ампициллина (6—8 г/сут) и гентамицина (240 мг/сут). Для дезинтоксикации в легких случаях обильное питьё (до 2,5—3 л в сутки), энтеросорбенты через 2 часа после еды (энтеродез — 15 г/сут, полифепан — 75 г/сут, угольные сорбенты — 90 г/сут) и ингаляции кислорода через носовые катетеры по 45—60 мин 3—4 раза в сутки.](*<-lang_ru;;*);;
+*);;
+<-statement;;
+=>nrel_main_idtf:[St.(healing)](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...	
+(*
+->[Hospitalization. The regimen in the acute period and until the 10th day of normal body temperature is bed, and with complications - strict bed. Extension of the regime - with caution: do not make sudden movements, do not lift weights, do not strain during bowel movements.
+
+A sharp restriction of the mechanical and chemical stimuli of the mucous membrane of the gastrointestinal tract, the exclusion of foods and dishes that enhance the processes of fermentation and decay in the intestine. In uncomplicated forms, table No. 4a bt, 5-7 days before discharge, change to No. 15. Reception of a complex of vitamins (ascorbic acid - up to 900 mg / day, vitamins B1 and B2 at 9 mg, PP - 60 mg, P - 300 mg / day).
+
+The course of therapy until the 10th day of normal body temperature, regardless of the severity and speed of clinical recovery of the patient. If within 4-5 days there is no fracture in the state - cancel and appoint another.
+
+Levomycetin (chloramphenicol). adults, 20-30 minutes before meals, 50 mg / kg / day, for 4 doses. After normalization of body temperature - 30 mg / kg / day. In cases of impossibility of oral administration (nausea, vomiting, epigastric pain) parenterally - chloramphenicol succinate 3 g per day or ampicillin: for adults, 1–1.5 g 4–6 r / s or after parenteral 6 g / s. trimethoprim (80 mg in tablets) and sulfamethoxazole (400 mg in tablets) - biseptol, bactrim, septrin, cotrimoxazole. adults inside 2 tablets 2 r / d after meals (in severe forms 3 tab) 3-4 weeks.
+
+Treatment of severe, complicated and combined forms is effective parenterally with a combination of ampicillin (6-8 g / day) and gentamicin (240 mg / day). For detoxification in mild cases, heavy drinking (up to 2.5-3 liters per day), enterosorbents 2 hours after eating (enterodesis - 15 g / day, polyphepan - 75 g / day, coal sorbents - 90 g / day) and inhalation oxygen through nasal catheters for 45-60 minutes 3-4 times a day.](*<-lang_en;;*);;
+*);;
+*);;
+6_days<-sc_node_role_relation;
+=>nrel_main_idtf:[6 дней](*<-lang_ru;;*);;
+6_days<-sc_node_role_relation;
+=>nrel_main_idtf:[6 days](*<-lang_en;;*);;
+30_days<-sc_node_role_relation;
+=>nrel_main_idtf:[30 дней](*<-lang_ru;;*);;
+30_days<-sc_node_role_relation;
+=>nrel_main_idtf:[30 days](*<-lang_en;;*);;

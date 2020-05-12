@@ -62,6 +62,8 @@ bogema=>nrel_main_idtf:
 detroid=>nrel_main_idtf:
           [детройт]
           (*<-lang_ru;;*);;
+vegetables_beet<-concept_vegetable;;
+india<-concept_country;;
 
 
 

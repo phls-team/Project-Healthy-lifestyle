@@ -4,8 +4,11 @@ fruit_lemon
           [лимон]
           (*<-lang_ru;;*);
           [lemon]
-          (*<-lang_en;;*);;
+          (*<-lang_en;;*);
+=> nrel_birthplace:india;;
+fruit_lemon<-concept_fruit;;
+fruit_lemon=>nrel_ripening_time:...(* -> rrel_number_of_month:2;;*);;
 
-
+fruit_lemon=> nrel_variety:evrica;lisbon;;
 
 

@@ -1,0 +1,12 @@
+kaffir
+=> nrel_main_idtf: 
+	[каффир] 
+	(* 
+	<- lang_ru;; 
+	*);
+=> nrel_main_idtf: 
+	[kaffir] 
+	(* 
+	<- lang_en;; 
+	*);;
+kaffir<-concept_product;;

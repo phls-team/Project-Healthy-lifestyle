@@ -109,6 +109,22 @@ concept_holf <- rrel_key_sc_element:...
 		[Штрафы в гольфе обусловлены определёнными ситуациями. Штраф применяется к счёту игрока путём зачисления ему лишних ударов по мячу. Попытки добавляются за нарушение правил или в случаях, когда мяч после удара оказывается в положении, в котором им невозможно сыграть. Утерянный мяч или мяч, вылетевший за границы площадки, наказывается штрафом в один удар и потерей в расстоянии.](*<- lang_ru;;*);;
 			*);;
 *);;
+concept_holf<-concept_sport;;
+concept_holf=>nrel_opening_year:...(* -> rrel_number_of_year:1457;;*);;
+concept_holf=>nrel_rodina:Scotland;;
+
+sc_node_not_relation->Scotland;;
+Scotland=>nrel_main_idtf:
+[Шотландия](* <-lang_ru;; *);;
+
+sc_node_role_relation->rrel_number_of_year;;
+rrel_number_of_year=>nrel_main_idtf:
+[год открытия'](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_country;;
+concept_country=>nrel_main_idtf:
+[Страна](* <-lang_ru;; *);;
+
 
 
 

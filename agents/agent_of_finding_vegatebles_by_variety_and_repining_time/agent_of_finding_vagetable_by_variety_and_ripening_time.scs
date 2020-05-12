@@ -77,7 +77,7 @@ scp_program -> agent_of_finding_vagetable_by_variety_and_ripening_time
 			<- sys_search;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_const: [* 
-								  _f _<- concept_vagetables;;
+								  _f _<-concept_vegetable;;
 								  _f _=> nrel_variety:: _locCom;;
 								  _locCom _<- concept_product;;
 								  _f _=> nrel_ripening_time:: _yCom;;
@@ -144,7 +144,7 @@ scp_program -> agent_of_finding_vagetable_by_variety_and_ripening_time
 
 		  	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
 		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
-		  	-> rrel_3: rrel_fixed: rrel_scp_const: concept_vagetables;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_const:concept_vegetable;;
 
 		  	=> nrel_goto: .agent_of_finding_vagetable_by_variety_and_ripening_time_operator3D;;
 			*);;

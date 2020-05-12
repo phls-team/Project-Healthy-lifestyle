@@ -1,0 +1,12 @@
+nrel_minimal_total_of_participants
+<- sc_node_norole_relation;
+=> nrel_main_idtf: 
+	[минимальное количество участников*] 
+	(* 
+	<- lang_ru;; 
+	*);
+=> nrel_main_idtf: 
+	[minimal_total_of_participants*] 
+	(* 
+	<- lang_en;; 
+	*);;

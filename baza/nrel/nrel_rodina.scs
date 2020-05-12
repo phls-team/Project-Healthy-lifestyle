@@ -1,0 +1,19 @@
+nrel_rodina
+<- sc_node_norole_relation;
+=> nrel_main_idtf: 
+	[родина*] 
+	(* 
+	<- lang_ru;; 
+	*);
+=> nrel_main_idtf: 
+	[homeland] 
+	(* 
+	<- lang_en;; 
+	*);
+<=nrel_sc_text_translation:...
+	(*
+		->[место рождения, происхождения, родная страна.]
+(* 
+<-lang_ru;; 
+*);;
+*);;

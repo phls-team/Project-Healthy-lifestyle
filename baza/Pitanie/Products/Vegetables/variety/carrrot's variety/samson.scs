@@ -1,0 +1,12 @@
+samson
+=> nrel_main_idtf: 
+	[самсон] 
+	(* 
+	<- lang_ru;; 
+	*);
+=> nrel_main_idtf: 
+	[samson] 
+	(* 
+	<- lang_en;; 
+	*);;
+samson<-concept_product;;

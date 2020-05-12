@@ -42,11 +42,13 @@ fruit_cupuasu
 			*);;
 	*);	
 =>nrel_birthplace:amazonia;;
+fruit_cupuasu<-concept_fruit;;
+fruit_cupuasu=>nrel_ripening_time:...(* -> rrel_number_of_month:5;;*);;
+amazonia<-concept_country;;
 
 amazonia=>nrel_main_idtf:
 [Амазония](*<-lang_ru;; *);
 [Amazonia](*<-lang_en;; *);;
-
 
 redondo_cupuasu=>nrel_main_idtf:
 [Редондо](*<-lang_ru;; *);;

@@ -79,6 +79,7 @@ adynamia<-rrel_key_sc_element:...
 *);;
 *);;
 adynamia<-concept_illness;;
+adynamia<-concept_symptom;;
 
 vomiting<-sc_node_not_relation;
 =>nrel_main_idtf:[vomiting](*<-lang_en;;*);;
@@ -171,7 +172,8 @@ cramp_or_spasm<-sc_node_not_relation;
 =>nrel_main_idtf:[cramp](*<-lang_en;;*);
 =>nrel_idtf:[spasm](*<-lang_en;;*);;
 cramp_or_spasm<-sc_node_not_relatin;
-=>nrel_main_idtf:[судорага](*<-lang_ru;;*);;
+=>nrel_main_idtf:[судорага](*<-lang_ru;;*);
+=>nrel_idtf:[спазм](*<-lang_en;;*);;
 cramp_or_spasm<-rrel_sc_key_element:...
 (*
 <-definition;;
@@ -187,3 +189,42 @@ cramp_or_spasm<-rrel_sc_key_element:...
 cramp_or_spasm=>nrel_unique_idtf:[MB47.3](*<-lang_ru;;*);;
 cramp_or_spasm=>nrel_unique_idtf:[MB47.3](*<-lang_en;;*);;
 cramp_or_spasm<-concept_illness;;
+
+sepsis_without_septic_shock<-sc_node_not_relation;
+=>nrel_main_idtf:[sepsis without septic shock](*<-lang_en;;*);
+=>nrel_main_idtf:[сепсис без септического шока](*<-lang_ru;;*);
+=>nrel_idtf:[intoxication](*<-lang_en;;*);
+=>nrel_idtf:[интоксикация](*<-lang_ru;;*);
+=>nrel_idtf:[общее отравление организма](*<-lang_ru;;*);;
+sepsis_without_septic_shock=>nrel_unique_idtf:[1G40](*<-lang_ru;;*);;
+sepsis_without_septic_shock=>nrel_unique_idtf:[1G40](*<-lang_en;;*);;
+sepsis_without_septic_shock<-rrel_sc_key_element:...
+(*
+<-defenition;;
+=>nrel_main_idtf:[Def.(sepsis without septic shock)](*<-lang_en;;*);;
+=>nrel_main_idtf:[Опр.(сепсис без септического шока)](*<-lang_ru;;*);;
+*);
+<=nrel_sc_text_translation:...
+(*
+->[Poisoning is a disorder of the body’s vital functions, the occurrence of accidental events in the body or toxins, as well as the action caused by such a disease (for example, killing or suicide with the help of poison).
+
+A close concept is intoxication.](*<-lang_en;;*);;
+*);
+<=nrel_sc_text_translation:...
+(*
+->[Отравле́ние — расстройство жизнедеятельности организма, возникшее вследствие попадания в организм яда или токсина, а также действие, вызвавшее такое заболевание (например, убийство или самоубийство с помощью яда).
+
+Близкое понятие — интоксикация. Оно используется в медицине и фармакологии. В русском языке слово «интоксикация» имеет более узкий смысл и описывает собственно явление, но не внешнее воздействие, в отличие от слова «отравление»](*<-lang_ru;;*);;
+*);;
+sepsis_without_septic_shock<-concept_illness;;
+
+rash<-sc_node_not_relation;
+=>nrel_main_idtf:[rash](*<-lang_en;;*);
+=>nrel_main_idtf:[сыпь](*<-lang_ru;;*);;
+rash=>nrel_unique_idtf:[ME66.6](*<-lang_ru;;*);;
+rash=>nrel_unique_idtf:[ME66.6](*<-lang_end;;*);;
+rash<-concept_illness;;
+
+
+
+

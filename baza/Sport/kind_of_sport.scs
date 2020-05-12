@@ -1,0 +1,25 @@
+kind_of_sport=>nrel_idtf:[вид спорта]
+	(*
+		<-lang_en;;
+	*);;
+kind_of_sport=>nrel_main_idtf:[вид спорта]
+	(*
+		<-lang_ru;;
+	*);;
+kind_of_sport<-rrel_key_sc_element:...
+	(*
+		<-definition;;=>nrel_main_idtf:
+[Опр.(вид спорта)] 
+	(* 
+		<-lang_ru;;
+	*);;
+<=nrel_sc_text_translation:...
+	(*
+		->[разновидность соревновательной деятельности в спорте, которая осуществляется с соблюдением определённых правил.]
+(* 
+<-lang_ru;; 
+*);;
+*);;
+*);;
+kind_of_sport<=nrel_inclusion:concept_baseball;concept_badminton;concept_big_tennis;concept_bobsleigh;
+concept_box;concept_basketball;concept_biathlon;concept_football;concept_handball;concept_sport;concept_volleyball;concept_curling;concept_hockey;;

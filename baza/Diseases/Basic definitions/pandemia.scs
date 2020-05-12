@@ -1,0 +1,53 @@
+nrel_pandemia
+<-sc_node_norole_relation;
+=>nrel_main_idtf:[pandemia]
+	(*
+		<-lang_en;;
+	*);;
+nrel_pandemia
+<-sc_node_norole_relation;
+=>nrel_main_idtf:[пандемия]
+	(*
+		<-lang_ru;;
+	*);;
+nrel_pandemia<-rrel_key_sc_element:...
+	(*
+<-definition;;
+=>nrel_main_idtf:[Опр.(пандемия)] 
+	(* 
+		<-lang_ru;;
+	*);;
+<-definition;; 
+=>nrel_main_idtf:[Def.(пандемия)] 
+	(* 
+		<-lang_ru;;
+	*);;
+<=nrel_sc_text_translation:...
+(*
+->[Пандемия — необычайно сильная эпидемия, характеризующаяся распространением инфекционного заболевания на всей территории страны, территорию сопредельных государств, а иногда и многих стран мира (например, холера, грипп).]
+(* 
+<-lang_ru;; 
+*);;
+->[A pandemic is an unusually strong epidemic characterized by the spread of an infectious disease throughout the country, the territory of neighboring states, and sometimes many countries of the world (for example, cholera, flu).](*<-lang_en;;*);;
+	*);;
+*);;
+nrel_pandemia<-sc_node_norole_relation;
+=>nrel_first_domain:rrel_year_of_pandemia_start;;
+nrel_pandemia<-sc_node_norole_relation;
+=>nrel_second_domain:rrel_year_of_pandemia_end;;
+rrel_year_of_pandemia_start<-sc_node_role_relation; 
+=>nrel_main_idtf:[year of pandemia beginning](*<-lang_en;;*);
+=>nrel_main_idtf:[год начала пандемии](*<-lang_ru;;*);;
+rrel_year_of_pandemia_end<-sc_node_role_relation;
+=>nrel_main_idtf:[год конца пандемии](*<-lang_ru;;*);;
+rrel_year_of_pandemia_end<-sc_node_role_relation;
+=>nrel_main_idtf:[year of pandemia end](*<-lang_en;;*);;
+nrel_pandemia<-binary_relation;;
+parameter->arity;;
+arity->binary_relation;;
+binary_relation<-sc_node_norole_relation;
+=>nrel_measurement:2;;
+2<-number;;
+nrel_pandemia<-oriented_relation;;
+concept_value->year_of_pandemia_start;;
+concept_value->year_of_pandemia_end;;

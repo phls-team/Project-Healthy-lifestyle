@@ -39,14 +39,15 @@ concept_curling<-rrel_key_sc_element:...
 
 
 concept_curling=>nrel_rodina:Scotland;;
+concept_curling<-concept_sport;;
+concept_curling=>nrel_opening_year:...(* -> rrel_number_of_year:1541;;*);;
+
+Scotland<-concept_country;;
 
 Scotland=>nrel_main_idtf:[Шотландия](*<-lang_ru;;*);;
 
-sc_node_norole_relation->nrel_rodina;;
-nrel_rodina=>nrel_main_idtf:
-[Родина*](* <-lang_ru;; *);;
-
 concept_curling=>nrel_inclusion:concept_game;;
+
 sc_node_not_relation->concept_game;;
 concept_game=>nrel_main_idtf:
 [игра](*<-lang_ru;; *);;

@@ -1,0 +1,33 @@
+concept_vaccine=>nrel_main_idtf:[vaccine]
+	(*
+		<-lang_en;;
+	*);;
+concept_vaccine=>nrel_main_idtf:[вакцина]
+	(*
+		<-lang_ru;;
+	*);;
+concept_vaccine<-rrel_key_sc_element:...
+	(*
+<-definition;;
+=>nrel_main_idtf:[Опр.(Вакцина)] 
+	(* 
+		<-lang_ru;;
+	*);;
+<=nrel_sc_text_translation:...
+(*
+		->[Вакцина биологический препарат, обеспечивающий активацию приобретенного иммунитета к конкретному заболеванию. Вакцина обычно содержит агент, который напоминает вызывающий заболевание микроорганизм и часто производится из ослабленных или убитых форм микроба, его токсинов или одного из его поверхностных белков.]
+(* <-lang_ru;; *);;
+*);;	
+=>nrel_main_idtf:[Def.(Vaccine)] 
+	(* 
+		<-lang_en;;
+	*);;
+<=nrel_sc_text_translation:...
+(*
+		->[A vaccine is a biological preparation that provides active acquired immunity to a particular disease. A vaccine typically contains an agent that resembles a disease-causing microorganism and is often made from weakened or killed forms of the microbe, its toxins, or one of its surface proteins.]
+(* 
+<-lang_ru;; 
+*);;
+*);;
+*);;
+

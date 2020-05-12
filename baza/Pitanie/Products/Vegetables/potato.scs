@@ -41,6 +41,9 @@ jukowskiy_potato;bellaroza_potato;
 			*);;
 	*);;	
 
+vegetables_potato<-concept_vegetable;;
+vegetables_potato=>nrel_ripening_time:...(* -> rrel_number_of_month:3;;*);;
+south_america<-concept_country;;
 
 
 

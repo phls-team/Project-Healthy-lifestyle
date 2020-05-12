@@ -106,9 +106,9 @@ concept_hockey <- rrel_key_sc_element:...
 			*);;
 *);;
 concept_hockey=>nrel_rodina:Canada;;
-sc_node_norole_relation->nrel_rodina;;
-nrel_rodina=>nrel_main_idtf:
-[Родина*](* <-lang_ru;; *);;
+Canada<-concept_country;;
+concept_hockey<-concept_sport;;
+concept_hockey=>nrel_opening_year:...(* -> rrel_number_of_year:1883;;*);;
 
 sc_node_not_relation->Canada;;
 Canada=>nrel_main_idtf:
@@ -119,5 +119,8 @@ sc_node_norole_relation->nrel_kolvo;;
 nrel_kolvo=>nrel_main_idtf:
 [Количество игроков в команде*](* <-lang_ru;; *);;
 
+concept_hockey=>nrel_minimal_total_of_participants:17;;
+concept_hockey=>nrel_game_time:...(* -> rrel_number_of_match_time:90;;*);;
 
+17<-concept_total;;
 

@@ -1,0 +1,35 @@
+ui_menu_file_for_finding_vaccine_by_disease_and_creation_year <- ui_user_command_class_atom; ui_user_command_class_view_kb; ui_one_argument_command_class;;
+
+ui_menu_file_for_finding_vaccine_by_disease_and_creation_year
+=> nrel_main_idtf: 
+	[Какие вакцины соответствуют указанному заболеванию и году создания?] 
+	(* <- lang_ru;; *);
+=> nrel_idtf: 
+	[Запрос всех вакцин по указанному заболеванию и дате создания] 
+	(* <- lang_ru;; *);;
+
+ui_menu_file_for_finding_vaccine_by_disease_and_creation_year
+=> nrel_main_idtf: 
+	[Which vaccines correspond to the specified disease and creation year?] 
+	(* <- lang_en;; *);
+=> nrel_idtf: 
+	[Request of all diseases by vaccine and year of end] 
+	(* <- lang_en;; *);;
+
+ui_menu_file_for_finding_vaccine_by_disease_and_creation_year => ui_nrel_command_template:
+	[*
+		action_of_finding_vaccine_by_disease_and_creation_year _-> ._action_of_finding_vaccine_by_disease_and_creation_year
+			(*
+			_-> rrel_1:: ui_arg_1;;	
+			_-> rrel_2:: ui_arg_2;;			
+			*);;
+		._action_of_finding_vaccine_by_disease_and_creation_year _<- question;;
+	*];;
+
+ui_menu_file_for_finding_vaccine_by_disease_and_creation_year => ui_nrel_command_lang_template: 
+	[Какие вакцины соответствуют заболеванию $ui_arg_1 и году созданя $ui_arg_2?] 
+	(* <- lang_ru;; *);;
+
+ui_menu_file_for_finding_vaccine_by_disease_and_creation_year => ui_nrel_command_lang_template: 
+	[Which vaccine correspond to disease $ ui_arg_1 and creation year $ ui_arg_2?] 
+	(* <- lang_en;; *);;

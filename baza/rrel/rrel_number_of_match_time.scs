@@ -1,0 +1,12 @@
+rrel_number_of_match_time
+<- sc_node_role_relation;
+=> nrel_main_idtf: 
+	[игровое время в минутах'*] 
+	(* 
+	<- lang_ru;; 
+	*);
+=> nrel_main_idtf: 
+	[game time*] 
+	(* 
+	<- lang_en;; 
+	*);;

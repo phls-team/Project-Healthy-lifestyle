@@ -6,39 +6,40 @@ cholera<-rrel_sc_key_element:...
 <-definition;;
 =>nrel_main_idtf:[Опр.(Холера)](*<-lang_ru;;*);;
 =>nrel_main_idtf:[Def.(Cholera)](*<-lang_en;;*);;
+*);
 <=nrel_sc_text_translation:...
 (*
 ->[острая кишечная, антропонозная инфекция, вызываемая бактериями вида Vibrio cholerae. Характеризуется фекально-оральным механизмом заражения, поражением тонкого кишечника, водянистой диареей, рвотой, быстрой потерей организмом жидкости и электролитов с развитием различной степени обезвоживания вплоть до гиповолемического шока и смерти.](*<-lang_ru;;*);;
+*);
+<=nrel_sc_text_translation:...
+(*
 ->[acute intestinal, anthroponotic infection caused by bacteria of the species Vibrio cholerae. It is characterized by the fecal-oral mechanism of infection, lesions of the small intestine, watery diarrhea, vomiting, rapid release of fluid and electrolytes by the body, with a degree of dehydration to hypovolemic shock and death.](*<-lang_en;;*);;
-*);;
 *);;
 cholera<-sc_node_norole_relation;
 =>nrel_incubation_period:...
 (*
-=>rrel_minimalPeriod:[couple hours](*<-lang_en;;*);;
-=>rrel_minimalPeriod:[пара часов](*<-lang_ru;;*);;
-=>rrel_maximalPeriod:[5 days](*<-lang_en;;*);;
-=>rrel_maximalPeriod:[5 дней](*<-lang_ru;;*);;
+->rrel_minimalPeriod: couple_hours;;
+->rrel_maximalPeriod: 5_days;;
 *);;
 
 cholera<-sc_node_norole_relation;
 =>nrel_unique_idtf:[1A00](*<-lang_en;;*);;
 cholera<-sc_node_norole_relation;
 =>nrel_unique_idtf:[1A00](*<-lang_ru;;*);;
-concept_loose_stools<-sc_node_norole_relation;
+loose_stools<-sc_node_norole_relation;
 =>nrel_main_idtf:[жидкий стул](*<-lang_ru;;*);;
-concept_loose_stools<-sc_node_norole_relation;
+loose_stools<-sc_node_norole_relation;
 =>nrel_main_idtf:[loose stools](*<-lang_en;;*);;
 cholera=>nrel_symptom:concept_loose_stools;dehidratation;adynamia;;
 cholera=>nrel_period_of_full_development:loose_stools;dehidratation;adynamia;vomiting;;
 nrel_healing<-sc_node_norole_relation;
-=>nrel_main_idtf:[лечение](*<-lang_ru;;*);;
+=>nrel_main_idtf:[лечение](*<-lang_ru;;*);
+=>nrel_main_idtf:[healing](*<-lang_en;;*);;
 cholera<-sc_node_norole_relation;
 =>nrel_healing:...
 (*
 <-statement;;
-=>nrel_main_idtf:[лечение](*<-lang_ru;;*);;
-=>nrel_main_idtf:[healing](*<-lang_en;;*);;
+=>nrel_main_idtf:[Утв.(лечение)](*<-lang_ru;;*);;
 <=nrel_sc_text_translation:...
 (*
 ->[При подозрении на холеру больных срочно госпитализируют в специальное отделение.
@@ -50,6 +51,10 @@ cholera<-sc_node_norole_relation;
 Терапия энтеросорбентами – смекта, лигнин гидролизный, и др.
 
 Выписка больных после клинического выздоровления и после 3-х отрицательных анализов кала, взятых 3 дня подряд после отмены антибиотиков.](*<-lang_ru;;*);;
+*);;
+=>nrel_main_idtf:[St.(healing)](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
 ->[If you suspect cholera patients are urgently hospitalized in a special department.
 
 Conduct a set of measures aimed at restoring fluid loss - rehydration therapy.
@@ -59,5 +64,52 @@ Antimicrobial (etiotropic) therapy. Drugs of choice - chloramphenicol, doxycycli
 Therapy with enterosorbents - smecta, hydrolyzed lignin, etc.
 
 Discharge of patients after clinical recovery and after 3 negative tests of feces, taken 3 days in a row after the cancellation of antibiotics.](*<-lang_en;;*);;
+*);;
+*);;
+couple_hours<-sc_node_role_relation;
+=>nrel_main_idtf:[несколько часов](*<-lang_ru;;*);;
+couple_hours<-sc_node_role_relation;
+=>nrel_main_idtf:[couple hours](*<-lang_en;;*);;
+5_days<-sc_node_role_relation;
+=>nrel_main_idtf:[5 дней](*<-lang_ru;;*);;
+5_days<-sc_node_role_relation;
+=>nrel_main_idtf:[5 days](*<-lang_en;;*);;
+cholera<-sc_node_norole_relation;
+=>nrel_pandemia:...
+(*
+->rrel_year_of_pandemia_start: 1816;;
+->rrel_year_of_pandemia_end: 1824;;
+*);;
+cholera<-sc_node_norole_relation;
+=>nrel_pandemia:...
+(*
+->rrel_year_of_pandemia_start: 1829;;
+->rrel_year_of_pandemia_end: 1851;;
+*);;
+cholera=>nrel_be_vaccine:vaccine_WCrBS;;
+vaccine_WCrBS<-concept_vaccine;;
+vaccine_WCrBS=>nrel_main_idtf:[vaccine WC/rBS](*<-lang_en;;*);;
+vaccine_WCrBS=>nrel_main_idtf:[вакцина WC/rBS](*<-lang_ru;;*);;
+vaccine_WCrBS<-sc_node_norole_relation;
+=>nrel_vaccine_creation_year:...
+(*
+->rrel_year_of_vaccine_creation:1990;;
+*);;
+rrel_year_of_vaccine_creation<-rrel_sc_node_norole_realtion;
+=>nrel_main_idtf:[vaccine creation year](*<-lang_en;;*);;
+rrel_year_of_vaccine_creation<-sc_node_norole_realtion;
+=>nrel_main_idtf:[год создания вакцины](*<-lang_ru;;*);;
+vaccine_wCrBS=>nrel_sc_node_norole_relation:...
+(*
+<-definition;;
+=>nrel_main_idtf:[description](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Состоит из убитых целых клеток V. Cholerae О1 с очищенной рекомбинантной В-субъединицей холерного анатоксина (WC/rBS) — предоставляет 85—90-процентную защиту во всех возрастных группах в течение шести месяцев после приёма двух доз с недельным перерывом.](*<-lang_ru;;*);;
+*);;
+=>nrel_main_idtf:[описание](*<-lang_ru;;*);;
+<=nrel_sc_text_trnslation:...
+(*
+->[Consists of killed whole cells of V. Cholerae O1 with a purified recombinant B-subunit of cholera toxoid (WC / rBS) - provides 85-90% protection in all age groups for six months after taking two doses with a weekly break](*<-lang_en;;*);;
 *);;
 *);;

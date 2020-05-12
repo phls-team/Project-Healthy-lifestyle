@@ -46,8 +46,10 @@ concept_badminton <- rrel_key_sc_element:...
 		[Существует два типа воланов: пластиковые и перьевые (натуральные).](*<- lang_ru;;*);;
 			*);;
 *);;
-
-
+concept_badminton=>nrel_rodina:England;;
+sc_node_not_relation->England;;
+England=>nrel_main_idtf:
+[Англия](* <-lang_ru;; *);;
 
 
 

@@ -47,7 +47,14 @@ concept_cycling<- rrel_key_sc_element:...
 			*);;
 *);;
 
+concept_cycling<-concept_sport;;
+concept_cycling=>nrel_opening_year:...(* -> rrel_number_of_year:1868;;*);;
+concept_cycling=>nrel_rodina:France;;
+France<-concept_country;;
 
+sc_node_not_relation->France;;
+France=>nrel_main_idtf:
+[Франция](* <-lang_ru;; *);;
 
 
 
