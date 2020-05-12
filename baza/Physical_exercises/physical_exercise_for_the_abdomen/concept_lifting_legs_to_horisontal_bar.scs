@@ -1,0 +1,42 @@
+concept_lifting_legs_to_horisontal_bar
+
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [lifting legs to horisontal bar](*<-lang_en;;*);
+          [подъёмы ног к перекладине](*<-lang_ru;;*);
+=>nrel_starting_position:concept_hanging_on_a_horisontal_bar;
+=>nrel_ending_position:concept_hanging_on_a_horisontal_bar;
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(подъёмы ног к перекладине)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Из положения виса на турнике прямые ноги усилиями пресса поднимаются к турнику до касания лодыжкой, таз при этом подаётся вперёд и вверх для максимального сокращения мышц пресса.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_species:concept_physical_exercise_for_the_abdomen;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(подъёмы ног к турнику)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Подъёмы ног к турнику позволяют прокачать все мускулы живота, как пресс, так и косые мышцы и мышцы-стабилизаторы](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://concept_lifting_legs_to_horisontal_bar.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

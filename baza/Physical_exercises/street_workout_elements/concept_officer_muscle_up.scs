@@ -1,0 +1,41 @@
+concept_officer_muscle_up
+ 
+<-sc_node_not_relation;
+=>nrel_starting_position:concept_hanging_on_a_horisontal_bar;
+=> nrel_main_idtf:
+          [officer muscle up](*<-lang_en;;*);
+          [офицерский выход](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(офицерский выход)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Элемент гимнастики и воркаута. Из положения виса на турнике выполняется подтягивание и переход в положение флажка на одной руке. Затем, другой рукой выполняется перехват таки образом, чтобы турник оказался за спиной атлета. Затем атлет выжимает себя вверх до прямых рук.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_species:gymnastic_exercise;
+<=nrel_species:concept_workout_element;
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(офицерский выход)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Данный элемент требует не только хороших силовых показателей, но и достаточной растяжки грудных мышц, а так же общей координации движений.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://concept_officer_muscle_up.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

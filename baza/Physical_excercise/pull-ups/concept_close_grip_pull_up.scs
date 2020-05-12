@@ -1,0 +1,43 @@
+concept_close_grip_pull_up
+
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [close grip pull up](*<-lang_en;;*);
+          [подтягивания узким хватом](*<-lang_ru;;*);
+=>nrel_starting_position:concept_hanging_on_a_horisontal_bar;
+=>nrel_ending_position:concept_hanging_on_a_horisontal_bar;
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(подтягивания узким хватом)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Подтягивания, в которых ладони расположены на турнике на расстоянии друг от друга меньшем, чем ширина плеч атлета.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_species:pulling_up;
+
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(подтягивания узким хватом)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Подтягивание узким хватом являются изменённым вариантом подтягиваний и направлены на укрепление мышечного корсета с акцентом на бицепс, а так же включают в работу грудные мышцы.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://concept_close_grip_pull_up.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

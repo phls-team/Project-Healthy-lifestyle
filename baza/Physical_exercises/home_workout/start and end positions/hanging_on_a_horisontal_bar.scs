@@ -1,0 +1,41 @@
+concept_hanging_on_a_horisontal_bar
+
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [hanging on a horisontal bar](*<-lang_en;;*);
+          [вис на перекладине](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(вис на перекладине)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Руки находятся на перекладине, тело висит, плечи опущены, лопатки сведены, ноги и кор слегка напряжены, тело прямое.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(вис на перекладине)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Вис на перекладине положительно сказывается на здоровье позвоночника.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://concept_hanging_on_a_horisontal_bar.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
+
+

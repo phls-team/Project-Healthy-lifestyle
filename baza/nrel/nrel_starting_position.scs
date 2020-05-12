@@ -1,0 +1,51 @@
+nrel_starting_position
+ 
+<-sc_node_norole_relation;
+
+=> nrel_main_idtf:
+          [starting position*](*<-lang_en;;*);
+          [исходная позиция*](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(исходная позиция*)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Исходная позиция - позиция, в из которой начинается каждое повторение упражнения.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(исходная позиция*)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Исходная позиция отжиманий - упор лёжа.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+=> nrel_first_domain: concept_physical_exercises;
+=> nrel_second_domain: concept_physical_exercises;
+=>nrel_definitional_domain:concept_physical_exercises;
+
+<-arity2;;
+arity->arity2;;
+arity2=>nrel_measurement:2;;
+number->2;;
+
+
+nrel_starting_position
+<-relation;
+<-norole_relation;;
+relation => nrel_inclusion: binary_relation;;
+binary_relation => nrel_inclusion: reflexive_relation;
+                => nrel_inclusion: transitive_relation;
+                => nrel_inclusion: antisymmetric_relation;;
+reflexive_relation -|> nrel_isolation_exercise;;
+transitive_relation -> nrel_isolation_exercise;;
+antisymmetric_relation -> nrel_isolation_exercise;;
+
+

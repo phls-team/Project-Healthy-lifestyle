@@ -1,0 +1,30 @@
+concept_positive_movement_phase
+
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [positive movement phase](*<-lang_en;;*);
+          [позитивная фаза движения](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(позитивная фаза движения)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Часть повтора, выполняемая с сокращением целевой мышечной группы.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(позитивная фаза движения)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Позитивная фаза движения обеспечивает динамическую нагрузку на целевые группы мышцы.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+

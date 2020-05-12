@@ -1,0 +1,43 @@
+concept_needle_workout
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [needle](*<-lang_en;;*);
+          [corean dip transition](*<-lang_en;;*);
+          [капитанский выход](*<-lang_ru;;*);
+          [иголка](*<-lang_ru;;*);
+=>nrel_starting_position:concept_hanging_on_a_horisontal_bar;
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(капитанский выход)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Элемент гимнастики и воркаута. Из виса на турнике спортсмен скручивается, заносит ноги за туркин, максимально возможно выпрямляется вниз головой, сохраняя равновесие и скользит вдоль турника вверх, пока ноги не перевесят его в положение обратного упора на турнике.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_species:gymnastic_exercise;
+<=nrel_species:concept_workout_element;
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(Капитанский выход)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Капитанский выход - излюбленное упражнение у детей, только начинающих осваивать перекладину. Оно не требует особой силы или ловкости, но смотрится при этом эффектно.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://concept_needle_workout.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

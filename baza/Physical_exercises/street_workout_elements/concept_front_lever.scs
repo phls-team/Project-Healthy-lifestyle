@@ -1,0 +1,41 @@
+concept_front_lever
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [front lever](*<-lang_en;;*);
+          [передний вис](*<-lang_ru;;*);
+=>nrel_starting_position:concept_hanging_on_a_horisontal_bar;
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(передний вис)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Элемент гимнастики и воркаута. Из положения виса на турнике атлет усилиями широчайших мышц спины выносит прямое тело вперёд до горизонтали с землёй, удерживая при этом руки прямыми.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_species:gymnastic_exercise;
+<=nrel_species:concept_workout_element;
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(передний вис)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Данный элемент требует от спортсменя выдающихся силовых показателей и удаётся далеко не каждому.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://concept_front_lever.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

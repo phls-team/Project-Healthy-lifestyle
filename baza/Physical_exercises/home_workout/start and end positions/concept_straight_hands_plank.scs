@@ -1,0 +1,39 @@
+concept_straight_hands_plank
+
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [straight hands plank](*<-lang_en;;*);
+          [упор лёжа](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(упор лёжа)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Упор на две прямые руки, ладони на ширине плеч. Тело прямое, пресс напряжён, плечи опущены, таз немного подкручен вперёд. Ягодицы и бицепсы бедра напяжены.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(упор лёжа)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Упор лёжа уже сам по себе является изометрическим упражнением.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://concept_straight_hands_plank.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

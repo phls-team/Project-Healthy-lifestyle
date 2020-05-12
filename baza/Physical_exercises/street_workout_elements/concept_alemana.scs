@@ -1,0 +1,43 @@
+concept_alemana
+
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [alemana](*<-lang_en;;*);
+          [Склёпка](*<-lang_ru;;*);
+=>nrel_starting_position:concept_hanging_on_a_horisontal_bar;
+=>nrel_ending_position:concept_emphasis_on_a_horisontal_bar;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(склёпка)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Элемент гимнастики и воркаута. Упражнение на перекладине, выполняемое из виса путём поднесения прямых ног к грифу на махе вперёд и последующего резкого разгибания на махе назад.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_species:gymnastic_exercise;
+<=nrel_species:concept_workout_element;
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(Склёпка)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Склёпка, или подъём разгибом на перекладине, является одним из самых простых способов оказаться в положении упора на турнике.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://concept_alemana.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

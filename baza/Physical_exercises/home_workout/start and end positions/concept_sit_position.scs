@@ -1,0 +1,40 @@
+concept_sit_position
+
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [sit position](*<-lang_en;;*);
+          [упор присев](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(упор присев)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Упор на две прямые руки, ладони чуть шире ног. Ноги согнуты в присяде, спина прямая, положение стабильное, пятки касаются пола.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(упор присев)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Упор присев используется как начальная позиция для кувырков или как промежуточная в бёрпи.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://concept_sit_position.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
+

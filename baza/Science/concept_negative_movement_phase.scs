@@ -1,0 +1,30 @@
+concept_negative_movement_phase
+
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [negative movement phase](*<-lang_en;;*);
+          [негативная фаза движения](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(негативная фаза движения)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Часть повтора, выполняемая с растяжением целевой мышечной группы.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(негативная фаза движения)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Негативная фаза движения должна выполняться подконтрольно (не "бросать" вес).](*<- lang_ru;;*);;
+			*);;
+*);;
+
+

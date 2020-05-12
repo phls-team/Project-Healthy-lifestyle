@@ -1,0 +1,41 @@
+concept_home_workout
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [home workout](*<-lang_en;;*);
+          [домашняя тренировка](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(Домашняя тренировка)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Тренировка, которая проводится дома. Тренировка без специального оборудования, дома или на участке.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_species:concept_physical_exercises;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(Домашняя тренировка)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Домашние тренировки - хороший способ поддерживать себя в форме в период карантина.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://concept_home_workout.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

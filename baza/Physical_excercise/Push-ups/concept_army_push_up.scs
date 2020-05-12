@@ -1,0 +1,44 @@
+concept_army_push_up
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [army push-up](*<-lang_en;;*);
+          [армейские отжимания](*<-lang_ru;;*);
+
+=>nrel_starting_position:concept_straight_hands_plank;
+=>nrel_ending_position:concept_straight_hands_plank;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(армейские отжимания)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Отжимания, в которых намеренно создаётся угол между линией ног и линией тела, классически этот угол равен 90 градусам.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_species:push_ups;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(армейские отжимания)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[армейские отжимания позволяют сместить нагрузку на плечи.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://concept_army_push_ups.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

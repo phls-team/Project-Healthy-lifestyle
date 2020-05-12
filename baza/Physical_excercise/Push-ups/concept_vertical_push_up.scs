@@ -1,0 +1,43 @@
+concept_vertical_push_up
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [vertical push-up](*<-lang_en;;*);
+          [вертикальные отжимания](*<-lang_ru;;*);
+
+=>nrel_starting_position:concept_handstand;
+=>nrel_ending_position:concept_handstand;
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(вертикальные отжимания)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[вертикальные отжимания это сгибания и разгибания рук в стойке на руках.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_species:push_ups;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(вертикальные отжимания)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Вертикальные отжимания убирают нагрузку с груди, позволяя полностью отдать её плечам и трицепсам.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://concept_vertical_push_ups.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

@@ -1,0 +1,41 @@
+concept_gymnastic_fish
+
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [gtmnastic fish](*<-lang_en;;*);
+          [гимнастическая рыбка](*<-lang_ru;;*);
+=>nrel_ending_position:concept_straight_hands_plank;
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(гимнастическая рыбка)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Гимнастический элемент, который позволяет безболезненно приземлиться, гася энергию перекатом от груди к тазу.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_species:gymnastic_exercise;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(гимнастическая рыбка)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Гимнастическая рыбка является базовым элементом в гимнастике и подвластна любому начинающему гимнасту.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://concept_gymnastic_fish.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
