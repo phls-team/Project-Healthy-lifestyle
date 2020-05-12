@@ -1,0 +1,42 @@
+concept_back_muscles
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [back muscles](*<-lang_en;;*);
+          [мышцы спины](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(мышцы спины)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Мышцы, которые разгибают позвоночник и удерживают тело в атлетической стойке.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_torso_muscles;
+<=nrel_involved_muscle:butterfly_machine;cycle_machine;rowing_machine;rome_chair_machine;traction_machine;concept_power_sports_equipment;concept_vertical_traction_machine;concept_horizontal_traction_machine;	
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(мышцы спины)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Мышцы спины участвуют в выполнении практически всех движений в спорте.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://concept_back_muscles.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

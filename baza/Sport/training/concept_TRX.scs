@@ -1,0 +1,41 @@
+concept_TRX
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [TRX](*<-lang_en;;*);
+          [тренинг с петлями TRX](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(тренинг с петлями TRX)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Тренинг, направленный на укрепление мышц и развитие таких качеств как выносливость, сила, гибкость и координация.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_species:concept_training;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(тренинг с петлями TRX)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[За счет развития и укрепления связочного аппарата и мышечных групп, в результате тренировок удается значительно снизить риск травм, как в повседневной жизни, так и во время занятий фитнесом.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://concept_TRX.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

@@ -1,0 +1,41 @@
+concept_shaping
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [shaping](*<-lang_en;;*);
+          [шейпинг](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(шейпинг)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Вид ритмической гимнастики, направленной на изменение форм тела.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_species:concept_training;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(шейпинг)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Достоинство упражнений шейпинга в том, что они делают классическую женственную фигуру, выпуклые объемные мышцы при помощи них нарастить невозможно, а вот стать стройнее и грациознее за короткий период времени - да.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://concept_shaping.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

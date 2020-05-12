@@ -1,0 +1,42 @@
+concept_gluteus_maximus
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [gluteus maximus](*<-lang_en;;*);
+          [большая ягодичная мышца](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(большая ягодичная мышца)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Самая большая мышца из трёх ягодичных мышц, находящаяся ближе всех к поверхности и составляющая большую часть формы и внешнего вида ягодиц.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_lower_limbs_muscles;
+<=nrel_involved_muscle:incline_bench;platform_machine;rome_chair_machine;running_machine;step_machine;cycle_machine;bicycle_machine;climber;elliptical_trainer;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(большая ягодичная мышца)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Размер большой ягодичной мышцы позволяет ей развивать значительную силу.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://concept_gluteus_maximus.png"
+			(*
+				=> nrel_format : format_png ;;
+			*);;
+		*);;
+	*);;

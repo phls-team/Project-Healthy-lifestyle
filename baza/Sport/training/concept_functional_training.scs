@@ -1,0 +1,41 @@
+concept_functional_training
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [functional training](*<-lang_en;;*);
+          [функциональный тренинг](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(функциональный тренинг)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Тренировки, направленные на гармоничное развитие мускулатуры и слаженную работу всех групп мышц, повышение силы и выносливости, гибкости тела.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_species:concept_training;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(функциональный тренинг)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Во время этой тренировки в работу вовлекается большое количество мышечных групп и волокон разного типа, создается оптимальная нагрузка на всю костную систему и связочный аппарат, что способствует сжиганию большого количества калорий и равномерному распределению нагрузки на весь опорно-двигательный аппарат.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://concept_functional_training.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

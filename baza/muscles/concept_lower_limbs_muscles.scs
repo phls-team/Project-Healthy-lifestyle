@@ -1,0 +1,41 @@
+concept_lower_limbs_muscles
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [muscles of lower limbs](*<-lang_en;;*);
+          [мышцы нижних конечностей](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(мышцы нижних конечностей)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Мышцы, которые обеспечивают большое разнообразие движений ноги.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:muscles;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(мышцы нижних конечностей)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Мускульная сила ног используется для бега, ходьбы, прыжков, ползания на четвереньках, плавания.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://concept_lower_limbs_muscles.png"
+			(*
+				=> nrel_format : format_png ;;
+			*);;
+		*);;
+	*);;

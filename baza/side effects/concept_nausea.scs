@@ -1,0 +1,29 @@
+concept_nausea
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [nausea](*<-lang_en;;*);
+          [тошнота](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(тошнота)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Защитная реакция организма, которая призвана предупреждать попадание в организм токсических веществ.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_side_effect:concept_training;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(тошнота)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Нередко тошнота предшествует рвоте, однако может выступать в качестве самостоятельного симптома.](*<- lang_ru;;*);;
+			*);;
+		*);;

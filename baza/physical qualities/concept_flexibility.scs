@@ -1,0 +1,31 @@
+concept_flexibility
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [flexibility](*<-lang_en;;*);
+          [гибкость](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(гибкость)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Способность человека выполнять движения с максимальной амплитудой.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(гибкость)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Прежде чем приступить к выполнению упражнения на развитие гибкости обязательно нужно провести разминку. В связи с этим, упражнения на растяжку обычно выполняются в заключительной части.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_physical_quality:concept_person;
+<=nrel_inclusion:concept_physical_qualities_of_person;;

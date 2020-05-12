@@ -1,0 +1,42 @@
+concept_calf_muscle
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [calf muscle](*<-lang_en;;*);
+          [икроножная мышца](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(икроножная мышца)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Двуглавая мышца на задней поверхности голени человека.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_lower_limbs_muscles;
+<=nrel_involved_muscle:incline_bench;platform_machine;running_machine;step_machine;cycle_machine;bicycle_machine;climber;elliptical_trainer;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(икроножная мышца)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Функциональная деятельность икроножной мышцы включает в первую очередь движение стопы в сагиттальной плоскости и стабилизацию тела при движении (ходьбе и беге).](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://concept_calf_muscle.png"
+			(*
+				=> nrel_format : format_png ;;
+			*);;
+		*);;
+	*);;

@@ -1,0 +1,32 @@
+concept_power
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [power](*<-lang_en;;*);
+          [сила](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(сила)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Способность человека преодолевать внешние и внутренние сопротивления, по средству мышечных напряжений.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(сила)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Сенситивные периоды развития силы: у юношей (13 -14 лет и 17 -18), у девушек (11 - 12 и 15 - 16).](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_training_apparatus_orientation:concept_power_sports_equipment;hammer_machine;platform_machine;rowing_machine;traction_machine;bars;crossover;concept_vertical_traction_machine;concept_horizontal_traction_machine;
+<=nrel_physical_quality:concept_person;
+<=nrel_inclusion:concept_physical_qualities_of_person;;

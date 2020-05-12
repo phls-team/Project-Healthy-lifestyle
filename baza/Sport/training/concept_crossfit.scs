@@ -1,0 +1,41 @@
+concept_crossfit
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [crossfit](*<-lang_en;;*);
+          [кроссфит](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(кроссфит)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Круговая тренировка (то есть, упражнения постоянно повторяются, как бы замыкаясь в цепочку), которая заключается в выполнении определенного комплекса упражнений за минимальное время.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_species:concept_training;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(кроссфит)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Тренировочную концепцию кроссфита можно назвать одной из лучших в развитии общей физической подготовки.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://concept_crossfit.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

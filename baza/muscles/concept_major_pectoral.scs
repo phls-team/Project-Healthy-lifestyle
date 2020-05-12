@@ -1,0 +1,42 @@
+concept_major_pectoral
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [major pectoral](*<-lang_en;;*);
+          [большая грудная мышца](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(большая грудная мышца)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Крупная поверхностная мышца веерообразной формы, расположенная на передней поверхности груди.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_upper_limbs_muscles;
+<=nrel_involved_muscle:hammer_machine;rowing_machine;traction_machine;butterfly_machine;crossover;concept_vertical_traction_machine;concept_horizontal_traction_machine;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(большая грудная мышца)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Напряжение большой грудной мышцы при фиксированном корпусе и свободной верхней конечности вызывает сгибание плеча, приведение его к туловищу и пронацию.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://concept_major_pectoral.png"
+			(*
+				=> nrel_format : format_png ;;
+			*);;
+		*);;
+	*);;

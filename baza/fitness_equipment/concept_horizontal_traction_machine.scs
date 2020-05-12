@@ -1,0 +1,39 @@
+concept_horizontal_traction_machine
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [horizontal traction machine](*<-lang_en;;*);
+          [горизонтальная тяга](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(горизонтальная тяга)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Тренажёр, который предназначен для прокачки широчайших мышц спины(в горизонтальной плоскости).](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(горизонтальная тяга)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Грузоблочная машина для горизонтальной тяги позволяет выбирать отягощения различной величины: как больше, так и меньше веса спортсмена.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://concept_horizontal_traction_machine.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

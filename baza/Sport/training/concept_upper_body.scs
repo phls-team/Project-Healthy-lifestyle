@@ -1,0 +1,41 @@
+concept_upper_body
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [upper body](*<-lang_en;;*);
+          [тренировка на верхнюю часть тела](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(тренировка на верхнюю часть тела)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Супер эффективный тренинг всех групп мышц верхней части тела: спина, грудные и дельтовидные мышцы, а также бицепсы и трицепсы. ](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_species:concept_training;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(тренировка на верхнюю часть тела)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Большое внимание уделяется тренингу всех мышц брюшного пресса.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://concept_upper_body.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

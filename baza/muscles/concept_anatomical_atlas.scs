@@ -1,0 +1,39 @@
+concept_anatomical_atlas
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [anatomical atlas](*<-lang_en;;*);
+          [анатомический атлас](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(анатомический атлас)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Способ описания всех функций человеческого тела, объединённых в 12 систем с характеристикой каждой системы.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(анатомический атлас)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Скелет человека состоит из 206 костей, но весит всего 4–6 кг. Мышцы же составляют примерно 40% веса тела.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://anatomical_atlas.png"
+			(*
+				=> nrel_format : format_png ;;
+			*);;
+		*);;
+	*);;

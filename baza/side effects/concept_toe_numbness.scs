@@ -1,0 +1,41 @@
+concept_toe_numbness
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [toe numbness](*<-lang_en;;*);
+          [онемение пальцев ног](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(онемение пальцев ног)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Ощущение абсолютной неподвижности и нечувствительности пальцев.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_side_effect:concept_training;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(онемение пальцев ног)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Чтобы устранить онемение пальцев ног, необходимо периодически шевелить пальцами, чтобы разогнать застои крови, и приобрести специальную спортивную обувь подходящего размера.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://concept_toe_numbness.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

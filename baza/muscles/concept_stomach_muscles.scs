@@ -1,0 +1,42 @@
+concept_stomach_muscles
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [stomach muscles](*<-lang_en;;*);
+          [мышцы живота](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(мышцы живота)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Мышцы, которые в результате сокращений позволяют туловищу сгибаться вперед, а также удерживают внутренние органы в тонусе.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_torso_muscles;
+<=nrel_involved_muscle:rome_chair_machine;traction_machine;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(мышцы живота)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Сокращение мышц брюшного пресса содействует движению венозной крови во внутренних органах, осуществляют дыхательные движения.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://concept_stomach_muscles.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

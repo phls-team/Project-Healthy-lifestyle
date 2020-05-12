@@ -1,0 +1,28 @@
+concept_physical_qualities_of_person
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [physical qualities of person](*<-lang_en;;*);
+          [физические качества человека](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(физические качества человека)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Врожденные качества, благодаря которым возможна двигательная активность.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(физические качества человека)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Физические качества заложены природой в каждом, но проявляются в конкретном двигательном действии, у каждого человека по-разному.](*<- lang_ru;;*);;
+			*);;
+		*);;

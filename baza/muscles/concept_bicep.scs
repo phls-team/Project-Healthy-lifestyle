@@ -1,0 +1,42 @@
+concept_bicep
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [bicep](*<-lang_en;;*);
+          [бицепс](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(бицепс)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Большая мышца плеча, которая сгибает плечо в плечевом суставе, предплечье в локтевом.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_upper_limbs_muscles;
+<=nrel_involved_muscle:hammer_machine;rowing_machine;traction_machine;butterfly_machine;crossover;concept_vertical_traction_machine;concept_horizontal_traction_machine;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(бицепс)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Мышца популярна среди культуристов. Посредством тренировок можно добиться значительного увеличения объёма бицепсов.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://concept_bicep.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

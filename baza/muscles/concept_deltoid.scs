@@ -1,0 +1,42 @@
+concept_deltoid
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [deltoid](*<-lang_en;;*);
+          [дельтовидная мышца](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(дельтовидная мышца)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Поверхностная мышца плеча, образующая его наружный контур.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_upper_limbs_muscles;
+<=nrel_involved_muscle:hammer_machine;rowing_machine;traction_machine;butterfly_machine;crossover;concept_vertical_traction_machine;concept_horizontal_traction_machine;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(дельтовидная мышца)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Дельтовидная мышца принимает участие в сгибании и разгибании плеча, отведении руки в сторону.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://concept_deltoid.png"
+			(*
+				=> nrel_format : format_png ;;
+			*);;
+		*);;
+	*);;

@@ -1,0 +1,55 @@
+nrel_isolation_exercise
+ 
+<-sc_node_norole_relation;
+
+=> nrel_main_idtf:
+          [isolation exercise](*<-lang_en;;*);
+          [изолирующее упражнение*](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(изолирующее упражнение*)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Изолирующие упражнения предполагают выполнение движения в одном суставе, соответственно, непосредственно в работу включается одна группа мышц (другие могут участвовать как стабилизаторы, но при этом в самом движении они не участвуют).](*<- lang_ru;;*);;
+			*);;
+		*);
+
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(изолирующее упражнение*)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Изолирующие упражнения не приводят к выраженному росту мышечной массы, преобладать в программе они имеют право в двух случаях - на самом начальном этапе занятий, если человек вообще не в состоянии осваивать технику базовых упражнений по причине отсутствия координации и полной растренированности мышц, либо в период работы "на рельеф".](*<- lang_ru;;*);;
+			*);;
+		*);
+
+=> nrel_first_domain: concept_physical_exercises;
+=> nrel_second_domain: concept_physical_exercises;
+=>nrel_definitional_domain:concept_physical_exercises;
+
+<-arity2;;
+arity->arity2;;
+arity2=>nrel_measurement:2;;
+number->2;;
+
+//sc_node_not_relation->relation;;
+//sc_node_not_relation->norole_relation;;
+//sc_node_not_relation->binary_relation;;
+nrel_isolation_exercise 
+<-relation;
+<-norole_relation;;
+relation => nrel_inclusion: binary_relation;;
+binary_relation => nrel_inclusion: reflexive_relation;
+                => nrel_inclusion: transitive_relation;
+                => nrel_inclusion: antisymmetric_relation;;
+reflexive_relation -|> nrel_isolation_exercise;;
+transitive_relation -> nrel_isolation_exercise;;
+antisymmetric_relation -> nrel_isolation_exercise;;
+
+raising_hands<=nrel_isolation_exercise:concept_physical_exercises;;
+arm_flexion<=nrel_isolation_exercise:concept_physical_exercises;;
+arm_extension<=nrel_isolation_exercise:concept_physical_exercises;;

@@ -1,0 +1,32 @@
+concept_endurance
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [endurance](*<-lang_en;;*);
+          [выносливость](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(выносливость)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Способность организма к продолжительному выполнению какой-либо работы без заметного снижения работоспособности, а также его восстановлению.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(выносливость)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Уровень выносливости определяется временем, в течение которого человек может выполнять заданное физическое упражнение.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_training_apparatus_orientation:cycle_machine;bicycle_machine;elliptical_trainer;running_machine;step_machine;climber;
+<=nrel_physical_quality:concept_person;
+<=nrel_inclusion:concept_physical_qualities_of_person;;

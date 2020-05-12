@@ -1,0 +1,41 @@
+concept_laugh_muscle
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [laugh muscle](*<-lang_en;;*);
+          [мышца смеха](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(мышца смеха)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Мышца, которая растягивает рот при смехе.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_neck_muscles;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(мышца смеха)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[У некоторых людей вследствие прикрепления мышцы к коже щеки при её сокращении образуется ямочка сбоку от угла рта.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://concept_laugh_muscle.png"
+			(*
+				=> nrel_format : format_png ;;
+			*);;
+		*);;
+	*);;

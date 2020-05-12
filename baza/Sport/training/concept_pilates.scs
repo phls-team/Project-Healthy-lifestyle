@@ -1,0 +1,41 @@
+concept_pilates
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [pilates](*<-lang_en;;*);
+          [пилатес](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(пилатес)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Система упражнений, направленная на мышцы спины, пресса, улучшение осанки, координации, гибкости, подвижности суставов.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_species:concept_training;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(пилатес)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[В пилатесе резких движений практически нет, все упражнения выполняются плавно, требуют контроля за выполнением и концентрации.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://concept_pilates.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

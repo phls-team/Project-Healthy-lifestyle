@@ -1,0 +1,42 @@
+concept_neck_muscles
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [neck muscles](*<-lang_en;;*);
+          [мышцы шеи](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(мышцы шеи)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Мышцы, которые обеспечивают движения(кпереди, кзади и в стороны) и наклоны головы(вперёд, назад и в стороны), шеи и ее кожи.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:muscles;
+<=nrel_involved_muscle:strengthening_the_lateral_muscles;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(мышцы шеи)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Одним из главных негативных воздействий на мышцы шеи является длительное сидение человека (зачастую за компьютером).](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://concept_neck_muscles.png"
+			(*
+				=> nrel_format : format_png ;;
+			*);;
+		*);;
+	*);;

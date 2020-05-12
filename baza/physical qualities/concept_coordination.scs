@@ -1,0 +1,32 @@
+concept_coordination
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [coordination](*<-lang_en;;*);
+          [координация](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(координация)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Способность сочетать физические и психологические процессы в едином целенаправленном движении.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(координация)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Координация движений является тем физическим качеством, которое можно развить только через тренировки.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_training_apparatus_orientation:bars;elliptical_trainer;
+<=nrel_physical_quality:concept_person;
+<=nrel_inclusion:concept_physical_qualities_of_person;;
