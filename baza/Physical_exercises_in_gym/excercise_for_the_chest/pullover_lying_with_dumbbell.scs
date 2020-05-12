@@ -1,0 +1,53 @@
+pullover_lying_with_dumbbell
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [ pullover lying with dumbbell]
+          (*<-lang_en;;*);
+          [ пуловер лежа с гантелей ]
+          (*<-lang_ru;;*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Опр.(пуловер лежа с гантелей) ]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Некоторые считают, что это упражнение для мышц груди. Бесспорно, грудь здесь тоже работает, но этим упражнением вы ее не накачаете. Эффективность загрузки мышц зависит от того, насколько опускаются локти, а не сам снаряд, поэтому сильно сгибать локти смысла нет.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Утв.(пуловер лежа с гантелей) ]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Упражнение лучше делать в конце тренировки – с целью растянуть мышцы. Выполнять можно с гантелей (можно сразу с двумя), штангой или диском.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://photo/10.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
+
+pullover_lying_with_dumbbell => nrel_target_muscle:pectoral_muscles;;
+pullover_lying_with_dumbbell => nrel_additional_muscle: shoulders;
+                             => nrel_additional_muscle: triceps;
+							 => nrel_additional_muscle: latissimus_dorsi;;
+pullover_lying_with_dumbbell => nrel_inventory: dumbbell;
+                             => nrel_inventory: bench;;

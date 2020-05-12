@@ -1,0 +1,51 @@
+horizontal_reduction_of_arms_with_dumbbells_lying_on_a_bench
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [ horizontal reduction of arms with dumbbells lying on a bench]
+          (*<-lang_en;;*);
+          [ горизонтальное приведение рук с гантелями лежа на скамье ]
+          (*<-lang_ru;;*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Опр.(горизонтальное приведение рук с гантелями лежа на скамье) ]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Одно из основных упражнений для мышц груди.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Утв.(горизонтальное приведение рук с гантелями лежа на скамье) ]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [ Разведение рук с гантелями придает груди рельефность и выпуклую форму. ](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://photo/9.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
+
+horizontal_reduction_of_arms_with_dumbbells_lying_on_a_bench => nrel_target_muscle:pectoral_muscles;;
+horizontal_reduction_of_arms_with_dumbbells_lying_on_a_bench => nrel_additional_muscle: shoulders;;
+horizontal_reduction_of_arms_with_dumbbells_lying_on_a_bench => nrel_inventory: dumbbell;
+                                                            => nrel_inventory: bench;;

@@ -1,0 +1,38 @@
+bending_arms_with_a_barbell_standing
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [bending arms with a barbell standing ]
+          (*<-lang_en;;*);
+          [ сгибание рук со штангой стоя ]
+          (*<-lang_ru;;*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Опр.(сгибание рук со штангой стоя) ]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Данное упражнение самое популярное для мышц бицепса. Существует несколько вариаций - может выполняться со штангой (как с прямым, так и с изогнутым грифом) и с гантелями.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://photo/7.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
+
+bending_arms_with_a_barbell_standing => nrel_target_muscle:biceps;;
+bending_arms_with_a_barbell_standing => nrel_additional_muscle: forearm;;
+bending_arms_with_a_barbell_standing => nrel_inventory:barbell;;

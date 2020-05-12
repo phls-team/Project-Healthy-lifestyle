@@ -1,0 +1,75 @@
+concept_physical_excercise_in_gym=>nrel_idtf:[physical culture in a gym]
+	(*
+		<-lang_en;;
+	*);;
+concept_physical_excercise_in_gym=>nrel_idtf:[множество физических упражнений в зале]
+	(*
+		<-lang_ru;;	
+	*);;
+concept_physical_excercise_in_gym=>nrel_main_idtf:[физические упражнения в зале]
+	(*
+		<-lang_ru;;
+	*);;
+concept_physical_excercise_in_gym<-rrel_key_sc_element:...
+	(*
+		<-definition;;=>nrel_main_idtf:
+[Опр.(физические упражнения в зале)] 
+	(* 
+		<-lang_ru;;
+	*);;
+	
+<=nrel_sc_text_translation:...
+	(*
+		->[элементарные движения, составленные из них двигательные действия и их комплексы, систематизированные в целях физического развития.]
+(* 
+<-lang_ru;; 
+*);;
+	
+	*);;
+		<=nrel_using_constants:...
+	(*
+		->nrel_reflect;;
+		->nrel_use;;
+		->nrel_develop;;
+		->concept_culture;;
+		->concept_society;;
+		->concept_level;;
+		->concept_health;;
+	*);;
+*);;
+concept_physical_excercise_in_gym->rrel_example:physical_excercise;;
+concept_physical_excercise_in_gym<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://photo/physical_culture.png"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;
+concept_physical_excercise_in_gym <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element: rowing; swimming; nrel_body_weight;aerobic_excercise;;
+		=> nrel_main_idtf: 
+            [Утв.(развитие, тело, нервная система,человек)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Физические упражнения в зале развивают не только тело, но и нервную систему человека.](*<- lang_ru;;*);;
+			*);;
+*);;
+	
+
+concept_physical_excercise_in_gym=>nrel_inclusion: concept_physical_exercise_for_the_neck;;
+concept_physical_excercise_in_gym=>nrel_inclusion: concept_physical_excercise_for_the_trapeze;;
+concept_physical_excercise_in_gym=>nrel_inclusion: concept_physical_excercise_for_the_shoulders;;
+concept_physical_excercise_in_gym=>nrel_inclusion: concept_physical_excercise_for_the_biceps;;
+concept_physical_excercise_in_gym=>nrel_inclusion: concept_physical_excercise_for_the_chest;;
+concept_physical_excercise_in_gym=>nrel_inclusion: concept_physical_excercise_for_the_forearm;;
+concept_physical_excercise_in_gym=>nrel_inclusion: concept_physical_excercise_for_the_press;;
+
+

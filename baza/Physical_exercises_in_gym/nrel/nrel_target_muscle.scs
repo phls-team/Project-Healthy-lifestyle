@@ -1,0 +1,26 @@
+nrel_target_muscle
+=> nrel_main_idtf: [ target muscle ] (* <- lang_en;; *);
+=> nrel_main_idtf: [ целевая мышца ] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(целевая мышца)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       	-> [Мышца, которая наиболее активна в данном упражнении.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(целевая мышца)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Это одна из характеристик физического упражнения.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+<- sc_node_norole_relation;;

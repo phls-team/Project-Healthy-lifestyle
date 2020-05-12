@@ -1,0 +1,51 @@
+lifting_dumbbells_in_front_of_you
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [lifting dumbbells in front of you]
+          (*<-lang_en;;*);
+          [подъем гантелей перед собой]
+          (*<-lang_ru;;*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Опр.(подъем гантелей перед собой)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Подъем гантелей перед собой - одно из самых доступных упражнений для тренировки передней части плечей. Отлично подойдет для увеличения передних дельт. Может выполняться с двумя гантелями (поднимаются как поочередно, так и одновременно), с одной гантелей, с блином от штанги, со штангой и в блочном тренажере.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Утв.(подъем гантелей перед собой)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Для выполнения нужны только гантели – поэтому упражнение можно делать в домашних условиях.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://photo/1.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
+
+
+lifting_dumbbells_in_front_of_you => nrel_target_muscle:shoulders;;
+lifting_dumbbells_in_front_of_you => nrel_additional_muscle:pectoral_muscles;;
+lifting_dumbbells_in_front_of_you => nrel_inventory:dumbbell;;

@@ -1,0 +1,44 @@
+t_push_ups
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [ t - push-ups]
+          (*<-lang_en;;*);
+          [ т - отжимания ]
+          (*<-lang_ru;;*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Опр.(т - отжимания) ]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Данное упражнение может вызвать затруднение, так как присутствует статодинамическая работа. Выполнять рекомендуется в медленном темпе, увеличивая время под нагрузкой и лучшей проработке мышц.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://photo/15.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
+
+t_push_ups => nrel_target_muscle:pectoral_muscles;;
+
+t_push_ups => nrel_additional_muscle: press_muscles;
+            => nrel_additional_muscle: triceps;
+            => nrel_additional_muscle: latissimus_dorsi;
+            => nrel_additional_muscle: middle_back;
+            => nrel_additional_muscle: lower_back;;
+
+t_push_ups => nrel_inventory:trx_petle;;

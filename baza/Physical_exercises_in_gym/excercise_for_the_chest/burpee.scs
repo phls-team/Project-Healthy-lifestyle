@@ -1,0 +1,53 @@
+burpee
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [ burpee]
+          (*<-lang_en;;*);
+          [ берпи ]
+          (*<-lang_ru;;*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Опр.(берпи) ]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Бёрпи – это отличное упражнение, цель которого увеличение общей выносливости организма и взрывной силы всего тела.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Утв.(берпи) ]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Данное упражнение подходит женщинам и мужчинам, а отсутствие дополнительного инвентаря позволяет его выполнять в домашних условиях.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://photo/12.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
+
+burpee => nrel_target_muscle:pectoral_muscles;
+        => nrel_target_muscle: quadriceps;
+        => nrel_target_muscle: buttocks;;
+
+burpee => nrel_additional_muscle: press_muscles;
+        => nrel_additional_muscle: triceps;;

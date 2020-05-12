@@ -1,0 +1,52 @@
+wide_grip_bench_press
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [ wide grip bench press ]
+          (*<-lang_en;;*);
+          [ жим штанги широким хватом ]
+          (*<-lang_ru;;*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Опр.(жим штанги широким хватом) ]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Это базовое, эффективное упражнение, направленное на проработку мышц груди, трицепсов и переднего пучка дельтовидных мышц. Данный хват сокращает амплитуду движения, но взамен дает возможность работать с большими весами, а также максимально раскрыть потенциал мышц груди.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Утв.(жим штанги широким хватом) ]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Инвентарём для данного упражнения является горизонтальная скамья.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://photo/3.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
+
+wide_grip_bench_press => nrel_target_muscle:pectoral_muscles;;
+wide_grip_bench_press => nrel_additional_muscle: triceps;
+                    => nrel_additional_muscle: shoulders;;
+wide_grip_bench_press => nrel_inventory: barbell;
+                    => nrel_inventory: power_frame;;

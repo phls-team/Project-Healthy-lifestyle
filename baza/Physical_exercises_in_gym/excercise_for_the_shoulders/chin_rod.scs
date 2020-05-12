@@ -1,0 +1,56 @@
+chin_rod
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [ chin rod ]
+          (*<-lang_en;;*);
+          [тяга штанги к подбородку]
+          (*<-lang_ru;;*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Опр.(тяга штанги к подбородку)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Данное упражнение является базовым, акцентирует нагрузку на средние и задние пучки плеч, при выполнении узким хватом в работу включаются трапеции и немного бицепс. Эффект от тяги штанги напрямую зависит того, как высоко вы поднимете локти, а не штангу. В нижней части траектории движения работают плечи, а в верхней (выше уровня груди) трапециевидные мышцы.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Утв.(тяга штанги к подбородку)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Упражнение выполняется как со свободным весом, так и в тренажере Смита.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://photo/6.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
+
+
+chin_rod => nrel_target_muscle:shoulders;
+		=> nrel_additional_muscle:triceps;;
+
+chin_rod => nrel_inventory:machine_smitt; 
+		=> nrel_inventory:barbell;;
+
+

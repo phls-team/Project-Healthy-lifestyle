@@ -1,0 +1,19 @@
+concept_physical_excercise_for_the_biceps
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [physical exercise for the biceps]
+          (*<-lang_en;;*);
+          [физические упражнения для бицепса]
+          (*<-lang_ru;;*);
+
+=> nrel_inclusion: bending_arms_with_loops;
+=> nrel_inclusion: bending_the_elbow_joints_with_dumbbells_on_an_inclined_bench;
+=> nrel_inclusion: bending_arms_with_dumbbells_while_standing;
+=> nrel_inclusion: bending_of_the_arms_in_the_elbow_joint_with_dumbbells_grip_hammer;
+=> nrel_inclusion: concentrated_biceps_flexion;
+=> nrel_inclusion: bending_the_arms_on_the_lower_block_in_the_crossover;
+=> nrel_inclusion: bending_arms_with_a_barbell_standing;
+=> nrel_inclusion: bending_of_the_arms_in_the_elbow_joint_on_the_upper_block;
+=> nrel_inclusion: bending_arms_on_scotts_bench;;

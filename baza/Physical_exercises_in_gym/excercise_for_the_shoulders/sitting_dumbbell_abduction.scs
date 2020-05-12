@@ -1,0 +1,55 @@
+sitting_dumbbell_abduction
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [ sitting dumbbell abduction ]
+          (*<-lang_en;;*);
+          [ отведение гантелей сидя ]
+          (*<-lang_ru;;*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Опр.(отведение гантелей сидя) ]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Данное упражнение направленно на проработку дельтовидных мышц.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Утв.(отведение гантелей сидя) ]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [ В процессе выполнения упражнения включатся дополнительные мышцы плечевого пояса.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://photo/10.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
+
+sitting_dumbbell_abduction => nrel_target_muscle:shoulders;;
+
+sitting_dumbbell_abduction => nrel_additional_muscle:trapeze;;
+
+sitting_dumbbell_abduction => nrel_inventory:dumbbell;
+                            => nrel_inventory:bench;;
+
+

@@ -1,0 +1,57 @@
+dumbbell_abduction_through_the_sides_while_standing
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [ dumbbell abduction through the sides while standing ]
+          (*<-lang_en;;*);
+          [ отведение гантелей через стороны стоя ]
+          (*<-lang_ru;;*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Опр.(отведение гантелей через стороны стоя) ]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Классическое упражнение для развития дельт – мышц, окружающих плечевые суставы. Вы можете выполнять разведение гантелей в стороны одной рукой – попеременно (оперевшись боком на наклонную скамью или удерживаясь свободной рукой за опору).](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Утв.(отведение гантелей через стороны стоя) ]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Больше всего в подъеме гантелей через стороны работают средние дельты.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://photo/9.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
+
+
+dumbbell_abduction_through_the_sides_while_standing => nrel_target_muscle:shoulders;;
+
+dumbbell_abduction_through_the_sides_while_standing => nrel_additional_muscle:trapeze;;
+
+dumbbell_abduction_through_the_sides_while_standing => nrel_inventory:dumbbell;;
+
+

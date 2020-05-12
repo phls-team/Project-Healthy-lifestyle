@@ -1,0 +1,38 @@
+upside_down_push_ups_against_a_wall
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [upside down push-ups against a wall]
+          (*<-lang_en;;*);
+          [отжимания вниз головой с опорой о стену]
+          (*<-lang_ru;;*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Опр.(отжимания вниз головой с опорой о стену)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Отжимания в стойке на руках – силовое упражнение, целью которого является проработка мышц плечевого пояса.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://photo/3.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
+
+
+upside_down_push_ups_against_a_wall => nrel_target_muscle:shoulders;;
+upside_down_push_ups_against_a_wall => nrel_additional_muscle:triceps;;

@@ -1,0 +1,41 @@
+looping_hands
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [ looping hands]
+          (*<-lang_en;;*);
+          [ сведение рук в петлях ]
+          (*<-lang_ru;;*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Опр.(сведение рук в петлях) ]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Данное упражнение сильно напоминает упражнение из тренажерного зала, а именно - сведение рук в тренажере бабочка. В достаточной мере нагружает мышцы груди, но не сравнится с классическим отжиманиями. Сравнительно простое упражнение, может использоваться как опытными, так и новичками. Однако, необходимо досконально изучить технику выполнения.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://photo/18.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
+
+looping_hands => nrel_target_muscle:pectoral_muscles;;
+
+looping_hands => nrel_additional_muscle: press_muscles;
+            => nrel_additional_muscle: shoulders;;
+
+looping_hands => nrel_inventory:trx_petle;;

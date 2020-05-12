@@ -1,0 +1,40 @@
+bending_arms_with_dumbbells_while_standing
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [ bending arms with dumbbells while standing ]
+          (*<-lang_en;;*);
+          [ сгибание рук с гантелями стоя ]
+          (*<-lang_ru;;*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Опр.(сгибание рук с гантелями стоя) ]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Сгибание рук с гантелями стоя является одним из наилучших упражнений для развития бицепса. Превосходство гантели над штангой заключается в том, что вы сможете выполнять упражнение с вращением кисти наружу – супинацией. Это позволит включить плечевую и плечелучевую мышцу.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://photo/3.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
+
+bending_arms_with_dumbbells_while_standing => nrel_target_muscle:biceps;;
+
+bending_arms_with_dumbbells_while_standing => nrel_additional_muscle:forearm;;
+
+bending_arms_with_dumbbells_while_standing => nrel_inventory:dumbbell;;

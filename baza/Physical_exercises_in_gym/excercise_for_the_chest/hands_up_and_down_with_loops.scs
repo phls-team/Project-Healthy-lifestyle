@@ -1,0 +1,56 @@
+hands_up_and_down_with_loops
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [ hands up and down with loops]
+          (*<-lang_en;;*);
+          [ разведение рук вверх-вниз с петлями ]
+          (*<-lang_ru;;*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Опр.(разведение рук вверх-вниз с петлями) ]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Данное упражнение напоминает некий гибрид сразу нескольких упражнений на петлях. С биомеханической точки зрения отведение рук напоминает разводку.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Утв.(разведение рук вверх-вниз с петлями) ]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Движения в упражнении достаточно легкие и не составят труда для новичков](*<- lang_ru;;*);;
+        *);;
+	*);
+
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://photo/17.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
+
+hands_up_and_down_with_loops => nrel_target_muscle:pectoral_muscles;;
+
+hands_up_and_down_with_loops => nrel_additional_muscle: press_muscles;
+            => nrel_additional_muscle: latissimus_dorsi;
+            => nrel_additional_muscle: middle_back;
+            => nrel_additional_muscle: shoulders;;
+
+hands_up_and_down_with_loops => nrel_inventory:trx_petle;;

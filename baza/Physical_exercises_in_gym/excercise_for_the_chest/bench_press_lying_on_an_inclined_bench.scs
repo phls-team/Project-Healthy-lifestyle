@@ -1,0 +1,53 @@
+bench_press_lying_on_an_inclined_bench
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [ bench press lying on an inclined bench ]
+          (*<-lang_en;;*);
+          [ жим штанги лежа на наклонной скамье]
+          (*<-lang_ru;;*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Опр.(жим штанги лежа на наклонной скамье) ]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Жим штанги, лежа на наклонной скамье, принципиально отличается от «классического» жима штанги, где жим выполняется на горизонтальной скамье.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Утв.(жим штанги лежа на наклонной скамье) ]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Мышцы груди в данном упражнении прорабатываются более качественно и эффективно чем в горизонтальном жиме.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://photo/1.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
+
+bench_press_lying_on_an_inclined_bench => nrel_target_muscle:pectoral_muscles;;
+bench_press_lying_on_an_inclined_bench => nrel_additional_muscle: triceps;
+                                        => nrel_additional_muscle: shoulders;;
+bench_press_lying_on_an_inclined_bench => nrel_inventory: barbell;
+                                        => nrel_inventory: bench;
+                                        => nrel_inventory: power_frame;;

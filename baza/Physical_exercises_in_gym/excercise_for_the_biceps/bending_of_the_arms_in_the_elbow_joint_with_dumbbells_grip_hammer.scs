@@ -1,0 +1,40 @@
+bending_of_the_arms_in_the_elbow_joint_with_dumbbells_grip_hammer
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [ bending of the arms in the elbow joint with dumbbells grip "hammer" ]
+          (*<-lang_en;;*);
+          [ сгибание рук в локтевом суставе с гантелями хватом “молот” ]
+          (*<-lang_ru;;*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Опр.(сгибание рук в локтевом суставе с гантелями хватом “молот”) ]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Держа гантели в руке таким образом, нагрузка ложится на внутреннюю головку бицепса и предплечье. Простое и эффективное изолирующее упражнение. Варианты выполнения различные – можете выполнять как одновременно, так и попеременно. Начинающим культуристам рекомендуется делать попеременно, чтобы не допускать раскачиваний. Молот лучше делать в конце тренировки на руки.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://photo/4.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
+
+bending_of_the_arms_in_the_elbow_joint_with_dumbbells_grip_hammer => nrel_target_muscle:biceps;;
+
+bending_of_the_arms_in_the_elbow_joint_with_dumbbells_grip_hammer => nrel_additional_muscle:forearm;;
+
+bending_of_the_arms_in_the_elbow_joint_with_dumbbells_grip_hammer => nrel_inventory:dumbbell;;

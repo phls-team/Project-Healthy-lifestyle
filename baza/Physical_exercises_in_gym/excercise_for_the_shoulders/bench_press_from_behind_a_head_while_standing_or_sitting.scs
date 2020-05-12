@@ -1,0 +1,55 @@
+bench_press_from_behind_a_head_while_standing_or_sitting
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [ bench press from behind a head while standing or sitting ]
+          (*<-lang_en;;*);
+          [ жим штанги из-за головы стоя или сидя]
+          (*<-lang_ru;;*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Опр.(жим штанги из-за головы стоя или сидя) ]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Выполняется как стоя, так и сидя. Возможно выполнение в машине Смита.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Утв.(жим штанги из-за головы стоя или сидя) ]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Кроме передней дельты активно работает средняя, т.к. штанга опускается за голову и хват шире плеч](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://photo/11.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
+
+bench_press_from_behind_a_head_while_standing_or_sitting => nrel_target_muscle:shoulders;;
+
+bench_press_from_behind_a_head_while_standing_or_sitting => nrel_additional_muscle:trapeze;;
+
+bench_press_from_behind_a_head_while_standing_or_sitting => nrel_inventory:barbell;
+                                                        => nrel_inventory:machine_smitt;;
+
+

@@ -1,0 +1,58 @@
+army_bench_press
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [ army bench press ]
+          (*<-lang_en;;*);
+          [ армейский жим ]
+          (*<-lang_ru;;*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Утв.(армейский жим)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Армейский жим - одно из самых эффективных упражнений для мышц плечевого пояса.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Опр.(армейский жим)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [ Главная нагрузка приходится на передние и средние пучки дельт. Очень важно выполнять жим штанги стоя правильно, иначе эффективность резко снижается.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://photo/8.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
+
+
+army_bench_press => nrel_target_muscle:shoulders;;
+
+army_bench_press => nrel_additional_muscle:pectoral_muscles;
+                => nrel_additional_muscle:triceps;
+                => nrel_additional_muscle:trapeze;;
+
+army_bench_press => nrel_inventory:barbell;
+                 => nrel_inventory:dumbbell;;
+
+

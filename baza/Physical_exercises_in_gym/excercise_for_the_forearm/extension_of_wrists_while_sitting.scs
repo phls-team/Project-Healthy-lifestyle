@@ -1,0 +1,39 @@
+extension_of_wrists_while_sitting
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [ extension of wrists while sitting]
+          (*<-lang_en;;*);
+          [ разгибание запястий сидя ]
+          (*<-lang_ru;;*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Опр.(разгибание запястий сидя) ]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Выберите для себя удобное положение – руки можно класть на лавку или себе на колени, но в любом случае отрывать локти от подставки не нужно. Особенно важно это упражнение для начинающих, т.к. у них мышцы предплечья, как правило, отстают.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://photo/1.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
+
+extension_of_wrists_while_sitting => nrel_target_muscle:forearm;;
+
+extension_of_wrists_while_sitting => nrel_inventory: dumbbell;
+								=> nrel_inventory: barbell;;

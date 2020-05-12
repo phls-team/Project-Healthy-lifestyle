@@ -1,0 +1,54 @@
+horizontal_abduction_of_arms_in_a_crossover
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [ horizontal abduction of arms in a crossover ]
+          (*<-lang_en;;*);
+          [ горизонтальное отведение рук в кроссовере ]
+          (*<-lang_ru;;*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Опр.(горизонтальное отведение рук в кроссовере)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [При тренировке заднего пучка дельтовидных мышц стоит обратить внимание на особенность – её непросто изолировать от других мышцы. Обычно в упражнениях на заднюю дельту активно задействуются трицепсы и широчайшие мышцы спины.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Утв.(горизонтальное отведение рук в кроссовере)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Работая в кроссовере, можно добиться максимальной загрузки задней дельты.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://photo/7.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
+
+
+horizontal_abduction_of_arms_in_a_crossover => nrel_target_muscle:shoulders;;
+horizontal_abduction_of_arms_in_a_crossover => nrel_additional_muscle:triceps;;
+
+horizontal_abduction_of_arms_in_a_crossover => nrel_inventory:cable_simulators;;
+
+

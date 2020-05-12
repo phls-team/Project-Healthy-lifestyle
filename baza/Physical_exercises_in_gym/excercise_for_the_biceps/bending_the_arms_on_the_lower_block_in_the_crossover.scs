@@ -1,0 +1,37 @@
+bending_the_arms_on_the_lower_block_in_the_crossover
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [ bending the arms on the lower block in the crossover ]
+          (*<-lang_en;;*);
+          [ сгибание рук на нижнем блоке в кроссовере ]
+          (*<-lang_ru;;*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Опр.(сгибание рук на нижнем блоке в кроссовере) ]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Для развития бицепса помимо упражнений со штангой и гантелями эффективно используются блочные тренажеры. Конечно не стоит заниматься только на тросовых тренажерах – работа со свободными весами должна быть основой любой тренировки, но сочетание с тросовым тренажером даст отличные результаты, обязательно разнообразие в упражнениях!](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://photo/6.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
+
+bending_the_arms_on_the_lower_block_in_the_crossover => nrel_target_muscle:biceps;;
+bending_the_arms_on_the_lower_block_in_the_crossover => nrel_inventory:cable_simulators;;

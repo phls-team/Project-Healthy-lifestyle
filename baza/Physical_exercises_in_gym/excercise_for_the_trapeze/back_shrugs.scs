@@ -1,0 +1,51 @@
+back_shrugs
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [standing shrugs]
+          (*<-lang_en;;*);
+          [тяги за спиной]
+          (*<-lang_ru;;*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Утв.(тяги за спиной)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [ Это упражнение можно выполнять в силовой раме.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Опр.(тяги за спиной)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Тяги за спиной, или как их еще называют «Тяга Ли Ханей», направлены на проработку трапеции и заднего пучка дельт.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://photo/shrugs_back.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
+
+
+back_shrugs => nrel_target_muscle:trapeze;;
+back_shrugs => nrel_additional_muscle:shoulders;;
+back_shrugs => nrel_inventory:barbell;;

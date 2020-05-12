@@ -1,0 +1,51 @@
+extension_neck
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [bending neck]
+          (*<-lang_en;;*);
+          [разгибание шеи лёжа на скамье]
+          (*<-lang_ru;;*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Утв.(разгибание шеи лёжа на скамье)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Популярное упражнение для мышц шеи.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Опр.(разгибание шеи лёжа на скамье)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [ Опускать и поднимать голову необходимо до упора. От скамьи грудь не отрывать. Выполнять медленно, резких движений не делать. Вес как и для сгибания шеи на скамье стоит выбирать такой, чтобы выполнить хотя бы 10 повторений.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://photo/extension_neck.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
+
+
+extension_neck => nrel_target_muscle:neck;;
+extension_neck => nrel_inventory:bench;;
+extension_neck => nrel_inventory:damn_bar;;

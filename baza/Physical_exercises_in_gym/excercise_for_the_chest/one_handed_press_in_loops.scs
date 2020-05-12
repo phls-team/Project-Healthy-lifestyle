@@ -1,0 +1,43 @@
+one_handed_press_in_loops
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [ one-handed press in loops]
+          (*<-lang_en;;*);
+          [ жим одной рукой в петлях ]
+          (*<-lang_ru;;*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Опр.(жим одной рукой в петлях) ]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Усложнений вариант выполнения классического упражнения отжимания в петлях TRX. В отличии тяги одной рукой может вызвать затруднения у новичков. Так как необходимо в достаточной мере владеть своим телом. А также уметь равномерно распределять свой вес на точки опоры.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://photo/16.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
+
+one_handed_press_in_loops => nrel_target_muscle:pectoral_muscles;;
+
+one_handed_press_in_loops => nrel_additional_muscle: press_muscles;
+            => nrel_additional_muscle: triceps;
+            => nrel_additional_muscle: middle_back;
+            => nrel_additional_muscle: shoulders;;
+
+one_handed_press_in_loops => nrel_inventory:trx_petle;;
