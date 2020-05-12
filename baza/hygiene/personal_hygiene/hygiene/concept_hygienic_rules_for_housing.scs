@@ -20,7 +20,7 @@ definition ->...
 <= nrel_sc_text_translation: ...(*->rrel_example:[Гигиена жилища – это наука, посвященная влиянию условий проживания и труда на здоровье и работоспособность человека.](*<-lang_ru;;*);;*);;
 => nrel_main_idtf: [Определение(Гигиена жилища)](*<- lang_ru;;*);;
 =>nrel_using_constants:{
-concept_human;
+concept_person;
 concept_health
 };;
 *);; 

@@ -22,7 +22,7 @@ defenition ->...
 ->rrel_key_sc_element: synthetic_detergent;;
 <= nrel_sc_text_translation: ...(*->rrel_example:[Синтетические моющие средства (СМС) – это высокоэффективные моющие препараты, содержащие в своей основе от 10 до 40% поверхностно-активных веществ, а также различные добавки, повышающие моющую способность средства. Моющие средства являются продуктами повседневного использования человеком. В условиях рыночной экономики требования к ним постоянно возрастают.](*<-lang_ru;;*);;*);;
 => nrel_main_idtf: [Определение (Синтетическое моющее средство)](*<- lang_ru;;*);;
-=>nrel_using_constants:{concept_detergent;concept_human};;
+=>nrel_using_constants:{concept_detergent;concept_person};;
 *);; 
 
 statement ->...
