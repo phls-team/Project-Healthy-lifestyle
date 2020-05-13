@@ -1,0 +1,43 @@
+concept_pullover
+
+<-sc_node_not_relation;
+=>nrel_starting_position:concept_hanging_on_a_horisontal_bar;
+
+=>nrel_ending_position:concept_emphasis_on_a_horisontal_bar;
+=> nrel_main_idtf:
+          [pullover](*<-lang_en;;*);
+          [подъём переворотом](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(подъём переворотом)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Элемент гимнастики и воркаута. Упражнение на перекладине, выполняемое из виса путём поднесения прямых ног к грифу и одновременным подтягиванием таза к турнику, с последёющим переворотом через перкладину в упор на турнике](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_species:gymnastic_exercise;
+<=nrel_species:concept_workout_element;
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(Подъём переворотом)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Подъём переворотом является одним из самых простых способов оказаться в положении упора на турнике, задействует мышцы брюшного пресса и спины.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://concept_pullover.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

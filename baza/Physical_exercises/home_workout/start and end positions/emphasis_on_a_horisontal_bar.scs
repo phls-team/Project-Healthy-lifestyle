@@ -1,0 +1,39 @@
+concept_emphasis_on_a_horisontal_bar
+
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [emphasis on a horisontal bar](*<-lang_en;;*);
+          [упор на перекладине](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(упор на перекладине)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Конечное положение любого выхода на перекладину. Перекладина находится на уровне таза, тело вертикально головой вверх, упор в руки.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(упор на перекладине)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Упор на перекладине является начальной точкой выступления гимнаста.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://concept_emphasis_on_a_horisontal_bar.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

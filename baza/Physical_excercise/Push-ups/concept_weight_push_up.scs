@@ -1,0 +1,43 @@
+concept_weight_push_up
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [push-up with weight](*<-lang_en;;*);
+          [отжимания с весом](*<-lang_ru;;*);
+
+=>nrel_starting_position:concept_straight_hands_plank;
+=>nrel_ending_position:concept_straight_hands_plank;
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(отжимания с весом)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Отжимания, утяжелённые любым дополнительным грузом, расположенным как можно ближе к плечам отжимающегося.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_species:push_ups;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(отжимания с весом)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[отжимания с весом позволяют прогрессировать в силе и объёме целевых мышечных групп.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://concept_weight_push_ups.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

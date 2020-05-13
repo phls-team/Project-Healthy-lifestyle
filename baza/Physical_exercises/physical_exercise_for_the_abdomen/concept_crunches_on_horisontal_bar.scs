@@ -1,0 +1,43 @@
+concept_crunches_on_horisontal_bar
+
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [crunches on horisontal bar](*<-lang_en;;*);
+          [скручивания на перекладине](*<-lang_ru;;*);
+=>nrel_starting_position:concept_hanging_on_a_horisontal_bar;
+=>nrel_ending_position:concept_hanging_on_a_horisontal_bar;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(скручивания на перекладине)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Из положения виса на турнике ноги усилиями пресса поднимаются к груди атлета, таз при этом подаётся вперёд и вверх для максимального сокращения мышц пресса.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_species:concept_physical_exercise_for_the_abdomen;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(скручивания на перекладине)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Скручивания на перекладине позволяют прокачать все мускулы живота, как пресс, так и косые мышцы и мышцы-стабилизаторы](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://concept_crunches_on_horisontal_bar.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

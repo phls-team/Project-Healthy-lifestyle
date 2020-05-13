@@ -1,0 +1,43 @@
+concept_muscle_up
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [muscle up](*<-lang_en;;*);
+          [выход силой](*<-lang_ru;;*);
+=>nrel_starting_position:concept_hanging_on_a_horisontal_bar;
+
+=>nrel_ending_position:concept_emphasis_on_a_horisontal_bar;
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(выход силой)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Элемент гимнастики и воркаута. Простыми словами, выход силой в упор предполагает, что вы висите на перекладине, подтягиваете к ней свой корпус, а затем выталкиваете его вверх на всю длину РУК.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_species:gymnastic_exercise;
+<=nrel_species:concept_workout_element;
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(выход силой)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[В отличие от большинства силовых техник, выход силой на две руки требует взрывной тяги, чтобы вы могли поднять собственное тело к перекладине, а также толчка, чтобы могли выпрямить руки и поднять тело над ней. Так что во многом он развивает всю верхнюю часть тела: тяга — спину и бицепсы, толчок — плечи и трицепсы. Требуются безумно сильный хват, стальной пресс, очень спортивные мышцы задней поверхности ног, помогающие начать подъем, и толчок бедрами, необходимый для того, чтобы вы могли принять данное положение.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://concept_muscle_up.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

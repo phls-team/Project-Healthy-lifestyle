@@ -1,0 +1,43 @@
+concept_reverse_grip_pull_up
+
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [reverse grip pull up](*<-lang_en;;*);
+          [подтягивания обратным хватом](*<-lang_ru;;*);
+=>nrel_starting_position:concept_hanging_on_a_horisontal_bar;
+=>nrel_ending_position:concept_hanging_on_a_horisontal_bar;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(подтягивания обратным хватом)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Подтягивания, в которых кисть к лицу повёрнута ладонью.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_species:pulling_up;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(подтягивания обратным хватом)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Подтягивание обратным хватом являются изменённым вариантом подтягиваний и направлены на укрепление мышечного корсета с акцентом на бицепс, а так же включают в работу грудные мышцы.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://concept_reverse_grip_pull_up.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

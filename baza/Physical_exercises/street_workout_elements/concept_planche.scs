@@ -1,0 +1,42 @@
+concept_planche
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [plance](*<-lang_en;;*);
+          [планш](*<-lang_ru;;*);
+
+=>nrel_starting_position:concept_straight_hands_plank;
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(планш)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Элемент гимнастики и воркаута. Из положения "упор лёжа" атлет подаёт на прямых руках всё тело вперёд, нагружая плечи, и отрывает ноги от земли, тело отаётся прямым и расположено параллельно земле.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_species:gymnastic_exercise;
+<=nrel_species:concept_workout_element;
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(планш)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Данный элемент требует от спортсменя выдающихся силовых показателей и удаётся далеко не каждому. Чтобы выполнить этот элемент чисто, необходимы крепкие связки на руках и сильные плечи.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://concept_planche.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

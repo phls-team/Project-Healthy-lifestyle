@@ -1,0 +1,43 @@
+concept_forward_rollover
+
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [forward rollover](*<-lang_en;;*);
+          [кувырок вперёд](*<-lang_ru;;*);
+
+=>nrel_starting_position:concept_sit_position;
+=>nrel_ending_position:concept_sit_position;
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(кувырок вперёд)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Гимнастический элемент, суть которого заключается в сгруппированном перекате вперёд через голову из положения упор сидя в это же положение.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_species:gymnastic_exercise;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(кувырок вперёд)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Кувырок назад, бесспорно, является одним из самых базовых упражнений в гимнастике и не только.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://concept_forward_rollover.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

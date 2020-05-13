@@ -1,0 +1,42 @@
+concept_back_lever
+ 
+<-sc_node_not_relation;
+=>nrel_starting_position:concept_hanging_on_a_horisontal_bar;
+=> nrel_main_idtf:
+          [front lever](*<-lang_en;;*);
+          [задний вис](*<-lang_ru;;*);
+          [ласточка](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(передний вис)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Элемент гимнастики и воркаута. Из положения виса на турнике атлет скручивается, заносит ноги за перекладину и выпрямляется горизонтально земле животом вниз, руки при этом прямые.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_species:gymnastic_exercise;
+<=nrel_species:concept_workout_element;
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(задний вис)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Данный элемент гораздо проще переднего виса, но не менее эффектный.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://concept_back_lever.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

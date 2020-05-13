@@ -1,0 +1,43 @@
+concept_knees_push_up
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [knees push-up](*<-lang_en;;*);
+          [отжимания с колен](*<-lang_ru;;*);
+
+=>nrel_starting_position:concept_straight_hands_plank;
+=>nrel_ending_position:concept_straight_hands_plank;
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(отжимания с колен)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Сгибания и разгибания рук в упоре лёжа с согнутыми в коленях ногами. Колени касаются пола и служат точкой опоры.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_species:push_ups;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(отжимания с колен)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[отжимания с колен снижают общую нагрузку и подходят новичкам.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://concept_knees_push_ups.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

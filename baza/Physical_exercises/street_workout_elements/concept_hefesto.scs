@@ -1,0 +1,40 @@
+concept_hefesto
+
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [hefesto](*<-lang_en;;*);
+          [выход принца](*<-lang_ru;;*);
+=>nrel_starting_position:concept_hanging_on_a_horisontal_bar;
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(выход принца)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Элемент воркаута. Из положения виса на турнике выполняется скручивание и переворот назад, тело выпрямляется вертикально ногами вниз. Из этого положения руки сгибаются в локтях, приводя человека в положение заднего упора на турнике (как в офицерском выходе). Затем следует выжимание себя вверх путём выпрямления обеих рук](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_species:concept_workout_element;
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(Выход принца)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Кроме силовых показателей, данное упражнение показывает креативность, растяжку и крепкость сухожилий атлета.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://concept_hefesto.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

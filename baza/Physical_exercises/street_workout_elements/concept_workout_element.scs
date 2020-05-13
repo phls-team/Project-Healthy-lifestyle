@@ -1,0 +1,22 @@
+concept_workout_element
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [worckout element](*<-lang_en;;*);
+          [Элемент воркаута](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(элемент воркаута)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Упражнения, характерные для направления воркаут](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_species:concept_workout;;
+
+
+
