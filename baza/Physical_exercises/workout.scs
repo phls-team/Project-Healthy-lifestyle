@@ -1,6 +1,7 @@
-concept_workout<-sc_node_not_relation;=>nrel_main_idtf:[воркаут](*<-lang_ru;;*);;
-concept_workout<-sc_node_not_relation;=>nrel_main_idtf:[workout](*<-lang_en;;*);;
-concept_physical_exercises=>nrel_inclusion:concept_workout;;
+concept_street_workout<-sc_node_not_relation;=>nrel_main_idtf:[воркаут](*<-lang_ru;;*);;
+concept_street_workout<-sc_node_not_relation;=>nrel_main_idtf:[street workout](*<-lang_en;;*);;
+concept_physical_exercises->concept_workout;;
+
 concept_static_exercise<-sc_node_not_relation;=>nrel_main_idtf:[статические упражнения](*<-lang_ru;;*);;
 concept_dynamic_exercise <-sc_node_not_relation;=>nrel_main_idtf:[динамические упражнения](*<-lang_ru;;*);;
 concept_horizontal_stop <-sc_node_not_relation;=>nrel_main_idtf:[горизонтальный упор](*<-lang_ru;;*);;
@@ -10,11 +11,11 @@ concept_emphasis_on_the_half_bent <-sc_node_not_relation;=>nrel_main_idtf:[уп�
 concept_flag <-sc_node_not_relation;=>nrel_main_idtf:[флаг](*<-lang_ru;;*);;
 concept_dragon_flag <-sc_node_not_relation;=>nrel_main_idtf:[флаг Дракона](*<-lang_ru;;*);;
 
-concept_angel_out <-sc_node_not_relation;=>nrel_main_idtf:[выход Ангела](*<-lang_ru;;*);;
+concept_princes_out <-sc_node_not_relation;=>nrel_main_idtf:[выход Принца](*<-lang_ru;;*);;
 concept_power_out_for_1_and_2_hand <-sc_node_not_relation;=>nrel_main_idtf:[выход силой на 1 руку/2 руки](*<-lang_ru;;*);;
 concept_spear <-sc_node_not_relation;=>nrel_main_idtf:[копье](*<-lang_ru;;*);;
 concept_gods_walk <-sc_node_not_relation;=>nrel_main_idtf:[походка Бога](*<-lang_ru;;*);;
-concept_power_output_for_2_hands <-sc_node_not_relation;=>nrel_main_idtf:[силовой выход на 2 руки](*<-lang_ru;;*);;
+
 
 concept_horizontal_bar <-sc_node_not_relation;=>nrel_main_idtf:[турник](*<-lang_ru;;*);;
 concept_skids <-sc_node_not_relation;=>nrel_main_idtf:[брусья](*<-lang_ru;;*);;
@@ -22,12 +23,13 @@ concept_Swedish_wall <-sc_node_not_relation;=>nrel_main_idtf:[шведская �
 concept_handle <-sc_node_not_relation;=>nrel_main_idtf:[рукоход](*<-lang_ru;;*);;
 concept_horizontal_stairs <-sc_node_not_relation;=>nrel_main_idtf:[горизонтальная лестица](*<-lang_ru;;*);;
 concept_bench_for_press_training <-sc_node_not_relation;=>nrel_main_idtf:[лавка для тренировки мышц пресса](*<-lang_ru;;*);;
+
 concept_strength <-sc_node_not_relation;=>nrel_main_idtf:[сила](*<-lang_ru;;*);;
 concept_endurance <-sc_node_not_relation;=>nrel_main_idtf:[выносливость](*<-lang_ru;;*);;
 
 concept_pull_ups_on_the_crossbar <-sc_node_not_relation;=>nrel_main_idtf:[подтягивания на перекладине ](*<-lang_ru;;*);;
 concept_two_way_exits_on_the_crossbar <-sc_node_not_relation;=>nrel_main_idtf:[выходы на две руки на перекладине](*<-lang_ru;;*);;
-concept_push_ups_from_the_ground__floor <-sc_node_not_relation;=>nrel_main_idtf:[отжимания от земли / пола](*<-lang_ru;;*);;
+concept_push_ups_from_the_ground_floor <-sc_node_not_relation;=>nrel_main_idtf:[отжимания от земли / пола](*<-lang_ru;;*);;
 concept_push_UPS_on_bars <-sc_node_not_relation;=>nrel_main_idtf:[отжимания на брусьях ](*<-lang_ru;;*);;
 
 nrel_common_elements<-sc_node_norole_relation;=>nrel_main_idtf:[распространенные элементы*](*<-lang_ru;;*);;
@@ -35,71 +37,40 @@ nrel_common_exercises <-sc_node_norole_relation;=>nrel_main_idtf:[распрос
 nrel_equipment_used<-sc_node_norole_relation;=>nrel_main_idtf:[используемые оборудование и снаряжение*](*<-lang_ru;;*);;
 nrel_goal<-sc_node_norole_relation;=>nrel_main_idtf:[цель*](*<-lang_ru;;*);;
 
-concept_workout=>nrel_common_elements:concept_horizontal_stop(*<-concept_static_exercise;;*);concept_crocodile_clip(*<-concept_static_exercise;;*);concept_corner(*<-concept_static_exercise;;*);concept_emphasis_on_the_half_bent(*<-concept_static_exercise;;*);concept_flag(*<-concept_static_exercise;;*);concept_dragon_flag(*<-concept_static_exercise;;*);;
-concept_workout=>nrel_common_elements:concept_angel_out;concept_power_out_for_1_and_2_hand;concept_spear;concept_gods_walk;concept_power_output_for_2_hands;;
-concept_workout=>nrel_equipment_used:concept_horizontal_bar;concept_skids;concept_Swedish_wall;concept_handle;concept_horizontal_stairs;concept_bench_for_press_training;;
-concept_workout=>nrel_goal:concept_strength;concept_endurance;;
-concept_workout=>nrel_common_exercises:concept_pull_ups_on_the_crossbar;concept_two_way_exits_on_the_crossbar;concept_push_ups_from_the_ground__floor;concept_push_UPS_on_bars;;
+concept_street_workout=>nrel_common_elements:concept_horizontal_stop(*<-concept_static_exercise;;*);concept_crocodile_clip(*<-concept_static_exercise;;*);concept_corner(*<-concept_static_exercise;;*);concept_emphasis_on_the_half_bent(*<-concept_static_exercise;;*);concept_flag(*<-concept_static_exercise;;*);concept_dragon_flag(*<-concept_static_exercise;;*);;
+concept_street_workout=>nrel_common_elements:concept_power_out_for_1_and_2_hand(*<-concept_dynamic_exercise;;*);concept_princes_out(*<-concept_dynamic_exercise;;*);concept_spear(*<-concept_dynamic_exercise;;*);concept_gods_walk(*<-concept_dynamic_exercise;;*);;
+concept_street_workout=>nrel_equipment_used:concept_horizontal_bar;concept_skids;concept_Swedish_wall;concept_handle;concept_horizontal_stairs;concept_bench_for_press_training;;
+concept_street_workout=>nrel_goal:concept_strength;concept_endurance;;
+concept_street_workout=>nrel_common_exercises:concept_pull_ups_on_the_crossbar;concept_two_way_exits_on_the_crossbar;concept_push_ups_from_the_ground__floor;concept_push_UPS_on_bars;concept_front_vis;;
 
 
 definition -> ...
 (*
-    -> rrel_key_sc_element: concept_workout;;
+    -> rrel_key_sc_element: concept_street_workout;;
     <= nrel_sc_text_translation:...
         (*
-            ->rrel_example: [Ворка́ут  — это уличная гимнастика, которая может быть отнесена к любительскому виду спорта, физической культуре и представляет собой спортивную субкультуру.](*<- lang_ru;;*);;
+            -> [Ворка́ут  — это уличная гимнастика, которая может быть отнесена к любительскому виду спорта, физической культуре и представляет собой спортивную субкультуру.](*<- lang_ru;;*);;
         *);;
     => nrel_main_idtf: [Опр.(воркаут)](*<- lang_ru;;*);;
-    => nrel_using_constants:{concept_gymnastics;concept_sport;concept_subculture};;
+    => nrel_using_constants: ...
+        (*
+	  			->concept_gymnastics;;
+	  			->concept_sport;;
+	  			->concept_subculture;;
+        *);;
 *);;
 
 statement -> ...
 (*
-    -> rrel_key_sc_element: concept_workout;;
+    -> rrel_key_sc_element: concept_street_workout;;
     <= nrel_sc_text_translation:...
         (*
             -> [  Включает в себя выполнение различных упражнений на уличных спортплощадках, а именно на турниках, брусьях, шведских стенках, рукоходах и прочих конструкциях, или вообще без их использования (на земле). Основной акцент делается на работу с собственным весом и развитие силы и выносливости. Люди, увлекающиеся таким спортом, называют себя по-разному: воркаутеры, уличные (дворовые) спортсмены, уличные гимнасты, турникмены и т.д.](*<- lang_ru;;*);;
         *);;
     => nrel_main_idtf: [Утв.(воркаут)](*<- lang_ru;;*);;
-    => nrel_using_constants:{concept_excercise};;
-*);;
-
-concept_workout<-rrel_key_sc_element:...
-	(*
-		<-illustration;;
-		<=nrel_sc_text_translation:...
-	(*
-		->rrel_example:
-		"file://workout2.jpg"
-	(*
-		=>nrel_format:format_jpg;;
-	*);;	
-*);;
-*);;
-
-concept_workout<-rrel_key_sc_element:...
-	(*
-		<-illustration;;
-		<=nrel_sc_text_translation:...
-	(*
-		->rrel_example:
-		"file://workout3.jpg"
-	(*
-		=>nrel_format:format_jpg;;
-	*);;	
-*);;
-*);;
-
-concept_workout<-rrel_key_sc_element:...
-	(*
-		<-illustration;;
-		<=nrel_sc_text_translation:...
-	(*
-		->rrel_example:
-		"file://orlout1.jpg"
-	(*
-		=>nrel_format:format_jpg;;
-	*);;	
-*);;
+    => nrel_using_constants: ...
+        (*
+	  			->concept_excercise;;
+        *);;
 *);;
 
