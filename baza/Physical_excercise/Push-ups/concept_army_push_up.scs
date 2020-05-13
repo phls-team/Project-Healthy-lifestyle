@@ -8,7 +8,10 @@ concept_army_push_up
 
 =>nrel_starting_position:concept_straight_hands_plank;
 =>nrel_ending_position:concept_straight_hands_plank;
-
+=> nrel_target_muscle:concept_deltoid;
+=>nrel_additional_muscle:
+			  concept_tricep;
+			  concept_major_pectoral;
 <- rrel_key_sc_element: ... 
 		(*
         <- definition;;

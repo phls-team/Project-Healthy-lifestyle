@@ -8,6 +8,11 @@ concept_wide_push_up
 
 =>nrel_starting_position:concept_straight_hands_plank;
 =>nrel_ending_position:concept_straight_hands_plank;
+=> nrel_target_muscle:concept_major_pectoral;
+=>nrel_additional_muscle:
+			  concept_tricep;
+			  concept_deltoid;
+
 <- rrel_key_sc_element: ... 
 		(*
         <- definition;;

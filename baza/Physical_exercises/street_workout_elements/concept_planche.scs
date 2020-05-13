@@ -5,8 +5,12 @@ concept_planche
 => nrel_main_idtf:
           [plance](*<-lang_en;;*);
           [планш](*<-lang_ru;;*);
-
+<=nrel_street_workout_element:concept_street_workout;
 =>nrel_starting_position:concept_straight_hands_plank;
+
+=> nrel_target_muscle:concept_deltoid;
+=> nrel_additional_muscle:forearm;concept_major_pectoral; latissimus_dorsi; concept_lower_limbs_muscles;
+
 <- rrel_key_sc_element: ... 
 		(*
         <- definition;;
@@ -18,7 +22,7 @@ concept_planche
 		*);
 
 <=nrel_species:gymnastic_exercise;
-<=nrel_species:concept_workout_element;
+
 <- rrel_key_sc_element: ... 
 		(*
         <- statement;;

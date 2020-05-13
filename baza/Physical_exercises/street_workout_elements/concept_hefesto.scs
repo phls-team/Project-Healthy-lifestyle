@@ -6,6 +6,9 @@ concept_hefesto
           [hefesto](*<-lang_en;;*);
           [выход принца](*<-lang_ru;;*);
 =>nrel_starting_position:concept_hanging_on_a_horisontal_bar;
+<=nrel_street_workout_element:concept_street_workout;
+=> nrel_target_muscle:concept_bicep;concept_tricep;
+=>nrel_additional_muscle:forearm;latissimus_dorsi;concept_major_pectoral;
 <- rrel_key_sc_element: ... 
 		(*
         <- definition;;
@@ -16,7 +19,6 @@ concept_hefesto
 			*);;
 		*);
 
-<=nrel_species:concept_workout_element;
 <- rrel_key_sc_element: ... 
 		(*
         <- statement;;

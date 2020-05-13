@@ -5,7 +5,7 @@ concept_handstand
 => nrel_main_idtf:
           [handstand](*<-lang_en;;*);
           [стойка на руках](*<-lang_ru;;*);
-
+<=nrel_street_workout_element:concept_street_workout;
 <- rrel_key_sc_element: ... 
 		(*
         <- definition;;
@@ -17,7 +17,6 @@ concept_handstand
 		*);
 
 <=nrel_species:gymnastic_exercise;
-<=nrel_species:concept_workout_element;
 <- rrel_key_sc_element: ... 
 		(*
         <- statement;;

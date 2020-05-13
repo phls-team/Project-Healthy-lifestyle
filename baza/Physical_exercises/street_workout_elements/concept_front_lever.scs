@@ -6,6 +6,9 @@ concept_front_lever
           [front lever](*<-lang_en;;*);
           [передний вис](*<-lang_ru;;*);
 =>nrel_starting_position:concept_hanging_on_a_horisontal_bar;
+<=nrel_street_workout_element:concept_street_workout;
+=> nrel_target_muscle:concept_stomach_muscles;
+=>nrel_additional_muscle:forearm;latissimus_dorsi;quadriceps;
 <- rrel_key_sc_element: ... 
 		(*
         <- definition;;
@@ -17,7 +20,6 @@ concept_front_lever
 		*);
 
 <=nrel_species:gymnastic_exercise;
-<=nrel_species:concept_workout_element;
 <- rrel_key_sc_element: ... 
 		(*
         <- statement;;

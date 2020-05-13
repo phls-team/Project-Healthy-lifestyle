@@ -3,10 +3,12 @@ concept_back_lever
 <-sc_node_not_relation;
 =>nrel_starting_position:concept_hanging_on_a_horisontal_bar;
 => nrel_main_idtf:
-          [front lever](*<-lang_en;;*);
+          [back lever](*<-lang_en;;*);
           [задний вис](*<-lang_ru;;*);
           [ласточка](*<-lang_ru;;*);
-
+<=nrel_street_workout_element:concept_street_workout;
+=> nrel_target_muscle:concept_major_pectoral;
+=>nrel_additional_muscle:forearm;latissimus_dorsi;concept_back_muscles;
 <- rrel_key_sc_element: ... 
 		(*
         <- definition;;
@@ -18,7 +20,6 @@ concept_back_lever
 		*);
 
 <=nrel_species:gymnastic_exercise;
-<=nrel_species:concept_workout_element;
 <- rrel_key_sc_element: ... 
 		(*
         <- statement;;

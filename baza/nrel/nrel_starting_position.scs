@@ -44,8 +44,8 @@ relation => nrel_inclusion: binary_relation;;
 binary_relation => nrel_inclusion: reflexive_relation;
                 => nrel_inclusion: transitive_relation;
                 => nrel_inclusion: antisymmetric_relation;;
-reflexive_relation -|> nrel_isolation_exercise;;
-transitive_relation -> nrel_isolation_exercise;;
-antisymmetric_relation -> nrel_isolation_exercise;;
+reflexive_relation -|> nrel_starting_position;;
+transitive_relation -> nrel_starting_position;;
+antisymmetric_relation -> nrel_starting_position;;
 
 

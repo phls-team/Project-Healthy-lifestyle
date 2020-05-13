@@ -1,0 +1,39 @@
+nrel_reps_per_set
+
+<-sc_node_norole_relation;
+
+=> nrel_main_idtf:
+          [reps per set*](*<-lang_en;;*);
+          [повторений за подход*](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(повторений за подход*)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Количество выполненных повторений подряд, без отдыха.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+
+=> nrel_first_domain: concept_physical_exercises;
+=> nrel_second_domain: value;
+=>nrel_definitional_domain: concept_physical_exercises;
+
+<-arity2;;
+arity->arity2;;
+arity2=>nrel_measurement:2;;
+number->2;;
+
+nrel_reps_per_set
+<-relation;
+<-norole_relation;;
+relation => nrel_inclusion: binary_relation;;
+binary_relation => nrel_inclusion: reflexive_relation;
+                => nrel_inclusion: transitive_relation;
+                => nrel_inclusion: antisymmetric_relation;;
+reflexive_relation -|> nrel_reps_per_set;;
+transitive_relation -> nrel_reps_per_set;;
+antisymmetric_relation -> nrel_reps_per_set;;
+

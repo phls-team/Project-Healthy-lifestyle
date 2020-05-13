@@ -2,11 +2,14 @@ concept_pullover
 
 <-sc_node_not_relation;
 =>nrel_starting_position:concept_hanging_on_a_horisontal_bar;
-
+<=nrel_street_workout_element:concept_street_workout;
 =>nrel_ending_position:concept_emphasis_on_a_horisontal_bar;
 => nrel_main_idtf:
           [pullover](*<-lang_en;;*);
           [подъём переворотом](*<-lang_ru;;*);
+
+=> nrel_target_muscle:concept_stomach_muscles;latissimus_dorsi;
+=>nrel_additional_muscle:forearm;
 
 <- rrel_key_sc_element: ... 
 		(*
@@ -19,7 +22,6 @@ concept_pullover
 		*);
 
 <=nrel_species:gymnastic_exercise;
-<=nrel_species:concept_workout_element;
 <- rrel_key_sc_element: ... 
 		(*
         <- statement;;
