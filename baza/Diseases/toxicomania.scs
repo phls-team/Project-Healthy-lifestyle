@@ -1,0 +1,43 @@
+concept_toxicomania<-sc_node_not_relation;;
+
+concept_toxicomania => nrel_main_idtf: [токсикомания](*<- lang_ru;;*);;
+concept_toxicomania => nrel_main_idtf: [toxicomania](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_toxicomania;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Вдыхание летучих наркотических средств.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Токсикомания)](*<- lang_ru;;*);;
+       
+*);;
+
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_toxicomania;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Токсикоманией страдают в основном дети и подростки от 8 до 15.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Токсикомания)](*<- lang_ru;;*);;*);;
+
+
+
+
+concept_toxicomania	<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://toxicomania.png"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;

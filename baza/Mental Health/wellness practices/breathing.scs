@@ -1,0 +1,46 @@
+concept_breathing <- sc_node_not_relation; => nrel_main_idtf:[дыхание](*<-lang_ru;;*);;
+concept_breathing => nrel_main_idtf:[breathing](*<-lang_en;;*);;
+concept_breathing <= nrel_inclusion:concept_respiratory_system;;
+
+concept_breathing_gymnastics <- sc_node_not_relation; => nrel_main_idtf:[дыхательная гимнастика](*<-lang_ru;;*);;
+concept_breathing_gymnastics => nrel_main_idtf:[breathing gymnastics](*<-lang_en;;*);;
+concept_breathing_gymnastics => nrel_idtf:[дыхательные упражнения](*<-lang_ru;;*);;
+
+concept_external_respiration <- sc_node_not_relation; => nrel_main_idtf:[внешнее дыхание](*<-lang_ru;;*);;
+concept_cellular_respiration <- sc_node_not_relation; => nrel_main_idtf:[кле́точное дыхание](*<-lang_ru;;*);;
+concept_upper_breathing <- sc_node_not_relation; => nrel_main_idtf:[верхнее дыхание](*<-lang_ru;;*);;
+concept_mid_breathing <- sc_node_not_relation; => nrel_main_idtf:[среднее дыхание](*<-lang_ru;;*);;
+concept_lower_breathing <- sc_node_not_relation; => nrel_main_idtf:[нижнее дыхание](*<-lang_ru;;*);;
+concept_full_breathing <- sc_node_not_relation; => nrel_main_idtf:[полное дыхание](*<-lang_ru;;*);;
+concept_reverse_breathing <- sc_node_not_relation; => nrel_main_idtf:[обратное дыхание](*<-lang_ru;;*);;
+concept_interruptive_breathing <- sc_node_not_relation; => nrel_main_idtf:[дыхание с задержкой](*<-lang_ru;;*);;
+
+
+
+concept_breathing => nrel_inclusion:concept_external_respiration;concept_cellular_respiration;;
+concept_breathing => nrel_kind:concept_upper_breathing;concept_mid_breathing;concept_lower_breathing;concept_full_breathing;concept_reverse_breathing;concept_interruptive_breathing;;
+
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_breathing;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Дыхание — это физиологический процесс, обеспечивающий нормальное течение метаболизма (обмена веществ и энергии) живых организмов и способствующий поддержанию гомеостаза (постоянства внутренней среды), получая из окружающей среды кислород (О2) и отводя в окружающую среду в газообразном состоянии некоторую часть продуктов метаболизма организма (СО2, H2O и другие).](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(дыхание)](*<- lang_ru;;*);;
+    => nrel_using_constants:{concept_process; concept_metabolism};;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_breathing;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Без дыхания человек обычно может прожить до 5—7 минут, после чего наступают потеря сознания, необратимые изменения в мозге и смерть..](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(дыхание)](*<- lang_ru;;*);;
+    => nrel_using_constants:{concept_person;concept_death};;
+*);;
+

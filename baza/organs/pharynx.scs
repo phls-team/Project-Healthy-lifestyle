@@ -1,0 +1,16 @@
+concept_pharynx<-sc_node_not_relation;=> nrel_main_idtf:[pharynx](*<-lang_en;;*);;
+
+motor_function<-sc_node_not_relation;=> nrel_main_idtf:[моторная функция](*<-lang_ru;;*);;
+
+concept_pharynx => nrel_function: motor_function;;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_pharynx;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Глотка  — воронкообразный канал длиной 11—12 см, обращённый кверху широким концом и сплющенный в переднезаднем направлении.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(глотка)](*<- lang_ru;;*);;
+    => nrel_using_constants:{concept_canal};;
+*);;

@@ -1,0 +1,23 @@
+concept_character<-sc_node_not_relation;;
+
+concept_character => nrel_main_idtf: [характер](*<- lang_ru;;*);;
+concept_character => nrel_main_idtf: [charater](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_character;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Хара́ктер — структура стойких, сравнительно постоянных психических свойств, определяющих особенности отношений и поведения личности.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Характер)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+	    -> concept_behavour;;
+        *);;
+*);;
+
+
+
+

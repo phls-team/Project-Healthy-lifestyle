@@ -1,0 +1,59 @@
+concept_fats => nrel_main_idtf:[fats](*<-lang_en;;*);;
+concept_fats => nrel_idtf:[триглицериды](*<-lang_ru;;*);;
+concept_fats => nrel_idtf:[триацилглицериды](*<-lang_ru;;*);;
+
+concept_animal_fats <-sc_node_not_relation;=> nrel_main_idtf:[животные жиры](*<-lang_ru;;*);;
+concept_vegetable_fats <-sc_node_not_relation;=> nrel_main_idtf:[растительные жиры](*<-lang_ru;;*);;
+concept_saturated_fats <-sc_node_not_relation;=> nrel_main_idtf:[насыщенные жиры](*<-lang_ru;;*);;
+concept_unsaturated_fats <-sc_node_not_relation;=> nrel_main_idtf:[ненасыщенные жиры](*<-lang_ru;;*);;
+concept_solid_fats <-sc_node_not_relation;=> nrel_main_idtf:[твердые жиры](*<-lang_ru;;*);;
+concept_mixed_fats <-sc_node_not_relation;=> nrel_main_idtf:[смешанные жиры](*<-lang_ru;;*);;
+concept_liquid_fats <-sc_node_not_relation;=> nrel_main_idtf:[жидкие жиры](*<-lang_ru;;*);;
+
+concept_food_industry  <- sc_node_not_relation;=> nrel_main_idtf:[пищевая промышленность](*<-lang_ru;;*);;
+concept_pharmacy <-sc_node_not_relation;=> nrel_main_idtf:[фармация](*<-lang_ru;;*);;
+concept_soap_manufacture <-sc_node_not_relation;=> nrel_main_idtf:[производство мыла](*<-lang_ru;;*);;
+concept_production_of_cosmetics <-sc_node_not_relation;=> nrel_main_idtf:[производство косметических изделий](*<-lang_ru;;*);;
+concept_production_of_lubricants <-sc_node_not_relation;=> nrel_main_idtf:[производство смазочных материалов](*<-lang_ru;;*);;
+
+concept_fats => nrel_classification_by_origin:concept_animal_fats;concept_vegetable_fats;;
+concept_fats => nrel_classification_by_fatty_acid_content:concept_unsaturated_fats;concept_saturated_fats;;
+concept_fats => nrel_classification_according_to_physical_state:concept_liquid_fats;concept_solid_fats;concept_mixed_fats;;
+concept_fats <= nrel_usage: concept_food_industry;concept_pharmacy;concept_soap_manufacture;concept_production_of_cosmetics;concept_production_of_lubricants;;
+
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_fats;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Жиры — органические вещества, продукты этерификации карбоновых кислот и трёхатомного спирта глицерина. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(жиры)](*<- lang_ru;;*);;
+    => nrel_using_constants:{concept_glycerin};;
+*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_fats;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Жиры, на ряду с белками и углеводами, — один из главных компонентов питания. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(жиры)](*<- lang_ru;;*);;
+    => nrel_using_constants:{concept_nutrition:concept_protein; concept_carbohydrates};;
+*);;
+
+concept_fats<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://fats.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;

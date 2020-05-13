@@ -1,0 +1,14 @@
+concept_human_memory <- sc_node_not_relation;;
+
+concept_human_memory => nrel_main_idtf: [память](*<- lang_ru;;*);;
+concept_human_memory => nrel_main_idtf: [human_memory](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_human_memory;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Па́мять — это общее обозначение комплекса познавательных способностей и высших психических функций, относящихся к накоплению, сохранению и воспроизведению знаний, умений и навыков.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Память)](*<- lang_ru;;*);;*);;

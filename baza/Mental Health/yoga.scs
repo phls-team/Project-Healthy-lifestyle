@@ -1,0 +1,84 @@
+concept_yoga<-sc_node_not_relation;;
+
+concept_yoga => nrel_main_idtf: [йога](*<- lang_ru;;*);;
+concept_yoga => nrel_main_idtf: [yoga](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_yoga;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Йо́га — понятие в индийской культуре, в широком смысле означающее совокупность различных духовных, психических и физических практик, разрабатываемых в разных направлениях индуизма и буддизма и нацеленных на управление психическими и физиологическими функциями организма с целью достижения индивидуумом возвышенного духовного и психического состояния.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(йога)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+	    -> concept_practice;;
+        *);;
+*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_yoga;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [В более узком смысле, йога — одна из шести ортодоксальных школ (даршан) философии индуизма.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(йога)](*<- lang_ru;;*);;
+*);;
+
+
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_yoga;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ За пределами Индии термин «йога» зачастую ассоциируется лишь с хатха-йогой и её асанами — физическими упражнениями, что не отражает духовного и душевного аспектов йоги. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(йога)](*<- lang_ru;;*);;*);;
+
+concept_yoga<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://yoga1.png"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;
+
+concept_yoga<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://yoga2.png"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;
+
+
+concept_yoga<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://yoga3.png"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;
+
+

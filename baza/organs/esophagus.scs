@@ -1,0 +1,14 @@
+concept_esophagus <- sc_node_not_relation; => nrel_main_idtf:[esophagus](*<-lang_en;;*);;
+
+concept_esophagus => nrel_function: motor_function;;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_esophagus;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Пищевод — часть пищеварительного канала. Представляет собой сплющенную в переднезаднем направлении полую мышечную трубку, по которой пища из глотки поступает в желудок.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(пищевод)](*<- lang_ru;;*);;
+    => nrel_using_constants:{concept_stomach};;
+*);;

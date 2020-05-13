@@ -1,0 +1,49 @@
+concept_drug_addiction<-sc_node_not_relation;;
+
+concept_drug_addiction => nrel_main_idtf: [наркомания](*<- lang_ru;;*);;
+concept_drug_addiction => nrel_main_idtf: [drug_addction](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_drug_addiction;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Состояние, характеризующееся патологическим влечением к употреблению наркотических веществ, сопровождающееся различными психическими, иногда и соматическими расстройствами.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Наркомания)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+	    -> concept_attraction;;
+	    -> concept_drug;;
+	    -> concept_disoder;;
+
+
+        *);;
+*);;
+
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_drug_addiction;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Термин "наркомания" является малоупотребительным в мировой медицине.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Наркомания)](*<- lang_ru;;*);;*);;
+
+
+
+concept_drug_addiction<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://drug_addiction.png"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;

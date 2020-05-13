@@ -1,0 +1,86 @@
+concept_gastrointestinal_tract=> nrel_main_idtf:[gastrointestinal tract](*<-lang_en;;*);;
+
+concept_stomatitis <- sc_node_not_relation; => nrel_main_idtf:[стоматит](*<-lang_ru;;*);;
+concept_esophagitis <- sc_node_not_relation; => nrel_main_idtf:[эзофагит](*<-lang_ru;;*);;
+concept_reflux_esophagitis <- sc_node_not_relation; => nrel_main_idtf:[гастроэзофагеа́льная рефлю́ксная боле́знь (рефлюкс-эзофагит) ](*<-lang_ru;;*);;
+concept_heartburn <- sc_node_not_relation; => nrel_main_idtf:[изжога](*<-lang_ru;;*);;
+concept_chronic_gastritis <- sc_node_not_relation; => nrel_main_idtf:[хронический гастрит](*<-lang_ru;;*);;
+concept_chronic_duodenitis <- sc_node_not_relation; => nrel_main_idtf:[хронический дуоденит](*<-lang_ru;;*);;
+concept_gastroduodenitis <- sc_node_not_relation; => nrel_main_idtf:[гастродуоденит](*<-lang_ru;;*);;
+concept_duodenogastric_reflux <- sc_node_not_relation; => nrel_main_idtf:[дуоденогастральный рефлюкс](*<-lang_ru;;*);;
+concept_enteritis <- sc_node_not_relation; => nrel_main_idtf:[энтерит](*<-lang_ru;;*);;
+concept_colitis <- sc_node_not_relation; => nrel_main_idtf:[колит](*<-lang_ru;;*);;
+concept_proctitis <- sc_node_not_relation; => nrel_main_idtf:[проктит](*<-lang_ru;;*);;
+concept_gastritis <- sc_node_not_relation; => nrel_main_idtf:[гастрит](*<-lang_ru;;*);;
+concept_pancreatitis <- sc_node_not_relation; => nrel_main_idtf:[панкреатит](*<-lang_ru;;*);;
+concept_ulcer <- sc_node_not_relation; => nrel_main_idtf:[язвенная болезнь](*<-lang_ru;;*);;
+concept_irritable_bowel_syndrome <- sc_node_not_relation; => nrel_main_idtf:[синдром раздраженного кишечника](*<-lang_ru;;*);;
+concept_dysbacteriosis <- sc_node_not_relation; => nrel_main_idtf:[дисбактериоз](*<-lang_ru;;*);;
+
+
+concept_malnutrition <- sc_node_not_relation; => nrel_main_idtf:[неполноценное питание](*<-lang_ru;;*);;
+concept_antibiotics <- sc_node_not_relation; => nrel_main_idtf:[антибиотики](*<-lang_ru;;*);;
+concept_stress <- sc_node_not_relation; => nrel_main_idtf:[стресс](*<-lang_ru;;*);;
+concept_bad_ecology <- sc_node_not_relation; => nrel_main_idtf:[плохая экология](*<-lang_ru;;*);;
+concept_avitaminosis <- sc_node_not_relation; => nrel_main_idtf:[авитаминоз](*<-lang_ru;;*);;
+concept_spicy_food <- sc_node_not_relation; => nrel_main_idtf:[острая пища](*<-lang_ru;;*);;
+concept_fatty_food <- sc_node_not_relation; => nrel_main_idtf:[жирная пища](*<-lang_ru;;*);;
+concept_undernutrition <- sc_node_not_relation; => nrel_main_idtf:[недоедание](*<-lang_ru;;*);;
+concept_temperature_of_food_consumed <- sc_node_not_relation; => nrel_main_idtf:[температура потребляемой пищи](*<-lang_ru;;*);;
+concept_sedentary_lifestyle <- sc_node_not_relation; => nrel_main_idtf:[малоподвижный образ жизни](*<-lang_ru;;*);;
+concept_exotic_food <- sc_node_not_relation; => nrel_main_idtf:[экзотическая пища](*<-lang_ru;;*);;
+concept_hard_physical_labor <- sc_node_not_relation; => nrel_main_idtf:[тяжелый физический труд](*<-lang_ru;;*);;
+concept_sedentary_lifestyle <- sc_node_not_relation; => nrel_main_idtf:[малоподвижный образ жизни](*<-lang_ru;;*);;
+
+nrel_cause_of_disease<-sc_node_norole_relation;=>nrel_main_idtf:[причина заболевания](*<-lang_ru;;*);;
+
+concept_gastrointestinal_tract => nrel_diseases:concept_chronic_duodenitis;concept_gastroduodenitis;concept_duodenogastric_reflux;concept_enteritis;;
+concept_gastrointestinal_tract => nrel_diseases:concept_stomatitis;concept_esophagitis;concept_reflux_esophagitis;concept_heartburn;concept_chronic_gastritis;;
+concept_gastrointestinal_tract => nrel_diseases:concept_colitis;concept_proctitis;concept_gastritis;concept_ulcer;concept_dysbacteriosis;concept_irritable_bowel_syndrome;;
+
+
+concept_gastrointestinal_tract => nrel_cause_of_disease:concept_alcohol;concept_smoking;concept_antibiotics;concept_malnutrition;;
+concept_gastrointestinal_tract => nrel_cause_of_disease:concept_stress;concept_bad_ecology;concept_bad_ecology;concept_avitaminosis;concept_spicy_food;concept_fatty_food;;
+concept_gastrointestinal_tract => nrel_cause_of_disease:concept_undernutrition;concept_temperature_of_food_consumed;;
+concept_gastrointestinal_tract => nrel_cause_of_disease:concept_exotic_food;concept_hard_physical_labor;concept_sedentary_lifestyle;;
+concept_gastrointestinal_tract => nrel_inclusion:concept_mouth;concept_pharynx;concept_esophagus;concept_stomach;concept_small_intestine;concept_large_intestine;;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_gastrointestinal_tract;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [желу́дочно-кише́чный тракт (ЖКТ) - система органов у человека, предназначенная для переработки и извлечения из пищи питательных веществ, всасывания их в кровь и лимфу и выделения из организма непереваренных остатков.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Желудочно-кишечный тракт)](*<- lang_ru;;*);;
+    => nrel_using_constants:{concept_system;concept_food};;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_gastrointestinal_tract;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Является частью пищеварительной системы человека.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Желудочно-кишечный тракт)](*<- lang_ru;;*);;
+    => nrel_using_constants:{concept_human_digestive_system};;
+*);;
+
+concept_gastrointestinal_tract<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://gastrointestinal_tract.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;
+
+
+
+

@@ -1,0 +1,39 @@
+concept_stomatitis => nrel_main_idtf:[stomatitis](*<-lang_en;;*);;
+
+concept_allergic_stomatitis <-sc_node_not_relation; => nrel_main_idtf:[аллергический стоматит](*<-lang_ru;;*);;
+concept_aphthous_stomatitis <-sc_node_not_relation; => nrel_main_idtf:[афтозный стоматит](*<-lang_ru;;*);;
+concept_vesicular_stomatitis <-sc_node_not_relation; => nrel_main_idtf:[везикулярный стоматит](*<-lang_ru;;*);;
+concept_herpetic_stomatitis <-sc_node_not_relation; => nrel_main_idtf:[герпетический стоматит](*<-lang_ru;;*);;
+concept_catarrhal_stomatitis <-sc_node_not_relation; => nrel_main_idtf:[катаральный стоматит](*<-lang_ru;;*);;
+concept_traumatic_stomatitis <-sc_node_not_relation; => nrel_main_idtf:[травматический стоматит](*<-lang_ru;;*);;
+concept_enteroviral_vesicular_stomatitis <-sc_node_not_relation; => nrel_main_idtf:[энтеровирусный везикулярный стоматит](*<-lang_ru;;*);;
+concept_ulcerative_stomatitis <-sc_node_not_relation; => nrel_main_idtf:[язвенный стоматит](*<-lang_ru;;*);;
+
+concept_causative_agents_of_infectious_diseases <-sc_node_not_relation; => nrel_main_idtf:[возбудители инфекционных заболеваний](*<-lang_ru;;*);;
+concept_poor_quality_food <-sc_node_not_relation; => nrel_main_idtf:[некачественное питание](*<-lang_ru;;*);;
+concept_mechanical_damage_to_the_oral_cavity <-sc_node_not_relation; => nrel_main_idtf:[механическое повреждение полости рта](*<-lang_ru;;*);;
+concept_thermal_damage_to_the_oral_cavity <-sc_node_not_relation; => nrel_main_idtf:[термическое повреждение полости рта](*<-lang_ru;;*);;
+concept_poor_oral_hygiene <-sc_node_not_relation; => nrel_main_idtf:[недостаточная гигиена рта](*<-lang_ru;;*);;
+concept_excessive_oral_hygiene <-sc_node_not_relation; => nrel_main_idtf:[избыточная гигиена рта](*<-lang_ru;;*);;
+concept_poor_quality_dentures <-sc_node_not_relation; => nrel_main_idtf:[некачественные зубные протезы](*<-lang_ru;;*);;
+concept_anemia <-sc_node_not_relation; => nrel_main_idtf:[анемия](*<-lang_ru;;*);;
+concept_prodromal_period_of_HIV_infection <-sc_node_not_relation; => nrel_main_idtf:[продромальный период ВИЧ-инфекции](*<-lang_ru;;*);;
+concept_hormonal_fluctuations <-sc_node_not_relation; => nrel_main_idtf:[гормональные колебания](*<-lang_ru;;*);;
+
+concept_stomatitis => nrel_kind: concept_allergic_stomatitis;concept_aphthous_stomatitis;concept_vesicular_stomatitis;concept_herpetic_stomatitis;;
+concept_stomatitis => nrel_kind: concept_catarrhal_stomatitis;concept_traumatic_stomatitis;concept_enteroviral_vesicular_stomatitis;concept_ulcerative_stomatitis;;
+concept_stomatitis => nrel_cause_of_disease:concept_prodromal_period_of_HIV_infection;concept_mechanical_damage_to_the_oral_cavity;concept_poor_oral_hygiene;;
+concept_stomatitis => nrel_cause_of_disease: concept_poor_quality_food;concept_causative_agents_of_infectious_diseases;concept_thermal_damage_to_the_oral_cavity;;
+concept_stomatitis => nrel_cause_of_disease:concept_anemia;concept_poor_quality_dentures;concept_hormonal_fluctuations;concept_excessive_oral_hygiene;;
+concept_disease -> concept_stomatitis;;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_stomatitis;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Стоматит — наиболее часто встречающееся поражение слизистой оболочки полости рта.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(стоматит)](*<- lang_ru;;*);;
+    => nrel_using_constants:{concept_mouth};;
+*);;

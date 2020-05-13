@@ -1,0 +1,41 @@
+concept_bad_habit<-sc_node_not_relation;;
+
+concept_bad_habit => nrel_main_idtf: [вредная привычка](*<- lang_ru;;*);;
+concept_bad_habit => nrel_main_idtf: [bad_habit](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_bad_habit;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Концепт, охватывающий целый ряд форм поведения, регулярно совершаемых человеком и приносящих ему вред.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Вредная привычка)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+	    -> concept_concept;;
+	    -> concept_range;;
+	    -> concept_person;;
+
+
+        *);;
+*);;
+
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_bad_habit;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Вредные привычки сокращают продолжительность жизни.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Вредная привычка)](*<- lang_ru;;*);;*);;
+
+
+concept_bad_habit->rrel_example:concept_alcoholism;;
+
+concept_bad_habit => nrel_inclusion:concept_alcoholism;concept_smoking;concept_drug_addiction;concept_toxicomania;;
+
+concept_habit => nrel_inclusion:concept_bad_habit;;

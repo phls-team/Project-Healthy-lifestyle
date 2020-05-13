@@ -1,0 +1,60 @@
+nrel_need<-sc_node_norole_relation;;
+
+nrel_need => nrel_main_idtf: [потребность*](*<- lang_ru;;*);;
+nrel_need => nrel_main_idtf: [need*](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: nrel_need;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Потребность - внутреннее состояние психологического или функционального ощущения недостаточности чего-либо.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(потребность)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+	    -> concept_state;;
+	    -> concept_feelling;;
+	    -> nrel_failure;;
+        *);;
+*);;
+
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: nrel_need;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Потребности проявляются в виде эмоционально окрашенных желаний, влечений, стремлений, а их удовлетворение - в виде оценочных эмоций.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(потребность)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+	    -> concept_emotion;;
+	    -> concept_satisfaction;;
+	    -> concept_wish;;
+	    -> concept_aspiration;;
+	    -> concept_attraction;;
+        *);;
+*);;
+
+concept_number->2;;
+concept_node=>nrel_measurement:2;;
+concept_node->nrel_need;;
+concept_arity->concept_node;;
+
+concept_human->human;;
+human=>nrel_need:concept_water;;
+concept_substance->concept_water;;
+nrel_need=>nrel_first_domain:concept_human;;
+nrel_need=>nrel_second_domain:concept_substance;;
+nrel_need=>nrel_domain:concept_human;concept_substance;;
+concept_asymetric_ratio->nrel_need;;
+concept_oriented_ratio->nrel_need;;
+concept_anti_reflexive_ratio->nrel_need;;
+concept_binary_ratio=>nrel_inclusion:concept_asymetric_ratio;concept_anti_reflexive_ratio;;
+concept_ratio=>nrel_inclusion:concept_binary_ratio;concept_oriented_ratio;;
+
+

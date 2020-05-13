@@ -1,0 +1,25 @@
+concept_tourism => nrel_main_idtf:[tourism](*<-lang_en;;*);;
+
+concept_outbound_tourism <- sc_node_not_relation;=> nrel_main_idtf:[выездной туризм](*<-lang_ru;;*);;
+concept_inbound_tourism <- sc_node_not_relation;=> nrel_main_idtf:[въездной туризм](*<-lang_ru;;*);;
+concept_domestic_tourism <- sc_node_not_relation;=> nrel_main_idtf:[внутренний туризм](*<-lang_ru;;*);;
+
+
+
+
+nrel_basic_criterion <- sc_node_norole_relation;=> nrel_main_idtf:[базовый критерий](*<-lang_ru;;*);;
+
+concept_tourism => nrel_classification:nrel_classification_by_purpose_of_travel;nrel_classification_by_landscape_feature;nrel_classification_by_geographical_feature;nrel_classification_by_mode_of_travel;;
+
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_turism;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Тури́зм или туристские поездки — выезды (путешествия) посетителей в другую страну или местность, отличную от места постоянного жительства, целью, кроме трудоустройства.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(туризм)](*<- lang_ru;;*);;
+    => nrel_using_constants:{concept_country;concept_travel;concept_visitor};;
+*);;

@@ -1,0 +1,75 @@
+concept_meditation<-sc_node_not_relation;;
+
+concept_meditation => nrel_main_idtf: [медитация](*<- lang_ru;;*);;
+concept_meditation => nrel_main_idtf: [meditation](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_meditation;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Медита́ция — ряд психических упражнений, используемых в составе духовно-религиозной или оздоровительной практики, или же особое психическое состояние, возникающее в результате этих упражнений (или в силу иных причин). ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(медитация)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+	    -> concept_mental_training;;
+        *);;
+*);;
+
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_meditation;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Медитативные методы основаны на управлении функциями психики с помощью концентрации внимания (пассивная медитация) или воли (активная медитация). Отличаются не только методы, но и способы медитаций. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(медитация)](*<- lang_ru;;*);;*);;
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_meditation;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Объектом концентрации обычно служат ощущения внутри организма, внутренние образы, реже эмоции. Иногда объектом концентрации может быть внешний физический предмет.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(медитация)](*<- lang_ru;;*);;*);;
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_meditation;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Медитация может сочетаться с дыхательными упражнениями. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(медитация)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+	    -> concept_breathing_exercises;;
+        *);;
+*);;
+
+
+
+concept_meditation<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://meditation.png"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;
+
+
+
+
+
