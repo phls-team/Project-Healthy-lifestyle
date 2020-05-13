@@ -1,0 +1,99 @@
+40kcal_per_100g=> nrel_main_idtf: [40 ккал на 100 г](*<- lang_ru;;*);;
+
+concept_onion
+=> nrel_main_idtf: [лук](*<- lang_ru;;*);
+=> nrel_main_idtf: [onion](*<- lang_en;;*);
+
+  =>nrel_calorie_content:40kcal_per_100g;
+
+=> nrel_vitamin_C_content:7.4mg_per_100g;
+
+=> nrel_vitamin_B3_content:0.1mg_per_100g;
+=> nrel_vitamin_B4_content:6.1mg_per_100g;
+=> nrel_vitamin_B5_content:0.1mg_per_100g;
+=> nrel_vitamin_B6_content:0.1mg_per_100g;
+
+=> nrel_Ca_content:23mg_per_100g;
+=> nrel_Fe_content:0.2mg_per_100g;
+=> nrel_Mg_content:10mg_per_100g;
+=> nrel_P_content:29mg_per_100g;
+=> nrel_K_content:146mg_per_100g;
+=> nrel_Na_content:4mg_per_100g;
+=> nrel_Zn_content:0.2mg_per_100g;
+=> nrel_Mn_content:0.1mg_per_100g;
+
+
+=> nrel_carbohydrates_content:9.34g_per_100g;
+=> nrel_fats_content:0.1g_per_100g;
+=> nrel_protein_content:1.1g_per_100g;
+    <- rrel_key_sc_element:...
+(*
+  <-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Лук обладает противовирусными, антибактериальными, противоглистными, противогрибковыми, дезинфицирующими свойствами. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(лук)](*<- lang_ru;;*);;
+
+*);
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+   
+        (*
+            -> [Нельзя есть сырой лук в период обострения бронхиальной астмы, чтобы не спровоцировать приступ.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.2(лук)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            -> asthma;;
+            
+        *);;
+*);
+
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [У гипертоников при чрезмерном употреблении возможно повышение артериального давления.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.3(лук)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            -> hypertonic_desease;;
+            
+        *);;
+
+*);
+
+ <-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(лук)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://onion.jpg"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+
+
+concept_vegetable<=nrel_inclusion:concept_product;;
+
+
+concept_onion<=nrel_inclusion:concept_vegetable;;

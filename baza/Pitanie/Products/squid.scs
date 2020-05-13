@@ -1,0 +1,89 @@
+concept_squid=> nrel_main_idtf: [кальмар](*<- lang_ru;;*);
+=> nrel_main_idtf: [squid](*<- lang_en;;*);
+
+  =>nrel_calorie_content:92kcal_per_100g;
+=> nrel_vitamin_E_content:1.2mg_per_100g;
+=> nrel_vitamin_C_content:4.7mg_per_100g;
+
+=> nrel_vitamin_B2_content:0.4mg_per_100g;
+=> nrel_vitamin_B3_content:2.2mg_per_100g;
+=> nrel_vitamin_B4_content:65.2mg_per_100g;
+=> nrel_vitamin_B5_content:0.5mg_per_100g;
+=> nrel_vitamin_B6_content:0.1mg_per_100g;
+
+=> nrel_Ca_content:32mg_per_100g;
+=> nrel_Fe_content:0.7mg_per_100g;
+=> nrel_Mg_content:33mg_per_100g;
+=> nrel_P_content:221mg_per_100g;
+=> nrel_K_content:246mg_per_100g;
+=> nrel_Na_content:44mg_per_100g;
+=> nrel_Zn_content:1.5mg_per_100g;
+=> nrel_Cu_content:1.9mg_per_100g;
+
+
+
+=> nrel_carbohydrates_content:3.08g_per_100g;
+=> nrel_fats_content:1.38g_per_100g;
+=> nrel_protein_content:15.58g_per_100g;
+    <- rrel_key_sc_element:...
+(*
+  <-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Кальмары являются прекрасным источником магния, который участвует в развитии костной ткани, образовании белков, ферментативных действиях, сокращении мышц, здоровье зубов и работе иммунной системы. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(кальмар)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+            
+            -> concept_Mg;;
+        *);;
+*);
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+   
+        (*
+            -> [ Употребление кальмара способствует очищению организма от солей тяжелых металлов и шлаков, а также укреплению выделительной и половой системы.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.2(кальмар)](*<- lang_ru;;*);;
+
+*);
+
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Мясо кальмара стимулирует повышение выработки желудочного сока, отлично усваивается и не способствует появлению ощущения тяжести в животе, повышает аппетит и способствует более качественному и быстрому перевариванию пищи.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.3(кальмар)](*<- lang_ru;;*);;
+ 
+
+*);
+ <-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(кальмар)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://squid.jpg"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+
+
+<=nrel_inclusion:concept_product;;
+

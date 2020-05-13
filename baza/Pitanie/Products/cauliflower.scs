@@ -1,0 +1,88 @@
+concept_cauliflower=> nrel_main_idtf: [цветная капуста](*<- lang_ru;;*);
+=> nrel_main_idtf: [cauliflower](*<- lang_en;;*);
+
+  =>nrel_calorie_content:25kcal_per_100g;
+=> nrel_vitamin_E_content:0.1mg_per_100g;
+=> nrel_vitamin_C_content:48.2mg_per_100g;
+=> nrel_vitamin_B1_content:0.1mg_per_100g;
+=> nrel_vitamin_B2_content:0.1mg_per_100g;
+=> nrel_vitamin_B3_content:0.5mg_per_100g;
+=> nrel_vitamin_B4_content:44.3mg_per_100g;
+=> nrel_vitamin_B5_content:0.7mg_per_100g;
+=> nrel_vitamin_B6_content:0.2mg_per_100g;
+
+=> nrel_Ca_content:22mg_per_100g;
+=> nrel_Fe_content:0.4mg_per_100g;
+=> nrel_Mg_content:15mg_per_100g;
+=> nrel_P_content:44mg_per_100g;
+=> nrel_K_content:299mg_per_100g;
+=> nrel_Na_content:30mg_per_100g;
+=> nrel_Zn_content:0.3mg_per_100g;
+
+=> nrel_Mn_content:0.2mg_per_100g;
+
+
+=> nrel_carbohydrates_content:4.97g_per_100g;
+=> nrel_fats_content:0.28g_per_100g;
+=> nrel_protein_content:1.92g_per_100g;
+    <- rrel_key_sc_element:...
+(*
+  <-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Цветная капуста улучшает состояния сосудистых стенок, что положительно влияет на работу сердечной мышцы. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(цветная капуста)](*<- lang_ru;;*);;
+   
+*);
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+   
+        (*
+            -> [Цветная капуста снижает негативное воздействие на слизистые желудка щёлочи, что является профилактикой развития раковых опухолей и гастрита ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.2(цветная капуст)](*<- lang_ru;;*);;
+  
+*);
+
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Цветная капуста защищает от бактерий благодаря наличию незаменимых кислот и антиоксидантов](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.3(цветная капуст)](*<- lang_ru;;*);;
+
+
+*);
+ <-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(цветная капуста)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://cauliflower.jpg"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+
+
+<=nrel_inclusion:concept_vegetable;;
+
+
+
+

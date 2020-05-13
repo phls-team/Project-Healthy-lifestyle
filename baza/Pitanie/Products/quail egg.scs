@@ -1,0 +1,85 @@
+158kcal_per_100g=> nrel_main_idtf: [158 ккал на 100 г](*<- lang_ru;;*);;
+concept_quail_egg=> nrel_main_idtf: [перепелиное яйцо](*<- lang_ru;;*);
+=> nrel_main_idtf: [quail egg](*<- lang_en;;*);
+
+  =>nrel_calorie_content:158kcal_per_100g;
+=> nrel_vitamin_B3_content:0.2mg_per_100g;
+=> nrel_vitamin_E_content:1.1mg_per_100g;
+=> nrel_vitamin_B5_content:1.8mg_per_100g;
+=> nrel_vitamin_B6_content:0.2mg_per_100g;
+=> nrel_vitamin_B4_content:263.4mg_per_100g;
+
+=> nrel_Ca_content:648mg_per_100g;
+=> nrel_Fe_content:3.7mg_per_100g;
+=> nrel_Mg_content:13mg_per_100g;
+=> nrel_P_content:226mg_per_100g;
+=> nrel_K_content:132mg_per_100g;
+=> nrel_Na_content:141mg_per_100g;
+
+
+
+=> nrel_carbohydrates_content:0.41g_per_100g;
+=> nrel_fats_content:11.09g_per_100g;
+=> nrel_protein_content:13.05g_per_100g;
+    <- rrel_key_sc_element:...
+(*
+  <-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Перепелиные яйца показаны при диабете, поскольку они мягко понижают уровень сахара в крови. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(перепелиное яйцо)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+            
+            -> diabetes;;
+        *);;
+*);
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+   
+        (*
+            -> [Перепелиные яйца нормализуют гормональный фон, снижают проявления токсикоза во время беременности и уменьшают риск преждевременных родов. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.2(перепелиное яйцо)](*<- lang_ru;;*);;
+    
+*);
+
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Регулярное употребление перепелиных яиц в пищу укрепляет нервную систему, улучшает память и умственные способности. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.3(перепелиное яйцо)](*<- lang_ru;;*);;
+  
+
+*);
+ <-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(перепелиное яйцо)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://quail egg.jpg"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+
+
+<=nrel_inclusion:concept_product;;
+

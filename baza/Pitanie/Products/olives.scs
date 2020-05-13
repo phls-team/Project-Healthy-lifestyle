@@ -1,0 +1,73 @@
+145kcal_per_100g=> nrel_main_idtf: [145 ккал на 100 г](*<- lang_ru;;*);;
+concept_olives => nrel_main_idtf: [оливки](*<- lang_ru;;*);
+=> nrel_main_idtf: [olives](*<- lang_en;;*);
+
+  =>nrel_calorie_content:145kcal_per_100g;
+=> nrel_vitamin_B3_content:0.2mg_per_100g;
+
+=> nrel_vitamin_B4_content:14.2mg_per_100g;
+=> nrel_vitamin_E_content:3.8mg_per_100g;
+=> nrel_Na_content:1556mg_per_100g;
+=> nrel_K_content:42mg_per_100g;
+=> nrel_Ca_content:52mg_per_100g;
+=> nrel_carbohydrates_content:3.84g_per_100g;
+=> nrel_fats_content:15.32g_per_100g;
+=> nrel_protein_content:1.03g_per_100g;
+    <- rrel_key_sc_element:...
+(*
+  <-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Оливки богаты мононенасыщенной жирной кислотой – омега-9, которая нужна сосудам и сердцу.  ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(оливки)](*<- lang_ru;;*);;
+
+*);
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+   
+        (*
+            -> [Оливки полезны при артрите, остеохондрозе и артрозе, они укрепляют костную ткань и суставы, являются отличным профилактическим средством заболеваний опорно-двигательного аппарата. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.2(оливки)](*<- lang_ru;;*);;
+  
+*);
+
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Употребление оливок способствует усилению выделения ферментов пищеварения, они мягко воздействуют на пищеварительный тракт, способствуя заживлению микротрещин в кишечнике.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.3(оливки)](*<- lang_ru;;*);;
+
+
+*);
+ <-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(оливки)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://olives.jpg"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+
+
+<=nrel_inclusion:concept_product;;
+

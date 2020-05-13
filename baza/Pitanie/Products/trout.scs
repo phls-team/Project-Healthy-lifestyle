@@ -1,0 +1,106 @@
+22mg_per_100g=> nrel_main_idtf: [22 мг на 100 г](*<- lang_ru;;*);;
+52mg_per_100g=> nrel_main_idtf: [52 мг на 100 г](*<- lang_ru;;*);;
+361mg_per_100g=> nrel_main_idtf: [361 мг на 100 г](*<- lang_ru;;*);;
+4.5mg_per_100g=> nrel_main_idtf: [4.5 мг на 100 г](*<- lang_ru;;*);;
+245mg_per_100g=> nrel_main_idtf: [245 мг на 100 г](*<- lang_ru;;*);;
+20.77mg_per_100g=> nrel_main_idtf: [20.77 мг на 100 г](*<- lang_ru;;*);;
+1.9mg_per_100g=> nrel_main_idtf: [1.9 мг на 100 г](*<- lang_ru;;*);;
+6.61g_per_100g=> nrel_main_idtf: [6.61 г на 100 г](*<- lang_ru;;*);;
+0g_per_100g=> nrel_main_idtf: [0 г на 100 г](*<- lang_ru;;*);;
+65mg_per_100g=> nrel_main_idtf: [65 мг на 100 г](*<- lang_ru;;*);;
+43mg_per_100g=> nrel_main_idtf: [43 мг на 100 г](*<- lang_ru;;*);;
+148kcal_per_100g=> nrel_main_idtf: [148 ккал на 100 г](*<- lang_ru;;*);;
+concept_trout=> nrel_main_idtf: [форель](*<- lang_ru;;*);
+=> nrel_main_idtf: [trout](*<- lang_en;;*);
+
+  =>nrel_calorie_content:148kcal_per_100g;
+=> nrel_vitamin_E_content:0.2mg_per_100g;
+=> nrel_vitamin_C_content:0.5mg_per_100g;
+=> nrel_vitamin_B1_content:0.4mg_per_100g;
+=> nrel_vitamin_B2_content:0.3mg_per_100g;
+=> nrel_vitamin_B3_content:4.5mg_per_100g;
+=> nrel_vitamin_B4_content:65mg_per_100g;
+=> nrel_vitamin_B5_content:1.9mg_per_100g;
+=> nrel_vitamin_B6_content:0.2mg_per_100g;
+
+=> nrel_Ca_content:43mg_per_100g;
+=> nrel_Fe_content:1.5mg_per_100g;
+=> nrel_Mg_content:22mg_per_100g;
+=> nrel_P_content:245mg_per_100g;
+=> nrel_K_content:361mg_per_100g;
+=> nrel_Na_content:52mg_per_100g;
+=> nrel_Zn_content:0.7mg_per_100g;
+=> nrel_Cu_content:0.2mg_per_100g;
+=> nrel_Mn_content:0.9mg_per_100g;
+
+
+=> nrel_carbohydrates_content:0g_per_100g;
+=> nrel_fats_content:6.61g_per_100g;
+=> nrel_protein_content:20.77g_per_100g;
+    <- rrel_key_sc_element:...
+(*
+  <-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Медики рекомендуют употреблять форель людям, страдающим на сахарный диабет, а также людям с проблемами сердца. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(форель)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+            
+            -> heart_desease;;
+        *);;
+*);
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+   
+        (*
+            -> [Регулярное употребление форели является профилактикой онкологии.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.2(форель)](*<- lang_ru;;*);;
+ 
+*);
+
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Форель способствует восстановлению сил после изнурительных физических тренировок и нагрузки.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.3(форель)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            -> concept_physical_exercises;;
+            
+        *);;
+
+*);
+ <-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(форель)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://trout.jpg"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+
+
+<=nrel_inclusion:fish;;
+

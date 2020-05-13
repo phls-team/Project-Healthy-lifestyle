@@ -1,0 +1,88 @@
+concept_sorrel=> nrel_main_idtf: [щавель ](*<- lang_ru;;*);
+=> nrel_main_idtf: [sorrel](*<- lang_en;;*);
+
+  =>nrel_calorie_content:22kcal_per_100g;
+=> nrel_vitamin_B3_content:0.5mg_per_100g;
+=> nrel_vitamin_B2_content:0.1mg_per_100g;
+=> nrel_vitamin_B6_content:0.1mg_per_100g;
+=> nrel_vitamin_C_content:48mg_per_100g;
+=> nrel_vitamin_B4_content:44.6mg_per_100g;
+
+=> nrel_Na_content:4mg_per_100g;
+=> nrel_K_content:390mg_per_100g;
+=> nrel_Ca_content:44mg_per_100g;
+=> nrel_P_content:63mg_per_100g;
+=> nrel_Mg_content:103mg_per_100g;
+=> nrel_Mn_content:2.4mg_per_100g;
+=> nrel_Fe_content:2.7mg_per_100g;
+
+=> nrel_carbohydrates_content:3.2g_per_100g;
+=> nrel_fats_content:0.7g_per_100g;
+=> nrel_protein_content:2g_per_100g;
+    <- rrel_key_sc_element:...
+(*
+  <-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Благодаря высокому содержанию витамина С, железо, содержащееся в растении, очень хорошо усваивается, лучше, чем из какого-либо другого растения. Поэтому щавель рекомендуют употреблять при анемии. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(щавель)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+            
+            -> anemia;;
+        *);;
+*);
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+   
+        (*
+            -> [Щавель повышает секрецию желудка, поджелудочной железы, улучшает работу ЖКТ, особенно полезен людям, страдающим гастритом с пониженной кислотностью. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.2(щавель)](*<- lang_ru;;*);;
+ 
+*);
+
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Щавель благотворно влияет на сердечно-сосудистую систему, способствует выведению вредного холестерина.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.3(щавель)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            -> cholesterol;;
+            
+        *);;
+
+*);
+ <-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(щавель)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://sorrel.jpg"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+
+
+<=nrel_inclusion:concept_product;;
+

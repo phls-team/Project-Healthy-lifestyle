@@ -1,0 +1,89 @@
+concept_mash=> nrel_main_idtf: [маш](*<- lang_ru;;*);
+=> nrel_main_idtf: [mash](*<- lang_en;;*);
+
+  =>nrel_calorie_content:105kcal_per_100g;
+=> nrel_vitamin_B3_content:0.6mg_per_100g;
+=> nrel_vitamin_C_content:1mg_per_100g;
+=> nrel_vitamin_B5_content:0.4mg_per_100g;
+=> nrel_vitamin_B1_content:0.2mg_per_100g;
+=> nrel_vitamin_B2_content:0.1mg_per_100g;
+=> nrel_vitamin_B4_content:29.4mg_per_100g;
+=> nrel_vitamin_B6_content:0.1mg_per_100g;
+=> nrel_vitamin_E_content:0.2mg_per_100g;
+
+=> nrel_Cu_content:0.2mg_per_100g;
+=> nrel_K_content:266mg_per_100g;
+=> nrel_Ca_content:27mg_per_100g;
+=> nrel_P_content:99mg_per_100g;
+=> nrel_Mg_content:0.3mg_per_100g;
+=> nrel_Mn_content:4.5mg_per_100g;
+=> nrel_Fe_content:1.4mg_per_100g;
+=> nrel_Na_content:2mg_per_100g;
+=> nrel_Zn_content:0.8mg_per_100g;
+
+=> nrel_carbohydrates_content:19.15g_per_100g;
+=> nrel_fats_content:0.38g_per_100g;
+=> nrel_protein_content:7.02g_per_100g;
+    <- rrel_key_sc_element:...
+(*
+  <-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Маш весьма хорош для сохранения женского здоровья. Его рекомендуется употреблять во время менструаций и менопаузы в качестве продукта, стабилизирующего гормональный фон.  ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(маш)](*<- lang_ru;;*);;
+
+*);
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+   
+        (*
+            -> [Маш полезен в рационе при сахарном диабете, так как имеет низкий гликемический индекс — 15. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.2(маш)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            -> diabetes;;
+            
+        *);;
+*);
+
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Регулярно включая маш в меню, можно значительно поддержать работу сердечной мышцы, укрепить сосуды и выровнять артериальное давление.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.3(маш)](*<- lang_ru;;*);;
+ 
+
+*);
+ <-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(маш)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://mash.jpg"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+
+
+<=nrel_inclusion:concept_product;;
+

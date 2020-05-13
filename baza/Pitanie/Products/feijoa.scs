@@ -1,0 +1,89 @@
+61kcal_per_100g=> nrel_main_idtf: [61 ккал на 100 г](*<- lang_ru;;*);;
+concept_feijoa=> nrel_main_idtf: [фейхоа](*<- lang_ru;;*);
+=> nrel_main_idtf: [feijoa](*<- lang_en;;*);
+
+  =>nrel_calorie_content:61kcal_per_100g;
+=> nrel_vitamin_E_content:0.2mg_per_100g;
+=> nrel_vitamin_C_content:32.9mg_per_100g;
+
+=> nrel_vitamin_B3_content:0.3mg_per_100g;
+
+=> nrel_vitamin_B5_content:0.2mg_per_100g;
+=> nrel_vitamin_B6_content:0.1mg_per_100g;
+
+=> nrel_Ca_content:17mg_per_100g;
+=> nrel_Fe_content:0.1mg_per_100g;
+=> nrel_Mg_content:9mg_per_100g;
+=> nrel_P_content:19mg_per_100g;
+=> nrel_K_content:172mg_per_100g;
+=> nrel_Na_content:3mg_per_100g;
+=> nrel_Zn_content:0.1mg_per_100g;
+
+=> nrel_Mn_content:0.1mg_per_100g;
+
+
+=> nrel_carbohydrates_content:15.21g_per_100g;
+=> nrel_fats_content:0.42g_per_100g;
+=> nrel_protein_content:0.71g_per_100g;
+    <- rrel_key_sc_element:...
+(*
+  <-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Фейхоа нормализует артериальное давление, прекрасно выводит плохой холестерин и помогает избавиться от вздутия живота. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(фейхоа)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+            
+            -> cholesterol;;
+        *);;
+*);
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+   
+        (*
+            -> [Фейхоа хорошо насыщает и снижает аппетит и приступы голода. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.2(фейхоа)](*<- lang_ru;;*);;
+
+*);
+
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Фейхоа используют в борьбе против инфекций и для укрепления иммунитета.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.3(фейхоа)](*<- lang_ru;;*);;
+
+
+*);
+ <-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(фейхоа)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://feijoa.jpg"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+
+
+<=nrel_inclusion:concept_fruit;;
+

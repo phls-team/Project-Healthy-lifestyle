@@ -1,0 +1,90 @@
+concept_herring=> nrel_main_idtf: [сельдь](*<- lang_ru;;*);
+=> nrel_main_idtf: [herring](*<- lang_en;;*);
+
+  =>nrel_calorie_content:158kcal_per_100g;
+=> nrel_vitamin_E_content:1.1mg_per_100g;
+=> nrel_vitamin_C_content:0.7mg_per_100g;
+=> nrel_vitamin_B1_content:0.1mg_per_100g;
+=> nrel_vitamin_B2_content:0.2mg_per_100g;
+=> nrel_vitamin_B3_content:3.2mg_per_100g;
+=> nrel_vitamin_B4_content:65.0mg_per_100g;
+=> nrel_vitamin_B5_content:0.6mg_per_100g;
+=> nrel_vitamin_B6_content:0.3mg_per_100g;
+
+=> nrel_Ca_content:57mg_per_100g;
+=> nrel_Fe_content:1.1mg_per_100g;
+=> nrel_Mg_content:32mg_per_100g;
+=> nrel_P_content:236mg_per_100g;
+=> nrel_K_content:327mg_per_100g;
+=> nrel_Na_content:90mg_per_100g;
+=> nrel_Zn_content:1.0mg_per_100g;
+=> nrel_Cu_content:0.1mg_per_100g;
+=> nrel_Mn_content:1.7mg_per_100g;
+
+
+=> nrel_carbohydrates_content:0g_per_100g;
+=> nrel_fats_content:9.04g_per_100g;
+=> nrel_protein_content:17.96g_per_100g;
+    <- rrel_key_sc_element:...
+(*
+  <-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Благодаря жирным кислотам омега-3 употребление селёдки в пищу улучшает работу сердца и снижает риск развития болезней сердечно-сосудистой системы. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(сельдь)](*<- lang_ru;;*);;
+ 
+*);
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+   
+        (*
+            -> [Из-за большого количества соли сельдь не рекомендуется есть людям с болезнями почек, с отёками. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.2(сельдь)](*<- lang_ru;;*);;
+ 
+*);
+
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Рыбий жир в селёдке способствует уменьшению жировых клеток. Благодаря ему снижается риск возникновения диабета второго типа.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.3(сельдь)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            -> diabetes;;
+            
+        *);;
+
+*);
+ <-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(сельдь)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://herring.jpg"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+
+
+<=nrel_inclusion:fish;;
+

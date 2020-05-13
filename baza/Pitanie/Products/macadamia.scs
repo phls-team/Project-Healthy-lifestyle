@@ -1,0 +1,79 @@
+concept_macadamia=> nrel_main_idtf: [макадамия ](*<- lang_ru;;*);
+=> nrel_main_idtf: [macadamia](*<- lang_en;;*);
+
+  =>nrel_calorie_content:718kcal_per_100g;
+=> nrel_vitamin_B3_content:2.3mg_per_100g;
+=> nrel_vitamin_E_content:0.6mg_per_100g;
+=> nrel_vitamin_B5_content:0.6mg_per_100g;
+=> nrel_vitamin_B1_content:0.7mg_per_100g;
+=> nrel_vitamin_B4_content:44.6mg_per_100g;
+
+=> nrel_Na_content:4mg_per_100g;
+=> nrel_K_content:363mg_per_100g;
+=> nrel_Ca_content:70mg_per_100g;
+=> nrel_P_content:198mg_per_100g;
+=> nrel_Mg_content:118mg_per_100g;
+=> nrel_Mn_content:3mg_per_100g;
+=> nrel_Fe_content:2.7mg_per_100g;
+
+=> nrel_carbohydrates_content:13.38g_per_100g;
+=> nrel_fats_content:76.08g_per_100g;
+=> nrel_protein_content:7.79g_per_100g;
+    <- rrel_key_sc_element:...
+(*
+  <-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Систематическое употребление макадамии в пищу уменьшает проблемы с кожей, нормализует ее цвет и жирность, а также улучшает состояние волос благодаря питательным жирам. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(макадамия)](*<- lang_ru;;*);;
+   
+*);
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+   
+        (*
+            -> [Макадамия полезна для быстрого восстановления после напряженной умственной работы.  ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.2(макадамия)](*<- lang_ru;;*);;
+
+*);
+
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Для пожилых людей макадамия незаменим, потому что способен предупредить появление заболеваний сердечно-сосудистой системы.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.3(макадамия)](*<- lang_ru;;*);;
+  
+
+*);
+ <-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(макадамия)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://macadamia.jpg"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+
+
+<=nrel_inclusion:nuts;;
+

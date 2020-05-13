@@ -1,0 +1,76 @@
+concept_quinoa => nrel_main_idtf: [киноа](*<- lang_ru;;*);
+=> nrel_main_idtf: [quinoa](*<- lang_en;;*);
+
+  =>nrel_calorie_content:120kcal_per_100g;
+=> nrel_vitamin_B3_content:0.4mg_per_100g;
+=> nrel_vitamin_B4_content:23mg_per_100g;
+=> nrel_vitamin_E_content:0.6mg_per_100g;
+
+=> nrel_Na_content:7mg_per_100g;
+=> nrel_K_content:172mg_per_100g;
+=> nrel_Ca_content:17mg_per_100g;
+
+=> nrel_P_content:152mg_per_100g;
+=> nrel_Mg_content:64mg_per_100g;
+
+=> nrel_carbohydrates_content:21.3g_per_100g;
+=> nrel_fats_content:1.92g_per_100g;
+=> nrel_protein_content:4.4g_per_100g;
+    <- rrel_key_sc_element:...
+(*
+  <-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Киноа обладает низким гликемическим индексом — 80-граммовая порция отваренной киноа имеет гликемический индекс в 40-50 единиц, что делает ее крайне полезной для похудения. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(киноа)](*<- lang_ru;;*);;
+   
+*);
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+   
+        (*
+            -> [В состав киноа входит много клетчатки, которая помогает очистить кишечник от продуктов распада и различных токсинов. Это важно для нормальной работы ЖКТ и всей пищеварительной системы. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.2(киноа)](*<- lang_ru;;*);;
+   
+*);
+
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Киноа является прекрасным общеукрепляющим средством, поэтому крупу рекомендуется употреблять после тяжелых заболеваний и операций, чтобы быстрее восстановиться.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.3(киноа)](*<- lang_ru;;*);;
+ 
+
+*);
+ <-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(киноа)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://quinoa.jpg"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+
+
+<=nrel_inclusion:concept_product;;
+

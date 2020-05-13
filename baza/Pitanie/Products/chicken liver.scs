@@ -1,0 +1,90 @@
+119kcal_per_100g=> nrel_main_idtf: [119 ккал на 100 г](*<- lang_ru;;*);;
+concept_chicken_liver=> nrel_main_idtf: [куриная печень](*<- lang_ru;;*);
+=> nrel_main_idtf: [chicken liver](*<- lang_en;;*);
+
+  =>nrel_calorie_content:119kcal_per_100g;
+=> nrel_vitamin_E_content:0.7mg_per_100g;
+=> nrel_vitamin_C_content:17.9mg_per_100g;
+=> nrel_vitamin_B1_content:0.3mg_per_100g;
+=> nrel_vitamin_B2_content:1.8mg_per_100g;
+=> nrel_vitamin_B3_content:9.7mg_per_100g;
+=> nrel_vitamin_B4_content:194.4mg_per_100g;
+=> nrel_vitamin_B5_content:6.2mg_per_100g;
+=> nrel_vitamin_B6_content:0.9mg_per_100g;
+
+=> nrel_Ca_content:8mg_per_100g;
+=> nrel_Fe_content:9mg_per_100g;
+=> nrel_Mg_content:19mg_per_100g;
+=> nrel_P_content:297mg_per_100g;
+=> nrel_K_content:230mg_per_100g;
+=> nrel_Na_content:71mg_per_100g;
+=> nrel_Zn_content:2.7mg_per_100g;
+=> nrel_Cu_content:0.5mg_per_100g;
+=> nrel_Mn_content:0.3mg_per_100g;
+
+
+=> nrel_carbohydrates_content:0.7g_per_100g;
+=> nrel_fats_content:4.8g_per_100g;
+=> nrel_protein_content:16.9g_per_100g;
+    <- rrel_key_sc_element:...
+(*
+  <-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Куриная печень противопоказана тем, у кого повышенное содержание холестерина, так как печень курицы содержит 100-280 мг холестерина. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(куриная печень)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+            
+            -> cholesterol;;
+        *);;
+*);
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+   
+        (*
+            -> [Куриная печень благоприятно действует на желудочно-кишечный тракт ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.2(куриная печень)](*<- lang_ru;;*);;
+
+*);
+
+
+
+    <- rrel_key_sc_element:...
+(*
+<-statement ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Регулярное потребление куриной печени снижает риск развития онкологических заболеваний, авитаминоза.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.3(куриная печень)](*<- lang_ru;;*);;
+ 
+
+*);
+ <-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(куриная печень)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://chicken liver.jpg"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);
+
+
+
+<=nrel_inclusion:concept_product;;
+
