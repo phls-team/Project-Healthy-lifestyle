@@ -1,0 +1,33 @@
+championship<-sc_node_not_relation;
+=>nrel_main_idtf:[чемпионат ] (*<-lang_ru;;*);
+[Championship] (*<-lang_en;;*);
+
+<-rrel_key_sc_element:..(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Чемпионат )](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[<b>Чемпионат </b> –<b><sc_element sys_idtf="sports_event"> соревнование</b></sc_element> на звание чемпиона.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+<-rrel_key_sc_element:..(*
+<-illustration;;
+<=nrel_sc_text_translation:...
+	(*
+->rrel_example: "file://сhampionship.jpg"
+	(*
+=>nrel_format:format_png;;
+	*);;	
+*);;
+*);
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Чемпионат )](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[В отдельных случаях, принято различать чемпионаты и первенства. Чемпионаты проводятся среди взрослых участников, а первенства — среди юниоров. Иногда, чемпионаты носят названия указывающие на форму их проведения, на приз или следуют исторической традиции.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);;
+championship->{rrel_example:[чемпионат по шахматам]};;

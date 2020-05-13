@@ -1,0 +1,34 @@
+sports_federation<-sc_node_not_relation;
+=>nrel_main_idtf:[Спортивная федерация] (*<-lang_ru;;*);
+[sports federation] (*<-lang_en;;*);
+<=nrel_inclusion:sports_organisation;
+<-rrel_key_sc_element:..(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Спортивная федерация)](*<-lang_ru;;*);;
+
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[  <b>Спортивная федерация</b>-это неправительственная общественная организация, решающая вопросы, касающиеся физического воспитания, спорта и физической культуры.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+<-rrel_key_sc_element:..(*
+<-illustration;;
+<=nrel_sc_text_translation:...
+	(*
+->rrel_example: "file://sports_federation.png"
+	(*
+=>nrel_format:format_png;;
+	*);;	
+*);;
+*);
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Спортивная федерация)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[В зависимости от охватываемой территории федерации бывают всемирными, региональными, национальными, областными, краевыми, городскими… Например, Международной федерации футбола ФИФА подчинён Союз европейских футбольных ассоциаций УЕФА.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);;
+  sports_federation->{rrel_example:[FIFA]};;

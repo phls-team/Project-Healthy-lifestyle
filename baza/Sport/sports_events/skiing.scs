@@ -1,0 +1,35 @@
+alpine_skiing<-sc_node_not_relation;
+=>nrel_main_idtf:[Горнолы́жный спорт] (*<-lang_ru;;*);
+[alpine skiing] (*<-lang_en;;*);
+[downhill skiing] (*<-lang_en;;*);
+<-rrel_key_sc_element:..(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Горнолы́жный спорт)](*<-lang_ru;;*);;
+
+<=nrel_inclusion: concept_game;;
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[  <b>Горнолы́жный спорт</b> – спуск с покрытых снегом склонов на специальных лыжах.<b><sc_element_idtf="concept_game">Вид спорта</b></sc_element>, а также популярный вид активного отдыха миллионов людей по всему миру.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+<-rrel_key_sc_element:...
+	(*
+<-illustration;;
+<=nrel_sc_text_translation:...
+	(*
+->rrel_example: "file://alpine_skiing.jpg"
+	(*
+=>nrel_format:format_png;;
+	*);;	
+*);;
+*);
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Горнолы́жный спорт)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[Родиной горнолыжного спорта являются Альпы, на большинстве языков само название этого вида означает «альпийские лыжи».](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);;

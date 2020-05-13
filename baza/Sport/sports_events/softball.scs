@@ -1,0 +1,35 @@
+softball<-sc_node_not_relation;
+=>nrel_main_idtf:[Софтбол] (*<-lang_ru;;*);
+[softball] (*<-lang_en;;*);
+<=nrel_inclusion: concept_game;olimpic_sport;
+<=nrel_place_of_appearence_of_the_sport:[США];
+<-rrel_key_sc_element:..(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Софтбол)](*<-lang_ru;;*);;
+
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[  <b>Софтбол</b> – спортивная командная игра с мячом, разновидность <b><sc_element_idtf="concept sys_baseball">бейсбола</b></sc_element>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+<-rrel_key_sc_element:...
+	(*
+<-illustration;;
+<=nrel_sc_text_translation:...
+	(*
+->rrel_example: "file://softball.jpg"
+	(*
+=>nrel_format:format_png;;
+	*);;	
+*);;
+*);
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Софтбол)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[Во многих странах, где распространён бейсбол, софтбол также популярен, так как его предпочитают непрофессионалы. Отличия в софтболе от бейсбола направлены на снижение травматизма и приспособлены к более низким физическим возможностям спортсменов.  ](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);;

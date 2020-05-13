@@ -1,0 +1,25 @@
+sport_result<-sc_node_not_relation;
+=>nrel_main_idtf:[спортивный результат] (*<-lang_ru;;*);
+[sport result] (*<-lang_en;;*);
+
+<-rrel_key_sc_element:..(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(спортивный результат)](*<-lang_ru;;*);;
+
+
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[  <b>спортивный результат</b> – определенный итог участия <b><sc_element_idtf="sportsman">спортсмена</b></sc_element> (команды спортсменов), иных физических лиц, занимающихся физической культурой и спортом, в физкультурно-оздоровительных, спортивно-массовых, спортивных мероприятиях, выраженный в определенных количественных и (или) качественных показателях.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(спортивный результат)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[Спортивные достижения являются показателем одарённости спортсмена, эффективности системы подготовки.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);;

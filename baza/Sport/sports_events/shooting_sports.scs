@@ -1,0 +1,34 @@
+shooting_sports<-sc_node_not_relation;
+=>nrel_main_idtf:[Стрелковый спорт] (*<-lang_ru;;*);
+[shooting sports] (*<-lang_en;;*);
+<=nrel_inclusion: concept_game;olimpic_sport;
+<=nrel_place_of_appearence_of_the_sport:[Европа];
+<-rrel_key_sc_element:..(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Стрелковый спорт)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[  <b>Стрелковый спорт</b> – <b><sc_element sys_idtf="concept_game">вид спорта</b></sc_element>, в котором участники соревнуются в стрельбе из огнестрельного и пневматического оружия.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+<-rrel_key_sc_element:...
+	(*
+<-illustration;;
+<=nrel_sc_text_translation:...
+	(*
+->rrel_example: "file://shooting_sports.jpg"
+	(*
+=>nrel_format:format_png;;
+	*);;	
+*);;
+*);
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Стрелковый спорт)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[Устойчивый навык эффективного владения пистолетом у большинства стрелков вырабатывается после тренировок общей продолжительностью 50 часов и не менее 1000 выстрелов.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);;

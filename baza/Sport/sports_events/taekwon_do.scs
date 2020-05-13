@@ -1,0 +1,35 @@
+taekwon_do<-sc_node_not_relation;
+=>nrel_main_idtf:[Тхэквондо́] (*<-lang_ru;;*);
+[Taekwon-do] (*<-lang_en;;*);
+<=nrel_inclusion: concept_game;olimpic_sport;
+<=nrel_place_of_appearence_of_the_sport:[Корея];
+<-rrel_key_sc_element:..(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Тхэквондо́)](*<-lang_ru;;*);;
+
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[  <b>Тхэквондо́</b> – корейское боевое искусство. Характерная особенность — активное использование ног в бою; причём как для ударов, так и для блоков.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+<-rrel_key_sc_element:...
+	(*
+<-illustration;;
+<=nrel_sc_text_translation:...
+	(*
+->rrel_example: "file://Taekwon-do.jpg"
+	(*
+=>nrel_format:format_png;;
+	*);;	
+*);;
+*);
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Тхэквондо́)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[тхэквондо означает систему духовной тренировки и технику самообороны без оружия, наряду со здоровьем, а также квалифицированным исполнением ударов, блоков и прыжков, выполняющихся голыми руками и ногами для поражения одного или нескольких соперников.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);;

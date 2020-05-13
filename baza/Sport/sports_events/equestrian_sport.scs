@@ -1,0 +1,36 @@
+equestrian_sport<-sc_node_not_relation;
+=>nrel_main_idtf:[Конный спорт] (*<-lang_ru;;*);
+[equestrian sport] (*<-lang_en;;*);
+<=nrel_inclusion: concept_game;olimpic_sport;
+<=nrel_place_of_appearence_of_the_sport:[Европа];
+
+<-rrel_key_sc_element:..(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Конный спорт)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[  <b>Конный спорт</b> – обобщающее понятие, под которым понимаются различные способы езды, виды соревнований, спортивных игр и упражнений с использованием верховой езды и участием лошадей).](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...
+	(*
+<-illustration;;
+<=nrel_sc_text_translation:...
+	(*
+->rrel_example: "file://equestrian sport.jpg"
+	(*
+=>nrel_format:format_png;;
+	*);;	
+*);;
+*);
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Конный спорт)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[Конный спорт впервые был включён в программу летних Олимпийских игр в 1900 году. Начиная с V Олимпиады в Стокгольме, конный спорт присутствует на всех летних Олимпийских играх.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);;

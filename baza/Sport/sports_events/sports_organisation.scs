@@ -1,0 +1,25 @@
+sports_organization<-sc_node_not_relation;
+=>nrel_main_idtf:[спортивная организация] (*<-lang_ru;;*);
+[sports organization] (*<-lang_en;;*);
+
+<-rrel_key_sc_element:..(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(спортивная организация)](*<-lang_ru;;*);;
+
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[  <b>спортивная организация</b>-это любая организация, выступающую в качестве органа, который устанавливает правила проведения <b><sc_element sys_idtf="sport_event">спортивного мероприятия</b></sc_element> по одному или нескольким <b><sc_element sys_idtf="concept_game">видам спорта</b></sc_element>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(спортивная организация)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[Точной классификации спортивных организаций не существует, можно только условно разделить их виды по типу объединения или внутренней административно-организационной структуре. Но следует учесть, что схожие по внутренней организации, они могут иметь разные названия.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);;
+  sports_organization->{rrel_example:[FIFA]};;

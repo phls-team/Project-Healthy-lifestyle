@@ -1,0 +1,26 @@
+sports_offeens<-sc_node_not_relation;
+=>nrel_main_idtf:[спортивное правонарушение] (*<-lang_ru;;*);
+[sports offeens] (*<-lang_en;;*);
+
+<-rrel_key_sc_element:..(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(спортивное правонарушение)](*<-lang_ru;;*);;
+
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[  <b>спортивное правонарушение</b> –противоправное, виновное действие или бездействие физического или юридического лица, за которое нормами спортивного или гражданского законодательства установлена дисциплинарная (спортивная) ответственность..](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(спортивное правонарушение)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[К спортивному правонарушению относится также употребление <b><sc_element sys_idtf="doping">допинга</b></sc_element>](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);;
+
+sports_offeens->{rrel_example:[употребление стимуляторов]};;

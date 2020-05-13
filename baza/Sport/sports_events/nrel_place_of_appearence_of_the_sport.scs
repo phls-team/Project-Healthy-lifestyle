@@ -1,0 +1,43 @@
+nrel_place_of_appearence_of_the_sport
+<-sc_node_norole_relation;
+=>nrel_main_idtf:
+[place of appearence of the sport*](*<-lang_en;;*);
+[место появления вида спорта*](*<-lang_ru;;*);
+
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(место появления вида спорта)](*<-lang_ru;;*);;
+=>nrel_using_constants:{
+activity
+};;
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[<b>место появления вида спорта</b> -регион,в котором зародился <b><sc_element sys_idtf="concept_game">вид спорта</b></sc_element>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+*);;
+*);
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:[Утв.(место появления вида спорта)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...(*
+->rrel_example:[ Иногда один <b><sc_element  sys_idtf="concept_game">вид спорта</b></sc_element> появлялся в нескольких местах одно время.](* <- lang_ru;; => nrel_format: format_html;;*);;
+*);;
+*);
+
+=>nrel_definitional_domain:..(*
+<=nrel_combination:{ region(*<=nrel_first_domain:nrel_place_of_appearence_of_the_sport;;*);
+ concept_game(*<=nrel_second_domain:nrel_place_of_appearence_of_the_sport;;*)
+};;
+*);;
+nrel_place_of_appearence_of_the_sport<-antisymmetric_relation(*<=nrel_inclusion:binary_relation(*<=nrel_inclusion:relation;;*);;*);;
+nrel_place_of_appearence_of_the_sport<-antireflexive_relation(*<=nrel_inclusion:binary_relation;;*);;
+nrel_place_of_appearence_of_the_sport<-oriented_relation(*<=nrel_inclusion:relation;;*);; 
+
+arity->...(*=>nrel_measurement:2(*<-number;;*);;
+->nrel_place_of_appearence_of_the_sport;;
+*);;
+
+region<-sc_node_not_relation;
+=>nrel_main_idtf:
+[регион] (*<-lang_ru;;*);
+[region] (*<-lang_en;;*);;

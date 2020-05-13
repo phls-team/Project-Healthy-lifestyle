@@ -1,0 +1,35 @@
+ice_hockey_world_championships<-sc_node_not_relation;
+=>nrel_main_idtf:[Чемпиона́т ми́ра по хокке́ю с ша́йбой] (*<-lang_ru;;*);
+[Ice Hockey World Championships] (*<-lang_en;;*);
+<=nrel_inclusion: championship;
+<-rrel_key_sc_element:..(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Чемпиона́т ми́ра по хокке́ю с ша́йбой)](*<-lang_ru;;*);;
+
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[  <b>Чемпиона́т ми́ра по хокке́ю с ша́йбой</b> – ежегодное соревнование, организуемое Международной федерацией хоккея с шайбой с 1920 года.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+<-rrel_key_sc_element:...
+	(*
+<-illustration;;
+<=nrel_sc_text_translation:...
+	(*
+->rrel_example: "file://ice_hockey_world_championships.jpeg"
+	(*
+=>nrel_format:format_png;;
+	*);;	
+*);;
+*);
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Чемпиона́т ми́ра по хокке́ю с ша́йбой)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[В первом этапе принимают участие 16 команд, разбитые на 2 группы по 8 команд. В плей-офф выходят 4 команды, а последняя команда из каждой группы отправляется играть в первый дивизион на следующий год.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);;
+ice_hockey_world_championships->{rrel_example:[чемпионат мира 2018]};;

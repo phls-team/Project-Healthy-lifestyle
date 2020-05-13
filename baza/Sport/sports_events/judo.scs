@@ -1,0 +1,34 @@
+judo<-sc_node_not_relation;
+=>nrel_main_idtf:[дзюдо] (*<-lang_ru;;*);
+[judo] (*<-lang_en;;*);
+<=nrel_inclusion: concept_game;olimpic_sport;
+<=nrel_place_of_appearence_of_the_sport:[Япония];
+<-rrel_key_sc_element:..(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(дзюдо)](*<-lang_ru;;*);;
+
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[  <b>дзюдо</b> –  японское боевое искусство, философия и спортивное единоборство без оружия, созданное в конце XIX века на основе дзюдзюцу японским мастером боевых искусств Дзигоро Кано.](* <- lang_ru;; => nrel_format: format_html;; *);;
+ *);;
+*);
+<-rrel_key_sc_element:...(*
+<-illustration;;
+<=nrel_sc_text_translation:...(*
+->rrel_example: "file://judo.jpg"
+	(*
+=>nrel_format:format_png;;
+	*);;	
+*);;
+*);
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(дзюдо)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[В отличие от <b><sc_element sys_idtf="box">бокса</b></sc_element>, карате и других видов единоборств с преобладающей ударной техникой в стойке, основу дзюдо составляют броски, болевые приёмы, удержания и удушения, как в стойке, так и в партере.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);;
+

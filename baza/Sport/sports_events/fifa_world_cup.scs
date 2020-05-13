@@ -1,0 +1,37 @@
+fifa_world_cup<-sc_node_not_relation;
+=>nrel_main_idtf:[Чемпиона́т ми́ра по футбо́лу] (*<-lang_ru;;*);
+[Ку́бок ми́ра ФИФА́] (*<-lang_ru;;*);
+[мундиа́ль] (*<-lang_ru;;*);
+[FIFA World Cup] (*<-lang_en;;*);
+<=nrel_inclusion: championship;
+<-rrel_key_sc_element:..(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Чемпиона́т ми́ра по футбо́лу)](*<-lang_ru;;*);;
+
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[  <b>Чемпиона́т ми́ра по футбо́лу</b> – главное международное <b><sc_element_idtf="sports_event"> соревнование</b></sc_element> по <b><sc_element_idtf="concept_football"> футболу</b></sc_element>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+<-rrel_key_sc_element:...
+	(*
+<-illustration;;
+<=nrel_sc_text_translation:...
+	(*
+->rrel_example: "file://fifa_world_cup.png"
+	(*
+=>nrel_format:format_png;;
+	*);;	
+*);;
+*);
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Чемпиона́т ми́ра по футбо́лу)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[Финальные турниры чемпионатов мира проводятся раз в 4 года, как и Олимпийские игры, однако, если учесть региональные турниры, каждый мундиаль продолжается более 3 лет.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);;
+fifa_world_cup->{rrel_example:[чемпионат мира 2018]};;

@@ -1,0 +1,45 @@
+nrel_winner
+<-sc_node_norole_relation;
+=>nrel_main_idtf:
+[winner](*<-lang_en;;*);
+[победитель*](*<-lang_ru;;*);
+
+<-rrel_key_sc_element:...(*
+<-definition;;
+
+=>nrel_main_idtf:
+[Опр.(победитель)](*<-lang_ru;;*);;
+=>nrel_using_constants:{
+activity
+};;
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[<b>победитель</b> -тот, кто побеждает, одерживает верх или добивается успеха в борьбе.](* <- lang_ru;; => nrel_format: format_html;;*);;
+*);;
+*);
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:[Утв.(победитель)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...(*
+->rrel_example:[ В спорте победителем называют того, кто сумел доказать своё преимущество над соперником (соперниками).](* <- lang_ru;; => nrel_format: format_html;;*);;
+*);;
+*);
+
+=>nrel_definitional_domain:..(*
+<=nrel_combination:{ activity(*<=nrel_first_domain:nrel_winner;;*);
+ concept_person(*<=nrel_second_domain:nrel_winner;;*)
+};;
+*);;
+nrel_winner<-antisymmetric_relation(*<=nrel_inclusion:binary_relation(*<=nrel_inclusion:relation;;*);;*);;
+nrel_winner<-antitransitive_relation(*<=nrel_inclusion:binary_relation;;*);;
+nrel_winner<-antireflexive_relation(*<=nrel_inclusion:binary_relation;;*);;
+nrel_winner<-oriented_relation(*<=nrel_inclusion:relation;;*);; 
+
+arity->...(*=>nrel_measurement:2(*<-number;;*);;
+->nrel_winner;;
+*);;
+
+activity<-sc_node_not_relation;
+=>nrel_main_idtf:
+[активность] (*<-lang_ru;;*);
+[activity] (*<-lang_en;;*);;

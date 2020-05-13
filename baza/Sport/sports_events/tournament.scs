@@ -1,0 +1,24 @@
+tournament<-sc_node_not_relation;
+=>nrel_main_idtf:[Спорти́вный турни́р] (*<-lang_ru;;*);
+[Tournament] (*<-lang_en;;*);
+<=nrel_inclusion: concept_game;
+<-rrel_key_sc_element:..(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Спорти́вный турни́р)](*<-lang_ru;;*);;
+
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[  <b>Спорти́вный турни́р</b> – <b><sc_element sys_idtf="sport_competitions">  спортивное  соревнование</b></sc_element> по игровым <b><sc_element sys_idtf="concept_game"> видам спорта</b></sc_element> с большим числом участников (игроков или команд). ](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Спорти́вный турни́р)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[Турниры могут проводиться как короткие мероприятия в определённом месте, или как долговременная система матчей, продолжающаяся в течение длительного времени (сезон) и проводящаяся с разъездами команд. ](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);;

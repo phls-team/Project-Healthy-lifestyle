@@ -1,0 +1,33 @@
+karate<-sc_node_not_relation;
+=>nrel_main_idtf:[каратэ] (*<-lang_ru;;*);
+[karate] (*<-lang_en;;*);
+<=nrel_inclusion: concept_game;olimpic_sport;
+<=nrel_place_of_appearence_of_the_sport:[Япония];
+<-rrel_key_sc_element:..(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(каратэ)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[  <b>каратэ</b> –  японское боевое искусство, система защиты и нападения.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+<-rrel_key_sc_element:...(*
+<-illustration;;
+<=nrel_sc_text_translation:...(*
+->rrel_example: "file://karate.jpg"
+	(*
+=>nrel_format:format_png;;
+	*);;	
+*);;
+*);
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(каратэ)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[На начальном этапе карате представляло собой систему рукопашного боя, предназначавшуюся только для самообороны. Сегодня карате приобрело большую известность благодаря показательным выступлениям, демонстрирующим тамэсивари.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);;
+

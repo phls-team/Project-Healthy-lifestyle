@@ -1,0 +1,35 @@
+surfing<-sc_node_not_relation;
+=>nrel_main_idtf:[Сёрфинг] (*<-lang_ru;;*);
+[surfing] (*<-lang_en;;*);
+<=nrel_inclusion: concept_game;olimpic_sport;
+<=nrel_place_of_appearence_of_the_sport:[Полинезия];
+<-rrel_key_sc_element:..(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Сёрфинг)](*<-lang_ru;;*);;
+
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[  <b>Сёрфинг</b> – это водный <b><sc_element_idtf="concept_game">вид спорта</b></sc_element>, в котором человек (называемый сёрфером) едет на передней или нижней части движущейся волны, которая обычно движется в сторону берега.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+<-rrel_key_sc_element:...
+	(*
+<-illustration;;
+<=nrel_sc_text_translation:...
+	(*
+->rrel_example: "file://surfing.jpg"
+	(*
+=>nrel_format:format_png;;
+	*);;	
+*);;
+*);
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Сёрфинг)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[Коренные народы Тихого океана, например, катались на волнах используя деревянные доски Alaia, Paipo и другие подобные приспособления, и обычно делали это на их животе и коленях. Современное определение серфинга, однако, чаще всего относится к сёрферу, которые едет по волне, стоя на доске для сёрфинга.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);;

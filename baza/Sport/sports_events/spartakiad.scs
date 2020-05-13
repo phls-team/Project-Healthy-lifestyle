@@ -1,0 +1,32 @@
+spartakiad<-sc_node_not_relation;
+=>nrel_main_idtf:[Спартакиада] (*<-lang_ru;;*);
+[Spartakiad] (*<-lang_en;;*);
+
+<-rrel_key_sc_element:..(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Спартакиада)](*<-lang_ru;;*);;
+
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[  <b>Спартакиада</b> – массовое <b><sc_element sys_idtf="sports_event">спортивное соревнование</b></sc_element>, по нескольким видам спорта, в СССР и других социалистических странах. ](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+<-rrel_key_sc_element:..(*
+<-illustration;;
+<=nrel_sc_text_translation:..(*
+->rrel_example: "file://Spartakiad.JPG"
+	(*=>nrel_format:format_png;;*);;	
+*);;
+*);
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Спартакиада)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[Первоначально спартакиадами (по имени предводителя восстания римских рабов Спартака) назывались спортивные соревнования, проводимые немецкими спортивными клубами прокоммунистического направления.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);;
+  
+spartakiad->{rrel_example:[спартакиада в Албании В 1989]};;

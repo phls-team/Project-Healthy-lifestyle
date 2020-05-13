@@ -1,0 +1,34 @@
+team_competitions<-sc_node_not_relation;
+=>nrel_main_idtf:[командные соревнования] (*<-lang_ru;;*);
+[team competitions] (*<-lang_en;;*);
+
+<-rrel_key_sc_element:..(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(командные соревнования)](*<-lang_ru;;*);;
+
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[  <b>командные соревнования</b> – <b><sc_element sys_idtf="sport_competitions">  спортивные  соревнование</b></sc_element> , в которых результаты определяются по достижениям  всей команды в целом. ](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+<-rrel_key_sc_element:..(*
+<-illustration;;
+<=nrel_sc_text_translation:...
+	(*
+->rrel_example: "file://team_competitions.jpeg"
+	(*
+=>nrel_format:format_png;;
+	*);;	
+*);;
+*);
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(командные соревнования)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[В спортивной практике многих видов командные соревнования спорта наиболее целесообразны и имеют широкое применение. ](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);;
+team_competitions->{rrel_example:[волейбол]};;

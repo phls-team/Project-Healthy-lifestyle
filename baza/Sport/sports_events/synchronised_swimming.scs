@@ -1,0 +1,35 @@
+synchronised_swimming<-sc_node_not_relation;
+=>nrel_main_idtf:[синхронное плавание] (*<-lang_ru;;*);
+[Synchronised swimming] (*<-lang_en;;*);
+<=nrel_inclusion: concept_game;olimpic_sport;
+<=nrel_place_of_appearence_of_the_sport:[Канада];
+<-rrel_key_sc_element:..(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Синхронное плавание)](*<-lang_ru;;*);;
+
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[  <b>Синхронное плавание</b> – водный <b><sc_element sys_idtf="concept_game">вид спорта</b></sc_element>, связанный с выполнением в воде различных фигур под музыку.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+<-rrel_key_sc_element:...
+	(*
+<-illustration;;
+<=nrel_sc_text_translation:...
+	(*
+->rrel_example: "file://synchronised_swimming.jpg"
+	(*
+=>nrel_format:format_png;;
+	*);;	
+*);;
+*);
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Синхронное плавание)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[Первоначально известное как водный балет, синхронное плавание появилось в Канаде в 1920-е годы. В следующем десятилетии оно распространилось и в США.   ](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);;

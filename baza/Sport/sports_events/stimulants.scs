@@ -1,0 +1,28 @@
+stimulants<-sc_node_not_relation;
+=>nrel_main_idtf:[стимуляторы] (*<-lang_ru;;*);
+[stimulants] (*<-lang_en;;*);
+
+<-rrel_key_sc_element:..(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(стимуляторы)](*<-lang_ru;;*);;
+=>nrel_using_constants:{
+substanse
+};;
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[  <b>стимуляторы</b> – вещества, которые оказывают непосредственное влияние на ЦНС, меняя психическое состояние человека.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+  
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(стимуляторы )](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[После употребления наркотиков-стимуляторов возникает улучшение настроения, повышается психическая активность, пропадает сонливость.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);;
+
+stimulants->{rrel_example:[аддерал]};;

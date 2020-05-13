@@ -1,0 +1,19 @@
+world_chess_championship_2019<-sc_node_not_relation;
+=>nrel_main_idtf:[Чемпионат мира по шахматам 2019] (*<-lang_ru;;*);
+[World Chess Championship 2019] (*<-lang_en;;*);
+<=nrel_inclusion: championship;
+<-world_chess_championship;
+<=nrel_vanue_of_sporting_event:[Ханты-Мансийск];
+<=nrel_date_of_sporting_event:[9 сентября-4 октября 2019 года];
+
+<-rrel_key_sc_element:...
+	(*
+<-illustration;;
+<=nrel_sc_text_translation:...
+	(*
+->rrel_example: "file://world_chess_championship_2019.png"
+	(*
+=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;
