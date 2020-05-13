@@ -1,0 +1,41 @@
+concept_upper_limbs_muscles
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [muscles of upper limbs](*<-lang_en;;*);
+          [мышцы верхних конечностей](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(мышцы верхних конечностей)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Мышцы, которые обеспечивают большое разнообразие движений руки.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:muscles;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(мышцы верхних конечностей)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Мышечная система руки состоит из нескольких слоев мышц, причём многие мышцы перекинуты через более чем один сустав, благодаря чему при сокращении одной мышцы может изменяться положение в нескольких суставах.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://concept_upper_limbs_muscles.png"
+			(*
+				=> nrel_format : format_png ;;
+			*);;
+		*);;
+	*);;

@@ -1,0 +1,29 @@
+concept_dizziness
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [dizziness](*<-lang_en;;*);
+          [головокружение](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(головокружение)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Ощущение мнимого вращения пространства вокруг себя или себя в пространстве, либо ощущение чувства приближающейся потери сознания, неуверенности, шаткости.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_side_effect:concept_training;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(головокружение)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Примерно 5% населения планеты страдает от головокружения, также данный симптом является одним из самых частых симптомов в неврологии, чаще встречается лишь головная боль.](*<- lang_ru;;*);;
+			*);;
+		*);;

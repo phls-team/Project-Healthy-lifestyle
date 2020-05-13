@@ -1,0 +1,41 @@
+concept_bruise
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [bruise](*<-lang_en;;*);
+          [синяк](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(синяк)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Ограниченное скопление крови при закрытых и открытых повреждениях органов и тканей с разрывом сосудов; при этом образуется полость, содержащая жидкую или свернувшуюся кровь.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_side_effect:concept_training;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(синяк)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Постоянные микротравмы приводят к рубцовым изменениям подкожной клетчатки и соединительной ткани, что чревато даже развитием онкологии.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://concept_bruise.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

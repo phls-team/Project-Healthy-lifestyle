@@ -1,0 +1,27 @@
+concept_training
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [training](*<-lang_en;;*);
+          [тренировка](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(тренировка)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Осмысленная физическая деятельность, направленная на развитие силы, выносливости, ловкости, техничности, скорости и других физических и психологических навыков.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(тренировка)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Тренировки могут присутствовать в самых различных облястях человеческой деятельности: спорте, науке, работе, хобби и многих других.](*<- lang_ru;;*);;
+			*);;
+		*);;

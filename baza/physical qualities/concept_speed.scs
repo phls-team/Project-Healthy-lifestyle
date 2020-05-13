@@ -1,0 +1,32 @@
+concept_speed
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [speed](*<-lang_en;;*);
+          [быстрота](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(быстрота)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Способность человека выполнять двигательные действия в минимальное для данных условий время, без снижения эффективности техники, выполняемого двигательного действия.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(быстрота)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Развивать быстроту лучше всего в детском и подростковом возрасте, когда скоростные качества лучше совершенствуются в процессе выполнения игровых упражнений.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_training_apparatus_orientation:cycle_machine;bicycle_machine;elliptical_trainer;running_machine;step_machine;climber;
+<=nrel_physical_quality:concept_person;
+<=nrel_inclusion:concept_physical_qualities_of_person;;

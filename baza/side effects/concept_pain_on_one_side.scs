@@ -1,0 +1,41 @@
+concept_pain_on_one_side
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [pain on one side](*<-lang_en;;*);
+          [боль в боку](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(боль в боку)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Ощущение боли в области брюшной полости.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_side_effect:concept_training;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(боль в боку)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Органы, которые могут спровоцировать боль, располагаются в брюшной полости и забрюшинном пространстве.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://concept_pain_on_one_side.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

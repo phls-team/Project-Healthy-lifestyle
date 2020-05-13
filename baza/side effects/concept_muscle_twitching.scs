@@ -1,0 +1,41 @@
+concept_muscle_twitching
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [muscle twitching](*<-lang_en;;*);
+          [подёргивание мышц](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(подёргивание мышц)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Ощущение, когда внезапно начинают дергаться мышцы.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_side_effect:concept_training;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(подёргивание мышц)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Как правило, ответственной за непроизвольные движения является возбужденная нервная система.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://concept_muscle_twitching.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

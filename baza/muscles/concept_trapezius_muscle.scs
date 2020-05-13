@@ -1,0 +1,42 @@
+concept_trapezius_muscle
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [trapezius muscle](*<-lang_en;;*);
+          [трапециевидная мышца](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(трапециевидная мышца)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Плоская широкая мышца, занимающая поверхностное положение в задней области шеи и в верхнем отделе спины.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_neck_muscles;
+<=nrel_involved_muscle:hammer_machine;concept_power_sports_equipment;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(трапециевидная мышца)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Тренировка верхней части трапециевидных мышц происходит путём поднятия и опускания плеч с отягощением в руках, нижней части - путём сведения-разведения лопаток спины под нагрузкой.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://concept_trapezius_muscle.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

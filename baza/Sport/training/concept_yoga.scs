@@ -1,0 +1,41 @@
+concept_yoga
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [yoga](*<-lang_en;;*);
+          [йога](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(йога)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Вид спорта на основе ритмической гимнастики и аэробики, в котором основными элементами являются асаны.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_species:concept_training;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(йога)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Йога позволяет найти баланс между телом и разумом, возможность обрести отличную физическую форму, развить концентрацию, избежать травм, улучшить душевное состояние, повысить свою самооценку, повысить сопротивляемость стрессам.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://concept_yoga.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

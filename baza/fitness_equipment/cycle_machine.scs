@@ -1,0 +1,42 @@
+cycle_machine
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [cycle machine](*<-lang_en;;*);
+          [спин-байк](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(спин-байк)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Тренажёр, который имитирует езду на шоссейном и горном велосипедах.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_cardiotraining_apparatus;
+<=nrel_training_apparatus_type:concept_cardiotraining_apparatus;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(спин-байк)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Обеспечивает гораздо большую нагрузку, чем классический велотренажер, при этом отличается компактными габаритами и стильным дизайном.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://cycle_machine.png"
+			(*
+				=> nrel_format : format_png ;;
+			*);;
+		*);;
+	*);;

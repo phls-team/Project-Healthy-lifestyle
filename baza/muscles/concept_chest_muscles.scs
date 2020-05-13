@@ -1,0 +1,42 @@
+concept_chest_muscles
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [chest muscles](*<-lang_en;;*);
+          [мышцы грудной клетки](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(мышцы грудной клетки)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Одна из самых больших мышечных групп человека, которая расположена на наружной поверхности грудного отдела.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_torso_muscles;
+<=nrel_involved_muscle:rowing_machine;traction_machine;butterfly_machine;crossover;concept_vertical_traction_machine;concept_horizontal_traction_machine;	
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(мышцы грудной клетки)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Мышцы груди уникальны по своей физиологии и генетической предрасположенности к росту.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://concept_chest_muscles.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

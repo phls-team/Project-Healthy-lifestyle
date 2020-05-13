@@ -1,0 +1,41 @@
+concept_DOMS
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [DOMS](*<-lang_en;;*);
+          [крепатура](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(крепатура)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Сложные, в том числе болевые ощущения в мышцах, возникающие через несколько часов или дней после непривычной или интенсивной физической нагрузки организма.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_side_effect:concept_training;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(крепатура)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Крепатура(DOMS) возникает через 24–72 часа после тренировки, проведенной после длительного перерыва или с повышенной, по сравнению с обычной нагрузкой, интенсивностью.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://concept_DOMS.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

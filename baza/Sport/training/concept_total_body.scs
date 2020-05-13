@@ -1,0 +1,41 @@
+concept_total_body
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [total body](*<-lang_en;;*);
+          [тренировка на всё тело](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(тренировка на всё тело)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Комплекс силовых упражнений, которые нацелены на то, чтобы сделать ваше тело рельефным, повысить выносливость, силу и гибкость.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_species:concept_training;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(тренировка на всё тело)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Такая тренировка решает одновременно две задачи - сжигает лишний жир и приводит мышцы в тонус.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://concept_total_body.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

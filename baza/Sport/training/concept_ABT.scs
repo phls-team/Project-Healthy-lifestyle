@@ -1,0 +1,41 @@
+concept_ABT
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [ABT](*<-lang_en;;*);
+          [АВТ](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(АВТ)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Одна из самых популярных силовых частей аэробики, формирующий идеальную форму ног и ягодиц.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_species:concept_training;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(АВТ)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Силовые упражнения этого комплекса эффективно корректируют проблемные зоны и уменьшают жировые отложения.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://concept_ABT.png"
+			(*
+				=> nrel_format : format_png ;;
+			*);;
+		*);;
+	*);;

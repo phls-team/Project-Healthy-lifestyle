@@ -1,0 +1,41 @@
+concept_relief
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [relief](*<-lang_en;;*);
+          [рельеф](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(рельеф)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Внешняя видимость мышц человека.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_effect:push_ups;strap;raising_hands;arm_flexion;arm_extension;twisting;lifting_legs;bicycle;attacks;leg_retraction;swing_foot;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(рельеф)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Для того, чтобы сделать тело рельефным, сначала вы набираете мышечную массу, затем начинаете работу над рельефным телом.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://concept_relief.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

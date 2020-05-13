@@ -1,0 +1,31 @@
+concept_agility
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [agility](*<-lang_en;;*);
+          [ловкость](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(ловкость)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Способность человека решать двигательную задачу за короткий период обучения, а также перестраивать свои двигательные действия, в изменяющихся внешних условиях.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(ловкость)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Ловкость развивается в необычных положениях, которые выполняются при изменении внешних условий выполнения упражнения.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_training_apparatus_orientation:traction_machine;bars;crossover;
+<=nrel_physical_quality:concept_person;
+<=nrel_inclusion:concept_physical_qualities_of_person;;

@@ -1,0 +1,41 @@
+concept_protein
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [protein](*<-lang_en;;*);
+          [протеин](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(протеин)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Органическое вещество, состоящее из аминокислот соединённых между собой и образующих полипептиды.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+=>nrel_inclusion:protein_Prostar;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(протеин)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Употребление протеина позволяет быстрее наполнить организм питательными веществами и запустить процесс мышечного роста и восстановления.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://concept_protein.png"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

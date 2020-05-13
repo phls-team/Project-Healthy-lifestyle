@@ -1,0 +1,42 @@
+concept_tricep
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [tricep](*<-lang_en;;*);
+          [трицепс](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(трицепс)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Мышца-разгибатель задней группы плеча, занимает всю заднюю сторону плеча, состоит из трёх головок — длинной, латеральной и медиальной.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_upper_limbs_muscles;
+<=nrel_involved_muscle:hammer_machine;rowing_machine;traction_machine;butterfly_machine;crossover;concept_vertical_traction_machine;concept_horizontal_traction_machine;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(трицепс)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Трицепс работает каждый раз, когда вы разгибаете конечность в плечевом или локтевом суставе.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://concept_tricep.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
