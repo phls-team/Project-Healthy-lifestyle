@@ -1,0 +1,81 @@
+Aliaksandra_Herasimenia
+
+<-sc_node_not_relation;
+<=nrel_inclusion:concept_person;
+<=nrel_inclusion:concept_athlete;
+
+=> nrel_main_idtf:
+          [Aliaksandra Herasimenia](*<-lang_en;;*);
+          [Александра Герасименя](*<-lang_ru;;*);
+
+=> nrel_sport:swimming;
+=> nrel_weight:55;
+=> nrel_age:34;
+=> nrel_sports_rank:honored_master_of_sport;
+=> nrel_height:176;
+=> nrel_birthplace: Belarus;
+=> nrel_sports_achivments: ...
+(*
+<= concept_competition: ...
+	(*
+		<-[Олимпиада в Лондоне 2012](*<-lang_ru;;*);;
+		<=nrel_sports_awards:silver_medal;;
+		<=nrel_sports_awards:silver_medal;;
+	*);;
+
+<= concept_competition: ...
+	(*
+		<-[Олимпиада в Лондоне 2016](*<-lang_ru;;*);;
+		<=nrel_sports_awards:bronze_medal;;
+	*);;
+
+<= concept_competition: ...
+	(*
+		<-[Чемпионат Мира 2007](*<-lang_ru;;*);;
+		<=nrel_sports_awards:silver_medal;;
+	*);;
+
+<= concept_competition: ...
+	(*
+		<-[Чемпионат Мира 2011](*<-lang_ru;;*);;
+		<=nrel_sports_awards:gold_medal;;
+	*);;
+
+<= concept_competition: ...
+	(*
+		<-[Чемпионат Мира 2017](*<-lang_ru;;*);;
+		<=nrel_sports_awards:bronze_medal;;
+	*);;
+		
+<= concept_competition: ...
+	(*
+		<-[Чемпионат Европы 2002](*<-lang_ru;;*);;
+		<=nrel_sports_awards:bronze_medal;;
+		<=nrel_sports_awards:bronze_medal;;
+	*);;
+		
+<= concept_competition: ...
+	(*
+		<-[Чемпионат Европы 2006](*<-lang_ru;;*);;
+		<=nrel_sports_awards:silver_medal;;
+	*);;
+		
+<= concept_competition: ...
+	(*
+		<-[Чемпионат Европы 2010](*<-lang_ru;;*);;
+		<=nrel_sports_awards:gold_medal;;
+		<=nrel_sports_awards:silver_medal;;
+	*);;
+*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://Image/Aliaksandra_Herasimenia.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

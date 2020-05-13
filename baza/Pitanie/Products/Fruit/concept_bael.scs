@@ -1,0 +1,51 @@
+concept_bael
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [bael](*<-lang_en;;*);
+          [баиль](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(баиль)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Баиль (Матум) – плод дерева Бильва (Баэль, Мраморная Яблоня), свойства которого были описаны в древней Индии более двух тысяч лет назад. В Индии Баэль стал культовым растением, получил большое религиозное и медицинское значение, часто фигурировал в различных трактатах и священных писаниях.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_fruit;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. 1 (О баиле)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Благодаря большому количеству полезных веществ Баиль способствует укреплению иммунитета и улучшению его защитных функций. Важнейшую роль в этом процессе играет витамины B, C и минералы.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+=>nrel_calorie_content:48;
+
+=> nrel_vitamin_PP_content:0.4mg_per_100g;
+=> nrel_vitamin_C_content:21mg_per_100g;
+=> nrel_vitamin_B1_content:0.23mg_per_100g;
+=> nrel_vitamin_B2_content:0.4mg_per_100g;
+=> nrel_vitamin_B3_content:0.06mg_per_100g;
+
+=>nrel_birthplace:southeast_asia;;
+concept_bael
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://Image/bael.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

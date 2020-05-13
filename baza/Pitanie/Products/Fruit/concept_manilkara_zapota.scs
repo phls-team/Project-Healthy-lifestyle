@@ -1,0 +1,56 @@
+concept_manilkara_zapota
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [manilkara zapota](*<-lang_en;;*);
+          [саподилла](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(саподилла)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Саподилла — вечнозелёное медленно растущее дерево с пирамидальной кроной, 20-30 м высотой. Листья эллиптические глянцевые, 7-11 см длиной и 2-4 см шириной. Цветки мелкие, белые.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_fruit;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. 1 (О саподилле)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Плоды саподиллы округлые или овальные, в диаметре 5-10 см, с сочной жёлто-бурой сладкой мякотью и  чёрными твёрдыми семенами, которые могут зацепиться в горле, если их не вытащить перед употреблением плода. По структуре саподилла напоминает плод хурмы. Спелый плод покрыт бледно- или ржаво-коричневой тонкой кожицей. Не дозревшие плоды твёрдые и вяжущие на вкус. Спелый фрукт мягкий, вкусом напоминает грушу, пропитанную сладким сиропом. ](*<- lang_ru;;*);;
+			*);;
+		*);
+
+=>nrel_calorie_content:83;
+
+=> nrel_vitamin_PP_content:0.4mg_per_100g;
+=> nrel_vitamin_E_content:0.5mg_per_100g;
+=> nrel_vitamin_C_content:14.7mg_per_100g;
+=> nrel_vitamin_B1_content:0.06mg_per_100g;
+=> nrel_vitamin_B2_content:0.02mg_per_100g;
+=> nrel_vitamin_B3_content:0.20mg_per_100g;
+=> nrel_vitamin_B5_content:0.25mg_per_100g;
+=> nrel_vitamin_B6_content:0.04mg_per_100g;
+=> nrel_vitamin_B9_content:0.01mg_per_100g;
+=> nrel_vitamin_A_content:0.06mg_per_100g;
+
+=>nrel_birthplace:mexico;;
+concept_manilkara_zapota
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://Image/manilkara_zapota.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

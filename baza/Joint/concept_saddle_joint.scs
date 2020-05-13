@@ -1,0 +1,37 @@
+concept_saddle_joint
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [saddle joint](*<-lang_en;;*);
+          [седловидный сустав](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(седловидный сустав)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Суставные поверхности седловидной формы охватывают друг друга](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_biaxial;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. 1 (Движение седловидного сустава)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Вокруг поперечной (фронтальной) оси (сгибаное, разгибание, противопостановление), сагиттальной передне-задней оси (приведение и отведение)](*<- lang_ru;;*);;
+			*);;
+		*);
+
+->rrel_example: carpal_metacarpal_thumb_joint; heel_cuboid_joint; sternoclavicular_joint;;
+carpal_metacarpal_thumb_joint=>nrel_main_idtf:
+[запястно-пястный большого пальца кисти сустав](*<-lang_ru;; *);;
+heel_cuboid_joint=>nrel_main_idtf:
+[пяточно-кубовидный сустав](*<-lang_ru;; *);;
+sternoclavicular_joint=>nrel_main_idtf:
+[грудинно-ключичный сустав](*<-lang_ru;; *);;

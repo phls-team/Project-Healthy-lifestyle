@@ -1,0 +1,41 @@
+concept_flat_joint
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [flat joint](*<-lang_en;;*);
+          [плоский сустав](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(плоский сустав)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Суставные поверхности плоские](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_multiaxial;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. 1 (Движение плоского сустава)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Вокруг поперечной (фронтальной) оси (сгибаное, разгибание), продольной оси (вращение). Объем движений ограничен](*<- lang_ru;;*);;
+			*);;
+		*);
+
+->rrel_example: arched_joint; lateral_atlantis_joint; carpal_joint; sacroiliac_joint; tarsal_metatarsal_joint;;
+arched_joint=>nrel_main_idtf:
+[дугоотросчатый сустав](*<-lang_ru;; *);;
+lateral_atlantis_joint=>nrel_main_idtf:
+[латеральные атлантоосевый сустав](*<-lang_ru;; *);;
+carpal_joint=>nrel_main_idtf:
+[запястно-пястный сустав](*<-lang_ru;; *);;
+sacroiliac_joint=>nrel_main_idtf:
+[крестцово-подвздошный сустав](*<-lang_ru;; *);;
+tarsal_metatarsal_joint=>nrel_main_idtf:
+[предплюсне-плюсневый сустав](*<-lang_ru;; *);;

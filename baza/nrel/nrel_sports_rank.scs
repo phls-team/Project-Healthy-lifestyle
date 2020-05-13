@@ -1,0 +1,63 @@
+nrel_sports_rank
+ 
+<-sc_node_norole_relation;
+
+=> nrel_main_idtf:
+          [sports rank*](*<-lang_en;;*);
+          [спортивное звание*](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(спортивное звание)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Спортивные звания присваиваются спортсменам – гражданам Республики Беларусь при выполнении ими установленных ЕСК норм на официальных спортивных соревнованиях, за исключением спортивных соревнований, проводимых среди ветеранов.](*<- lang_ru;;*);;
+			*);;
+			<= nrel_using_constants: {
+                concept_athlete;
+				concept_sport
+            };;
+		*);
+
+<=nrel_inclusion:concept_athlete;
+<=nrel_inclusion:nrel_sports_achivments;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. 1 (О спортивном звании)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Спортсменам, которым присвоены спортивные звания МСМК, МС, МСМК среди инвалидов, МС среди инвалидов, Министерство спорта и туризма выдает соответствующие удостоверения о спортивном звании, а также нагрудные знаки](*<- lang_ru;;*);;
+			*);;
+			<= nrel_using_constants: {
+                concept_athlete;
+				concept_sport
+            };;
+		*);
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. 2 (О спортивном звании)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Спортивные звания и разряды присваиваются в видах спорта, включенных в ЕСК, по которым проводятся официальные спортивные соревнования, включенные в республиканский и местные календарные планы проведения официальных спортивных соревнований.](*<- lang_ru;;*);;
+			*);;
+			<= nrel_using_constants: {
+                concept_athlete;
+				concept_sport
+            };;
+		*);
+
+=>nrel_inclusion:master_of_sport; international_master_of_sports; master_of_sport_among_the_disabled; international_master_of_sports_among_the_disabled; honored_master_of_sport;;
+master_of_sport=>nrel_main_idtf:
+[мастер спорта](*<-lang_ru;; *);;
+international_master_of_sports=>nrel_main_idtf:
+[мастер спорта международного класса](*<-lang_ru;; *);;
+master_of_sport_among_the_disabled=>nrel_main_idtf:
+[мастер спорта среди инвалидов](*<-lang_ru;; *);;
+international_master_of_sports_among_the_disabled=>nrel_main_idtf:
+[мастер спорта международного класса среди инвалидов](*<-lang_ru;; *);;
+honored_master_of_sport=>nrel_main_idtf:
+[заслуженный мастер спорта](*<-lang_ru;; *);;

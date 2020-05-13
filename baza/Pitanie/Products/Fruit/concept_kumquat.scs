@@ -1,0 +1,79 @@
+concept_kumquat
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [kumquat](*<-lang_en;;*);
+          [кумкват](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(кумкват)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Кумкват – небольшой вечнозеленый кустарник. В Европе его называют японским апельсином. Другие названия этого растения – фортунелла или кинкан. Плод кумквата – самый маленький из цитрусовых, продолговатый по форме, он не бывает больше четырёх сантиметров в длину. Название его происходит от словосочетания в кантонском диалекте «гам гват», что обозначает «золотой апельсин».](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_fruit;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. 1 (О кумквате)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Плоды кумквата имеют ярко-оранжевый цвет, сильный приятный аромат и необычный вкус. Кумкват может быть сладким или же пикантным кислым, его едят вместе с кожицей – она тонкая и имеет чуть терпковатый вкус.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. 2 (О кумквате)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Плоды кумквата содержат много полезных веществ – витаминов и эфирных масел. В кумквате содержатся витамин С и Р, пектиновые вещества. В нём не бывает нитратов. Этот фрукт улучшает работу пищеварительной системы. Снимает напряжение, избавляет от апатии и депрессивного настроения. Кумкват содержит притивогрибковые элементы. С давних времен и по сей день кумкват используется в народной медицине Востока.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+=>nrel_calorie_content:71;
+
+=> nrel_vitamin_E_content:0.15mg_per_100g;
+=> nrel_vitamin_C_content:43.9mg_per_100g;
+=> nrel_vitamin_B1_content:0.03mg_per_100g;
+=> nrel_vitamin_B2_content:0.09mg_per_100g;
+=> nrel_vitamin_B3_content:0.42mg_per_100g;
+=> nrel_vitamin_B5_content:0.28mg_per_100g;
+=> nrel_vitamin_B6_content:0.03mg_per_100g;
+=> nrel_vitamin_A_content:0.29mg_per_100g;
+
+=>nrel_birthplace:South_Asia;;
+concept_kumquat
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://Image/kumquat.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);
+
+=>nrel_variety:fortunella_crassifolia;fortunella_hindsii;fortunella_japonica;fortunella_margarita;fortunella_obovata;fortunella_polyandra;;
+
+fortunella_crassifolia=>nrel_main_idtf:
+[Кумкват мейва](*<-lang_ru;; *);;
+fortunella_hindsii=>nrel_main_idtf:
+[Кумкват гонконгский](*<-lang_ru;; *);;
+fortunella_japonica=>nrel_main_idtf:
+[Кумкват япон­ский](*<-lang_ru;; *);;
+fortunella_margarita=>nrel_main_idtf:
+[Кумкват мар­га­ри­та](*<-lang_ru;; *);;
+fortunella_obovata=>nrel_main_idtf:
+[Кумкват оваль­ный](*<-lang_ru;; *);;
+fortunella_polyandra=>nrel_main_idtf:
+[Кумкват малайский](*<-lang_ru;; *);;

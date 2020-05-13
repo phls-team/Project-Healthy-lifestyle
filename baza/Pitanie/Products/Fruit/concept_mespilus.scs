@@ -1,0 +1,70 @@
+concept_mespilus
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [mespilus](*<-lang_en;;*);
+          [мушмула](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(мушмула)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Мушмула – многолетнее дерево или крупный кустарник высотой 4-8 м. Годовой прирост наиболее интенсивен в возрасте до 7 лет. Продолжительность жизни достигает 50 лет. Корневая система сильно разветвлена, она располагается близко к поверхности почвы. Ветки покрыты гладкой тёмно-коричневой, почти черной, корой. Молодые побеги имеют рыже-серую окраску и войлочное опушение.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_fruit;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. 1 (О мушмуле)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Косточки мушмулы традиционно используются в Италии для настоя алкогольных напитков, которым они придают вкус вишнёвого ликёра. Также ими начиняют тушки птиц перед запеканием в духовке для придания мясу птицы аромата фруктов.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. 2 (О мушмуле)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[В традиционной китайской медицине экстракты мушмуллы используются для приготовления сиропа от кашля, различных лекарств и настоек для детей и взрослых.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+=>nrel_calorie_content:48;
+
+=> nrel_vitamin_C_content:10mg_per_100g;
+=> nrel_vitamin_B1_content:0.02mg_per_100g;
+=> nrel_vitamin_B2_content:0.04mg_per_100g;
+=> nrel_vitamin_B5_content:0.2mg_per_100g;
+
+=>nrel_birthplace:Greece;;
+Greece=>nrel_main_idtf:
+[Греция](*<-lang_ru;; *);
+[Greece](*<-lang_en;; *);;
+concept_mespilus
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://Image/mespilus.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);
+
+=>nrel_variety:mespilus_japonica;mespilus_germanica;;
+
+mespilus_japonica=>nrel_main_idtf:
+[мушмула японская](*<-lang_ru;; *);;
+mespilus_germanica=>nrel_main_idtf:
+[мушмула германская](*<-lang_ru;; *);;

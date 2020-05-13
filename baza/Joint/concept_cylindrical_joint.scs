@@ -1,0 +1,37 @@
+concept_cylindrical_joint
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [cylindrical joint](*<-lang_en;;*);
+          [цилиндрический сустав](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(цилиндрический сустав)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Выпуклая суставная поверхность - отрезок цилиндра; вогнутая соответсвует выпуклости цилиндра](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_monoaxial;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. 1 (О движении цилиндрического сустава)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Поворот вокруг поперечной (фронтальной) оси сустава (сгибание, разгибание, вращение)](*<- lang_ru;;*);;
+			*);;
+		*);
+
+->rrel_example: mid_atlantis_joint; proximal_radial_elbow_joint; distal_radial_elbow_joint;;
+mid_atlantis_joint=>nrel_main_idtf:
+[серединный атлантоосевой сустав](*<-lang_ru;; *);;
+proximal_radial_elbow_joint=>nrel_main_idtf:
+[проксимальный луче-локтевой сустав](*<-lang_ru;; *);;
+distal_radial_elbow_joint=>nrel_main_idtf:
+[дистальный луче-локтевой сустав](*<-lang_ru;; *);;

@@ -1,0 +1,48 @@
+nrel_sports_awards
+ 
+<-sc_node_norole_relation;
+
+=> nrel_main_idtf:
+          [sports awards*](*<-lang_en;;*);
+          [спортивные награды*](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(спортивные награды)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Призы и награды спортивные вручаются победителям спортивных соревнований за большой труд, мастерство и волю к победе. Спортивные призы присуждают отдельным спортсменам и целым коллективам — командам, физкультурным организациям. Призами награждают спорткомитеты и советы ДСО, спортивные и общественные редакции газет и журналов. Диплом, свидетельство, жетон, медаль, лента чемпиона, памятный приз, переходящий приз (кубок)— все это спортивные награды.](*<- lang_ru;;*);;
+			*);;
+			<= nrel_using_constants: {
+                concept_athlete;
+				concept_competition
+            };;
+		*);
+
+<=nrel_inclusion:concept_athlete;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. 1 (О спортивных наградах)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Победителям крупнейших соревнований в союзной республике: первенства, спартакиады — вручается алая лента чемпиона. При награждении победителя и на торжественных парадах лента надевается через плечо. Чемпиона мира по шахматам увенчивают лавровым венком.](*<- lang_ru;;*);;
+			*);;
+			<= nrel_using_constants: {
+                concept_competition;
+				concept_athlete
+            };;
+		*);
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://Image/sports_awards.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

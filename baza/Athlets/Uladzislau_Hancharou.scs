@@ -1,0 +1,73 @@
+Uladzislau_Hancharou
+
+<-sc_node_not_relation;
+<=nrel_inclusion:concept_person;
+<=nrel_inclusion:concept_athlete;
+
+=> nrel_main_idtf:
+          [Uladzislau Hancharou](*<-lang_en;;*);
+          [Владислав Гончаров](*<-lang_ru;;*);
+
+=> nrel_sport:concept_trampolining;
+=> nrel_weight:65;
+=> nrel_age:24;
+=> nrel_sports_rank:international_master_of_sports;
+=> nrel_height:172;
+=> nrel_birthplace: Belarus;
+=> nrel_sports_achivments: ...
+(*
+<= concept_competition: ...
+	(*
+		<-[Олимпиада в Рио-де-Жанейро 2016](*<-lang_ru;;*);;
+		<=nrel_sports_awards:gold_medal;;
+	*);;
+
+<= concept_competition: ...
+	(*
+		<-[Чемпионат Мира 2014](*<-lang_ru;;*);;
+		<=nrel_sports_awards:silver_medal;;
+		<=nrel_sports_awards:bronze_medal;;
+	*);;
+
+<= concept_competition: ...
+	(*
+		<-[Чемпионат Мира 2015](*<-lang_ru;;*);;
+		<=nrel_sports_awards:silver_medal;;
+		<=nrel_sports_awards:silver_medal;;
+		<=nrel_sports_awards:bronze_medal;;
+	*);;
+
+<= concept_competition: ...
+	(*
+		<-[Чемпионат Европы 2014](*<-lang_ru;;*);;
+		<=nrel_sports_awards:gold_medal;;
+		<=nrel_sports_awards:bronze_medal;;
+	*);;
+
+<= concept_competition: ...
+	(*
+		<-[Чемпионат Европы 2016](*<-lang_ru;;*);;
+		<=nrel_sports_awards:gold_medal;;
+		<=nrel_sports_awards:gold_medal;;
+		<=nrel_sports_awards:silver_medal;;
+	*);;
+		
+<= concept_competition: ...
+	(*
+		<-[Европейские игры в Баку 2015](*<-lang_ru;;*);;
+		<=nrel_sports_awards:silver_medal;;
+		<=nrel_sports_awards:silver_medal;;
+	*);;
+*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://Image/Uladzislau_Hancharou.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

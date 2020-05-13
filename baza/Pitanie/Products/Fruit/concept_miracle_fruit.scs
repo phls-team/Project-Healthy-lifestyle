@@ -1,0 +1,49 @@
+concept_miracle_fruit
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [miracle fruit](*<-lang_en;;*);
+          [магический фрукт](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(магический фрукт)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Магический фрукт – растение семейства Сапотовые. Плод магического фрукта – костянка небольшого размера, окрашена в цвет фуксии, похож на барбарис и в длину достигает примерно 3 см. Внутри плода находится семя белого цвета, которое в размере не больше кофейного зернышка](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_fruit;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. 1 (О магическом фрукте)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Особенностью этого фрукта считается возможность действовать на вкусовые рецепторы и на некоторое время «отключать» те, которые отвечают за восприятие кислого вкуса, то есть если после магического фрукта съесть лимон, то он покажется сладким. Это происходит благодаря содержанию белка миракулина. Эффект сохраняется в течение 2-х часов.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+=>nrel_calorie_content:553;
+
+=> nrel_vitamin_E_content:0.78mg_per_100g;
+=> nrel_vitamin_C_content:1.33mg_per_100g;
+=> nrel_vitamin_A_content:0.05mg_per_100g;
+
+=>nrel_birthplace:Africa;;
+concept_miracle_fruit
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://Image/miracle_fruit.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

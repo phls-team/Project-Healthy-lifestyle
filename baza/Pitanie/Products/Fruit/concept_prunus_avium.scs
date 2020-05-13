@@ -1,0 +1,63 @@
+concept_prunus_avium
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [prunus avium](*<-lang_en;;*);
+          [черешня](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(черешня)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Черешня — это древесное неприхотливое плодоносящее растение, относящееся к роду Сливовых. Имеет темно-зеленую листву и сочные сладкие плоды. Срок жизни одного дерева может составлять до 100 лет. Корневая система расположена горизонтально, но чем старше дерево черешни, тем глубже в землю уходят корни.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_berry;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. 1 (О черешне)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Черешня состоит из органических и пектиновых веществ, сахара (фруктозы и глюкозы), микро- и макроэлементов. Помимо белков, жиров, углеводов в черешне есть клетчатка, калий, медь, магний, фосфор, железо, а также группа витаминов: C, B5 и B6, A, B1 и B2, K. Черешня богата фолиевой кислотой, дубильными веществами, флавоноидами.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+=>nrel_calorie_content:60;
+
+=> nrel_vitamin_E_content:0.3mg_per_100g;
+=> nrel_vitamin_C_content:15mg_per_100g;
+=> nrel_vitamin_B1_content:0.01mg_per_100g;
+=> nrel_vitamin_B2_content:0.01mg_per_100g;
+=> nrel_vitamin_A_content:0.02mg_per_100g;
+
+=>nrel_birthplace:Switzerland;;
+Switzerland=>nrel_main_idtf:
+[Швейцария](*<-lang_ru;; *);
+[Switzerland](*<-lang_en;; *);;
+concept_prunus_avium
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://Image/prunus_avium.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);
+
+=>nrel_variety:gronkavaya;iput;alaya;;
+
+gronkavaya=>nrel_main_idtf:
+[Гронкавая](*<-lang_ru;; *);;
+iput=>nrel_main_idtf:
+[Ипуть](*<-lang_ru;; *);;
+alaya=>nrel_main_idtf:
+[Алая](*<-lang_ru;; *);;

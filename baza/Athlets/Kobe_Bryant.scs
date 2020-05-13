@@ -1,0 +1,77 @@
+Kobe_Bryant
+
+<-sc_node_not_relation;
+<=nrel_inclusion:concept_person;
+<=nrel_inclusion:concept_athlete;
+
+=> nrel_main_idtf:
+          [Kobe Bryant](*<-lang_en;;*);
+          [Коби Брайант](*<-lang_ru;;*);
+
+=> nrel_sport:concept_basketball;
+=> nrel_weight:96;
+=> nrel_age:41;
+=> nrel_height:198;
+=> nrel_birthplace: USA;
+=> nrel_sports_achivments: ...
+(*
+<= concept_competition: ...
+	(*
+		<-[НБА 2000](*<-lang_ru;;*);;		
+		<=nrel_sports_awards:gold_medal;;
+	*);;
+
+<= concept_competition: ...
+	(*
+		<-[НБА 2001](*<-lang_ru;;*);;		
+		<=nrel_sports_awards:gold_medal;;
+	*);;
+
+<= concept_competition: ...
+	(*
+		<-[НБА 2002](*<-lang_ru;;*);;		
+		<=nrel_sports_awards:gold_medal;;
+	*);;
+
+<= concept_competition: ...
+	(*
+		<-[НБА 2009](*<-lang_ru;;*);;		
+		<=nrel_sports_awards:gold_medal;;
+	*);;
+
+<= concept_competition: ...
+	(*
+		<-[НБА 2010](*<-lang_ru;;*);;		
+		<=nrel_sports_awards:gold_medal;;
+	*);;
+
+<= concept_competition: ...
+	(*
+		<-[Олимпиада в Пекине 2008](*<-lang_ru;;*);;
+		<=nrel_sports_awards:gold_medal;;
+	*);;
+		
+<= concept_competition: ...
+	(*
+		<-[Олимпиада в Лондоне 2012](*<-lang_ru;;*);;
+		<=nrel_sports_awards:gold_medal;;
+	*);;
+	
+<= concept_competition: ...
+	(*
+		<-[Чемпионат Америки 2007](*<-lang_ru;;*);;
+		<=nrel_sports_awards:gold_medal;;
+	*);;
+*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://Image/Kobe_Bryant.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

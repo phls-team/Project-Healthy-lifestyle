@@ -1,0 +1,85 @@
+Victoria_Azarenka
+
+<-sc_node_not_relation;
+<=nrel_inclusion:concept_person;
+<=nrel_inclusion:concept_athlete;
+
+=> nrel_main_idtf:
+          [Victoria Azarenka](*<-lang_en;;*);
+          [Виктория Азаренко](*<-lang_ru;;*);
+
+=> nrel_sport:concept_big_tennis;
+=> nrel_weight:66;
+=> nrel_age:30;
+=> nrel_sports_rank:honored_master_of_sport;
+=> nrel_height:183;
+=> nrel_birthplace: Belarus;
+=> nrel_sports_achivments: ...
+(*
+<= concept_competition: ...
+	(*
+		<-[Кубок турнира в Брисбене 2009](*<-lang_ru;;*);;
+		<=nrel_sports_awards:gold_medal;;
+	*);;
+
+<= concept_competition: ...
+	(*
+		<-[Кубок турнира в Майами 2009](*<-lang_ru;;*);;
+		<=nrel_sports_awards:gold_medal;;
+	*);;
+
+<= concept_competition: ...
+	(*
+		<-[Кубок турнира в Москве 2010](*<-lang_ru;;*);;
+		<=nrel_sports_awards:gold_medal;;
+	*);;
+
+<= concept_competition: ...
+	(*
+		<-[Кубок турнира в Марблье 2011](*<-lang_ru;;*);;
+		<=nrel_sports_awards:gold_medal;;
+	*);;
+
+<= concept_competition: ...
+	(*
+		<-[Олимпиада в Лондоне 2012](*<-lang_ru;;*);;
+		<=nrel_sports_awards:gold_medal;;
+		<=nrel_sports_awards:bronze_medal;;
+	*);;
+		
+<= concept_competition: ...
+	(*
+		<-[Кубок открытого чемпионата Австралии 2012](*<-lang_ru;;*);;
+		<=nrel_sports_awards:gold_medal;;
+	*);;
+		
+<= concept_competition: ...
+	(*
+		<-[Кубок открытого чемпионата Австралии 2013](*<-lang_ru;;*);;
+		<=nrel_sports_awards:gold_medal;;
+	*);;
+
+<= concept_competition: ...
+	(*
+		<-[Кубок турнира в Дохе 2013](*<-lang_ru;;*);;
+		<=nrel_sports_awards:gold_medal;;
+	*);;
+		
+<= concept_competition: ...
+	(*
+		<-[WTA Diamond ACES Award](*<-lang_ru;;*);;
+		<=nrel_sports_awards:gold_medal;;
+	*);;
+*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://Image/Victoria_Azarenka.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

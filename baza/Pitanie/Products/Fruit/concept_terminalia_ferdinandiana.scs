@@ -1,0 +1,52 @@
+concept_terminalia_ferdinandiana
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [terminalia ferdinandiana](*<-lang_en;;*);
+          [слива какаду](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(слива какаду)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Слива какаду – это очень стройное деревце средних размеров, высота коего способна достигать тридцати метров. Все деревца покрыты серенькой чешуйчатой корой, а листочки данного растения окрашены в бледно-зеленые оттенки. А меленькие цветочки сливы какаду могут похвастаться приятным сливочно-белым окрасом. Цветет же данная культура в период с сентября и до декабря – по меркам Южного полушария это весна.
+			](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_fruit;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. 1 (О сливе какаду)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Плоды сливы какаду имеют овальную форму и окрашены в приятные желтовато-зеленоватые тона. Их ширина равна одному сантиметру, а длина – двум. А внутри каждого фрукта можно найти по одному семечку. Что касается созревания плодов, то оно обычно приходится на осень (в Южном полушарии это март).
+](*<- lang_ru;;*);;
+			*);;
+		*);
+
+=>nrel_calorie_content:21.3;
+
+=> nrel_vitamin_C_content:5300mg_per_100g;
+
+=>nrel_birthplace:Australia;;
+Australia=>nrel_main_idtf:
+[Австралия](*<-lang_ru;; *);
+[Australia](*<-lang_en;; *);;
+concept_terminalia_ferdinandiana
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://Image/terminalia_ferdinandiana.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

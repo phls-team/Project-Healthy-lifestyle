@@ -1,0 +1,55 @@
+concept_durian
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [durian](*<-lang_en;;*);
+          [дуриан](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(дуриан)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Дуриан (лат. Durio) — род растений семейства Мальвовые. Деревья большие, слабо ветвящиеся, вечнозелёные, с корнями-подпорками и простыми листьями. Цветки крупные, белого или красного цвета, развиваются на стволах (каулифлория) или крупных ветвях (рамифлория), раскрываются к вечеру и опыляются летучими мышами и пчёлами. ](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_fruit;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. 1 (О дуриане)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Дуриан имеет очень большой плод, размером до 30 см и до 8 кг весом, сверху он покрыт пирамидальными колючками, объясняющими его название от малайского слова «дури» - шип. Состоит из 5 камер, разделенных белыми прожилками, в каждой из которых содержится нежная желтая или желтовато-красная мякоть. 
+Родина дуриана - Юго-Восточная Азия, где он до сих пор наиболее популярен. В настоящее время этот фрукт выращивают в Таиланде, Малайзии, Индонезии, Вьетнаме, Лаосе, Камбоджии, Индии, на Шри-Ланке и Филиппинах, а также в ряде стран Центральной Африки и Бразилии. ](*<- lang_ru;;*);;
+			*);;
+		*);
+
+=>nrel_calorie_content:147;
+
+=> nrel_vitamin_PP_content:1.07mg_per_100g;
+=> nrel_vitamin_C_content:19.7mg_per_100g;
+=> nrel_vitamin_B1_content:0.37mg_per_100g;
+=> nrel_vitamin_B2_content:0.2mg_per_100g;
+=> nrel_vitamin_B5_content:0.23mg_per_100g;
+=> nrel_vitamin_B6_content:0.31mg_per_100g;
+=> nrel_vitamin_B9_content:0.03mg_per_100g;
+=> nrel_vitamin_A_content:0.03mg_per_100g;
+
+=>nrel_birthplace:southeast_asia;;
+concept_durian
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://Image/durian.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

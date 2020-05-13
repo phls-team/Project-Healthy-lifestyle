@@ -1,0 +1,53 @@
+concept_longan
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [longan](*<-lang_en;;*);
+          [лонган](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(лонган)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Лонган (вьетн. Глаз дракона (longyan), Lamyaj, Dimocarpus longan) - вечнозелёное дерево с густой раскидистой кроной, которое некоторые ботаники относят к роду Nephelium longana. Одно из названий дерева произошло от названия вьетнамской провинции «Лонган», что в переводе означает «око дракона».](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_fruit;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. 1 (О лонгане)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Сочная мякоть ароматного плода лонгана имеет своеобразный сладкий вкус. Цвет прочной несъедобной внешней оболочки плода — от пятнисто-желтоватого до красноватого. Как и его родственник, китайский личи, плод лонгана содержит твёрдое тёмно-красное или чёрное семя.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+=>nrel_calorie_content:60;
+
+=> nrel_vitamin_C_content:84mg_per_100g;
+=> nrel_vitamin_B1_content:0.03mg_per_100g;
+=> nrel_vitamin_B2_content:0.14mg_per_100g;
+=> nrel_vitamin_B3_content:0.3mg_per_100g;
+
+=>nrel_birthplace:Thailand;;
+Thailand=>nrel_main_idtf:
+[Таиланд](*<-lang_ru;; *);
+[Thailand](*<-lang_en;; *);;
+concept_longan
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://Image/longan.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

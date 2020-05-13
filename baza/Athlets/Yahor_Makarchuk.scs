@@ -1,0 +1,60 @@
+Yahor_Makarchuk
+
+<-sc_node_not_relation;
+<=nrel_inclusion:concept_person;
+<=nrel_inclusion:concept_athlete;
+
+=> nrel_main_idtf:
+          [Yahor Makarchuk](*<-lang_en;;*);
+          [Егор Макарчук](*<-lang_ru;;*);
+
+=> nrel_sport:concept_karate;
+=> nrel_weight:67;
+=> nrel_age:19;
+=> nrel_sports_rank:master_of_sport;
+=> nrel_height:183;
+=> nrel_birthplace: Belarus;
+=> nrel_sports_achivments: ...
+(*
+<= concept_competition: ...
+	(*
+		<-[Чемпионат Республики Беларусь 2018](*<-lang_ru;;*);;
+		<=nrel_sports_awards:bronze_medal;;
+	*);;
+
+<= concept_competition: ...
+	(*
+		<-[Первенство Республики Беларусь 2016](*<-lang_ru;;*);;
+		<=nrel_sports_awards:gold_medal;;
+	*);;
+
+<= concept_competition: ...
+	(*
+		<-[Первенство Республики Беларусь 2017](*<-lang_ru;;*);;
+		<=nrel_sports_awards:silver_medal;;
+	*);;
+
+<= concept_competition: ...
+	(*
+		<-[Чемпионат Республики Беларусь 2019](*<-lang_ru;;*);;
+		<=nrel_sports_awards:bronze_medal;;
+	*);;
+
+<= concept_competition: ...
+	(*
+		<-[Чемпионат Республики Беларусь 2020](*<-lang_ru;;*);;
+		<=nrel_sports_awards:bronze_medal;;
+	*);;
+*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://Image/Yahor_Makarchuk.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

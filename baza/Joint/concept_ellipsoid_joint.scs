@@ -1,0 +1,39 @@
+concept_ellipsoid_joint
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [ellipsoid joint](*<-lang_en;;*);
+          [эллипсовидный сустав](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(эллипсовидный сустав)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Суставные поверхности - отрезки эллипса](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_biaxial;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. 1 (Движение эллипсовидного сустава)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Вокруг поперечной (фронтальной) оси (сгибаное, разгибание), сагиттальной передне-задней оси (приведение и отведение)](*<- lang_ru;;*);;
+			*);;
+		*);
+
+->rrel_example: beam_spot_joint; metacarpophalangeal_joint; temporomandibular_joint; metatarsophalangeal_joint;;
+beam_spot_joint=>nrel_main_idtf:
+[луче-запятсный сустав](*<-lang_ru;; *);;
+metacarpophalangeal_joint=>nrel_main_idtf:
+[пястно-фаланговый сустав](*<-lang_ru;; *);;
+temporomandibular_joint=>nrel_main_idtf:
+[височно-нижечелюстной сустав](*<-lang_ru;; *);;
+metatarsophalangeal_joint=>nrel_main_idtf:
+[плюсне-фаланговый сустав](*<-lang_ru;; *);;

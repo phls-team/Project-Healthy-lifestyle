@@ -1,0 +1,33 @@
+concept_cup_joint
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [cup joint](*<-lang_en;;*);
+          [чашеобразный сустав](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(чашеобразный сустав)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Разновидность шаровидного, суставная ямка более глубокая](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_multiaxial;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. 1 (Движение чашеобразного сустава)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Вокруг поперечной (фронтальной) оси (сгибаное, разгибание), продольной оси (вращение)](*<- lang_ru;;*);;
+			*);;
+		*);
+
+->rrel_example: hip_joint;;
+hip_joint=>nrel_main_idtf:
+[тазобедреный сустав](*<-lang_ru;; *);;

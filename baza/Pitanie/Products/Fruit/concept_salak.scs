@@ -1,0 +1,54 @@
+concept_salak
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [salak](*<-lang_en;;*);
+          [салак](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(салак)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Салак (лат. Salacca zalacca) — древовидное плодовое растение семейства Пальмовые. По английски этот фрукт также называют snake fruit, благодаря кожице, напоминающей кожу змеи. В Таиланде его называют sala, rakum, в Малайзии и Индонезии - salak.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_fruit;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. 1 (О салаке)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Быстрорастущая пальма высотой до 2 метров с коротким узловатым стволом. Листья перистые, длиной 3-7 метров. Растение двудомное. Мужские соцветия длинные, иногда более метра, булавовидной формы, женские более короткие — до 30 см.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+=>nrel_calorie_content:125;
+
+=> nrel_vitamin_PP_content:4.8mg_per_100g;
+=> nrel_vitamin_E_content:0.7mg_per_100g;
+=> nrel_vitamin_C_content:0.4mg_per_100g;
+=> nrel_vitamin_B1_content:0.12mg_per_100g;
+=> nrel_vitamin_B2_content:0.15mg_per_100g;
+=> nrel_vitamin_B6_content:0.25mg_per_100g;
+=> nrel_vitamin_B9_content:0.09mg_per_100g;
+=> nrel_vitamin_A_content:0.03mg_per_100g;
+
+=>nrel_birthplace:southeast_asia;;
+concept_salak
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://Image/salak.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

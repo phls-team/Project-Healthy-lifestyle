@@ -1,0 +1,33 @@
+concept_helical_joint
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [helical joint](*<-lang_en;;*);
+          [винтообразный сустав](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(винтообразный сустав)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Разновидность блоковидного. Гребешок и бороздка расположены под углом к оси вращения](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_monoaxial;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. 1 (О движении винтообразного сустава)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Вокруг поперечной (фронтальной) оси(сгибание, разгибание)](*<- lang_ru;;*);;
+			*);;
+		*);
+
+->rrel_example: shoulder_elbow_joint;;
+shoulder_elbow_joint=>nrel_main_idtf:
+[плече-локтевой сустав](*<-lang_ru;; *);;

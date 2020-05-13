@@ -1,0 +1,53 @@
+Michael_Jordan
+
+<-sc_node_not_relation;
+<=nrel_inclusion:concept_person;
+<=nrel_inclusion:concept_athlete;
+
+=> nrel_main_idtf:
+          [Michael Jordan](*<-lang_en;;*);
+          [Майкл Джордан](*<-lang_ru;;*);
+
+=> nrel_sport:concept_biathlon;
+=> nrel_weight:98;
+=> nrel_age:57;
+=> nrel_height:198;
+=> nrel_birthplace: USA;
+=> nrel_sports_achivments: ...
+(*
+<= concept_competition: ...
+	(*
+		<-[Олимпиада в Барселоне 1992](*<-lang_ru;;*);;
+		<=nrel_sports_awards:gold_medal;;
+	*);;
+
+<= concept_competition: ...
+	(*
+		<-[Олимпиада в Лос-Анджелесе 1984](*<-lang_ru;;*);;
+		<=nrel_sports_awards:gold_medal;;
+	*);;
+
+<= concept_competition: ...
+	(*
+		<-[Панамериканские игры 1983](*<-lang_ru;;*);;
+		<=nrel_sports_awards:gold_medal;;
+	*);;
+
+<= concept_competition: ...
+	(*
+		<-[Чемпионат Америки 1992](*<-lang_ru;;*);;
+		<=nrel_sports_awards:gold_medal;;
+	*);;
+*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://Image/Michael_Jordan.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

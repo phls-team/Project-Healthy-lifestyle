@@ -1,0 +1,56 @@
+concept_medal
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [medal](*<-lang_en;;*);
+          [медаль](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(медаль)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[С 1947 г. для поощрения роста спортивных достижений советским правительством были учреждены медали: медаль 1‑й степени (золотая), медаль 2‑й степени (серебряная позолоченная), большая серебряная медаль, малая серебряная медаль, большая бронзовая медаль, малая бронзовая медаль, памятная медаль. Медалями награждают лишь тех, кто устанавливает мировые рекорды, завоевывает звание чемпиона, становится призером первенств.](*<- lang_ru;;*);;
+			*);;
+			<= nrel_using_constants: {
+                concept_sport
+            };;
+		*);
+
+<=nrel_inclusion:nrel_sports_awards;
+
+=>nrel_inclusion:gold_medal;silver_medal;bronze_medal;;
+gold_medal=>nrel_main_idtf:
+[золотая медаль](*<-lang_ru;; *);;
+silver_medal=>nrel_main_idtf:
+[серебряная медаль](*<-lang_ru;; *);;
+bronze_medal=>nrel_main_idtf:
+[бронзовая медаль](*<-lang_ru;; *);;
+
+concept_medal
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. 1 (О медали)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Одна из самых главных и почетных медалей — олимпийская медаль. Эти медали бывают трех достоинств: золотая, серебряная, бронзовая, вручаемые соответственно за 1‑е, 2‑е и 3‑е места в олимпийских состязаниях. Лицевая сторона медалей всегда одинакова: на рисунке изображена богиня победы Нике и колоннада Колизея. На оборотной стороне медали — эмблема очередной Олимпиады.](*<- lang_ru;;*);;
+			*);;
+			<= nrel_using_constants: {
+                concept_sport
+            };;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://Image/medal.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

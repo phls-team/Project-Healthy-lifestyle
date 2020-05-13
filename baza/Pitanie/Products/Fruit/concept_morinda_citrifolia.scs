@@ -1,0 +1,53 @@
+concept_morinda_citrifolia
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [morinda citrifolia](*<-lang_en;;*);
+          [моринда цитрусолистная](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(моринда цитрусолистная)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Нони или моринда цитрусолистная - это небольшое тропическое дерево, плоды которого обладают целебными свойствами. Сок, чай и экстракт из них может использоваться при иммунодефиците, сахарном диабете, заболеваниях печени и других серьезных недугах.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_fruit;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. 1 (О моринде цитрусолистной)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Нони неприхотливо и может расти как на открытых песчаных или скалистых берегах и в тенистых лесах, так и на известковых и вулканических почвах. Несмотря на небольшую высоту дерева – не более 7 метров – длина его корней может достигать 30 с лишним метров. Растение цветет и плодоносит 12 месяцев в году. На одном и том же дереве могут быть плоды разной степени созревания.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+=>nrel_calorie_content:553;
+
+=> nrel_vitamin_C_content:33.65mg_per_100g;
+=> nrel_vitamin_B1_content:4.31mg_per_100g;
+=> nrel_vitamin_B2_content:2.1mg_per_100g;
+=> nrel_vitamin_A_content:5mg_per_100g;
+
+=>nrel_birthplace:South_Asia;;
+South_Asia=>nrel_main_idtf:
+[Южная Азия](*<-lang_ru;; *);
+[South Asia](*<-lang_en;; *);;
+concept_morinda_citrifolia
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://Image/morinda_citrifolia.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

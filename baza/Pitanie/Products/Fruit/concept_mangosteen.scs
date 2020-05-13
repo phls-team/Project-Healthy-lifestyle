@@ -1,0 +1,48 @@
+concept_mangosteen
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [mangosteen](*<-lang_en;;*);
+          [мангустин](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(мангустин)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Мангостины – одни из самых вкусных экзотических фруктов. Под толстой красной или фиолетовой кожурой скрывается восхитительная белоснежная мякоть мангустина, разделенная на несколько долек. Чем больше долек содержит фрукт, тем меньше в нем семян.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_fruit;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. 1 (О мангустине)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Особенностью мангостина является легкая кислинка, которая присутствует даже в спелых плодах. Вкус мякоти можно описать как сочетание цитрусовых, винограда, ананаса, клубники, персика и абрикоса. Сладкие, слегка кисловатые белые дольки, сочные, желеобразные и ароматные, тают во рту и прекрасно утоляют жажду. Дегустация мангостина может превратиться в настоящее кулинарное переживание для тех, кто ни разу не сталкивался с подобной экзотикой.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+=>nrel_calorie_content:63;
+
+=> nrel_vitamin_C_content:2mg_per_100g;
+=> nrel_vitamin_B1_content:0.03mg_per_100g;
+
+=>nrel_birthplace:southeast_asia;;
+concept_mangosteen
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://Image/mangosteen.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

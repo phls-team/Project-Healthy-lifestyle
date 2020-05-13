@@ -1,0 +1,35 @@
+concept_spherical_joint
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [spherical joint](*<-lang_en;;*);
+          [шаровидный сустав](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(шаровидный сустав)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Суставные поверхности - отрезок шара и соответствующая ему впадина (ямка)](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_multiaxial;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. 1 (Движение шаровидного сустава)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Вокруг фронтальной оси (сгибаное, разгибание), саггитальной оси (приведение, отведение), продольной оси (вращение)](*<- lang_ru;;*);;
+			*);;
+		*);
+
+->rrel_example: shoulder_joint; shoulder_elbow_joint;;
+shoulder_joint=>nrel_main_idtf:
+[плечевой сустав](*<-lang_ru;; *);;
+shoulder_elbow_joint=>nrel_main_idtf:
+[плече-локтевой сустав](*<-lang_ru;; *);;

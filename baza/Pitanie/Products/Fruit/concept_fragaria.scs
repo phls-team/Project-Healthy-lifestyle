@@ -1,0 +1,58 @@
+concept_fragaria
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [fragaria](*<-lang_en;;*);
+          [земляника](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(земляника)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Земляника – многолетнее травянистое растение с укороченным прямостоячим опушенным стеблем. Достигает в высоту 5–15 см, ежегодно прирастая всего на 0,5–2 см. Состоит он из однолетних приростов − рожков длиной 1–1,5 см. Наиболее интенсивно они появляются весной и после плодоношения в первые три года. Затем темпы образования их замедляются.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_berry;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. 1 (О землянике)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Ценность ягод земляники определяет высокое содержание в них аскорбиновой кислоты (120 мг на 100 г свежих ягод). В землянике лесной много не только витамина С, но и каротина, витаминов В1, В2, РР, фолиевой кислоты. В лесной землянике содержится целый ряд микроэлементов: железо, медь, кобальт, марганец, которые принимают участие в кроветворении. Земляника служит еще источником минеральных солей – калия, фосфора, кальция. Земляника лесная содержит довольно большое количество пектиновых веществ, оказывающих положительное влияние на организм человека.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+=>nrel_calorie_content:41;
+
+=> nrel_vitamin_PP_content:0.4mg_per_100g;
+=> nrel_vitamin_E_content:0.5mg_per_100g;
+=> nrel_vitamin_C_content:60mg_per_100g;
+=> nrel_vitamin_B1_content:0.03mg_per_100g;
+=> nrel_vitamin_B2_content:0.05mg_per_100g;
+=> nrel_vitamin_B5_content:0.3mg_per_100g;
+=> nrel_vitamin_B6_content:0.06mg_per_100g;
+=> nrel_vitamin_B9_content:0.02mg_per_100g;
+=> nrel_vitamin_A_content:0.05mg_per_100g;
+
+=>nrel_birthplace:Switzerland;;
+Switzerland=>nrel_main_idtf:
+[Швейцария](*<-lang_ru;; *);
+[Switzerland](*<-lang_en;; *);;
+concept_fragaria
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://Image/fragaria.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

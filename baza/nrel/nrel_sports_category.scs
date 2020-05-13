@@ -1,0 +1,81 @@
+nrel_sports_category
+ 
+<-sc_node_norole_relation;
+
+=> nrel_main_idtf:
+          [sports category*](*<-lang_en;;*);
+          [спортивный разряд*](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(спортивный разряд)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Спортивные разряды присваиваются спортсменам, выполнившим установленные ЕСК разрядные нормы и требования на спортивных соревнованиях в видах спорта, включенных в республиканский и местные календарные планы проведения официальных спортивных соревнований.](*<- lang_ru;;*);;
+			*);;
+			<= nrel_using_constants: {
+                concept_athlete;
+				concept_sport
+            };;
+		*);
+
+<=nrel_inclusion:concept_athlete;
+<=nrel_inclusion:nrel_sports_achivments;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. 1 (О спортивном разряде)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Разрядные нормы и разрядные требования устанавливаются с учетом особенностей развития вида спорта, пола, возраста спортсменов и определяются показателями, предусмотренными классификацией по виду спорта](*<- lang_ru;;*);;
+			*);;
+			<= nrel_using_constants: {
+                concept_athlete;
+				concept_sport
+            };;
+		*);
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. 2 (О спортивном разряде)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Спортсмену, выполнившему разрядные нормы и требования, выдаются классификационная книжка и значок спортсмена-разрядника от имени организации, присвоившей разряд.](*<- lang_ru;;*);;
+			*);;
+			<= nrel_using_constants: {
+                concept_athlete;
+				concept_sport
+            };;
+		*);
+
+=>nrel_inclusion:candidate_master_of_sports; candidate_master_of_sports_among_the_disabled; first_category; second_category; third_category; first_junior_category; second_junior_category; third_junior_category; first_category_among_the_disabled; second_category_among_the_disabled; third_category_among_the_disabled; first_junior_category_among_the_disabled; second_junior_category_among_the_disabled; third_junior_category_among_the_disabled;;
+candidate_master_of_sports=>nrel_main_idtf:
+[кандидат в мастера спорта](*<-lang_ru;; *);;
+candidate_master_of_sports_among_the_disabled=>nrel_main_idtf:
+[кандидат в мастера спорта среди инвалидов](*<-lang_ru;; *);;
+first_category=>nrel_main_idtf:
+[первый разряд](*<-lang_ru;; *);;
+second_category=>nrel_main_idtf:
+[второй разряд](*<-lang_ru;; *);;
+third_category=>nrel_main_idtf:
+[третий разряд](*<-lang_ru;; *);;
+first_junior_category=>nrel_main_idtf:
+[первый юношеский разряд](*<-lang_ru;; *);;
+second_junior_category=>nrel_main_idtf:
+[второй юношеский разряд](*<-lang_ru;; *);;
+third_junior_category=>nrel_main_idtf:
+[третий юношеский разряд](*<-lang_ru;; *);;
+first_category_among_the_disabled=>nrel_main_idtf:
+[первый разряд среди инвалидов](*<-lang_ru;; *);;
+second_category_among_the_disabled=>nrel_main_idtf:
+[второй разряд среди инвалидов](*<-lang_ru;; *);;
+third_category_among_the_disabled=>nrel_main_idtf:
+[третий разряд среди инвалидов](*<-lang_ru;; *);;
+first_junior_category_among_the_disabled=>nrel_main_idtf:
+[первый юношеский разряд среди инвалидов](*<-lang_ru;; *);;
+second_junior_category_among_the_disabled=>nrel_main_idtf:
+[второй юношеский разряд среди инвалидов](*<-lang_ru;; *);;
+third_junior_category_among_the_disabled=>nrel_main_idtf:
+[третий юношеский разряд среди инвалидов](*<-lang_ru;; *);;
