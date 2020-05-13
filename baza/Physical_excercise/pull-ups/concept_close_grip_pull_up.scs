@@ -7,6 +7,11 @@ concept_close_grip_pull_up
           [подтягивания узким хватом](*<-lang_ru;;*);
 =>nrel_starting_position:concept_hanging_on_a_horisontal_bar;
 =>nrel_ending_position:concept_hanging_on_a_horisontal_bar;
+=> nrel_target_muscle:latissimus_dorsi;
+=>nrel_additional_muscle:
+			  concept_major_pectoral;
+			  concept_bicep;
+
 <- rrel_key_sc_element: ... 
 		(*
         <- definition;;

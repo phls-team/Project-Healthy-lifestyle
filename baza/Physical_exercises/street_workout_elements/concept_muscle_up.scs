@@ -6,8 +6,10 @@ concept_muscle_up
           [muscle up](*<-lang_en;;*);
           [выход силой](*<-lang_ru;;*);
 =>nrel_starting_position:concept_hanging_on_a_horisontal_bar;
-
+<=nrel_street_workout_element:concept_street_workout;
 =>nrel_ending_position:concept_emphasis_on_a_horisontal_bar;
+=> nrel_target_muscle:concept_bicep;concept_tricep;latissimus_dorsi;
+=>nrel_additional_muscle:forearm;concept_major_pectoral;
 <- rrel_key_sc_element: ... 
 		(*
         <- definition;;
@@ -19,7 +21,6 @@ concept_muscle_up
 		*);
 
 <=nrel_species:gymnastic_exercise;
-<=nrel_species:concept_workout_element;
 <- rrel_key_sc_element: ... 
 		(*
         <- statement;;

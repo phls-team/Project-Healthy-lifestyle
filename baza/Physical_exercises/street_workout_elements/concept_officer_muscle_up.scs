@@ -6,6 +6,11 @@ concept_officer_muscle_up
           [officer muscle up](*<-lang_en;;*);
           [офицерский выход](*<-lang_ru;;*);
 
+<=nrel_street_workout_element:concept_street_workout;
+
+=> nrel_target_muscle:concept_bicep;concept_tricep;
+=> nrel_additional_muscle:forearm;concept_major_pectoral; latissimus_dorsi;
+
 <- rrel_key_sc_element: ... 
 		(*
         <- definition;;
@@ -17,7 +22,6 @@ concept_officer_muscle_up
 		*);
 
 <=nrel_species:gymnastic_exercise;
-<=nrel_species:concept_workout_element;
 <- rrel_key_sc_element: ... 
 		(*
         <- statement;;

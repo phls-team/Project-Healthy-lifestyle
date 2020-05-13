@@ -8,6 +8,9 @@ concept_needle_workout
           [капитанский выход](*<-lang_ru;;*);
           [иголка](*<-lang_ru;;*);
 =>nrel_starting_position:concept_hanging_on_a_horisontal_bar;
+<=nrel_street_workout_element:concept_street_workout;
+=> nrel_target_muscle:concept_bicep;concept_tricep;latissimus_dorsi;
+=>nrel_additional_muscle:forearm;
 <- rrel_key_sc_element: ... 
 		(*
         <- definition;;
@@ -19,7 +22,6 @@ concept_needle_workout
 		*);
 
 <=nrel_species:gymnastic_exercise;
-<=nrel_species:concept_workout_element;
 <- rrel_key_sc_element: ... 
 		(*
         <- statement;;

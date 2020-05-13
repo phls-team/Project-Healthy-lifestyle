@@ -7,7 +7,8 @@ concept_crunches_on_horisontal_bar
           [скручивания на перекладине](*<-lang_ru;;*);
 =>nrel_starting_position:concept_hanging_on_a_horisontal_bar;
 =>nrel_ending_position:concept_hanging_on_a_horisontal_bar;
-
+=> nrel_target_muscle:concept_stomach_muscles;
+=>nrel_additional_muscle:forearm;
 <- rrel_key_sc_element: ... 
 		(*
         <- definition;;
