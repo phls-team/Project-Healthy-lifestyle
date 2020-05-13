@@ -1,0 +1,36 @@
+6A06.0=>nrel_main_idtf:[stereotyped movement disorder without self-injury](*<-lang_en;;*);;
+6A06.0<-concept_disease;;
+6A06.0<-rrel_sc_key_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:[Def.(Stereotyped movement disorder without self-injury)](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[This category should be applied to forms of Stereotyped movement disorder in which stereotyped behaviours markedly interfere with normal activities, but do not result in self-inflicted bodily injury.](*<-lang_en;;*);;
+*);;
+*);;
+6A06.0<-sc_node_norole_relation;;
+
+6A06.0<-sc_node_norole_relation;
+=>nrel_unique_idtf:[6A06.0](*<-lang_en;;*);;
+
+
+
+6A06.0=>nrel_symptom:
+body_rocking;
+head_rocking;
+finger_flicking;
+hand_flapping;;
+
+nrel_treatment<-sc_node_norole_relation;
+=>nrel_main_idtf:[treatment](*<-lang_en;;*);;
+6A06.0<-sc_node_norole_relation;
+=>nrel_treatment:...
+(*
+<-statement;;
+=>nrel_main_idtf:[treatment](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[The most successful approaches to treating Stereotyped Movement Disorder are behavioral in nature and utilize reward and punishment principles drawn from learning theory to decrease the likelihood that children will engage in inappropriate stereotyped movements while simultaneously increasing their appropriate behaviors. Clinical research suggests that behavioral treatment can reduce symptoms of the disorder by up to 90%, and completely eliminate the disorder in 40 to 70% of affected children. ](*<-lang_en;;*);;
+*);;
+*);;

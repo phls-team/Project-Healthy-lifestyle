@@ -1,0 +1,39 @@
+attention_deficit_hyperactivity_disorder=>nrel_main_idtf:[attention deficit hyperactivity disorder](*<-lang_en;;*);;
+concept_subClassOf06_01=>nrel_inclusion:attention_deficit_hyperactivity_disorder;;
+attention_deficit_hyperactivity_disorder<-concept_disease;;
+attention_deficit_hyperactivity_disorder<-rrel_sc_key_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:[Def.(Attention deficit hyperactivity disorder)](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Attention deficit hyperactivity disorder is characterized by a persistent pattern (at least 6 months) of inattention and/or hyperactivity-impulsivity, with onset during the developmental period, typically early to mid-childhood.](*<-lang_en;;*);;
+*);;
+*);;
+attention_deficit_hyperactivity_disorder<-sc_node_norole_relation;;
+
+attention_deficit_hyperactivity_disorder<-sc_node_norole_relation;
+=>nrel_unique_idtf:[6A05](*<-lang_en;;*);;
+
+pattern_of_inattention_or_hyperactivity_impulsivity<-sc_node_norole_relation;
+=>nrel_main_idtf:[persistent pattern of inattention and/or hyperactivity-impulsivity](*<-lang_en;;*);;
+
+attention_deficit_hyperactivity_disorder=>nrel_symptom:pattern_of_inattention_or_hyperactivity_impulsivity;;
+
+nrel_treatment<-sc_node_norole_relation;
+=>nrel_main_idtf:[treatment](*<-lang_en;;*);;
+attention_deficit_hyperactivity_disorder<-sc_node_norole_relation;
+=>nrel_treatment:...
+(*
+<-statement;;
+=>nrel_main_idtf:[treatment](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[For children with ADHD younger than 6 years of age, the American Academy of Pediatrics (AAP) recommends parent training in behavior management as the first line of treatment, before medication is tried. For children 6 years of age and older, the recommendations include medication and behavior therapy together — parent training in behavior management for children up to age 12 and other types of behavior therapy and training for adolescents.  Schools can be part of the treatment as well. AAP recommendations also include adding behavioral classroom intervention and school supports.](*<-lang_en;;*);;
+*);;
+*);;
+
+attention_deficit_hyperactivity_disorder=>nrel_inclusion:
+6A05.0;
+6A05.1;
+6A05.2;;

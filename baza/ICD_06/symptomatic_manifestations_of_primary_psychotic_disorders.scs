@@ -1,0 +1,16 @@
+symptomatic_manifestations_of_primary_psychotic_disorders=>nrel_main_idtf:[symptomatic manifestations of primary psychotic disorders](*<-lang_en;;*);;
+concept_subClassOf06_02=>nrel_inclusion:symptomatic_manifestations_of_primary_psychotic_disorders;;
+symptomatic_manifestations_of_primary_psychotic_disorders<-concept_disease;;
+symptomatic_manifestations_of_primary_psychotic_disorders<-rrel_sc_key_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:[Def.(Symptomatic manifestation of primary psychotic disorders)](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[These categories may be used to characterize the current clinical presentation in individuals diagnosed with Schizophrenia or another primary psychotic disorder, and should not be used in individuals without such a diagnosis.](*<-lang_en;;*);;
+*);;
+*);;
+symptomatic_manifestations_of_primary_psychotic_disorders<-sc_node_norole_relation;;
+
+symptomatic_manifestations_of_primary_psychotic_disorders<-sc_node_norole_relation;
+=>nrel_unique_idtf:[6A25](*<-lang_en;;*);;

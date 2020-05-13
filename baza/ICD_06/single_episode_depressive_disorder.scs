@@ -1,0 +1,43 @@
+single_episode_depressive_disorder=>nrel_main_idtf:[single episode depressive disorder](*<-lang_en;;*);;
+concept_subClassOf06_04_02=>nrel_inclusion:single_episode_depressive_disorder;;
+single_episode_depressive_disorder<-concept_disease;;
+single_episode_depressive_disorder<-rrel_sc_key_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:[Def.(Single episode depressive disorder)](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Single episode depressive disorder is characterized by the presence or history of one depressive episode when there is no history of prior depressive episodes. A depressive episode is characterized by a period of almost daily depressed mood or diminished interest in activities lasting at least two weeks accompanied by other symptoms such as difficulty concentrating, feelings of worthlessness or excessive or inappropriate guilt, hopelessness, recurrent thoughts of death or suicide, changes in appetite or sleep, psychomotor agitation or retardation, and reduced energy or fatigue. There have never been any prior manic, hypomanic, or mixed episodes, which would indicate the presence of a bipolar disorder.](*<-lang_en;;*);;
+*);;
+*);;
+single_episode_depressive_disorder<-sc_node_norole_relation;;
+
+single_episode_depressive_disorder<-sc_node_norole_relation;
+=>nrel_unique_idtf:[6A70](*<-lang_en;;*);;
+
+single_episode_depressive_disorder=>nrel_symptom:
+difficulty_concentrating;
+feelings_of_worthless;
+excessive_guilt;
+inappropriate_guilt;
+feelings_of_hopelessness;
+suicidality;
+change_in_appetite;
+change_in_sleep;
+psychomotor_agitation;
+retardation;;
+
+nrel_treatment<-sc_node_norole_relation;
+=>nrel_main_idtf:[treatment](*<-lang_en;;*);;
+single_episode_depressive_disorder<-sc_node_norole_relation;
+=>nrel_treatment:...
+(*
+<-statement;;
+=>nrel_main_idtf:[treatment](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Medications and psychotherapy are effective for most people with depression. Your primary care doctor or psychiatrist can prescribe medications to relieve symptoms. However, many people with depression also benefit from seeing a psychiatrist, psychologist or other mental health professional.
+
+If you have severe depression, you may need a hospital stay, or you may need to participate in an outpatient treatment program until your symptoms improve.](*<-lang_en;;*);;
+*);;
+*);;

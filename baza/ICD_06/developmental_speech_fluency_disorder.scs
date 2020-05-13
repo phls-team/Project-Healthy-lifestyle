@@ -1,0 +1,26 @@
+developmental_speech_fluency_disorder=>nrel_main_idtf:[developmental speech fluency disorder](*<-lang_en;;*);;
+developmental_speech_fluency_disorder<-concept_disease;;
+developmental_speech_fluency_disorder<-rrel_sc_key_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:[Def.(Developmental speech fluency disorder)](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Developmental speech fluency disorder is characterized by persistent and frequent or pervasive disruption of the rhythmic flow of speech that arises during the developmental period and is outside the limits of normal variation expected for age and level of intellectual functioning and results in reduced intelligibility and significantly affects communication. It can involve repetitions of sounds, syllables or words, prolongations, word breaks, blockage of production, excessive use of interjections, and rapid short bursts of speech. ](*<-lang_en;;*);;
+*);;
+*);;
+
+developmental_speech_fluency_disorder<-sc_node_norole_relation;
+=>nrel_unique_idtf:[6A01.1](*<-lang_en;;*);;
+nrel_treatment<-sc_node_norole_relation;
+=>nrel_main_idtf:[treatment](*<-lang_en;;*);;
+developmental_speech_fluency_disorder<-sc_node_norole_relation;
+=>nrel_treatment:...
+(*
+<-statement;;
+=>nrel_main_idtf:[treatment](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[After a comprehensive evaluation by a speech-language pathologist, a decision about the best treatment approach can be made. Several different approaches are available to treat children and adults who stutter. Because of varying individual issues and needs, a method — or combination of methods — that's helpful for one person may not be as effective for another.](*<-lang_en;;*);;
+*);;
+*);;

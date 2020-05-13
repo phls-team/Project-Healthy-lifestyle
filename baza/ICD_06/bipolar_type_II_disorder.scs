@@ -1,0 +1,76 @@
+bipolar_type_II_disorder=>nrel_main_idtf:[bipolar type II disorder](*<-lang_en;;*);;
+concept_subClassOf06_04_01=>nrel_inclusion:bipolar_type_II_disorder;;
+bipolar_type_II_disorder<-concept_disease;;
+bipolar_type_II_disorder<-rrel_sc_key_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:[Def.(Bipolar type II disorder)](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Bipolar type II disorder is an episodic mood disorder defined by the occurrence of one or more hypomanic episodes and at least one depressive episode. A hypomanic episode is a persistent mood state characterized by euphoria, irritability, or expansiveness, and excessive psychomotor activation or increased energy, accompanied by other characteristic symptoms such as grandiosity, decreased need for sleep, pressured speech, flight of ideas, distractibility, and impulsive or reckless behavior lasting for at least several days. The symptoms represent a change from the individual’s typical behavior and are not severe enough to cause marked impairment in functioning. A depressive episode is characterized by a period of almost daily depressed mood or diminished interest in activities lasting at least 2 weeks accompanied by other symptoms such as changes in appetite or sleep, psychomotor agitation or retardation, fatigue, feelings of worthless or excessive or inappropriate guilt, feelings or hopelessness, difficulty concentrating, and suicidality. There is no history of manic or mixed Episodes.](*<-lang_en;;*);;
+*);;
+*);;
+bipolar_type_II_disorder<-sc_node_norole_relation;;
+
+bipolar_type_II_disorder<-sc_node_norole_relation;
+=>nrel_unique_idtf:[6A61](*<-lang_en;;*);;
+
+change_in_appetite<-sc_node_norole_relation;
+=>nrel_main_idtf:[change in appetite](*<-lang_en;;*);;
+change_in_sleep<-sc_node_norole_relation;
+=>nrel_main_idtf:[change in sleep](*<-lang_en;;*);;
+psychomotor_agitation<-sc_node_norole_relation;
+=>nrel_main_idtf:[psychomotor agitation](*<-lang_en;;*);;
+retardation<-sc_node_norole_relation;
+=>nrel_main_idtf:[retardation](*<-lang_en;;*);;
+fatigue<-sc_node_norole_relation;
+=>nrel_main_idtf:[fatigue](*<-lang_en;;*);;
+feelings_of_worthless<-sc_node_norole_relation;
+=>nrel_main_idtf:[feelings of worthless](*<-lang_en;;*);;
+excessive_guilt<-sc_node_norole_relation;
+=>nrel_main_idtf:[excessive guilt](*<-lang_en;;*);;
+inappropriate_guilt<-sc_node_norole_relation;
+=>nrel_main_idtf:[inappropriate guilt](*<-lang_en;;*);;
+feelings_of_hopelessness<-sc_node_norole_relation;
+=>nrel_main_idtf:[feelings of hopelessness](*<-lang_en;;*);;
+difficulty_concentrating<-sc_node_norole_relation;
+=>nrel_main_idtf:[difficulty concentrating](*<-lang_en;;*);;
+suicidality<-sc_node_norole_relation;
+=>nrel_main_idtf:[suicidality](*<-lang_en;;*);;
+
+bipolar_type_II_disorder=>nrel_symptom:
+euphoria;
+irritability;
+expansiveness;
+subjective_experience_of_increased_energy;
+grandiosity;
+decreased_need_for_sleep;
+pressured_speech;
+flight_of_ideas;
+distractibility;
+impulsive_behaviour;
+reckless_behaviour;
+change_in_appetite;
+change_in_sleep;
+psychomotor_agitation;
+retardation;
+fatigue;
+feelings_of_worthless;
+excessive_guilt;
+inappropriate_guilt;
+feelings_of_hopelessness;
+difficulty_concentrating;
+suicidality;;
+
+nrel_treatment<-sc_node_norole_relation;
+=>nrel_main_idtf:[treatment](*<-lang_en;;*);;
+bipolar_type_II_disorder<-sc_node_norole_relation;
+=>nrel_treatment:...
+(*
+<-statement;;
+=>nrel_main_idtf:[treatment](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Treatment is best guided by a medical doctor who specializes in diagnosing and treating mental health conditions (psychiatrist) who is skilled in treating bipolar and related disorders. You may have a treatment team that also includes a psychologist, social worker and psychiatric nurse.](*<-lang_en;;*);;
+*);;
+*);;

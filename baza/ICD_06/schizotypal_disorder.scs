@@ -1,0 +1,37 @@
+schizotypal_disorder=>nrel_main_idtf:[schizotypal disorder](*<-lang_en;;*);;
+concept_subClassOf06_02=>nrel_inclusion:schizotypal_disorder;;
+schizotypal_disorder<-concept_disease;;
+schizotypal_disorder<-rrel_sc_key_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:[Def.(Schizotypal Disorder)](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Schizotypal disorder is characterized by an enduring pattern (i.e., characteristic of the person’s functioning over a period of at least several years) of eccentricities in behavior, appearance and speech, accompanied by cognitive and perceptual distortions, unusual beliefs, and discomfort with— and often reduced capacity for— interpersonal relationships.](*<-lang_en;;*);;
+*);;
+*);;
+schizotypal_disorder<-sc_node_norole_relation;;
+
+schizotypal_disorder<-sc_node_norole_relation;
+=>nrel_unique_idtf:[6A22](*<-lang_en;;*);;
+concept_delusion<-sc_node_norole_relation;
+=>nrel_main_idtf:[delusion](*<-lang_en;;*);;
+disorganization<-sc_node_norole_relation;
+=>nrel_main_idtf:[disorganization](*<-lang_en;;*);;
+hallucination<-sc_node_norole_relation;
+=>nrel_main_idtf:[hallucination](*<-lang_en;;*);;
+anhedonia<-sc_node_norole_relation;
+=>nrel_main_idtf:[anhedonia](*<-lang_en;;*);;
+schizotypal_disorder=>nrel_symptom:concept_delusion;disorganization;hallucination;anhedonia;;
+nrel_treatment<-sc_node_norole_relation;
+=>nrel_main_idtf:[treatment](*<-lang_en;;*);;
+schizotypal_disorder<-sc_node_norole_relation;
+=>nrel_treatment:...
+(*
+<-statement;;
+=>nrel_main_idtf:[treatment](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Treatment for schizotypal personality disorder often includes a combination of psychotherapy and medication. Many people can be helped by work and social activities that are a fit for their personality styles.](*<-lang_en;;*);;
+*);;
+*);;

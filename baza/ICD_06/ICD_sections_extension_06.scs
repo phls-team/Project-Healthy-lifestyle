@@ -1,0 +1,70 @@
+// 6 PANIATKI
+
+concept_class_06=>nrel_main_idtf:[Class 06. Mental, behavioural or neurodevelopmental disorders]
+(*<-lang_en;;*);;
+concept_ICD_11_classification=>nrel_inclusion:concept_class_06;;
+
+concept_subClassOf06_01=>nrel_main_idtf:[Subclass I. Neurodevelopmental disorders]
+(*<-lang_en;;*);;
+concept_subClassOf06_01=>nrel_arrayOfIdentificators:[6A00 - 6A06];;
+concept_class_06=>nrel_inclusion:concept_subClassOf06_01;;
+
+concept_subClassOf06_01<-rrel_sc_key_element:...
+(*<-statement;;
+=>nrel_main_idtf:[class description](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(* ->[Neurodevelopmental disorders are behavioural and cognitive disorders that arise during the developmental period that involve significant difficulties in the acquisition and execution of specific intellectual, motor, or social functions.] (*<-lang_en;;*);;
+*);;
+*);;
+
+concept_subClassOf06_02=>nrel_main_idtf:[Subclass II. Schizophrenia of other primary psychotic disorders]
+(*<-lang_en;;*);;
+concept_subClassOf06_02=>nrel_arrayOfIdentificators:[6A20 - 6A25];;
+concept_class_06=>nrel_inclusion:concept_subClassOf06_02;;
+
+concept_subClassOf06_02<-rrel_sc_key_element:...
+(*<-statement;;
+=>nrel_main_idtf:[class description](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(* ->[Schizophrenia and other primary psychotic disorders are characterized by significant impairments in reality testing and alterations in behavior manifest in positive symptoms such as persistent delusions, persistent hallucinations, disorganized thinking (typically manifest as disorganized speech), grossly disorganized behavior, and experiences of passivity and control, negative symptoms such as blunted or flat affect and avolition, and psychomotor disturbances.] (*<-lang_en;;*);;
+*);;
+*);;
+
+concept_subClassOf06_04=>nrel_main_idtf:[Subclass IV. Mood disorders]
+(*<-lang_en;;*);;
+concept_subClassOf06_04=>nrel_arrayOfIdentificators:[6A60 - 6A80];;
+concept_class_06=>nrel_inclusion:concept_subClassOf06_04;;
+
+concept_subClassOf06_04<-rrel_sc_key_element:...
+(*<-statement;;
+=>nrel_main_idtf:[class description](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(* ->[Mood Disorders refers to a superordinate grouping of Bipolar and Depressive Disorders. Mood disorders are defined according to particular types of mood episodes and their pattern over time. The primary types of mood episodes are Depressive episode, Manic episode, Mixed episode, and Hypomanic episode. Mood episodes are not independently diagnosable entities, and therefore do not have their own diagnostic codes. Rather, mood episodes make up the primary components of most of the Depressive and Bipolar Disorders.] (*<-lang_en;;*);;
+*);;
+*);;
+
+concept_subClassOf06_04_01=>nrel_main_idtf:[Bipolar or related disorders]
+(*<-lang_en;;*);;
+concept_subClassOf06_04_01=>nrel_arrayOfIdentificators:[6A60 - 6A62];;
+concept_subClassOf06_04=>nrel_inclusion:concept_subClassOf06_04_01;;
+
+concept_subClassOf06_04_01<-rrel_sc_key_element:...
+(*<-statement;;
+=>nrel_main_idtf:[class description](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(* ->[Bipolar and related disorders are episodic mood disorders defined by the occurrence of Manic, Mixed or Hypomanic episodes or symptoms. These episodes typically alternate over the course of these disorders with Depressive episodes or periods of depressive symptoms.] (*<-lang_en;;*);;
+*);;
+*);;
+
+concept_subClassOf06_04_02=>nrel_main_idtf:[Depressive disorders]
+(*<-lang_en;;*);;
+concept_subClassOf06_04_02=>nrel_arrayOfIdentificators:[6A70 - 6A73];;
+concept_subClassOf06_04=>nrel_inclusion:concept_subClassOf06_04_02;;
+
+concept_subClassOf06_04_02<-rrel_sc_key_element:...
+(*<-statement;;
+=>nrel_main_idtf:[class description](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(* ->[Depressive disorders are characterized by depressive mood (e.g., sad, irritable, empty) or loss of pleasure accompanied by other cognitive, behavioural, or neurovegetative symptoms that significantly affect the individual’s ability to function. A depressive disorder should not be diagnosed in individuals who have ever experienced a manic, mixed or hypomanic episode, which would indicate the presence of a bipolar disorder.] (*<-lang_en;;*);;
+*);;
+*);;

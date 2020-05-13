@@ -1,0 +1,35 @@
+6A02.4=>nrel_main_idtf:[autism spectrum disorder without disorder of intellectual development and with absence of functional language](*<-lang_en;;*);;
+
+6A02.4<-concept_disease;;
+6A02.4<-rrel_sc_key_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:[Def.(Autism spectrum disorder without disorder of intellectual development and with absence of functional language)](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[All definitional requirements for autism spectrum disorder are met, intellectual functioning and adaptive behaviour are found to be at least within the average range (approximately greater than the 2.3rd percentile), and there is complete, or almost complete, absence of ability relative to the individual’s age to use functional language (spoken or signed) for instrumental purposes, such as to express personal needs and desires.](*<-lang_en;;*);;
+*);;
+*);;
+6A02.4<-sc_node_norole_relation;;
+
+6A02.4<-sc_node_norole_relation;
+=>nrel_unique_idtf:[6A02.4](*<-lang_en;;*);;
+
+concept_deficit_in_the_ability_to_initiate_social_interaction_and_social_communication<-sc_node_norole_relation;
+=>nrel_main_idtf:[deficit in the ability to initiate social interaction and social communication](*<-lang_en;;*);;
+concept_deficit_in_the_ability_to_sustain_social_interaction_and_social_communication<-sc_node_norole_relation;
+=>nrel_main_idtf:[deficit in the ablity to sustain social interaction and social communication](*<-lang_en;;*);;
+
+6A02.4=>nrel_symptom:concept_deficit_in_the_ability_to_initiate_social_interaction_and_social_communication;concept_deficit_in_the_ability_to_sustain_social_interaction_and_social_communication;;
+nrel_treatment<-sc_node_norole_relation;
+=>nrel_main_idtf:[treatment](*<-lang_en;;*);;
+6A02.4<-sc_node_norole_relation;
+=>nrel_treatment:...
+(*
+<-statement;;
+=>nrel_main_idtf:[treatment](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[No cure exists for autism spectrum disorder, and there is no one-size-fits-all treatment. The goal of treatment is to maximize your child's ability to function by reducing autism spectrum disorder symptoms and supporting development and learning. Early intervention during the preschool years can help your child learn critical social, communication, functional and behavioral skills.](*<-lang_en;;*);;
+*);;
+*);;

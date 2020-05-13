@@ -1,0 +1,38 @@
+cyclothymic_disorder=>nrel_main_idtf:[cyclothymic disorder](*<-lang_en;;*);;
+concept_subClassOf06_04_01=>nrel_inclusion:cyclothymic_disorder;;
+cyclothymic_disorder<-concept_disease;;
+cyclothymic_disorder<-rrel_sc_key_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:[Def.(Cyclothymic disorder)](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Cyclothymic disorder is characterized by a persistent instability of mood over a period of at least 2 years, involving numerous periods of hypomanic (e.g., euphoria, irritability, or expansiveness, psychomotor activation) and depressive (e.g., feeling down, diminished interest in activities, fatigue) symptoms that are present during more of the time than not. The hypomanic symptomatology may or may not be sufficiently severe or prolonged to meet the full definitional requirements of a hypomanic episode (see Bipolar type II disorder), but there is no history of manic or mixed episodes (see Bipolar type I disorder). The depressive symptomatology has never been sufficiently severe or prolonged to meet the diagnostic requirements for a depressive episode (see Bipolar type II disorder). The symptoms result in significant distress or significant impairment in personal, family, social, educational, occupational or other important areas of functioning.](*<-lang_en;;*);;
+*);;
+*);;
+cyclothymic_disorder<-sc_node_norole_relation;;
+
+cyclothymic_disorder<-sc_node_norole_relation;
+=>nrel_unique_idtf:[6A62](*<-lang_en;;*);;
+
+cyclothymic_disorder=>nrel_symptom:
+euphoria;
+irritability;
+expansiveness;
+psychomotor_agitation;
+fatigue;;
+
+nrel_treatment<-sc_node_norole_relation;
+=>nrel_main_idtf:[treatment](*<-lang_en;;*);;
+cyclothymic_disorder<-sc_node_norole_relation;
+=>nrel_treatment:...
+(*
+<-statement;;
+=>nrel_main_idtf:[treatment](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Cyclothymia is a chronic condition that will require lifelong treatment. If you stop taking medications — even during periods of remission — your symptoms will return.
+
+Because cyclothymia may develop into bipolar disorder, it is crucial that you receive appropriate treatments. Alcohol and drug use may increase your symptoms as well.](*<-lang_en;;*);;
+*);;
+*);;

@@ -1,0 +1,22 @@
+developmental_speech_or_language_disorder=>nrel_main_idtf:[developmental speech or language disorders](*<-lang_en;;*);;
+concept_subClassOf06_01=>nrel_inclusion:developmental_speech_or_language_disorder;;
+developmental_speech_or_language_disorder<-concept_disease;;
+developmental_speech_or_language_disorder<-rrel_sc_key_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:[Def.(Developmental speech or language disorders)](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Developmental speech or language disorders arise during the developmental period and are characterized by difficulties in understanding or producing speech and language or in using language in context for the purposes of communication that are outside the limits of normal variation expected for age and level of intellectual functioning. The observed speech and language problems are not attributable to social or cultural factors (e.g., regional dialects) and are not fully explained by anatomical or neurological abnormalities. The presumptive etiology for Developmental speech or language disorders is complex, and in many individual cases is unknown.](*<-lang_en;;*);;
+*);;
+*);;
+developmental_speech_or_language_disorder<-sc_node_norole_relation;;
+
+developmental_speech_or_language_disorder<-sc_node_norole_relation;
+=>nrel_unique_idtf:[6A01](*<-lang_en;;*);;
+
+developmental_speech_or_language_disorder
+=>nrel_inclusion:
+developmental_speech_sound_disorder;
+developmental_speech_fluency_disorder;
+developmental_language_disorder;;

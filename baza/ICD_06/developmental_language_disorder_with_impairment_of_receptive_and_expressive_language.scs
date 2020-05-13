@@ -1,0 +1,31 @@
+developmental_language_disorder_with_impairment_of_receptive_and_expressive_language=>nrel_main_idtf:[developmental language disorder with impairment of receptive and expressive language](*<-lang_en;;*);;
+developmental_language_disorder_with_impairment_of_receptive_and_expressive_language<-concept_disease;;
+developmental_language_disorder_with_impairment_of_receptive_and_expressive_language<-rrel_sc_key_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:[Def.(Developmental language disorder with impairment of receptive and expressive language)](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Developmental language disorder with impairment of receptive and expressive language is characterized by persistent difficulties in the acquisition, understanding, production, and use of language that arise during the developmental period, typically during early childhood, and cause significant limitations in the individual’s ability to communicate. The ability to understand spoken or signed language (i.e., receptive language) is markedly below the expected level given the individual’s age and level of intellectual functioning, and is accompanied by persistent impairment in the ability to produce and use spoken or signed language (i.e., expressive language).](*<-lang_en;;*);;
+*);;
+*);;
+
+developmental_language_disorder_with_impairment_of_receptive_and_expressive_language<-sc_node_norole_relation;
+=>nrel_unique_idtf:[6A01.20](*<-lang_en;;*);;
+concept_difficulty_in_understanding_of_language<-sc_node_norole_relation;
+=>nrel_main_idtf:[difficulty in understanding of language](*<-lang_en;;*);;
+concept_difficulty_in_use_of_language<-sc_node_norole_relation;
+=>nrel_main_idtf:[difficulty in use of language](*<-lang_en;;*);;
+developmental_language_disorder_with_impairment_of_receptive_and_expressive_language=>nrel_symptom:concept_difficulty_in_understanding_of_language;concept_difficulty_in_use_of_language;;
+nrel_treatment<-sc_node_norole_relation;
+=>nrel_main_idtf:[treatment](*<-lang_en;;*);;
+developmental_language_disorder_with_impairment_of_receptive_and_expressive_language<-sc_node_norole_relation;
+=>nrel_treatment:...
+(*
+<-statement;;
+=>nrel_main_idtf:[treatment](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Treatment is usually carried out by speech and language therapists/pathologists, who use a wide range of techniques to stimulate language learning.](*<-lang_en;;*);;
+*);;
+*);;

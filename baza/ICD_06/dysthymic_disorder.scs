@@ -1,0 +1,41 @@
+dysthymic_disorder=>nrel_main_idtf:[dysthymic disorder](*<-lang_en;;*);;
+concept_subClassOf06_04_02=>nrel_inclusion:dysthymic_disorder;;
+dysthymic_disorder<-concept_disease;;
+dysthymic_disorder<-rrel_sc_key_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:[Def.(Dysthymic disorder)](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Dysthymic disorder is characterized by a persistent depressive mood (i.e., lasting 2 years or more), for most of the day, for more days than not. In children and adolescents depressed mood can manifest as pervasive irritability.The depressed mood is accompanied by additional symptoms such as markedly diminished interest or pleasure in activities, reduced concentration and attention or indecisiveness, low self-worth or excessive or inappropriate guilt, hopelessness about the future, disturbed sleep or increased sleep, diminished or increased appetite, or low energy or fatigue. During the first 2 years of the disorder, there has never been a 2-week period during which the number and duration of symptoms were sufficient to meet the diagnostic requirements for a Depressive Episode. There is no history of Manic, Mixed, or Hypomanic Episodes.](*<-lang_en;;*);;
+*);;
+*);;
+dysthymic_disorder<-sc_node_norole_relation;;
+
+dysthymic_disorder<-sc_node_norole_relation;
+=>nrel_unique_idtf:[6A72](*<-lang_en;;*);;
+
+dysthymic_disorder=>nrel_symptom:
+difficulty_concentrating;
+feelings_of_worthless;
+excessive_guilt;
+inappropriate_guilt;
+feelings_of_hopelessness;
+suicidality;
+change_in_appetite;
+change_in_sleep;
+psychomotor_agitation;
+retardation;;
+
+nrel_treatment<-sc_node_norole_relation;
+=>nrel_main_idtf:[treatment](*<-lang_en;;*);;
+dysthymic_disorder<-sc_node_norole_relation;
+=>nrel_treatment:...
+(*
+<-statement;;
+=>nrel_main_idtf:[treatment](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[The two main treatments for persistent depressive disorder are medications and talk therapy (psychotherapy).](*<-lang_en;;*);;
+*);;
+*);;

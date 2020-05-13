@@ -1,0 +1,39 @@
+schizoaffective_discorder=>nrel_main_idtf:[schizoaffective discorder](*<-lang_en;;*);;
+concept_subClassOf06_02=>nrel_inclusion:schizoaffective_discorder;;
+schizoaffective_discorder<-concept_disease;;
+schizoaffective_discorder<-rrel_sc_key_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:[Def.(Schizoaffective Disorder)](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Schizoaffective disorder is an episodic disorder in which the diagnostic requirements of schizophrenia and a manic, mixed, or moderate or severe depressive episode are met within the same episode of illness, either simultaneously or within a few days of each other.](*<-lang_en;;*);;
+*);;
+*);;
+schizoaffective_discorder<-sc_node_norole_relation;;
+
+schizoaffective_discorder<-sc_node_norole_relation;
+=>nrel_unique_idtf:[6A21](*<-lang_en;;*);;
+concept_delusion<-sc_node_norole_relation;
+=>nrel_main_idtf:[delusion](*<-lang_en;;*);;
+disorganization<-sc_node_norole_relation;
+=>nrel_main_idtf:[disorganization](*<-lang_en;;*);;
+hallucination<-sc_node_norole_relation;
+=>nrel_main_idtf:[hallucination](*<-lang_en;;*);;
+depressed_mood<-sc_node_norole_relation;
+=>nrel_main_idtf:[depressed mood](*<-lang_en;;*);;
+elevated_mood<-sc_node_norole_relation;
+=>nrel_main_idtf:[elevated_mood](*<-lang_en;;*);;
+schizoaffective_discorder=>nrel_symptom:concept_delusion;disorganization;hallucination;depressed_mood;elevated_mood;;
+nrel_treatment<-sc_node_norole_relation;
+=>nrel_main_idtf:[treatment](*<-lang_en;;*);;
+schizoaffective_discorder<-sc_node_norole_relation;
+=>nrel_treatment:...
+(*
+<-statement;;
+=>nrel_main_idtf:[treatment](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[People with schizoaffective disorder generally respond best to a combination of medications, psychotherapy and life skills training. Treatment varies, depending on the type and severity of symptoms and whether the disorder is the depressive or bipolar type. In some cases, hospitalization may be needed. Long-term treatment can help to manage the symptoms.](*<-lang_en;;*);;
+*);;
+*);;

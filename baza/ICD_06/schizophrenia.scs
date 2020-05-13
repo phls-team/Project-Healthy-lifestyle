@@ -1,0 +1,39 @@
+schizophrenia=>nrel_main_idtf:[schizophrenia](*<-lang_en;;*);;
+concept_subClassOf06_02=>nrel_inclusion:schizophrenia;;
+schizophrenia<-concept_disease;;
+schizophrenia<-rrel_sc_key_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:[Def.(Schizophrenia)](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Schizophrenia is characterized by disturbances in multiple mental modalities.](*<-lang_en;;*);;
+*);;
+*);;
+schizophrenia<-sc_node_norole_relation;;
+
+schizophrenia<-sc_node_norole_relation;
+=>nrel_unique_idtf:[6A20](*<-lang_en;;*);;
+concept_delusion<-sc_node_norole_relation;
+=>nrel_main_idtf:[delusion](*<-lang_en;;*);;
+disorganization<-sc_node_norole_relation;
+=>nrel_main_idtf:[disorganization](*<-lang_en;;*);;
+hallucination<-sc_node_norole_relation;
+=>nrel_main_idtf:[hallucination](*<-lang_en;;*);;
+schizophrenia=>nrel_symptom:concept_delusion;disorganization;hallucination;;
+nrel_treatment<-sc_node_norole_relation;
+=>nrel_main_idtf:[treatment](*<-lang_en;;*);;
+schizophrenia<-sc_node_norole_relation;
+=>nrel_treatment:...
+(*
+<-statement;;
+=>nrel_main_idtf:[treatment](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Medications are the cornerstone of schizophrenia treatment, and antipsychotic medications are the most commonly prescribed drugs. They're thought to control symptoms by affecting the brain neurotransmitter dopamine.
+
+The goal of treatment with antipsychotic medications is to effectively manage signs and symptoms at the lowest possible dose. The psychiatrist may try different drugs, different doses or combinations over time to achieve the desired result. Other medications also may help, such as antidepressants or anti-anxiety drugs. It can take several weeks to notice an improvement in symptoms.
+
+Because medications for schizophrenia can cause serious side effects, people with schizophrenia may be reluctant to take them. Willingness to cooperate with treatment may affect drug choice. For example, someone who is resistant to taking medication consistently may need to be given injections instead of taking a pill.](*<-lang_en;;*);;
+*);;
+*);;

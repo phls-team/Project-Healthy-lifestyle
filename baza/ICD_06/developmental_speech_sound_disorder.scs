@@ -1,0 +1,26 @@
+developmental_speech_sound_disorder=>nrel_main_idtf:[developmental speech sound disorder](*<-lang_en;;*);;
+developmental_speech_sound_disorder<-concept_disease;;
+developmental_speech_sound_disorder<-rrel_sc_key_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:[Def.(Developmental speech sound disorder)](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Developmental speech sound disorder is characterized by difficulties in the acquisition, production and perception of speech that result in errors of pronunciation, either in number or types of speech errors made or the overall quality of speech production, that are outside the limits of normal variation expected for age and level of intellectual functioning and result in reduced intelligibility and significantly affect communication. The errors in pronunciation arise during the early developmental period and cannot be explained by social, cultural, and other environmental variations (e.g., regional dialects). The speech errors are not fully explained by a hearing impairment or a structural or neurological abnormality.](*<-lang_en;;*);;
+*);;
+*);;
+
+developmental_speech_sound_disorder<-sc_node_norole_relation;
+=>nrel_unique_idtf:[6A01.0](*<-lang_en;;*);;
+nrel_treatment<-sc_node_norole_relation;
+=>nrel_main_idtf:[treatment](*<-lang_en;;*);;
+developmental_speech_sound_disorder<-sc_node_norole_relation;
+=>nrel_treatment:...
+(*
+<-statement;;
+=>nrel_main_idtf:[treatment](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Treatment for speech sound disorder primarily consists of speech and language therapy. A speech-language pathologist can develop a treatment plan that helps children identify and correct the sounds or words they have difficulty saying. The speech-language pathologist can show the child how to move their tongue and lips to produce sounds correctly and provide opportunities to practice these skills.](*<-lang_en;;*);;
+*);;
+*);;
