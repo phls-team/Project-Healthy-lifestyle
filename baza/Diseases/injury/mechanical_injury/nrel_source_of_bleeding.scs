@@ -1,0 +1,54 @@
+nrel_source_of_bleeding<-sc_node_norole_relation;
+=>nrel_main_idtf:[source of bleeding]
+(*<-lang_en;;*);;
+nrel_source_of_bleeding<-sc_node_norole_relation;
+=>nrel_main_idtf:[источник кровотечения]
+(*<-lang_ru;;*);;
+nrel_source_of_bleeding<-sc_node_norole_relation;
+=>nrel_idtf:[множество источников кровотечений]
+(*<-lang_ru;;*);;
+nrel_source_of_bleeding<-sc_node_norole_relation;
+=>nrel_idtf:[amount of source of bleeding]
+(*<-lang_en;;*);;
+nrel_source_of_bleeding<-rrel_key_sc_element:...
+	(*
+<-definition;;
+=>nrel_main_idtf:[Опр.(источник кровотечения)] 
+	(* 
+		<-lang_ru;;
+	*);;
+=>nrel_main_idtf:[Def.(source of bleeding)] 
+	(* 
+		<-lang_en;;
+	*);;
+<=nrel_sc_text_translation:...
+(*
+		->[Источник кровотечения-сосуд из которого выходит кровь.]
+(* 
+<-lang_ru;; 
+*);;
+	->[Source of bleeding-blood vessel from which blood run away .](*<-lang_en;;*);;
+	*);;
+*);;
+nrel_source_of_bleeding=>nrel_first_domain:type_of_bleeding;;
+nrel_source_of_bleeding=>nrel_second_domain:blood_vessel;;
+
+nrel_source_of_bleeding<-binary_relation;;
+parameter->arity;;
+arity->binary_relation;;
+binary_relation=>nrel_measurement:2;;
+2<-number;;
+
+nrel_source_of_bleeding<-oriented_relation;;
+
+
+
+
+
+
+
+
+
+    
+
+

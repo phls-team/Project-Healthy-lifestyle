@@ -1,0 +1,17 @@
+concept_cut<-sc_node_not_relation;;
+concept_cut=>nrel_main_idtf:[порез](*<-lang_ru;;*);[cut](*<-lang_en;;*);;
+concept_cut<-rrel_key_sc_element:...
+	(*
+<-definition;;
+=>nrel_main_idtf:[Опр.(порез)] (* <-lang_ru;;*);;
+=>nrel_main_idtf:[Def.(cut)] (* <-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Порез — бытовое название неглубокой и небольшой резаной раны: повреждение кожи и (иногда) подкожной клетчатки, образующееся в результате неосторожного обращения с режущими предметами, либо преднамеренного их использования с целью нанести повреждения.](*<-lang_ru;;*);;
+->[A cut is the household name for a shallow and small cut wound: damage to the skin and (sometimes) subcutaneous tissue resulting from careless handling of cutting objects, or their deliberate use to cause damage.](*<-lang_ru;;*);;
+	
+*);;
+*);;
+
+
+

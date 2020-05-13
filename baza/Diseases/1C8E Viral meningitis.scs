@@ -1,0 +1,28 @@
+viral_meningitis=>nrel_main_idtf:[вирусный менингит](*<-lang_ru;;*);[viral meningitis](*<-lang_en;;*);;
+concept_subClassOf01_09=>nrel_inclusion:viral_meningitis;;
+viral_meningitis<-concept_disease;;
+viral_meningitis<-rrel_sc_key_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:[Опр.(Вирусный менингит)](*<-lang_ru;;*);;
+=>nrel_main_idtf:[Def.(Viral meningitis)](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Воспаление мозга вызванное вирусами.](*<-lang_ru;;*);;
+->[Inflammation of the brain caused by viruses.](*<-lang_en;;*);;
+*);;
+*);;
+viral_meningitis=>nrel_unique_idtf:[1C8E](*<-lang_en;;*);;
+viral_meningitis=>nrel_symptom:headache;fever;;
+//rabies=>nrel_period_of_full_development:depression;pain_and_weakness_in_muscles;;
+viral_meningitis=>nrel_healing:...
+(*
+<-statement;;
+=>nrel_main_idtf:[лечение вирусного менингита](*<-lang_ru;;*);;
+=>nrel_main_idtf:[healing of the viral meningitis](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Этиотропного и специфического лечения нет. В соответствии с клинической формой используют патогенетические и симптоматические средства. При тяжёлом течении инфекции применяют препараты интерферона и глюкокортикостероидов.](*<-lang_ru;;*);;
+->[There is no etiotropic and specific treatment. In accordance with the clinical form, pathogenetic and symptomatic agents are used. In severe infections, interferon and glucocorticosteroids are used.](*<-lang_en;;*);;
+*);;
+*);;

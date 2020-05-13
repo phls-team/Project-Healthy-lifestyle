@@ -1,0 +1,18 @@
+internal_bleeding=>nrel_main_idtf:[внутренее кровотечение](*<-lang_ru;;*);[internal bleeding](*<-lang_en;;*);;
+internal_bleeding<-rrel_key_sc_element:...
+	(*
+<-definition;;
+=>nrel_main_idtf:[Опр.(внутренее кровотечение)] (* <-lang_ru;;*);;
+=>nrel_main_idtf:[Def.(internal bleeding)](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Внутренее кровотечение-крайне опасное состояние, которое тяжело диагностировать. Оно проявляется кровопотерей, при которой кровь не вытекает через естественные кожные барьеры, а попадает в полости кишечника, брюшины, матки, желудка и т.д.](*<-lang_ru;;*);;
+->[Internal bleeding is an extremely dangerous condition that is difficult to diagnose. It manifests itself as blood loss, in which blood does not leak through natural skin barriers, but enters the cavity of the intestine, peritoneum, uterus, stomach, etc.](*<-lang_en;;*);;
+	
+*);;
+*);;
+internal_bleeding<-concept_bleeding;;
+
+
+
+

@@ -1,0 +1,14 @@
+chills=>nrel_main_idtf:[chills](*<-lang_en;;*);;
+chills=>nrel_main_idtf:[озноб](*<-lang_ru;;*);;
+chills<-rrel_key_sc_element:...
+(*<-definition;;
+=>nrel_main_idtf:[Опр.(озноб)](*<-lang_ru;;*);;
+=>nrel_main_idtf:[Def.(chills)](*<-lang_rn;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Озноб-вызванное спазмом поверхностных (кожных) кровеносных сосудов ощущение холода, сопровождающееся мышечной дрожью (главным образом жевательных мышц, затем мышц плечевого пояса, спины и конечностей) и спазмом кожных мышц («гусиная кожа»).](*<-lang_ru;;*);;
+->[Chills caused by spasm of superficial (skin) blood vessels sensation of cold, accompanied by muscle tremors (mainly chewing muscles, then muscles of the shoulder girdle, back and limbs) and spasm of skin muscles ("goose bumps").](*<-lang_en;;*);;
+*);;
+*);;
+chills=>nrel_unique_idtf:[MG21];;
+chills<-concept_illness;;

@@ -1,0 +1,15 @@
+coagulopathy=>nrel_main_idtf:[coagulopathy](*<-lang_en;;*);;
+coagulopathy=>nrel_main_idtf:[коагулопатия](*<-lang_ru;;*);;
+coagulopathy=>nrel_idtf:[нарушение свертываемости крови](*<-lang_ru;;*);;
+coagulopathy<-rrel_key_sc_element:...
+(*<-definition;;
+=>nrel_main_idtf:[Опр.(коагулопатия)](*<-lang_ru;;*);;
+=>nrel_main_idtf:[Def.(coagulopathy)](*<-lang_rn;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Коагулопатия-патологическое состояние организма, обусловленное нарушениями свёртываемости крови.](*<-lang_ru;;*);;
+->[Coagulopathy is a pathological condition of the body due to bleeding disorders.](*<-lang_en;;*);;
+*);;
+*);;
+//cough=>nrel_unique_idtf:[MD12];;
+coagulopathy<-concept_illness;;

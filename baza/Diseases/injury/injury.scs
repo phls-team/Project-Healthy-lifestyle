@@ -1,0 +1,16 @@
+concept_injury=>nrel_idtf:[множество травм]
+	(*<-lang_ru;;*);;
+concept_injury<-rrel_key_sc_element:...
+	(*
+<-definition;;
+=>nrel_main_idtf:[Опр.(травма)] 
+	(* <-lang_ru;;*);;
+=>nrel_main_idtf:[Def.(injury)](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Травма-повреждение органов и тканей тела человека, возникающее в результате внешнего воздействия]
+(* <-lang_ru;;*);;
+->[Injury-the damage of organ and human tissue, after external impact.](*<-lang_en;;*);;
+	*);;
+*);;
+concept_injury=>nrel_inclusion:concept_electrical_injury;concept_thermal_injury;concept_mechanical_injury;;

@@ -1,0 +1,17 @@
+concept_hurt<-sc_node_not_relation;;
+concept_hurt=>nrel_main_idtf:[ушиб](*<-lang_ru;;*);[hurt](*<-lang_en;;*);;
+concept_hurt<-rrel_key_sc_element:...
+	(*
+<-definition;;
+=>nrel_main_idtf:[Опр.(ушиб)] (* <-lang_ru;;*);;
+=>nrel_main_idtf:[Def.hurt)] (* <-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Ушиб-закрытое повреждение тканей и органов без существенного нарушения их структуры. Чаще повреждаются поверхностно расположенные ткани (кожа, подкожная клетчатка, мышцы и надкостница).](*<-lang_ru;;*);;
+->[Hurt-closed damage to tissues and organs without a significant violation of their structure. The surface tissues (skin, subcutaneous tissue, muscles and periosteum) are more often damaged.](*<-lang_ru;;*);;
+	
+*);;
+*);;
+
+
+

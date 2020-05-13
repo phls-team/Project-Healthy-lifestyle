@@ -1,0 +1,14 @@
+hemarthrosis=>nrel_main_idtf:[hemarthrosis](*<-lang_en;;*);;
+hemarthrosis=>nrel_main_idtf:[гемартроз](*<-lang_ru;;*);;
+hemarthrosis<-rrel_key_sc_element:...
+(*<-definition;;
+=>nrel_main_idtf:[Опр.(гемартроз)](*<-lang_ru;;*);;
+=>nrel_main_idtf:[Def.(hemarthrosis)](*<-lang_rn;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Кровь заполняет полость сустава и его завороты, вызывая боль, увеличение объёма сустава, ограничение и болезненность движений, отёк, опухлость на месте травмы.](*<-lang_ru;;*);;
+->[Blood fills the joint cavity and its inversion, causing pain, increased joint volume, limitation and soreness of movements, edema, swelling at the site of injury.](*<-lang_en;;*);;
+*);;
+*);;
+hemarthrosis=>nrel_unique_idtf:[FA36.0];;
+hemarthrosis<-concept_illness;;

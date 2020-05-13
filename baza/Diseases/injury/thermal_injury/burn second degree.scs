@@ -1,0 +1,26 @@
+burn_second_degree=>nrel_main_idtf:[ожог второй степени](*<-lang_ru;;*);[burn of the second degree](*<-lang_en;;*);;
+burn_second_degree<-concept_thermal_injury;;
+burn_second_degree<-rrel_sc_key_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:[Опр.(Ожог второй степени)](*<-lang_ru;;*);;
+=>nrel_main_idtf:[Def.(Burn of the second degree)](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[при ожоге 2 степени на коже появляются волдыри.](*<-lang_ru;;*);;
+->[with a burn of 2 degrees, blisters appear on the skin.](*<-lang_en;;*);;
+	
+*);;
+*);;
+number_2
+	=> nrel_main_idtf: [два](*<-lang_ru;;*);
+	<-concept_number;
+	<=nrel_identification: ...
+		(*
+		->rrel_binary_system: [2];;
+		*)
+;;
+burn_second_degree=>nrel_burn_degree:number_2;;
+
+
+

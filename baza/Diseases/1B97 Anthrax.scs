@@ -1,0 +1,36 @@
+anthrax=>nrel_main_idtf:[сибирская язва](*<-lang_ru;;*);[anthrax](*<-lang_en;;*);;
+concept_subClassOf01_06=>nrel_inclusion:anthrax;;
+anthrax<-concept_disease;;
+anthrax<-rrel_sc_key_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:[Опр.(Сибирская язва)](*<-lang_ru;;*);;
+=>nrel_main_idtf:[Def.(Anthrax)](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Сибирская язва - особо опасная инфекционная болезнь сельскохозяйственных и диких животных всех видов, а также человека, вызываемая бактерией Bacillus anthracis. Болезнь протекает молниеносно, сверхостро, остро и подостро (у овец и крупного рогатого скота), ангинозно (у свиней), преимущественно в карбункулёзной форме — у человека. Встречаются также орофарингеальная и гастроинтестинальная формы. Характеризуется интоксикацией, развитием серозно-геморрагического воспаления кожи, лимфатических узлов и внутренних органов; протекает в кожной или септической форме (также у животных встречаются кишечная и лёгочная формы).](*<-lang_ru;;*);;
+->[Anthrax is a particularly dangerous infectious disease of agricultural and wild animals of all species, as well as humans, caused by the bacterium Bacillus anthracis. The disease proceeds at lightning speed, over-construction, acutely and sub-structure (in sheep and cattle), sore throat (in pigs), mainly in the carbunculous form, in humans. Oropharyngeal and gastrointestinal forms are also found. It is characterized by intoxication, the development of serous-hemorrhagic inflammation of the skin, lymph nodes and internal organs; occurs in skin or septic form (also in animals intestinal and pulmonary forms are found).](*<-lang_en;;*);;
+*);;
+*);;
+anthrax=>nrel_incubation_period:...
+(*
+=>rrel_minimalPeriod:[few hours](*<-lang_en;;*);;
+=>rrel_minimalPeriod:[несколько часов](*<-lang_ru;;*);;
+=>rrel_maximalPeriod:[8 days](*<-lang_en;;*);;
+=>rrel_maximalPeriod:[8 дней](*<-lang_ru;;*);;
+*);;
+
+anthrax=>nrel_unique_idtf:[1B97](*<-lang_en;;*);;
+anthrax=>nrel_symptom:fever;pain_and_weakness_in_muscles;headache;;
+//anthrax=>nrel_period_of_full_development:depression;pain_and_weakness_in_muscles;;
+anthrax=>nrel_healing:...
+(*
+<-statement;;
+=>nrel_main_idtf:[лечение сибирской язвы](*<-lang_ru;;*);;
+=>nrel_main_idtf:[healing of the anthrax](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Раннее антибактериальное лечение сибирской язвы имело важное значение, поскольку задержка значительно снижает шансы на выживание. Лечение инфекции от сибирской язвы и других бактериальных инфекций включает большие дозы внутривенных и пероральных антибиотиков.](*<-lang_ru;;*);;
+->[Early antibacterial treatment for anthrax was important because delay significantly reduces the chances of survival. Treatment for anthrax and other bacterial infections involves large doses of intravenous and oral antibiotics.](*<-lang_en;;*);;
+*);;
+*);;

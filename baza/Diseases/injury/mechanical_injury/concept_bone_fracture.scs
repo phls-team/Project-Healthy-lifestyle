@@ -1,0 +1,17 @@
+concept_bone_fracture<-sc_node_not_relation;;
+concept_bone_fracture=>nrel_main_idtf:[перелом](*<-lang_ru;;*);[bone fracture](*<-lang_en;;*);;
+concept_bone_fracture<-rrel_key_sc_element:...
+	(*
+<-definition;;
+=>nrel_main_idtf:[Опр.(перелом)] (* <-lang_ru;;*);;
+=>nrel_main_idtf:[Def.(bone fracture)] (* <-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Перелом-полное или частичное нарушение целостности кости при нагрузке, превышающей прочность травмируемого участка скелета.](*<-lang_ru;;*);;
+->[Bone fracture-complete or partial violation of the integrity of the bone under a load exceeding the strength of the injured area of ​​the skeleton.](*<-lang_ru;;*);;
+	
+*);;
+*);;
+
+
+

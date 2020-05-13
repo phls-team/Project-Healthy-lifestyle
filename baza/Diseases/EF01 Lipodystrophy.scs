@@ -1,0 +1,29 @@
+lipodystrophy=>nrel_main_idtf:[липодистрофия](*<-lang_ru;;*);[lipodystrophy](*<-lang_en;;*);;
+lipodystrophy=>nrel_idtf:[Целлюлит](*<-lang_ru;;*);;
+//concept_subClassOf01_09=>nrel_inclusion:rabies;;
+lipodystrophy<-concept_disease;;
+lipodystrophy<-rrel_sc_key_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:[Опр.(Липодистрофия)](*<-lang_ru;;*);;
+=>nrel_main_idtf:[Def.(Lipodystrophy)](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[структурные изменения в подкожном слое, ведущие к нарушению микроциркуляции и лимфатического оттока.](*<-lang_ru;;*);;
+->[structural changes in the subcutaneous layer leading to impaired microcirculation and lymphatic outflow](*<-lang_en;;*);;
+*);;
+*);;
+lipodystrophy=>nrel_unique_idtf:[EF01](*<-lang_en;;*);;
+//lipodystrophy=>nrel_symptom:sore_throat;fever;;
+//rabies=>nrel_period_of_full_development:depression;pain_and_weakness_in_muscles;;
+//tonsillitis=>nrel_healing:...
+//(*
+//<-statement;;
+//=>nrel_main_idtf:[лечение тонзилита](*<-lang_ru;;*);;
+//=>nrel_main_idtf:[healing of the tonsillitis](*<-lang_en;;*);;
+//<=nrel_sc_text_translation:...
+//(*
+//->[Основные рекомендации: приём антибиотиков, постельный режим в первые дни заболевания, нераздражающая, мягкая и питательная диета, //витамины, обильное питьё.](*<-lang_ru;;*);;
+//->[Key recommendations: taking antibiotics, bed rest in the early days of the disease, a non-irritating, soft and nutritious diet, vitamins, //and plenty of water.](*<-lang_en;;*);;
+//*);;
+//*);;

@@ -1,0 +1,14 @@
+forgetfulness=>nrel_main_idtf:[forgetfulness](*<-lang_en;;*);;
+forgetfulness=>nrel_main_idtf:[забывчивость](*<-lang_ru;;*);;
+forgetfulness<-rrel_key_sc_element:...
+(*<-definition;;
+=>nrel_main_idtf:[Опр.(забывчивость)](*<-lang_ru;;*);;
+=>nrel_main_idtf:[Def.(forgetfulness)](*<-lang_rn;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Забывчивость-потеря памяти](*<-lang_ru;;*);;
+->[Забывчивость-потеря памяти](*<-lang_en;;*);;
+*);;
+*);;
+forgetfulness=>nrel_unique_idtf:[SD23];;
+forgetfulness<-concept_illness;;

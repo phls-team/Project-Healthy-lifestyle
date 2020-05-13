@@ -1,0 +1,18 @@
+arterial_bleeding=>nrel_main_idtf:[артериальное кровотечение](*<-lang_ru;;*);[arterial bleeding](*<-lang_en;;*);;
+arterial_bleeding<-rrel_key_sc_element:...
+	(*
+<-definition;;
+=>nrel_main_idtf:[Опр.(артериальное кровотечение)] (* <-lang_ru;;*);;
+=>nrel_main_idtf:[Def.(arterial bleeding)](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Артериальное кровотечение-изливающаяся кровь имеет ярко-красный цвет, она бьёт сильной пульсирующей струёй (фонтаном)](*<-lang_ru;;*);;
+->[Arterial bleeding - poured blood has a bright red color, it beats with a strong pulsating stream .](*<-lang_en;;*);;
+	
+*);;
+*);;
+arterial_bleeding<-concept_bleeding;;
+arterial_bleeding=>nrel_source_of_bleeding:artery;;
+
+
+

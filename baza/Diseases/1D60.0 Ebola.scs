@@ -1,0 +1,36 @@
+ebola=>nrel_main_idtf:[эбола](*<-lang_ru;;*);[ebola](*<-lang_en;;*);;
+concept_subClassOf01_13=>nrel_inclusion:ebola;;
+ebola<-concept_disease;;
+ebola<-rrel_sc_key_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:[Опр.(Эбола)](*<-lang_ru;;*);;
+=>nrel_main_idtf:[Def.(Ebola)](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[острая вирусная высококонтагиозная болезнь, вызванная вирусом Эбо́ла (БВВЭ, англ. Ebola virus disease, EVD). Редкое, но крайне опасное заболевание.](*<-lang_ru;;*);;
+->[acute viral highly contagious disease caused by the Ebola virus (BVVE, Eng. Ebola virus disease, EVD). A rare but extremely dangerous disease.](*<-lang_en;;*);;
+*);;
+*);;
+ebola=>nrel_incubation_period:...
+(*
+=>rrel_minimalPeriod:[2 days](*<-lang_en;;*);;
+=>rrel_minimalPeriod:[2 дней](*<-lang_ru;;*);;
+=>rrel_maximalPeriod:[21 days](*<-lang_en;;*);;
+=>rrel_maximalPeriod:[21 дней](*<-lang_ru;;*);;
+*);;
+
+ebola=>nrel_unique_idtf:[1D60.0](*<-lang_en;;*);;
+ebola=>nrel_symptom:fever;pain_and_weakness_in_muscles;loss_of_appetite;sore_throat;;
+ebola=>nrel_period_of_full_development:vomiting;diarrhea;headache;rashes;internal_bleeding;coagulopathy;;
+ebola=>nrel_healing:...
+(*
+<-statement;;
+=>nrel_main_idtf:[лечение лихорадки эбола](*<-lang_ru;;*);;
+=>nrel_main_idtf:[healing of ebola fever](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[За больными лихорадкой Эбола требуется интенсивный уход: в случае обезвоживания — внутривенные вливания и оральная регидратация растворами, содержащими электролиты.](*<-lang_ru;;*);;
+->[Ebola patients need intensive care: in the case of dehydration, intravenous infusions and oral rehydration with solutions containing electrolytes.](*<-lang_en;;*);;
+*);;
+*);;

@@ -1,0 +1,14 @@
+cough=>nrel_main_idtf:[cough](*<-lang_en;;*);;
+cough=>nrel_main_idtf:[кашель](*<-lang_ru;;*);;
+cough<-rrel_key_sc_element:...
+(*<-definition;;
+=>nrel_main_idtf:[Опр.(кашель)](*<-lang_ru;;*);;
+=>nrel_main_idtf:[Def.(cough)](*<-lang_rn;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Кашель является важным естественным защитным механизмом и защитным рефлексом для очистки верхних и нижних дыхательных путей от чрезмерного выделения, такого как слизь и вдыхаемые частицы. Кашель является распространенным симптомом большинства респираторных заболеваний и может свидетельствовать о тривиальной или очень серьезной патологии дыхательных путей или легких.](*<-lang_ru;;*);;
+->[Cough is an important natural defensive mechanism and protective reflex for clearing the upper and lower airways of excessive secretions such as mucus and inhaled particles. Cough is a common symptom of most respiratory disorders and may be indicative of trivial to very serious airway or lung pathology.](*<-lang_en;;*);;
+*);;
+*);;
+cough=>nrel_unique_idtf:[MD12];;
+cough<-concept_illness;;

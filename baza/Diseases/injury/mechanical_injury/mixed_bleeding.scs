@@ -1,0 +1,18 @@
+mixed_bleeding=>nrel_main_idtf:[смешанное кровотечение](*<-lang_ru;;*);[mixed bleeding](*<-lang_en;;*);;
+mixed_bleeding<-rrel_key_sc_element:...
+	(*
+<-definition;;
+=>nrel_main_idtf:[Опр.(смешанное кровотечение)] (* <-lang_ru;;*);;
+=>nrel_main_idtf:[Def.(mixed bleeding)](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Смешанное кровотечение-кровотечение из нескольких источников.](*<-lang_ru;;*);;
+->[Mixed bleeding - multiple bleeding.](*<-lang_en;;*);;
+	
+*);;
+*);;
+mixed_bleeding<-concept_bleeding;;
+
+
+
+
