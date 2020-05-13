@@ -1,0 +1,2 @@
+nrel_daily_intake_of_calories => nrel_main_idtf: [суточная норма каллорий*] (* <- lang_ru;; *);;
+nrel_daily_intake_of_calories <- sc_node_norole_relation ;;

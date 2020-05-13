@@ -1,0 +1,375 @@
+agent_for_finding_recommended_daily_steps
+=> nrel_main_idtf:
+	[агентная scp-программа поиска рекомендуемой нормы шагов] 
+	(* <- lang_ru;; *);
+	[agent scp-program of finding recommended daily steps] 
+	(* <- lang_en;; *);
+
+<- agent_scp_program;;
+
+scp_program -> agent_for_finding_recommended_daily_steps
+	(*
+		-> rrel_params: ..agent_for_finding_recommended_daily_steps_params 
+			(*
+				-> rrel_1: rrel_in: _event;;
+				-> rrel_2: rrel_in: _input_arc;;
+			*);;
+
+		->rrel_operators: ..agent_for_finding_recommended_daily_steps_operator_set 
+			(*
+				->rrel_init: ..agent_for_finding_recommended_daily_steps_operator1 
+					(*
+						<- searchElStr3;;
+
+						-> rrel_1: rrel_assign: rrel_scp_var: _temp;;
+						-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
+						-> rrel_3: rrel_assign: rrel_scp_var: _quest;;
+
+						=>nrel_goto: ..agent_for_finding_recommended_daily_steps_operator2;;
+					*);;
+				-> ..agent_for_finding_recommended_daily_steps_operator2 
+					(*
+						<- searchElStr3;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_const: question_finding_recommended_daily_steps ;;
+						-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+						=>nrel_then: ..agent_for_finding_recommended_daily_steps_operator3;;
+						=>nrel_else: ..agent_for_finding_recommended_daily_steps_operator_return;;
+					*);;
+				-> ..agent_for_finding_recommended_daily_steps_operator3 
+					(*
+						<- searchElStr3;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+						-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+						-> rrel_3: rrel_assign: rrel_scp_var: _param;;
+
+						=>nrel_then: ..agent_for_finding_recommended_daily_steps_operator4;;
+						=>nrel_else: ..agent_for_finding_recommended_daily_steps_operator_return;;
+					*);;
+				-> ..agent_for_finding_recommended_daily_steps_operator4
+					(*
+						<- genEl ;;
+
+						-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _answer ;;
+					 	
+					 	=> nrel_goto: ..agent_for_finding_recommended_daily_steps_operator6;;
+					*);;
+				-> ..agent_for_finding_recommended_daily_steps_operator6
+					(*
+						<- searchElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_const: concept_human ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _param ;;
+		
+						=> nrel_then: ..agent_for_finding_recommended_daily_steps_operator8 ;;
+						=> nrel_else: ..agent_for_finding_recommended_daily_steps_operator_return ;;
+					*);;
+				-> ..agent_for_finding_recommended_daily_steps_operator8
+					(*
+						<- searchElStr5 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _param ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _com ;;
+						-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _set ;;
+						-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_weekly_activity ;;
+		
+						=> nrel_then: ..agent_for_finding_recommended_daily_steps_operator9 ;;
+						=> nrel_else: ..agent_for_finding_recommended_daily_steps_operator24 ;;
+					*);;
+				-> ..agent_for_finding_recommended_daily_steps_operator9
+					(*
+						<- contAssign ;;
+
+						-> rrel_1: rrel_assign: rrel_scp_var: rrel_link: _count ;;
+						-> rrel_2: rrel_fixed: rrel_scp_const: [0] ;;
+		
+						=> nrel_goto: ..agent_for_finding_recommended_daily_steps_operator10 ;;
+					*);;
+				-> ..agent_for_finding_recommended_daily_steps_operator10
+					(*
+						<- searchSetStr3 ;;
+		
+						-> rrel_1: rrel_fixed: rrel_scp_var: _set ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _activity ;;
+		
+						-> rrel_set_3: rrel_assign: rrel_scp_var: rrel_node: _activity_set ;;
+
+						=> nrel_then: ..agent_for_finding_recommended_daily_steps_operator11 ;;
+						=> nrel_else: ..agent_for_finding_recommended_daily_steps_operator24 ;;
+					*);;
+				-> ..agent_for_finding_recommended_daily_steps_operator11
+					(*
+						<- searchElStr3 ;;
+		
+						-> rrel_1: rrel_fixed: rrel_scp_var: _activity_set ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _activity ;;
+
+						=> nrel_then: ..agent_for_finding_recommended_daily_steps_operator12 ;;
+						=> nrel_else: ..agent_for_finding_recommended_daily_steps_operator14 ;;
+					*);;
+				-> ..agent_for_finding_recommended_daily_steps_operator12
+					(*
+						<- eraseEl ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: rrel_erase: _arc ;;
+		
+						=> nrel_goto: ..agent_for_finding_recommended_daily_steps_operator13 ;;
+					*);;
+				-> ..agent_for_finding_recommended_daily_steps_operator13
+					(*
+						<- contAdd ;;
+	
+						-> rrel_1: rrel_fixed: rrel_scp_var: _count ;;
+						-> rrel_2: rrel_fixed: rrel_scp_var: _count ;;
+						-> rrel_3: rrel_fixed: rrel_scp_const: [1] ;;
+
+						=> nrel_goto: ..agent_for_finding_recommended_daily_steps_operator11 ;;
+					*);;
+				-> ..agent_for_finding_recommended_daily_steps_operator14
+					(*
+						<- ifGr ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _count ;;
+						-> rrel_2: rrel_fixed: rrel_scp_const: [4] ;;
+					
+						=> nrel_then: ..agent_for_finding_recommended_daily_steps_operator19 ;;
+						=> nrel_else: ..agent_for_finding_recommended_daily_steps_operator15 ;;
+					*);;
+				-> ..agent_for_finding_recommended_daily_steps_operator15
+					(*
+						<- ifGr ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _count ;;
+						-> rrel_2: rrel_fixed: rrel_scp_const: [3] ;;
+					
+						=> nrel_then: ..agent_for_finding_recommended_daily_steps_operator20 ;;
+						=> nrel_else: ..agent_for_finding_recommended_daily_steps_operator16 ;;
+					*);;
+				-> ..agent_for_finding_recommended_daily_steps_operator16
+					(*
+						<- ifGr ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _count ;;
+						-> rrel_2: rrel_fixed: rrel_scp_const: [2] ;;
+					
+						=> nrel_then: ..agent_for_finding_recommended_daily_steps_operator21 ;;
+						=> nrel_else: ..agent_for_finding_recommended_daily_steps_operator17 ;;
+					*);;
+				-> ..agent_for_finding_recommended_daily_steps_operator17
+					(*
+						<- ifGr ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _count ;;
+						-> rrel_2: rrel_fixed: rrel_scp_const: [1] ;;
+					
+						=> nrel_then: ..agent_for_finding_recommended_daily_steps_operator22 ;;
+						=> nrel_else: ..agent_for_finding_recommended_daily_steps_operator18 ;;
+					*);;
+				-> ..agent_for_finding_recommended_daily_steps_operator18
+					(*
+						<- ifGr ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _count ;;
+						-> rrel_2: rrel_fixed: rrel_scp_const: [0] ;;
+					
+						=> nrel_then: ..agent_for_finding_recommended_daily_steps_operator23 ;;
+						=> nrel_else: ..agent_for_finding_recommended_daily_steps_operator24 ;;
+					*);;
+				-> ..agent_for_finding_recommended_daily_steps_operator19
+					(*
+						<- genElStr5 ;;
+	
+						-> rrel_1: rrel_fixed: rrel_scp_var: _param ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: rrel_const: _answer_com ;;
+						-> rrel_3: rrel_fixed: rrel_scp_const: 12500steps ;;
+						-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: rrel_const: _answer_arc ;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_recommended_daily_steps ;;
+
+						=> nrel_goto: ..agent_for_finding_recommended_daily_steps_operator25;;
+					*);;
+				-> ..agent_for_finding_recommended_daily_steps_operator20
+					(*
+						<- genElStr5 ;;
+	
+						-> rrel_1: rrel_fixed: rrel_scp_var: _param ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: rrel_const: _answer_com ;;
+						-> rrel_3: rrel_fixed: rrel_scp_const: 11000steps ;;
+						-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: rrel_const: _answer_arc ;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_recommended_daily_steps ;;
+
+						=> nrel_goto: ..agent_for_finding_recommended_daily_steps_operator26;;
+					*);;
+				-> ..agent_for_finding_recommended_daily_steps_operator21
+					(*
+						<- genElStr5 ;;
+	
+						-> rrel_1: rrel_fixed: rrel_scp_var: _param ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: rrel_const: _answer_com ;;
+						-> rrel_3: rrel_fixed: rrel_scp_const: 9500steps ;;
+						-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: rrel_const: _answer_arc ;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_recommended_daily_steps ;;
+
+						=> nrel_goto: ..agent_for_finding_recommended_daily_steps_operator27;;
+					*);;
+				-> ..agent_for_finding_recommended_daily_steps_operator22
+					(*
+						<- genElStr5 ;;
+	
+						-> rrel_1: rrel_fixed: rrel_scp_var: _param ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: rrel_const: _answer_com ;;
+						-> rrel_3: rrel_fixed: rrel_scp_const: 8000steps ;;
+						-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: rrel_const: _answer_arc ;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_recommended_daily_steps ;;
+
+						=> nrel_goto: ..agent_for_finding_recommended_daily_steps_operator28;;
+					*);;
+				-> ..agent_for_finding_recommended_daily_steps_operator23
+					(*
+						<- genElStr5 ;;
+	
+						-> rrel_1: rrel_fixed: rrel_scp_var: _param ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: rrel_const: _answer_com ;;
+						-> rrel_3: rrel_fixed: rrel_scp_const: 6500steps ;;
+						-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: rrel_const: _answer_arc ;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_recommended_daily_steps ;;
+
+						=> nrel_goto: ..agent_for_finding_recommended_daily_steps_operator29;;
+					*);;
+				-> ..agent_for_finding_recommended_daily_steps_operator24
+					(*
+						<- genElStr5 ;;
+	
+						-> rrel_1: rrel_fixed: rrel_scp_var: _param ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: rrel_const: _answer_com ;;
+						-> rrel_3: rrel_fixed: rrel_scp_const: 5000steps ;;
+						-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: rrel_const: _answer_arc ;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_recommended_daily_steps ;;
+
+						=> nrel_goto: ..agent_for_finding_recommended_daily_steps_operator30;;
+					*);;
+ 				-> ..agent_for_finding_recommended_daily_steps_operator25
+					(*
+						<- genElStr3 ;;
+	
+						-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_const: 12500steps ;;
+
+						=> nrel_goto: ..agent_for_finding_recommended_daily_steps_operator31;;
+					*);;
+				-> ..agent_for_finding_recommended_daily_steps_operator26
+					(*
+						<- genElStr3 ;;
+	
+						-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_const: 11000steps ;;
+
+						=> nrel_goto: ..agent_for_finding_recommended_daily_steps_operator31;;
+					*);;
+				-> ..agent_for_finding_recommended_daily_steps_operator27
+					(*
+						<- genElStr3 ;;
+	
+						-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_const: 9500steps ;;
+
+						=> nrel_goto: ..agent_for_finding_recommended_daily_steps_operator31;;
+					*);;
+				-> ..agent_for_finding_recommended_daily_steps_operator28
+					(*
+						<- genElStr3 ;;
+	
+						-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_const: 8000steps ;;
+
+						=> nrel_goto: ..agent_for_finding_recommended_daily_steps_operator31;;
+					*);;
+				-> ..agent_for_finding_recommended_daily_steps_operator29
+					(*
+						<- genElStr3 ;;
+	
+						-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_const: 6500steps ;;
+
+						=> nrel_goto: ..agent_for_finding_recommended_daily_steps_operator31;;
+					*);;
+				-> ..agent_for_finding_recommended_daily_steps_operator30
+					(*
+						<- genElStr3 ;;
+	
+						-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_const: 5000steps ;;
+
+						=> nrel_goto: ..agent_for_finding_recommended_daily_steps_operator31;;
+					*);;
+				-> ..agent_for_finding_recommended_daily_steps_operator31
+					(*
+						<- genElStr3 ;;
+	
+						-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _answer_arc ;;
+
+						=> nrel_goto: ..agent_for_finding_recommended_daily_steps_operator32;;
+					*);;
+				-> ..agent_for_finding_recommended_daily_steps_operator32
+					(*
+						<- genElStr3 ;;
+	
+						-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _answer_com ;;
+
+						=> nrel_goto: ..agent_for_finding_recommended_daily_steps_operator32A ;;
+					*);;
+				-> ..agent_for_finding_recommended_daily_steps_operator32A
+					(*
+						<- genElStr3 ;;
+	
+						-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_const: nrel_recommended_daily_steps ;;
+
+						=> nrel_goto: ..agent_for_finding_recommended_daily_steps_operator32B ;;
+					*);;
+				-> ..agent_for_finding_recommended_daily_steps_operator32B
+					(*
+						<- genElStr3 ;;
+	
+						-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _param ;;
+
+						=> nrel_goto: ..agent_for_finding_recommended_daily_steps_operator33 ;;
+					*);;
+				
+				->  ..agent_for_finding_recommended_daily_steps_operator33
+					(*
+						<- genElStr5;;
+		
+						-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+						-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
+						-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+		
+						=>nrel_goto: ..agent_for_finding_recommended_daily_steps_operator_return;;
+					*);;
+				-> ..agent_for_finding_recommended_daily_steps_operator_return 
+					(*
+						<- return;;
+					*);;
+			*);;
+	*);;			

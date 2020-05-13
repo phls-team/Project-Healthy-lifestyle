@@ -1,0 +1,8 @@
+12500steps => nrel_main_idtf: [12500 шагов] (* <- lang_ru;; *);;
+11000steps => nrel_main_idtf: [11000 шагов] (* <- lang_ru;; *);;
+9500steps => nrel_main_idtf: [9500 шагов] (* <- lang_ru;; *);;
+8000steps => nrel_main_idtf: [8000 шагов] (* <- lang_ru;; *);;
+6500steps => nrel_main_idtf: [6500 шагов] (* <- lang_ru;; *);;
+5000steps => nrel_main_idtf: [5000 шагов] (* <- lang_ru;; *);;
+nrel_recommended_daily_steps => nrel_main_idtf: [рекомендуемая норма шагов*] (* <- lang_ru;; *);;
+nrel_recommended_daily_steps <- sc_node_norole_relation ;;

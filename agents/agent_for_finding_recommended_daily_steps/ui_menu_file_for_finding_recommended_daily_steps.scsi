@@ -1,0 +1,20 @@
+ui_menu_file_for_finding_recommended_daily_steps
+	<- 	ui_user_command_class_atom; 
+		ui_user_command_class_view_kb;
+	=> nrel_main_idtf: 
+		[Какова рекомендуемая норма шагов?](* <- lang_ru;; *);
+		[What recommended daily steps?] (* <- lang_en;; *);
+	=> ui_nrel_command_template:
+		[*
+		question_finding_recommended_daily_steps _-> ._question_finding_recommended_daily_steps_instance
+			(*
+			_-> ui_arg_1;;
+			*);;
+		._question_finding_recommended_daily_steps_instance _<- question;;
+		*];
+	=> ui_nrel_command_lang_template: 
+		[Запрос поиска рекомендуемой нормы шагов для: $ui_arg_1] 
+		(* <- lang_ru;; *);
+		[Request of finding recommended daily steps for: $ui_arg_1] 
+		(* <- lang_en;; *);;
+

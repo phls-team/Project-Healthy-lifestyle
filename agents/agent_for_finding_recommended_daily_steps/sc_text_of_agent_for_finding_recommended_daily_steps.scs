@@ -1,0 +1,6 @@
+sc_text_of_agent_for_finding_recommended_daily_steps
+-> rrel_key_sc_element:
+	agent_for_finding_recommended_daily_steps;
+<- scp_program_sc_text;;
+
+sc_text_of_agent_for_finding_recommended_daily_steps = [*^"file://agent_for_finding_recommended_daily_steps.scsi"*];;
