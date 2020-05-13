@@ -1,0 +1,53 @@
+bending_the_elbow_joints_with_dumbbells_on_an_inclined_bench
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [ bending the elbow joints with dumbbells on an inclined bench ]
+          (*<-lang_en;;*);
+          [ сгибание рук в локтевом суставе с гантелями на наклонной скамьей ]
+          (*<-lang_ru;;*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Опр.(сгибание рук в локтевом суставе с гантелями на наклонной скамьей) ]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Сгибания рук с гантелями сидя на наклонной скамье не очень популярное, но эффективное упражнение для бицепса. Для выполнения этого упражнения кроме гантелей нужна наклонная силовая скамья. Внимательно следите за техникой выполнения упражнения.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Утв.(сгибание рук в локтевом суставе с гантелями на наклонной скамьей) ]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Упражнение позволяет сильнее растянуть мышцы, чем при вертикально положении тела.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://photo/2.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
+
+bending_the_elbow_joints_with_dumbbells_on_an_inclined_bench => nrel_target_muscle:biceps;;
+
+bending_the_elbow_joints_with_dumbbells_on_an_inclined_bench => nrel_additional_muscle:shoulders;;
+
+bending_the_elbow_joints_with_dumbbells_on_an_inclined_bench => nrel_inventory:dumbbell;
+															=> nrel_inventory: bench;;

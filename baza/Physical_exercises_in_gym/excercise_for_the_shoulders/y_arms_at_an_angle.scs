@@ -1,0 +1,53 @@
+y_arms_at_an_angle
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [ Y- arms at an angle ]
+          (*<-lang_en;;*);
+          [ Y- разведение рук под углом ]
+          (*<-lang_ru;;*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Опр.(Y- разведение рук под углом) ]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [На первый взгляд напоминает разводку на петлях TRX. Действительно движение похожее, однако смена угла позволяет сместить нагрузку на переднюю дельту. При прочих равных, грудь задействуется в минимальном процентном соотношении.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Утв.(Y- разведение рук под углом) ]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Данное упражнение не вызовет затруднений у новичков, а опытным позволит акцентированней проработать переднюю дельту.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://photo/14.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
+
+y_arms_at_an_angle => nrel_target_muscle:shoulders;;
+
+y_arms_at_an_angle => nrel_additional_muscle:pectoral_muscles;
+                        => nrel_additional_muscle:press_muscles;;
+
+y_arms_at_an_angle => nrel_inventory:trx_petle;;

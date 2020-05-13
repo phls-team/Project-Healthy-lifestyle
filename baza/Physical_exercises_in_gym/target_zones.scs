@@ -1,0 +1,110 @@
+neck
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+          [neck]
+          (*<-lang_en;;*);
+          [шея]
+          (*<-lang_ru;;*);;
+
+trapeze
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+          [trapeze]
+          (*<-lang_en;;*);
+          [трапеция]
+          (*<-lang_ru;;*);;
+
+pectoral_muscles
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+          [pectoral muscles]
+          (*<-lang_en;;*);
+          [грудь]
+          (*<-lang_ru;;*);;
+
+press_muscles
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+          [press muscles]
+          (*<-lang_en;;*);
+          [пресс]
+          (*<-lang_ru;;*);;
+
+shoulders
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+          [shoulders]
+          (*<-lang_en;;*);
+          [плечи]
+          (*<-lang_ru;;*);;
+
+forearm
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+          [forearm]
+          (*<-lang_en;;*);
+          [предплечье]
+          (*<-lang_ru;;*);;
+
+latissimus_dorsi
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+          [latissimus dorsi]
+          (*<-lang_en;;*);
+          [широчайшие мышцы спины]
+          (*<-lang_ru;;*);;
+
+middle_back
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+          [middle back]
+          (*<-lang_en;;*);
+          [средняя часть спины]
+          (*<-lang_ru;;*);;
+
+lower_back
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+          [lower back]
+          (*<-lang_en;;*);
+          [нижняя часть спины]
+          (*<-lang_ru;;*);;
+
+triceps
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+          [triceps]
+          (*<-lang_en;;*);
+          [трицепс]
+          (*<-lang_ru;;*);;
+biceps
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+          [biceps]
+          (*<-lang_en;;*);
+          [бицепс]
+          (*<-lang_ru;;*);;
+
+quadriceps
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+          [quadriceps]
+          (*<-lang_en;;*);
+          [квадрицепс]
+          (*<-lang_ru;;*);;
+
+hips
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+          [hips]
+          (*<-lang_en;;*);
+          [бедра]
+          (*<-lang_ru;;*);;
+
+buttocks
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+          [buttocks]
+          (*<-lang_en;;*);
+          [ягодицы]
+          (*<-lang_ru;;*);;

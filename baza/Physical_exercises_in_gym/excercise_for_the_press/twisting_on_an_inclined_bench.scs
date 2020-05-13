@@ -1,0 +1,50 @@
+twisting_on_an_inclined_bench
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [ twisting on an inclined bench ]
+          (*<-lang_en;;*);
+          [ скручивания на наклонной скамье]
+          (*<-lang_ru;;*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Опр.(скручивания на наклонной скамье) ]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Скручивания можно выполнять как на полу, но сложнее это делать на наклонной скамье. Это упражнение прекрасно подойдет как разминка - для начала любой тренировки, так и для её окончания. Существует много вариантов этого упражнения, позволяющих регулировать нагрузку на разные части пресса.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Утв.(скручивания на наклонной скамье) ]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Скручивания - основное упражнение для развития правильной и красивой формы мышц пресса.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://photo/3.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
+
+twisting_on_an_inclined_bench => nrel_target_muscle:press_muscles;;
+twisting_on_an_inclined_bench => nrel_additional_muscle: lower_back;;
+twisting_on_an_inclined_bench => nrel_inventory: bench;;

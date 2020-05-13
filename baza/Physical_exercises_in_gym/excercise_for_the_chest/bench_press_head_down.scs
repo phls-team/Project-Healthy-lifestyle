@@ -1,0 +1,40 @@
+bench_press_head_down
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [ bench press head down]
+          (*<-lang_en;;*);
+          [ жим штанги головой вниз]
+          (*<-lang_ru;;*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Опр.(жим штанги головой вниз) ]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Упражнение по задействованным мышцам аналогично жиму штанги лежа. Отличие - основная нагрузка приходиться на нижнюю часть груди.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://photo/14.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
+
+bench_press_head_down => nrel_target_muscle:pectoral_muscles;;
+bench_press_head_down => nrel_additional_muscle: shoulders;;
+bench_press_head_down => nrel_additional_muscle: trapeze;;
+
+bench_press_head_down => nrel_inventory:barbell;;

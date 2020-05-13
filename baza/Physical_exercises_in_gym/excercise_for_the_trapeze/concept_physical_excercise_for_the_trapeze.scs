@@ -1,0 +1,13 @@
+concept_physical_excercise_for_the_trapeze
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [physical exercise for the trapeze]
+          (*<-lang_en;;*);
+          [физические упражнения для трапеции]
+          (*<-lang_ru;;*);
+
+=> nrel_inclusion: barbell_shrugs;
+=> nrel_inclusion: back_shrugs;
+=> nrel_inclusion: dumbbell_shrugs;;

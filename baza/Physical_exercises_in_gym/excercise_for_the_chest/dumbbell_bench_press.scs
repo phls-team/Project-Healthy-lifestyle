@@ -1,0 +1,40 @@
+dumbbell_bench_press
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [ dumbbell bench press]
+          (*<-lang_en;;*);
+          [ жим гантелей лежа ]
+          (*<-lang_ru;;*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Опр.(жим гантелей лежа) ]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Это упражнение направлено на ту же группу мышц, что и жим штанги лежа. Но отличается от указанного упражнения тем, что жим гантелей лежа выполняется с большей амплитудой, что способствует большему растягиванию и сокращению грудных мышц, задействует большее число мышц-стабилизаторов.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://photo/11.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
+
+dumbbell_bench_press => nrel_target_muscle:pectoral_muscles;;
+dumbbell_bench_press => nrel_additional_muscle: shoulders;
+                             => nrel_additional_muscle: trapeze;;
+dumbbell_bench_press => nrel_inventory: dumbbell;
+                             => nrel_inventory: bench;;

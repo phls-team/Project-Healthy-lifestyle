@@ -1,0 +1,38 @@
+dumbbell_shrugs
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [standing shrugs]
+          (*<-lang_en;;*);
+          [шраги с гантелями стоя]
+          (*<-lang_ru;;*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Опр.(шраги с гантелями стоя)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [От похожего упражнения со штангой отличается тем, что используются гантели, с которыми выполнять упражнение более удобно.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://photo/shrugs_bel.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
+
+
+dumbbell_shrugs => nrel_target_muscle:trapeze;;
+dumbbell_shrugs => nrel_inventory:dumbbell;;

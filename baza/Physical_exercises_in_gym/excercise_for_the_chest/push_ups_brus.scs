@@ -1,0 +1,52 @@
+push_ups_brus
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [ push-ups ]
+          (*<-lang_en;;*);
+          [ отжимания на брусьях ]
+          (*<-lang_ru;;*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Опр.(отжимания на брусьях) ]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Самое распространенное упражнение для прокачки трицепса. Отличительная особенность - можно выполнять практически в любом дворе](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Утв.(отжимания на брусьях) ]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Оптимальная ширина хвата в упражнении – ширина Ваших плечей.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://photo/8.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
+
+push_ups_brus => nrel_target_muscle:pectoral_muscles;
+                => nrel_target_muscle:triceps;;
+push_ups_brus => nrel_additional_muscle: shoulders;;
+push_ups_brus => nrel_inventory: power_frame;;

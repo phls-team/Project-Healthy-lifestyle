@@ -1,0 +1,49 @@
+hanging_legs
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [ hanging legs ]
+          (*<-lang_en;;*);
+          [ подъем ног в висе]
+          (*<-lang_ru;;*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Опр.(подъем ног в висе) ]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Подъем ног в висе на перекладине является одним из самых лучших упражнений для проработки мышц пресса.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Утв.(подъем ног в висе) ]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Выполнять упражнение можно как с согнутыми ногами, так и с прямыми.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://photo/2.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
+
+hanging_legs => nrel_target_muscle:press_muscles;;
+hanging_legs => nrel_additional_muscle: lower_back;;

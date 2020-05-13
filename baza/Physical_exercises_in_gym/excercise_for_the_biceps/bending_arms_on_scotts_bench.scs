@@ -1,0 +1,52 @@
+bending_arms_on_scotts_bench
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [ bending arms on Scott's bench ]
+          (*<-lang_en;;*);
+          [ сгибание рук на скамье Скотта ]
+          (*<-lang_ru;;*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Опр.(сгибание рук на скамье Скотта) ]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Скамья Скотта заставляет мышцы бицепсов работать изолированно и позволяет достичь максимальной нагрузки. Опускать штангу вниз необходимо как можно медленней, чтобы избежать риск получения травмы локтя.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Утв.(сгибание рук на скамье Скотта) ]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Упражнение обычно выполняют с штангой с EZ-грифом (можно использовать гантели)](*<- lang_ru;;*);;
+        *);;
+	*);
+
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://photo/9.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
+
+bending_arms_on_scotts_bench => nrel_target_muscle:biceps;;
+bending_arms_on_scotts_bench => nrel_additional_muscle: forearm;;
+bending_arms_on_scotts_bench => nrel_inventory:barbell;
+                            => nrel_inventory:dumbbell;;

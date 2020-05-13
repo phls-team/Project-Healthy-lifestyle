@@ -1,0 +1,55 @@
+sitting_dumbbell_bench_press
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [ sitting dumbbell bench press ]
+          (*<-lang_en;;*);
+          [ жим гантелей сидя ]
+          (*<-lang_ru;;*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Опр.(жим гантелей сидя)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Жим гантелей сидя является базовым упражнением. Упражнение удобней делать сидя, но можно и стоя. Если делаете сидя, то угол наклона спинки на скамье должен быть от 80-90 градусов.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Утв.(жим гантелей сидя)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Упражнение акцентирует нагрузку на средние и боковые пучки плеч, также в работе задействованы трицепсы.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://photo/5.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
+
+
+sitting_dumbbell_bench_press => nrel_target_muscle:shoulders;;
+sitting_dumbbell_bench_press => nrel_additional_muscle:triceps;;
+
+sitting_dumbbell_bench_press => nrel_inventory:bench;;
+sitting_dumbbell_bench_press => nrel_inventory:dumbbell;;
+
+

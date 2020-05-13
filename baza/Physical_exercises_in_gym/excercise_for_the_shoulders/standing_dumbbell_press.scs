@@ -1,0 +1,52 @@
+standing_dumbbell_press
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [ standing dumbbell press ]
+          (*<-lang_en;;*);
+          [ жим гантелей стоя ]
+          (*<-lang_ru;;*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Опр.(жим гантелей стоя) ]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Жим гантелей стоя относится к базовому типу упражнений. Преимущество жима гантелей в том, что их можно разворачивать в верхней и нижней точке упражнения для большей эффективности](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Утв.(жим гантелей стоя) ]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Основная нагрузка направленна переднюю часть дельт.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://photo/13.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
+
+standing_dumbbell_press => nrel_target_muscle:shoulders;;
+
+standing_dumbbell_press => nrel_additional_muscle:trapeze;;
+
+standing_dumbbell_press => nrel_inventory:dumbbell;;

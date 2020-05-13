@@ -1,0 +1,11 @@
+concept_physical_excercise_for_the_forearm
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [physical exercise for the forearm]
+          (*<-lang_en;;*);
+          [физические упражнения для предплечья]
+          (*<-lang_ru;;*);
+
+=> nrel_inclusion: extension_of_wrists_while_sitting;;

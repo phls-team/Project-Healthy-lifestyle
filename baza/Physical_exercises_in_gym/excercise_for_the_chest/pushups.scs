@@ -1,0 +1,52 @@
+pushups
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [ pushups ]
+          (*<-lang_en;;*);
+          [ отжимания от пола ]
+          (*<-lang_ru;;*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Опр.(отжимания от пола) ]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Незаменимое и простое упражнение –не понадобиться ничего, кроме земли(пола) и Вашего тела. По своей сути, отжимания - это тот же классический жим лежа наоборот. Отличное упражнение для начинающих.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Утв.(отжимания от пола) ]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Отжимания – базовое (или многосуставное) упражнение.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://photo/4.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
+
+pushups => nrel_target_muscle:pectoral_muscles;;
+
+pushups => nrel_additional_muscle: triceps;
+        => nrel_additional_muscle: shoulders;;

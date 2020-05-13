@@ -1,0 +1,39 @@
+bending_neck
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [extension neck]
+          (*<-lang_en;;*);
+          [сгибание шеи лёжа на скамье]
+          (*<-lang_ru;;*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Опр.(сгибание шеи лёжа на скамье)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Лягте на скамью лицом вверх так, чтобы голова и шея свисали с края скамьи. На лоб положите полотенце, свёрнутое несколько раз, а сверху, в качестве отягощения - блин от штанги. Опускайте и поднимайте голову, держа блин обеими руками.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://photo/bending_neck.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
+
+
+bending_neck => nrel_target_muscle:neck;;
+bending_neck => nrel_inventory:bench;;
+bending_neck => nrel_inventory:damn_bar;;

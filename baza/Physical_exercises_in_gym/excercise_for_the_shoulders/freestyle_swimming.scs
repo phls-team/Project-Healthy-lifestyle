@@ -1,0 +1,43 @@
+freestyle_swimming
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [freestyle swimming]
+          (*<-lang_en;;*);
+          [плавание вольным стилем]
+          (*<-lang_ru;;*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Утв.(плавание вольным стилем)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Плавание вольным стилем в отличие от других видов кардионагрузок позволяет максимально разгрузить суставы ног и спину.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://photo/2.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
+
+
+freestyle_swimming => nrel_target_muscle:shoulders;;
+freestyle_swimming => nrel_target_muscle:latissimus_dorsi;;
+freestyle_swimming => nrel_target_muscle:triceps;;
+
+freestyle_swimming => nrel_additional_muscle:quadriceps;;
+freestyle_swimming => nrel_additional_muscle:hips;;
+freestyle_swimming => nrel_additional_muscle:buttocks;;

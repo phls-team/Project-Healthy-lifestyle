@@ -1,0 +1,55 @@
+bench_press_arnold
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [ bench press Arnold]
+          (*<-lang_en;;*);
+          [жим Арнольда]
+          (*<-lang_ru;;*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Опр.(жим Арнольда)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Жим Арнольда является базовым упражнением, направленным на проработку всех трех пучков дельтовидных мышц. Его можно считать одним из наиболее эффективных упражнений для формирования формы плеч.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Утв.(жим Арнольда)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [ Выполнять упражнение можно как стоя, так и сидя для снижения нагрузки на спину.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://photo/4.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
+
+
+bench_press_arnold => nrel_target_muscle:shoulders;;
+bench_press_arnold => nrel_additional_muscle:triceps;;
+
+bench_press_arnold => nrel_inventory:bench;;
+bench_press_arnold => nrel_inventory:dumbbell;;
+
+

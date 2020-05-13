@@ -1,0 +1,12 @@
+concept_physical_exercise_for_the_neck
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [physical exercise for the neck]
+          (*<-lang_en;;*);
+          [физические упражнения для шеи]
+          (*<-lang_ru;;*);
+
+=> nrel_inclusion: bending_neck;
+=> nrel_inclusion: extension_neck;;

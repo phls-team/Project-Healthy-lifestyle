@@ -1,0 +1,13 @@
+concept_physical_excercise_for_the_press
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [physical exercise for the press muscles]
+          (*<-lang_en;;*);
+          [физические упражнения для пресса]
+          (*<-lang_ru;;*);
+
+=> nrel_inclusion: oblique_twisting_on_the_floor;
+=> nrel_inclusion: hanging_legs;
+=> nrel_inclusion: twisting_on_an_inclined_bench;;

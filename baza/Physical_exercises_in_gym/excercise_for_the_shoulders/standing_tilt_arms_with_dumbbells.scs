@@ -1,0 +1,41 @@
+standing_tilt_arms_with_dumbbells
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [ standing tilt arms with dumbbells ]
+          (*<-lang_en;;*);
+          [ разведение рук с гантелями в наклоне стоя]
+          (*<-lang_ru;;*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Опр.(разведение рук с гантелями в наклоне стоя) ]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Обычно задняя дельтовидная мышца является самой отстающей частью мышц плеча. Это упражнение отлично подойдет для развития задних, а также средних дельт.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://photo/12.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
+
+standing_tilt_arms_with_dumbbells => nrel_target_muscle:shoulders;;
+
+standing_tilt_arms_with_dumbbells => nrel_additional_muscle:trapeze;;
+
+standing_tilt_arms_with_dumbbells => nrel_inventory:dumbbell;;
+

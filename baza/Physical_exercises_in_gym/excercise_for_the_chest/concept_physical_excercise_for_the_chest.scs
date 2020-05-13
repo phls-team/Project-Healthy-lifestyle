@@ -1,0 +1,28 @@
+concept_physical_excercise_for_the_chest
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [physical exercise for the chest]
+          (*<-lang_en;;*);
+          [физические упражнения для груди]
+          (*<-lang_ru;;*);
+
+=> nrel_inclusion: bench_press_lying_on_an_inclined_bench;
+=> nrel_inclusion: loop_push_ups;
+=> nrel_inclusion: wide_grip_bench_press;
+=> nrel_inclusion: pushups;
+=> nrel_inclusion: bench_press_1;
+=> nrel_inclusion: bench_press_2;
+=> nrel_inclusion: crossover_hands;
+=> nrel_inclusion: push_ups_brus;
+=> nrel_inclusion: horizontal_reduction_of_arms_with_dumbbells_lying_on_a_bench;
+=> nrel_inclusion: pullover_lying_with_dumbbell;
+=> nrel_inclusion: dumbbell_bench_press;
+=> nrel_inclusion: burpee;
+=> nrel_inclusion: mixing_hands_in_the_simulator_butterfly;
+=> nrel_inclusion: bench_press_head_down;
+=> nrel_inclusion: t_push_ups;
+=> nrel_inclusion: one_handed_press_in_loops;
+=> nrel_inclusion: hands_up_and_down_with_loops;
+=> nrel_inclusion: looping_hands;;

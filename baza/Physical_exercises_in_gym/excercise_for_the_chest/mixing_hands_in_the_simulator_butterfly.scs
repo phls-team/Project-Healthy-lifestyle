@@ -1,0 +1,37 @@
+mixing_hands_in_the_simulator_butterfly
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [ mixing hands in the simulator]
+          (*<-lang_en;;*);
+          [ сведение рук в тренажере]
+          (*<-lang_ru;;*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Опр.(сведение рук в тренажере) ]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Изолирующее упражнение для мышц груди – т.е. в этом упражнении работает только один сустав – плечевой. Это позволяет сфокусировать работу на необходимой мышце – грудной. Отличительной особенностью также является то, что в конечной точке упражнения, когда вы сводите руки вместе, на мышцы груди ложится пиковое напряжение.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://photo/13.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
+
+mixing_hands_in_the_simulator_butterfly => nrel_target_muscle:pectoral_muscles;;
+mixing_hands_in_the_simulator_butterfly => nrel_inventory:lever_simulators;;

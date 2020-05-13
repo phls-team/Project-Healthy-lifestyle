@@ -1,0 +1,26 @@
+nrel_inventory
+=> nrel_main_idtf: [ inventory ] (* <- lang_en;; *);
+=> nrel_main_idtf: [ инвентарь ] (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(инвентарь)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+       	-> [Устройство, приспособление узкоспециального назначения, используемое при занятии различными видами спорта.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(инвентарь)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(* 
+		-> [Спортивный инвентарь — различных спортивные снаряды, использование которых предусмотрено правилами соревнований по отдельным видам спорта.] (* <- lang_ru;; *);;
+    *);;
+*);
+
+<- sc_node_norole_relation;;

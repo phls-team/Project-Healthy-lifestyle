@@ -1,0 +1,50 @@
+barbell_shrugs
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [standing shrugs]
+          (*<-lang_en;;*);
+          [шраги со штангой стоя]
+          (*<-lang_ru;;*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Утв.(шраги со штангой стоя)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Самое популярное упражнение для тренировки трапеции.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Опр.(шраги со штангой стоя)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Обязательно используйте пояс для снижения нагрузки на позвоночник. Можете использовать лямки для снижения нагрузок на кисти.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://photo/barbel_shrugs.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
+
+
+barbell_shrugs => nrel_target_muscle:trapeze;;
+barbell_shrugs => nrel_inventory:barbell;;

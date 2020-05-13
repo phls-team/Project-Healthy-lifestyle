@@ -1,0 +1,49 @@
+bending_of_the_arms_in_the_elbow_joint_on_the_upper_block
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [bending of the arms in the elbow joint on the upper block]
+          (*<-lang_en;;*);
+          [ сгибание рук в локтевом суставе на верхнем блоке ]
+          (*<-lang_ru;;*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Опр.(сгибание рук в локтевом суставе на верхнем блоке) ]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Сгибание рук у верхних блоков – это изолирующее дополнительное упражнение, направленное на проработку бицепса.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Утв.(сгибание рук в локтевом суставе на верхнем блоке) ]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Упражнение может выполняться как в положении стоя, так и сидя.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://photo/8.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
+
+bending_of_the_arms_in_the_elbow_joint_on_the_upper_block => nrel_target_muscle:biceps;;
+bending_of_the_arms_in_the_elbow_joint_on_the_upper_block => nrel_inventory:cable_simulators;;

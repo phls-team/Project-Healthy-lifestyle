@@ -1,0 +1,53 @@
+bending_arms_with_loops
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [ bending arms with loops ]
+          (*<-lang_en;;*);
+          [ сгибание рук стоя с петлями ]
+          (*<-lang_ru;;*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Опр.(сгибание рук стоя с петлями) ]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Базовое упражнение для проработки мышц рук. Не сложен в выполнении. В зависимости от положения корпуса можно варьировать нагрузку.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Упр.(сгибание рук стоя с петлями) ]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Упражнение подходит для любого уровня подготовки.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://photo/1.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
+
+bending_arms_with_loops => nrel_target_muscle:biceps;;
+
+bending_arms_with_loops => nrel_additional_muscle:middle_back;
+                        => nrel_additional_muscle:press_muscles;;
+
+bending_arms_with_loops => nrel_inventory:trx_petle;;

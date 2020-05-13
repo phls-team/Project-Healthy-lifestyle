@@ -1,0 +1,36 @@
+oblique_twisting_on_the_floor
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [ oblique twisting on the floor ]
+          (*<-lang_en;;*);
+          [ косые скручивания на полу]
+          (*<-lang_ru;;*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Опр.(косые скручивания на полу) ]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Это упражнение с преимущественным вовлечением косых (как наружных, так и внутренних) мышц брюшного пресса.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://photo/1.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
+
+oblique_twisting_on_the_floor => nrel_target_muscle:press_muscles;;

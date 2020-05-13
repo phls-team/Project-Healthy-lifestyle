@@ -1,0 +1,41 @@
+loop_push_ups
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [ loop push ups ]
+          (*<-lang_en;;*);
+          [ отжимания в петлях]
+          (*<-lang_ru;;*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Опр.(отжимания в петлях) ]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Отжимания в петлях является одним из базовых упражнениях на петлях TRX. Существует множества их разновидностей, данный вариант является самым легким в техническом исполнении. Такой вариант будет приемлем даже новичкам в тренировках на TRX.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://photo/2.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
+
+loop_push_ups => nrel_target_muscle:pectoral_muscles;;
+loop_push_ups => nrel_additional_muscle: triceps;
+                                        => nrel_additional_muscle: shoulders;
+                                        => nrel_additional_muscle: press_muscles;
+										=> nrel_additional_muscle: latissimus_dorsi;;
+loop_push_ups => nrel_inventory: trx_petle;;

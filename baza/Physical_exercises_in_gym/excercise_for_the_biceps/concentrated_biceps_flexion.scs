@@ -1,0 +1,55 @@
+concentrated_biceps_flexion
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [ concentrated biceps flexion  ]
+          (*<-lang_en;;*);
+          [ концентрированные сгибания на бицепс ]
+          (*<-lang_ru;;*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Опр.(концентрированные сгибания на бицепс) ]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [ Особенность данного упражнения в том, что в нем задействована большая амплитуда движения во время подъема гантели. Вторым преимуществом является то, что в верхней точке достигается сильнейшее пиковое сокращение бицепса, которое мы можем зафиксировать во времени.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Утв.(концентрированные сгибания на бицепс) ]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Концентрированный подъем на бицепс является лучшим упражнением, для придания более выпуклой и рельефной формы середине бицепса.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://photo/5.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
+
+concentrated_biceps_flexion => nrel_target_muscle:biceps;;
+
+concentrated_biceps_flexion => nrel_additional_muscle:forearm;;
+
+concentrated_biceps_flexion => nrel_inventory:dumbbell;
+                            => nrel_inventory:bench;;

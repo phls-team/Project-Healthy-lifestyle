@@ -1,0 +1,51 @@
+bench_press_1
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [ bench press ]
+          (*<-lang_en;;*);
+          [ жим сидя в рычажном тренажере ]
+          (*<-lang_ru;;*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Опр.(жим сидя в рычажном тренажере) ]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [Жим в рычажном тренажере для грудных мышц позволяет имитировать жим гантелей на наклонной скамье. Однако Вы можете работать с большим отягощением, чем при жиме гантелей. Это позволит более эффективно проработать грудь.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+        => nrel_main_idtf: [Утв.(жим сидя в рычажном тренажере) ]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+            -> [При правильной технике выполнения данного упражнения будет снижена нагрузка на плечевые суставы.](*<- lang_ru;;*);;
+        *);;
+	*);
+
+<- rrel_key_sc_element : 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://photo/5.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
+
+bench_press_1 => nrel_target_muscle:pectoral_muscles;;
+bench_press_1 => nrel_additional_muscle: triceps;
+                => nrel_additional_muscle: shoulders;;
+bench_press_1 => nrel_inventory: lever_simulators;;
