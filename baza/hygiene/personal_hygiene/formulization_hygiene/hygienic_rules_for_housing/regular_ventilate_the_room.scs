@@ -1,0 +1,69 @@
+regular_ventilate_the_room=>nrel_main_idtf:[регулярно проветривать комнату]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[regular ventilate the room]
+        (*
+                <-lang_en;;
+*);;
+
+
+statement ->...
+(*
+->rrel_key_sc_element: regular_ventilate_the_room;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Вдыхаемая смесь оказывает непосредственное воздействие на сердце, мозг и другие внутренние органы. Свежий воздух в квартире препятствует дальнейшему размножению микробов и аллергенов.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Почему важно выполнять проветривание)](*<- lang_ru;;*);;
+*);; 
+
+statement ->...
+(*
+->rrel_key_sc_element: regular_ventilate_the_room;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Cпертый воздух ухудшает работоспособности и повышает усталость.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Спертый воздух)](*<- lang_ru;;*);;
+*);; 
+
+statement ->...
+(*
+->rrel_key_sc_element: regular_ventilate_the_room;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Система проветривания подбирается в зависимости от времени года. От данного параметра напрямую зависит длительность и качество воздухообмена.в СанПиН упоминается два вида для проветривания:
+
+    Сквозное. В данном случае открываются все доступные окна и тем самым осуществляется максимальная циркуляция воздушных масс за короткий промежуток времени.
+    Угловое(одностороннее). Данный тип используется преимущественно в теплый сезон.
+    Через шахту систем вентиляции. Это самый распространенный вид непрерывного воздухообмена, который усиливается при открывании окон или приточных устройств.
+](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Виды проветиривания)](*<- lang_ru;;*);;
+*);; 
+
+regular_ventilate_the_room=>nrel_consist:through_ventilation;corner_ventilation;through_the_shaft_ventilation_systems;;
+
+
+regular_ventilate_the_room<-rrel_key_sc_element:...
+(*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://pictures//provetrivaniye.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+     => nrel_main_idtf: [Иллюстрация(Регулярно проветривать помещение)](*<- lang_ru;;*);;
+        
+*);;
+*);;
+
+
+regular_ventilate_the_room<-rrel_key_sc_element:...
+(*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://pictures//Provetr_008.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+     => nrel_main_idtf: [Иллюстрация(График снижения уровня углекислого газа при проветривании)](*<- lang_ru;;*);;
+        
+*);;
+*);;

@@ -1,0 +1,96 @@
+concept_dental_floss<-sc_node_not_relation;;
+
+concept_dental_floss=>nrel_main_idtf:[зубная нить]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[dental floss]
+        (*
+                <-lang_en;;
+        *);;
+concept_dental_floss=>nrel_idtf:[флосс]
+(*
+                <-lang_ru;;
+        *);;
+
+definition ->...
+(*
+->rrel_key_sc_element: concept_dental_floss;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Зубная нить (флосс) — специальная нитка для очистки межзубных промежутков от зубного налета. Использование зубной щётки позволяет очистить лишь три из пяти поверхностей зуба человека. Оставшиеся две поверхности между зубами нуждаются в особом уходе, так как зубной налёт и кусочки пищи из межзубных промежутков с помощью щётки извлечь не удастся.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Зубная нить)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+    concept_toothbrush;
+    concept_human_tooth
+};;
+*);;
+
+concept_dental_floss<=nrel_use:concept_personal_hygiene_oral_cavity;;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_dental_floss ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[На сегодняшний день зубные нити — основное средство для очищения межзубных промежутков (апроксимальных поверхностей) зубов.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Зубная нить)](*<- lang_ru;;*);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_dental_floss ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Использовать её желательно после каждого приёма пищи. Или, как минимум, во время вечерней чистки зубов.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Когда использовать зубную нить)](*<- lang_ru;;*);;
+
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://фото//nit.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+        => nrel_main_idtf: [Иллюстрация(Зубная нить)](*<- lang_ru;;*);;
+*);;
+*);;
+
+concept_dental_floss=>nrel_use:concept_teeth_cleaning;;
+concept_dental_floss=>nrel_use:follow_the_state_of_enamel;;
+
+concept_dental_floss=>nrel_contraindications:
+        toothache;
+        concept_caries;
+        enamel_damage;;
+
+concept_dental_floss=>nrel_classification:
+waxed;
+unwaxed;;
+
+waxed=>nrel_main_idtf:[вощённая]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[waxed]
+        (*
+                <-lang_en;;
+        *);;
+
+unwaxed=>nrel_main_idtf:[невощённая]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[unwaxed]
+        (*
+                <-lang_en;;
+        *);;
+
+statement ->...
+(*
+->rrel_key_sc_element:waxed ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[вощёная — пропитана воском, за счёт чего легче проникает в узкие промежутки.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Вощённая зубная нить)](*<- lang_ru;;*);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:unwaxed ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[невощёная — лучше очищает.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Нефощённая зубная нить)](*<- lang_ru;;*);;
+*);;

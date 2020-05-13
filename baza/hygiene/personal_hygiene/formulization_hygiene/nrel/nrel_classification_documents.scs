@@ -1,0 +1,36 @@
+nrel_classification_documents
+<- sc_node_norole_relation;
+=> nrel_main_idtf: 
+	[классификация документов*] 
+	(* 
+	<- lang_ru;; 
+	*);
+=> nrel_main_idtf: 
+	[document classification*] 
+	(* 
+	<- lang_en;; 
+	*);
+
+ <- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(Классификация документов*)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Классификация документов — одна из задач информационного поиска, заключающаяся в отнесении документа к одной из нескольких категорий на основании содержания документа.](*<- lang_ru;;*);;
+			*);;
+		*);
+        
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(Осуществленние классификации документов*)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Классификация может осуществляться полностью вручную, либо автоматически с помощью созданного вручную набора правил, либо автоматически с применением методов машинного обучения.
+
+Следует отличать классификацию текстов от кластеризации, в последнем случае тексты также группируются по некоторым критериям, но заранее заданные категории отсутствуют.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+=>nrel_consist:document_indexing;construction_and_training_of_the_classifier;classification_quality_assessment;;

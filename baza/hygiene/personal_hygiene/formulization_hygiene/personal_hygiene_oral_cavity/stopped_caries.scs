@@ -1,0 +1,41 @@
+stopped_caries=>nrel_main_idtf:[приостановившийся кариес]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[stopped caries]
+        (*
+                <-lang_en;;
+        *);;
+
+definition ->...
+(*
+->rrel_key_sc_element:stopped_caries ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Приостановившийся кариес – это стабилизированный кариозный процесс, проявляющийся плотным пигментированным пятном.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Приостановившийся кариес)](*<- lang_ru;;*);;
+=>nrel_using_constants:{concept_caries};;
+*);;
+
+
+stopped_caries<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://фото//pigmentirovannya-karies.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+
+=> nrel_main_idtf: [Иллюстрация(Приостановившийся кариес)](*<- lang_ru;;*);;
+*);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:stopped_caries ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Течение обычно бессимптомное, жалобы пациентов отсутствуют. При осмотре обнаруживается пигментированное пятно, цвет от темно-коричневого до черного. Зондирование выявляет плотную поверхность поражения.
+
+Наиболее часто приостановившийся кариозный процесс можно наблюдать в пришеечной области и в естественных углублениях зубов (фиссурах и ямках).](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Признаки стабильного кариеса)](*<- lang_ru;;*);;
+*);;

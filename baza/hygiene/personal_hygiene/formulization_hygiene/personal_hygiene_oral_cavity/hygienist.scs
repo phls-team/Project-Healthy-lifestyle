@@ -1,0 +1,58 @@
+hygienist=>nrel_main_idtf:[гигиенист]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[hygienist]
+        (*
+                <-lang_en;;
+        *);;
+
+hygienist=>nrel_treat:concept_caries;toothache;stomatitis;pulpitis;enamel_damage;;
+
+definition ->...
+(*
+->rrel_key_sc_element: hygienist;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Гигиенист – это узкопрофильный врач-стоматолог, который проводит лечебно-профилактические мероприятия по предупреждению заболеваний ротовой полости у детей и взрослых.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Гигиенист)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+concept_human_tooth;
+dentist
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: hygienist;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Он осмотрыивает пациентов, которые входят в группы риска:
+    Беременных женщин (профилактика очагов инфекций).
+    Курильщиков со стажем (удаление зубного налета).
+    Кофеманов и любителей крепкого чая (изменение цвета эмали).
+    Пациентов после зубопротезирования (контроль состояния пародонта).
+    Носителей брекетов (профилактика поражения слизистой и эмали).
+    Детей с временным прикусом (навыки гигиены полости рта).
+](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Кого осматривает гигиенист)](*<- lang_ru;;*);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: hygienist;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Профессия гигиениста подразумевает активное общение с родителями новорожденных с целью профилактики неправильного прикуса и детей старшего возраста для ограничения сладкого и мучного в рационе, подбора правильной зубной щетки (по возрастам) и пасты (без фтора).](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Гигиенист)](*<- lang_ru;;*);;
+*);;
+
+hygienist<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://фото//gigienist1.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+        => nrel_main_idtf: [Иллюстрация(Врач-гигиенист)](*<- lang_ru;;*);;
+*);;
+*);;
+
+hygienist<=nrel_inclusion:dentist;;

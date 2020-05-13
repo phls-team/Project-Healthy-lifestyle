@@ -1,0 +1,54 @@
+detergent_for_baby<-sc_node_not_relation;;
+
+detergent_for_baby=>nrel_main_idtf:[моющее средство для детей]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[detergent for baby]
+        (*
+                <-lang_en;;
+*);;
+
+detergent_for_baby<-rrel_key_sc_element:...
+(*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://pictures//moushie-i-chistiashie-sredstva-7-400x300.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+     => nrel_main_idtf: [Иллюстрация(Детские моющие средства)](*<- lang_ru;;*);;
+        
+*);;
+*);;
+
+detergent_for_baby->rrel_example:eared_nannies;;
+
+eared_nannies<-sc_node_not_relation;;
+
+eared_nannies=>nrel_main_idtf:[Eared nannies]
+        (*
+                <-lang_en;;
+*);
+
+=>nrel_main_idtf:[Ушастый нянь]
+        (*
+                <-lang_ru;;
+*);;
+
+eared_nannies<-rrel_key_sc_element:...
+(*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://pictures//9de4d1c57590ab4a4d988665f24976de.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+     => nrel_main_idtf: [Иллюстрация(Гель для мытья детских принадлежностей Ушастый нянь)](*<- lang_ru;;*);;
+        
+*);;
+*);;

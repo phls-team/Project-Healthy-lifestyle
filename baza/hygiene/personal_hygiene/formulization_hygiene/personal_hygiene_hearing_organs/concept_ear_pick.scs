@@ -1,0 +1,76 @@
+concept_cotton_swab<-sc_node_not_relation;;
+
+concept_cotton_swab=>nrel_main_idtf:[палочка для чистки ушей]
+        (*
+                <-lang_ru;;
+        *);
+
+nrel_main_idtf:[сotton swab]
+        (*
+                <-lang_en;;
+        *);;
+concept_cotton_swab=>nrel_idtf:[тупфер]
+(*
+                <-lang_ru;;
+        *);;
+
+   
+concept_cotton_swab<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//1-2-5-100.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+        => nrel_main_idtf: [Иллюстрация(Тупфер)](*<- lang_ru;;*);;
+*);;
+*);;
+
+definition ->...
+(*
+->rrel_key_sc_element: concept_cotton_swab;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Тупфер  — стерильный зонд-тампон, который состоит из марли, ваты (ватная палочка) или другого пористого материала.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Тупфер)](*<- lang_ru;;*);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_cotton_swab;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Активно применяется в бытовой гигиене (в т.ч. как ухочистка, несмотря на то, что не предназначена и не рекомендуется врачами для очистки ушей), а также в хирургии, с целью осушения операционной раны, полости, наполненной отделяемым, или тупого расслаивания тканей.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утвержедние(Тупфер)](*<- lang_ru;;*);;
+*);;
+
+concept_cotton_swab=>nrel_use:concept_ear_cleaning;concept_ear_wash;;
+
+concept_cotton_swab=>nrel_consist:concept_cheesecloth;concept_cotton_wool;concept_other_materials;;
+
+
+concept_other_materials<-sc_node_material;;
+
+concept_other_materials=>nrel_main_idtf:[другие материалы]
+        (*
+                <-lang_ru;;
+        *);
+
+nrel_main_idtf:[other materials]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_other_materials->rrel_example:concept_leather;;
+
+
+concept_leather<-sc_node_not_relation;;
+
+concept_leather=>nrel_main_idtf:[кожа]
+        (*
+                <-lang_ru;;
+        *);
+
+nrel_main_idtf:[leather]
+        (*
+                <-lang_en;;
+        *);;

@@ -1,0 +1,96 @@
+otitis_externa<-sc_node_not_relation;;
+otitis_externa=>nrel_main_idtf:[наружный отит]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[externa otitis]
+        (*
+                <-lang_en;;
+        *);;
+
+otitis_externa<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//800px-OtitisExterna10.JPG"
+        (*
+                =>nrel_format:format_JPG;;
+        *);;
+        => nrel_main_idtf: [Иллюстрация(Тяжёлый случай наружного отита.)](*<- lang_ru;;*);;
+*);;
+*);;
+
+definition ->...
+(*
+->rrel_key_sc_element:otitis_externa ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Нару́жный оти́т — отит, при котором поражаются ткани наружного слухового прохода (а также барабанной перепонки) или ушной раковины. Является широко распространённым заболеванием, которому подвержены все возрастные группы.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определенипе(Отит)](*<- lang_ru;;*);;
+=>nrel_using_constants:{otitis};;
+*);;
+
+
+statement->...
+(*
+->rrel_key_sc_element:otitis_externa ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[причиной наружного отита являются острые бактериальные инфекции кожи наружного слухового прохода, хотя заболевание может иметь и неинфекционный характер.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Причина наружнего отита)](*<- lang_ru;;*);;
+*);;
+
+statement->...
+(*
+->rrel_key_sc_element:otitis_externa ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Протекает весьма болезненно, хотя редко приводит к серьёзным осложнениям или длительной утрате работоспособности. В то же время у пациентов с диабетом, иммунодефицитными состояниями, а также при хронизации инфекции может развиться потенциально опасный для жизни злокачественный наружный отит.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Течение болезни наружнего отита)](*<- lang_ru;;*);;
+*);;
+
+/*
+statement->...
+(*
+->rrel_key_sc_element:otitis_externa ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Протекает весьма болезненно, хотя редко приводит к серьёзным осложнениям или длительной утрате работоспособности. В то же время у пациентов с диабетом, иммунодефицитными состояниями, а также при хронизации инфекции может развиться потенциально опасный для жизни злокачественный наружный отит.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Течение болезни наружнего отита)](*<- lang_ru;;*);;
+*);;*/
+
+otitis_externa=>nrel_classification:acute_otitis_externa;external_spilled_otitis_media;chronic_otitis_externa;;
+
+otitis_externa=>nrel_symptom:pus_from_the_ear;hearing_is_preserved_or_impaired_with_complete_closure_of_the_external_auditory_canal;the_skin_of_the_ear_canal_is_hyperemic_and_swollen;throbbing_ear_pain;;
+
+
+
+pus_from_the_ear=>nrel_main_idtf:[гной из уха]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[pus from the ear]
+        (*
+                <-lang_en;;
+        *);;
+
+hearing_is_preserved_or_impaired_with_complete_closure_of_the_external_auditory_canal=>nrel_main_idtf:[слух сохранен или снижен при полном перекрытии наружного слухового прохода;]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[hearing is preserved or impaired with complete closure of the external auditory canal]
+        (*
+                <-lang_en;;
+        *);;
+
+the_skin_of_the_ear_canal_is_hyperemic_and_swollen=>nrel_main_idtf:[кожа слухового прохода гиперемирована (покрасневшая) и отечна]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[the skin of the ear canal is hyperemic (reddened) and swollen]
+        (*
+                <-lang_en;;
+        *);;
+
+throbbing_ear_pain=>nrel_main_idtf:[пульсирующая боль в ухе]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[throbbing ear pain]
+        (*
+                <-lang_en;;
+        *);;

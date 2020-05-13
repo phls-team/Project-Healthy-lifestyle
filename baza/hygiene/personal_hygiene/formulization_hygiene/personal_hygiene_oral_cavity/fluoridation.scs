@@ -1,0 +1,60 @@
+fluoridation<-sc_node_not_relation;;
+
+fluoridation=>nrel_main_idtf:[фторирование]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[fluoridation]
+        (*
+                <-lang_en;;
+        *);;
+
+fluoridation=>nrel_classification:surface_fluoridation;deep_fluoridation;;
+
+definition ->...
+(*
+->rrel_key_sc_element: fluoridation;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Фторирование зубов – эффективный метод укрепления зубной эмали и защиты зубов от кариеса.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(фторирование)](*<- lang_ru;;*);;
+=>nrel_using_constants:{concept_human_tooth;tooth_enamel};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: fluoridation;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Фтор – важный элемент, который не только делает эмаль прочнее, но и препятствует быстрому размножению бактерий. Помимо прочего, увеличивается устойчивость зубов к кислотной среде, а значит их поверхность становится менее восприимчивой к различного рода разрушающим веществам.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Что дает фторирование)](*<- lang_ru;;*);;
+=>nrel_using_constants:{microelement_fluor_F;concept_human_tooth};;
+*);;
+
+remineralization=>nrel_consist:microelement_fluor_F;;
+
+statement ->...
+(*
+->rrel_key_sc_element: fluoridation;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Процедуру фторирования нужно повторять ежегодно – тогда зубы будут надежно защищены от кариеса и не подвержены преждевременному разрушению; постепенное вымывание кальция остановится, благодаря чему эмаль станет прочнее.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Когда нужно повторять фторирования)](*<- lang_ru;;*);;
+=>nrel_using_constants:{microelement_fluor_F;concept_human_tooth};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: fluoridation;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Еще одно достоинство фторирования – возможность проводить процедуру пациентам с самого раннего возраста. Детям назначают обработку зубов этим методом с 1,5-2 лет. Количество проведения процедур определяется стоматологом: взрослому рекомендуется проходить фторирование 1-2 раза в год, детям из-за слабой эмали можно обрабатывать зубы чаще.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(С какого возраста можно назначать фторирование)](*<- lang_ru;;*);;
+=>nrel_using_constants:{microelement_fluor_F;concept_human_tooth};;
+*);;
+
+fluoridation<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://фото//awb_flairesse_gtsstemeyer_25_1401_ppt-e1572856302855.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+        => nrel_main_idtf: [Иллюстрация(Фторирование зубов)](*<- lang_ru;;*);;
+*);;
+*);;

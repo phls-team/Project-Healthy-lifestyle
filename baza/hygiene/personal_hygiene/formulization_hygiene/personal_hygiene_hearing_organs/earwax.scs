@@ -1,0 +1,49 @@
+earwax=>nrel_main_idtf:[ушная сера]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[earwax]
+        (*
+                <-lang_en;;
+        *);;
+
+earwax<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//150px-Earwax_on_swab.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+        => nrel_main_idtf: [Иллюстрация(Ушная сера)](*<- lang_ru;;*);;
+*);;
+*);;
+
+definition ->...
+(*
+->rrel_key_sc_element:earwax ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Ушна́я се́ра (лат. cerumen) — жёлто-коричневая смазкообразная секреция, вырабатываемая серными железами (церуминозные железы) наружного слухового прохода в ушах людей и у других млекопитающих. Ушная сера служит для очистки и смазки слуховых каналов, а также представляет собой защиту от бактерий, грибков и насекомых.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Ушная сера)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+concept_human_tooth
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:earwax ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Избыток ушной серы может прижать барабанную перепонку и привести к частичной потере слуха, а также шуму в ушах, головокружению, рвоте и судорогам. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Изыбток ушной серы)](*<- lang_ru;;*);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:earwax ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Физиологические функции ушной серы включают в себя увлажнение и защиту кожи наружного слухового прохода.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Физиологические функции ушной серы)](*<- lang_ru;;*);;
+*);;
+
+earwax=>nrel_consist:concept_fats;concept_protein_product;mineral_salt;;
+

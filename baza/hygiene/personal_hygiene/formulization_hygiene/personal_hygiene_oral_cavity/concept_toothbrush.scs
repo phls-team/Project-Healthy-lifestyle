@@ -1,0 +1,84 @@
+concept_toothbrush<-sc_node_not_relation;;
+
+concept_toothbrush=>nrel_main_idtf:[зубная щётка]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[toothbrush]
+        (*
+                <-lang_en;;
+        *);;
+
+definition ->...
+(*
+->rrel_key_sc_element: concept_toothbrush;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Зубна́я щётка — основной инструмент для удаления мягких отложений с поверхности зубов и дёсен. Как правило, применяется с использованием зубной пасты.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Зубная щётка)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+concept_human_tooth;
+tooth_enamel
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_toothbrush ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Зубная щётка используется в качестве инструмента для гигиены полости рта,в качестве инструмента для точной очистки](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Зубная щётка)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+concept_teeth_cleaning;
+concept_personal_hygiene_oral_cavity
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_toothbrush ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Все стоматологи сходятся во мнении, что зубную щетку необходимо менять 1 раз в 3 месяца!](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Когда нужно менять щётку)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+dentist
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_toothbrush ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Большинство стоматологов рекомендуют использовать мягкую зубную щетку, поскольку зубные щетки с жесткой щетиной могут повредить зубную эмаль и вызвать раздражение дёсен.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Какую тип щётки рекомендуют стоматологи)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+        {
+        soft_brush;
+        tooth_enamel
+        };;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_toothbrush ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[После применения щётку следует промыть в тёплой проточной воде. Хранить в вертикальном положении рабочей частью вверх. Не рекомендуется постоянно хранить щетку в закрытых контейнерах[14][15].
+
+Щётку рекомендуют обязательно менять на новую по мере износа, но не реже чем раз в 3 месяца. Износ щётки определяется визуально и индивидуально. Основной показатель износа — разошедшиеся (растрёпанные) волокна рабочей части (снижение эффективности очистки[14]).
+
+Не рекомендуется использовать одну щетку нескольким людям из-за повышения рисков переноса инфекций. Также следует раздельно хранить щетки, использующиеся различными людьми.](*<-lang_ru;;*);;*);;
+*);;
+
+concept_toothbrush=>nrel_inclusion:soft_brush;middle_brush;scrubbing_brush;;
+concept_toothbrush=>nrel_use:concept_teeth_cleaning;;
+concept_toothbrush=>nrel_use:follow_the_state_of_enamel;;
+concept_toothbrush<=nrel_use:concept_personal_hygiene_oral_cavity;;
+
+concept_toothbrush<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://фото//200px-Toothbrush_x3_20050716_002.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+        => nrel_main_idtf: [Иллюстрация(Зубные щётки)](*<- lang_ru;;*);;
+*);;
+*);;
+concept_toothbrush<=nrel_rodina:china;;

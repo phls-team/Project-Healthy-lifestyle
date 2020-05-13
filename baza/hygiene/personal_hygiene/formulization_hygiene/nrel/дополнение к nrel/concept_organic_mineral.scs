@@ -1,0 +1,56 @@
+concept_organic_mineral<-sc_node_not_relation;;
+
+concept_organic_mineral=>nrel_main_idtf:[органические минералы]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[organic minerals]
+        (*
+                <-lang_en;;
+        *);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_organic_mineral ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Согласно современной номенклатуре минералов, утверждённой ММА, в числе минералов рассматриваются некоторые из природных солеподобных органических соединений (оксалаты, меллитаты, ацетаты и др), объединяемые в класс органические вещества. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Органические минералы)](*<- lang_ru;;*);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_organic_mineral ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[При этом в общей систематике минералов высокомолекулярные органические образования типа древесных смол и битумов, не отвечающие в большинстве случаев требованиям кристалличности и однородности, в число минералов не включаются. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Органические минералы)](*<- lang_ru;;*);;
+*);;
+
+concept_organic_mineral=>rrel_example:abelsonite;;
+
+abelsonite=>nrel_main_idtf:[абелсонит]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[abelsonite]
+        (*
+                <-lang_en;;
+        *);;
+
+definition ->...
+(*
+->rrel_key_sc_element:abelsonite ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Абелсонит (синоним никелевый порфирин) — минерал, органический порфирин, впервые найденный в 1975 г. в образцах сланца из шахты Грин Ривер на востоке Юты, США.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Абелсонит)](*<- lang_ru;;*);;
+*);;
+
+abelsonite<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//220px-Biological_classification_L_Pengo-ru.png"
+        (*
+                =>nrel_format:format_png;;
+        *);;
+        => nrel_main_idtf: [Иллюстрация(Структурная модель абелсонита)](*<- lang_ru;;*);;
+*);;
+*);;

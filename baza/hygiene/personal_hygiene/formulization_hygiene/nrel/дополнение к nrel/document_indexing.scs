@@ -1,0 +1,22 @@
+document_indexing=>nrel_main_idtf:[индексация документов]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[document indexing]
+        (*
+                <-lang_en;;
+        *);;
+
+definition ->...
+(*
+->rrel_key_sc_element:document_indexing ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Индексация документов в делопроизводстве – это проставление их порядковых (регистрационных) номеров и необходимых условных обозначений при регистрации, указывающих место их исполнения (составления) и хранения.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Индексация документов)](*<- lang_ru;;*);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:document_indexing ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Для построения некоторой числовой модели текста, например в виде многомерного вектора слов и их веса в документе. Уменьшение размерности модели.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Индексация документов)](*<- lang_ru;;*);;
+*);;

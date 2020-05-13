@@ -1,0 +1,38 @@
+nrel_contraindications
+<- sc_node_norole_relation;
+=> nrel_main_idtf: 
+	[противопоказать*] 
+	(* 
+	<- lang_ru;; 
+	*);
+=> nrel_main_idtf: 
+	[contraindicate*] 
+	(* 
+	<- lang_en;; 
+	*);
+
+    <- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(противопоказать*)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Состояние организма или отдельный признак, указывающие на невозможность, вредность применения какого-либо лекарства, лечения, пребывания где-л. и т. п.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+
+<-arity2;;
+arity->arity2;;
+arity2=>nrel_measurement:2;;
+number->2;;
+
+nrel_contraindications => nrel_definitional_domain:concept_health;;
+
+something=> nrel_main_idtf: [что-то/кто-то](*<- lang_ru;;*);
+=> nrel_main_idtf: [something](*<- lang_en;;*);;
+
+nrel_contraindications=>nrel_first_domain:concept_person;
+=> nrel_second_domain:something;;
+
+nrel_contraindications->rrel_example:fruit_orange;fruit_apple;;

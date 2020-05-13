@@ -1,0 +1,41 @@
+molars=>nrel_main_idtf:[моляры]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[molars]
+        (*
+                <-lang_en;;
+        *);;
+
+definition ->...
+(*
+->rrel_key_sc_element:molars ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Моля́ры — зубы, служащие в основном для первичной механической обработки пищи. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Моляры)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+concept_human_tooth
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:molars ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Моляры — это шестые, седьмые и восьмые зубы постоянного ряда или четвёртые и пятые зубы молочного ряда с левой и правой стороны челюсти. Они находятся позади премоляров.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утв(Моляры)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+premolar
+};;
+*);;
+molars<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://фото//220px-Lower_wisdom_tooth.jpg"
+        (*
+                =>nrel_format:format_png;;
+        *);;
+        => nrel_main_idtf: [Иллюстрация(Моляр)](*<- lang_ru;;*);;
+*);;
+*);;

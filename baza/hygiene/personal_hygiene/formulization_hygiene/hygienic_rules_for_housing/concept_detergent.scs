@@ -1,0 +1,55 @@
+concept_detergent<-sc_node_not_relation;;
+
+concept_detergent=>nrel_main_idtf:[моющее средство]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[detergent]
+        (*
+                <-lang_en;;
+*);;
+
+concept_detergent=>nrel_idtf:[детергент] 
+      (*
+                <-lang_ru;;
+        *);;
+
+concept_detergent<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://pictures//220px-Diskflaskor.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Набор из нескольких жидких моющих средств)](*<- lang_ru;;*);;
+        
+*);;
+*);;
+
+defenition ->...
+(*
+->rrel_key_sc_element: concept_detergent;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Моющее средство-профессиональные химические средства и средства бытовой химии (как концентраты, так и уже готовые к применению растворы) для мытья, чистки от загрязнений и уходу за поверхностями.Основным действующим компонентом является поверхностно-активное вещество (ПАВ) или смесь ПАВ. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Моющее средство)](*<- lang_ru;;*);;
+*);; 
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_detergent;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Любое моющее средство должно обладать двойной функцией: способностью взаимодействовать с зш-ралзняющим веществом (чаще всего жиром) и переводить его в воду или водный раствор. Для этого молекула моющего вещества должна иметь гидрофобную (водоотталкивающую) и гидрофильную (любящую удерживать воду) части.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Функция моющего средства)](*<- lang_ru;;*);;
+*);; 
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_detergent;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Моющие средства помогают экономить время, затрачиваемое на стирку и уборку, поддерживать надлежащие санитарные показатели дома и в общественных местах, а также обеспечить правильных уход за бытовой техникой, машиной.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Моющие средства)](*<- lang_ru;;*);;
+*);; 
+
+concept_detergent=>nrel_inclusion:environmental_detergent;synthetic_detergent;;
+
+concept_detergent=>nrel_classification:detergent_for_dishes;detergent_for_cleaning_the_premises;detergent_for_auto;detergent_for_carpets;detergent_for_baby;;

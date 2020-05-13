@@ -1,0 +1,56 @@
+concept_soap<-sc_node_not_relation;;
+concept_soap=>nrel_main_idtf:[мыло]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[soap]
+        (*
+                <-lang_en;;
+        *);;
+
+definition ->...
+(*
+->rrel_key_sc_element:concept_soap ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Мы́ло — твёрдый или жидкий продукт, содержащий поверхностно-активные вещества, в соединении с водой, используемый как косметическое средство — для очищения кожи и ухода за ней (туалетное мыло), либо как средство бытовой химии — в качестве моющего средства (хозяйственное мыло).](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Мыло)](*<- lang_ru;;*);;
+*);;
+
+concept_soap<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//FranzKernseife.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+        => nrel_main_idtf: [Иллюстрация(Мыло различных видов)](*<- lang_ru;;*);;
+*);;
+*);;
+
+statement->...
+(*
+->rrel_key_sc_element:concept_soap;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Основными компонентами мыла являются растворимые соли предельных (насыщенных) жирных кислот, например стеарат натрия. Иногда в мыло добавляют различные масла и глицерин для придания определённой консистенции, цвета, густоты и качеств.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Основные компоненты мыла)](*<- lang_ru;;*);;
+*);;
+
+statement->...
+(*
+->rrel_key_sc_element:concept_soap;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Самое древнее упоминание о мыловарении и моющем растворе археологи нашли на шумерских табличках. Они датируются 2500 годом до н. э.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Первое упоминание о мыле)](*<- lang_ru;;*);;
+*);;
+
+statement->...
+(*
+->rrel_key_sc_element:concept_soap;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Если кожа рук стягивается и сушится после использования мыла. Это может привести к преждевременному старению кожи ваших рук.
+
+• Если оно содержит антибактериальные компоненты. Такие мыла обладают выраженным влиянием не только на «плохие» бактерии и микроорганизмы, но и на «хорошие» — те, что живут на руках с момента нашего рождения.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Критерии выбора мыла)](*<- lang_ru;;*);;
+*);;
+
+concept_soap=>nrel_classification:concept_solid_soap;concept_liquid_soap;;
+concept_soap=>nrel_use:concept_ear_wash;;

@@ -1,0 +1,32 @@
+concept_compressor_cotton_wool<-sc_node_not_relation;;
+
+concept_compressor_cotton_wool=>nrel_main_idtf:[компрессная вата]
+        (*
+                <-lang_ru;;
+        *);
+
+nrel_main_idtf:[compressor сotton wool]
+        (*
+                <-lang_en;;
+        *);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_compressor_cotton_wool;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Компрессная вата служит для отепления завязанной или забинтованной части тела (например, при согревающих компрессах), а также мягкой подкладкой при наложении шин, иммобилизующих повязок (например, гипсовых).](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утвержедние(Характеристика и применение гигроскопической ваты)](*<- lang_ru;;*);;
+*);;
+
+concept_compressor_cotton_wool<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//vata_kompressnaja_gorkovskij_z_d_sssr_vintazh.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+        => nrel_main_idtf: [Иллюстрация(Компрессная вата)](*<- lang_ru;;*);;
+*);;
+*);;

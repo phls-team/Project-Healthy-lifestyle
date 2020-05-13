@@ -1,0 +1,30 @@
+defend_earplugs<-sc_node_not_relation;;
+defend_earplugs=>nrel_main_idtf:[беруши для защиты от боли в ушах] 
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[defend earplugs]
+        (*
+                <-lang_en;;
+        *);;
+
+statement ->...
+(*
+->rrel_key_sc_element:defend_earplugs ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Вкладыши для защиты от боли в ушах используется для защиты от боли в ушах, вызываемой перепадами давления в салоне самолёта в процессе набора высоты и снижения](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Для чего используется беруши для защиты от боли в ушах)](*<- lang_ru;;*);;
+*);;
+
+defend_earplugs<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//1023550850.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+        => nrel_main_idtf: [Иллюстрация(Беруши для защиты)](*<- lang_ru;;*);;
+*);;
+*);;

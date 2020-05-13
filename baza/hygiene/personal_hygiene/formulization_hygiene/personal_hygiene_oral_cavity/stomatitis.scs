@@ -1,0 +1,147 @@
+stomatitis<-sc_node_norole_relation;;
+
+stomatitis=>nrel_main_idtf:[стоматит]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[stomatitis]
+        (*
+                <-lang_en;;
+        *);;
+
+stomatitis<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://фото//stomatit.png"
+        (*
+                =>nrel_format:format_png;;
+        *);;
+=> nrel_main_idtf: [Иллюстрация(Стоматит)](*<- lang_ru;;*);;
+*);;
+*);;
+
+stomatitis<-nrel_inclusion:concept_desease;;
+
+stomatitis=>nrel_unique_idtf:[DA01](*<-lang_en;;*);;
+
+stomatitis=>nrel_incubation_period:...
+(*
+=>rrel_minimalPeriod:[24 hours](*<-lang_en;;*);;
+=>rrel_minimalPeriod:[24 часа](*<-lang_ru;;*);;
+=>rrel_maximalPeriod:[several weeks](*<-lang_en;;*);;
+=>rrel_maximalPeriod:[несколько недель](*<-lang_ru;;*);;
+*);;
+
+ulcers<-sc_node_norole_relation;;
+
+ulcers=>nrel_main_idtf:[язвы]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[ulcers]
+        (*
+                <-lang_en;;
+        *);;
+
+stomatitis=>nrel_symptom:ulcers;;
+
+definition ->...
+(*
+->rrel_key_sc_element:stomatitis ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Стомати́т (от др.-греч. στόμα — рот) — наиболее часто встречающееся поражение слизистой оболочки полости рта.](*<-lang_ru;;*);; *);;
+=> nrel_main_idtf: [Определение(Стоматит)](*<- lang_ru;;*);;
+*);;
+
+stomatitis=>nrel_healthing:...
+(*
+<-statement;;
+<=nrel_sc_text_translation:...
+(*
+->[Стоматит часто проходит сам по себе в течение недели. В зависимости от вида стоматита лечение может проводиться противогрибковыми или иными препаратами, вид поражения может определить врач-терапевт или стоматолог, неправильное самолечение может привести к серьёзным осложнениям, генерализации инфекции.
+
+Обычно какой-либо специфической терапии не требуется, достаточно ограничиться щадящей диетой и частыми полосканиями полости рта. Можно применять ополаскиватели с антисептическими свойствами: настои трав: коры дуба, ромашки, календулы; разбавленные водно-спиртовые растворы аптечных настоек (календула, эвкалипт — по 20—30 капель настойки на 100 мл воды), различные готовые ополаскиватели. Для снижения болевой симптоматики могут применяться препараты, содержащие местно анестезирующие средства (например, лидокаин). Частично помогает употребление леденцов, которые увеличивают слюноотделение, благодаря которому улучшается орошение раны слюной и также достигается некоторый антисептический и отвлекающий эффект. Такое же действие оказывает отвар ромашки; мёд.
+
+Ещё в конце XX века самым верным способом лечения стоматита было смазывание ранки синькой, недостаток этого метода в том, что ротовая полость будет синего цвета от красителя раствора. Ни в коем случае нельзя использовать растворы на спирту (кроме йода), они могут вызвать ожоги.](*<-lang_ru;;*);;
+*);;
+=>nrel_main_idtf:[лечение](*<-lang_ru;;*);;
+=>nrel_main_idtf:[healing](*<-lang_en;;*);;
+*);;
+
+
+statement ->...
+(*
+->rrel_key_sc_element:stomatitis ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[ Считается, что стоматит возникает в тех случаях, когда, по невыясненным пока причинам, иммунная система человека реагирует на появление молекул, которые она не может распознать.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Вонзникновение стоматита)](*<- lang_ru;;*);;
+=>nrel_using_constants:{concept_caries};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:stomatitis ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[ Причиной его возникновения также считают местные факторы: несоблюдение гигиены полости рта. Заболевания желудочно-кишечного тракта, такие как гастрит, дуоденит, колит, а также глистная инвазия, могут быть причиной катарального стоматита. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Вонзникновение стоматита)](*<- lang_ru;;*);;
+=>nrel_using_constants:{concept_caries};;
+*);;
+
+stomatitis=>nrel_classification:allergic_stomatitis;aphthous_stomatitis;
+herpetic_stomatitis;
+traumatic_stomatitis;ulcerative_stomatitis;;
+
+allergic_stomatitis<-sc_node_norole_relation;;
+
+allergic_stomatitis=>nrel_main_idtf:[аллергический стоматит]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[allergic stomatitis]
+        (*
+                <-lang_en;;
+        *);;
+
+aphthous_stomatitis<-sc_node_norole_relation;;
+
+aphthous_stomatitis=>nrel_main_idtf:[афтозный стоматит]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[aphthous stomatitis]
+        (*
+                <-lang_en;;
+        *);;
+
+herpetic_stomatitis<-sc_node_norole_relation;;
+
+herpetic_stomatitis=>nrel_main_idtf:[герпетический стоматит]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[herpetic stomatitis]
+        (*
+                <-lang_en;;
+        *);;
+
+traumatic_stomatitis<-sc_node_norole_relation;;
+
+traumatic_stomatitis=>nrel_main_idtf:[травматический стоматит]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[traumatic stomatitis]
+        (*
+                <-lang_en;;
+        *);;
+
+ulcerative_stomatitis<-sc_node_norole_relation;;
+
+ulcerative_stomatitis=>nrel_main_idtf:[язвенный стоматит]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[ulcerative stomatitis]
+        (*
+                <-lang_en;;
+        *);;

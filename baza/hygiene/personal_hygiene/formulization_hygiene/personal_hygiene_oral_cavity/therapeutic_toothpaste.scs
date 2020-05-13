@@ -1,0 +1,126 @@
+concept_therapeutic_toothpaste<-sc_node_norole_relation;;
+concept_therapeutic_toothpaste=>nrel_main_idtf:[лечебно-профилактическая зубная паста]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[therapeutic toothpaste]
+        (*
+                <-lang_en;;
+        *);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_therapeutic_toothpaste ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Такие средства имеют много функций. Кроме абразивов и отдушек в них есть экстракты, соли, витамины, пероксиды, ферменты. Некоторые созданы для ежедневного ухода за зубами для гигиены и профилактики. Другие могут назначаться врачом для лечения полости рта.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Лечебно-профилактическаа паста)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+monitor_teeth;
+concept_prophylaxy
+};;
+*);;
+
+concept_therapeutic_toothpaste=>nrel_classification:concept_anti_cariosis;concept_anti_inflammatory;concept_desensitizing;concept_whitening;concept_sorption;
+concept_organic;;
+
+concept_anti_cariosis<-sc_node_norole_relation;;
+concept_anti_inflammatory<-sc_node_norole_relation;;
+concept_desensitizing<-sc_node_norole_relation;;
+concept_whitening<-sc_node_norole_relation;;
+concept_sorption<-sc_node_norole_relation;;
+concept_organic<-sc_node_norole_relation;;
+
+concept_anti_cariosis=>nrel_main_idtf:[противокариозная лечебно-профилактическая зубная паста]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[therapeutic toothpaste]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_anti_inflammatory=>nrel_main_idtf:[противовоспалительная лечебно-профилактическая зубная паста]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[therapeutic toothpaste]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_desensitizing=>nrel_main_idtf:[десенсибилизирующая лечебно-профилактическая зубная паста]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[therapeutic toothpaste]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_whitening=>nrel_main_idtf:[отбеливающая лечебно-профилактическая зубная паста]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[therapeutic toothpaste]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_sorption=>nrel_main_idtf:[сорбиционная лечебно-профилактическая зубная паста]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[therapeutic toothpaste]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_organic=>nrel_main_idtf:[органическая лечебно-профилактическая зубная паста]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[therapeutic toothpaste]
+        (*
+                <-lang_en;;
+        *);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_anti_cariosis ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Защищают от появления зубного налета, укрепляют зубы. Во многих есть фтор. Но паста может быть и без него, тогда присутствуют ферменты или соединения кальция.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Противокариозная лечебно-профилактическаа паста)](*<- lang_ru;;*);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_anti_inflammatory ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Обеспечивают улучшение кровообращения, обмен веществ, устранение кровоточивости и неприятный запах. В данную группу входят солевые пасты, средства с хлорофиллом, противомикробными веществами, экстрактами растений, биологически активными компонентами.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Противовоспалительная лечебно-профилактическаа паста)](*<- lang_ru;;*);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_desensitizing ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Созданы для чувствительных зубов. В них могут быть соли калия и стронция, блокирующие чувствительность зубов. Они не включают сильнодействующие абразивные вещества, что приводит к быстрому появлению налета.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Десенсибилизирующая лечебно-профилактическаа паста)](*<- lang_ru;;*);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_whitening ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Средства воздействуют с помощью разрушения зубного налета или обесцвечивания, удаления пигмента. Отбеливающие пасты советуют применять чаще 2 раз в неделю, поэтому иногда их относят к отдельному виду.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Отбеливающая лечебно-профилактическаа паста)](*<- lang_ru;;*);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_sorption ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Включают полиметилсилоксана полигидрат и дополнительные сорбенты. Главной их задачей является очищение полости рта от микрочастиц и вредных бактерий.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Сорбиционная лечебно-профилактическаа паста)](*<- lang_ru;;*);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_organic ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Это натуральные пасты, включающие травяные экстракты. Абразивом служит мел. У стоматологов разное мнение по поводу использования данных средств, так как не всегда в создании такой продукции принимают участие специалисты.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Органическая лечебно-профилактическаа паста)](*<- lang_ru;;*);;
+*);;

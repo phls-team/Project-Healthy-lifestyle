@@ -1,0 +1,27 @@
+nrel_use
+<- sc_node_norole_relation;
+=> nrel_main_idtf: 
+	[use*] 
+	(* 
+	<- lang_en;; 
+	*);
+
+    <- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(использовать*)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[употреблять (употребить) что-либо для какого-либо дела.](*<- lang_ru;;*);;
+			*);;
+		*);;
+
+nrel_use <- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(использовать*)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[пользоваться (воспользоваться) чем-либо в своих интересах; извлекать (извлечь) выгоду из чего-либо.](*<- lang_ru;;*);;
+			*);;
+		*);;

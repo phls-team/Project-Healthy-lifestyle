@@ -1,0 +1,11 @@
+media_serous_otitis<-sc_node_not_relation;;
+media_serous_otitis=>nrel_main_idtf:[средний серозный (экссудативный) отит]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[average serous otitis]
+        (*
+                <-lang_en;;
+        *);;
+
+otitis=>nrel_unique_idtf:[AA91](*<-lang_en;;*);;

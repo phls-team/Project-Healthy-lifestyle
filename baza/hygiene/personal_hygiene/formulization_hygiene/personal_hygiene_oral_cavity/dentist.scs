@@ -1,0 +1,43 @@
+dentist=>nrel_main_idtf:[стоматолог]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[dentist]
+        (*
+                <-lang_en;;
+        *);;
+
+dentist=>nrel_idtf:[дантист]
+        (*
+                <-lang_ru;;
+        *);
+ nrel_idtf:[одонтолог]
+        (*
+                <-lang_ru;;
+        *);;       
+
+dentist<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://фото//skolko-zarabatyvayut-stomatologi-v-rossii_0.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+        => nrel_main_idtf: [Иллюстрация(Стоматолог)](*<- lang_ru;;*);;
+*);;
+*);;
+
+definition ->...
+(*
+->rrel_key_sc_element: dentist;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Стоматолог - это врач,которой специализируется в зубах.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Стоматолога)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+concept_human_tooth
+};;
+*);;
+
+dentist=>nrel_treat:concept_caries;toothache;stomatitis;pulpitis;enamel_damage;;

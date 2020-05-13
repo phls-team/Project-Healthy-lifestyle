@@ -1,0 +1,17 @@
+natural_remineralization=>nrel_main_idtf:[естественная реминирализация]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[natural remineralization]
+        (*
+                <-lang_en;;
+        *);;
+
+statement ->...
+(*
+->rrel_key_sc_element: natural_remineralization;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Способ подразумевает насыщение эмали необходимыми минеральными веществами при помощи коррекции режима питания. Полезно употреблять продукты, как творог, сыр, бобовые, орехи, зеленые овощи. Врач также может назначить употребление определенного объема фторированной воды.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утв(Естественная реминирализация)](*<- lang_ru;;*);;
+*);;
+
+natural_remineralization=>nrel_recomendation:concept_curd;cheese;nuts;vegetables_cabbage;;

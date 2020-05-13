@@ -1,0 +1,50 @@
+detergent_for_dishes<-sc_node_not_relation;;
+
+detergent_for_dishes=>nrel_main_idtf:[моющее средство для посуды]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[detergent for dishes]
+        (*
+                <-lang_en;;
+*);;
+
+
+detergent_for_dishes<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://pictures//moushie-i-chistiashie-sredstva-5-400x300.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Пример моющих средств для посуды)](*<- lang_ru;;*);;
+        
+*);;
+*);;
+
+detergent_for_dishes->rrel_example:frosh;;
+
+frosh<-sc_node_not_relation;;
+
+frosh=>nrel_main_idtf:nrel_main_idtf:[Frosh]
+        (*
+                <-lang_en;;
+*);;
+
+frosh<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://pictures//GL000488076_001.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+     => nrel_main_idtf: [Иллюстрация(Пример моющего средства Frosh)](*<- lang_ru;;*);;
+        
+*);;
+*);;

@@ -1,0 +1,17 @@
+surgical_hygroscopic_cotton_wool=>nrel_main_idtf:[хирургическая гигроскопическая вата]
+        (*
+                <-lang_ru;;
+        *);
+
+nrel_main_idtf:[surgical hygroscopic сotton wool]
+        (*
+                <-lang_en;;
+        *);;
+
+
+statement ->...
+(*
+->rrel_key_sc_element: surgical_hygroscopic_cotton_wool;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Производится из хлопко-волокна 3 сорта, с включением вискозного волокна 1 сорта не более 30%. Является одним из основных перевязочных материалов.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утвержедние(Из чего производится хирургическая гигроскопическая вата)](*<- lang_ru;;*);;
+*);;

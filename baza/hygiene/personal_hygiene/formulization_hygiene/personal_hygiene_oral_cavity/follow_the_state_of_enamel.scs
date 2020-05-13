@@ -1,0 +1,46 @@
+follow_the_state_of_enamel<-sc_node_norole_relation;;
+follow_the_state_of_enamel=>nrel_main_idtf:[следить за состоянием эмали]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[follow the state of enamel]
+        (*
+                <-lang_en;;
+        *);;
+
+follow_the_state_of_enamel=>nrel_inclusion:tooth_enamel;;
+
+statement ->...
+(*
+->rrel_key_sc_element: follow_the_state_of_enamel;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Правильная и регулярная гигиена ротовой полости.
+Выбор зубной щетки: она не должна быть сильно жесткой.
+Использование укрепляющих зубных паст, с кальцием и фтором в составе.
+Употребление твердых продуктов таких, как сырая морковь, яблоки и т. д. Так происходит своеобразная тренировка эмали.
+Полезно будет периодически проводить массаж десен, отвечающих за здоровье зубов.
+Регулярный стоматологический осмотр дает шанс распознать повреждение на начальной его стадии быстро и безболезненно устранить.](*<-lang_ru;;*);;*);;
+
+=> nrel_main_idtf: [Утверждение(Профилактические мероприятия по укреплению зубной эмали)](*<- lang_ru;;*);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: follow_the_state_of_enamel;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Сутью всех медицинских процедур по укреплению эмали является восстановление недостающих элементов различным способами (фторирование и реминерализация).](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Мероприятия по укреплению эмали)](*<- lang_ru;;*);;
+=>nrel_using_constants:{fluoridation;remineralization};;
+*);;
+
+follow_the_state_of_enamel<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://фото//GettyImages-465417093.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+        => nrel_main_idtf: [Иллюстрация(Следить за состоянием эмали)](*<- lang_en;;*);;
+*);;
+*);;

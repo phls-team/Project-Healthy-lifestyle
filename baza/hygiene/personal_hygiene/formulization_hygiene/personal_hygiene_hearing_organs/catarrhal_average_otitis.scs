@@ -1,0 +1,12 @@
+
+catarrhal_media_otitis<-sc_node_not_relation;;
+catarrhal_media_otitis=>nrel_main_idtf:[cредний катаральный отит]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[catarrhal average otitis]
+        (*
+                <-lang_en;;
+        *);;
+
+otitis=>nrel_unique_idtf:[AAxx](*<-lang_en;;*);;

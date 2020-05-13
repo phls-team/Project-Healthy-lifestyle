@@ -1,0 +1,24 @@
+caries_enamel=>nrel_main_idtf:[кариес эмали]
+        (*
+                <-lang_ru;;
+        *);
+
+
+nrel_main_idtf:[caries enamel]
+        (*
+                <-lang_en;;
+        *);;
+
+statement ->...
+(*
+->rrel_key_sc_element:caries_enamel ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Кариес эмали является одной из наиболее распространенных стоматологических проблем.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Ка́риес эмали)](*<- lang_ru;;*);;
+*);;
+
+        definition ->...
+(*
+->rrel_key_sc_element:caries_enamel ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Кариес эмали — начальная стадия кариозного процесса, который постепенно формируется под слоем зубного налета. Если вовремя не выявить патологию, заболевание довольно быстро разовьется в более серьезные формы и в конечном итоге может привести к разрушению зуба.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Ка́риес эмали)](*<- lang_ru;;*);;
+*);;

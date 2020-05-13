@@ -1,0 +1,49 @@
+detergent_for_auto<-sc_node_not_relation;;
+
+detergent_for_auto=>nrel_main_idtf:[моющее средство для автомобиля]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[detergent for car]
+        (*
+                <-lang_en;;
+*);;
+
+detergent_for_auto<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://pictures//moushie-i-chistiashie-sredstva-11-400x300.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Моющие средства для автомобиля)](*<- lang_ru;;*);;
+        
+*);;
+*);;
+
+detergent_for_auto->rrel_example:grass;;
+
+grass<-sc_node_not_relation;;
+
+grass=>nrel_main_idtf:nrel_main_idtf:[Grass]
+        (*
+                <-lang_en;;
+*);;
+
+grass<-rrel_key_sc_element:...
+(*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://pictures//grass-solutie-de-curatare-a-discurilor-auto-500-ml-1-625x425.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+     => nrel_main_idtf: [Иллюстрация(Пример моющего средства Grass)](*<- lang_ru;;*);;
+        
+*);;
+*);;

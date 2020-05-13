@@ -1,0 +1,37 @@
+concept_liquid_soap<-sc_node_not_relation;;
+concept_liquid_soap=>nrel_main_idtf:[жидкое мыло]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[liquid soap]
+        (*
+                <-lang_en;;
+        *);;
+
+definition ->...
+(*
+->rrel_key_sc_element:concept_liquid_soap ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Жидкое мыло - это косметический продукт, предназначенный для очищения и ухода за кожей.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Жидкое мыло)](*<- lang_ru;;*);;
+*);;
+
+concept_liquid_soap<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//700-nw.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+        => nrel_main_idtf: [Иллюстрация(Жидкое мыло)](*<- lang_ru;;*);;
+*);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_liquid_soap ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[По консистенции является вязкой жидкостью. По химическому составу большинство сортов жидкого мыла заметно отличаются от твёрдого мыла и ближе к шампуням, в частности, включают синтетические ПАВ, а также смягчающие кожу средства и отдушки. Жидкое мыло используется в качестве моющего средства, для мытья рук, как гель для ухода за телом и антибактериальное средство.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Жидкое мыло)](*<- lang_ru;;*);;
+*);;

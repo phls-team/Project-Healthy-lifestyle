@@ -1,0 +1,53 @@
+concept_toothpaste<-sc_node_not_relation;;
+
+concept_toothpaste=>nrel_main_idtf:[зубная паста]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[toothpaste]
+        (*
+                <-lang_en;;
+        *);;
+
+
+concept_toothpaste<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://фото//275px-Toothpasteonbrush.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+        => nrel_main_idtf: [Иллюстрация(Зубная паста)](*<- lang_ru;;*);;
+*);;
+*);;
+
+definition ->...
+(*
+->rrel_key_sc_element: concept_toothpaste;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Зубна́я паста — желеобразная субстанция (паста или гель) для чистки зубов. Ранее приготавливалась на основе мела, современные зубные пасты в основном основаны на силикатах.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Зубная паста)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+        concept_teeth_cleaning
+};;
+*);;
+concept_toothpaste=>nrel_use:concept_teeth_cleaning;follow_the_state_of_enamel;;
+concept_toothpaste<=nrel_use:concept_personal_hygiene_oral_cavity;;
+concept_toothpaste<=nrel_rodina:USA;;
+concept_toothpaste=>nrel_classification:concept_hygienic_toothpaste;concept_therapeutic_toothpaste;;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_toothpaste ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Активными компонентами зубных паст являются вещества, которые могут обладать лечебно-профилактическим действием — лактат алюминия, фториды, соединения с антимикробной активностью, отдельные микро-, макроэлементы и полиминеральные комплексы, экстракты лекарственных трав, ферменты, прополис и др.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Зубная паста)](*<- lang_ru;;*);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_toothpaste ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Противокариозный эффект обеспечивается присутствием в зубной пасте фторидов (фторид натрия, фторид олова, аминофторид, монофторфосфат), или биодоступного кальция (глицерофосфат кальция). Одновременное добавление в состав пасты кальция и фторидов неэффективно, так как они взаимодействуют друг с другом, образуя нерастворимую соль — фторид кальция. А также ксилита — вещества с выраженным бактериостатическим эффектом в отношении кариесогенной микрофлоры.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Зубная паста)](*<- lang_ru;;*);;
+*);;

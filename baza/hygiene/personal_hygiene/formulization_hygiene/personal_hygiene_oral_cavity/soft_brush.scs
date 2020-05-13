@@ -1,0 +1,22 @@
+soft_brush=>nrel_main_idtf:[щётка легкой жесткости]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[light stiff brush]
+        (*
+                <-lang_en;;
+        *);;
+
+statement ->...
+(*
+->rrel_key_sc_element:soft_brush;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Такая щетка рекомендуется детям, которые только начали чистить зубки. Также они будут практичны при пародонтите или гингивите](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Кому подходит щётка легкой жесткости)](*<- lang_ru;;*);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:soft_brush ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Если у человека повреждены твердые ткани зубов,необходимо остановить выбор на мягкой зубной щетке](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Зубная щётка средней жесткости)](*<- lang_ru;;*);;
+*);;

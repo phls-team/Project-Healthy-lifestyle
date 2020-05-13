@@ -1,0 +1,51 @@
+tooth_enamel=>nrel_main_idtf:[зубная эмаль]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[tooth_enamel]
+        (*
+                <-lang_en;;
+        *);;
+tooth_enamel=>nrel_idtf:[эмаль]
+        (*
+                <-lang_ru;;
+        *);;      
+definition ->...
+(*
+->rrel_key_sc_element: tooth_enamel;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Зубная эмаль (или просто эмаль) — внешняя защитная оболочка коронковой части зубов человека.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Зубная эмаль](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+    human_tooth
+};;
+*);;
+tooth_enamel<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://фото//Labeledmolar.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+         => nrel_main_idtf: [Иллюстрация(Зубная эмаль)](*<- lang_ru;;*);;
+*);;
+*);;
+statement ->...
+(*
+->rrel_key_sc_element:tooth_enamel ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Эмаль является самой твёрдой тканью в организме человека, что объясняется высоким содержанием неорганических веществ — до 97 %.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Зубная эмаль)](*<- lang_ru;;*);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:tooth_enamel ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Твёрдость зубной эмали определяется высоким содержанием в ней неорганических веществ (до 97 %), главным образом кристаллов гидроксиапатита — Ca10(PO4)6(OH)2, модифицированного наличием магния, фтора, углерода и некоторых других элементов. Здоровая эмаль содержит 2—3 % свободной воды и 1—2 % органических веществ (белков, липидов, углеводов). Вода занимает свободное пространство между кристаллами и в органической основе.
+
+Гидроксиапатиты очень восприимчивы к кислотам и начинают заметно разрушаться при pH < 4,5 (слюна обладает pH от 5,6 до 7,6).](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Химический состав зубной эмали)](*<- lang_ru;;*);;
+*);;
+
+tooth_enamel<=nrel_is_contained_in:macroelement_magnesium_Mg;microelement_fluor_F;concept_carbohydrate_product;;

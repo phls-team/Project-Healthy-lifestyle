@@ -1,0 +1,46 @@
+antibacterial_and_antiseptical_solid_soap=>nrel_main_idtf:[антисептическое и антибактериальное твердое мыло]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[antibacterial and antiseptical solid soap]
+        (*
+                <-lang_en;;
+        *);;
+
+statement->...
+(*
+->rrel_key_sc_element:antibacterial_and_antiseptical_solid_soap;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Такие мыла содержат вещества, призванные бороться с бактериями и микроорганизмами. Самые распространенные антибактериальные мыла — Safeguard, «Absolut Антибактериальное». Они могут быть увлажняющими или сушить кожу рук. В зависимости от силы антибактериального и антисептического воздействия их рекомендуется использовать не чаще одного-двух раз в день и не дольше двух недель. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Глицериновое твердое мыло)](*<- lang_ru;;*);;
+*);;
+
+antibacterial_and_antiseptical_solid_soap<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//10103025205278.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+        => nrel_main_idtf: [Иллюстрация(Антибактериальное твердое мыло)](*<- lang_ru;;*);;
+*);;
+*);;
+
+
+antibacterial_and_antiseptical_solid_soap<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//Morgan_s_antiseptic_medicated_soap.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+        => nrel_main_idtf: [Иллюстрация(Антисептическое твердое мыло)](*<- lang_ru;;*);;
+*);;
+*);;
+
+

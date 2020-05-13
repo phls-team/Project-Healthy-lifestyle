@@ -1,0 +1,29 @@
+glycerin_solid_soap=>nrel_main_idtf:[глицериновое твердое мыло]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[glycerin solid soap]
+        (*
+                <-lang_en;;
+        *);;
+
+statement->...
+(*
+->rrel_key_sc_element:glycerin_solid_soap;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Прозрачность глицеринового мыла относится к декоративным свойствам и не несет практической пользы. К глицериновым относятся Duru и «Palmolive Освежающий арбуз». По качеству воздействия на кожу рук их можно отнести к «увлажняющим». Прозрачное мыло часто лишено характерного и неприятного «мыльного» запаха. Его снабжают фруктово-ягодными отдушками. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Глицериновое твердое мыло)](*<- lang_ru;;*);;
+*);;
+
+glycerin_solid_soap<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//1026736259.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+        => nrel_main_idtf: [Иллюстрация(Глицериновое твердое мыло)](*<- lang_ru;;*);;
+*);;
+*);;

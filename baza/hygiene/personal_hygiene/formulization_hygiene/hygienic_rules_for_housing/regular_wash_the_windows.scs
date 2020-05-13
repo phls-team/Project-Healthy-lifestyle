@@ -1,0 +1,8 @@
+regular_wash_the_windows=>nrel_main_idtf:[регулярно  мыть окна]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[regular wash the windows]
+        (*
+                <-lang_en;;
+*);;

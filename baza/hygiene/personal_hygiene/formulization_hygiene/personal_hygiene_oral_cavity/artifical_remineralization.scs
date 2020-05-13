@@ -1,0 +1,31 @@
+artifical_remineralization=>nrel_main_idtf:[искуственная реминирализация]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[artifical remineralization]
+        (*
+                <-lang_en;;
+        *);;
+
+artifical_remineralization->nrel_use:gello;varnish;;
+
+gello=>nrel_main_idtf:[гель]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[gello]
+        (*
+                <-lang_en;;
+        *);;
+
+varnish=>nrel_main_idtf:[лак]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[varnish]
+        (*
+                <-lang_en;;
+        *);;
+
+artifical_remineralization=>nrel_consist:microelement_fluor_F;macroelement_calcium_Ca;;
+
