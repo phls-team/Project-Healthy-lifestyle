@@ -1,0 +1,42 @@
+concept_vertical_mechanism<-sc_node_not_relation;;
+concept_vertical_mechanism => nrel_main_idtf: [вертикальный механизм](*<- lang_ru;;*);;
+concept_vertical_mechanism => nrel_main_idtf: [vertical mechanism](*<- lang_en;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_vertical_mechanism;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Трансплацентарный (внутриутробный) путь передачи инфекции — при котором возбудитель инфекции передается от матери к плоду во время беременности.](*<- lang_ru;;*);;
+-> [Transplacental (intrauterine) transmission of infection - in which the pathogen is transmitted from mother to fetus during pregnancy.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(вертикальный механизм)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(vertical mechanism)](*<- lang_ru;;*);;
+*);;
+
+
+
+concept_vertical_mechanism<-rrel_key_sc_element:...
+(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://кар/vertical.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_vertical_mechanism;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Вертикальным механизмом передачи инфекции также считается передача возбудителя от матери к плоду во время прохождения им родовых путей. ](*<- lang_ru;;*);;
+    -> [The vertical mechanism of transmission of infection is also considered to be the transmission of the pathogen from mother to fetus during the passage of the birth canal.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(вертикальный механизм)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(vertical mechanism)](*<- lang_ru;;*);;
+*);;

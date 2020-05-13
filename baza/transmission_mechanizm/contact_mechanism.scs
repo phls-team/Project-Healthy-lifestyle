@@ -1,0 +1,46 @@
+
+concept_contact_mechanism<-sc_node_not_relation;;
+concept_contact_mechanism => nrel_main_idtf: [контактный механизм](*<- lang_ru;;*);;
+concept_contact_mechanism => nrel_main_idtf: [contact mechanism](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_contact_mechanism;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Контактный механизм передачи инфекции — механизм передачи инфекции, при котором возбудители выделяются на коже и её придатках, на слизистой оболочке глаз, полости рта, половых органов, на поверхности ран, поступают с них на поверхность различных предметов и при контакте с ними восприимчивого человека (чаще при наличии микротравм) внедряются в его организм.](*<- lang_ru;;*);;
+	    -> [Contact transmission mechanism - infection transmission mechanism in which pathogens are released on the skin and its appendages, on the mucous membrane of the eyes, mouth, genitals, on the surface of wounds, come from them to the surface of various objects and when a susceptible person comes in contact with them (more often in the presence of microtraumas) are introduced into his body.](*<- lang_en;;*);;
+  *);;
+    => nrel_main_idtf: [Опр.(контактный механизм)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(contact mechanism)](*<- lang_en;;*);;
+*);;
+
+
+concept_contact_mechanism=>nrel_inclusion:concept_household;;
+
+concept_contact_mechanism<-rrel_key_sc_element:...
+(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://кар/contact.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_contact_mechanism;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Контактный механизм передачи инфекции подразделяют на прямой (рукопожатия, объятия, поглаживания и т. п., то есть контакт с источником инфекции) и непрямой, или опосредованный (через предметы обстановки, бытовую технику, игрушки, посуду, столовые приборы, предметы гигиены и т. п.). ](*<- lang_ru;;*);;
+    -> [The contact mechanism of transmission of infection is divided into direct (handshakes, hugs, stroking, etc., i.e. contact with the source of infection) and indirect or indirect (through furnishings, appliances, toys, dishes, cutlery, hygiene items, etc. . P.).](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(контактный механизм)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(contact mechanism)](*<- lang_ru;;*);;
+*);;

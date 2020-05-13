@@ -1,0 +1,50 @@
+concept_aerogenic_mechanism<-sc_node_not_relation;;
+concept_aerogenic_mechanism => nrel_main_idtf: [аэрогенный механизм](*<- lang_ru;;*);;
+concept_aerogenic_mechanism => nrel_main_idtf: [aerogenic mechanism](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_aerogenic_mechanism;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Аэрогенный механизм - механизм передачи инфекции, при котором возбудители локализуются в слизистой оболочке дыхательных путей инфицированного организма и переносятся в макроорганизм через воздух.](*<- lang_ru;;*);;
+	    -> [The aerogenic mechanism is an infection transmission mechanism in which pathogens are localized in the mucous membrane of the respiratory tract of an infected organism and are transferred to the microorganism through the air.](*<- lang_en;;*);;
+  *);;
+    => nrel_main_idtf: [Опр.(аэрогенный механизм)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(aerogenic mechanism)](*<- lang_en;;*);;
+    => nrel_using_constants: ...
+        (*
+            ->concept_transmission_mechanism;;
+        *);;
+*);;
+
+
+concept_aerogenic_mechanism=>nrel_inclusion:concept_airborne;concept_airborne_dust;;
+
+concept_aerogenic_mechanism<-rrel_key_sc_element:...
+(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://кар/aerog.png"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_aerogenic_mechanism;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Реализуется через воздушно-капельный и воздушно-пылевой пути передачи. ](*<- lang_ru;;*);;
+    -> [It is realized through airborne droplets and airborne dust transmission paths.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(аэрогенный механизм)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(aerogenic mechanism)](*<- lang_ru;;*);;
+*);;
+

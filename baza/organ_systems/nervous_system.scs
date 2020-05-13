@@ -1,0 +1,35 @@
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_nervous_system;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Нервная система — целостная морфологическая и функциональная совокупность различных взаимосвязанных нервных структур, которая совместно с эндокринной системой обеспечивает взаимосвязанную регуляцию деятельности всех систем организма человека и реакцию на изменение условий внутренней и внешней среды.](*<- lang_ru;;*);;
+-> [The nervous system is an integral morphological and functional combination of various interconnected nervous structures, which together with the endocrine system provides an interconnected regulation of the activity of all systems of the human body and a reaction to changes in the conditions of the internal and external environment.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(нервная система)](*<- lang_ru;;*);;
+=> nrel_main_idtf: [St.(nervous system)](*<- lang_en;;*);;
+*);;
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_nervous_system;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Нервная система действует как интегративная система, связывая в одно целое чувствительность, двигательную активность и работу других регуляторных систем (эндокринной и иммунной). ](*<- lang_ru;;*);;
+    -> [The nervous system acts as an integrative system, linking together sensitivity, motor activity and the work of other regulatory systems (endocrine and immune).](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(нервная система)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(nervous system)](*<- lang_ru;;*);;
+*);;
+
+concept_nervous_system=>nrel_system_organs:cerebrum;spinal_cord;;
+
+concept_nervous_system=>nrel_structure:"file://картинки/nerv.png";;
+
+concept_nervous_system=>nrel_diseases_of_system:anxiety;reduced_blood_pressure;encephalitis;;
+
+concept_nervous_system=>nrel_system_functions:[Обнаружение и обработка сигналов всех видов (как внешних, так и внутренних), а также координация и контроль всех органов тела];[Контролирует голод, жажду и цикл сна, а также осуществляет контроль и регулирование температуры тела (при помощи гипоталамуса).];[Эмоции (посредством лимбической системы) и мысли.];
+[Обучаемость и память (через гиппокамп).];[Движение, равновесие и координацию (с помощью мозжечка).];[ Интерпретирует всю информацию, полученную через органы чувств.];;
+

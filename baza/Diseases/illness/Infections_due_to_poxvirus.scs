@@ -1,0 +1,21 @@
+concept_part1OfSubClassOf01_17<-sc_node_not_relation;;
+concept_part1OfSubClassOf01_17 => nrel_main_idtf: [Инфекции, вызванные поксвирусом](*<- lang_ru;;*);;
+concept_part1OfSubClassOf01_17 => nrel_main_idtf: [Infections due to poxvirus ](*<- lang_en;;*);;
+
+concept_part1OfSubClassOf01_17 =>nrel_arrayOfIdentificators:[1E70-last unique idtf];;
+concept_part1OfSubClassOf01_17=>nrel_inclusion:concept_variola;;
+
+
+
+concept_subClassOf01_17=>nrel_inclusion:concept_part1OfSubClassOf01_17;;
+
+concept_part1OfSubClassOf01_17<-rrel_sc_key_element:...
+(*<-statement;;
+=>nrel_main_idtf:[class description](*<-lang_en;;*);;
+=>nrel_main_idtf:[описание класса](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(* ->[Diseases, caused by an infection with a poxvirus.] (*<-lang_en;;*);;
+->[Заболевания, вызванные заражением поксвируса.] (*<-lang_ru;;*);;
+*);;
+*);;
+

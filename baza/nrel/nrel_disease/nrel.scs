@@ -1,0 +1,124 @@
+nrel_source_of_infection<-sc_node_norole_relation;;
+nrel_source_of_infection => nrel_main_idtf: [источник инфекции*](*<- lang_ru;;*);;
+nrel_source_of_infection => nrel_main_idtf: [source of infection*](*<- lang_en;;*);;
+
+nrel_susceptibility<-sc_node_norole_relation;;
+nrel_susceptibility => nrel_main_idtf: [восприимчивость*](*<- lang_ru;;*);;
+nrel_susceptibility => nrel_main_idtf: [susceptibility*](*<- lang_en;;*);;
+
+
+nrel_develop<-sc_node_norole_relation;;
+nrel_develop => nrel_main_idtf: [разрабатывать*](*<- lang_ru;;*);;
+nrel_develop => nrel_main_idtf: [develop*](*<- lang_en;;*);;
+
+
+nrel_intention<-sc_node_norole_relation;;
+nrel_intention => nrel_main_idtf: [намерение*](*<- lang_ru;;*);;
+nrel_intention => nrel_main_idtf: [intention*](*<- lang_en;;*);;
+
+nrel_year_of_creation<-sc_node_norole_relation;;
+nrel_year_of_creation => nrel_main_idtf: [год создания*](*<- lang_ru;;*);;
+nrel_year_of_creation => nrel_main_idtf: [year of creation*](*<- lang_en;;*);;
+
+nrel_organization<-sc_node_norole_relation;;
+nrel_organization => nrel_main_idtf: [организация*](*<- lang_ru;;*);;
+nrel_organization => nrel_main_idtf: [organization*](*<- lang_en;;*);;
+
+nrel_basic_taxonomic_unit<-sc_node_norole_relation;;
+nrel_basic_taxonomic_unit => nrel_main_idtf: [основные таксономические единицы*](*<- lang_ru;;*);;
+nrel_basic_taxonomic_unit => nrel_main_idtf: [basic taxonomic unit*](*<- lang_en;;*);;
+
+nrel_naming_rule<-sc_node_norole_relation;;
+nrel_naming_rule => nrel_main_idtf: [правило именования*](*<- lang_ru;;*);;
+nrel_naming_rule => nrel_main_idtf: [naming rule*](*<- lang_en;;*);;
+
+nrel_author<-sc_node_norole_relation;;
+nrel_author => nrel_main_idtf: [автор*](*<- lang_ru;;*);;
+nrel_author => nrel_main_idtf: [author](*<- lang_en;;*);;
+
+nrel_date_of_birth<-sc_node_norole_relation;;
+nrel_date_of_birth => nrel_main_idtf: [дата рождения*](*<- lang_ru;;*);;
+nrel_date_of_birth => nrel_main_idtf: [date of birth*](*<- lang_en;;*);;
+
+nrel_award<-sc_node_norole_relation;;
+nrel_award => nrel_main_idtf: [награда*](*<- lang_ru;;*);;
+nrel_award => nrel_main_idtf: [award*](*<- lang_en;;*);;
+
+nrel_origin_hypothesis<-sc_node_norole_relation;;
+nrel_origin_hypothesis => nrel_main_idtf: [гипотеза о происхождении*](*<- lang_ru;;*);;
+nrel_origin_hypothesis => nrel_main_idtf: [origin hypothesis*](*<- lang_en;;*);;
+
+nrel_structure<-sc_node_norole_relation;;
+nrel_structure => nrel_main_idtf: [строение*](*<- lang_ru;;*);;
+nrel_structure => nrel_main_idtf: [structure*](*<- lang_en;;*);;
+
+nrel_life_cycle<-sc_node_norole_relation;;
+nrel_life_cycle => nrel_main_idtf: [жизненный цикл*](*<- lang_ru;;*);;
+nrel_life_cycle => nrel_main_idtf: [life cycle*](*<- lang_en;;*);;
+
+nrel_scope_of_application<-sc_node_norole_relation;;
+nrel_scope_of_application => nrel_main_idtf: [сфера приминения*](*<- lang_ru;;*);;
+nrel_scope_of_application => nrel_main_idtf: [scope of application*](*<- lang_en;;*);;
+
+nrel_mortality<-sc_node_norole_relation;;
+nrel_mortality => nrel_main_idtf: [смертность*](*<- lang_ru;;*);;
+nrel_mortality => nrel_main_idtf: [mortality*](*<- lang_en;;*);;
+
+nrel_bacteria_nutrition_type<-sc_node_norole_relation;;
+nrel_bacteria_nutrition_type => nrel_main_idtf: [тип питания бактерии*](*<- lang_ru;;*);;
+nrel_bacteria_nutrition_type => nrel_main_idtf: [bacteria nutrition type*](*<- lang_en;;*);;
+
+nrel_budding_virus<-sc_node_norole_relation;;
+nrel_budding_virus => nrel_main_idtf: [отпочковывание вируса от клетки-хозяина*](*<- lang_ru;;*);;
+nrel_budding_virus => nrel_main_idtf: [budding virus*](*<- lang_en;;*);;
+
+nrel_size<-sc_node_norole_relation;;
+nrel_size=> nrel_main_idtf: [размер*](*<- lang_ru;;*);;
+nrel_size => nrel_main_idtf: [size*](*<- lang_en;;*);;
+
+nrel_cell_shape<-sc_node_norole_relation;;
+nrel_cell_shape=> nrel_main_idtf: [форма клетки бактерии*](*<- lang_ru;;*);;
+nrel_cell_shape => nrel_main_idtf: [cell shape*](*<- lang_en;;*);;
+
+
+nrel_propagation<-sc_node_norole_relation;;
+nrel_propagation=> nrel_main_idtf: [размножение*](*<- lang_ru;;*);;
+nrel_propagation => nrel_main_idtf: [propagation*](*<- lang_en;;*);;
+
+nrel_opening_year<-sc_node_norole_relation;;
+nrel_opening_year=> nrel_main_idtf: [год открытия*](*<- lang_ru;;*);;
+nrel_opening_year => nrel_main_idtf: [opening year*](*<- lang_en;;*);;
+
+nrel_type_of_bacteria<-sc_node_norole_relation;;
+nrel_type_of_bacteria=> nrel_main_idtf: [тип бактерий*](*<- lang_ru;;*);;
+nrel_type_of_bacteria => nrel_main_idtf: [type of bacteria*](*<- lang_en;;*);;
+
+nrel_disease_prevention<-sc_node_norole_relation;;
+nrel_disease_prevention=> nrel_main_idtf: [профилактика заболевания*](*<- lang_ru;;*);;
+nrel_disease_prevention=> nrel_main_idtf: [disease prevention*](*<- lang_en;;*);;
+
+
+nrel_system_functions<-sc_node_norole_relation;;
+nrel_system_functions=> nrel_main_idtf: [функции системы*](*<- lang_ru;;*);;
+nrel_system_functions=> nrel_main_idtf: [system functions*](*<- lang_en;;*);;
+
+nrel_diseases_of_system<-sc_node_norole_relation;;
+nrel_diseases_of_system=> nrel_main_idtf: [заболевание системы*](*<- lang_ru;;*);;
+nrel_diseases_of_system=> nrel_main_idtf: [diseases of system*](*<- lang_en;;*);;
+
+nrel_cells_in_the_immune<-sc_node_norole_relation;;
+nrel_cells_in_the_immune=> nrel_main_idtf: [клетки, участвующие в иммунном ответе*](*<- lang_ru;;*);;
+nrel_cells_in_the_immune=> nrel_main_idtf: [cells in the immune response*](*<- lang_en;;*);;
+
+nrel_classification_of_immun<-sc_node_norole_relation;;
+nrel_classification_of_immun=> nrel_main_idtf: [классификация иммунитета*](*<- lang_ru;;*);;
+nrel_classification_of_immun=> nrel_main_idtf: [classification of immunity*](*<- lang_en;;*);;
+
+
+nrel_system_organs<-sc_node_norole_relation;;
+nrel_system_organs=> nrel_main_idtf: [органы, входящие в систему*](*<- lang_ru;;*);;
+nrel_system_organs=> nrel_main_idtf: [system_organs*](*<- lang_en;;*);;
+
+nrel_stage<-sc_node_norole_relation;;
+nrel_stage=> nrel_main_idtf: [стадии*](*<- lang_ru;;*);;
+nrel_stage=> nrel_main_idtf: [stage*](*<- lang_en;;*);;

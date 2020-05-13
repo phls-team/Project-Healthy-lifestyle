@@ -1,0 +1,78 @@
+concept_tetanus <-sc_node_not_relation;;
+concept_tetanus => nrel_main_idtf: [столбняк](*<- lang_ru;;*);;
+concept_tetanus => nrel_main_idtf: [tetanus](*<- lang_en;;*);;
+
+concept_tetanus=>nrel_mortality:[Коэффициент летальности достигает 17%-25%.];;
+
+concept_subClassOf01_07=>nrel_inclusion:concept_tetanus;;
+
+concept_tetanus<-sc_node_norole_relation;
+=>nrel_unique_idtf:[1C13](*<-lang_en;;*);;
+concept_tetanus<-sc_node_norole_relation;
+=>nrel_unique_idtf:[1C13](*<-lang_ru;;*);;
+
+
+concept_tetanus<-sc_node_norole_relation;
+=>nrel_incubation_period:...
+(*
+=>rrel_minimalPeriod:[3 days](*<-lang_en;;*);;
+=>rrel_minimalPeriod:[3 дня](*<-lang_ru;;*);;
+=>rrel_maximalPeriod:[31 days](*<-lang_en;;*);;
+=>rrel_maximalPeriod:[31 день](*<-lang_ru;;*);;
+*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_tetanus;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Столбняк — сапронозное бактериальное острое инфекционное заболевание,характеризующееся поражением нервной системы и проявляющееся тоническим напряжением скелетной мускулатуры и генерализованными судорогами.](*<- lang_ru;;*);;
+	    -> [Tetanus is an acute sapronous bacterial infectious disease characterized by damage to the nervous system and severe tonic tension of the skeletal muscles and generalized seizures. ](*<- lang_en;;*);;
+	   *);;
+    => nrel_main_idtf: [Опр.(столбняк)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(tetanus)](*<- lang_en;;*);;
+*);;
+
+concept_tetanus=>nrel_disease_transmission_method:concept_contact_mechanism;;
+
+concept_tetanus=>nrel_susceptibility:[Естественная восприимчивость людей высокая, хотя клинические проявления заболевания могут варьироваться от стертых до тяжело протекающих форм. Перенесённое заболевание оставляет стойкий иммунитет. ];;
+
+concept_tetanus=>nrel_period_of_full_development:fever;dizziness;difficulty_swallowing;
+convulsions;jaw_spasm;;
+
+concept_tetanus=>nrel_symptom:fever;dizziness;difficulty_swallowing;pain_and_weakness_in_muscles;;
+
+concept_tetanus=>nrel_healing:[Лечение включает в себя:
+
+    1)Борьбу с возбудителем в первичном очаге инфекции (вскрытие, санация и аэрация раны).
+    2)Нейтрализацию столбнячного токсина путём введения противостолбнячной сыворотки.
+    3)Противосудорожное лечение (тотальная миорелаксация).
+    4)Шумоизоляционный асептический бокс
+    5)Поддержание жизненно важных функций организма (искусственная вентиляция лёгких, контроль сердечной деятельности).
+    6)Профилактику и лечение осложнений (борьба с сопутствующими инфекциями, тромбозом), профилактика механических повреждений при судорогах.
+    7)Полноценное питание и уход.];;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_tetanus;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Больной не заразен для окружающих. Эпидемиологических мероприятий в очаге болезни не проводят. Иммунитет после болезни не развивается.](*<- lang_ru;;*);;
+	    -> [The patient is not contagious to others. Epidemiological measures in the outbreak are not carried out. Immunity after illness does not develop.](*<- lang_en;;*);;
+
+
+        *);;
+    => nrel_main_idtf: [Утв.(столбняк)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(tetanus)](*<- lang_en;;*);;
+*);;
+
+
+concept_tetanus=>nrel_disease_prevention:[Профилактика травм и санитарно-просветительская работа среди населения.];[Специфическая профилактика в плановом порядке путём введения противостолбнячной вакцины всем детям от 3 месяцев до 17 лет по календарю прививок. Взрослым каждые 10 лет проводится ревакцинация.];[Экстренная профилактика применяется как привитым, так и непривитым людям при:
+
+   1) ранениях и травмах при нарушении целостности кожных покровов и слизистых оболочек.
+   2) ранениях и операциях желудочно-кишечного тракта.
+   3) ожогах и обморожениях II—IV степени.
+   4) родах и абортах вне медицинских учреждений.
+   5) гангрене или некрозе тканей, длительно текущих абсцессах, карбункулах, язвах, пролежнях.
+   6) укусах животных.];;

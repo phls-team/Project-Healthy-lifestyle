@@ -1,0 +1,83 @@
+concept_orvi<-sc_node_not_relation;;
+concept_orvi => nrel_main_idtf: [ОРВИ](*<- lang_ru;;*);;
+concept_orvi => nrel_main_idtf: [orvi](*<- lang_en;;*);;
+
+concept_orvi<-sc_node_norole_relation;
+=>nrel_unique_idtf:[CA07](*<-lang_en;;*);;
+concept_orvi<-sc_node_norole_relation;
+=>nrel_unique_idtf:[CA07](*<-lang_ru;;*);;
+
+concept_orvi<-concept_disease;;
+
+concept_subClassOf01_14=>nrel_inclusion:concept_orvi;;
+
+
+concept_orvi<-sc_node_norole_relation;
+=>nrel_incubation_period:...
+(*
+=>rrel_minimalPeriod:[12 hours](*<-lang_en;;*);;
+=>rrel_minimalPeriod:[12 часов](*<-lang_ru;;*);;
+=>rrel_maximalPeriod:[48 hours](*<-lang_en;;*);;
+=>rrel_maximalPeriod:[48 часов](*<-lang_ru;;*);;
+*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_orvi;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Острые респираторные вирусные инфекции (ОРВИ)  — группа клинически и морфологически подобных острых воспалительных заболеваний органов дыхания, возбудителями которых являются пневмотропные вирусы.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(ОРВИ)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+
+            -> concept_acute_diseases;;
+	    -> concept_disease;;
+        *);;
+*);;
+
+concept_orvi=>nrel_source_of_infection:concept_virus;[Источником ОРВИ является больной человек или в некоторых случаях зверь или птица, которые представляют опасность с момента окончания инкубационного периода до окончания лихорадочного периода.];;
+
+concept_orvi=>nrel_susceptibility:[Восприимчивость к заболеванию всеобщая, высокая и не зависит от пола. Относительно маловосприимчивы дети первых месяцев жизни, рождённые от матерей с циркулирующими антителами к возбудителям ОРВИ. При отсутствии у матери защитных антител к ОРВИ восприимчивы даже новорождённые.];;
+
+concept_orvi<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://картинки/orvi.png"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;
+
+
+concept_orvi=>nrel_period_of_full_development:runny_nose;pain_and_weakness_in_muscles;concept_sore_throat;cough;ear_pain;fever;;
+
+
+concept_orvi=>nrel_symptom:runny_nose;pain_and_weakness_in_muscles;concept_sore_throat;cough;ear_pain;fever;;
+
+concept_orvi=>nrel_healing:[Современный подход к лечению гриппа и ОРВИ предполагает комплексное воздействие. Важная его часть — применение этиотропных средств, то есть тех, которые воздействуют непосредственно на причину заболевания. В частности, это противовирусные средства, а также препараты, повышающие интенсивность работы иммунной системы.];;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_orvi;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [В большинстве случаев респираторные вирусные инфекции протекают в виде лёгкого заболевания и проходят сами собой, поскольку иммунная система в конечном итоге самостоятельно очищает организм от вируса. Тяжёлые случаи заболеваний возникают, если вирусы попадают в нижние дыхательные пути, в результате чего, помимо бронхита, инфекция может привести к вирусной пневмонии и острому респираторному дистресс-синдрому. Также вирусные респираторные инфекции могут приводить к обострению хронических заболеваний. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(ОРВИ)](*<- lang_ru;;*);;
+*);;
+
+
+concept_orvi=>nrel_disease_prevention:"file://картинки/proph_irvi.png";;
+
+
+concept_orvi=>nrel_disease_transmission_method:concept_airborne;;
+
+
+concept_orvi=>nrel_mortality:[Коэффициент летальности достигает 0,5%.];;

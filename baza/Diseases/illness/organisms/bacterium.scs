@@ -1,0 +1,57 @@
+concept_bacterium<-sc_node_not_relation;;
+concept_bacterium => nrel_main_idtf: [бактерия](*<- lang_ru;;*);;
+concept_bacterium => nrel_main_idtf: [bacterium](*<- lang_en;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_bacterium;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Бактерии -  Это мельчайшие организмы, обладающие клеточным строением, не имеющие настоящего оформленного ядра.](*<- lang_ru;;*);;
+-> [Bacteria - These are the smallest organisms that have a cellular structure, do not have a real framed nucleus.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(бактерия)](*<- lang_ru;;*);;
+       => nrel_main_idtf: [Def.(bacterium)](*<- lang_ru;;*);;
+       
+*);;
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_bacterium;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Бактерии — одна из первых форм жизни на Земле и встречаются почти во всех земных местообитаниях.Они населяют почву, пресные и морские водоёмы, кислые горячие источники, радиоактивные отходы и глубинные слои земной коры.](*<- lang_ru;;*);;
+            -> [Bacteria are one of the first life forms on Earth and are found in almost all terrestrial habitats. They inhabit soil, fresh and marine bodies of water, acidic hot springs, radioactive waste and the deep layers of the earth's crust.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(бактерия)](*<- lang_ru;;*);;
+     => nrel_main_idtf: [St.(bacterium)](*<- lang_en;;*);;
+*);;
+
+concept_bacterium=>nrel_structure:"file://картинки/bakterii.jpg";;
+
+
+
+concept_bacterium=>nrel_bacteria_nutrition_type:"file://картинки/1.png";;
+
+concept_bacterium=>nrel_size:[несколько микрометров в длину];;
+
+concept_bacterium=>nrel_cell_shape:"file://картинки/form.jpg";;
+
+concept_bacterium->rrel_role_in_nature:[фиксация атмосферного воздуха];[разложение останков животных и растений посредством гниения];[выработка энергии из нерастворимых соединений];;
+
+concept_bacterium->rrel_role_in_human_life:[способствование процессу пещеварения];[синтез некоторые витамины];[препятствование деятельности болезнетворных бактерий];;
+
+concept_bacterium=>nrel_propagation:[Бактериальные клетки достигают определённого размера и после этого делятся бинарным делением.При бинарном делении образуются две дочерние клетки, идентичные материнской. Некоторые бактерии, хотя и размножаются простым делением, образуют более сложные структуры, предназначенные для распространения дочерних клеток.Некоторые бактерии способны к почкованию, когда дочерняя клетка образует вырост на материнской, который впоследствии отделяется и переходит к самостоятельной жизни.];"file://картинки/bak-propagation.png";;
+
+concept_bacterium=>nrel_opening_year:[Первым бактерии увидел голландский микроскопист Антони ван Левенгук в 1676 году с помощью микроскопа с одной линзой собственного изобретения.];[Термин «бактерии» предложил Христиан Готфрид Эренберг в 1828 году.];;
+
+concept_bacterium=>nrel_type_of_bacteria:concept_acidobacteria;concept_Actinobacteria;concept_Aquificae;concept_Armatimonadetes;
+concept_Bacteroidetes;concept_Balneolaeota;concept_Caldiserica;concept_Calditrichaeota;
+concept_Chlorobi;concept_Chloroflexi;concept_Chrysiogenetes;concept_Cyanobacteria;
+concept_Deferribacteres;concept_Deinococcus_Thermus;concept_Dictyoglomi;
+concept_Elusimicrobia;concept_Fibrobacteres;concept_Firmicutes;concept_Fusobacteria;
+concept_Gemmatimonadetes;concept_Kiritimatiellaeota;concept_Planctomycetes;concept_Proteobacteria;
+concept_Rhodothermaeota;concept_Spirochaetae;concept_Tenericutes;;
+
+

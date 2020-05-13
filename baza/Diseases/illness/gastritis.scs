@@ -1,0 +1,71 @@
+concept_gastritis<-sc_node_not_relation;;
+concept_gastritis => nrel_main_idtf: [гастрит](*<- lang_ru;;*);;
+concept_gastritis => nrel_main_idtf: [gastritis](*<- lang_en;;*);;
+
+concept_gastritis<-sc_node_norole_relation;
+=>nrel_unique_idtf:[DA42](*<-lang_en;;*);;
+concept_gastritis<-sc_node_norole_relation;
+=>nrel_unique_idtf:[DA42](*<-lang_ru;;*);;
+
+concept_gastritis<-concept_disease;;
+
+concept_gastritis<-sc_node_norole_relation;
+=>nrel_incubation_period:...
+(*
+=>rrel_minimalPeriod:[6 days](*<-lang_en;;*);;
+=>rrel_minimalPeriod:[6 дней](*<-lang_ru;;*);;
+=>rrel_maximalPeriod:[10 days](*<-lang_en;;*);;
+=>rrel_maximalPeriod:[10 дней](*<-lang_ru;;*);;
+*);;
+
+concept_gastritis=>nrel_mortality:[Коэффициент летальности достигает 7%.];;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_gastritis;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Гастрит — воспалительные или воспалительно-дистрофические изменения слизистой оболочки желудка; длительно протекающее заболевание, характеризуется дистрофически-воспалительными изменениями, протекает с нарушением регенерации, а также с атрофией эпителиальных клеток и замещением нормальных желёз на фиброзную ткань. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(гастрит)](*<- lang_ru;;*);;
+*);;
+
+
+concept_gastritis=>nrel_source_of_infection:concept_bacterium;;
+
+
+concept_gastritis<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://картинки/gastrit.png"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;
+
+
+concept_gastritis=>nrel_period_of_full_development:irritability;vomiting;
+heart_arythmy;anemia;;
+
+
+concept_gastritis=>nrel_symptom:irritability;heart_arythmy;anemia;;
+
+concept_gastritis=>nrel_healing:[Главным при лечении острого гастрита является устранение причин его возникновения. Для очищения желудка больному дают выпить 2-3 стакана теплой воды и вызывают рвоту. При токсикоинфекционных или химических отравлениях в первые часы промывают желудок тёплой водой, используя для этого толстый желудочный зонд. Промывание проводится до чистых вод.];;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_gastritis;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Для устранения болей принимают спазмолитики, холинолитики, антациды. Рекомендуется приём энтеросорбентов (смекта и другие). При рвоте назначают прокинетики.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(гастрит)](*<- lang_ru;;*);;
+*);;
+
+
+concept_gastritis=>nrel_disease_prevention:concept_diet;healthy_style_of_life;concept_physical_exercises;;
+

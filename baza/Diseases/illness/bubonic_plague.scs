@@ -1,0 +1,64 @@
+concept_bubonic_plague<-sc_node_not_relation;;
+concept_bubonic_plague=> nrel_main_idtf: [бубонная чума](*<- lang_ru;;*);;
+concept_bubonic_plague=> nrel_main_idtf: [bubonic plague](*<- lang_en;;*);;
+
+
+concept_bubonic_plague<-sc_node_norole_relation;
+=>nrel_unique_idtf:[1B93.0](*<-lang_en;;*);;
+concept_bubonic_plague<-sc_node_norole_relation;
+=>nrel_unique_idtf:[1B93.0](*<-lang_ru;;*);;
+
+concept_bubonic_plague<-concept_disease;;
+
+
+concept_bubonic_plague<-sc_node_norole_relation;
+=>nrel_incubation_period:...
+(*
+=>rrel_minimalPeriod:[1 day](*<-lang_en;;*);;
+=>rrel_minimalPeriod:[1 день](*<-lang_ru;;*);;
+=>rrel_maximalPeriod:[12 days](*<-lang_en;;*);;
+=>rrel_maximalPeriod:[12 дней](*<-lang_ru;;*);;
+*);;
+
+concept_bubonic_plague=>nrel_period_of_full_development:bubo;fever;general_weakness_and_fatigue;;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_bubonic_plague;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Бубонная чума — преобладающая у человека форма чумы, острого природно-очагового заболевания, вызываемого бактерией Yersinia pestis.](*<- lang_ru;;*);;
+	    -> [Bubonic plague is the prevailing form of plague in humans, an acute natural focal disease caused by the bacterium Yersinia pestis. ](*<- lang_en;;*);;
+	   *);;
+    => nrel_main_idtf: [Опр.(бубонная чума)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(bubonic plague)](*<- lang_en;;*);;
+*);;
+
+
+
+concept_bubonic_plague=>nrel_source_of_infection:[Блохи, паразитирующие на крысах, способные переходить на человека.];[Возбудителем является чумная палочка.];;
+
+concept_bubonic_plague=>nrel_susceptibility:[Восприимчивость к чуме не зависит от расы, возраста или пола. Бубонная чума чаще встречается в районах со средней температурой воздуха ниже 27° C; при 29° C эпидемии начинают идти на убыль.];;
+
+concept_bubonic_plague=>nrel_symptom:fever;vomiting;general_weakness_and_fatigue;;
+
+concept_bubonic_plague=>nrel_healing:[Исторически бубонная чума стала первой формой чумы, поддающейся лечению — первые вылеченные больные появились с изобретением противочумных вакцин и сывороток, а с внедрением в лечебную практику стрептомицина и других антибиотиков выздоравливают практически все больные, если лечение начато вовремя.];;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_bubonic_plague;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Основной признак чумы - бубон. Бубон - увеличенный вследствие воспаления лимфатический узел.](*<- lang_ru;;*);;
+	    -> [The main symptom of the plague is bubo. Bubo is an enlarged lymph node due to inflammation.](*<- lang_en;;*);;
+	*);;
+    => nrel_main_idtf: [Утв.(бубонная чума)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(bubonic plague)](*<- lang_en;;*);;
+*);;
+
+
+concept_bubonic_plague=>nrel_disease_prevention:concept_vaccination;[Предупреждение завоза инфекции из других стран и предупреждение возникновения заболевания в неблагополучных по чуме территориях.];[При обнаружении распространения инфекции в пределах определенного региона, противочумные учреждения проводят дератизационные (уничтожение грызунов) и дезинсекционные (уничтожение насекомых) мероприятия.];;
+
+concept_bubonic_plague=>nrel_mortality:[Коэффициент летальности бубонной чумы достигает 30%-60%.];;
+
+concept_bubonic_plague=>nrel_disease_transmission_method:concept_transmissible_mechanism;;

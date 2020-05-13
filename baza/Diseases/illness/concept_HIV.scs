@@ -1,0 +1,74 @@
+concept_HIV<-sc_node_not_relation;;
+concept_HIV  => nrel_main_idtf: [ВИЧ](*<- lang_ru;;*);;
+concept_HIV  => nrel_main_idtf: [hiv](*<- lang_en;;*);;
+
+concept_HIV<-sc_node_norole_relation;
+=>nrel_unique_idtf:[1C62](*<-lang_en;;*);;
+concept_HIV<-sc_node_norole_relation;
+=>nrel_unique_idtf:[1C62](*<-lang_ru;;*);;
+
+concept_HIV<-concept_disease;;
+
+concept_HIV=>nrel_mortality:[Коэффициент летальности достигает до 15%-40%.];;
+
+concept_HIV<-sc_node_norole_relation;
+=>nrel_incubation_period:...
+(*
+=>rrel_minimalPeriod:[1,5 months](*<-lang_en;;*);;
+=>rrel_minimalPeriod:[1,5 месяца](*<-lang_ru;;*);;
+=>rrel_maximalPeriod:[1 year](*<-lang_en;;*);;
+=>rrel_maximalPeriod:[1 год](*<-lang_ru;;*);;
+*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_HIV;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ВИЧ-инфекция — медленно прогрессирующее заболевание, вызываемое вирусом иммунодефицита человека (ВИЧ).](*<- lang_ru;;*);;
+	    -> [HIV infection is a slowly progressive disease caused by the human immunodeficiency virus (HIV). ](*<- lang_en;;*);;
+	   *);;
+    => nrel_main_idtf: [Опр.(ВИЧ)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(hiv)](*<- lang_en;;*);;
+*);;
+
+
+concept_HIV=>nrel_source_of_infection:[Единственным источником заражения является ВИЧ- инфицированный человек на всех стадиях заболевания.];;
+
+
+concept_HIV=>nrel_susceptibility:[Восприимчивость к ВИЧ у людей всеобщая и определяется гено-, фенотипическим полиморфизмом индивидуумов, что может проявиться как в полном (или неполном) ограничении возможности инфицирования ВИЧ, так и в ускорении либо снижении темпов развития клинических симптомов инфекции.];;
+
+
+concept_HIV=>nrel_symptom:fever;concept_sore_throat;loss_of_appetite;general_weakness_and_fatigue;cough;xerosis;;
+
+
+concept_HIV=>nrel_healing:[За прошедшие годы, несмотря на усилия различных специалистов всего мира, огромные средства, затраченные на исследование и лечение «чумы» XX века, до сих пор не найдены средства для проведения профилактических прививок и для радикального излечения инфицированных больных.
+
+Имеющиеся в арсенале врачей лекарственные средства позволяют лишь на время несколько стабилизировать состояние больного ВИЧ/СПИД, облегчить его страдания и продлить жизнь.];;
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_HIV;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [СПИД (синдром приобретенного иммунодефицита) - терминальная стадия ВИЧ-инфекции, наступающая в большинстве случаев через весьма длительный период от момента заражения вирусом.](*<- lang_ru;;*);;
+	    -> [AIDS (acquired immunodeficiency syndrome) is the terminal stage of HIV infection, which occurs in most cases after a very long period from the moment of infection with the virus.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(ВИЧ)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(hiv)](*<- lang_en;;*);;
+*);;
+
+
+concept_HIV=>nrel_disease_prevention:concept_vaccination;[Главным условием сохранения здоровья и предупреждения заражения является нравственная чистота и верность избранному спутнику жизни.];
+[Всегда и везде пользоваться только личными предметами гигиены (зубные щетки, бритвы, лезвия и т.д.).];[Избегать случайных половых связей; в случае возникновения таковых - обязательно пользоваться презервативом.];[Не иметь половых связей с людьми, употребляющими наркотики.];;
+
+
+concept_subClassOf01_08=>nrel_inclusion:concept_HIV;;
+
+
+concept_HIV=>nrel_disease_transmission_method:concept_contact_mechanism;
+concept_blood_contact_mechanism;concept_vertical_mechanism;;
+
+

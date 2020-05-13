@@ -1,0 +1,29 @@
+nrel_system_organs <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Органы, которые находятся в конкретной системе органов человека.](* <- lang_ru;;*);;
+		*);;
+*);;
+
+
+nrel_system_organs => nrel_first_domain: concept_organ_system;;
+nrel_system_organs => nrel_second_domain: concept_organ;;
+
+
+nrel_system_organs => nrel_definitional_domain: ...
+(*
+<= nrel_subdividing: ... (*-> concept_organ_system; concept_organ;;*);;
+*);; 
+
+nrel_system_organs<-binary_relation;;
+parameter->arity;;
+arity->binary_relation;;
+binary_relation=>nrel_measurement:2;;
+2<-number;;
+
+nrel_system_organs<-oriented_relation;;

@@ -1,0 +1,62 @@
+concept_pneumonic_plague<-sc_node_not_relation;;
+concept_pneumonic_plague=> nrel_main_idtf: [легочная чума](*<- lang_ru;;*);;
+concept_pneumonic_plague=> nrel_main_idtf: [pneumonic plague](*<- lang_en;;*);;
+
+concept_pneumonic_plague<-sc_node_norole_relation;
+=>nrel_unique_idtf:[1B93.2](*<-lang_en;;*);;
+concept_pneumonic_plague<-sc_node_norole_relation;
+=>nrel_unique_idtf:[1B93.2](*<-lang_ru;;*);;
+
+concept_pneumonic_plague<-concept_disease;;
+
+
+concept_pneumonic_plague<-sc_node_norole_relation;
+=>nrel_incubation_period:...
+(*
+=>rrel_minimalPeriod:[2 days](*<-lang_en;;*);;
+=>rrel_minimalPeriod:[2 дня](*<-lang_ru;;*);;
+=>rrel_maximalPeriod:[6 days](*<-lang_en;;*);;
+=>rrel_maximalPeriod:[6 дней](*<-lang_ru;;*);;
+*);;
+
+concept_pneumonic_plague=>nrel_period_of_full_development:fever;general_weakness_and_fatigue;
+cough;pneumonia;;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_pneumonic_plague;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Лёгочная форма чумы является пневмонией и развивается при заражении человека воздушно-капельным путём его органов дыхания.](*<- lang_ru;;*);;
+	    -> [The pulmonary form of plague is pneumonia and develops when a person is infected with an airborne droplet of his respiratory system.](*<- lang_en;;*);;
+	   *);;
+    => nrel_main_idtf: [Опр.(легочная чума)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(pneumonic plague)](*<- lang_en;;*);;
+*);;
+
+concept_pneumonic_plague=>nrel_source_of_infection:[Зараженный человек];;
+
+concept_pneumonic_plague=>nrel_susceptibility:[Легочная чума очень заразна.];[Легочная форма чумы отмечается главным образом в прохладные сезоны года и встречается в основном в странах с умеренным влажным климатом. ];;
+
+concept_pneumonic_plague=>nrel_symptom:fever;vomiting;general_weakness_and_fatigue;cough;chills;;
+
+concept_pneumonic_plague=>nrel_healing:[Изоляции больных и наблюдения за их контактами (с возможной изоляцией) оказывалось достаточно для предотвращения распространения болезни.];;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_pneumonic_plague;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Иногда легочная чума развивается на основе пневмонии при бубонной чуме.](*<- lang_ru;;*);;
+	    -> [Sometimes pneumonic plague develops on the basis of pneumonia with bubonic plague.](*<- lang_en;;*);;
+	*);;
+    => nrel_main_idtf: [Утв.(легочная чума)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(pneumonic plague)](*<- lang_en;;*);;
+*);;
+
+
+concept_pneumonic_plague=>nrel_disease_prevention:[Прививки живыми и убитыми противочумными вакцинами, эффективные против бубонной чумы, от лёгочной чумы не защищают. ];;
+
+concept_pneumonic_plague=>nrel_mortality:[Коэффициент летальности легочной чумы достигает 4%-15%.];;
+
+concept_pneumonic_plague=>nrel_disease_transmission_method:concept_airborne;;

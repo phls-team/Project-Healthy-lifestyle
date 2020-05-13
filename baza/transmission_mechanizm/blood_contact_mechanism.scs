@@ -1,0 +1,50 @@
+concept_blood_contact_mechanism<-sc_node_not_relation;;
+concept_blood_contact_mechanism => nrel_main_idtf: [гемоконтактный механизм](*<- lang_ru;;*);;
+concept_blood_contact_mechanism => nrel_main_idtf: [blood contact mechanism](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_blood_contact_mechanism;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Гемоконтактный механизм передачи инфекции — механизм передачи инфекции, обусловленный контактом с кровью зараженного человека. ](*<- lang_ru;;*);;
+-> [The hemocontact mechanism of infection transmission is the infection transmission mechanism due to contact with the blood of an infected person.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(гемоконтактный механизм)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(blood contact mechanism)](*<- lang_ru;;*);;
+*);;
+
+
+
+concept_blood_contact_mechanism<-rrel_key_sc_element:...
+(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://кар/blood.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_blood_contact_mechanism;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Подразделяется на естественный (вертикальный, половой, непрямой) и искусственный, связанный с медицинскими манипуляциями, внутривенными инъекциями, татуажем. ](*<- lang_ru;;*);;
+    -> [It is divided into natural (vertical, sexual, indirect) and artificial, associated with medical manipulations, intravenous injections, tattooing.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(гемоконтактный механизм)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(blood contact mechanism)](*<- lang_ru;;*);;
+=> nrel_using_constants: ...
+        (*
+            ->concept_vertical_mechanism;;
+        *);;
+
+
+
+*);;

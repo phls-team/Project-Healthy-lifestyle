@@ -1,0 +1,87 @@
+concept_hepatitis_E <-sc_node_not_relation;;
+concept_hepatitis_E => nrel_main_idtf: [Гепатит E](*<- lang_ru;;*);;
+concept_hepatitis_E => nrel_main_idtf: [hepatitis E](*<- lang_en;;*);;
+
+
+
+concept_hepatitis_E<-sc_node_norole_relation;
+=>nrel_unique_idtf:[1E50.4](*<-lang_en;;*);;
+concept_hepatitis_E<-sc_node_norole_relation;
+=>nrel_unique_idtf:[1E50.4](*<-lang_ru;;*);;
+
+concept_hepatitis_E<-concept_disease;;
+
+
+concept_hepatitis_E<-sc_node_norole_relation;
+=>nrel_incubation_period:...
+(*
+=>rrel_minimalPeriod:[3 weeks](*<-lang_en;;*);;
+=>rrel_minimalPeriod:[3 недели](*<-lang_ru;;*);;
+=>rrel_maximalPeriod:[8 weeks](*<-lang_en;;*);;
+=>rrel_maximalPeriod:[8 недели](*<-lang_ru;;*);;
+*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_hepatitis_E;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Гепатит Е — это вирусное заболевание печени, вызываемое вирусом гепатита Е (ВГЕ).](*<- lang_ru;;*);;
+	    -> [Hepatitis E is a viral liver disease caused by the hepatitis E virus (HEV).](*<- lang_en;;*);;
+	   *);;
+    => nrel_main_idtf: [Опр.(Гепатит E)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(hepatitis E)](*<- lang_en;;*);;
+*);;
+
+
+
+concept_hepatitis_E=>nrel_source_of_infection:[Больной человек, преимущественно в ранние сроки заболевания..];;
+                                             
+
+concept_hepatitis_E=>nrel_symptom:loss_of_appetite;general_weakness_and_fatigue;vomiting;pain_and_weakness_in_muscles;
+icterus;urine;;
+
+concept_hepatitis_E=>nrel_period_of_full_development:fever;loss_of_appetite;general_weakness_and_fatigue;vomiting;pain_and_weakness_in_muscles;
+icterus;urine;;
+
+
+concept_hepatitis_E=>nrel_healing:[Лечение симптоматическое, аналогично таковому при гепатите A.Беременные женщины нуждаются в госпитализации. Акушерская тактика сводится к сохранению беременности.];;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_hepatitis_E;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Заболевание чаще регистрируется в развивающихся странах вблизи экватора.](*<- lang_ru;;*);;
+	    -> [The disease is more likely to occur in developing countries near the equator.](*<- lang_en;;*);;
+
+
+        *);;
+    => nrel_main_idtf: [Утв.(Гепатит E)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(hepatitis E)](*<- lang_en;;*);;
+*);;
+
+
+concept_hepatitis_E=>nrel_disease_prevention:concept_personal_hygiene;;
+
+concept_hepatitis_E<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://картинки/hepE.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;
+
+
+concept_hepatitis_E=>nrel_disease_transmission_method:concept_vertical_mechanism;;
+
+
+
+
+

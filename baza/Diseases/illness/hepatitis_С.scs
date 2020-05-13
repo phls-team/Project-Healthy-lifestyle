@@ -1,0 +1,90 @@
+concept_hepatitis_C <-sc_node_not_relation;;
+concept_hepatitis_C => nrel_main_idtf: [Гепатит C](*<- lang_ru;;*);;
+concept_hepatitis_C => nrel_main_idtf: [hepatitis C](*<- lang_en;;*);;
+
+
+
+concept_hepatitis_C<-sc_node_norole_relation;
+=>nrel_unique_idtf:[1E50.2](*<-lang_en;;*);;
+concept_hepatitis_C<-sc_node_norole_relation;
+=>nrel_unique_idtf:[1E50.2](*<-lang_ru;;*);;
+
+concept_hepatitis_C<-concept_disease;;
+
+
+concept_hepatitis_C<-sc_node_norole_relation;
+=>nrel_incubation_period:...
+(*
+=>rrel_minimalPeriod:[2 weeks](*<-lang_en;;*);;
+=>rrel_minimalPeriod:[2 недели](*<-lang_ru;;*);;
+=>rrel_maximalPeriod:[6 months](*<-lang_en;;*);;
+=>rrel_maximalPeriod:[6 месяцов](*<-lang_ru;;*);;
+*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_hepatitis_C;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Гепатит C — антропонозное вирусное заболевание с парентеральным и инструментальным путём заражения. Заражение также возможно через поврежденную кожу и слизистые, наиболее опасным фактором передачи является кровь.](*<- lang_ru;;*);;
+	    -> [Hepatitis C is an anthroponous viral disease with a parenteral and instrumental route of infection. Infection is also possible through damaged skin and mucous membranes, the most dangerous transmission factor is blood.](*<- lang_en;;*);;
+	   *);;
+    => nrel_main_idtf: [Опр.(Гепатит C)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(hepatitis C)](*<- lang_en;;*);;
+*);;
+
+
+
+concept_hepatitis_C=>nrel_source_of_infection:[Источником инфекции являются больные с активным гепатитом C и латентные больные — носители вируса.];;
+                                             
+
+concept_hepatitis_C=>nrel_symptom:loss_of_appetite;general_weakness_and_fatigue;vomiting;pain_and_weakness_in_muscles;
+icterus;urine;;
+
+concept_hepatitis_C=>nrel_period_of_full_development:fever;loss_of_appetite;general_weakness_and_fatigue;vomiting;pain_and_weakness_in_muscles;
+icterus;urine;;
+
+
+concept_hepatitis_C=>nrel_healing:healthy_style_of_life;concept_drug_therapy;;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_hepatitis_C;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Гепатит С является основной причиной рака печени.](*<- lang_ru;;*);;
+	    -> [Hepatitis C is a major cause of liver cancer.](*<- lang_en;;*);;
+
+
+        *);;
+    => nrel_main_idtf: [Утв.(Гепатит C)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(hepatitis C)](*<- lang_en;;*);;
+*);;
+
+
+concept_hepatitis_C=>nrel_disease_prevention:[По состоянию на 2019 год не существует утверждённых вакцин, которые защищали бы от заражения гепатитом С. Тем не менее, несколько вакцин находятся в стадии разработки и некоторые из них показали обнадёживающие результаты];;
+
+concept_hepatitis_C<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://картинки/hepC.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;
+
+
+concept_hepatitis_C=>nrel_susceptibility:[Восприимчивость к этим гепатитам высока  во  всех  возрастных  группах  –  от  детей  до  стариков.];;
+
+concept_hepatitis_C=>nrel_disease_transmission_method:concept_vertical_mechanism;;
+
+concept_hepatitis_C=>nrel_mortality:[Коэффициент летальности достигает 33%.];;
+
+
+
+

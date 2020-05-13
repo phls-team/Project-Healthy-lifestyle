@@ -1,0 +1,91 @@
+concept_hepatitis_D <-sc_node_not_relation;;
+concept_hepatitis_D => nrel_main_idtf: [Гепатит D](*<- lang_ru;;*);;
+concept_hepatitis_D => nrel_main_idtf: [hepatitis D](*<- lang_en;;*);;
+
+
+
+concept_hepatitis_D<-sc_node_norole_relation;
+=>nrel_unique_idtf:[1E50.3](*<-lang_en;;*);;
+concept_hepatitis_D<-sc_node_norole_relation;
+=>nrel_unique_idtf:[1E50.3](*<-lang_ru;;*);;
+
+concept_hepatitis_D<-concept_disease;;
+
+
+concept_hepatitis_D<-sc_node_norole_relation;
+=>nrel_incubation_period:...
+(*
+=>rrel_minimalPeriod:[21 days](*<-lang_en;;*);;
+=>rrel_minimalPeriod:[21 дней](*<-lang_ru;;*);;
+=>rrel_maximalPeriod:[45 days](*<-lang_en;;*);;
+=>rrel_maximalPeriod:[45 дней](*<-lang_ru;;*);;
+*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_hepatitis_D;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Гепатит D (дельта, δ) — заболевание, вызываемое вирусом гепатита дельта.
+Вирус гепатита дельта изначально был описан у пациентов с более тяжёлой формой инфекции, вызываемой вирусом гепатита B.](*<- lang_ru;;*);;
+	    -> [Hepatitis D (delta, δ) - a disease caused by the hepatitis delta virus.
+Hepatitis Delta virus was originally described in patients with more severe hepatitis B virus infection.](*<- lang_en;;*);;
+	   *);;
+    => nrel_main_idtf: [Опр.(Гепатит D)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(hepatitis D)](*<- lang_en;;*);;
+*);;
+
+
+
+concept_hepatitis_D=>nrel_source_of_infection:[Источником инфекции служат, главным образом, больные хроническим гепатитом В с дельта-агентом.];;
+                                             
+
+concept_hepatitis_D=>nrel_symptom:loss_of_appetite;general_weakness_and_fatigue;vomiting;pain_and_weakness_in_muscles;
+icterus;urine;;
+
+concept_hepatitis_D=>nrel_period_of_full_development:fever;loss_of_appetite;general_weakness_and_fatigue;vomiting;pain_and_weakness_in_muscles;
+icterus;urine;;
+
+
+concept_hepatitis_D=>nrel_healing:concept_immunoprophylaxis;concept_drug_therapy;;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_hepatitis_D;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Заражение гепатитом D может происходить как вместе с заражением гепатитом B (коинфекция), так и накладываться на хронический гепатит B (суперинфекция).](*<- lang_ru;;*);;
+	    -> [Hepatitis D infection can occur both with hepatitis B infection (co-infection) and overlap with chronic hepatitis B (superinfection).](*<- lang_en;;*);;
+
+
+        *);;
+    => nrel_main_idtf: [Утв.(Гепатит D)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(hepatitis D)](*<- lang_en;;*);;
+*);;
+
+
+concept_hepatitis_D=>nrel_disease_prevention:[Для профилактики и контроля инфекции HDV необходимо предотвращать передачу HBV путем иммунизации против гепатита B, обеспечения безопасности крови, безопасности инъекций и услуг по снижению вреда для людей, употребляющих инъекционные наркотики. Иммунизация против гепатита B не обеспечивает защиты от HDV для тех, кто уже инфицирован HBV.];;
+
+concept_hepatitis_D<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://картинки/hepD.png"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;
+
+
+concept_hepatitis_D=>nrel_susceptibility:[Риску инфицирования гепатитом D подвержены хронические носители гепатита В.];;
+
+
+concept_hepatitis_D=>nrel_disease_transmission_method:concept_vertical_mechanism;;
+
+concept_hepatitis_D=>nrel_mortality:[Коэффициент летальности достигает 10%-20%.];;
+
+

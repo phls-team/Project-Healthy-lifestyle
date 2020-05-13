@@ -1,0 +1,70 @@
+concept_sepsis <-sc_node_not_relation;;
+concept_sepsis => nrel_main_idtf: [сепсис](*<- lang_ru;;*);;
+concept_sepsis => nrel_main_idtf: [sepsis](*<- lang_en;;*);;
+
+
+
+concept_subClassOf01_20=>nrel_inclusion:concept_sepsis;;
+
+concept_sepsis<-sc_node_norole_relation;
+=>nrel_unique_idtf:[1G40](*<-lang_en;;*);;
+concept_sepsis<-sc_node_norole_relation;
+=>nrel_unique_idtf:[1G40](*<-lang_ru;;*);;
+
+
+concept_sepsis<-sc_node_norole_relation;
+=>nrel_incubation_period:...
+(*
+=>rrel_minimalPeriod:[few hours](*<-lang_en;;*);;
+=>rrel_minimalPeriod:[несколько часов](*<-lang_ru;;*);;
+=>rrel_maximalPeriod:[21 weeks](*<-lang_en;;*);;
+=>rrel_maximalPeriod:[12 недель](*<-lang_ru;;*);;
+*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_sepsis;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Сепсис — системная воспалительная реакция в ответ на местный инфекционный процесс.](*<- lang_ru;;*);;
+	    -> [Sepsis is a systemic inflammatory reaction in response to a local infection process.](*<- lang_en;;*);;
+	   *);;
+    => nrel_main_idtf: [Опр.(сепсис)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(sepsis)](*<- lang_en;;*);;
+*);;
+
+
+
+concept_sepsis=>nrel_period_of_full_development:fever;vomiting;concept_inflammation;;;;
+
+concept_sepsis=>nrel_symptom:fever;concept_inflammation;;
+
+concept_sepsis=>nrel_healing:concept_diets;concept_drug_therapy;;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_sepsis;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Чтобы выявить сепсис на ранних этапах и своевременно организовать его надлежащее клиническое ведение, крайне важно распознать и не игнорировать перечисленные выше признаки и симптомы, а также выявить определенные биомаркеры (в частности прокальцитонин). ](*<- lang_ru;;*);;
+	    -> [In order to identify sepsis in the early stages and to organize its proper clinical management in a timely manner, it is extremely important to recognize and not ignore the above signs and symptoms, as well as to identify certain biomarkers (in particular, procalcitonin).](*<- lang_en;;*);;
+
+
+        *);;
+    => nrel_main_idtf: [Утв.(сепсис)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(sepsis)](*<- lang_en;;*);;
+*);;
+
+
+concept_sepsis=>nrel_disease_prevention:[Существует два основных пути профилактики сепсиса: 
+1. предотвращение передачи микроорганизмов и инфицирования;
+2. недопущение осложнения инфекции до состояния сепсиса. ];;
+
+
+concept_sepsis=>nrel_mortality:[Коэффициент летальности достигает 37%.];;
+
+concept_sepsis=>nrel_susceptibility:[Сепсис может развиться у любого человека с инфекцией, однако повышенному риску подвергаются уязвимые группы населения,такие как пожилые люди, беременные женщины, новорожденные, госпитализированные пациенты и лица с ВИЧ/СПИДом, циррозом печени, раком, заболеваниями почек, аутоиммунными заболеваниями и удаленной селезенкой.];;
+
+concept_sepsis=>nrel_disease_transmission_method:concept_airborne;concept_transmissible_mechanism;concept_contact_mechanism;;
+

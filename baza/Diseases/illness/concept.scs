@@ -1,0 +1,653 @@
+concept_regression_hypothesis<-sc_node_not_relation;;
+concept_regression_hypothesis => nrel_main_idtf: [регрессивная гипотеза](*<- lang_ru;;*);;
+concept_regression_hypothesis => nrel_main_idtf: [regression hypothesis](*<- lang_en;;*);;
+
+concept_cell_origin_hypothesis<-sc_node_not_relation;;
+concept_cell_origin_hypothesis => nrel_main_idtf: [гипотеза клеточного происхождения](*<- lang_ru;;*);;
+concept_cell_origin_hypothesis => nrel_main_idtf: [cell origin hypothesis](*<- lang_en;;*);;
+
+concept_hypothesis_of_coevolution<-sc_node_not_relation;;
+concept_hypothesis_of_coevolution => nrel_main_idtf: [гипотеза коэволюции](*<- lang_ru;;*);;
+concept_hypothesis_of_coevolution => nrel_main_idtf: [hypothesis of coevolution](*<- lang_en;;*);;
+
+
+
+concept_glycoproteins<-sc_node_not_relation;;
+concept_glycoproteins => nrel_main_idtf: [гликопротеины(рецепторы)](*<- lang_ru;;*);;
+concept_glycoproteins => nrel_main_idtf: [glycoproteins(receptors)](*<- lang_en;;*);;
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_glycoproteins;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Гликопротеины(рецепторы) - двухкомпонентные белки, в которых белковая (пептидная) часть молекулы ковалентно соединена с одной или несколькими группами гетероолигосахаридов.](*<- lang_ru;;*);;
+	    -> [Glycoproteins (receptors) are two-component proteins in which the protein (peptide) part of the molecule is covalently linked to one or more groups of hetero-oligosaccharides.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(гликопротеины)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [Def.(glycoproteins)](*<- lang_en;;*);;
+*);;
+
+
+
+concept_supercapsid<-sc_node_not_relation;;
+concept_supercapsid => nrel_main_idtf: [суперкапсид](*<- lang_ru;;*);;
+concept_supercapsid => nrel_main_idtf: [supercapsid](*<- lang_en;;*);;
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_supercapsid;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Суперкапсид — дополнительная оболочка, покрывающая капсид многих вирусов (в том числе вируса гриппа и многих вирусов животных).](*<- lang_ru;;*);;
+	    -> [Supercapsid is an additional shell that covers the capsid of many viruses (including influenza virus and many animal viruses).](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(суперкапсид)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [Def.(supercapsid)](*<- lang_en;;*);;
+*);;
+
+
+concept_RNA<-sc_node_not_relation;;
+concept_RNA => nrel_main_idtf: [РНК](*<- lang_ru;;*);;
+concept_RNA => nrel_main_idtf: [RNA](*<- lang_en;;*);;
+concept_capsid<-sc_node_not_relation;;
+concept_capsid => nrel_main_idtf: [капсид](*<- lang_ru;;*);;
+concept_capsid => nrel_main_idtf: [capsid](*<- lang_en;;*);;
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_capsid;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Капсид — внешняя оболочка вируса, состоящая из белков. Структурной субъединицей капсида является капсомер.](*<- lang_ru;;*);;
+	    -> [Capsid is the outer shell of the virus, consisting of proteins. The structural subunit of the capsid is capsomer.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(капсид)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [Def.(capsid)](*<- lang_en;;*);;
+*);;
+
+
+
+
+concept_reverse_transcriptase<-sc_node_not_relation;;
+concept_reverse_transcriptase => nrel_main_idtf: [обратная транскриптаза](*<- lang_ru;;*);;
+concept_reverse_transcriptase => nrel_main_idtf: [reverse transcriptase](*<- lang_en;;*);;
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_reverse_transcriptase;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Обратная транскриптаза - фермент, катализирующий синтез ДНК на матрице РНК в процессе, называемом обратной транскрипцией. ](*<- lang_ru;;*);;
+	    -> [Reverse transcriptase is an enzyme that catalyzes DNA synthesis on an RNA matrix in a process called reverse transcription.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(обратная транскриптаза)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [Def.(reverse transcriptase)](*<- lang_en;;*);;
+*);;
+
+concept_attachment<-sc_node_not_relation;;
+concept_attachment => nrel_main_idtf: [прикрепление](*<- lang_ru;;*);;
+concept_attachment => nrel_main_idtf: [attachment](*<- lang_en;;*);;
+concept_penetration_into_the_cell<-sc_node_not_relation;;
+concept_penetration_into_the_cell => nrel_main_idtf: [проникновение в клетку](*<- lang_ru;;*);;
+concept_penetration_into_the_cell => nrel_main_idtf: [penetration into the cell](*<- lang_en;;*);;
+concept_deprivation_of_shells<-sc_node_not_relation;;
+concept_deprivation_of_shells => nrel_main_idtf: [лишение оболочек](*<- lang_ru;;*);;
+concept_deprivation_of_shells => nrel_main_idtf: [deprivation of shells](*<- lang_en;;*);;
+concept_replication<-sc_node_not_relation;;
+concept_replication => nrel_main_idtf: [репликация](*<- lang_ru;;*);;
+concept_replication => nrel_main_idtf: [replication](*<- lang_en;;*);;
+concept_assembly<-sc_node_not_relation;;
+concept_assembly => nrel_main_idtf: [сборка](*<- lang_ru;;*);;
+concept_assembly => nrel_main_idtf: [assembly](*<- lang_en;;*);;
+concept_exit_from_the_cell<-sc_node_not_relation;;
+concept_exit_from_the_cell => nrel_main_idtf: [выход из клетки](*<- lang_ru;;*);;
+concept_exit_from_the_cell => nrel_main_idtf: [exit from the cell](*<- lang_en;;*);;
+
+
+concept_molecular_biology<-sc_node_not_relation;;
+concept_molecular_biology => nrel_main_idtf: [молекулярная биология](*<- lang_ru;;*);;
+concept_molecular_biology => nrel_main_idtf: [molecular biology](*<- lang_en;;*);;
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_molecular_biology;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Молекулярная биология — комплекс биологических наук, изучающих механизмы хранения, передачи и реализации генетической информации, строение и функции сложных высокомолекулярных соединений, составляющих клетку. ](*<- lang_ru;;*);;
+	    -> [Molecular biology is a complex of biological sciences that studies the mechanisms of storage, transmission and realization of genetic information, the structure and functions of complex macromolecular compounds that make up a cell.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(молекулярная биология)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [Def.(molecular biology)](*<- lang_en;;*);;
+*);;
+
+
+concept_cell_biology<-sc_node_not_relation;;
+concept_cell_biology => nrel_main_idtf: [клеточная биология](*<- lang_ru;;*);;
+concept_cell_biology => nrel_main_idtf: [cell biology](*<- lang_en;;*);;
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_cell_biology;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Клеточная биология — раздел биологии, изучающий живые клетки, их органеллы, их строение, функционирование, процессы клеточного размножения, старения и смерти. ](*<- lang_ru;;*);;
+	    -> [Cell biology is a branch of biology that studies living cells, their organelles, their structure, functioning, processes of cell reproduction, aging, and death.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(клеточная биология)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [Def.(cell biology)](*<- lang_en;;*);;
+*);;
+
+
+concept_genetic_research<-sc_node_not_relation;;
+concept_genetic_research => nrel_main_idtf: [генетические исследования](*<- lang_ru;;*);;
+concept_genetic_research => nrel_main_idtf: [genetic research](*<- lang_en;;*);;
+
+
+concept_virotherapy<-sc_node_not_relation;;
+concept_virotherapy => nrel_main_idtf: [виротерапия](*<- lang_ru;;*);;
+concept_virotherapy => nrel_main_idtf: [virotherapy](*<- lang_en;;*);;
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_virotherapy;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Виротерапия — сравнительно новое направление в онкологии, один из видов биологической терапии, что предусматривает в лечении рака применение онкотропных и онколитических вирусов.](*<- lang_ru;;*);;
+	    -> [Virotherapy is a relatively new area in oncology, one of the types of biological therapy that involves the use of oncotropic and oncolytic viruses in the treatment of cancer.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(виротерапия)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [Def.(virotherapy)](*<- lang_en;;*);;
+*);;
+
+
+concept_nanotechnology<-sc_node_not_relation;;
+concept_nanotechnology => nrel_main_idtf: [нанотехнологии](*<- lang_ru;;*);;
+concept_nanotechnology => nrel_main_idtf: [nanotechnology](*<- lang_en;;*);;
+
+concept_biological_weapons<-sc_node_not_relation;;
+concept_biological_weapons => nrel_main_idtf: [биологическое оружие](*<- lang_ru;;*);;
+concept_biological_weapons => nrel_main_idtf: [biological weapons](*<- lang_en;;*);;
+
+
+
+concept_acidobacteria<-sc_node_not_relation;;
+concept_acidobacteria => nrel_main_idtf: [Аcidobacteria](*<- lang_ru;;*);;
+concept_acidobacteria => nrel_main_idtf: [Acidobacteria](*<- lang_en;;*);;
+
+concept_Actinobacteria<-sc_node_not_relation;;
+concept_Actinobacteria => nrel_main_idtf: [Actinobacteria](*<- lang_ru;;*);;
+concept_Actinobacteria => nrel_main_idtf: [Actinobacteria](*<- lang_en;;*);;
+
+concept_Aquificae<-sc_node_not_relation;;
+concept_Aquificae => nrel_main_idtf: [Aquificae](*<- lang_ru;;*);;
+concept_Aquificae => nrel_main_idtf: [Aquificae](*<- lang_en;;*);;
+
+concept_Armatimonadetes<-sc_node_not_relation;;
+concept_Armatimonadetes => nrel_main_idtf: [Armatimonadetes](*<- lang_ru;;*);;
+concept_Armatimonadetes => nrel_main_idtf: [Armatimonadetes](*<- lang_en;;*);;
+
+concept_Bacteroidetes<-sc_node_not_relation;;
+concept_Bacteroidetes => nrel_main_idtf: [Bacteroidetes](*<- lang_ru;;*);;
+concept_Bacteroidetes => nrel_main_idtf: [Bacteroidetes](*<- lang_en;;*);;
+
+concept_Balneolaeota<-sc_node_not_relation;;
+concept_Balneolaeota => nrel_main_idtf: [Balneolaeota](*<- lang_ru;;*);;
+concept_Balneolaeota => nrel_main_idtf: [Balneolaeota](*<- lang_en;;*);;
+
+concept_Caldiserica<-sc_node_not_relation;;
+concept_Caldiserica => nrel_main_idtf: [Caldiserica](*<- lang_ru;;*);;
+concept_Caldiserica => nrel_main_idtf: [Caldiserica](*<- lang_en;;*);;
+
+concept_Calditrichaeota<-sc_node_not_relation;;
+concept_Calditrichaeota => nrel_main_idtf: [Calditrichaeota](*<- lang_ru;;*);;
+concept_Calditrichaeota => nrel_main_idtf: [Calditrichaeota](*<- lang_en;;*);;
+
+concept_Chlorobi<-sc_node_not_relation;;
+concept_Chlorobi => nrel_main_idtf: [Chlorobi](*<- lang_ru;;*);;
+concept_Chlorobi => nrel_main_idtf: [Chlorobi](*<- lang_en;;*);;
+
+concept_Chloroflexi<-sc_node_not_relation;;
+concept_Chloroflexi => nrel_main_idtf: [Chloroflexi](*<- lang_ru;;*);;
+concept_Chloroflexi => nrel_main_idtf: [Chloroflexi](*<- lang_en;;*);;
+
+concept_Chrysiogenetes<-sc_node_not_relation;;
+concept_Chrysiogenetes => nrel_main_idtf: [Chrysiogenetes](*<- lang_ru;;*);;
+concept_Chrysiogenetes => nrel_main_idtf: [Chrysiogenetes](*<- lang_en;;*);;
+
+concept_Cyanobacteria<-sc_node_not_relation;;
+concept_Cyanobacteria => nrel_main_idtf: [Cyanobacteria](*<- lang_ru;;*);;
+concept_Cyanobacteria => nrel_main_idtf: [Cyanobacteria](*<- lang_en;;*);;
+
+concept_Deferribacteres<-sc_node_not_relation;;
+concept_Deferribacteres => nrel_main_idtf: [Deferribacteres](*<- lang_ru;;*);;
+concept_Deferribacteres => nrel_main_idtf: [Deferribacteres](*<- lang_en;;*);;
+
+concept_Deinococcus_Thermus<-sc_node_not_relation;;
+concept_Deinococcus_Thermus => nrel_main_idtf: [Deinococcus-Thermus](*<- lang_ru;;*);;
+concept_Deinococcus_Thermus => nrel_main_idtf: [Deinococcus-Thermus](*<- lang_en;;*);;
+
+concept_Dictyoglomi<-sc_node_not_relation;;
+concept_Dictyoglomi => nrel_main_idtf: [Dictyoglomi](*<- lang_ru;;*);;
+concept_Dictyoglomi => nrel_main_idtf: [Dictyoglomi](*<- lang_en;;*);;
+
+concept_Elusimicrobia<-sc_node_not_relation;;
+concept_Elusimicrobia => nrel_main_idtf: [Elusimicrobia](*<- lang_ru;;*);;
+concept_Elusimicrobia => nrel_main_idtf: [Elusimicrobia](*<- lang_en;;*);;
+
+concept_Fibrobacteres<-sc_node_not_relation;;
+concept_Fibrobacteres => nrel_main_idtf: [Fibrobacteres](*<- lang_ru;;*);;
+concept_Fibrobacteres => nrel_main_idtf: [Fibrobacteres](*<- lang_en;;*);;
+
+concept_Firmicutes<-sc_node_not_relation;;
+concept_Firmicutes => nrel_main_idtf: [Firmicutes](*<- lang_ru;;*);;
+concept_Firmicutes => nrel_main_idtf: [Firmicutes](*<- lang_en;;*);;
+
+concept_Fusobacteria<-sc_node_not_relation;;
+concept_Fusobacteria => nrel_main_idtf: [Fusobacteria](*<- lang_ru;;*);;
+concept_Fusobacteria => nrel_main_idtf: [Fusobacteria](*<- lang_en;;*);;
+
+concept_Gemmatimonadetes<-sc_node_not_relation;;
+concept_Gemmatimonadetes => nrel_main_idtf: [Gemmatimonadetes](*<- lang_ru;;*);;
+concept_Gemmatimonadetes => nrel_main_idtf: [Gemmatimonadetes](*<- lang_en;;*);;
+
+concept_Kiritimatiellaeota<-sc_node_not_relation;;
+concept_Kiritimatiellaeota => nrel_main_idtf: [Kiritimatiellaeota](*<- lang_ru;;*);;
+concept_Kiritimatiellaeota => nrel_main_idtf: [Kiritimatiellaeota](*<- lang_en;;*);;
+
+concept_Planctomycetes<-sc_node_not_relation;;
+concept_Planctomycetes => nrel_main_idtf: [Planctomycetes](*<- lang_ru;;*);;
+concept_Planctomycetes => nrel_main_idtf: [Planctomycetes](*<- lang_en;;*);;
+
+concept_Proteobacteria<-sc_node_not_relation;;
+concept_Proteobacteria => nrel_main_idtf: [Proteobacteria](*<- lang_ru;;*);;
+concept_Proteobacteria => nrel_main_idtf: [Proteobacteria](*<- lang_en;;*);;
+
+concept_Rhodothermaeota<-sc_node_not_relation;;
+concept_Rhodothermaeota => nrel_main_idtf: [Rhodothermaeota](*<- lang_ru;;*);;
+concept_Rhodothermaeota => nrel_main_idtf: [Rhodothermaeota](*<- lang_en;;*);;
+
+concept_Spirochaetae<-sc_node_not_relation;;
+concept_Spirochaetae => nrel_main_idtf: [Spirochaetae](*<- lang_ru;;*);;
+concept_Spirochaetae => nrel_main_idtf: [Spirochaetae](*<- lang_en;;*);;
+
+concept_Tenericutes<-sc_node_not_relation;;
+concept_Tenericutes => nrel_main_idtf: [Tenericutes](*<- lang_ru;;*);;
+concept_Tenericutes => nrel_main_idtf: [Tenericutes](*<- lang_en;;*);;
+
+
+concept_sore_throat<-sc_node_not_relation;;
+concept_sore_throat => nrel_main_idtf: [боль в горле](*<- lang_ru;;*);;
+concept_sore_throat => nrel_main_idtf: [sore throat](*<- lang_en;;*);;
+
+
+cough<-sc_node_not_relation;;
+cough => nrel_main_idtf: [кашель](*<- lang_ru;;*);;
+cough => nrel_main_idtf: [cough](*<- lang_en;;*);;
+
+
+ear_pain<-sc_node_not_relation;;
+ear_pain => nrel_main_idtf: [боль в ушах(ухе)](*<- lang_ru;;*);;
+ear_pain => nrel_main_idtf: [ear pain](*<- lang_en;;*);;
+
+fever<-sc_node_not_relation;;
+fever => nrel_main_idtf: [повышенная температура](*<- lang_ru;;*);;
+fever => nrel_main_idtf: [fever](*<- lang_en;;*);;
+
+
+thirst<-sc_node_not_relation;;
+thirst => nrel_main_idtf: [жажда](*<- lang_ru;;*);;
+thirst => nrel_main_idtf: [thirst](*<- lang_en;;*);;
+
+
+dizziness<-sc_node_not_relation;;
+dizziness => nrel_main_idtf: [головокружение](*<- lang_ru;;*);;
+dizziness => nrel_main_idtf: [dizziness](*<- lang_en;;*);;
+
+scarring<-sc_node_not_relation;;
+scarring => nrel_main_idtf: [образование рубцов](*<- lang_ru;;*);;
+scarring => nrel_main_idtf: [scarring](*<- lang_en;;*);;
+
+chills<-sc_node_not_relation;;
+chills => nrel_main_idtf: [озноб](*<- lang_ru;;*);;
+chills => nrel_main_idtf: [chills](*<- lang_en;;*);;
+definition -> ...
+(*
+    -> rrel_key_sc_element: chills;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Озноб — вызванное спазмом поверхностных (кожных) кровеносных сосудов ощущение холода, сопровождающееся мышечной дрожью (главным образом жевательных мышц, затем мышц плечевого пояса, спины и конечностей) и спазмом кожных мышц («гусиная кожа»).](*<- lang_ru;;*);;
+	    -> [Chills - a feeling of cold caused by a spasm of the superficial (skin) blood vessels, accompanied by muscle tremors (mainly chewing muscles, then the muscles of the shoulder girdle, back and limbs) and spasm of the skin muscles ("goose bumps").](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(озноб)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [Def.(chills)](*<- lang_en;;*);;
+*);;
+
+
+
+icterus<-sc_node_not_relation;;
+icterus => nrel_main_idtf: [желтуха](*<- lang_ru;;*);;
+icterus => nrel_main_idtf: [icterus](*<- lang_en;;*);;
+definition -> ...
+(*
+    -> rrel_key_sc_element: icterus;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Желтуха — желтушное окрашивание кожи и видимых слизистых оболочек, обусловленное повышенным содержанием билирубина в крови и тканях мочи.](*<- lang_ru;;*);;
+	    -> [Jaundice - icteric staining of the skin and visible mucous membranes, due to the increased content of bilirubin in the blood and urine tissues.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(желтуха)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [Def.(icterus)](*<- lang_en;;*);;
+*);;
+
+
+urine<-sc_node_not_relation;;
+urine => nrel_main_idtf: [темный цвет мочи и светлый цвет кала](*<- lang_ru;;*);;
+urine => nrel_main_idtf: [dark urine and light feces](*<- lang_en;;*);;
+
+constipation<-sc_node_not_relation;;
+constipation => nrel_main_idtf: [запор](*<- lang_ru;;*);;
+constipation => nrel_main_idtf: [constipation](*<- lang_en;;*);;
+
+difficulty_swallowing<-sc_node_not_relation;;
+difficulty_swallowing => nrel_main_idtf: [затрудненное глотание](*<- lang_ru;;*);;
+difficulty_swallowing => nrel_main_idtf: [difficulty swallowing](*<- lang_en;;*);;
+
+convulsions<-sc_node_not_relation;;
+convulsions => nrel_main_idtf: [конвульсии](*<- lang_ru;;*);;
+convulsions => nrel_main_idtf: [convulsions](*<- lang_en;;*);;
+definition -> ...
+(*
+    -> rrel_key_sc_element: convulsions;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Конвульсии — непроизвольное сокращение мышцы или группы мышц, обычно сопровождаемое резкой болью.](*<- lang_ru;;*);;
+	    -> [Convulsions are involuntary contractions of a muscle or muscle group, usually accompanied by severe pain.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(конвульсии)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [Def.(convulsions)](*<- lang_en;;*);;
+*);;
+
+
+jaw_spasm<-sc_node_not_relation;;
+jaw_spasm => nrel_main_idtf: [спазм челюсти](*<- lang_ru;;*);;
+jaw_spasm => nrel_main_idtf: [jaw spasm](*<- lang_en;;*);;
+
+concept_inflammation<-sc_node_not_relation;;
+concept_inflammation => nrel_main_idtf: [воспаления](*<- lang_ru;;*);;
+concept_inflammation=> nrel_main_idtf: [inflammation](*<- lang_en;;*);;
+
+heart<-sc_node_not_relation;;
+heart => nrel_main_idtf: [сердце](*<- lang_ru;;*);;
+heart=> nrel_main_idtf: [heart](*<- lang_en;;*);;
+definition -> ...
+(*
+    -> rrel_key_sc_element: heart;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Сердце человека — это конусообразный полый мышечный орган, в который поступает кровь из впадающих в него венозных стволов и перекачивающий её в артерии, которые примыкают к сердцу.](*<- lang_ru;;*);;
+	    -> [The human heart is a cone-shaped hollow muscle organ into which blood flows from the venous trunks that flow into it and pumps it into the arteries that are adjacent to the heart.
+
+](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(сердце)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [Def.(heart)](*<- lang_en;;*);;
+*);;
+
+
+
+blood_vessels<-sc_node_not_relation;;
+blood_vessels => nrel_main_idtf: [кровеносные сосуды](*<- lang_ru;;*);;
+blood_vessels=> nrel_main_idtf: [blood vessels](*<- lang_en;;*);;
+definition -> ...
+(*
+    -> rrel_key_sc_element: blood_vessels;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Кровено́сные сосу́ды — эластичные трубчатые образования в теле животных и человека, по которым силой ритмически сокращающегося сердца или пульсирующего сосуда осуществляется перемещение крови по организму: к органам и тканям по артериям, артериолам, капиллярам, и от них к сердцу — по венулам и венам.](*<- lang_ru;;*);;
+	    -> [Blood vessels - elastic tubular formations in the body of animals and humans, through which the rhythmically contracting heart or pulsating vessel carries out the movement of blood throughout the body: to organs and tissues through arteries, arterioles, capillaries, and from them to the heart - through venules and veins.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(кровеносные сосуды)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [Def.(blood vessels)](*<- lang_en;;*);;
+*);;
+
+
+
+kidneys<-sc_node_not_relation;;
+kidneys => nrel_main_idtf: [почки](*<- lang_ru;;*);;
+kidneys=> nrel_main_idtf: [kidneys](*<- lang_en;;*);;
+definition -> ...
+(*
+    -> rrel_key_sc_element: kidneys;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Почки — э это образования фасолевидной формы, снаружи покрытые плотной фиброзной капсулой. На поперечном срезе почки можно различить корковое и мозговое вещество.](*<- lang_ru;;*);;
+	    -> [Blood vessels - elastic tubular formations in the body of animals and humans, through which the rhythmically contracting heart or pulsating vessel carries out the movement of blood throughout the body: to organs and tissues through arteries, arterioles, capillaries, and from them to the heart - through venules and veins.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(почки)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [Def.(kidneys)](*<- lang_en;;*);;
+*);;
+
+
+
+bladder<-sc_node_not_relation;;
+bladder => nrel_main_idtf: [мочевой пузырь](*<- lang_ru;;*);;
+bladder=> nrel_main_idtf: [bladder](*<- lang_en;;*);;
+definition -> ...
+(*
+    -> rrel_key_sc_element: bladder;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Мочево́й пузы́рь — непарный полый орган выделительной системы позвоночных животных, расположенный в малом тазу.](*<- lang_ru;;*);;
+	    -> [The bladder is an unpaired hollow organ of the excretory system of vertebrates located in the pelvis.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(мочевой пузырь)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [Def.(bladder)](*<- lang_en;;*);;
+*);;
+
+
+
+urethra<-sc_node_not_relation;;
+urethra => nrel_main_idtf: [уретра](*<- lang_ru;;*);;
+urethra=> nrel_main_idtf: [urethra](*<- lang_en;;*);;
+definition -> ...
+(*
+    -> rrel_key_sc_element: urethra;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Уретра — непарный трубчатый орган мочевыделительной (мочеполовой) системы человека и других позвоночных животных, соединяющий мочевой пузырь со внешней средой.](*<- lang_ru;;*);;
+	    -> [The urethra is an unpaired tubular organ of the urinary (genitourinary) system of the person and other vertebrates, connecting the bladder with the external environment.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(уретра)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [Def.(urethra)](*<- lang_en;;*);;
+*);;
+
+
+
+thyroid<-sc_node_not_relation;;
+thyroid => nrel_main_idtf: [щитовидная железа](*<- lang_ru;;*);;
+thyroid=> nrel_main_idtf: [thyroid](*<- lang_en;;*);;
+definition -> ...
+(*
+    -> rrel_key_sc_element: thyroid;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Щитовидная железа - эндокринная железа у позвоночных, хранящая йод и вырабатывающая йодсодержащие гормоны (йодтиронины), участвующие в регуляции обмена веществ и росте отдельных клеток, а также организма в целом.](*<- lang_ru;;*);;
+	    -> [The thyroid gland is the endocrine gland in vertebrates, which stores iodine and produces iodine-containing hormones (iodothyronines) that are involved in the regulation of metabolism and the growth of individual cells, as well as the body as a whole.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(щитовидная железа)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [Def.(thyroid)](*<- lang_en;;*);;
+*);;
+
+
+
+pancreas<-sc_node_not_relation;;
+pancreas => nrel_main_idtf: [поджелудочная железа](*<- lang_ru;;*);;
+pancreas=> nrel_main_idtf: [pancreas](*<- lang_en;;*);;
+definition -> ...
+(*
+    -> rrel_key_sc_element: pancreas;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Поджелу́дочная железа́ — крупный орган пищеварительной системы животных и человека, обладающая внешнесекреторной (экзокринной) и внутрисекреторной (эндокринной) функциями.](*<- lang_ru;;*);;
+	    -> [The pancreas is a large organ of the digestive system of animals and humans, which has exocrine (exocrine) and intrasecretory (endocrine) functions.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(поджелудочная железа)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [Def.(pancreas)](*<- lang_en;;*);;
+*);;
+
+
+
+adrenal<-sc_node_not_relation;;
+adrenal => nrel_main_idtf: [надпочечники](*<- lang_ru;;*);;
+adrenal=> nrel_main_idtf: [adrenal](*<- lang_en;;*);;
+definition -> ...
+(*
+    -> rrel_key_sc_element: adrenal;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Надпочечники  — парные эндокринные железы, расположенные над верхней частью почек позвоночных животных и человека. ](*<- lang_ru;;*);;
+	    -> [Adrenal glands - paired endocrine glands located above the upper kidneys of vertebrates and humans.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(надпочечники)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [Def.(adrenal)](*<- lang_en;;*);;
+*);;
+
+
+
+gonads<-sc_node_not_relation;;
+gonads => nrel_main_idtf: [гонады](*<- lang_ru;;*);;
+gonads=> nrel_main_idtf: [gonads](*<- lang_en;;*);;
+
+
+
+thymus<-sc_node_not_relation;;
+thymus => nrel_main_idtf: [тимус](*<- lang_ru;;*);;
+thymus=> nrel_main_idtf: [thymus](*<- lang_en;;*);;
+definition -> ...
+(*
+    -> rrel_key_sc_element: thymus;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Тимус— орган лимфопоэза человека и многих видов животных, в котором происходит созревание, дифференцировка и иммунологическое «обучение» T-клеток иммунной системы. ](*<- lang_ru;;*);;
+	    -> [Thymus is the organ of lymphopoiesis of humans and many species of animals, in which the maturation, differentiation and immunological "training" of T cells of the immune system occurs.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(тимус)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [Def.(thymus)](*<- lang_en;;*);;
+*);;
+
+
+pineal_gland<-sc_node_not_relation;;
+pineal_gland=> nrel_main_idtf: [эпифиз](*<- lang_ru;;*);;
+pineal_gland=> nrel_main_idtf: [pineal gland](*<- lang_en;;*);;
+definition -> ...
+(*
+    -> rrel_key_sc_element: pineal_gland;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Эпифиз  — эндокринная железа неврогенной группы, представлена небольшим шишковидным телом серовато-красноватого цвета, располагающимся в области четверохолмия среднего мозга.](*<- lang_ru;;*);;
+	    -> [The pineal gland is the endocrine gland of the neurogenic group, represented by a small pineal body of a grayish-reddish color, located in the area of ​​the quadruple of the midbrain.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(эпифиз)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [Def.(pineal gland)](*<- lang_en;;*);;
+*);;
+
+
+
+cerebrum<-sc_node_not_relation;;
+cerebrum=> nrel_main_idtf: [головной мозг](*<- lang_ru;;*);;
+cerebrum=> nrel_main_idtf: [cerebrum](*<- lang_en;;*);;
+definition -> ...
+(*
+    -> rrel_key_sc_element: cerebrum;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Головной мозг - орган центральной нервной системы, состоящей из множества взаимосвязанных между собой нервных клеток и их отростков.](*<- lang_ru;;*);;
+	    -> [The brain is an organ of the central nervous system, consisting of many interconnected nerve cells and their processes.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(головной мозг)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [Def.(cerebrum)](*<- lang_en;;*);;
+*);;
+
+
+spinal_cord<-sc_node_not_relation;;
+spinal_cord=> nrel_main_idtf: [спинной мозг](*<- lang_ru;;*);;
+spinal_cord=> nrel_main_idtf: [spinal cord](*<- lang_en;;*);;
+definition -> ...
+(*
+    -> rrel_key_sc_element: spinal_cord;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Спинной мозг  — это орган центральной нервной системы позвоночных, расположенный в позвоночном канале.](*<- lang_ru;;*);;
+	    -> [The spinal cord is an organ of the central nervous system of vertebrates located in the spinal canal.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(спинной мозг)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [Def.(spinal cord)](*<- lang_en;;*);;
+*);;
+
+
+leather<-sc_node_not_relation;;
+leather=> nrel_main_idtf: [кожа](*<- lang_ru;;*);;
+leather=> nrel_main_idtf: [leather](*<- lang_en;;*);;
+
+hair<-sc_node_not_relation;;
+hair=> nrel_main_idtf: [волосы](*<- lang_ru;;*);;
+hair=> nrel_main_idtf: [hair](*<- lang_en;;*);;
+
+irritability<-sc_node_not_relation;;
+irritability=> nrel_main_idtf: [раздражительность](*<- lang_ru;;*);;
+irritability=> nrel_main_idtf: [irritability](*<- lang_en;;*);;
+
+
+concept_cellulocutaneous_plague<-sc_node_not_relation;;
+concept_cellulocutaneous_plague=> nrel_main_idtf: [целлюлазная чума](*<- lang_ru;;*);;
+concept_cellulocutaneous_plague=> nrel_main_idtf: [cellulocutaneous plague](*<- lang_en;;*);;
+
+
+concept_plague_meningitis<-sc_node_not_relation;;
+concept_plague_meningitis=> nrel_main_idtf: [чумный менингит](*<- lang_ru;;*);;
+concept_plague_meningitis=> nrel_main_idtf: [plague meningitis](*<- lang_en;;*);;
+
+
+xerosis<-sc_node_not_relation;;
+xerosis=> nrel_main_idtf: [сухость кожи](*<- lang_ru;;*);;
+xerosis=> nrel_main_idtf: [xerosis](*<- lang_en;;*);;
+
+bubo<-sc_node_not_relation;;
+bubo=> nrel_main_idtf: [бубон](*<- lang_ru;;*);;
+bubo=> nrel_main_idtf: [bubo](*<- lang_en;;*);;
+definition -> ...
+(*
+    -> rrel_key_sc_element: bubo;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Бубон - увеличенный вследствие воспаления лимфатический узел.](*<- lang_ru;;*);;
+	    -> [Bubo is an enlarged lymph node due to inflammation.](*<- lang_en;;*);;
+	   *);;
+    => nrel_main_idtf: [Опр.(бубон)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(bubo)](*<- lang_en;;*);;
+*);;
+
+
+nasal_cavity<-sc_node_not_relation;;
+nasal_cavity=> nrel_main_idtf: [носовая полость](*<- lang_ru;;*);;
+nasal_cavity=> nrel_main_idtf: [nasal cavity](*<- lang_en;;*);;
+
+nasopharynx<-sc_node_not_relation;;
+nasopharynx=> nrel_main_idtf: [носоглотка](*<- lang_ru;;*);;
+nasopharynx=> nrel_main_idtf: [nasopharynx](*<- lang_en;;*);;
+
+larynx<-sc_node_not_relation;;
+larynx=> nrel_main_idtf: [гортань](*<- lang_ru;;*);;
+larynx=> nrel_main_idtf: [larynx](*<- lang_en;;*);;
+
+trachea<-sc_node_not_relation;;
+trachea=> nrel_main_idtf: [трахея](*<- lang_ru;;*);;
+trachea=> nrel_main_idtf: [trachea](*<- lang_en;;*);;
+
+bronchi<-sc_node_not_relation;;
+bronchi=> nrel_main_idtf: [бронхи](*<- lang_ru;;*);;
+bronchi=> nrel_main_idtf: [bronchi](*<- lang_en;;*);;
+
+lungs<-sc_node_not_relation;;
+lungs=> nrel_main_idtf: [легкие](*<- lang_ru;;*);;
+lungs=> nrel_main_idtf: [lungs](*<- lang_en;;*);;
+
+
+
+
+
+

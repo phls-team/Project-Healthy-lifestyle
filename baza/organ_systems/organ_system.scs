@@ -1,0 +1,83 @@
+concept_organ_system<-sc_node_not_relation;;
+concept_organ_system => nrel_main_idtf: [система органов человека](*<- lang_ru;;*);;
+concept_organ_system => nrel_main_idtf: [organ system](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_organ_system;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Система органов — функционально единая группа органов живого организма.](*<- lang_ru;;*);;
+	-> [The organ system is a functionally unified group of organs of a living organism.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(система органов человека)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(organ system)](*<- lang_en;;*);;
+       *);;
+
+
+
+concept_organ_system<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://картинки/system.png"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;
+
+
+concept_organ_system=>nrel_structure:"file://картинки/system2.png";;
+
+
+
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_organ_system;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Системы органов связаны анатомически и функционально и вместе образуют целостный организм человека.](*<- lang_ru;;*);;
+-> [Organ systems are connected anatomically and functionally and together form an integral human organism.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(система органов человека)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(organ system)](*<- lang_en;;*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_organ_system;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Некоторые органы выполняют несколько функций и относятся к разным системам.](*<- lang_ru;;*);;
+-> [Some organs perform several functions and belong to different systems.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(система органов человека)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [Утв.(organ system)](*<- lang_en;;*);;
+=> nrel_using_constants:concept_organ;;
+*);;
+
+
+
+concept_organ_system=>nrel_inclusion:concept_immune_system;concept_musculoskeletal_system;
+concept_nervous_system;concept_cardiovascular_system;concept_respiratory_system;
+concept_human_digestive_system;concept_excretory_system;
+concept_reproductive_system;concept_endocrine_system;concept_integumentary_system;;
+
+
+
+
+
+
+
+
+
+
+
+
+

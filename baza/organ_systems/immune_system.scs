@@ -1,0 +1,65 @@
+concept_immune_system<-sc_node_not_relation;;
+concept_immune_system => nrel_main_idtf: [иммунная система](*<- lang_ru;;*);;
+concept_immune_system => nrel_main_idtf: [immune system](*<- lang_en;;*);;
+
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_immune_system;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Иммунная система — система органов, существующая у позвоночных животных и объединяющая органы и ткани, которые защищают организм от заболеваний, идентифицируя и уничтожая опухолевые клетки и патогены.](*<- lang_ru;;*);;
+-> [The immune system is the organ system that exists in vertebrates and combines the organs and tissues that protect the body from disease, identifying and destroying tumor cells and pathogens.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(иммунная система)](*<- lang_ru;;*);;
+=> nrel_main_idtf: [St.(immune system)](*<- lang_en;;*);;
+*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: cough;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Кашель — врождённый защитный безусловный рефлекс, являющийся частью иммунной системы организма](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Кашель)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+	    -> concept_immune_system;;
+        *);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_immune_system;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Иммунная система распознаёт множество разнообразных возбудителей — от вирусов до паразитических червей — и отличает их от биомолекул собственных клеток.](*<- lang_ru;;*);;
+    -> [The immune system recognizes a wide variety of pathogens - from viruses to parasitic worms - and distinguishes them from the biomolecules of their own cells.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(иммунная система)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(immune system)](*<- lang_ru;;*);;
+*);;
+
+concept_immune_system=>nrel_system_organs:"file://картинки/immun.png";;
+
+
+concept_immune_system=>nrel_inclusion:concept_immunoprophylaxis;concept_immunity;;
+
+concept_immune_system=>nrel_diseases_of_system:t_arthritis;concept_HIV;HIV;concept_allergy;morbilli;
+concept_part1OfSubClassOf01_16;;
+
+concept_immune_system=>nrel_system_functions:[Поддержание иммунной толерантности к структурам собственного организма];[Защита от формирования и роста опухолей];[Осуществление противоинфекционного и противоинвазивного иммунитета];[Осуществление отторжения чужеродных тканей];
+[Формирование и поддержание иммунной памяти];[Своевременное удаление старых и дефектных клеток, что предупреждает преждевременное старение организма];[ Участие в осуществлении репарационных процессов, т.е. восстановления после травм, воспаления, ожогов];[Участие в поддержании гомеостаза и регуляции обмена веществ];;
+
+
+
+
+
+
+
+
+
+
+

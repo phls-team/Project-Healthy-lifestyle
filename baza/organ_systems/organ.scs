@@ -1,0 +1,36 @@
+concept_organ<-sc_node_not_relation;;
+concept_organ=> nrel_main_idtf: [орган](*<- lang_ru;;*);;
+concept_organ=> nrel_main_idtf: [organ](*<- lang_en;;*);;
+
+
+concept_organ=>nrel_inclusion:nasal_cavity;nasopharynx;larynx;trachea;bronchi;lungs;heart;blood_vessels;
+thyroid;pancreas;adrenal;gonads;thymus;pineal_gland;urethra;bladder;kidneys;leather;hair;;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_organ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Органы - основные наружные (внешние) и внутренние образования человеческого тела. ](*<- lang_ru;;*);;
+-> [Organs are the main external (external) and internal formations of the human body.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(орган)](*<- lang_ru;;*);;
+=> nrel_main_idtf: [St.(organ)](*<- lang_en;;*);;
+*);;
+
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_organ;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Орган представляет собой функциональную единицу в пределах организма, обособленную от других функциональных единиц данного организма. Органы одного организма связаны в своих функциях между собой таким образом, что организм является совокупностью органов, которые часто объединяются в различные системы органов. ](*<- lang_ru;;*);;
+    -> [An organ is a functional unit within an organism that is isolated from other functional units of a given organism. The organs of one organism are interconnected in their functions in such a way that the body is a collection of organs that are often combined into various organ systems.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(орган)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(organ)](*<- lang_ru;;*);;
+=>nrel_using_constans:concept_organ_system;;
+*);;
+
+concept_organ_system->concept_organ;;

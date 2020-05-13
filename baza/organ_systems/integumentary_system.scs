@@ -1,0 +1,41 @@
+concept_integumentary_system<-sc_node_not_relation;;
+concept_integumentary_system => nrel_main_idtf: [покровная система](*<- lang_ru;;*);;
+concept_integumentary_system => nrel_main_idtf: [integumentary system](*<- lang_en;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_integumentary_system;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Покровная система — комплекс разновидностей эпителиальной ткани, элементов мышечной, соединительной и нервной тканей, сосредоточенных на поверхности организма.](*<- lang_ru;;*);;
+-> [The integumentary system is a complex of varieties of epithelial tissue, elements of muscle, connective and nervous tissue, concentrated on the surface of the body.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(покровная система)](*<- lang_ru;;*);;
+=> nrel_main_idtf: [St.(integumentary system)](*<- lang_en;;*);;
+*);;
+
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_integumentary_system;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Эта система является крупнейшей по размеру системой органов. ](*<- lang_ru;;*);;
+    -> [This system is the largest organ system in size.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(покровная система)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(integumentary system)](*<- lang_ru;;*);;
+*);;
+
+concept_integumentary_system=>nrel_system_organs:leather;hair;;
+concept_integumentary_system=>nrel_structure:"file://картинки/integumentary.jpg";;
+
+concept_integumentary_system=>nrel_diseases_of_system:concept_variola;;
+
+concept_integumentary_system=>nrel_system_functions:[предохраняет организм от высыхания]; [предохраняет организм от температурных колебаний];[предохраняет организм от повреждения];
+[предохраняет организм от проникновения в организм ядовитых веществ и болезнетворных микроорганизмов];;
+
+
+
+

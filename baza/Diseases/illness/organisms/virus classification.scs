@@ -1,0 +1,24 @@
+concept_virus_classification<-sc_node_not_relation;;
+concept_virus_classification => nrel_main_idtf: [классификация вирусов](*<- lang_ru;;*);;
+concept_virus_classification => nrel_main_idtf: [virus classification](*<- lang_en;;*);;
+
+concept_virus=>nrel_inclusion:concept_virus_classification;;
+
+concept_virus_classification=>nrel_inclusion:Baltimore_virus_classification;ICTV_classification;;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_virus_classification;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Классификация вирусов — способ классификации вирусов в группы в зависимости от типа геномной нуклеиновой кислоты (ДНК, РНК, одноцепочечная, двуцепочечная).](*<- lang_ru;;*);;
+-> [Classification of viruses - a method for classifying viruses into groups depending on the type of genomic nucleic acid (DNA, RNA, single-stranded, double-stranded).](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(классификация вирусов)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(virus classification)](*<- lang_en;;*);;
+*);;
+
+
+
+

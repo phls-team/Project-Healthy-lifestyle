@@ -1,0 +1,28 @@
+concept_part1OfSubClassOf01_16<-sc_node_not_relation;;
+concept_part1OfSubClassOf01_16 => nrel_main_idtf: [Острый вирусный гепатит](*<- lang_ru;;*);;
+concept_part1OfSubClassOf01_16 => nrel_main_idtf: [Acute viral hepatitis](*<- lang_en;;*);;
+
+concept_part1OfSubClassOf01_16<-sc_node_norole_relation;
+=>nrel_unique_idtf:[1E50](*<-lang_en;;*);;
+concept_part1OfSubClassOf01_16<-sc_node_norole_relation;
+=>nrel_unique_idtf:[1E50](*<-lang_ru;;*);;
+
+
+concept_part1OfSubClassOf01_16 =>nrel_arrayOfIdentificators:[1E50.0-last unique idtf];;
+concept_part1OfSubClassOf01_16=>nrel_inclusion:concept_hepatitis_A;concept_hepatitis_B;concept_hepatitis_C;
+concept_hepatitis_D;concept_hepatitis_E;;
+
+
+
+concept_subClassOf01_16=>nrel_inclusion:concept_part1OfSubClassOf01_16;;
+
+concept_part1OfSubClassOf01_16<-rrel_sc_key_element:...
+(*<-statement;;
+=>nrel_main_idtf:[class description](*<-lang_en;;*);;
+=>nrel_main_idtf:[описание класса](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(* ->[A group of liver diseases characterized by liver inflammation and fibrosis, caused by more than 6 months of infection with one or more of hepatitis B virus, hepatitis C virus and hepatitis D virus, with or without HIV.] (*<-lang_en;;*);;
+->[Группа заболеваний печени, характеризующихся воспалением печени и фиброзом, вызванным более чем 6-месячным заражением одним или несколькими из вируса гепатита В, вируса гепатита С и вируса гепатита D с ВИЧ или без него.] (*<-lang_ru;;*);;
+*);;
+*);;
+

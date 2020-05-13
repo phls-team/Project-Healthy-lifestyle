@@ -1,0 +1,42 @@
+concept_endocrine_system<-sc_node_not_relation;;
+concept_endocrine_system => nrel_main_idtf: [эндокринная система](*<- lang_ru;;*);;
+concept_endocrine_system => nrel_main_idtf: [endocrine system](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_endocrine_system;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Эндокринная система — система регуляции деятельности внутренних органов посредством гормонов, выделяемых эндокринными клетками непосредственно в кровь либо диффундирующих через межклеточное пространство в соседние клетки. ](*<- lang_ru;;*);;
+-> [The endocrine system is a system for regulating the activity of internal organs through hormones secreted by endocrine cells directly into the blood or diffusing through the intercellular space into neighboring cells.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(эндокринная система)](*<- lang_ru;;*);;
+=> nrel_main_idtf: [St.(endocrine system)](*<- lang_en;;*);;
+*);;
+
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_endocrine_system;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Эндокринная система делится на гландулярную эндокринную систему (или гландулярный аппарат), в которой эндокринные клетки собраны вместе и формируют железу внутренней секреции, и диффузную эндокринную систему.](*<- lang_ru;;*);;
+    -> [The endocrine system is divided into the glandular endocrine system (or glandular apparatus), in which the endocrine cells are assembled together and form the endocrine gland, and the diffuse endocrine system.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(эндокринная система)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(endocrine system)](*<- lang_ru;;*);;
+*);;
+
+concept_endocrine_system=>nrel_system_organs:thyroid;pancreas;adrenal;gonads;thymus;pineal_gland;;
+concept_endocrine_system=>nrel_structure:"file://картинки/endocrine.jpg";;
+
+concept_endocrine_system=>nrel_diseases_of_system:diabetes;;
+
+concept_endocrine_system=>nrel_system_functions:[координация и регуляция деятельности практически всех органов и систем организма];[обеспечивание адаптации организма к постоянно изменяющимся условиям внешней и внутренней среды];[выделение гормонов непосредственно в кровоток];
+[развитие организма];[эмоциональные реакции];;
+
+
+
+

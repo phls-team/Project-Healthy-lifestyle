@@ -1,0 +1,71 @@
+concept_variola<-sc_node_not_relation;;
+concept_variola => nrel_main_idtf: [оспа](*<- lang_ru;;*);;
+concept_variola => nrel_main_idtf: [variola](*<- lang_en;;*);;
+
+concept_variola => nrel_idtf: [натуральная оспа](*<- lang_ru;;*);;
+concept_variola => nrel_idtf: [smallpox](*<- lang_en;;*);;
+
+
+concept_variola<-sc_node_norole_relation;
+=>nrel_unique_idtf:[1E70](*<-lang_en;;*);;
+concept_variola<-sc_node_norole_relation;
+=>nrel_unique_idtf:[1E70](*<-lang_ru;;*);;
+
+concept_variola<-concept_disease;;
+
+
+
+concept_variola<-sc_node_norole_relation;
+=>nrel_incubation_period:...
+(*
+=>rrel_minimalPeriod:[8 days](*<-lang_en;;*);;
+=>rrel_minimalPeriod:[8 дней](*<-lang_ru;;*);;
+=>rrel_maximalPeriod:[14 days](*<-lang_en;;*);;
+=>rrel_maximalPeriod:[14 дней](*<-lang_ru;;*);;
+*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_variola;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Натуральная оспа — высокозаразная вирусная инфекция, особо опасная болезнь, характеризуется тяжёлым течением, лихорадкой, сыпью на коже и слизистых оболочках, нередко оставляющей после себя рубцы. ](*<- lang_ru;;*);;
+	    -> [Smallpox is a highly infectious viral infection, a particularly dangerous disease, characterized by a severe course, fever, rash on the skin and mucous membranes, often leaving scars. ](*<- lang_en;;*);;
+	   *);;
+    => nrel_main_idtf: [Опр.(оспа)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(variola)](*<- lang_en;;*);;
+*);;
+
+
+
+concept_variola=>nrel_source_of_infection:[Возбудитель оспы относится к вирусам семейства Poxviridae, подсемейства Chordopoxviridae, рода Orthopoxvirus; содержит ДНК, имеет размеры 200—350 нм, размножается в цитоплазме с образованием включений.];;
+
+concept_variola=>nrel_susceptibility:[К оспе восприимчивы все люди, если у них нет иммунитета, полученного в результате перенесённого ранее заболевания или вакцинации.];;
+
+concept_variola=>nrel_period_of_full_development:fever;pain_and_weakness_in_muscles;dizziness;thirst;cramp_or_spasm;
+vomiting;rashes;scarring;;
+
+concept_variola=>nrel_symptom:fever;pain_and_weakness_in_muscles;vomiting;rashes;;
+
+concept_variola=>nrel_healing:[Лечение натуральной оспы в общем патогенетическое, с применением антибиотиков в связи с вторичными бактериальными инфекциями. Может быть рассмотрено назначение противовирусного препарата цидофовира.];[Изоляция людей с оспой необходима. При ограниченных вспышках болезни пациенты могут быть изолированы в больнице, a палата должна быть оборудована высокоэффективными корпускулярными фильтрами (НЕРА).];;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_variola;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Люди, выживающие после оспы, могут частично или полностью терять зрение, и практически всегда на коже остаются многочисленные рубцы в местах бывших язв.  ](*<- lang_ru;;*);;
+	    -> [Survivors after smallpox can partially or completely lose their vision, and almost always numerous scars remain on the skin in places of former ulcers. ](*<- lang_en;;*);;
+
+
+        *);;
+    => nrel_main_idtf: [Утв.(оспа)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(оспа)](*<- lang_en;;*);;
+*);;
+
+
+concept_variola=>nrel_disease_prevention:concept_vaccination;;
+
+concept_variola=>nrel_mortality:[Коэффициент летальности достигает 15%.];;
+

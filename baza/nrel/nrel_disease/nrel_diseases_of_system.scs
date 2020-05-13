@@ -1,0 +1,33 @@
+
+relation -> nrel_diseases_of_system;;
+
+//определение и пояснения
+nrel_diseases_of_system <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Заболевание системы - отношение, связывающее конкретную систему органов человека и заболевание, характерное для данной системы.](* <- lang_ru;;*);;
+		*);;
+*);;
+
+
+nrel_diseases_of_system => nrel_first_domain: concept_organ_system;;
+nrel_diseases_of_system => nrel_second_domain: concept_disease;;
+
+
+nrel_diseases_of_system => nrel_definitional_domain: ...
+(*
+<= nrel_subdividing: ... (*-> concept_organ_system; concept_disease;;*);;
+*);; 
+
+nrel_diseases_of_system<-binary_relation;;
+parameter->arity;;
+arity->binary_relation;;
+binary_relation=>nrel_measurement:2;;
+2<-number;;
+
+nrel_diseases_of_system<-oriented_relation;;

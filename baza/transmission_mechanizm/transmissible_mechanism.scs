@@ -1,0 +1,43 @@
+concept_transmissible_mechanism<-sc_node_not_relation;;
+concept_transmissible_mechanism => nrel_main_idtf: [трансмиссивный механизм](*<- lang_ru;;*);;
+concept_transmissible_mechanism => nrel_main_idtf: [transmissible mechanism](*<- lang_en;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_transmissible_mechanism;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Трансмиссивный механизм передачи осуществляется при посредстве насекомых.](*<- lang_ru;;*);;
+-> [The transmission mechanism of transmission is through insects.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(трансмиссивный механизм)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(transmissible mechanism)](*<- lang_ru;;*);;
+*);;
+
+concept_transmissible_mechanism=>nrel_inclusion:concept_inoculation;concept_contagious;concept_artificial;;
+
+
+concept_transmissible_mechanism<-rrel_key_sc_element:...
+(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://кар/trans.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_transmissible_mechanism;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Подразделяется на инокуляционный (при укусе) и контаминационный (при втирании в поврежденную кожу) пути передачи.](*<- lang_ru;;*);;
+    -> [It is divided into inoculation (with a bite) and contamination (when rubbed into damaged skin) transmission routes.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(трансмиссивный механизм)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(transmissible mechanism)](*<- lang_ru;;*);;
+*);;
