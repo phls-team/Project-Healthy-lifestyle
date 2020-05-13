@@ -1,0 +1,74 @@
+concept_facial_expression
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+
+ 	[мимика]
+	(*<-lang_ru;;*);
+
+	[facial expression]
+ 	(*<-lang_en;;*);
+
+
+
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (мимика) ] (*<-lang_ru;;*);;
+
+	=> nrel_using_constants: {
+    	concept_mental_condition;
+	concept_person
+
+};;
+
+	 <= nrel_sc_text_translation: ... (*
+
+      -> rrel_example:
+	  
+	[ Мимика -- это движения мускулатуры в координированных комплексах, отражающие разнообразные <b><sc_element sys_idtf="concept_mental_condition">психические состояния</b></sc_element> <b><sc_element sys_idtf="concept_person">человека</b></sc_element>. ] (* <- lang_ru;; => nrel_format: format_html;; 
+
+	*);;
+
+    *);;
+
+ *);
+
+
+
+
+<- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=>nrel_main_idtf:
+	[Утв. ] (*<-lang_ru;;*);;
+
+	
+	<=nrel_sc_text_translation: ... (*
+
+	->rrel_example:
+
+	[ Важным элементом мимики является взор, зависящий от величины зрачка, цвета радужки, блеска роговицы, которые не управляются соматическими мышцами. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+
+    *);;
+ *);
+
+
+
+
+
+
+
+<- rrel_key_sc_element: ...(*
+    <- illustration;;
+    <=nrel_sc_text_translation: ...(*
+        -> "file://images/facial_expression.jpg"(*=>nrel_format: format_jpg;;*);;
+    *);;
+*);;
+
+
+
+
+
+
+	

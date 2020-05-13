@@ -1,0 +1,76 @@
+concept_selfimage
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+
+ 	[самооценка]
+	(*<-lang_ru;;*);
+
+	[selfimage]
+ 	(*<-lang_en;;*);
+
+
+
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (самооценка) ] (*<-lang_ru;;*);;
+
+	=> nrel_using_constants: {
+    	concept_personality;
+	concept_person;
+	concept_sense
+
+};;
+
+	 <= nrel_sc_text_translation: ... (*
+
+      -> rrel_example:
+	  
+	[Самооценка — это представление <b><sc_element sys_idtf="concept_person">человека</b></sc_element> о важности своей  <b><sc_element sys_idtf="concept_personality">личности</b></sc_element>, деятельности среди других людей и оценивание себя и собственных качеств и  <b><sc_element sys_idtf="concept_sense">чувств</b></sc_element>, достоинств и недостатков, выражение их открыто или даже закрыто. ] (* <- lang_ru;; => nrel_format: format_html;; 
+
+	*);;
+
+    *);;
+
+ *);
+
+
+
+
+<- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=>nrel_main_idtf:
+	[Утв. ] (*<-lang_ru;;*);;
+
+	=>nrel_using_constants :{
+    	concept_person
+
+};;
+	<=nrel_sc_text_translation: ... (*
+
+	->rrel_example:
+
+	[ Верная самооценка поддерживает достоинство <b><sc_element sys_idtf="concept_person">человека</b></sc_element> и дает ему нравственное удовлетворение и не только. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+
+    *);;
+ *);
+
+
+
+<- rrel_key_sc_element: ...(*
+    <- illustration;;
+    <=nrel_sc_text_translation: ...(*
+        -> "file://images/selfimage.jpg"(*=>nrel_format: format_jpg;;*);;
+    *);;
+*);;
+
+
+
+
+
+
+
+
+	

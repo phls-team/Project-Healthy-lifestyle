@@ -1,0 +1,73 @@
+concept_psychoanalyse
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+
+ 	[психоанализ]
+	(*<-lang_ru;;*);
+
+	[psychoanalyse]
+ 	(*<-lang_en;;*);
+
+
+
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (психоанализ) ] (*<-lang_ru;;*);;
+
+	=> nrel_using_constants: {
+    	nrel_healing;
+	mental_illness
+
+};;
+
+	 <= nrel_sc_text_translation: ... (*
+
+      -> rrel_example:
+	  
+	[ Психоанализ -- психологическая теория, разработанная в конце XIX — начале XX века австрийским неврологом Зигмундом Фрейдом, а также чрезвычайно влиятельный метод <b><sc_element sys_idtf="nrel_healing"> лечения </b></sc_element>  <b><sc_element sys_idtf="mental_illness"> психических расстройств </b></sc_element> , основанный на этой теории. ] (* <- lang_ru;; => nrel_format: format_html;; 
+
+	*);;
+
+    *);;
+
+ *);
+
+
+
+
+<- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=>nrel_main_idtf:
+	[Утв. ] (*<-lang_ru;;*);;
+
+	<=nrel_sc_text_translation: ... (*
+
+	->rrel_example:
+
+	[ Психоанализ является спорной дисциплиной, его эффективность постоянно оспаривается. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+
+    *);;
+ *);
+
+
+
+<- rrel_key_sc_element: ...(*
+    <- illustration;;
+    <=nrel_sc_text_translation: ...(*
+        -> "file://images/psychoanalyse.jpg"(*=>nrel_format: format_jpg;;*);;
+    *);;
+*);;
+
+
+
+
+psychiatry => nrel_inclusion:concept_psychoanalyse;;
+
+
+
+
+
+	

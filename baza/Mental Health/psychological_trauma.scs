@@ -1,0 +1,80 @@
+concept_psychological_trauma
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+
+ 	[психологическая травма]
+	(*<-lang_ru;;*);
+
+	[psychological trauma]
+ 	(*<-lang_en;;*);
+
+
+
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (психологическая травма) ] (*<-lang_ru;;*);;
+
+	=> nrel_using_constants: {
+    	concept_person;
+	impact;
+	concept_psyche
+
+};;
+
+	 <= nrel_sc_text_translation: ... (*
+
+      -> rrel_example:
+	  
+	[Психологическая травма — вред, нанесённый психическому здоровью <b><sc_element sys_idtf="concept_person" >человека</b></sc_element> в результате интенсивного воздействия неблагоприятных факторов среды или остроэмоциональных, стрессовых <b><sc_element sys_idtf="impact" >воздействий</b></sc_element> на его <b><sc_element sys_idtf="concept_psyche" > психику</b></sc_element>. ] (* <- lang_ru;; => nrel_format: format_html;; 
+
+	*);;
+
+    *);;
+
+ *);
+
+
+
+
+<- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=>nrel_main_idtf:
+	[Утв. ] (*<-lang_ru;;*);;
+
+	=> nrel_using_constants: {
+    	mental_illness;
+	concept_psyche
+
+};;
+
+	<=nrel_sc_text_translation: ... (*
+
+	->rrel_example:
+
+	[ Психологические травмы нарушают нормальную организацию <b><sc_element sys_idtf="concept_psyche" >психики</b></sc_element> и могут приводить к развитию <b><sc_element sys_idtf="mental_illness" >психических расстройств</b></sc_element>. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+
+    *);;
+ *);
+
+
+<- rrel_key_sc_element: ...(*
+    <- illustration;;
+    <=nrel_sc_text_translation: ...(*
+        -> "file://images/psychological_trauma.jpg"(*=>nrel_format: format_jpg;;*);;
+    *);;
+*);;
+
+
+
+
+
+concept_injury => nrel_inclusion:concept_psychological_trauma;;
+
+
+
+
+
+	

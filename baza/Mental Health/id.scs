@@ -1,0 +1,72 @@
+concept_id
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+
+ 	[Оно]
+	(*<-lang_ru;;*);
+
+	[id]
+ 	(*<-lang_en;;*);
+
+
+
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (Оно) ] (*<-lang_ru;;*);;
+
+	=> nrel_using_constants: {
+	concept_psyche
+
+};;
+	
+
+	 <= nrel_sc_text_translation: ... (*
+
+      -> rrel_example:
+	  
+	[ Оно — бессознательная часть <b><sc_element sys_idtf="concept_psyche">психики</b></sc_element>, совокупность инстинктивных влечений. ] (* <- lang_ru;; => nrel_format: format_html;; 
+
+	*);;
+
+    *);;
+
+ *);
+
+
+
+
+<- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=>nrel_main_idtf:
+	[Утв. ] (*<-lang_ru;;*);;
+
+
+
+
+	<=nrel_sc_text_translation: ... (*
+
+	->rrel_example:
+
+	[ Будучи бессознательным и иррациональным, «Оно» подчиняется принципу удовольствия, то есть понижение неудовольствия является целью процессов, протекающих в «Оно». ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+
+    *);;
+ *);
+
+
+
+<- rrel_key_sc_element: ...(*
+    <- illustration;;
+    <=nrel_sc_text_translation: ...(*
+        -> "file://images/id.jpg"(*=>nrel_format: format_jpg;;*);;
+    *);;
+*);;
+
+
+
+
+
+concept_psychoanalyse => nrel_inclusion:concept_id;;
+

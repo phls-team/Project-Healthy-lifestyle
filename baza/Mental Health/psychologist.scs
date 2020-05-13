@@ -1,0 +1,72 @@
+concept_psychologist
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+
+ 	[психолог]
+	(*<-lang_ru;;*);
+
+	[psychologist]
+ 	(*<-lang_en;;*);
+
+
+
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (психолог) ] (*<-lang_ru;;*);;
+
+	=> nrel_using_constants: {
+    	concept_personality
+	
+
+};;
+
+	 <= nrel_sc_text_translation: ... (*
+
+      -> rrel_example:
+	  
+	[ Психолог -- специалист, занимающийся изучением проявлений, способов и форм организации психических явлений <b><sc_element sys_idtf="concept_personality"> личности </b></sc_element> в различных областях человеческой деятельности для решения научно-исследовательских и прикладных задач, а также с целью оказания психологической помощи, поддержки и сопровождения. ] (* <- lang_ru;; => nrel_format: format_html;; 
+
+	*);;
+
+    *);;
+
+ *);
+
+
+
+
+<- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=>nrel_main_idtf:
+	[Утв. ] (*<-lang_ru;;*);;
+
+	=>nrel_using_constants :{
+    	process;
+	concept_personality;
+	concept_sport
+};;
+	<=nrel_sc_text_translation: ... (*
+
+	->rrel_example:
+
+	[ Психические явления, изучаемые психологом, включают в себя психические <b><sc_element sys_idtf="process"> процессы </b></sc_element>, свойства и состояния <b><sc_element sys_idtf="concept_personality"> личности </b></sc_element> в таких областях человеческой деятельности как система здравоохранения, образование, сферы профессиональной деятельности, бизнеса, <b><sc_element sys_idtf="concept_sport"> спорта </b></sc_element>, искусства, а также система социальной помощи и поддержки и др. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+
+    *);;
+ *);
+
+
+
+<- rrel_key_sc_element: ...(*
+    <- illustration;;
+    <=nrel_sc_text_translation: ...(*
+        -> "file://images/psychologist.jpg"(*=>nrel_format: format_jpg;;*);;
+    *);;
+*);;
+
+
+
+
+	

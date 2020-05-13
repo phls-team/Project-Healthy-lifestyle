@@ -1,0 +1,73 @@
+nrel_stressor
+<-sc_node_norole_relation;
+
+=> nrel_main_idtf:
+
+ 	[стрессор]
+	(*<-lang_ru;;*);
+
+	[stressor]
+ 	(*<-lang_en;;*);
+
+
+
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (стрессор) ] (*<-lang_ru;;*);;
+
+	=> nrel_using_constants: {
+    	impact;
+	stress
+	
+
+};;
+
+	 <= nrel_sc_text_translation: ... (*
+
+      -> rrel_example:
+	  
+	[ Стрессор -- патологический раздражитель, значительное по силе и продолжительности <b><sc_element sys_idtf="impact" >воздействие</b></sc_element>, вызывающее <b><sc_element sys_idtf="stress" >стресс</b></sc_element>. ] (* <- lang_ru;; => nrel_format: format_html;; 
+
+	*);;
+
+    *);;
+
+ *);
+
+
+
+
+<- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=>nrel_main_idtf:
+	[Утв. ] (*<-lang_ru;;*);;
+
+	<=nrel_sc_text_translation: ... (*
+
+	->rrel_example:
+
+	[ Последствия стрессоров могут носить субъективный, поведенческий, когнитивный, физиологический и организационный характер. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+
+    *);;
+ *);;
+
+nrel_stressor=>nrel_first_domain:concept_excitator;;
+nrel_stressor=>nrel_second_domain:concept_illness;;
+
+nrel_stressor<-binary_relation;;
+parameter->arity;;
+arity->binary_relation;;
+binary_relation=>nrel_measurement:2;;
+2<-number;;
+
+nrel_stressor<-oriented_relation;;
+
+concept_polygraph=>nrel_stressor:irritability;;
+concept_stressful_interview=>nrel_stressor:irritability;;
+
+
+
+
+	

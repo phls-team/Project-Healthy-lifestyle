@@ -1,0 +1,77 @@
+concept_personality
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+
+ 	[личность]
+	(*<-lang_ru;;*);
+
+	[personality]
+ 	(*<-lang_en;;*);
+
+
+
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (личность) ] (*<-lang_ru;;*);;
+
+	=> nrel_using_constants: {
+    	concept_person
+
+};;
+
+	 <= nrel_sc_text_translation: ... (*
+
+      -> rrel_example:
+	  
+	[ Ли́чность — понятие, выработанное для отображения социальной природы <b><sc_element sys_idtf="concept_person">человека</b></sc_element>, рассмотрения его как субъекта социокультурной жизни, определения его как носителя индивидуального начала, самораскрывающегося в контексте социальных отношений, общения и предметной деятельности. ] (* <- lang_ru;; => nrel_format: format_html;; 
+
+	*);;
+
+    *);;
+
+ *);
+
+
+
+
+<- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=>nrel_main_idtf:
+	[Утв. ] (*<-lang_ru;;*);;
+
+	=> nrel_using_constants: {
+	concept_society
+
+};;
+
+	<=nrel_sc_text_translation: ... (*
+
+	->rrel_example:
+
+	[ Под «личностью» могут понимать или человеческого индивида как субъекта отношений и сознательной деятельности («лицо» — в широком смысле слова), или устойчивую систему социально значимых черт, характеризующих индивида как члена того или иного <b><sc_element sys_idtf="concept_society">общества</b></sc_element> или общности. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+
+    *);;
+ *);
+
+
+
+<- rrel_key_sc_element: ...(*
+    <- illustration;;
+    <=nrel_sc_text_translation: ...(*
+        -> "file://images/personality.jpg"(*=>nrel_format: format_jpg;;*);;
+    *);;
+*);;
+
+
+
+
+concept_person => nrel_inclusion:concept_personality;;
+
+
+
+
+
+	

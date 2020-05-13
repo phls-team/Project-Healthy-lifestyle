@@ -1,0 +1,71 @@
+concept_sensual_experience
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+
+ 	[чувственный опыт]
+	(*<-lang_ru;;*);
+
+	[sensual experience]
+ 	(*<-lang_en;;*);
+
+
+
+
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (чувственный опыт) ] (*<-lang_ru;;*);;
+
+	=> nrel_using_constants: {
+    	concept_person;
+	concept_consciousness
+
+};;
+
+	 <= nrel_sc_text_translation: ... (*
+
+      -> rrel_example:
+	  
+	[Чувственный опыт -- это познание в виде конкретных образов вещей и явлений, которые возникают в <b><sc_element sys_idtf="concept_consciousness" >сознании</b></sc_element> <b><sc_element sys_idtf="concept_person" >человека</b></sc_element> в результате деятельности органов чувств и центральной нервной системы. ] (* <- lang_ru;; => nrel_format: format_html;; 
+
+	*);;
+
+    *);;
+
+ *);
+
+
+
+
+<- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=>nrel_main_idtf:
+	[Утв. ] (*<-lang_ru;;*);;
+
+	=>nrel_using_constants :{
+    	concept_sense;
+	concept_perception;
+	concept_cognitive_representation
+	
+};;
+	<=nrel_sc_text_translation: ... (*
+
+	->rrel_example:
+
+	[ Формами чувственного опыта являются <b><sc_element sys_idtf="concept_sense" >ощущения</b></sc_element>, <b><sc_element sys_idtf="concept_perception" >восприятия</b></sc_element> и <b><sc_element sys_idtf="concept_cognitive_representation" >представления</b></sc_element>. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+
+    *);;
+ *);
+
+
+
+<- rrel_key_sc_element: ...(*
+    <- illustration;;
+    <=nrel_sc_text_translation: ...(*
+        -> "file://images/sensual_experience.jpg"(*=>nrel_format: format_jpg;;*);;
+    *);;
+*);;
+
+	

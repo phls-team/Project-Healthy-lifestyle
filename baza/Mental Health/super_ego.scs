@@ -1,0 +1,63 @@
+concept_super_ego
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+
+ 	[Сверх-Я]
+	(*<-lang_ru;;*);
+
+	[super ego]
+ 	(*<-lang_en;;*);
+
+
+
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (Сверх-Я) ] (*<-lang_ru;;*);;
+
+	=> nrel_using_constants: {
+	concept_personality;
+	concept_person
+
+};;
+	
+
+	 <= nrel_sc_text_translation: ... (*
+
+      -> rrel_example:
+	  
+	[ Сверх-Я — часть человеческой <b><sc_element sys_idtf="concept_personality">личности</b></sc_element>, отвечающая за моральные и религиозные установки человека, нормы поведения и моральные запреты и формирующаяся в процессе воспитания <b><sc_element sys_idtf="concept_person">человека</b></sc_element>. ] (* <- lang_ru;; => nrel_format: format_html;; 
+
+	*);;
+
+    *);;
+
+ *);
+
+
+
+
+<- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=>nrel_main_idtf:
+	[Утв. ] (*<-lang_ru;;*);;
+
+
+
+
+	<=nrel_sc_text_translation: ... (*
+
+	->rrel_example:
+
+	[ Функциями Сверх-Я являются совесть, самонаблюдение и формирование идеалов человека. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+
+    *);;
+ *);;
+
+
+
+
+concept_psychoanalyse => nrel_inclusion:concept_super_ego;;
+

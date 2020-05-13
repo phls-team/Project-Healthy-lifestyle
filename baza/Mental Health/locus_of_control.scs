@@ -1,0 +1,67 @@
+concept_locus_of_control
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+
+ 	[локус контроля]
+	(*<-lang_ru;;*);
+
+	[locus of control]
+ 	(*<-lang_en;;*);
+
+
+
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (локус контроля) ] (*<-lang_ru;;*);;
+
+	=> nrel_using_constants: {
+	concept_personality
+
+};;
+
+	 <= nrel_sc_text_translation: ... (*
+
+      -> rrel_example:
+	  
+	[ Локус контроля — понятие в психологии, характеризующее свойство <b><sc_element sys_idtf="concept_personality">личности</b></sc_element> приписывать свои успехи или неудачи только внутренним либо только внешним факторам. ] (* <- lang_ru;; => nrel_format: format_html;; 
+
+	*);;
+
+    *);;
+
+ *);
+
+
+
+
+<- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=>nrel_main_idtf:
+	[Утв. ] (*<-lang_ru;;*);;
+
+
+	<=nrel_sc_text_translation: ... (*
+
+	->rrel_example:
+
+	[ Например, если ученик получил неудовлетворительную оценку, то, обладая внешней локализацией контроля, он возложит вину на внешние факторы («к родителям пришли гости и отвлекали меня от выполнения домашнего задания», «задание было плохо написано на доске» и т. п.), а обладая внутренней — на внутренние («я не успел должным образом подготовиться к предмету», «я так и не смог найти решение задачи», «этот предмет мне неинтересен» и т. п.). ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+
+    *);;
+ *);
+
+
+<- rrel_key_sc_element: ...(*
+    <- illustration;;
+    <=nrel_sc_text_translation: ...(*
+        -> "file://images/locus_of_control.jpg"(*=>nrel_format: format_jpg;;*);;
+    *);;
+*);;
+
+
+
+
+
+	

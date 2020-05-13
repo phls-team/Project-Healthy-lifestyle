@@ -1,0 +1,71 @@
+concept_stressful_interview
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+
+ 	[стрессовое интервью]
+	(*<-lang_ru;;*);
+
+	[stressful interview]
+ 	(*<-lang_en;;*);
+
+
+
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (стрессовое интервью) ] (*<-lang_ru;;*);;
+
+	 <= nrel_sc_text_translation: ... (*
+
+      -> rrel_example:
+	  
+	[ Стрессовое интервью — это собеседование, на котором кандидата пытаются вывести из равновесия, поставить в ситуацию, когда он почувствует себя некомфортно или же просто сделать то, к чему соискатель не готов. ] (* <- lang_ru;; => nrel_format: format_html;; 
+
+	*);;
+
+    *);;
+
+ *);
+
+
+
+
+<- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=>nrel_main_idtf:
+	[Утв. ] (*<-lang_ru;;*);;
+
+
+	<=nrel_sc_text_translation: ... (*
+
+	->rrel_example:
+
+	[ Стрессовое интервью используется при приёме на должность, предполагающую большое количество стрессовых ситуаций — топ-менеджер, менеджер по продажам, рекламный или страховой агент. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+
+    *);;
+ *);
+
+
+
+<- rrel_key_sc_element: ...(*
+    <- illustration;;
+    <=nrel_sc_text_translation: ...(*
+        -> "file://images/stressful_interview.jpg"(*=>nrel_format: format_jpg;;*);;
+    *);;
+*);;
+
+
+
+
+
+concept_excitator => nrel_inclusion:concept_stressful_interview;;
+
+
+
+
+
+
+
+	

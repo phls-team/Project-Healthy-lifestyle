@@ -1,0 +1,66 @@
+concept_mnemonic
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+
+ 	[мнемоника]
+	(*<-lang_ru;;*);
+
+	[mnemonic]
+ 	(*<-lang_en;;*);
+
+
+
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (мнемоника) ] (*<-lang_ru;;*);;
+
+	=> nrel_using_constants: {
+    	concept_memory
+
+};;
+
+	 <= nrel_sc_text_translation: ... (*
+
+      -> rrel_example:
+	  
+	[ Мнемоника -- совокупность специальных приёмов и способов, облегчающих запоминание нужной информации и увеличивающих объём <b><sc_element sys_idtf="concept_memory">памяти</b></sc_element> путём образования ассоциаций. ] (* <- lang_ru;; => nrel_format: format_html;; 
+
+	*);;
+
+    *);;
+
+ *);
+
+
+
+
+<- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=>nrel_main_idtf:
+	[Утв. ] (*<-lang_ru;;*);;
+
+	
+	<=nrel_sc_text_translation: ... (*
+
+	->rrel_example:
+
+	[ Мнемоника облегчает запоминание в отдельных случаях (там, где придуманные искусственные ассоциации закрепляются при запоминании легко и быстро). ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+
+    *);;
+ *);
+
+
+<- rrel_key_sc_element: ...(*
+    <- illustration;;
+    <=nrel_sc_text_translation: ...(*
+        -> "file://images/mnemonic.jpg"(*=>nrel_format: format_jpg;;*);;
+    *);;
+*);;
+
+
+
+
+	

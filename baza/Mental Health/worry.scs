@@ -1,0 +1,62 @@
+concept_worry
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+
+ 	[переживание]
+	(*<-lang_ru;;*);
+
+	[worry]
+ 	(*<-lang_en;;*);
+
+
+
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (переживание) ] (*<-lang_ru;;*);;
+
+	 <= nrel_sc_text_translation: ... (*
+
+      -> rrel_example:
+	  
+	[​​​​​​​​​​​​​​ Переживание - телесное проживание душевных состояний. ] (* <- lang_ru;; => nrel_format: format_html;; 
+
+	*);;
+
+    *);;
+
+ *);
+
+
+
+
+<- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=>nrel_main_idtf:
+	[Утв. ] (*<-lang_ru;;*);;
+
+	<=nrel_sc_text_translation: ... (*
+
+	->rrel_example:
+
+	[ Как правило, люди склонны переживать негативные состояния, хотя те, кто склонен переживать в принципе, переживают всё подряд. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+
+    *);;
+ *);
+
+
+
+<- rrel_key_sc_element: ...(*
+    <- illustration;;
+    <=nrel_sc_text_translation: ...(*
+        -> "file://images/worry.jpg"(*=>nrel_format: format_jpg;;*);;
+    *);;
+*);;
+
+emotion => nrel_inclusion:concept_worry;;
+
+
+
+	

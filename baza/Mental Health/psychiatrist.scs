@@ -1,0 +1,71 @@
+concept_psychiatrist
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+
+ 	[психиатр]
+	(*<-lang_ru;;*);
+
+	[psychiatrist]
+ 	(*<-lang_en;;*);
+
+
+
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (психиатр) ] (*<-lang_ru;;*);;
+
+	=> nrel_using_constants: {
+    	mental_illness;
+	psychiatry
+	
+
+};;
+
+	 <= nrel_sc_text_translation: ... (*
+
+      -> rrel_example:
+	  
+	[ Психиатр -- специалист с высшим образованием в области <b><sc_element sys_idtf="psychiatry"> психиатрии </b></sc_element>, области медицины, изучающей <b><sc_element sys_idtf="mental_illness"> психические расстройства </b></sc_element>. ] (* <- lang_ru;; => nrel_format: format_html;; 
+
+	*);;
+
+    *);;
+
+ *);
+
+
+
+
+<- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=>nrel_main_idtf:
+	[Утв. ] (*<-lang_ru;;*);;
+
+	=>nrel_using_constants :{
+    	concept_psychologist
+};;
+	<=nrel_sc_text_translation: ... (*
+
+	->rrel_example:
+
+	[ Не стоит путать <b><sc_element sys_idtf="concept_psychologist"> психолога </b></sc_element> с психиатром. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+
+    *);;
+ *);
+
+
+<- rrel_key_sc_element: ...(*
+    <- illustration;;
+    <=nrel_sc_text_translation: ...(*
+        -> "file://images/psychiatrist.jpg"(*=>nrel_format: format_jpg;;*);;
+    *);;
+*);;
+
+
+
+
+
+	
