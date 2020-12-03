@@ -1,0 +1,102 @@
+concept_tanning_salon=>nrel_idtf:[tanning_salon] 
+	(*
+		<-lang_en;;
+	*);;
+concept_tanning_salon=>nrel_idtf:[солярий]
+	(*
+		<-lang_ru;;	
+	*);;
+concept_tanning_salon=>nrel_main_idtf:[солярий]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+concept_tanning_salon<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр.(солярий)] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->[Солярий - специально оборудованная открытая площадка для проведения дозированных облучений прямым или рассеянным излучением, полученным от специальных эритемных ультрафиолетовых ламп, в стекло колбы которых вводятся специальные добавки, не пропускающие опасную коротковолновую часть УФ-спектра; используется для придания коже загара.](* <- lang_ru;; *);;
+	*);;
+	*);;
+
+
+
+concept_tanning_salon<-rrel_key_sc_element:...
+    (*
+        <-illustration;;
+        <=nrel_sc_text_translation:...
+    (*
+        ->rrel_example:
+        "file://images/tanning_salon.jpg"
+    (*
+        =>nrel_format:format_jpg;;
+    *);;
+    *);;
+    *);;
+
+
+
+concept_tanning_salon<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 1. Типы соляриев](* <- lang_ru;; *);;
+		=>nrel_using_constants:...
+	(*
+		->concept_body;;
+		->concept_procedure;;
+	*);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[В салонах красоты, фитнес-клубах, оздоровительных центрах можно встретить два типа соляриев — горизонтальные и вертикальные.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_tanning_salon<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 2. Эффект](* <- lang_ru;; *);;
+		=>nrel_using_constants:...
+	(*
+		->concept_body;;
+		->concept_procedure;;
+	*);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[В процессе облучения в солярии, вырабатывается меланин. Меланин придаёт коже загар. Во время загара в солярии активно идет синтез витамина D, который укрепляет кости и мышцы. Солярий готовит кожу к поездке на юг и снижает вероятность солнечных ожогов. Искусственный загар в солярии отличный антидепрессант в осеннее-зимний период.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_tanning_salon <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 3. Открытие](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Эффект солярия открыл Фридрих Вольф, немецкий учёный из Штутгарта.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_tanning_salon=>nrel_inclusion:concept_body;;
+concept_tanning_salon=>nrel_inclusion:concept_procedure;;

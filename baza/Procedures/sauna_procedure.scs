@@ -1,0 +1,103 @@
+concept_sauna_procedure=>nrel_idtf:[sauna_procedure] 
+	(*
+		<-lang_en;;
+	*);;
+concept_sauna_procedure=>nrel_idtf:[банная процедура]
+	(*
+		<-lang_ru;;	
+	*);;
+concept_sauna_procedure=>nrel_main_idtf:[банная процедура]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+concept_sauna_procedure<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр.(банная процедура)] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->[Банная процедура - совокупность теплового, водного, парового, температурного воздействий на организм для создания комплекса раздражителей, на которые организм отвечает соответствующими реакциями, с целью получения терапевтического эффекта.](* <- lang_ru;; *);;
+	*);;
+	*);;
+
+
+
+concept_sauna_procedure<-rrel_key_sc_element:...
+    (*
+        <-illustration;;
+        <=nrel_sc_text_translation:...
+    (*
+        ->rrel_example:
+        "file://images/sauna_procedure.jpeg"
+    (*
+        =>nrel_format:format_jpeg;;
+    *);;
+    *);;
+    *);;
+
+
+
+concept_sauna_procedure<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 1. Виды бань](* <- lang_ru;; *);;
+		=>nrel_using_constants:...
+	(*
+		->concept_body;;
+		->concept_heat;;
+	*);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Основные виды бань — русская, сауна (финская), сэнто (японская), термы (римская), бахник (армянская), хаммам (турецкая), ирландская.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_sauna_procedure<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 2. Применение](* <- lang_ru;; *);;
+		=>nrel_using_constants:...
+	(*
+		->concept_body;;
+		->concept_heat;;
+	*);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[В профилактических целях баня показана для закаливания организма, для восстановления после физических и нервных нагрузок, для усиления иммунитета, для тренировки терморегуляции. Полезна спортсменам, людям, склонным к простуде, страдающим хроническими заболеваниями верхних дыхательных путей, миндалин, лёгких, включая бронхиальную астму (не тяжёлую форму), на начальных стадиях гипертонии, а также больным сахарным диабетом лёгкой формы и при климактерическом синдроме.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_sauna_procedure <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 3. Инфраструктура](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Бани и сауны получили широкое распространение как место отдыха в комплексе с бассейнами и тренажёрными залами или как самостоятельные предприятия. В состав современной бани обычно входят суховоздушная сауна и парная (иногда несколько с разными условиями), джакузи, холодная ванна, нередко также солярий и пр.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+
+concept_sauna_procedure=>nrel_inclusion:concept_heat;;
+concept_sauna_procedure=>nrel_inclusion:concept_procedure;;

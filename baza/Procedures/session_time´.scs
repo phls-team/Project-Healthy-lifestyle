@@ -1,0 +1,55 @@
+rrel_session_time=>rrel_idtf:[session_time´] (* <- lang_en;; *);;
+rrel_session_time=>rrel_idtf:[время сеанса´] (* <- lang_ru;; *);;
+rrel_session_time=>rrel_main_idtf:[время сеанса´] (* <- lang_ru;; *);;
+
+rrel_session_time<-rrel_key_sc_element:...
+(*
+<-definition;;=>rrel_main_idtf:[Опр.(время сеанса´)] (* <- lang_ru;; *);;<=rrel_sc_text_translation:...
+(*
+->[Время сеанса´ - период времени, зависящий от исходных сведениий о пациенте и разновидности процедуры, необходимый для достижения выраженного эффекта от процедуры.](* <- lang_ru;; *);;
+*);;
+*);;
+
+
+rrel_session_time=>rrel_first_domain:concept_procedure;;
+rrel_session_time=>rrel_second_domain:concept_time;;
+
+
+
+rrel_session_time<-binary_relation;;
+parameter->arity;;
+arity->binary_relation;;
+binary_relation=>rrel_measurement:2;;
+2<-number;;
+
+
+
+rrel_session_time<-oriented_relation;;
+asymmetric_relation->rrel_session_time;;
+transitive_relation->rrel_session_time;;
+antireflexive_relation->rrel_session_time;;
+binary_relation=>rrel_inclusion:asymmetric_relation;;
+binary_relation=>rrel_inclusion:transitive_relation;;
+binary_relation=>rrel_inclusion:antireflexive_relation;;
+relation=>rrel_inclusion:binary_relation;;
+relation=>rrel_inclusion:oriented_relation;;
+
+
+
+
+concept_procedure<=rrel_using_constants:...
+(*
+	->rrel_key_sc_element:rrel_session_time;;
+	<-statement;;
+	=>rrel_idtf:[Утверждение 1. Определение времени сеанса](* <- lang_ru;; *);;
+	<=rrel_sc_text_translation:...
+	(*
+		->rrel_example:[Продолжительность процедуры определяется наличием специальных показаний или рекомендаций врача, косметолога, физиотерапевта.](* <- lang_ru;; *);;
+	*);;
+*);;
+
+
+
+sc_node_not_relation->asymmetric_relation;;
+asymmetric_relation=>rrel_main_idtf:
+[асимметричное отношение](* <-lang_ru;; *);;

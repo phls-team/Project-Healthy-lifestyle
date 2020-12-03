@@ -1,0 +1,55 @@
+rrel_type_of_massage=>rrel_idtf:[type_of_massage´] (* <- lang_en;; *);;
+rrel_type_of_massage=>rrel_idtf:[тип массажа´] (* <- lang_ru;; *);;
+rrel_type_of_massage=>rrel_main_idtf:[тип массажа´] (* <- lang_ru;; *);;
+
+rrel_type_of_massage<-rrel_key_sc_element:...
+(*
+<-definition;;=>rrel_main_idtf:[Опр.(тип массажа´)] (* <- lang_ru;; *);;<=rrel_sc_text_translation:...
+(*
+->[Тип массажа´ - набор приёмов физического воздействия на мышцы и кожный покров человека, имеющий отличительные признаки по назначению, способу воздействия и применяемым средствам.](* <- lang_ru;; *);;
+*);;
+*);;
+
+
+rrel_type_of_massage=>rrel_first_domain:concept_massage;;
+rrel_type_of_massage=>rrel_second_domain:concept_type;;
+
+
+
+rrel_type_of_massage<-binary_relation;;
+parameter->arity;;
+arity->binary_relation;;
+binary_relation=>rrel_measurement:2;;
+2<-number;;
+
+
+
+rrel_type_of_massage<-oriented_relation;;
+asymmetric_relation->rrel_type_of_massage;;
+transitive_relation->rrel_type_of_massage;;
+antireflexive_relation->rrel_type_of_massage;;
+binary_relation=>rrel_inclusion:asymmetric_relation;;
+binary_relation=>rrel_inclusion:transitive_relation;;
+binary_relation=>rrel_inclusion:antireflexive_relation;;
+relation=>rrel_inclusion:binary_relation;;
+relation=>rrel_inclusion:oriented_relation;;
+
+
+
+
+concept_massage<=rrel_using_constants:...
+(*
+	->rrel_key_sc_element:rrel_type_of_massage;;
+	<-statement;;
+	=>rrel_idtf:[Утверждение 1. Типы массажа](* <- lang_ru;; *);;
+	<=rrel_sc_text_translation:...
+	(*
+		->rrel_example:[Наиболее распространенными типами массажных техник являются: ручной массаж, аппаратный массаж, точечный массаж, самомассаж, тайский массаж, шиатсу, стоун-массаж.](* <- lang_ru;; *);;
+	*);;
+*);;
+
+
+
+sc_node_not_relation->asymmetric_relation;;
+asymmetric_relation=>rrel_main_idtf:
+[асимметричное отношение](* <-lang_ru;; *);;
