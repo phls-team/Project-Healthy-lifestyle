@@ -1,0 +1,134 @@
+concept_valine=>nrel_idtf:[valine] 
+	(*
+		<-lang_en;;
+	*);;
+concept_valine=>nrel_idtf:[валин]
+	(*
+		<-lang_ru;;	
+	*);;
+concept_valine=>nrel_main_idtf:[валин]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+concept_valine<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр.(валин)] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->[Валин - незаменимая разветвленная алифатическая аминокислота, одна из 20 протеиногенных аминокислот, входит в состав практически всех известных белков.](* <- lang_ru;; *);;
+	*);;
+	*);;
+
+
+
+concept_valine<-rrel_key_sc_element:...
+    (*
+        <-illustration;;
+        <=nrel_sc_text_translation:...
+    (*
+        ->rrel_example:
+        "file://images/valine-food.jpeg"
+    (*
+        =>nrel_format:format_jpeg;;
+    *);;
+    *);;
+    *);;
+
+
+
+concept_valine<-rrel_key_sc_element:...
+    (*
+        <-illustration;;
+        <=nrel_sc_text_translation:...
+    (*
+->rrel_example_1:
+"file://images/valine.jpeg"
+(*
+=>nrel_format:format_jpeg;;
+*);;
+*);;
+*);;
+
+
+
+concept_valine<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 1. Роль в организме](* <- lang_ru;; *);;
+		=>nrel_using_constants:...
+	(*
+		->concept_organic_compound;;
+		->concept_protein;;
+	*);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Один из главных компонентов в росте и синтезе тканей тела. Вместе с лейцином и изолейцином служит источником энергии в мышечных клетках, а также препятствует снижению уровня серотонина. Валин повышает мышечную координацию и понижает чувствительность организма к боли, холоду и жаре и т.д. Является основой при синтезе витамина В5.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_valine<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 2. Использование](* <- lang_ru;; *);;
+		=>nrel_using_constants:...
+	(*
+		->concept_organic_compound;;
+		->concept_protein;;
+	*);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Используется для лечения болезненных пристрастий и вызванной ими аминокислотной недостаточности, наркоманий, депрессий (несильное стимулирующее соединение); рассеянного склероза. Также необходим для поддержания нормального обмена азота в организме. ]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_valine <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 3. Незаменимая аминокислота](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Организм не синтезирует валин. Это вещество должно поступать в организм только извне, вместе с пищей.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_valine <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 4. Название](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Названо в честь растения валерианы.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+
+concept_valine=>nrel_food_source:concept_protein;;
+concept_valine=>nrel_food_supplement:concept_BCAA;;
+
+concept_valine=>nrel_inclusion:concept_protein;;

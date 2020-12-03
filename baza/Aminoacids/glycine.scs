@@ -1,0 +1,146 @@
+concept_glycine=>nrel_idtf:[glycine] 
+	(*
+		<-lang_en;;
+	*);;
+concept_glycine=>nrel_idtf:[глицин]
+	(*
+		<-lang_ru;;	
+	*);;
+concept_glycine=>nrel_main_idtf:[глицин]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+concept_glycine<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр.(глицин)] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->[Глицин (аминоуксусная кислота) - простейшая заменимая аминокислота, одна из 20 протеиногенных аминокислот,  входит в состав многих белков и биологически активных соединений; нейротрансмиттер, который может оказывать и стимулирующее, и успокоительное воздействие на мозг.](* <- lang_ru;; *);;
+	*);;
+	*);;
+
+
+
+concept_glycine<-rrel_key_sc_element:...
+    (*
+        <-illustration;;
+        <=nrel_sc_text_translation:...
+    (*
+        ->rrel_example:
+        "file://images/glycine-food.jpg"
+    (*
+        =>nrel_format:format_jpg;;
+    *);;
+    *);;
+    *);;
+
+
+
+concept_glycine<-rrel_key_sc_element:...
+    (*
+        <-illustration;;
+        <=nrel_sc_text_translation:...
+    (*
+->rrel_example_1:
+"file://images/glycine.jpg"
+(*
+=>nrel_format:format_jpg;;
+*);;
+*);;
+*);;
+
+
+
+concept_glycine<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 1. Роль в организме](* <- lang_ru;; *);;
+		=>nrel_using_constants:...
+	(*
+		->concept_organic_compound;;
+		->concept_protein;;
+	*);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Глицин нормализует деятельность мозга и восстанавливает нормальное функционирование нервной системы. Глицин повышает настроение, облегчает засыпание, улучшает качество сна, снижает воздействие угнетающих ЦНС токсинов, снимает стресс, нормализует самочувствие, успокаивает.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_glycine<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 2. Суточная потребность](* <- lang_ru;; *);;
+		=>nrel_using_constants:...
+	(*
+		->concept_organic_compound;;
+		->concept_protein;;
+	*);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Суточная потребность организма для взрослого человека в глицине составляет 3 грамма.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_glycine <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 3. Заменимая аминокислота](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Глицин не является жизненно необходимым веществом для питания человека, поскольку это вещество синтезируется в организме.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_glycine <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 4. Открытие глицина](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Глицин впервые выделен Браконнотом в 1820 г. из кислотного гидролизата желатина.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_glycine <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 5. Факт о глицине](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Название глицина происходит от греческого glykos — сладкий, из-за сладковатого вкуса аминокислоты.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_glycine=>nrel_food_source:concept_protein;;
+
+concept_glycine=>nrel_inclusion:concept_protein;;

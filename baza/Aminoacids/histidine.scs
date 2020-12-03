@@ -1,0 +1,146 @@
+concept_histidine=>nrel_idtf:[histidine] 
+	(*
+		<-lang_en;;
+	*);;
+concept_histidine=>nrel_idtf:[гистидин]
+	(*
+		<-lang_ru;;	
+	*);;
+concept_histidine=>nrel_main_idtf:[гистидин]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+concept_histidine<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр.(гистидин)] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->[Гистидин - незаменимая аминокислота, одна из 20 протеиногенных аминокислот, является одной из двух условно-незаменимых аминокислот, участвует в образовании белков и влияет на ряд метаболических реакций в организме.](* <- lang_ru;; *);;
+	*);;
+	*);;
+
+
+
+concept_histidine<-rrel_key_sc_element:...
+    (*
+        <-illustration;;
+        <=nrel_sc_text_translation:...
+    (*
+        ->rrel_example:
+        "file://images/histidine-food.jpg"
+    (*
+        =>nrel_format:format_jpg;;
+    *);;
+    *);;
+    *);;
+
+
+
+concept_histidine<-rrel_key_sc_element:...
+    (*
+        <-illustration;;
+        <=nrel_sc_text_translation:...
+    (*
+->rrel_example_1:
+"file://images/histidine.jpg"
+(*
+=>nrel_format:format_jpg;;
+*);;
+*);;
+*);;
+
+
+
+concept_histidine<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 1. Роль в организме](* <- lang_ru;; *);;
+		=>nrel_using_constants:...
+	(*
+		->concept_organic_compound;;
+		->concept_protein;;
+	*);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Гистидин способствует снабжению кислородом органов и тканей, помогает выводить из организма тяжелые металлы, восстанавливать ткани и укреплять иммунитет. Другие функции гистидина: регулирование кислотности крови, ускорение заживления ран, координирование механизмов роста, естественное восстановление организма.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_histidine<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 2. Суточная потребность](* <- lang_ru;; *);;
+		=>nrel_using_constants:...
+	(*
+		->concept_organic_compound;;
+		->concept_protein;;
+	*);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Дневная потребность в гистидине составляет 1,5 – 2,0 грамма.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_histidine <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 3. Незаменимая аминокислота](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Организм не синтезирует гистидин. Это вещество должно поступать в организм только извне, вместе с пищей.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_histidine <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 4. Открытие гистидина](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Гистидин был выделен в 1896 году одновременно двумя учѐными: Kossel из сернокислых гидролизатов протамина спермы осетра и Hedin – из белковых гидролизатов.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_histidine <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 5. Применение](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Гистидин применяется при язвенной болезни желудка и двенадцатиперстной кишки, гастритах, гепатитах, атеросклерозе, сниженном иммунитете.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_histidine=>nrel_food_source:concept_protein;;
+
+concept_histidine=>nrel_inclusion:concept_protein;;

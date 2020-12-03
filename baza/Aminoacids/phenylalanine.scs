@@ -1,0 +1,146 @@
+concept_phenylalanine=>nrel_idtf:[phenylalanine] 
+	(*
+		<-lang_en;;
+	*);;
+concept_phenylalanine=>nrel_idtf:[фенилаланин]
+	(*
+		<-lang_ru;;	
+	*);;
+concept_phenylalanine=>nrel_main_idtf:[фенилаланин]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+concept_phenylalanine<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр.(фенилаланин)] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->[Фенилаланин - незаменимая разветвленная аминокислота, одна из 20 протеиногенных аминокислот, участвует в формировании белковых молекул.](* <- lang_ru;; *);;
+	*);;
+	*);;
+
+
+
+concept_phenylalanine<-rrel_key_sc_element:...
+    (*
+        <-illustration;;
+        <=nrel_sc_text_translation:...
+    (*
+        ->rrel_example:
+        "file://images/phenylalanine-food.png"
+    (*
+        =>nrel_format:format_png;;
+    *);;
+    *);;
+    *);;
+
+
+
+concept_phenylalanine<-rrel_key_sc_element:...
+    (*
+        <-illustration;;
+        <=nrel_sc_text_translation:...
+    (*
+->rrel_example_1:
+"file://images/phenylalanine.png"
+(*
+=>nrel_format:format_png;;
+*);;
+*);;
+*);;
+
+
+
+concept_phenylalanine<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 1. Роль в организме](* <- lang_ru;; *);;
+		=>nrel_using_constants:...
+	(*
+		->concept_organic_compound;;
+		->concept_protein;;
+	*);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Фенилаланин стимулирует выработку гормонов: тирозина и меланина, регулирующих эмоциональное состояние. Фенилаланин стимулирует деятельность мозга, улучшает память и концентрацию внимания. Является одним из основных элементов в производстве коллагена. Увеличивает настроение и подавляет аппетит.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_phenylalanine<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 2. Суточная потребность](* <- lang_ru;; *);;
+		=>nrel_using_constants:...
+	(*
+		->concept_organic_compound;;
+		->concept_protein;;
+	*);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[В среднем суточная потребность организма в фенилаланине — от 2 до 4 г.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_phenylalanine <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 3. Незаменимая аминокислота](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Организм не синтезирует фенилаланин. Это вещество должно поступать в организм только извне, вместе с пищей.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_phenylalanine <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 4. Открытие фенилаланина](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Фенилаланин впервые выделили из ростков люпина Э. Шульце и И. Барбиери в 1881.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_phenylalanine <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 5. Применение](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[В отличие от искусственных стимуляторов (кофе, алкоголя), которые истощают запас энергии и, в последствии, приводят человека в состояние опустошенности и раздражения, эта аминокислота позволяет успешно справляться с раздражением и чувством тревоги. Фенилаланин способствует регуляции природного цвета кожи путем образования пигмента меланина. Фенилаланин полезен при болезни Паркинсона (снижает тяжесть симптомов — депрессия, расстройства речи, ригидность конечностей).](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_phenylalanine=>nrel_food_source:concept_protein;;
+
+concept_phenylalanine=>nrel_inclusion:concept_protein;;

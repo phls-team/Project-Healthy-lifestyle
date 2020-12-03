@@ -1,0 +1,147 @@
+concept_glutamic_acid=>nrel_idtf:[glutamic_acid] 
+	(*
+		<-lang_en;;
+	*);;
+concept_glutamic_acid=>nrel_idtf:[глутаминовая кислота]
+	(*
+		<-lang_ru;;	
+	*);;
+concept_glutamic_acid=>nrel_main_idtf:[глутаминовая кислота]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+concept_glutamic_acid<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр.(глутаминовая кислота)] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->[Глутаминовая кислота - заменимая разветвленная аминокислота, одна из 20 протеиногенных аминокислот, входит в состав белков и ряда важных низкомолекулярных соединений, является составной частью фолиевой кислоты.](* <- lang_ru;; *);;
+	*);;
+	*);;
+
+
+
+concept_glutamic_acid<-rrel_key_sc_element:...
+    (*
+        <-illustration;;
+        <=nrel_sc_text_translation:...
+    (*
+        ->rrel_example:
+        "file://images/glutamic_acid-food.jpeg"
+    (*
+        =>nrel_format:format_jpeg;;
+    *);;
+    *);;
+    *);;
+
+
+
+concept_glutamic_acid<-rrel_key_sc_element:...
+    (*
+        <-illustration;;
+        <=nrel_sc_text_translation:...
+    (*
+->rrel_example_1:
+"file://images/glutamic_acid.png"
+(*
+=>nrel_format:format_png;;
+*);;
+*);;
+*);;
+
+
+
+concept_glutamic_acid<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 1. Роль в организме](* <- lang_ru;; *);;
+		=>nrel_using_constants:...
+	(*
+		->concept_organic_compound;;
+		->concept_protein;;
+	*);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Глутаминовая кислота является необходимой для деятельности мозга и для всевозможных обменных процессов. Считается потенциальным энергетиком.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_glutamic_acid<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 2. Суточная потребность](* <- lang_ru;; *);;
+		=>nrel_using_constants:...
+	(*
+		->concept_organic_compound;;
+		->concept_protein;;
+	*);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Суточная потребность в глутаминовой кислоте выше, чем во всех других аминокислотах и составляет 16 грамм в сутки.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_glutamic_acid <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 3. Заменимая аминокислота](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Глутаминовая кислота может синтезироваться организмом в достаточном количестве.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_glutamic_acid <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 4. Открытие глутаминовой кислоты](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Глутаминовая кислота впервые была выделена из эндосперма пшеницы в 1866 г. Ритгаузеном, а в 1890 г. синтезирована Вольфом.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_glutamic_acid <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 5. Факт о глутаминовой кислоте](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Глутаминовая кислота в плазме крови вместе со своим амидом (глутамином) составляет около 1/3 всех свободных аминокислот.]
+(*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_glutamic_acid=>nrel_food_source:concept_protein;;
+
+concept_glutamic_acid=>nrel_inclusion:concept_protein;;

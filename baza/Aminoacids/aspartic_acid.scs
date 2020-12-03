@@ -1,0 +1,134 @@
+concept_aspartic_acid=>nrel_idtf:[aspartic_acid] 
+	(*
+		<-lang_en;;
+	*);;
+concept_aspartic_acid=>nrel_idtf:[аспарагиновая кислота]
+	(*
+		<-lang_ru;;	
+	*);;
+concept_aspartic_acid=>nrel_main_idtf:[аспарагиновая кислота]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+concept_aspartic_acid<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр.(аспарагиновая кислота)] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->[Аспарагиновая кислота (аминоянтарная кислота) - заменимая аминокислота, одна из 20 протеиногенных аминокислот,  присутствует в организме в составе белков и в свободном виде.](* <- lang_ru;; *);;
+	*);;
+	*);;
+
+
+
+concept_aspartic_acid<-rrel_key_sc_element:...
+    (*
+        <-illustration;;
+        <=nrel_sc_text_translation:...
+    (*
+        ->rrel_example:
+        "file://images/aspartic_acid-food.jpg"
+    (*
+        =>nrel_format:format_jpg;;
+    *);;
+    *);;
+    *);;
+
+
+
+concept_aspartic_acid<-rrel_key_sc_element:...
+    (*
+        <-illustration;;
+        <=nrel_sc_text_translation:...
+    (*
+->rrel_example_1:
+"file://images/aspartic_acid.jpeg"
+ (*
+        =>nrel_format:format_jpeg;;
+    *);;
+    *);;
+    *);;
+
+
+
+
+concept_aspartic_acid<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 1. Роль в организме](* <- lang_ru;; *);;
+		=>nrel_using_constants:...
+	(*
+		->concept_organic_compound;;
+		->concept_protein;;
+	*);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Аспаргиновая кислота — участвует в преобразовании углеводов в энергию для работы мышц. Снижает уровень аммиака в организме после длительных тренировок. Вещество является раздражителем нервной системы. Оно стимулирует работу головного мозга, улучшает когнитивные и умственные способности, а также нормализует работу эндокринной системы и функционирование РНК, ДНК; помогает переносить стрессы; избавляет от хронической усталости; участвует в выработке тестостерона; способствует очищению организма от токсинов; является источником энергии для головного мозга; поддерживает иммунную систему, повышает выработку антител и иммуноглобулина.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_aspartic_acid<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 2. Суточная потребность](* <- lang_ru;; *);;
+		=>nrel_using_constants:...
+	(*
+		->concept_organic_compound;;
+		->concept_protein;;
+	*);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Суточная потребность организма для взрослого человека в аспарагиновая кислотае составляет 6 грамм.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_aspartic_acid <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 3. Заменимая аминокислота](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Аспарагиновая кислота синтезируется в организме из других веществ.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_aspartic_acid <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 4. Открытие аспарагиновая кислотаа](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Аспарагиновая кислота выделена в 1868 г. Г. Риттхуазеном из белкового гидролизата конглутина.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+
+concept_aspartic_acid=>nrel_food_source:concept_protein;;
+
+concept_aspartic_acid=>nrel_inclusion:concept_protein;;

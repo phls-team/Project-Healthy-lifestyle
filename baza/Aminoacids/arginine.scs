@@ -1,0 +1,133 @@
+concept_arginine=>nrel_idtf:[arginine] 
+	(*
+		<-lang_en;;
+	*);;
+concept_arginine=>nrel_idtf:[аргинин]
+	(*
+		<-lang_ru;;	
+	*);;
+concept_arginine=>nrel_main_idtf:[аргинин]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+concept_arginine<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр.(аргинин)] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->[Аргинин - частично заменимая аминокислота, одна из 20 протеиногенных аминокислот,  входит в состав белков и пептидов.](* <- lang_ru;; *);;
+	*);;
+	*);;
+
+
+
+concept_arginine<-rrel_key_sc_element:...
+    (*
+        <-illustration;;
+        <=nrel_sc_text_translation:...
+    (*
+        ->rrel_example:
+        "file://images/arginine-food.jpg"
+    (*
+        =>nrel_format:format_jpg;;
+    *);;
+    *);;
+    *);;
+
+
+
+concept_arginine<-rrel_key_sc_element:...
+    (*
+        <-illustration;;
+        <=nrel_sc_text_translation:...
+    (*
+->rrel_example_1:
+"file://images/arginine.jpg"
+(*
+        =>nrel_format:format_jpg;;
+    *);;
+    *);;
+    *);;
+
+
+
+concept_arginine<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 1. Роль в организме](* <- lang_ru;; *);;
+		=>nrel_using_constants:...
+	(*
+		->concept_organic_compound;;
+		->concept_protein;;
+	*);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Аргинин стимулирует гормон роста. Служит основным источником окиси азота в организме. Повышает высвобождение глюкагона и инсулина. Положительно влияет на выработку мужских гормонов, помогает образовывать коллаген и стимулировать иммунную систему. Так же имеет ярко выраженное заживляющие действие.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_arginine<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 2. Суточная потребность](* <- lang_ru;; *);;
+		=>nrel_using_constants:...
+	(*
+		->concept_organic_compound;;
+		->concept_protein;;
+	*);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Суточная потребность организма для взрослого человека в аргинине составляет 6 грамм.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_arginine <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 3. Условно заменимая аминокислота](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[В организме человека аргинин вырабатывается в достаточном для нормального функционирования количестве, однако его выработка происходит только в организме взрослых, здоровых людей. В то же время, у детей и подростков, у пожилых и больных людей уровень синтеза аргинина часто недостаточен.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_arginine <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 4. Открытие аргинина](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Аргинин впервые выделен в 1886 г. из проростков люпина E. Schulze и E.Steiger, а структура его установлена E. Schulze и E. Winterstein в 1897 г. Название этой аминокислоты произошло от латинского argentums-серебро, так как аргинин впервые был получен в виде серебряной соли.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+
+concept_arginine=>nrel_food_source:concept_protein;;
+
+concept_arginine=>nrel_inclusion:concept_protein;;
