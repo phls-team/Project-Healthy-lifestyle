@@ -1,0 +1,118 @@
+concept_probiotics=>nrel_idtf:[probiotics] 
+	(*
+		<-lang_en;;
+	*);;
+concept_probiotics=>nrel_idtf:[пробиотики]
+	(*
+		<-lang_ru;;	
+	*);;
+concept_probiotics=>nrel_main_idtf:[пробиотики]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+concept_probiotics<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр.(пробиотики)] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->[Пробиотики - это микроорганизмы, использующиеся в терапевтических целях, а также пищевые продукты и биологически активные добавки, содержащие живые микрокультуры.](* <- lang_ru;; *);;
+	*);;
+	*);;
+
+
+
+concept_probiotics<-rrel_key_sc_element:...
+    (*
+        <-illustration;;
+        <=nrel_sc_text_translation:...
+    (*
+        ->rrel_example:
+        "file://images/probiotics.jpg"
+    (*
+        =>nrel_format:format_jpg;;
+    *);;
+    *);;
+    *);;
+
+
+
+
+
+concept_probiotics<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 1. Роль в организме](* <- lang_ru;; *);;
+		=>nrel_using_constants:...
+	(*
+		->concept_gut_flora;;
+		->concept_microbe;;
+	*);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Пробиотики обеспечивают при систематическом употреблении в пищу в виде препаратов или в составе пищевых продуктов благоприятное воздействие на организм человека в результате нормализации состава и (или) повышения биологической активности нормальной микрофлоры кишечника.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_probiotics<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 2. Классификация](* <- lang_ru;; *);;
+		=>nrel_using_constants:...
+	(*
+		->concept_gut_flora;;
+		->concept_microbe;;
+	*);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[К основным пробиотическим микроорганизмам относят лактобациллы (Lactobacillus), бифидобактерии (Bifidobacterium), пропионовокислые бактерии (Propionibacterium), стрептококки вида Streptococcus thermophilus, бактерии рода Lactococcus.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_probiotics <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 3. Эффекты пробиотиков](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Пробиотики стимулируют иммунную систему, улучшают функционирование кишечника (способствуют пищеварению и конкурируют за питательные вещества с патогенами, усиливают кишечную барьерную функцию), снижают уровень холестерина.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_probiotics <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 4. Сухие и жидкие пробиотики](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Пробиотики делятся на две группы — жидкие и сухие. Пробиотики могут быть лекарствами, пищевыми добавками, пищевыми продуктами. При приёме пробиотиков с лечебными целями целесообразно проконсультироваться с врачом.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+
+concept_probiotics=>nrel_inclusion:concept_microbe;;
