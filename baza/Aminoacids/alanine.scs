@@ -1,0 +1,148 @@
+concept_alanine=>nrel_idtf:[alanine] 
+	(*
+		<-lang_en;;
+	*);;
+concept_alanine=>nrel_idtf:[аланин]
+	(*
+		<-lang_ru;;	
+	*);;
+concept_alanine=>nrel_main_idtf:[аланин]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+concept_alanine<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр.(аланин)] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->[Аланин (аминопропионовая кислота) - заменимая аминокислота, одна из 20 протеиногенных аминокислот,  входит в состав белков организма.](* <- lang_ru;; *);;
+	*);;
+	*);;
+
+
+
+concept_alanine<-rrel_key_sc_element:...
+    (*
+        <-illustration;;
+        <=nrel_sc_text_translation:...
+    (*
+        ->rrel_example:
+        "file://images/alanine-food.jpg"
+    (*
+        =>nrel_format:format_jpg;;
+    *);;
+    *);;
+    *);;
+
+
+
+concept_alanine<-rrel_key_sc_element:...
+    (*
+        <-illustration;;
+        <=nrel_sc_text_translation:...
+    (*
+->rrel_example_1:
+"file://images/alanine.jpeg"
+(*
+        =>nrel_format:format_jpeg;;
+    *);;
+    *);;
+    *);;
+
+
+
+concept_alanine<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 1. Роль в организме](* <- lang_ru;; *);;
+		=>nrel_using_constants:...
+	(*
+		->concept_organic_compound;;
+		->concept_protein;;
+	*);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Аланин участвует в укреплении мышечной ткани и придает организму выносливость. Элемент синтезируется из молочной кислоты и регулирует уровень сахара в крови. Помимо этого, он входит в состав карнозина, который предотвращает старение клеток головного мозга.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_alanine<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 2. Суточная потребность](* <- lang_ru;; *);;
+		=>nrel_using_constants:...
+	(*
+		->concept_organic_compound;;
+		->concept_protein;;
+	*);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Суточная потребность организма для взрослого человека в аланине составляет 3 грамма.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_alanine <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 3. Заменимая аминокислота](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Легко синтезируется в организме животных и человека из безазотистых предшественников и усвояемого азота.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_alanine <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 4. Открытие аланина](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Аланин впервые выделен из фиброина шелка в 1888 г. Т. Вейлем, синтезирован А. Штреккером в 1850 г.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_alanine <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 5. Применение](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Аланин используется при доброкачественной гиперплазии предстательной железы, для поддержание концентрации сахара в крови, как источник энергии, при гипертонической болезни.
+
+](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_alanine=>nrel_food_source:concept_protein;;
+
+concept_alanine=>nrel_inclusion:concept_protein;;

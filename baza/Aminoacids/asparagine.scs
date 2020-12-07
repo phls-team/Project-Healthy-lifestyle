@@ -1,0 +1,133 @@
+concept_asparagine=>nrel_idtf:[asparagine] 
+	(*
+		<-lang_en;;
+	*);;
+concept_asparagine=>nrel_idtf:[аспарагин]
+	(*
+		<-lang_ru;;	
+	*);;
+concept_asparagine=>nrel_main_idtf:[аспарагин]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+concept_asparagine<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр.(аспарагин)] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->[Аспарагин (аминоянтарная кислота) - заменимая кислая аминокислота, одна из 20 протеиногенных аминокислот, используемые человеком для синтеза белка.](* <- lang_ru;; *);;
+	*);;
+	*);;
+
+
+
+concept_asparagine<-rrel_key_sc_element:...
+    (*
+        <-illustration;;
+        <=nrel_sc_text_translation:...
+    (*
+        ->rrel_example:
+        "file://images/asparagine-food.jpeg"
+    (*
+        =>nrel_format:format_jpeg;;
+    *);;
+    *);;
+    *);;
+
+
+
+concept_asparagine<-rrel_key_sc_element:...
+    (*
+        <-illustration;;
+        <=nrel_sc_text_translation:...
+    (*
+->rrel_example_1:
+"file://images/asparagine.jpeg"
+(*
+        =>nrel_format:format_jpeg;;
+    *);;
+    *);;
+    *);;
+
+
+
+concept_asparagine<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 1. Роль в организме](* <- lang_ru;; *);;
+		=>nrel_using_constants:...
+	(*
+		->concept_organic_compound;;
+		->concept_protein;;
+	*);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Аспаргиновая кислота участвует в преобразовании углеводов в энергию для работы мышц. Снижает уровень аммиака в организме после длительных тренировок. Является стройматериалом для иммуноглобулинов и антител.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_asparagine<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 2. Суточная потребность](* <- lang_ru;; *);;
+		=>nrel_using_constants:...
+	(*
+		->concept_organic_compound;;
+		->concept_protein;;
+	*);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Суточная потребность организма для взрослого человека в аспарагине составляет 6 грамм.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_asparagine <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 3. Заменимая аминокислота](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Аспарагин может быть синтезирован из центральных промежуточных продуктов метаболизма и не требуется в питании.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_asparagine <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 4. Открытие аспарагина](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Аспарагин был выделен из сока спаржи в 1806 году французским химиком Луи-Никола Вокленом и помощником Пьером Жаном Робике, став первой полученной человеком аминокислотой.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+
+concept_asparagine=>nrel_food_source:concept_protein;;
+
+concept_asparagine=>nrel_inclusion:concept_protein;;

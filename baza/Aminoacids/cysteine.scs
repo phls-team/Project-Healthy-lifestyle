@@ -1,0 +1,147 @@
+concept_cysteine=>nrel_idtf:[cysteine] 
+	(*
+		<-lang_en;;
+	*);;
+concept_cysteine=>nrel_idtf:[цистеин]
+	(*
+		<-lang_ru;;	
+	*);;
+concept_cysteine=>nrel_main_idtf:[цистеин]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+concept_cysteine<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр.(цистеин)] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->[Цистеин - условно заменимая разветвленная аминокислота, одна из 20 протеиногенных аминокислот, входит в состав белков и пептидов, играет важную роль в процессах формирования тканей кожи.](* <- lang_ru;; *);;
+	*);;
+	*);;
+
+
+
+concept_cysteine<-rrel_key_sc_element:...
+    (*
+        <-illustration;;
+        <=nrel_sc_text_translation:...
+    (*
+        ->rrel_example:
+        "file://images/cysteine-food.jpeg"
+    (*
+        =>nrel_format:format_jpeg;;
+    *);;
+    *);;
+    *);;
+
+
+
+concept_cysteine<-rrel_key_sc_element:...
+    (*
+        <-illustration;;
+        <=nrel_sc_text_translation:...
+    (*
+->rrel_example_1:
+"file://images/cysteine.png"
+(*
+=>nrel_format:format_png;;
+*);;
+*);;
+*);;
+
+
+
+concept_cysteine<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 1. Роль в организме](* <- lang_ru;; *);;
+		=>nrel_using_constants:...
+	(*
+		->concept_organic_compound;;
+		->concept_protein;;
+	*);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Цистеин играет ключевую роль в формировании инсулина и иммуноглобулинов (антител). Цистеин понижает негативное действие табака и алкоголя. Стимулирует работу красных и белых кровяных телец. Содержится во многих белках, из которых получается путем гидролиза. Это единственный источник органической серы для клеток организма.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_cysteine<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 2. Суточная потребность](* <- lang_ru;; *);;
+		=>nrel_using_constants:...
+	(*
+		->concept_organic_compound;;
+		->concept_protein;;
+	*);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Суточная потребность в цистеине составляет 2-3 грамма.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_cysteine <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 3. Заменимая аминокислота](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Цистеин может синтезироваться организмом в достаточном количестве.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_cysteine <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 4. Открытие цистеина](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Цистеин впервые выделен в виде цистина К. Мернером в 1899 из рога.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_cysteine <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 5. Факт о цистеине](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Концентрация цистеина в крови составляет 500—900 мкмоль/л, что выше концентрации любой другой аминокислоты.]
+(*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_cysteine=>nrel_food_source:concept_protein;;
+
+concept_cysteine=>nrel_inclusion:concept_protein;;

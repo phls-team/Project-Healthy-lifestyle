@@ -1,0 +1,147 @@
+concept_serine=>nrel_idtf:[serine] 
+	(*
+		<-lang_en;;
+	*);;
+concept_serine=>nrel_idtf:[серин]
+	(*
+		<-lang_ru;;	
+	*);;
+concept_serine=>nrel_main_idtf:[серин]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+concept_serine<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр.(серин)] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->[серин - заменимая разветвленная аминокислота, одна из 20 протеиногенных аминокислот, встречается во всех организмах в составе молекул белков, особенно много его в фиброине шелка.](* <- lang_ru;; *);;
+	*);;
+	*);;
+
+
+
+concept_serine<-rrel_key_sc_element:...
+    (*
+        <-illustration;;
+        <=nrel_sc_text_translation:...
+    (*
+        ->rrel_example:
+        "file://images/serine-food.jpeg"
+    (*
+        =>nrel_format:format_jpeg;;
+    *);;
+    *);;
+    *);;
+
+
+
+concept_serine<-rrel_key_sc_element:...
+    (*
+        <-illustration;;
+        <=nrel_sc_text_translation:...
+    (*
+->rrel_example_1:
+"file://images/serine.jpeg"
+(*
+=>nrel_format:format_jpeg;;
+*);;
+*);;
+*);;
+
+
+
+concept_serine<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 1. Роль в организме](* <- lang_ru;; *);;
+		=>nrel_using_constants:...
+	(*
+		->concept_organic_compound;;
+		->concept_protein;;
+	*);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Серин способствует укреплению иммунной системы нашего организма. Участвует в производстве клеточной энергии. Стимулирует функции нервной системы. Серин участвует в биосинтезе ряда других заменимых аминокислот: глицина, цистеина, метионина, триптофана.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_serine<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 2. Суточная потребность](* <- lang_ru;; *);;
+		=>nrel_using_constants:...
+	(*
+		->concept_organic_compound;;
+		->concept_protein;;
+	*);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Суточная потребность в серине для взрослого человека составляет 3 грамма. Принимать серин следует между приемами пищи. Вызвано это тем, что он способен увеличить уровень глюкозы в крови.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_serine <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 3. Заменимая аминокислота](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Серин может синтезироваться организмом в достаточном количестве.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_serine <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 4. Открытие серина](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Серин впервые выделен Э. Крамером в 1865 из шелка. Фиброин шелка состоит в основном из четырех аминокислот: глицина (43,8 %), аланина (26,4 %), серина (12,6 %) и тирозина (10,6 %).](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_serine <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 5. Факт о серине](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Концентрация серина в крови составляет 500—900 мкмоль/л, что выше концентрации любой другой аминокислоты.]
+(*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_serine=>nrel_food_source:concept_protein;;
+
+concept_serine=>nrel_inclusion:concept_protein;;

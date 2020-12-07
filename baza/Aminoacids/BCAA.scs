@@ -1,0 +1,119 @@
+concept_BCAA=>nrel_idtf:[BCAA] 
+	(*
+		<-lang_en;;
+	*);;
+concept_BCAA=>nrel_idtf:[BCAA]
+	(*
+		<-lang_ru;;	
+	*);;
+concept_BCAA=>nrel_main_idtf:[BCAA]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+concept_BCAA<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр.(BCAA)] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->[BCAA (аминокислоты с разветвлёнными боковыми цепями) - группа протеиногенных аминокислот, характеризующихся разветвлёнными строением алифатической боковой цепи. К таким аминокислотам относятся лейцин, изолейцин и валин.](* <- lang_ru;; *);;
+	*);;
+	*);;
+
+
+
+concept_BCAA<-rrel_key_sc_element:...
+    (*
+        <-illustration;;
+        <=nrel_sc_text_translation:...
+    (*
+        ->rrel_example:
+        "file://images/bcaa.jpeg"
+    (*
+        =>nrel_format:format_jpeg;;
+    *);;
+    *);;
+    *);;
+
+
+
+concept_BCAA<-rrel_key_sc_element:...
+    (*
+        <-illustration;;
+        <=nrel_sc_text_translation:...
+    (*
+->rrel_example_1:
+"file://images/BCAA-2.jpeg"
+(*
+        =>nrel_format:format_jpeg;;
+    *);;
+    *);;
+    *);;
+
+
+
+concept_BCAA<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 1. Роль в организме](* <- lang_ru;; *);;
+		=>nrel_using_constants:...
+	(*
+		->concept_organic_compound;;
+		->concept_protein;;
+	*);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Аминокислоты c разветвлёнными боковыми цепями играют важную роль в построении молекул белков.При мышечной работе они могут использоваться для синтеза промежуточных соединений цикла трикарбоновых кислот и глюконеогенеза, то есть выступают в качестве источников энергии. Также, эти аминокислоты имеют регуляторные функции: выступая в качестве сигнальных молекул, они регулируют процессы синтеза и деградации белков, клеточного метаболизма и роста, а также секрецию инсулина.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_BCAA<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 2. Применение](* <- lang_ru;; *);;
+		=>nrel_using_constants:...
+	(*
+		->concept_organic_compound;;
+		->concept_protein;;
+	*);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[BCAA применяется очень широко в ряде спортивных дисциплин, в частности в бодибилдинге. Культуристы утверждают, что BCAA помогает повысить выносливость, предотвращают разрушение и ускоряет восстановление мышечных белков.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_BCAA <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 3. Суточная потребность](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Рекомендуемая суточная доза BCAA — 10-20 г в зависимости от массы тела, нагрузки и получения BCAA из других источников. Специалисты рекомендуют делить суточный объем на 2-5 приемов.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+
+concept_BCAA=>nrel_food_source:concept_protein;;
+
+concept_BCAA=>nrel_inclusion:concept_protein;;

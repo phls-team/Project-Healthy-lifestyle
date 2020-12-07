@@ -1,0 +1,151 @@
+concept_leucine=>nrel_idtf:[leucine] 
+	(*
+		<-lang_en;;
+	*);;
+concept_leucine=>nrel_idtf:[лейцин]
+	(*
+		<-lang_ru;;	
+	*);;
+concept_leucine=>nrel_main_idtf:[лейцин]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+concept_leucine<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр.(Лейцин)] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->[Лейцин - незаменимая разветвленная аминокислота, одна из 20 протеиногенных аминокислот, входит в состав всех природных белков.](* <- lang_ru;; *);;
+	*);;
+	*);;
+
+
+
+concept_leucine<-rrel_key_sc_element:...
+    (*
+        <-illustration;;
+        <=nrel_sc_text_translation:...
+    (*
+        ->rrel_example:
+        "file://images/leucine-food.jpeg"
+    (*
+        =>nrel_format:format_jpeg;;
+    *);;
+    *);;
+    *);;
+
+
+
+concept_leucine<-rrel_key_sc_element:...
+    (*
+        <-illustration;;
+        <=nrel_sc_text_translation:...
+    (*
+->rrel_example_1:
+"file://images/leucine.jpeg"
+(*
+=>nrel_format:format_jpeg;;
+*);;
+*);;
+*);;
+
+
+
+concept_leucine<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 1. Роль в организме](* <- lang_ru;; *);;
+		=>nrel_using_constants:...
+	(*
+		->concept_organic_compound;;
+		->concept_protein;;
+	*);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Лейцин участвует в обеспечении азотистого равновесия, в обмене белков и углеводов. Предохраняет мышцы и другие ткани, за исключением костной, от постоянного распада. Лейцин необходим для построения и развития мышечной ткани, синтеза протеина организмом, для укрепления иммунной системы. Понижает содержание сахара в крови и способствует быстрейшему заживлению ран и срастанию костей. Лейцин предотвращает перепроизводство серотонина и наступление усталости, связанное с этим процессом.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_leucine<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 2. Суточная потребность](* <- lang_ru;; *);;
+		=>nrel_using_constants:...
+	(*
+		->concept_organic_compound;;
+		->concept_protein;;
+	*);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[В среднем суточная потребность организма в лейцине для здорового человека составляет 4-6 грамм.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_leucine <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 3. Незаменимая аминокислота](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Организм не синтезирует лейцин. Это вещество должно поступать в организм только извне, вместе с пищей.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_leucine <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 4. Открытие лейцина](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Впервые выделен из мышечного волокна и шерсти в 1820 году А. Браконно. Впервые синтезирован взаимодействием 2-бром-4-метилпентановой кислоты с аммиаком в 1904 году Э.Фишером.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_leucine <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 5. Применение](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Лейцин применяется при лечении заболеваний печени, анемии, токсикозах, невритах, мышечной дистрофии, полиомиелите, а также при некоторых психических заболеваниях. Способствует лечению костей, кожи и мышечной ткани и рекомендуется в период восстановления после хирургических операций и травм.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_leucine=>nrel_food_source:concept_protein;;
+concept_leucine=>nrel_food_supplement:concept_BCAA;;
+
+concept_leucine=>nrel_inclusion:concept_protein;;
+
+sc_node_norole_relation->nrel_food_supplement;;
+nrel_food_supplement=>nrel_main_idtf:
+[пищевая добавка](* <-lang_ru;; *);;

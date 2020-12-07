@@ -1,0 +1,55 @@
+nrel_content_of_lysine=>nrel_idtf:[content_of_lysine*] (* <- lang_en;; *);;
+nrel_content_of_lysine=>nrel_idtf:[содержание лизина*] (* <- lang_ru;; *);;
+nrel_content_of_lysine=>nrel_main_idtf:[содержание лизина*] (* <- lang_ru;; *);;
+
+nrel_content_of_lysine<-rrel_key_sc_element:...
+(*
+<-definition;;=>nrel_main_idtf:[Опр.(содержание лизина*)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+(*
+->[Содержание лизина* - продукт, являющийся пищевым источником незаменимой аминокислоты Лизин.](* <- lang_ru;; *);;
+*);;
+*);;
+
+
+nrel_content_of_lysine=>nrel_first_domain:concept_content;;
+nrel_content_of_lysine=>nrel_second_domain:concept_lysine;;
+
+
+
+nrel_content_of_lysine<-binary_relation;;
+parameter->arity;;
+arity->binary_relation;;
+binary_relation=>nrel_measurement:2;;
+2<-number;;
+
+
+
+nrel_content_of_lysine<-oriented_relation;;
+asymmetric_relation->nrel_content_of_lysine;;
+transitive_relation->nrel_content_of_lysine;;
+antireflexive_relation->nrel_content_of_lysine;;
+binary_relation=>nrel_inclusion:asymmetric_relation;;
+binary_relation=>nrel_inclusion:transitive_relation;;
+binary_relation=>nrel_inclusion:antireflexive_relation;;
+relation=>nrel_inclusion:binary_relation;;
+relation=>nrel_inclusion:oriented_relation;;
+
+
+
+
+concept_lysine<=nrel_using_constants:...
+(*
+	->rrel_key_sc_element:nrel_content_of_lysine;;
+	<-statement;;
+	=>nrel_idtf:[Утверждение 1. Лизин в пище](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Лучшие пищевые источники лизина: рыбные блюда; пшеница; разные сорта мяса; молочная продукция; многие сорта орехов.](* <- lang_ru;; *);;
+	*);;
+*);;
+
+
+
+sc_node_not_relation->asymmetric_relation;;
+asymmetric_relation=>nrel_main_idtf:
+[асимметричное отношение](* <-lang_ru;; *);;

@@ -1,0 +1,135 @@
+concept_methionine=>nrel_idtf:[methionine] 
+	(*
+		<-lang_en;;
+	*);;
+concept_methionine=>nrel_idtf:[метионин]
+	(*
+		<-lang_ru;;	
+	*);;
+concept_methionine=>nrel_main_idtf:[метионин]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+concept_methionine<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр.(метионин)] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->[Метионин - незаменимая алифатическая серосодержащая аминокислота, одна из 20 протеиногенных аминокислот, является составной частью большого количества белков и пептидов, обладает жирорастворимыми свойствами,входит в триаду аминокислот, особо учитываемых при определении общей полноценности питания.](* <- lang_ru;; *);;
+	*);;
+	*);;
+
+
+
+concept_methionine<-rrel_key_sc_element:...
+    (*
+        <-illustration;;
+        <=nrel_sc_text_translation:...
+    (*
+        ->rrel_example:
+        "file://images/methionine-food.jpeg"
+    (*
+        =>nrel_format:format_jpeg;;
+    *);;
+    *);;
+    *);;
+
+
+
+concept_methionine<-rrel_key_sc_element:...
+    (*
+        <-illustration;;
+        <=nrel_sc_text_translation:...
+    (*
+->rrel_example_1:
+"file://images/methionine.png"
+(*
+=>nrel_format:format_png;;
+*);;
+*);;
+*);;
+
+
+
+concept_methionine<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 1. Роль в организме](* <- lang_ru;; *);;
+		=>nrel_using_constants:...
+	(*
+		->concept_organic_compound;;
+		->concept_protein;;
+	*);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Используется организмом во время синтеза адреналина, холина, цистеина и других, необходимых организму веществ. Находит применение при лечении психических заболеваний, т.к. снижает концентрацию гистамина в крови.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_methionine<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 2. Суточная потребность](* <- lang_ru;; *);;
+		=>nrel_using_constants:...
+	(*
+		->concept_organic_compound;;
+		->concept_protein;;
+	*);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Суточная потребность организма в метионине составляет 2-4 грамма.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_methionine <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 3. Незаменимая аминокислота](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Организм не синтезирует метионин. Это вещество должно поступать в организм только извне, вместе с пищей.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+
+
+concept_methionine <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 4. Открытие](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Впервые метионин выделен Мюллером из продуктов гидролиза казеина в 1922 году, вскоре было установлено его строение, а в 1928 году осуществлен синтез учеными Берджером и Койн.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+
+concept_methionine=>nrel_food_source:concept_protein;;
+
+concept_methionine=>nrel_inclusion:concept_protein;;
