@@ -1,0 +1,149 @@
+concept_tryptophan=>nrel_idtf:[tryptophan] 
+	(*
+		<-lang_en;;
+	*);;
+concept_tryptophan=>nrel_idtf:[триптофан]
+	(*
+		<-lang_ru;;	
+	*);;
+concept_tryptophan=>nrel_main_idtf:[триптофан]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+concept_tryptophan<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр.(триптофан)] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->[Триптофан - незаменимая алифатическая аминокислота, одна из 20 протеиногенных аминокислот, является составной частью белков всех известных живых организмов, входит в триаду аминокислот, особо учитываемых при определении общей полноценности питания.](* <- lang_ru;; *);;
+	*);;
+	*);;
+
+
+
+concept_tryptophan<-rrel_key_sc_element:...
+    (*
+        <-illustration;;
+        <=nrel_sc_text_translation:...
+    (*
+        ->rrel_example:
+        "file://images/tryptophan-food.jpg"
+    (*
+        =>nrel_format:format_jpg;;
+    *);;
+    *);;
+    *);;
+
+
+
+concept_tryptophan<-rrel_key_sc_element:...
+    (*
+        <-illustration;;
+        <=nrel_sc_text_translation:...
+    (*
+->rrel_example_1:
+"file://images/tryptophan.png"
+(*
+=>nrel_format:format_png;;
+*);;
+*);;
+*);;
+
+
+
+concept_tryptophan<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 1. Роль в организме](* <- lang_ru;; *);;
+		=>nrel_using_constants:...
+	(*
+		->concept_organic_compound;;
+		->concept_protein;;
+	*);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Триптофан является источником серотонина, триптамина, мелатонина. Триптофан способствует высвобождению гормонов роста и помогает подавлять аппетит. Триптофан используется для борьбы с бессонницей и нарушениями ритмов сна, применяется при депрессивных состояниях и тревогах.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_tryptophan<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 2. Суточная потребность](* <- lang_ru;; *);;
+		=>nrel_using_constants:...
+	(*
+		->concept_organic_compound;;
+		->concept_protein;;
+	*);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Суточная потребность организма в триптофане составляет 0,25 грамма.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_tryptophan <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 3. Незаменимая аминокислота](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Организм не синтезирует триптофан. Это вещество должно поступать в организм только извне, вместе с пищей.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+
+
+concept_tryptophan <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 4. Открытие](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Впервые триптофан был выделен Ф. Гопкинсом и С. Колем в 1902 г. из продуктов переваривания казеина панкреатическим соком.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_tryptophan <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 5. Факт о триптофане](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Триптофан имеет самую низкую концентрацию в организме среди всех аминокислот.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+
+concept_tryptophan=>nrel_food_source:concept_protein;;
+
+concept_tryptophan=>nrel_inclusion:concept_protein;;

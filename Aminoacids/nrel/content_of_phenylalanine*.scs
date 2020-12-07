@@ -1,0 +1,55 @@
+nrel_content_of_phenylalanine=>nrel_idtf:[content_of_phenylalanine*] (* <- lang_en;; *);;
+nrel_content_of_phenylalanine=>nrel_idtf:[содержание фенилаланина*] (* <- lang_ru;; *);;
+nrel_content_of_phenylalanine=>nrel_main_idtf:[содержание фенилаланина*] (* <- lang_ru;; *);;
+
+nrel_content_of_phenylalanine<-rrel_key_sc_element:...
+(*
+<-definition;;=>nrel_main_idtf:[Опр.(содержание фенилаланина*)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+(*
+->[Содержание фенилаланина* - продукт, являющийся пищевым источником незаменимой аминокислоты Фенилаланин.](* <- lang_ru;; *);;
+*);;
+*);;
+
+
+nrel_content_of_phenylalanine=>nrel_first_domain:concept_content;;
+nrel_content_of_phenylalanine=>nrel_second_domain:concept_phenylalanine;;
+
+
+
+nrel_content_of_phenylalanine<-binary_relation;;
+parameter->arity;;
+arity->binary_relation;;
+binary_relation=>nrel_measurement:2;;
+2<-number;;
+
+
+
+nrel_content_of_phenylalanine<-oriented_relation;;
+asymmetric_relation->nrel_content_of_phenylalanine;;
+transitive_relation->nrel_content_of_phenylalanine;;
+antireflexive_relation->nrel_content_of_phenylalanine;;
+binary_relation=>nrel_inclusion:asymmetric_relation;;
+binary_relation=>nrel_inclusion:transitive_relation;;
+binary_relation=>nrel_inclusion:antireflexive_relation;;
+relation=>nrel_inclusion:binary_relation;;
+relation=>nrel_inclusion:oriented_relation;;
+
+
+
+
+concept_phenylalanine<=nrel_using_constants:...
+(*
+	->rrel_key_sc_element:nrel_content_of_phenylalanine;;
+	<-statement;;
+	=>nrel_idtf:[Утверждение 1. Фенилаланин в пище](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Продукты, из которых можно получить незаменимую аминокислоту Фенилаланин: бобовые культуры; молоко; натуральный творог; разные виды орехов; мясо — куриное филе и говядина; различные сорта рыбы.](* <- lang_ru;; *);;
+	*);;
+*);;
+
+
+
+sc_node_not_relation->asymmetric_relation;;
+asymmetric_relation=>nrel_main_idtf:
+[асимметричное отношение](* <-lang_ru;; *);;

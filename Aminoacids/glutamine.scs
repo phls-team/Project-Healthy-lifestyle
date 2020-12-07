@@ -1,0 +1,147 @@
+concept_glutamine=>nrel_idtf:[glutamine] 
+	(*
+		<-lang_en;;
+	*);;
+concept_glutamine=>nrel_idtf:[глутамин]
+	(*
+		<-lang_ru;;	
+	*);;
+concept_glutamine=>nrel_main_idtf:[глутамин]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+concept_glutamine<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр.(глутамин)] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->[Глутамин - заменимая разветвленная аминокислота, одна из 20 протеиногенных аминокислот, является источником для построения аминокислот в организме.](* <- lang_ru;; *);;
+	*);;
+	*);;
+
+
+
+concept_glutamine<-rrel_key_sc_element:...
+    (*
+        <-illustration;;
+        <=nrel_sc_text_translation:...
+    (*
+        ->rrel_example:
+        "file://images/glutamine-food.jpeg"
+    (*
+        =>nrel_format:format_jpeg;;
+    *);;
+    *);;
+    *);;
+
+
+
+concept_glutamine<-rrel_key_sc_element:...
+    (*
+        <-illustration;;
+        <=nrel_sc_text_translation:...
+    (*
+->rrel_example_1:
+"file://images/glutamine.jpeg"
+(*
+=>nrel_format:format_jpeg;;
+*);;
+*);;
+*);;
+
+
+
+concept_glutamine<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 1. Роль в организме](* <- lang_ru;; *);;
+		=>nrel_using_constants:...
+	(*
+		->concept_organic_compound;;
+		->concept_protein;;
+	*);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Глутамин является важной кислотой для иммунитета. Служит источником энергии для почек, кишечника и мозга. Серьезно стимулирует деятельность мозга, улучшает память и концентрацию внимания.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_glutamine<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 2. Суточная потребность](* <- lang_ru;; *);;
+		=>nrel_using_constants:...
+	(*
+		->concept_organic_compound;;
+		->concept_protein;;
+	*);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Суточная потребность в глутамине составляет 16 грамм.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_glutamine <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 3. Заменимая аминокислота](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Глутамин может синтезироваться организмом в достаточном количестве.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_glutamine <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 4. Открытие глутамина](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Глутамин Впервые выделен Е. Шульце в 1877 из сахарной свеклы.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_glutamine <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 5. Факт о глутамине](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Концентрация глутамина в крови составляет 500—900 мкмоль/л, что выше концентрации любой другой аминокислоты.]
+(*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_glutamine=>nrel_food_source:concept_protein;;
+
+concept_glutamine=>nrel_inclusion:concept_protein;;

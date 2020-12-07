@@ -1,0 +1,147 @@
+concept_tyrosine=>nrel_idtf:[tyrosine] 
+	(*
+		<-lang_en;;
+	*);;
+concept_tyrosine=>nrel_idtf:[тирозин]
+	(*
+		<-lang_ru;;	
+	*);;
+concept_tyrosine=>nrel_main_idtf:[тирозин]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+concept_tyrosine<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр.(тирозин)] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->[Тирозин - заменимая разветвленная аминокислота, одна из 20 протеиногенных аминокислот, входит в состав белков и ферментов всех известных живых организмов.](* <- lang_ru;; *);;
+	*);;
+	*);;
+
+
+
+concept_tyrosine<-rrel_key_sc_element:...
+    (*
+        <-illustration;;
+        <=nrel_sc_text_translation:...
+    (*
+        ->rrel_example:
+        "file://images/tyrosine-food.jpg"
+    (*
+        =>nrel_format:format_jpg;;
+    *);;
+    *);;
+    *);;
+
+
+
+concept_tyrosine<-rrel_key_sc_element:...
+    (*
+        <-illustration;;
+        <=nrel_sc_text_translation:...
+    (*
+->rrel_example_1:
+"file://images/tyrosine.jpeg"
+(*
+=>nrel_format:format_jpeg;;
+*);;
+*);;
+*);;
+
+
+
+concept_tyrosine<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 1. Роль в организме](* <- lang_ru;; *);;
+		=>nrel_using_constants:...
+	(*
+		->concept_organic_compound;;
+		->concept_protein;;
+	*);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Тирозин необходим для нормальной работы надпочечников, щитовидной железы и гипофиза, создания красных и белых кровяных телец, синтеза меланина, пигмента кожи и волос. Тирозин обладает мощными стимулирующими свойствами, помогает при хронической депрессии. Тирозин  регулирует давление крови и мочеиспускание, а также участвует в синтезе адреналина.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_tyrosine<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 2. Суточная потребность](* <- lang_ru;; *);;
+		=>nrel_using_constants:...
+	(*
+		->concept_organic_compound;;
+		->concept_protein;;
+	*);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Суточная потребность взрослого человека тирозина 3-4 грамма сутки.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_tyrosine <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 3. Заменимая аминокислота](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Тирозин может синтезироваться организмом в достаточном количестве.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_tyrosine <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 4. Открытие тирозина](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Впервые тирозин выделен в 1849 г. Ф. Боппом из казеина.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_tyrosine <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 5. Факт о тирозине](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Название тирозин происходит от греческого tyros, что означает сыр, поскольку именно в сыре было впервые обнаружено эту аминокислоту.]
+(*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_tyrosine=>nrel_food_source:concept_protein;;
+
+concept_tyrosine=>nrel_inclusion:concept_protein;;

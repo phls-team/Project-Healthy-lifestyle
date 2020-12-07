@@ -1,0 +1,133 @@
+concept_isoleucine=>nrel_idtf:[isoleucine] 
+	(*
+		<-lang_en;;
+	*);;
+concept_isoleucine=>nrel_idtf:[изолейцин]
+	(*
+		<-lang_ru;;	
+	*);;
+concept_isoleucine=>nrel_main_idtf:[изолейцин]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+concept_isoleucine<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр.(изолейцин)] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->[Изолейцин - незаменимая разветвленная аминокислота, одна из 20 протеиногенных аминокислот, участвует в создании белковых молекул.](* <- lang_ru;; *);;
+	*);;
+	*);;
+
+
+
+concept_isoleucine<-rrel_key_sc_element:...
+    (*
+        <-illustration;;
+        <=nrel_sc_text_translation:...
+    (*
+        ->rrel_example:
+        "file://images/isoleucine-food.jpeg"
+    (*
+        =>nrel_format:format_jpeg;;
+    *);;
+    *);;
+    *);;
+
+
+
+concept_isoleucine<-rrel_key_sc_element:...
+    (*
+        <-illustration;;
+        <=nrel_sc_text_translation:...
+    (*
+->rrel_example_1:
+"file://images/isoleucine.png"
+(*
+=>nrel_format:format_png;;
+*);;
+*);;
+*);;
+
+
+
+concept_isoleucine<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 1. Роль в организме](* <- lang_ru;; *);;
+		=>nrel_using_constants:...
+	(*
+		->concept_organic_compound;;
+		->concept_protein;;
+	*);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Изолейцин способствует быстрейшему заживлению тканей, регулирует уровень глюкозы и холестерина в крови, позволяет мышцам восстанавливаться после физических нагрузок. Изолейцин является обязательным участником энергетического обмена. Эта аминокислота – источник энергии для клеток мышц.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_isoleucine<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 2. Суточная потребность](* <- lang_ru;; *);;
+		=>nrel_using_constants:...
+	(*
+		->concept_organic_compound;;
+		->concept_protein;;
+	*);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Суточная норма потребления изолейцина равна 3-4 грамма.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_isoleucine <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 3. Незаменимая аминокислота](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Организм не синтезирует изолейцин. Это вещество должно поступать в организм только извне, вместе с пищей.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_isoleucine <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 4. Открытие изолейцина](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Изолейцин обнаружен Ф. Эрлихом в 1904 году в продуктах распада белка фибрина.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_isoleucine=>nrel_food_source:concept_protein;;
+concept_isoleucine=>nrel_food_supplement:concept_BCAA;;
+
+concept_isoleucine=>nrel_inclusion:concept_protein;;

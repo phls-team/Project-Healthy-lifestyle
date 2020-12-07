@@ -1,0 +1,135 @@
+concept_threonine=>nrel_idtf:[threonine] 
+	(*
+		<-lang_en;;
+	*);;
+concept_threonine=>nrel_idtf:[треонин]
+	(*
+		<-lang_ru;;	
+	*);;
+concept_threonine=>nrel_main_idtf:[треонин]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+concept_threonine<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр.(треонин)] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->[Треонин - незаменимая алифатическая аминокислота, одна из 20 протеиногенных аминокислот, входит в состав всех белков, за исключением протаминов.](* <- lang_ru;; *);;
+	*);;
+	*);;
+
+
+
+concept_threonine<-rrel_key_sc_element:...
+    (*
+        <-illustration;;
+        <=nrel_sc_text_translation:...
+    (*
+        ->rrel_example:
+        "file://images/threonine-food.jpg"
+    (*
+        =>nrel_format:format_jpg;;
+    *);;
+    *);;
+    *);;
+
+
+
+concept_threonine<-rrel_key_sc_element:...
+    (*
+        <-illustration;;
+        <=nrel_sc_text_translation:...
+    (*
+->rrel_example_1:
+"file://images/threonine .png"
+(*
+=>nrel_format:format_png;;
+*);;
+*);;
+*);;
+
+
+
+concept_threonine<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 1. Роль в организме](* <- lang_ru;; *);;
+		=>nrel_using_constants:...
+	(*
+		->concept_organic_compound;;
+		->concept_protein;;
+	*);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Треонин участвует в синтезе коллагена и эластина, в белковом и жировом обмене, стимулирует иммунитет и помогает работе печени, препятствуя отложению в ней жиров. Треонин способствует нормальному росту, поэтому дети и подростки нуждаются в более активном потреблении продуктов, богатых треонином.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_threonine<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 2. Суточная потребность](* <- lang_ru;; *);;
+		=>nrel_using_constants:...
+	(*
+		->concept_organic_compound;;
+		->concept_protein;;
+	*);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Суточная потребность организма в метионине составляет 0,5 грамма.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_threonine <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 3. Незаменимая аминокислота](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Организм не синтезирует треонин. Это вещество должно поступать в организм только извне, вместе с пищей.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+
+
+concept_threonine <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 4. Открытие](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Треонин был обнаружен в гусиных перьях Н.Д. Зелинским и В.С. Садиковым, впервые выделен в 1925 г. С. Шрайвером и X. Бустоном из белка овса.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+
+concept_threonine=>nrel_food_source:concept_protein;;
+
+concept_threonine=>nrel_inclusion:concept_protein;;

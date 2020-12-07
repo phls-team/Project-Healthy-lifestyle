@@ -1,0 +1,104 @@
+concept_lactobacillus=>nrel_idtf:[lactobacillus] 
+	(*
+		<-lang_en;;
+	*);;
+concept_lactobacillus=>nrel_idtf:[лактобактерии]
+	(*
+		<-lang_ru;;	
+	*);;
+concept_lactobacillus=>nrel_main_idtf:[лактобактерии]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+concept_lactobacillus<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр.(лактобактерии)] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->[Лактобактерии - пробиотик, род бактерий, обладающий способностью превращать лактозу и прочие углеводы в молочную кислоту, составляют значительную часть кишечной микрофлоры.](* <- lang_ru;; *);;
+	*);;
+	*);;
+
+
+
+concept_lactobacillus<-rrel_key_sc_element:...
+    (*
+        <-illustration;;
+        <=nrel_sc_text_translation:...
+    (*
+        ->rrel_example:
+        "file://images/lactobacillus.png"
+    (*
+        =>nrel_format:format_png;;
+    *);;
+    *);;
+    *);;
+
+
+
+
+
+concept_lactobacillus<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 1. Роль в организме](* <- lang_ru;; *);;
+		=>nrel_using_constants:...
+	(*
+		->concept_gut_flora;;
+		->concept_bacteria;;
+	*);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Лечебный эффект препаратов, которые содержат лактобактерии, обусловлен антагонистическим действием лактобактерий по отношению к патогенным микроорганизмам, включая стафилококки, энтеропатогенные кишечные палочки, протеи, шигеллы. Препараты лактобактерий улучшают обменные процессы, препятствуют формированию затяжных форм кишечных заболеваний, повышают неспецифическую резистентность организма. Лактобактерии реутери вырабатывают вещество реутерин, которое подавляет рост патогенной флоры в кишечнике и не влияет на рост собственной полезной флоры]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_lactobacillus<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 2. В медицине](* <- lang_ru;; *);;
+		=>nrel_using_constants:...
+	(*
+		->concept_gut_flora;;
+		->concept_bacteria;;
+	*);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Штаммы молочнокислых бактерий используют в производстве медицинских препаратов — пробиотиков, предназначенных для восстановления нормальной микрофлоры кишечника и влагалища (после инфекционных заболеваний, антибиотикотерапии).]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_lactobacillus <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 3. В пищевой промышленности](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Некоторые виды Lactobacillus нашли применение в промышленности для производства кефира, йогурта, сыров. Лактобактерии участвуют в процессах засолки овощей, в приготовлении маринадов и других продуктов, используют также синтетическую и биотехнологическую молочную кислоту.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+
+concept_lactobacillus=>nrel_inclusion:concept_bacteria;;
