@@ -1,0 +1,104 @@
+concept_bifidobacterium=>nrel_idtf:[bifidobacterium] 
+	(*
+		<-lang_en;;
+	*);;
+concept_bifidobacterium=>nrel_idtf:[бифидобактерии]
+	(*
+		<-lang_ru;;	
+	*);;
+concept_bifidobacterium=>nrel_main_idtf:[бифидобактерии]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+concept_bifidobacterium<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр.(бифидобактерии)] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->[Бифидобактерии - пробиотик, род бактерий, важнейший представитель микрофлоры человека, поддерживающий гомеостаз организма.](* <- lang_ru;; *);;
+	*);;
+	*);;
+
+
+
+concept_bifidobacterium<-rrel_key_sc_element:...
+    (*
+        <-illustration;;
+        <=nrel_sc_text_translation:...
+    (*
+        ->rrel_example:
+        "file://images/bifidobacterium.jpeg"
+    (*
+        =>nrel_format:format_jpeg;;
+    *);;
+    *);;
+    *);;
+
+
+
+
+
+concept_bifidobacterium<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 1. Роль в организме](* <- lang_ru;; *);;
+		=>nrel_using_constants:...
+	(*
+		->concept_gut_flora;;
+		->concept_microbe;;
+	*);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Бифидобактерии осуществляют физиологическую защиту кишечного барьера от проникновения микробов и токсинов во внутреннюю среду организма; обладают высокой антагонистической активностью по отношению к патогенным и условно патогенным микроорганизмам; синтезируют аминокислоты и белки, витамин К, витамины группы В: B1 — тиамин, B2 — рибофлавин, B5 — пантотеновую кислоту, B3 — никотиновую кислоту, B6 — пиридоксин, В9 — фолиевую кислоту; способствуют усилению процессов всасывания через стенки кишечника ионов кальция, железа, витамина D.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_bifidobacterium<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 2. Применение](* <- lang_ru;; *);;
+		=>nrel_using_constants:...
+	(*
+		->concept_gut_flora;;
+		->concept_microbe;;
+	*);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Живую культуру бифидобактерий используют для изготовления лекарственных препаратов, используемых для нормализации микрофлоры кишечника и противодиарейной терапии.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_bifidobacterium <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 3. Факт о бифидобактериях](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Количество микробов в организме взрослого человека в норме — 109—1010 КОЕ/гр. Бифидобактерии составляют 80—90 % кишечной флоры детей, находящихся на грудном вскармливани](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+
+concept_bifidobacterium=>nrel_inclusion:concept_microbe;;
