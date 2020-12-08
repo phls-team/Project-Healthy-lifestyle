@@ -1,0 +1,601 @@
+agent_for_calculate_degree_of_obesity
+=> nrel_main_idtf:
+	[агентная scp-программа логического вывода по определению степени ожирения спортсмена основываясь на его ИМТ] 
+	(* <- lang_ru;; *);
+	[agent scp-program of calculate degree of obesity of an athlete based on his BMI] 
+	(* <- lang_en;; *);
+
+<- agent_scp_program;;
+
+scp_program -> agent_for_calculate_degree_of_obesity
+	(*
+		-> rrel_params: ..agent_for_calculate_degree_of_obesity_params 
+			(*
+				-> rrel_1: rrel_in: _event;;
+				-> rrel_2: rrel_in: _input_arc;;
+			*);;
+
+		->rrel_operators: ..agent_for_calculate_degree_of_obesity_operator_set 
+			(*
+				->rrel_init: ..agent_for_calculate_degree_of_obesity_operator1 
+					(*
+						<- searchElStr3;;
+
+						-> rrel_1: rrel_assign: rrel_scp_var: _temp;;
+						-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
+						-> rrel_3: rrel_assign: rrel_scp_var: _quest;;
+
+						=>nrel_goto: ..agent_for_calculate_degree_of_obesity_operator2;;
+					*);;
+				-> ..agent_for_calculate_degree_of_obesity_operator2 
+					(*
+						<- searchElStr3;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_const: question_calculate_degree_of_obesity ;;
+						-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+						=>nrel_then: ..agent_for_calculate_degree_of_obesity_operator3;;
+						=>nrel_else: ..agent_for_calculate_degree_of_obesity_operator_return;;
+					*);;
+				-> ..agent_for_calculate_degree_of_obesity_operator3 
+					(*
+						<- searchElStr3;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+						-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+						-> rrel_3: rrel_assign: rrel_scp_var: _param;;
+						-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: rrel_1;;
+
+						=>nrel_then: ..agent_for_calculate_degree_of_obesity_operator4;;
+						=>nrel_else: ..agent_for_calculate_degree_of_obesity_operator_return;;
+					*);;
+				//Создание узла, где будет ответ
+				-> ..agent_for_calculate_degree_of_obesity_operator4
+					(*
+						<- genEl ;;
+
+						-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _answer ;;
+
+					 	=> nrel_goto: ..agent_for_calculate_degree_of_obesity_operator5;;
+					*);;
+				//Определение является ли параметр спортсменом
+				-> ..agent_for_calculate_degree_of_obesity_operator5
+					(*
+						<- searchElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_const: concept_person ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _param ;;
+
+						=> nrel_then: ..agent_for_calculate_degree_of_obesity_operator5a ;;
+						=> nrel_else: ..agent_for_calculate_degree_of_obesity_operator_return ;;
+					*);;
+				-> ..agent_for_calculate_degree_of_obesity_operator5a 
+						(*
+						<- printEl;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _param;;
+
+						=> nrel_goto: ..agent_for_calculate_degree_of_obesity_operator6_0;;
+						*);;
+				//Обращение к элементам вес и рост параметра
+				-> ..agent_for_calculate_degree_of_obesity_operator6_0
+					(*
+						<- searchElStr5 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _param ;;
+						-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc1 ;;
+						-> rrel_3: rrel_assign: rrel_scp_var: _weight ;;
+						-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2 ;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_weight ;;
+
+						=> nrel_then: ..agent_for_calculate_degree_of_obesity_operator6 ;;
+						=> nrel_else: ..agent_for_calculate_degree_of_obesity_operator_return ;;
+					*);;
+
+				-> ..agent_for_calculate_degree_of_obesity_operator6
+					(*
+						<- searchElStr5 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _weight ;;
+						-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc1 ;;
+						-> rrel_3: rrel_assign: rrel_scp_var: rrel_link: _weight_link ;;
+						-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2 ;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_system_identifier ;;
+
+						=> nrel_then: ..agent_for_calculate_degree_of_obesity_operator7_0 ;;
+						=> nrel_else: ..agent_for_calculate_degree_of_obesity_operator_return ;;
+					*);;
+
+				-> ..agent_for_calculate_degree_of_obesity_operator7_0
+					(*
+						<- searchElStr5 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _param ;;
+						-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc1 ;;
+						-> rrel_3: rrel_assign: rrel_scp_var: _height ;;
+						-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2 ;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_height ;;
+
+						=> nrel_then: ..agent_for_calculate_degree_of_obesity_operator7 ;;
+						=> nrel_else: ..agent_for_calculate_degree_of_obesity_operator_return ;;
+					*);;
+
+				-> ..agent_for_calculate_degree_of_obesity_operator7
+					(*
+						<- searchElStr5 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _height ;;
+						-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc1 ;;
+						-> rrel_3: rrel_assign: rrel_scp_var: rrel_link: _height_link ;;
+						-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2 ;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_system_identifier ;;
+
+						=> nrel_then: ..agent_for_calculate_degree_of_obesity_operator8 ;;
+						=> nrel_else: ..agent_for_calculate_degree_of_obesity_operator_return ;;
+					*);;
+				//Вычисление имт
+				-> ..agent_for_calculate_degree_of_obesity_operator8
+					(*
+						<- contMult ;;
+
+						-> rrel_1: rrel_assign: rrel_scp_var: rrel_link: _temp1 ;;
+						-> rrel_2: rrel_fixed: rrel_scp_var: rrel_link: _height_link ;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: rrel_link: _height_link ;;
+
+						=> nrel_goto: ..agent_for_calculate_degree_of_obesity_operator9 ;;
+					*);;
+
+				-> ..agent_for_calculate_degree_of_obesity_operator9
+					(*
+						<- contMult ;;
+
+						-> rrel_1: rrel_assign: rrel_scp_var: rrel_link: _temp2 ;;
+						-> rrel_2: rrel_fixed: rrel_scp_var: _weight_link ;;
+						-> rrel_3: rrel_fixed: rrel_scp_const: [10000] ;;
+
+						=> nrel_goto: ..agent_for_calculate_degree_of_obesity_operator10 ;;
+					*);;
+
+				-> ..agent_for_calculate_degree_of_obesity_operator10
+					(*
+						<- contDiv;;
+
+						-> rrel_1: rrel_assign: rrel_scp_var: rrel_link: _imt_link ;;
+						-> rrel_2: rrel_fixed: rrel_scp_var: _temp2 ;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _temp1 ;;
+
+						=> nrel_goto: ..agent_for_calculate_degree_of_obesity_operator10b ;;
+					*);;
+
+				//Добавление к параметру текущее значение имт
+				-> ..agent_for_calculate_degree_of_obesity_operator10b
+					(*
+						<- genElStr5;;
+
+						-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _imt_node;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: rrel_const: _com;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: rrel_link: _imt_link;;
+						-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_system_identifier;;
+
+						=> nrel_goto: ..agent_for_calculate_degree_of_obesity_operator10c;;
+					*);;
+
+				-> ..agent_for_calculate_degree_of_obesity_operator10c
+					(*
+						<- genElStr5 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _param ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: rrel_const: _imt_com ;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _imt_node ;;
+						-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: rrel_const: _imt_arc ;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_current_imt_value ;;
+
+						=> nrel_goto: ..agent_for_calculate_degree_of_obesity_operator10e ;;
+					*);;
+				//Добавление к ответу текущее значение имт и дуг
+				-> ..agent_for_calculate_degree_of_obesity_operator10e
+					(*
+						<- genElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _imt_com ;;
+
+						=> nrel_goto: ..agent_for_calculate_degree_of_obesity_operator10f ;;
+					*);;
+
+				-> ..agent_for_calculate_degree_of_obesity_operator10f
+					(*
+						<- genElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _imt_node ;;
+
+						=> nrel_goto: ..agent_for_calculate_degree_of_obesity_operator10g ;;
+					*);;
+
+				-> ..agent_for_calculate_degree_of_obesity_operator10g
+					(*
+						<- genElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _imt_arc ;;
+
+						=> nrel_goto: ..agent_for_calculate_degree_of_obesity_operator10h ;;
+					*);;
+
+				-> ..agent_for_calculate_degree_of_obesity_operator10h
+					(*
+						<- genElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_const: nrel_current_imt_value ;;
+
+						=> nrel_goto: ..agent_for_calculate_degree_of_obesity_operator11 ;;
+					*);;
+
+				//Считывыние максимальных значений ИМТ у степеней ожирения
+				-> ..agent_for_calculate_degree_of_obesity_operator11
+					(*
+						<- searchElStr5 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_const: concept_the_deficit_of_body_weight ;;
+						-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc1 ;;
+						-> rrel_3: rrel_assign: rrel_scp_var: rrel_link: _the_deficit_of_body_weight_value ;;
+						-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2 ;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_max_imt_value ;;
+
+						=> nrel_then: ..agent_for_calculate_degree_of_obesity_operator11a ;;
+						=> nrel_else: ..agent_for_calculate_degree_of_obesity_operator_return ;;
+					*);;
+
+					-> ..agent_for_calculate_degree_of_obesity_operator11a
+					(*
+						<- searchElStr5 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_const: concept_normal_body_weight ;;
+						-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc1 ;;
+						-> rrel_3: rrel_assign: rrel_scp_var: rrel_link: _normal_body_weight_value ;;
+						-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2 ;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_max_imt_value ;;
+
+						=> nrel_then: ..agent_for_calculate_degree_of_obesity_operator11b ;;
+						=> nrel_else: ..agent_for_calculate_degree_of_obesity_operator_return ;;
+					*);;
+
+
+
+					-> ..agent_for_calculate_degree_of_obesity_operator11b
+					(*
+						<- searchElStr5 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_const: concept_excess_body_weight ;;
+						-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc1 ;;
+						-> rrel_3: rrel_assign: rrel_scp_var: rrel_link: _excess_body_weight_value ;;
+						-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2 ;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_max_imt_value ;;
+
+						=> nrel_then: ..agent_for_calculate_degree_of_obesity_operator11c ;;
+						=> nrel_else: ..agent_for_calculate_degree_of_obesity_operator_return ;;
+					*);;
+
+
+
+					-> ..agent_for_calculate_degree_of_obesity_operator11c
+					(*
+						<- searchElStr5 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_const: concept_first_degree_of_obesity ;;
+						-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc1 ;;
+						-> rrel_3: rrel_assign: rrel_scp_var: rrel_link: _first_degree_of_obesity_value ;;
+						-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2 ;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_max_imt_value ;;
+
+						=> nrel_then: ..agent_for_calculate_degree_of_obesity_operator11d ;;
+						=> nrel_else: ..agent_for_calculate_degree_of_obesity_operator_return ;;
+					*);;
+
+
+
+					-> ..agent_for_calculate_degree_of_obesity_operator11d
+					(*
+						<- searchElStr5 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_const: concept_second_degree_of_obesity ;;
+						-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc1 ;;
+						-> rrel_3: rrel_assign: rrel_scp_var: rrel_link: _second_degree_of_obesity_value ;;
+						-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2 ;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_max_imt_value ;;
+
+						=> nrel_then: ..agent_for_calculate_degree_of_obesity_operator11e ;;
+						=> nrel_else: ..agent_for_calculate_degree_of_obesity_operator_return ;;
+					*);;
+
+
+
+					-> ..agent_for_calculate_degree_of_obesity_operator11e
+					(*
+						<- searchElStr5 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_const: concept_third_degree_of_obesity ;;
+						-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc1 ;;
+						-> rrel_3: rrel_assign: rrel_scp_var: rrel_link: _third_degree_of_obesity_value ;;
+						-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2 ;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_max_imt_value ;;
+
+						=> nrel_then: ..agent_for_calculate_degree_of_obesity_operator12 ;;
+						=> nrel_else: ..agent_for_calculate_degree_of_obesity_operator_return ;;
+					*);;
+				//Сравнивание результата со степенью ожирения 
+				//При нахождении нужного производится добавление его к параметру
+				//Добавление текущей степени ожирения к ответу
+				-> ..agent_for_calculate_degree_of_obesity_operator12
+					(*
+						<- ifGr;;
+
+						-> rrel_1: rrel_scp_var: _imt_link;;
+						-> rrel_2: rrel_scp_var: _the_deficit_of_body_weight_value;;
+
+						=> nrel_then: ..agent_for_calculate_degree_of_obesity_operator12a;;
+						=> nrel_else: ..agent_for_calculate_degree_of_obesity_operator12_1;;
+					*);;
+
+				-> ..agent_for_calculate_degree_of_obesity_operator12_1
+					(*
+						<- genElStr5 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _param ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: rrel_const: _degree_of_obesity_com ;;
+						-> rrel_3: rrel_fixed: rrel_scp_const: concept_the_deficit_of_body_weight ;;
+						-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: rrel_const: _degree_of_obesity_arc ;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_current_degree_of_obesity ;;
+
+						=> nrel_goto: ..agent_for_calculate_degree_of_obesity_operator12_2 ;;
+					*);;
+
+				-> ..agent_for_calculate_degree_of_obesity_operator12_2
+					(*
+						<- genElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_const: concept_the_deficit_of_body_weight ;;
+
+						=> nrel_goto: ..agent_for_calculate_degree_of_obesity_operator13 ;;
+					*);;
+
+				-> ..agent_for_calculate_degree_of_obesity_operator12a
+					(*
+						<- ifGr;;
+
+						-> rrel_1: rrel_scp_var: _imt_link;;
+						-> rrel_2: rrel_scp_var: _normal_body_weight_value;;
+
+						=> nrel_then: ..agent_for_calculate_degree_of_obesity_operator12b;;
+						=> nrel_else: ..agent_for_calculate_degree_of_obesity_operator12a_1;;
+					*);;
+
+				-> ..agent_for_calculate_degree_of_obesity_operator12a_1
+					(*
+						<- genElStr5 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _param ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: rrel_const: _degree_of_obesity_com ;;
+						-> rrel_3: rrel_fixed: rrel_scp_const: concept_normal_body_weight ;;
+						-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: rrel_const: _degree_of_obesity_arc ;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_current_degree_of_obesity ;;
+	
+						=> nrel_goto: ..agent_for_calculate_degree_of_obesity_operator12a_2 ;;
+					*);;
+
+				-> ..agent_for_calculate_degree_of_obesity_operator12a_2
+					(*
+						<- genElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_const: concept_normal_body_weight ;;
+	
+						=> nrel_goto: ..agent_for_calculate_degree_of_obesity_operator13 ;;
+					*);;
+
+				-> ..agent_for_calculate_degree_of_obesity_operator12b
+					(*
+						<- ifGr;;
+
+						-> rrel_1: rrel_scp_var: _imt_link;;
+						-> rrel_2: rrel_scp_var: _excess_body_weight_value;;
+
+						=> nrel_then: ..agent_for_calculate_degree_of_obesity_operator12c;;
+						=> nrel_else: ..agent_for_calculate_degree_of_obesity_operator12b_1;;
+					*);;
+
+				-> ..agent_for_calculate_degree_of_obesity_operator12b_1
+					(*
+						<- genElStr5 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _param ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: rrel_const: _degree_of_obesity_com ;;
+						-> rrel_3: rrel_fixed: rrel_scp_const: concept_excess_body_weight ;;
+						-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: rrel_const: _degree_of_obesity_arc ;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_current_degree_of_obesity ;;
+	
+						=> nrel_goto: ..agent_for_calculate_degree_of_obesity_operator12b_2 ;;
+					*);;
+
+				-> ..agent_for_calculate_degree_of_obesity_operator12b_2
+					(*
+						<- genElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_const: concept_excess_body_weight ;;
+	
+						=> nrel_goto: ..agent_for_calculate_degree_of_obesity_operator13 ;;
+					*);;
+
+				-> ..agent_for_calculate_degree_of_obesity_operator12c
+					(*
+						<- ifGr;;
+
+						-> rrel_1: rrel_scp_var: _imt_link;;
+						-> rrel_2: rrel_scp_var: _first_degree_of_obesity_value;;
+
+						=> nrel_then: ..agent_for_calculate_degree_of_obesity_operator12d;;
+						=> nrel_else: ..agent_for_calculate_degree_of_obesity_operator12c_1;;
+					*);;
+
+				-> ..agent_for_calculate_degree_of_obesity_operator12c_1
+					(*
+						<- genElStr5 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _param ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: rrel_const: _degree_of_obesity_com ;;
+						-> rrel_3: rrel_fixed: rrel_scp_const: concept_first_degree_of_obesity ;;
+						-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: rrel_const: _degree_of_obesity_arc ;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_current_degree_of_obesity ;;
+	
+						=> nrel_goto: ..agent_for_calculate_degree_of_obesity_operator12c_2 ;;
+					*);;
+
+				-> ..agent_for_calculate_degree_of_obesity_operator12c_2
+					(*
+						<- genElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_const: concept_first_degree_of_obesity ;;
+	
+						=> nrel_goto: ..agent_for_calculate_degree_of_obesity_operator13 ;;
+					*);;
+
+				-> ..agent_for_calculate_degree_of_obesity_operator12d
+					(*
+						<- ifGr;;
+
+						-> rrel_1: rrel_scp_var: _imt_link;;
+						-> rrel_2: rrel_scp_var: _second_degree_of_obesity_value;;
+
+						=> nrel_then: ..agent_for_calculate_degree_of_obesity_operator12e_1;;
+						=> nrel_else: ..agent_for_calculate_degree_of_obesity_operator12d_1;;
+					*);;
+
+				-> ..agent_for_calculate_degree_of_obesity_operator12d_1
+					(*
+						<- genElStr5 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _param ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: rrel_const: _degree_of_obesity_com ;;
+						-> rrel_3: rrel_fixed: rrel_scp_const: concept_second_degree_of_obesity ;;
+						-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: rrel_const: _degree_of_obesity_arc ;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_current_degree_of_obesity ;;
+	
+						=> nrel_goto: ..agent_for_calculate_degree_of_obesity_operator12d_2 ;;
+					*);;
+
+				-> ..agent_for_calculate_degree_of_obesity_operator12d_2
+					(*
+						<- genElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_const: concept_second_degree_of_obesity ;;
+	
+						=> nrel_goto: ..agent_for_calculate_degree_of_obesity_operator13 ;;
+					*);;
+
+				-> ..agent_for_calculate_degree_of_obesity_operator12e_1
+					(*
+						<- genElStr5 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _param ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: rrel_const: _degree_of_obesity_com ;;
+						-> rrel_3: rrel_fixed: rrel_scp_const: concept_third_degree_of_obesity ;;
+						-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: rrel_const: _degree_of_obesity_arc ;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_current_degree_of_obesity ;;
+	
+						=> nrel_goto: ..agent_for_calculate_degree_of_obesity_operator12e_2 ;;
+					*);;
+
+				-> ..agent_for_calculate_degree_of_obesity_operator12e_2
+					(*
+						<- genElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_const: concept_third_degree_of_obesity ;;
+	
+						=> nrel_goto: ..agent_for_calculate_degree_of_obesity_operator13 ;;
+					*);;
+
+				//Добавление всех дуг и отношения текущей степени ожирения к ответу
+				-> ..agent_for_calculate_degree_of_obesity_operator13
+					(*
+						<- genElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _degree_of_obesity_com ;;
+
+						=> nrel_goto: ..agent_for_calculate_degree_of_obesity_operator13a ;;
+					*);;
+
+				-> ..agent_for_calculate_degree_of_obesity_operator13a
+					(*
+						<- genElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _degree_of_obesity_arc ;;
+
+						=> nrel_goto: ..agent_for_calculate_degree_of_obesity_operator13b ;;
+					*);;
+
+				-> ..agent_for_calculate_degree_of_obesity_operator13b
+					(*
+						<- genElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_const: nrel_current_degree_of_obesity ;;
+
+						=> nrel_goto: ..agent_for_calculate_degree_of_obesity_operator14 ;;
+					*);;
+				//Добавление параметра к ответу
+				-> ..agent_for_calculate_degree_of_obesity_operator14
+					(*
+						<- genElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _param ;;
+
+						=> nrel_goto: ..agent_for_calculate_degree_of_obesity_operator15 ;;
+					*);;
+				//Генерация ответа
+				->  ..agent_for_calculate_degree_of_obesity_operator15
+					(*
+						<- genElStr5;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+						-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
+						-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+
+						=>nrel_goto: ..agent_for_calculate_degree_of_obesity_operator_return;;
+					*);;
+				//до сюда
+				-> ..agent_for_calculate_degree_of_obesity_operator_return
+					(*
+						<- return ;;
+					*);;
+			*);;
+	*);;

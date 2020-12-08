@@ -1,0 +1,18 @@
+nrel_max_imt_value
+ 
+<-sc_node_norole_relation;
+
+=> nrel_main_idtf:
+          [max imt value*](*<-lang_en;;*);
+          [максимальное значение имт*](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(максимальное значение имт)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Максимальное значение имт — показывает какое максимально допустимое значение имт подходит под опреленную степень ожирения.](*<- lang_ru;;*);;
+			*);;
+		*);
+<=nrel_inclusion:concept_degree_of_obesity;;

@@ -1,8 +1,8 @@
 Aliaksandra_Herasimenia
 
 <-sc_node_not_relation;
-<=nrel_inclusion:concept_person;
-<=nrel_inclusion:concept_athlete;
+<-concept_person;
+<-concept_athlete;
 
 => nrel_main_idtf:
           [Aliaksandra Herasimenia](*<-lang_en;;*);

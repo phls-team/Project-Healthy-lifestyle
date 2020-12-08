@@ -1,0 +1,19 @@
+nrel_current_degree_of_obesity
+ 
+<-sc_node_norole_relation;
+
+=> nrel_main_idtf:
+          [current degree of obesity*](*<-lang_en;;*);
+          [текущая степень ожирения*](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(текущая степень ожирения)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Текущая степень ожирения — показывает текущую степень ожирения.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_inclusion:concept_degree_of_obesity;;

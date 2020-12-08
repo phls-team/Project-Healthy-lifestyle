@@ -1,16 +1,16 @@
 Yahor_Makarchuk
 
 <-sc_node_not_relation;
-<=nrel_inclusion:concept_person;
-<=nrel_inclusion:concept_athlete;
+<-concept_person;
+<-concept_athlete;
 
 => nrel_main_idtf:
           [Yahor Makarchuk](*<-lang_en;;*);
           [Егор Макарчук](*<-lang_ru;;*);
 
 => nrel_sport:concept_karate;
-=> nrel_weight:67;
-=> nrel_age:19;
+=> nrel_weight:68;
+=> nrel_age:20;
 => nrel_sports_rank:master_of_sport;
 => nrel_height:183;
 => nrel_birthplace: Belarus;

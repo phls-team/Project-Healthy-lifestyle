@@ -1,8 +1,8 @@
 Victoria_Azarenka
 
 <-sc_node_not_relation;
-<=nrel_inclusion:concept_person;
-<=nrel_inclusion:concept_athlete;
+<-concept_person;
+<-concept_athlete;
 
 => nrel_main_idtf:
           [Victoria Azarenka](*<-lang_en;;*);
