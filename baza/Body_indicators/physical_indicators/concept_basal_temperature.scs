@@ -1,0 +1,37 @@
+concept_basal_temperature <- sc_node_not_relation;;
+
+concept_basal_temperature => nrel_main_idtf: [базальная температура] (* <- lang_ru;; *);;
+concept_basal_temperature => nrel_main_idtf: [basal_temperature] (* <- lang_en;; *);;
+
+d_concept_basal_temperature <- definition;;
+
+d_concept_basal_temperature => nrel_main_idtf: [Опр.(Температура тела)] (* <- lang_ru;; *);;
+d_concept_basal_temperature => nrel_main_idtf: [Def.(basal_temperature)] (* <- lang_en;; *);;
+
+d_concept_basal_temperature -> rrel_key_sc_element: concept_basal_temperature;;
+d_concept_basal_temperature <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Температура тела
+     — самая низкая температура, достигаемая телом во время отдыха.]
+		(* <- lang_ru;; *);;
+	*);;
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_basal_temperature;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [У женщин овуляция вызывает повышение базальной температуры](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(базальная температура)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+            -> concept_ovulation;;
+            -> concept_female;;
+        *);;
+*);;
+
+concept_human_temperature => nrel_inclusion: concept_basal_temperature;;

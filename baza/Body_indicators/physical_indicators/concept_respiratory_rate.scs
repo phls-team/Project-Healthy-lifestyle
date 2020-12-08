@@ -1,0 +1,51 @@
+concept_respiratory_rate <- sc_node_not_relation;;
+
+concept_respiratory_rate => nrel_main_idtf: [частота дыхательных движений] (* <- lang_ru;; *);;
+concept_respiratory_rate => nrel_main_idtf: [respiratory rate] (* <- lang_en;; *);;
+
+d_concept_respiratory_rate <- definition;;
+
+d_concept_respiratory_rate => nrel_main_idtf: [Опр.(частота дыхательных движений)] (* <- lang_ru;; *);;
+d_concept_respiratory_rate => nrel_main_idtf: [Def.(respiratory rate)] (* <- lang_en;; *);;
+
+d_concept_respiratory_rate -> rrel_key_sc_element: concept_respiratory_rate;;
+d_concept_respiratory_rate <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Частота дыхательных движений — число дыхательных движений (циклов вдох-выдох) за единицу времени (обычно минуту). ]
+		(* <- lang_ru;; *);;
+	*);;
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_respiratory_rate;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Является одним из основных и старейших биомаркеров.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(частота дыхательных движений)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+            -> concept_biomarker;;
+        *);;
+*);;
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_respiratory_rate;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Подсчёт частоты дыхательных движений осуществляется по числу перемещений грудной клетки и передней брюшной стенки.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.2(частота дыхательных движений)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+            -> concept_chest_movements;;
+			->concept_anterior_abdominal_wall;;
+        *);;
+*);;
+
+concept_physical_indicator => nrel_inclusion: concept_respiratory_rate;;

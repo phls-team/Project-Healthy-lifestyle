@@ -1,0 +1,33 @@
+concept_venous_pressure <- sc_node_not_relation;;
+
+concept_venous_pressure => nrel_main_idtf: [венозное давление] (* <- lang_ru;; *);;
+concept_venous_pressure => nrel_main_idtf: [venous_pressure] (* <- lang_en;; *);;
+
+d_concept_venous_pressure <- definition;;
+
+d_concept_venous_pressure => nrel_main_idtf: [Опр.(венозное давление)] (* <- lang_ru;; *);;
+d_concept_venous_pressure => nrel_main_idtf: [Def.(venous_pressure)] (* <- lang_en;; *);;
+
+d_concept_venous_pressure -> rrel_key_sc_element: concept_venous_pressure;;
+d_concept_venous_pressure <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[венозное давление —  давление крови в правом предсердии.]
+		(* <- lang_ru;; *);;
+	*);;
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_venous_pressure;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Измеряется при помощи вводимого катетера.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(венозное давление)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+            -> concept_catheter;;
+        *);;
+*);;

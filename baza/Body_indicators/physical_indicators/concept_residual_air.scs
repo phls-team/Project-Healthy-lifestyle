@@ -1,0 +1,54 @@
+concept_residual_air <- sc_node_not_relation;;
+
+concept_residual_air => nrel_main_idtf: [остаточный воздух] (* <- lang_ru;; *);;
+concept_residual_air => nrel_main_idtf: [residual_air] (* <- lang_en;; *);;
+
+d_concept_residual_air <- definition;;
+
+d_concept_residual_air => nrel_main_idtf: [Опр.(остаточный воздух)] (* <- lang_ru;; *);;
+d_concept_residual_air => nrel_main_idtf: [Def.(residual_air)] (* <- lang_en;; *);;
+
+d_concept_residual_air -> rrel_key_sc_element: concept_residual_air;;
+d_concept_residual_air <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[остаточный воздух — количество воздуха, который всегда остается в легких человека после максимального выдоха.]
+		(* <- lang_ru;; *);;
+	*);;
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_residual_air;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Этот объем составляет 1,5 л и его человек никогда не может удалить из органов дыхания..](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(остаточный воздух)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+            -> concept_volume;;
+            -> concept_human;;
+            -> concept_lungs;;
+        *);;
+*);;
+
+concept_residual_air <-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(остаточный воздух)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://residual_air.png"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);;
+
+concept_physical_indicator => nrel_inclusion: concept_residual_air;;

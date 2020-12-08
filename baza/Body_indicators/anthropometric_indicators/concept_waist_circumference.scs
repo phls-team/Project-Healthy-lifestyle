@@ -1,0 +1,54 @@
+concept_waist_circumference <- sc_node_not_relation;;
+
+concept_waist_circumference => nrel_main_idtf: [обхват талии] (* <- lang_ru;; *);;
+concept_waist_circumference => nrel_main_idtf: [waist_circumference] (* <- lang_en;; *);;
+
+d_concept_waist_circumference <- definition;;
+
+d_concept_waist_circumference => nrel_main_idtf: [Опр.(обхват талии)] (* <- lang_ru;; *);;
+d_concept_waist_circumference => nrel_main_idtf: [Def.(waist_circumference)] (* <- lang_en;; *);;
+
+d_concept_waist_circumference -> rrel_key_sc_element: concept_waist_circumference;;
+d_concept_waist_circumference <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[обхват талии — измеряет полный обхват талии.]
+		(* <- lang_ru;; *);;
+	*);;
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_waist_circumference;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Лента должна проходить горизонтально вокруг туловища на уровне линии талии.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(обхват талии)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+            -> concept_torso;;
+            -> concept_measuring_tape;;
+            -> concept_waist;;
+        *);;
+*);;
+
+concept_waist_circumference <-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(обхват талии)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://body_parameters.jpg"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+concept_physical_indicator => nrel_inclusion: concept_waist_circumference;;

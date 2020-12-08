@@ -1,0 +1,55 @@
+concept_head_circumference <- sc_node_not_relation;;
+
+concept_head_circumference => nrel_main_idtf: [обхват головы] (* <- lang_ru;; *);;
+concept_head_circumference => nrel_main_idtf: [hip_girth] (* <- lang_en;; *);;
+
+d_concept_head_circumference <- definition;;
+
+d_concept_head_circumference => nrel_main_idtf: [Опр.(обхват головы)] (* <- lang_ru;; *);;
+d_concept_head_circumference => nrel_main_idtf: [Def.(hip_girth)] (* <- lang_en;; *);;
+
+d_concept_head_circumference -> rrel_key_sc_element: concept_head_circumference;;
+d_concept_head_circumference <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[обхват головы — измеряют спереди по лбу, а сзади – по выступающей части затылка.]
+		(* <- lang_ru;; *);;
+	*);;
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_head_circumference;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Лента должна проходить вокруг головы по линии слегка выше бровей и самой выступающей части затылка.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(обхват головы)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+            -> concept_head;;
+            -> concept_measuring_tape;;
+            -> concept_eyebrows;;
+            -> concept_occiput;;
+        *);;
+*);;
+
+concept_head_circumference <-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(обхват головы)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://head_circumference.jpg"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+concept_physical_indicator => nrel_inclusion: concept_head_circumference;;

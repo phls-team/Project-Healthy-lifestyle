@@ -1,0 +1,35 @@
+concept_capillary_pressure <- sc_node_not_relation;;
+
+concept_capillary_pressure => nrel_main_idtf: [капиллярное давление] (* <- lang_ru;; *);;
+concept_capillary_pressure => nrel_main_idtf: [capillary_pressure] (* <- lang_en;; *);;
+
+d_concept_capillary_pressure <- definition;;
+
+d_concept_capillary_pressure => nrel_main_idtf: [Опр.(капиллярное давление)] (* <- lang_ru;; *);;
+d_concept_capillary_pressure => nrel_main_idtf: [Def.(capillary_pressure)] (* <- lang_en;; *);;
+
+d_concept_capillary_pressure -> rrel_key_sc_element: concept_capillary_pressure;;
+d_concept_capillary_pressure <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[капиллярное давление —  давление крови в мельчайших кровеносных сосудах.]
+		(* <- lang_ru;; *);;
+	*);;
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_capillary_pressure;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [обеспечивает обмен веществ между кровью и тканями.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(капиллярное давление)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+            -> concept_substance;;
+            -> concept_blood;;
+            -> concept_tissue;;
+        *);;
+*);;

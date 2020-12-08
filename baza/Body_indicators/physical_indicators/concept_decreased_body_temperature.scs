@@ -1,0 +1,38 @@
+concept_decreased_body_temperature <- sc_node_not_relation;;
+
+concept_decreased_body_temperature => nrel_main_idtf: [пониженная температура тела] (* <- lang_ru;; *);;
+concept_decreased_body_temperature => nrel_main_idtf: [decreased_body_temperature] (* <- lang_en;; *);;
+
+d_concept_decreased_body_temperature <- definition;;
+
+d_concept_decreased_body_temperature => nrel_main_idtf: [Опр.(Пониженная температура тела)] (* <- lang_ru;; *);;
+d_concept_decreased_body_temperature => nrel_main_idtf: [Def.(decreased_body_temperature)] (* <- lang_en;; *);;
+
+d_concept_decreased_body_temperature -> rrel_key_sc_element: concept_decreased_body_temperature;;
+d_concept_decreased_body_temperature <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Пониженная температура тела
+     — снижение показателей температуры от нормы на 0,5-1,5°С, но не менее 35°С.]
+		(* <- lang_ru;; *);;
+	*);;
+
+concept_decreased_body_temperature <-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(Пониженная температура)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://decreased_temperature.jpg"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+concept_human_temperature => nrel_inclusion: concept_decreased_body_temperature;;

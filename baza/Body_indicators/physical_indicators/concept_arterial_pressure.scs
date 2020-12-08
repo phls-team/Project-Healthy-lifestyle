@@ -1,0 +1,36 @@
+concept_arterial_pressure <- sc_node_not_relation;;
+
+concept_arterial_pressure => nrel_main_idtf: [артериальное давление] (* <- lang_ru;; *);;
+concept_arterial_pressure => nrel_main_idtf: [arterial_pressure] (* <- lang_en;; *);;
+
+d_concept_arterial_pressure <- definition;;
+
+d_concept_arterial_pressure => nrel_main_idtf: [Опр.(артериальное давление)] (* <- lang_ru;; *);;
+d_concept_arterial_pressure => nrel_main_idtf: [Def.(arterial_pressure)] (* <- lang_en;; *);;
+
+d_concept_arterial_pressure -> rrel_key_sc_element: concept_arterial_pressure;;
+d_concept_arterial_pressure <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[артериальное давление — один из важнейших параметров, характеризующих работу кровеносной системы.]
+		(* <- lang_ru;; *);;
+	*);;
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_arterial_pressure;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Давление крови определяется объёмом крови, перекачиваемым в единицу времени сердцем, и сопротивлением сосудистого русла.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(артериальное давление)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+            -> concept_blood_volume;;
+			-> concept_vascular_resistance;;
+            -> concept_heart;;
+            -> concept_unit_of_time;;
+        *);;
+*);;

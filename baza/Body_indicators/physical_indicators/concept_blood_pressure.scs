@@ -1,0 +1,44 @@
+concept_blood_pressure <- sc_node_not_relation;;
+
+concept_blood_pressure => nrel_main_idtf: [кровяное давление] (* <- lang_ru;; *);;
+concept_blood_pressure => nrel_main_idtf: [blood_pressure] (* <- lang_en;; *);;
+
+d_concept_blood_pressure <- definition;;
+
+d_concept_blood_pressure => nrel_main_idtf: [Опр.(кровяное давление)] (* <- lang_ru;; *);;
+d_concept_blood_pressure => nrel_main_idtf: [Def.(blood_pressure)] (* <- lang_en;; *);;
+
+d_concept_blood_pressure -> rrel_key_sc_element: concept_blood_pressure;;
+d_concept_blood_pressure <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[кровяное давление — давление, которое кровь оказывает на стенки кровеносных сосудов.]
+		(* <- lang_ru;; *);;
+	*);;
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_blood_pressure;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Один из показателей жизненно важных функций и биомаркеров.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(кровяное давление)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+            -> concept_vital_function;;
+			-> concept_biomarker;;
+        *);;
+*);;
+
+concept_blood_pressure<=nrel_subdividing:
+{
+    concept_arterial_pressure;
+    concept_venous_pressure;
+    concept_capillary_pressure;
+	concept_intracardial_pressure
+};;
+
+concept_physical_indicator => nrel_inclusion: concept_blood_pressure;;

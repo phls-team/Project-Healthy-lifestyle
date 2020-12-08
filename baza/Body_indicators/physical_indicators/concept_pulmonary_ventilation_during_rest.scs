@@ -1,0 +1,18 @@
+concept_pulmonary_ventilation_during_rest <- sc_node_not_relation;;
+
+concept_pulmonary_ventilation_during_rest => nrel_main_idtf: [лёгочная вентиляция в покое] (* <- lang_ru;; *);;
+concept_pulmonary_ventilation_during_rest => nrel_main_idtf: [pulmonary_ventilation] (* <- lang_en;; *);;
+
+d_concept_pulmonary_ventilation_during_rest <- definition;;
+
+d_concept_pulmonary_ventilation_during_rest => nrel_main_idtf: [Опр.(лёгочная вентиляция в покое)] (* <- lang_ru;; *);;
+d_concept_pulmonary_ventilation_during_rest => nrel_main_idtf: [Def.(pulmonary_ventilation)] (* <- lang_en;; *);;
+
+d_concept_pulmonary_ventilation_during_rest -> rrel_key_sc_element: concept_pulmonary_ventilation_during_rest;;
+d_concept_pulmonary_ventilation_during_rest <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[лёгочная вентиляция в покое — может составлять 5-9 л.]
+		(* <- lang_ru;; *);;
+	*);;

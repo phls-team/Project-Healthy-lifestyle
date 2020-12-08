@@ -1,0 +1,36 @@
+concept_systolic_volume <- sc_node_not_relation;;
+
+concept_systolic_volume => nrel_main_idtf: [систолический объём] (* <- lang_ru;; *);;
+concept_systolic_volume => nrel_main_idtf: [systolic_volume] (* <- lang_en;; *);;
+
+d_concept_systolic_volume <- definition;;
+
+d_concept_systolic_volume => nrel_main_idtf: [Опр.(систолический объём)] (* <- lang_ru;; *);;
+d_concept_systolic_volume => nrel_main_idtf: [Def.(systolic_volume)] (* <- lang_en;; *);;
+
+d_concept_systolic_volume -> rrel_key_sc_element: concept_systolic_volume;;
+d_concept_systolic_volume <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[систолический объём — количество крови, поступающее в аорту при каждом сокращении сердца.]
+		(* <- lang_ru;; *);;
+	*);;
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_systolic_volume;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [В норме составляет 60—70 мл.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(систолический объём)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+            -> concept_volume;;
+            -> concept_milliliters;;
+        *);;
+*);;
+
+concept_physical_indicator => nrel_inclusion: concept_systolic_volume;;

@@ -1,0 +1,31 @@
+concept_body_indicator
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[показатель организма]
+	(* <- lang_ru;; *);
+	[body indicator]
+	(* <- lang_en;; *);
+<= nrel_inclusion:
+	parameter;
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:
+    	[Опр.(показатель организма)]
+    	(* <- lang_ru;; *);
+    	[Def.(body indicator)]
+    	(* <- lang_en;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Показатель организма — характеристика, по которой можно судить о состоянии жизненно важных систем и (или) функций организма.]
+			(* <- lang_ru;;	*);;
+		*);;
+	*);;
+
+concept_body_indicator => nrel_inclusion:
+	concept_anthropometric_indicator;
+	concept_physical_indicator;
+	concept_biochemical_indicator;;

@@ -1,0 +1,54 @@
+concept_chest_girth <- sc_node_not_relation;;
+
+concept_chest_girth => nrel_main_idtf: [обхват груди] (* <- lang_ru;; *);;
+concept_chest_girth => nrel_main_idtf: [chest_girth] (* <- lang_en;; *);;
+
+d_concept_chest_girth <- definition;;
+
+d_concept_chest_girth => nrel_main_idtf: [Опр.(обхват груди)] (* <- lang_ru;; *);;
+d_concept_chest_girth => nrel_main_idtf: [Def.(chest_girth)] (* <- lang_en;; *);;
+
+d_concept_chest_girth -> rrel_key_sc_element: concept_chest_girth;;
+d_concept_chest_girth <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[обхват груди — измеряет полный обхват груди.]
+		(* <- lang_ru;; *);;
+	*);;
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_chest_girth;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Лента должна проходить горизонтально вокруг туловища через выступающие точки грудных желез.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(обхват груди)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+            -> concept_torso;;
+            -> concept_measuring_tape;;
+            -> concept_breast;;
+        *);;
+*);;
+
+concept_chest_girth <-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(обхват груди)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://body_parameters.jpg"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+concept_physical_indicator => nrel_inclusion: concept_chest_girth;;
