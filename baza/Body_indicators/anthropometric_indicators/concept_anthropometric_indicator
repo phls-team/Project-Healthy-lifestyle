@@ -24,10 +24,4 @@ concept_anthropometric_indicator=>nrel_inclusion:
 	concept_hip_girth;
 	concept_chest_girth;
 	concept_head_circumference;
-	concept_inhalation_volume;
-	concept_reserve_inhalation_volume;
-	concept_reserve_exhalation_volume;
-	concept_residual_air;
-	concept_pulmonary_ventilation;
-	concept_intrapleural_pressure;
-	concept_systolic_volume;;
+	concept_vital_lungs_capacity;;
