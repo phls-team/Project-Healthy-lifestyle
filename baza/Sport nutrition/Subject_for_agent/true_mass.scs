@@ -1,0 +1,32 @@
+true_mass => nrel_main_idtf:[BSN True-Mass]
+        (*
+                <-lang_ru;;
+        *);;
+
+true_mass<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//bsn-true-mass-2610g.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(BSN True-Mass)](*<- lang_ru;;*);;
+*);;
+*);;
+
+
+defenition ->...
+(*
+->rrel_key_sc_element:true_mass ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[BSN True Mass gainer - это средство, которое состоит из сложных углеводородных соединений и белковой матрицы.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(BSN True-Mass)](*<- lang_ru;;*);;
+*);;
+
+true_mass=>nrel_belonging: concept_carbohydrate_protein_mixtures;;
+
+true_mass=>nrel_carbohydrates_content:90g_per_165g;;
+true_mass=>nrel_fats_content:17g_per_165g;;
+true_mass=>nrel_protein_content:50g_per_165g;;

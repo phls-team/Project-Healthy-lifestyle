@@ -1,0 +1,33 @@
+amok=>
+nrel_main_idtf:[Amok]
+        (*
+                <-lang_ru;;
+        *);;
+
+amok<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//amok.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [(Amok)](*<- lang_ru;;*);;
+*);;
+*);;
+
+
+defenition ->...
+(*
+->rrel_key_sc_element:amok ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Amok – это предтренировочный комплекс от компании Olimp, повышающий работоспособность,мотивацию и энергию до максимума.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Amok)](*<- lang_ru;;*);;
+*);;
+
+amok=>nrel_belonging: concept_energy_drink;;
+
+
+amok=>nrel_vitamin_B6_content:1_75mg_per_1_56g;;
+

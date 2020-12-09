@@ -1,0 +1,32 @@
+creapump=>
+nrel_main_idtf:[CreaPump]
+        (*
+                <-lang_ru;;
+        *);;
+
+creapump<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//creapump.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [(CreaPump)](*<- lang_ru;;*);;
+*);;
+*);;
+
+
+defenition ->...
+(*
+->rrel_key_sc_element:creapump ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[CreaPump – это предтренировочный напиток от компании GEON для подготовки организмак спортсмена к интенсивным физическим и психологическим нагрузкам.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(CreaPump)](*<- lang_ru;;*);;
+*);;
+
+creapump=>nrel_belonging: concept_energy_drink;;
+
+creapump=>nrel_creatine_content:660mg_per_1_pill;;
+

@@ -1,0 +1,49 @@
+mad_brain_pump=>
+nrel_main_idtf:[Mad Brain Pump]
+        (*
+                <-lang_ru;;
+        *);;
+
+mad_brain_pump<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//mad_brain_pump.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [(Mad Brain Pump)](*<- lang_ru;;*);;
+*);;
+*);;
+
+
+defenition ->...
+(*
+->rrel_key_sc_element:mad_brain_pump ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Brain Pump – это нитробустер, стимулятор NO от компании Mad, предназначенная для пампинга.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Brain Pump)](*<- lang_ru;;*);;
+*);;
+
+mad_brain_pump=>nrel_belonging: concept_nitrogen_oxide_doner;;
+
+mad_brain_pump=>nrel_citrulline_content:2g_per_12g;;
+mad_brain_pump=>nrel_norvaline_content:0_3g_per_12g;;
+
+nrel_citrulline_content
+<-sc_node_norole_relation;
+=> nrel_main_idtf:
+          [содержание цитруллина*]
+          (*<-lang_ru;;*);
+	  [citrulline content*]
+          (*<-lang_en;;*);;
+          
+nrel_norvaline_content
+<-sc_node_norole_relation;
+=> nrel_main_idtf:
+          [содержание норвалина*]
+          (*<-lang_ru;;*);
+	  [norvaline content*]
+          (*<-lang_en;;*);;          
+

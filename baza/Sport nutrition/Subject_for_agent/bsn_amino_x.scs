@@ -1,0 +1,32 @@
+bsn_amino_x=>
+nrel_main_idtf:[BSN AMINO X]
+        (*
+                <-lang_ru;;
+        *);;
+
+bsn_amino_x<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//amino_x.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [(BSN AMINO X)](*<- lang_ru;;*);;
+*);;
+*);;
+
+
+defenition ->...
+(*
+->rrel_key_sc_element:bsn_amino_x ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[AMINOx – это аминокислотная добавка от компании BSN, являющаяся первым в своём роде продуктом с технологией Instantized, благодаря которой аминокислоты BCAA, помимо эффективного восстановления, дают результат в виде невероятного увеличения выносливости, что является одним из ключевых аспектов в проведении первоклассной силовой тренировки.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(AMINOx)](*<- lang_ru;;*);;
+*);;
+
+bsn_amino_x=>nrel_belonging: concept_amino_acids;;
+
+bsn_amino_x=>nrel_carbohydrates_content:less_1g_per_14_5g;;
+bsn_amino_x=>nrel_Na_content:160mg_per_14_5g;;

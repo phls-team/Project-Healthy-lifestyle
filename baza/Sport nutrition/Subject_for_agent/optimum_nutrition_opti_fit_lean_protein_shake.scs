@@ -1,0 +1,34 @@
+optimum_nutrion_opti_fit_lean_protein_shake=>
+nrel_main_idtf:[Optimum Nutrition Opti-Fit Lean Protein Shake]
+        (*
+                <-lang_ru;;
+        *);;
+
+optimum_nutrion_opti_fit_lean_protein_shake<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//optimum_nutrion_opti_fit_lean_protein_shake.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [(Optimum Nutrition Opti-Fit Lean Protein Shake)](*<- lang_ru;;*);;
+*);;
+*);;
+ 
+
+defenition ->...
+(*
+->rrel_key_sc_element:optimum_nutrion_opti_fit_lean_protein_shake ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Opti-Fit Lean Protein Shake – комплекс медленно и быстро усваиваемых белков для мышечного роста и восстановления от компании Optimum Nutrition.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Opti-Fit Lean Protein Shake)](*<- lang_ru;;*);;
+*);;
+
+optimum_nutrion_opti_fit_lean_protein_shake=>nrel_belonging: concept_meal_replacement;;
+
+optimum_nutrion_opti_fit_lean_protein_shake=>nrel_carbohydrates_content:16g_per_52g;;
+optimum_nutrion_opti_fit_lean_protein_shake=>nrel_fats_content:3_25g_per_52g;;
+optimum_nutrion_opti_fit_lean_protein_shake=>nrel_protein_content:25g_per_52g;;
+optimum_nutrion_opti_fit_lean_protein_shake=>nrel_energy_value:200kkal_per_52g;;

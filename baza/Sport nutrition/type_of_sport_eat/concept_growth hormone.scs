@@ -1,0 +1,87 @@
+concept_growth_hormone<-sc_node_not_relation;;
+
+concept_growth_hormone=>nrel_main_idtf:[гормон роста]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[growth hormone]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_growth_hormone=>nrel_idtf:[СТГ]
+        (*
+                <-lang_ru;;
+        *);
+nrel_idtf:[соматропин]
+ (*
+                <-lang_ru;;
+        *);;
+
+defenition ->...
+(*
+->rrel_key_sc_element:concept_growth_hormone ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Гормон роста - полипептидный гормон передней доли гипофиза, регулирующий метаболизм.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Гормона роста как химического соединения)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_polypeptide_hormone;
+concept_pituitary;
+concept_metabolism
+};;
+*);;
+
+defenition ->...
+(*
+->rrel_key_sc_element:concept_growth_hormone ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Гормон роста - анаболический гормон, популярный допинг, стимулирующий рост тканей.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Гормон роста)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_dope;
+concept_anabolic;
+concept_tissue_growth
+};;
+*);;
+
+concept_growth_hormone<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//growth_hormone.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Гормон роста)](*<- lang_ru;;*);;
+*);;
+*);;
+
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_growth_hormone ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Гормон роста предотвращает травмы, ускоряет синтез белков, влияет на обмен жиров и баланс жидкости в организме.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Польза гормона роста)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_injury;
+concept_protein_syntesis;
+concept_metabolism;
+concept_fluid_balance;
+concept_organism
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_growth_hormone ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[При использовании гормона роста возможны боли в суставах и мышцах, отеки.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Побочные эффекты)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_joint_pain;
+concept_muscle_pain;
+concept_swelling
+};;
+*);;
+
+//concept_sport_eat=>nrel_inclusion:concept_growth_hormone;;
+

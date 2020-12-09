@@ -1,0 +1,122 @@
+concept_energy_drink<-sc_node_not_relation;;
+
+concept_energy_drink=>nrel_main_idtf:[энергетические напитки]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[energy drink]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_energy_drink=>nrel_idtf:[энергетик]
+        (*
+                <-lang_ru;;
+        *);
+nrel_idtf:[энерготоники]
+        (*
+                <-lang_ru;;
+        *);;
+
+defenition ->...
+(*
+->rrel_key_sc_element: concept_energy_drink ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Энергетические напитки — напитки, в которых делается акцент на их способность стимулировать центральную нервную систему человека и/или антиседативный эффект.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Энергетик)](*<- lang_ru;;*);;
+*);;
+
+
+concept_energy_drink<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//guarana.jpeg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Энергетический напиток "Guarana")](*<- lang_ru;;*);;
+*);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_energy_drink ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Из внутренних резервов организма и только. Энергетические напитки мобилизуют трату собственных энергетических запасов человека – когда эффект пройдет (а длится он до 1 часа), сил станет даже меньше, чем до применения.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Откуда черпает «эффект энергии»)](*<- lang_ru;;*);;
+*);;
+
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_energy_drink ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Содержание кофеина в энергетических напитках немногим ниже, чем в том же объёме сваренного кофе. Чаще всего содержание кофеина 30 мг на 100 мл продукта. Содержание кофеина в энергетических напитках варьируется от 218,6 мг/л до 321 мг/л.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Содержание напитка)](*<- lang_ru;;*);;
+*);;
+
+
+concept_energy_drink<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//girls_drink_energetic_drink.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Девушка пьет энергетичий напиток)](*<- lang_ru;;*);;
+*);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_energy_drink ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Рекомендуется пить напиток не более 400 мг в сутки.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Рекомендуемая норма употребления напитка)](*<- lang_ru;;*);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_energy_drink ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Основное предназначение спортивных энергетиков – мобилизация сил организма и повышение работоспособности.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Основное предназначение энергетика)](*<- lang_ru;;*);;
+*);;
+
+concept_energy_drink=>nrel_contains:concept_carbohydrates;
+caffeine;
+cupana;
+taurine;
+vitamin_B5;
+vitamin_B3;
+vitamin_C;
+vitamin_B6;
+vitamin_B9;;
+
+vitamin_B3 =>nrel_idtf:[ниацин]
+        (*
+                <-lang_ru;;
+        *);;
+
+vitamin_B5 =>nrel_idtf:[пантотеновая кислота]
+        (*
+                <-lang_ru;;
+        *);;
+
+vitamin_B6 =>nrel_idtf:[пиридоксин]
+        (*
+                <-lang_ru;;
+        *);;
+
+vitamin_B9 =>nrel_idtf:[фолиевая кислота]
+        (*
+                <-lang_ru;;
+        *);;
+
+vitamin_C =>nrel_idtf:[аскорбиновая кислота]
+        (*
+                <-lang_ru;;
+        *);;
+
+concept_energy_drink->rrel_example:guarana;muscle_pharm;;

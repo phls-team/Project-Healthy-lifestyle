@@ -1,0 +1,40 @@
+flexagen_forte=>
+nrel_main_idtf:[Flexagen Forte]
+        (*
+                <-lang_ru;;
+        *);;
+flexagen_forte<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//flexagen_forte.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [(Flexagen Forte)](*<- lang_ru;;*);;
+*);;
+*);;
+
+
+defenition ->...
+(*
+->rrel_key_sc_element:flexagen_forte ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Flexagen Forte – это хондропротектор  в виде таблеток от компании Olimp для регенерации суставов, способствующий поддержанию нормального функционирования опорно-двигательного аппарата и синтезу собственного белка.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Collaregen)](*<- lang_ru;;*);;
+*);;
+
+flexagen_forte=>nrel_belonging: concept_hondroprotector;;
+
+flexagen_forte=>nrel_contains:
+collagen_type_2;
+vitamin_C;;
+
+collagen_type_2=>
+nrel_main_idtf:[коллаген типа II]
+        (*
+                <-lang_ru;;
+        *);;
+        
+collagen_type_2=>nrel_belonging: concept_fibrillar_collagen;;

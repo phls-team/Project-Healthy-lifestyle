@@ -1,0 +1,28 @@
+letrozol=> nrel_main_idtf:[Летрозол]
+        (*
+                <-lang_ru;;
+        *);;
+
+letrozol<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//2.png"
+        (*
+                =>nrel_format:format_png;;
+        *);;
+ => nrel_main_idtf: [(Летрозол)](*<- lang_ru;;*);;
+*);;
+*);;
+
+
+defenition ->...
+(*
+->rrel_key_sc_element:letrozol ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Летрозол (Letrozole) — самый эффективный препарат ингибитор ароматаза, снижающий уровень эстрогена (женского гормона) в крови, который обладает большой эффективностью применения.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Летрозол)](*<- lang_ru;;*);;
+*);;
+
+letrozol=>nrel_belonging: concept_testosterone;;

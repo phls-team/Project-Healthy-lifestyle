@@ -1,0 +1,117 @@
+concept_testosterone<-sc_node_not_relation;;
+
+concept_testosterone=>nrel_main_idtf:[тестостероные добавки]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[testosterone]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_testosterone=>nrel_idtf:[тестостероные бустеры]
+        (*
+                <-lang_ru;;
+        *);
+
+nrel_idtf:[БАДы]
+        (*
+                <-lang_ru;;
+        *);;
+
+defenition ->...
+(*
+->rrel_key_sc_element: concept_testosterone ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[это добавки, использующиеся для стимуляции роста мышечной ткани, увеличения силы и либидо и коррекции уровня половых гормонов.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Тестостероные добавки)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+    stimulants;
+    concept_hormonal_fluctuations
+};;
+*);;
+
+concept_testosterone<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//testoteron.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+                
+        *);;
+         => nrel_main_idtf: [Иллюстрация(Человек , который использует тестостероные бустеры)](*<- lang_ru;;*);;
+*);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_testosterone ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Они рекомендованы тем, кто стремится нарастить объем мышц – именно количество мышечной массы. Не рекомендованы они лицам моложе 23 лет. Это объясняется тем, что у молодых гормональная система еще полностью не стабилизирована и бустеры могут ее подавить или разрушить полностью. К тому же, в молодости тестостерон всегда и без того зашкаливает и дополнительная стимуляция ему не требуется.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Для кого бустеры эффективны?)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+    concept_hormonal_fluctuations
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_testosterone ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Они увеличивают половое влечение, сексуальную активность, и не дают развиться мужскому климаксу. Продаются в аптеках и специальных магазинах спортивного питания.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(На что влияют тестостероновые бустеры?)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+        concept_vitamin;
+        concept_mineral
+};;
+*);;
+
+
+concept_testosterone<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//booster.jpeg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Пример бустера)](*<- lang_ru;;*);;
+*);;
+*);;
+
+concept_testosterone=>nrel_contains:
+concept_Mg;
+concept_Zn;
+vitamin_B6;
+vitamin_E;
+vitamin_B2;;
+
+concept_testosterone->rrel_example:oxo;letrozol;;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_testosterone ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[ Такие комплексы востребованы у мужчин, занимающихся бодибилдингом, тяжелой атлетикой, единоборствами.
+
+Тестостерон в спорте играет свою существенную роль:
+    способствует увеличению мышц;
+    поднимает уровень выносливости;
+    повышает уверенность в себе и
+    улучшает концентрацию внимания](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Кому нужен тестобустер?)](*<- lang_ru;;*);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_testosterone ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[ 
+    Помогает наладить обмен веществ, что приводит к уменьшению жировой прослойки и увеличению мышечной массы.
+    Способствует поступлению белка и гликогена в мышцы, помогая тем самым восстановлению после физических нагрузок.
+    Содействует повышению выносливости и работоспособности.
+    Благотворно влияет на иммунитет и сердечно-сосудистую систему.
+    Способствует повышению уровня тестостерона, стимулируя таким образом либидо.
+](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Влияние бустера тестостерона на организм.)](*<- lang_ru;;*);;
+*);;

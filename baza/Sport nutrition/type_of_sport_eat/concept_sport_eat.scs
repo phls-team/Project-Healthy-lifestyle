@@ -1,0 +1,164 @@
+concept_sport_eat<-sc_node_not_relation;;
+
+concept_sport_eat=>nrel_main_idtf:[спортивное питание]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[bodybuilding supplement]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_sport_eat=>nrel_idtf:[спортпит]
+        (*
+                <-lang_ru;;
+        *);;
+
+concept_sport_eat<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Спортивное питание)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+                ->[Спортивное питание (спортпит) — это особая группа пищевых добавок, выпускающаяся преимущественно для людей, ведущих активный образ жизни, занимающихся спортом и фитнесом и профессиональных спортсменов, при подготовке к соревнованиям.]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_athlete;
+        concept_competition;
+        concept_sport
+        };;
+        *);;
+*);;
+
+concept_sport_eat=>nrel_consist:{
+concept_amino_acids;
+concept_carbohydrate_protein_mixtures;
+concept_energy_drink;
+concept_fat_burners;
+concept_high_protein_foods;
+concept_testosterone;
+concept_vitamin_complexes;
+concept_anticatabolic;
+concept_meal_replacement;
+concept_creatine;
+concept_isotonic;
+concept_nitrogen_oxide_doner;
+concept_hondroprotector;
+concept_phosphatidylserine;
+concept_growth_hormone;
+collaregen;
+concept_chondroitin_sulfate;
+concept_glucosamine
+};;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_sport_eat ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Под «спортивным питанием» понимается также употребление обычных продуктов, организованное таким образом, чтобы решать основные задачи того или иного вида спорта.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Спортивное питание как употребение обычных продуктов)](*<- lang_ru;;*);;
+  =>nrel_using_constants:{
+        concept_sport;
+        concept_product
+        };;
+*);;
+
+concept_sport_eat<-rrel_key_sc_element:...
+        (*
+                <-gif;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//sport_man.gif"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Бодибилдер)](*<- lang_ru;;*);;
+*);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_sport_eat ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Главный принцип питания — сбалансированность и достижение определённой спортивной цели. Необходимый состав выбирается по мере необходимости и удобства потребления.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Основной принцип спортивного питания)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+nrel_vitamin_composition
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_sport_eat ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Разные продукты усваиваются с разной скоростью, и эта скорость часто не зависит от их калорийности. Перед физической нагрузкой употребляют обычно быстро усваиваемые продукты, на период сна — медленно усваиваемые продукты. В целом наиболее высокой скоростью усвоения обладают углеводы, за ними следуют белки, а наибольшее время для переваривания требуется липидам (жирам). Препараты, содержащие белок, классифицируются по скорости усвоения в зависимости от типа протеина, входящего в их состав. Протеин из молочной сыворотки имеет максимальную скорость абсорбции, протеин из казеина (творожный белок), наоборот, относится к «медленным» протеинам. Довольно часто в спортивном питании отдельно произведённые протеины, аминокислоты смешиваются с углеводсодержащими продуктами. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Скорость усвоения спортивного питания)](*<- lang_ru;;*);;
+  =>nrel_using_constants:{
+  concept_protein;
+  concept_fats;
+  concept_carbohydrates
+        };;
+*);;
+
+definition ->...
+(*
+->rrel_key_sc_element:concept_sport_eat ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Bodybuilding supplements are dietary supplements commonly used by those involved in bodybuilding, weightlifting, mixed martial arts, and athletics for the purpose of facilitating an increase in lean body mass.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Definition(bodybuilding supplement)](*<- lang_en;;*);;
+    =>nrel_using_constants:{
+        concept_athlete;
+        concept_competition;
+        concept_sport
+        };;
+*);;
+
+concept_sport_eat<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//protein.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Протеиновые коктели)](*<- lang_ru;;*);;
+*);;
+*);;
+
+concept_sport_eat=>nrel_inclusion:
+        alphavit;
+        bsn_amino_x;
+        guarana;
+        komplivit;
+        l_carnitine;
+        letrozol;
+        maxler_bcaa_powdler;
+        muscle_mass;
+        muscle_pharm;
+        optinum_nutrition_bcaa;
+        oxo;
+        serious_mass;
+        true_mass;
+        amok;
+        animal_flex;
+        mad_brain_pump;
+        weider_anabolic_evolution;
+        concept_meal_replacement;
+        scivation_xtend_bcaa;
+        rule1_r1_creatine;
+        rline_iso_up;
+        wtf_labz_puft_man;
+        powder_pak_pudding_fit_lean;
+        optimum_nutrion_opti_fit_lean_protein_shake;
+        olimp_anabolic_amino_9000_mega_tabs;
+        mutant_bcaa_9_7;
+        maxler_max_motion;
+        maxler_creatine_monohydrate_100;
+        flexagen_forte;
+        creapump;;
+        
+

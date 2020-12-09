@@ -1,0 +1,34 @@
+collaregen=>
+nrel_main_idtf:[Collaregen]
+        (*
+                <-lang_ru;;
+        *);;
+
+collaregen<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//collaregen.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [(Collaregen)](*<- lang_ru;;*);;
+*);;
+*);;
+
+
+defenition ->...
+(*
+->rrel_key_sc_element:collaregen ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Collaregen – это хондропротектор в форме порошка от компании Olimp, предотвращающий повреждение двигательного аппарата, улучшающий состояние хрящей и суставов, стимулирующий регенерацию соединительных тканей.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Collaregen)](*<- lang_ru;;*);;
+*);;
+
+collaregen=>nrel_belonging: concept_hondroprotsector;;
+
+collaregen=>nrel_collagen_content:5g_per_5_5g;;
+collaregen=>nrel_vitamin_C_content:40mg_per_5_5g;;
+
+

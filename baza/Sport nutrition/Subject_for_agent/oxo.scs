@@ -1,0 +1,28 @@
+oxo => nrel_main_idtf:[6-OXO]
+        (*
+                <-lang_ru;;
+        *);;
+
+oxo<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//ergopharm_6oxo_60tab.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [(6-OXO)](*<- lang_ru;;*);;
+*);;
+*);;
+
+
+defenition ->...
+(*
+->rrel_key_sc_element:oxo ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[6-OXO он же 4-Androstene-3,6,17-trione - активный компонент тестостероновых бустеров и других спортивных добавок, которые увеличивают тестостерон-эстрогенное соотношение, однако не имеет доказанных эффектов влияния на мышечную массу и силовые показатели.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(6-OXO)](*<- lang_ru;;*);;
+*);;
+
+oxo=>nrel_belonging: concept_testosterone;;

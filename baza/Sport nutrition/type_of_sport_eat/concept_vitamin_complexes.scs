@@ -1,0 +1,84 @@
+concept_vitamin_complexes<-sc_node_not_relation;;
+
+concept_vitamin_complexes=>nrel_main_idtf:[биологически значимые элементы]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[mineral nutrient]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_vitamin_complexes=>nrel_idtf:[витамино-минеральные комплексы]
+        (*
+                <-lang_ru;;
+        *);;
+
+defenition ->...
+(*
+->rrel_key_sc_element:concept_vitamin_complexes ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Витаминно-минеральный комплекс (мультивитамины) - добавки, которые предназначены для снабжения организма витаминами, минералами и другими питательными элементами.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Витамино-минеральные комплексы)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+concept_vitamin
+};;
+*);;
+
+concept_vitamin_complexes<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//tabletka.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Стандартный состав витаминной таблетки)](*<- lang_ru;;*);;
+*);;
+*);;
+
+concept_vitamin_complexes<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//komplivit.png"
+        (*
+                =>nrel_format:format_png;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Пример витамино-минерального комплекса)](*<- lang_ru;;*);;
+*);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_vitamin_complexes ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Соблюдайте рекомендации данные производителем. Принимайте комплекс в течение 1-2 месяцев, затем делайте перерыв в течение 1 месяца. Постоянный прием не рекомендуется, в связи с тем, что организм теряет способность усваивать труднодоступные витамины из пищи, а также уменьшается синтез витаминов внутри организма. Периодизация позволяет поддерживать организм здоровым, и профилактирует развитие толерантности.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Режим приема)](*<- lang_ru;;*);;
+*);;
+
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_vitamin_complexes ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Современные витаминно-минеральные комплексы создаются с учетом особенностей возраста, пола и деятельности человека, так, например, различают: мультивитамины для беременных, детей, пожилых, для спортсменов, для мужчин и женщин. Витаминно-минеральные комплексы не содержат гормональных и вредных веществ, они не опасны для здоровья, и наоборот направлены на его укрепление, а также на активацию метаболических процессов.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Кто принимает витамино-минеральные комплексы)](*<- lang_ru;;*);;
+*);;
+
+
+concept_vitamin_complexes=>nrel_have_inclusion:
+vitamin_A;
+vitamin_E;
+vitamin_B6;
+concept_Mg;
+vitamin_D;
+vitamin_C;
+vitamin_K;
+concept_Cu;
+microelement_selenium_Se;;
+
+concept_vitamin_complexes->rrel_example:
+komplivit;
+alphavit;;

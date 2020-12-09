@@ -1,0 +1,36 @@
+vplab_high_protein_pancakes=>
+nrel_main_idtf:[VPLab High Protein Pancakes]
+        (*
+                <-lang_ru;;
+        *);;
+
+vplab_high_protein_pancakes<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//vplab_high_protein_pancakes.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [(VPLab High Protein Pancakes)](*<- lang_ru;;*);;
+*);;
+*);;
+ 
+
+defenition ->...
+(*
+->rrel_key_sc_element:vplab_high_protein_pancakes ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[High Protein Pancakes – смесь с высоким содержанием белка для приготовления блинов или вафель, обагощенная жирными кислотами Омега-3 и клетчаткой из муки семян льна и подорожника.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(High Protein Pancakes)](*<- lang_ru;;*);;
+*);;
+
+
+
+vplab_high_protein_pancakes=>nrel_belonging: concept_meal_replacement;;
+
+vplab_high_protein_pancakes=>nrel_carbohydrates_content:9_6g_per_40g;;
+vplab_high_protein_pancakes=>nrel_fats_content:0_2g_per_40g;;
+vplab_high_protein_pancakes=>nrel_protein_content:19g_per_40g;;
+vplab_high_protein_pancakes=>nrel_energy_value:155kkal_per_40g;;

@@ -1,0 +1,31 @@
+scivation_xtend_bcaa=>
+nrel_main_idtf:[Scivation Xtend BCAA]
+        (*
+                <-lang_ru;;
+        *);;
+scivation_xtend_bcaa<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//scivation_xtend_bcaa.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [(Scivation Xtend BCAA)](*<- lang_ru;;*);;
+*);;
+*);;
+
+
+defenition ->...
+(*
+->rrel_key_sc_element:scivation_xtend_bcaa ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Xtend BCAA – это аминокислотый комплекс от компании Scivation, для приема во время тренировок для эффективного роста мышц и борьбы с катаболическими процессами.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Xtend BCAA)](*<- lang_ru;;*);;
+*);;
+
+scivation_xtend_bcaa=>nrel_belonging: concept_amino_acids;;
+
+scivation_xtend_bcaa=>nrel_K_content:180mg_per_14g;;
+scivation_xtend_bcaa=>nrel_Na_content:230mg_per_14g;;

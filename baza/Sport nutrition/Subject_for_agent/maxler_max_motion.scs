@@ -1,0 +1,36 @@
+maxler_max_motion=>
+nrel_main_idtf:[Maxler Max Motion]
+        (*
+                <-lang_ru;;
+        *);;
+
+maxler_max_motion<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//maxler_max_motion.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [(Maxler Max Motion)](*<- lang_ru;;*);;
+*);;
+*);;
+ 
+
+defenition ->...
+(*
+->rrel_key_sc_element:maxler_max_motion ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Max Motion – это витаминно-минеральная смесь от компании Maxler для приготовления изотоника, восполняющий потери минералов и микроэлементов при физической активности.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Max Motion)](*<- lang_ru;;*);;
+*);;
+
+
+
+maxler_max_motion=>nrel_belonging: concept_isotonic;;
+
+maxler_max_motion=>nrel_carbohydrates_content:15_4g_per_20g;;
+maxler_max_motion=>nrel_fats_content:less_0_1g_per_20g;;
+maxler_max_motion=>nrel_protein_content:less_0_1g_per_20g;;
+maxler_max_motion=>nrel_energy_value:71_3kkal_per_20g;;

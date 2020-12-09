@@ -1,0 +1,145 @@
+concept_amino_acids<-sc_node_not_relation;;
+
+concept_amino_acids=>nrel_main_idtf:[аминокислоты]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[amino acid]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_amino_acids=>nrel_idtf:[АМК]
+        (*
+                <-lang_ru;;
+        *);
+nrel_idtf:[аминокарбоновые кислоты]
+ (*
+                <-lang_ru;;
+        *);;
+
+defenition ->...
+(*
+->rrel_key_sc_element:concept_amino_acids ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Аминокислоты - это органические соединения, в молекуле которых одновременно содержатся карбоксильные и аминные группы. Основные химические элементы аминокислот — это углерод (C), водород (H), кислород (O) и азот (N), хотя другие элементы также встречаются в радикале определенных аминокислот.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Аминокислоты как химическое соединение)](*<- lang_ru;;*);;
+*);;
+
+concept_energy_drink<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//amino_product.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Спортивное питание Optinum Nutrition)](*<- lang_ru;;*);;
+*);;
+*);;
+
+defenition ->...
+(*
+->rrel_key_sc_element:concept_amino_acids ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Аминокислоты — это частицы, из которых состоит белок. Всего в организме их больше 20, каждая из которых помогает синтезировать свой вид белка. Они участвуют в процессе создания ферментов, гормонов, белков.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Аминокислоты)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+concept_protein;
+concept_organism
+};;
+*);;
+
+concept_amino_acids<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//amino.png"
+        (*
+                =>nrel_format:format_png;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Общая структура α-аминокислот.)](*<- lang_ru;;*);;
+*);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_amino_acids ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Чтобы получить максимальную пользу от аминокислот, их нужно правильно принимать. Тонкости приема зависят от желаемого результата. Если соединения принимают для спорта, чтобы набрать мышечную массу, то их следует употреблять незадолго до занятий и сразу после. В некоторых случаях назначают дополнительный прием с утра. При диетах для сброса лишнего веса также рекомендуется принимать больше аминокислот. Если, помимо диеты, существуют физические нагрузки, в таком случае прием препаратов обеспечит сброс веса при сохранении мышечной массы. Принимать его нужно до и после похода в спортзал, а также утром.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Как принимать аминокислоты?)](*<- lang_ru;;*);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_amino_acids ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Условно-незаменимые аминокислоты в малых дозировках вырабатываются в организме, но слишком быстро тратятся, особенно при физических нагрузках. Поэтому необходим дополнительный прием препаратов с кислотами, чтобы была возможность переносить долгие и тяжелые тренировки.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Особенности условно-незаменимым аминомкислот)](*<- lang_ru;;*);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_amino_acids ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Аминокислоты являются обязательным элементом питания любого спортсмена. Они являются необходимым белком для построения мышечных тканей и способствуют более быстрому восстановлению организма после занятий. Принимая аминокислоты, Вы обеспечите свой организм силой и сможете достаточно быстро нарастить мышечную массу.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Польза аминокислот)](*<- lang_ru;;*);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_amino_acids ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Аминокислоты вырабатывают такие жизненно важные вещества, как антитела, которые помогают иммунной системе бороться с инфекциями и восстанавливаться после перенесённых заболеваний; ферменты, поддерживающие биохимические реакции; гемоглобин, который поставляет кислород клеткам всего организма, и гормоны, оказывающие активное воздействие на метаболизм. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Польза аминокислот)](*<- lang_ru;;*);;
+*);;
+
+concept_amino_acids=>nrel_inclusion:
+concept_irreplaceable_amino_acids;
+concept_replaceable_amino_acids;
+concept_own_amino_acids;;
+
+
+concept_irreplaceable_amino_acids<-sc_node_not_relation;;
+
+concept_irreplaceable_amino_acids=>nrel_main_idtf:[незаменимые аминокислоты]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[essential amino acids]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_replaceable_amino_acids<-sc_node_not_relation;;
+
+concept_replaceable_amino_acids=>nrel_main_idtf:[заменимые аминокислоты]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[nonessential amino acids]
+        (*
+                <-lang_en;;
+        *);;
+
+
+concept_own_amino_acids<-sc_node_not_relation;;
+
+concept_own_amino_acids=>nrel_main_idtf:[аминокислоты,которые вырабатываются в организме самостоятельно]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[amino acids that are produced in the body on its own]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_amino_acids->rrel_example:
+bsn_amino_x;
+optinum_nutrition_bcaa;
+maxler_bcaa_powdler;;
+
+concept_amino_acids=>nrel_contains:
+element_C;
+element_H;
+element_O;
+element_N;;
+

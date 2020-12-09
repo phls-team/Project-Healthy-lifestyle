@@ -1,0 +1,113 @@
+concept_fat_burners<-sc_node_not_relation;;
+
+concept_fat_burners=>nrel_main_idtf:[жиросжигатели]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[fat burner]
+        (*
+                <-lang_en;;
+        *);;
+
+defenition ->...
+(*
+->rrel_key_sc_element:concept_fat_burners ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Жиросжигатели — это вещества природного или синтетического происхождения, которые стимулируют организм перерабатывать накопленный жир в энергию либо препятствуют усвоению жира, поступающего с питанием. Основное их действие — ускорение обмена веществ.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Жиросжигатели)](*<- lang_ru;;*);;
+*);;
+
+concept_fat_burners<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//jirosjigatel.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Жиросжигатели)](*<- lang_ru;;*);;
+*);;
+*);;
+
+
+concept_fat_burners<-rrel_key_sc_element:...
+        (*
+                <-gif;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//minis_zhir.gif"
+        (*
+                =>nrel_format:format_gif;;
+        *);;
+*);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_fat_burners ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[1. Людям, чувствительным к повышению давления и температуры, жиросжигатели противопоказаны.
+
+2. Нельзя принимать жиросжигатели на ночь, они могут вызвать нарушение сна.
+
+3. При появлении признаков нервного возбуждения, дрожи, сонливости, тошноты, потери аппетита необходимо уменьшить дозу препарата или прекратить приём.
+
+4. Жиросжигатели ускоряют обмен веществ, поэтому минералы, витамины и микроэлементы расходуются быстрее. Чтобы избежать истощения, надо обязательно сопровождать приём жиросжигателя витаминно-минеральным комплексом, а также соблюдать питьевой режим.
+
+Хорошей альтернативой синтетическим жиросжигателям будут коктейли, которые вы можете приготовить самостоятельно.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Советы по приёму жиросжигателей)](*<- lang_ru;;*);;
+*);;
+
+concept_fat_burners=>nrel_inclusion:
+concept_l_carnitine;
+concept_thermogenic_fat_burners;
+concept_diuretics;
+concept_calorie_and_appetite_blockers;;
+
+concept_l_carnitine<-sc_node_not_relation;;
+
+concept_l_carnitine=>nrel_main_idtf:[L-Карнитин]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[L-carnitine]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_thermogenic_fat_burners<-sc_node_not_relation;;
+
+concept_thermogenic_fat_burners=>nrel_main_idtf:[Термогенные жиросжигатели]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[Thermogenic fat burners]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_diuretics<-sc_node_not_relation;;
+
+concept_diuretics=>nrel_main_idtf:[Диуретики]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[Diuretics]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_calorie_and_appetite_blockers<-sc_node_not_relation;;
+
+concept_calorie_and_appetite_blockers=>nrel_main_idtf:[Блокаторы калорий и аппетита]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[Calorie and appetite blockers]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_fat_burners->rrel_example:
+l_carnitine;;

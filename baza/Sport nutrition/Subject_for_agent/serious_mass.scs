@@ -1,0 +1,32 @@
+serious_mass => nrel_main_idtf:[Serious Mass]
+        (*
+                <-lang_ru;;
+        *);;
+
+serious_mass<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//optimum-nutrition-serious-mass-5455g.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Serious Mass)](*<- lang_ru;;*);;
+*);;
+*);;
+
+
+defenition ->...
+(*
+->rrel_key_sc_element:serious_mass ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Serious Mass - это качественный гейнер для построения мышечной массы, ее объема и силы.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Serious Mass)](*<- lang_ru;;*);;
+*);;
+
+serious_mass=>nrel_belonging: concept_carbohydrate_protein_mixtures;;
+
+serious_mass=>nrel_carbohydrates_content:252g_per_334g;;
+serious_mass=>nrel_fats_content:4_5g_per_334g;;
+serious_mass=>nrel_protein_content:50g_per_334g;;

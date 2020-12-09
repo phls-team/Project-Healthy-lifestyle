@@ -1,0 +1,32 @@
+l_carnitine=>
+nrel_main_idtf:[Myprotein L Carnitine]
+        (*
+                <-lang_ru;;
+        *);;
+
+l_carnitine<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//myprotein-l-carnitine.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [(Myprotein L Carnitine)](*<- lang_ru;;*);;
+*);;
+*);;
+
+
+defenition ->...
+(*
+->rrel_key_sc_element:l_carnitine ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Myprotein L Carnitine – Это аминокислота, которая в натуральном виде содержится в белке и помогает набирать и сохранять мышечную массу. Эти таблетки великолепно подходят веганам и вегетарианцам, поскольку карнитин обычно поступает в организм из красного мяса.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Myprotein L Carnitine)](*<- lang_ru;;*);;
+*);;
+
+l_carnitine=>nrel_belonging: concept_fat_burners;;
+
+l_carnitine=>nrel_L_cartine_content:1g_per_2_pill;;
+

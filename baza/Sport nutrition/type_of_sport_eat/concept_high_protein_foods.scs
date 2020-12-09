@@ -1,0 +1,97 @@
+concept_high_protein_foods<-sc_node_not_relation;;
+
+concept_high_protein_foods=>nrel_main_idtf:[высокобелковые продукты]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[high protein foods]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_high_protein_foods=>nrel_idtf:[протеин]
+        (*
+                <-lang_ru;;
+        *);
+nrel_idtf:[protein]
+        (*
+                <-lang_en;;
+        *);;
+
+defenition ->...
+(*
+->rrel_key_sc_element:concept_high_protein_foods ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Высокобелковые продукты - это продукты, которые содержат огромное количество белка.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Высокобелковые продукты)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+concept_vitamin
+};;
+*);;
+
+concept_high_protein_foods<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//popular.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Продукты богатые белком)](*<- lang_ru;;*);;
+*);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_high_protein_foods ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Белковые продукты необходимы челоеку для полноценного питания и здорового организма.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Для чего нужны белки)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+concept_diet;
+healthy_style_of_life
+};;
+*);;
+
+
+concept_high_protein_foods<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//expample_food.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Пример блюда)](*<- lang_ru;;*);;
+*);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_high_protein_foods ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Белки участвуют в построении мышечной, костной и соединительной ткани, обеспечивают своевременную регенерацию, то есть восстановление тканей, переносят с кровью кислород и липиды, поддерживают иммунитет и просто необходимы для здоровой и полноценной жизни.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Особенности белков)](*<- lang_ru;;*);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_high_protein_foods ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Белки участвуют в построении мышечной, костной и соединительной ткани, обеспечивают своевременную регенерацию, то есть восстановление тканей, переносят с кровью кислород и липиды, поддерживают иммунитет и просто необходимы для здоровой и полноценной жизни.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Особенности белков)](*<- lang_ru;;*);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_high_protein_foods ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Типичная норма белков современного горожанина должна быть в объёме 1 г на каждый килограмм веса, при сильной физической нагрузке рекомендовано 2 г на каждый килограмм веса. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Норма белков)](*<- lang_ru;;*);;
+*);;
+
+concept_high_protein_foods->rrel_example:
+fish;
+eggs;
+nuts;;
+
+

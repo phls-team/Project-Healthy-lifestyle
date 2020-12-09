@@ -1,0 +1,39 @@
+alphavit=>
+nrel_main_idtf:[Алфавит]
+        (*
+                <-lang_ru;;
+        *);;
+
+alphavit<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//OwoQnwRJluj0Gh7cy55FA.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [(Алфавит)](*<- lang_ru;;*);;
+*);;
+*);;
+
+
+defenition ->...
+(*
+->rrel_key_sc_element:alphavit ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Алфавит —это витаминно-минеральные комплексы, созданные с учетом научных рекомендаций по раздельному и совместному приему полезных веществ. Такой подход позволяет увеличить пользу от приема витаминов и минералов на 30-50 % и снизить риск аллергии.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Алфавит)](*<- lang_ru;;*);;
+*);;
+
+alphavit=>nrel_belonging: concept_vitamin_complexes;;
+
+alphavit=>nrel_consist:
+vitamin_A;
+vitamin_E;
+vitamin_B1;
+vitamin_B2;
+vitamin_B6;
+vitamin_B12;
+vitamin_K;
+vitamin_C;;

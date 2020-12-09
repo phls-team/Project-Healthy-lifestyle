@@ -1,0 +1,33 @@
+maxler_bcaa_powdler=>
+nrel_main_idtf:[BCAA Powder 2:1:1]
+        (*
+                <-lang_ru;;
+        *);;
+
+maxler_bcaa_powdler<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//maxler-bcaa-powder.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [(BCAA Powder 2:1:1)](*<- lang_ru;;*);;
+*);;
+*);;
+
+
+defenition ->...
+(*
+->rrel_key_sc_element:maxler_bcaa_powdler ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[CAA Powder - это мощная формула, содержащая аминокислоты с разветвленными цепями (BCAA) в классическом соотношении 2:1:1 (L-Лейцин, L-Изолейцин, L-Валин).](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(BCAA Powder 2:1:1)](*<- lang_ru;;*);;
+*);;
+
+maxler_bcaa_powdler=>nrel_belonging: concept_amino_acids;;
+
+maxler_bcaa_powdler=>nrel_L_leucine_content:3000mg_per_6g;;
+maxler_bcaa_powdler=>nrel_isoleucine_content:1500mg_per_6g;;
+maxler_bcaa_powdler=>nrel_L_valine_content:1500mg_per_6g;;

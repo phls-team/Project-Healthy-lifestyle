@@ -1,0 +1,53 @@
+concept_chondroitin_sulfate<-sc_node_not_relation;;
+
+concept_chondroitin_sulfate
+   =>nrel_main_idtf:
+   [хондроитин сульфат]
+        (* <-lang_ru;; *);
+   =>nrel_main_idtf:
+   [chondroitin sulfate]
+        (* <-lang_en;; *);;
+
+
+defenition ->...
+(*
+->rrel_key_sc_element:concept_chondroitin_sulfate ;;
+     <= nrel_sc_text_translation: ...(*->rrel_example:[Хондроитин сульфат — хондропротектор, влияющий на фосфорно-кальциевый обмен в хрящевой ткани.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Хондроитин сульфат)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+concept_hondroprotector;
+concept_cartilage
+};;
+*);;
+
+concept_chondroitin_sulfate<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//chondroitin_sulfate_supplement.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(БАД)](*<- lang_ru;;*);;
+*);;
+*);;
+
+
+
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_chondroitin_sulfate ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Хондроитин сульфат оказывает противовоспалительный эффект и увеличивает проницаемость тканей.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Польза хондроитин сульфата)](*<- lang_ru;;*);;
+ <=nrel_using_constants:{
+concept_anti_inflammatory_effect;
+concept_permeability
+};;
+*);;
+
+
+//concept_sport_eat=>nrel_inclusion:concept_chondroitin_sulfate;;
+

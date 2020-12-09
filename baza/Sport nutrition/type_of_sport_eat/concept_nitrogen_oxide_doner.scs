@@ -1,0 +1,97 @@
+concept_nitrogen_oxide_doner<-sc_node_not_relation;;
+
+concept_nitrogen_oxide_doner
+   =>nrel_main_idtf:
+   [донаторы окси азота]
+        (* <-lang_ru;; *);
+   =>nrel_main_idtf:
+   [nitrogen oxide doner]
+        (* <-lang_en;; *);;
+
+concept_nitrogen_oxide_doner=>nrel_idtf:[нитробустеры]
+        (*
+                <-lang_ru;;
+        *);
+
+=>nrel_idtf:[нитраты]
+        (*
+                <-lang_ru;;
+        *);;
+
+defenition ->...
+(*
+->rrel_key_sc_element:concept_nitrogen_oxide_doner ;;
+     <= nrel_sc_text_translation: ...(*->rrel_example:[Донаторы окси азота — препараты, которые способны превращаться в оксид азота в организме человека.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Донаторы окси азота)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_drugs;
+concept_human_organism;
+concept_nitrogen_oxide
+};;
+*);;
+
+concept_nitrogen_oxide_doner<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//nitrogen_oxide_doner.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Донаторы окси азота)](*<- lang_ru;;*);;
+*);;
+*);;
+
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_creatine ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Донаторы окси азота способствуют быстрому восстановлению и пампингу, устраняют дефицита энергии, повышают выносливость, ускоряют расход глюкозы.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Польза донаторов окси азота)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_recovery;
+concept_endurance;
+concept_energy_shortage;
+concept_glucose_consumption;
+concept_pumping
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_creatine ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[При превышении рекомендуемых дозировок возможны головные боли, головокружение, уменьшение выносливости, повышение артериального и венозного давления.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Побочные эфекты)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_headache;
+concept_dizziness;
+concept_endurance;
+concept_blood_pressure;
+concept_venous_pressure
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_creatine ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Донаторы окси азота можно совмещать с гейнером, стеариновым жиром, омега-3 жирными кислотами, белковыми смесями и креатином. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Совместимость донаторов окси азота с другими добавками)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_gainer;
+concept_stearin_fat;
+concept_omega3;
+concept_protein_mixture;
+concept_creatine
+};;
+*);;
+ 
+
+concept_nitrogen_oxide_doner->rrel_example:
+mad_brain_pump;
+wtf_labz_puft_man;;
+
+//concept_sport_eat=>nrel_inclusion:concept_nitrogen_oxide_doner;;
+
+

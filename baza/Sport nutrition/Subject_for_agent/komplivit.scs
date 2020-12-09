@@ -1,0 +1,44 @@
+komplivit=>
+nrel_main_idtf:[Компливит]
+        (*
+                <-lang_ru;;
+        *);;
+
+komplivit<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//square_400.jpeg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [(Компливит)](*<- lang_ru;;*);;
+*);;
+*);;
+
+
+defenition ->...
+(*
+->rrel_key_sc_element:komplivit ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Компливит — витаминно-минеральный комплекс, созданный с учетом пищевой физиологической потребности населения РФ, способствует восполнению дефицита важнейших витаминов и минералов.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Компливит)](*<- lang_ru;;*);;
+*);;
+
+komplivit=>nrel_belonging: concept_vitamin_complexes;;
+
+komplivit=>nrel_Fe_content:5mg_per_1_pill;;
+komplivit=>nrel_Cu_content:0_75mg_per_1_pill;;
+komplivit=>nrel_Zn_content:2mg_per_1_pill;;
+komplivit=>nrel_Mg_content:16_4mg_per_1_pill;;
+komplivit=>nrel_Ca_content:50_5mg_per_1_pill;;
+
+alphavit=>nrel_consist:
+vitamin_A;
+vitamin_E;
+vitamin_B1;
+vitamin_B2;
+vitamin_B6;
+vitamin_K;
+vitamin_C;;

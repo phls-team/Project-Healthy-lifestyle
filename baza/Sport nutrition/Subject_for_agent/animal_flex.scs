@@ -1,0 +1,60 @@
+animal_flex=>
+nrel_main_idtf:[Animal Flex]
+        (*
+                <-lang_ru;;
+        *);;
+
+animal_flex<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//animal_flex.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [(Animal Flex)](*<- lang_ru;;*);;
+*);;
+*);;
+
+
+defenition ->...
+(*
+->rrel_key_sc_element:animal_flex ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Animal Flex – это добавка для суставов от компании Universal Nutrion, оказывающая укрепляющее действие на суставы и связки, защищающая их от износа.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Animal Flex)](*<- lang_ru;;*);;
+*);;
+
+animal_flex=>nrel_belonging: concept_hondroprotector;;
+
+
+
+animal_flex=>nrel_calorie_content:9kkal_per_3g;;
+animal_flex=>nrel_fats_content:1g_per_3g;;
+animal_flex=>nrel_vitamin_C_content:100mg_per_3g;;
+animal_flex=>nrel_vitamin_E_content:100mg_per_3g;;
+
+animal_flex=>nrel_contains:
+joint_construction_complex;
+joint_lubrication_complex;
+joint_support_complex;;
+
+joint_construction_complex=>
+nrel_main_idtf:[комплекс для восстановления суставов]
+        (*
+                <-lang_ru;;
+        *);; 
+
+joint_lubrication_complex=>
+nrel_main_idtf:[комплекс для смазки суставов]
+        (*
+                <-lang_ru;;
+        *);;
+        
+joint_support_complex=>
+nrel_main_idtf:[комплекс для поддержания здоровья суставов]
+        (*
+                <-lang_ru;;
+        *);;         
+

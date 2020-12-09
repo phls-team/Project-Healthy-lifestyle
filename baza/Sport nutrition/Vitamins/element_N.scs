@@ -1,0 +1,24 @@
+element_N <-sc_node_not_relation;;
+
+element_N =>nrel_main_idtf:[азот]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[nitrogen]
+        (*
+                <-lang_en;;
+        *);;
+
+element_N<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//azot.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Азот)](*<- lang_ru;;*);;
+*);;
+*);;

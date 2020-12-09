@@ -1,0 +1,79 @@
+concept_glucosamine<-sc_node_not_relation;;
+
+concept_glucosamine
+   =>nrel_main_idtf:
+   [глюкозамин]
+        (* <-lang_ru;; *);
+   =>nrel_main_idtf:
+   [glucosamine]
+        (* <-lang_en;; *);;
+
+
+defenition ->...
+(*
+->rrel_key_sc_element:concept_glucosamine ;;
+     <= nrel_sc_text_translation: ...(*->rrel_example:[Глюкозамин — хондропротектор, влияющий на обмен хрящевой ткани.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Глюкозамин)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+concept_hondroprotector;
+concept_cartilage
+};;
+*);;
+
+concept_glucosamine<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//glucosamine_supplement.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(БАД)](*<- lang_ru;;*);;
+*);;
+*);;
+
+defenition ->...
+(*
+->rrel_key_sc_element:concept_glucosamine ;;
+     <= nrel_sc_text_translation: ...
+       (*
+        ->rrel_example:[Глюкозамин - моносахарид, участвующий в синтезе белков и липидов.](*<-lang_ru;;*);;*);;
+      => nrel_main_idtf: [Определение(Глюкозамин как химическое вещество)](*<- lang_ru;;*);;
+      <=nrel_using_constants:{
+      concept_monosaccharide;
+      concept_protein_syntesis;
+      concept_fat_syntesis
+      };;
+*);;
+
+concept_glucosamine<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//glucosamine_formula.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Химическая структура глюкозамина)](*<- lang_ru;;*);;
+*);;
+*);;
+
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_glucosamine ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Глюкозамин способствует образованию эластичного и упругого хряща, предупреждает развитие воспаления в суставах.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Польза глюкозамина)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_cartilage;
+concept_joint;
+concept_inflammation
+};;
+*);;
+
+
+//concept_sport_eat=>nrel_inclusion:concept_glucosamine;;

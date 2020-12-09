@@ -1,0 +1,205 @@
+concept_creatine<-sc_node_not_relation;;
+
+concept_creatine=>nrel_main_idtf:[креатин]
+(* 
+<-lang_ru;; 
+*);
+nrel_main_idtf:[creatine]
+        (* 
+        <-lang_en;; 
+        *);;
+
+
+concept_amino_acids<-sc_node_not_relation;;
+
+concept_amino_acids=>nrel_main_idtf:[аминокислоты]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[amino acid]
+        (*
+                <-lang_en;;
+        *);;
+
+
+defenition ->...
+(*
+->rrel_key_sc_element:concept_creatine ;;
+     <= nrel_sc_text_translation: ...(*->rrel_example:[Креатин — разновидность спортивных добавок для набора массы.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Креатин)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_sports_supplement;
+concept_weight
+};;
+*);;
+
+concept_creatine<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//creatine_supplement.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Спортивное питание)](*<- lang_ru;;*);;
+*);;
+*);;
+
+defenition ->...
+(*
+->rrel_key_sc_element:concept_creatine ;;
+     <= nrel_sc_text_translation: ...
+       (*
+        ->rrel_example:[Креатин - азотсодержащая карбоновая кислота,участвующая в энергетическом обмене организма.](*<-lang_ru;;*);;*);;
+      => nrel_main_idtf: [Определение(Креатина как химическое вещество)](*<- lang_ru;;*);;
+      <=nrel_using_constants:{
+      concept_nitric_carboxylic_acid;
+      concept_energy_exchange;
+      concept_organism
+      };;
+*);;
+
+concept_creatine<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//creatine_formula.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Химическая структура креатина)](*<- lang_ru;;*);;
+*);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_creatine ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Наиболее подходящим временем является момент повышения уровня инсулина до максимального, а именно после сна,после употребления сладкой пищи, спустя час после тренировки.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Время приема креатина)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_insilin_level;
+concept_sleep;
+concept_sweet_food;
+concept_training
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_creatine ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Употребление креатина способствует увеличению силы и выносливости, формированию рельефной мускулатуры без жировых прослоек, нейтрализации молочной кислоты, подавлению разрушения мышц, снижению вредного холестерина, быстрому восстановлению мышц после тренировки, стабилизированию состава крови.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Польза)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_strenght;
+concept_endurance;
+concept_muscle_definition;
+concept_fat_component;
+concept_lactic_acid;
+concept_muscle_distruction;
+concept_harmful_cholesterol;
+concept_muscle_recovery;
+cocept_training;
+concept_blood_composition
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_creatine ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Креатин не следует принимать при астме, аллергических реакциях, после хирургических операций, беременным женщинам.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Противопоказания)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_asthmatic;
+concept_allergic_reaction;
+concept_surgery;
+concept_pregnant_woman
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_creatine ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Креатин допускается смешивать с гейнерами, протеиновыми коктейлями и другими аминокислотами. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Совместимость креатина с другими добавками)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_gainer;
+concept_protein_shake;
+concept_amino_acid
+};;
+*);;
+
+concept_creatine=>nrel_inclusion:
+concept_creatine_monohydrate;
+concept_creatine_anhydrate;
+concept_creatine_citrate;
+concept_creatine_phosphate;
+concept_creatine_malate;;
+
+
+concept_creatine_monohydrate<-sc_node_not_relation;;
+
+concept_creatine_monohydrate=>nrel_main_idtf:[креатин моногидрат]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[creatine monohydrate]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_creatine_anhydrate<-sc_node_not_relation;;
+
+concept_creatine_anhydrate=>nrel_main_idtf:[креатин ангидроус]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[creatine anhydrate]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_creatine_citrate<-sc_node_not_relation;;
+
+concept_creatine_citrate=>nrel_main_idtf:[креатин цитрат]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[creatine citrate]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_creatine_phosphate<-sc_node_not_relation;;
+
+concept_creatine_phosphate=>nrel_main_idtf:[креатин фосфат]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[creatine phosphate]
+        (*
+                <-lang_en;;
+        *);;
+        
+ concept_creatine_malate<-sc_node_not_relation;;
+
+concept_creatine_malate=>nrel_main_idtf:[креатин малат]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[creatine malate]
+        (*
+                <-lang_en;;
+        *);;       
+//concept_sport_eat=>nrel_inclusion:concept_creatine;;
+
+concept_creatine->rrel_example:
+maxler_creatine_monohydrate_100;
+rule1_r1_creatine;;
+
+
+
+
