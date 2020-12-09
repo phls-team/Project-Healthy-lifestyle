@@ -1,0 +1,96 @@
+agent_of_finding_similar_training_apparatus
+=> nrel_main_idtf: 
+        [агентная scp-программа поиска тренажёров схожих с заданным тренажёром.] (* <- lang_ru;; *);
+        [agent scp-program of searching training apparatus similar to a given training apparatus.] (* <- lang_en;; *);
+        <- agent_scp_program;;
+
+scp_program -> agent_of_finding_similar_training_apparatus
+(*
+    -> rrel_params: ..agent_of_finding_similar_training_apparatus_params
+    (*
+        -> rrel_1: rrel_in: _event;;
+        -> rrel_2: rrel_in: _input_arc;;
+    *);;
+
+    -> rrel_operators: ..agent_of_finding_similar_training_apparatus_operator_set 
+    (*
+// Первый исполняемый оператор программы
+    -> rrel_init: ..agent_of_finding_similar_training_apparatus_operator1 (*
+        <- searchElStr3;;
+        -> rrel_1: rrel_assign: rrel_scp_var: _temp;;
+        -> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
+        -> rrel_3: rrel_assign: rrel_scp_var: _quest;;
+
+        => nrel_goto: ..agent_of_finding_similar_training_apparatus_operator2;;
+    *);;
+    // В rrel_1 устанавливаем имя придуманного нами класса вопросов (см.. пункт 2.1).
+// Агент будет просыпаться, только когда обнаружит наш вопрос.
+    -> ..agent_of_finding_similar_training_apparatus_operator2 (*
+    <- searchElStr3;;
+    -> rrel_1: rrel_fixed: rrel_scp_const: question_of_finding_similar_training_apparatus;;
+    -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+    -> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+    => nrel_then: ..agent_of_finding_similar_training_apparatus_operator3;;
+    => nrel_else: ..agent_of_finding_similar_training_apparatus_operator_return;;
+    *);;
+// Найдём параметр запроса – его подал на вход сам пользователь
+    -> ..agent_of_finding_similar_training_apparatus_operator3 (*
+    <- searchElStr3;;
+    -> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+    -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+    -> rrel_3: rrel_assign: rrel_scp_var: _parametr;;
+    => nrel_then: ..agent_of_finding_similar_training_apparatus_operator4;;
+    => nrel_else: ..agent_of_finding_similar_training_apparatus_operator_return;;
+    *);;
+///////////////////// вывод выбранного тренажёра  (работает)
+/*-> ..agent_of_finding_similar_training_apparatus_operator400 (*
+    <- printEl;;
+
+    -> rrel_1: rrel_fixed: rrel_scp_var: _parametr;;  
+    => nrel_goto: ..agent_of_finding_similar_training_apparatus_operator4;;
+*);;*/
+
+// Сгенерировать узел, в который мы поместим конструкцию ответа
+    -> ..agent_of_finding_similar_training_apparatus_operator4 (*
+        <- genEl;;
+        -> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _answer;;
+        
+        => nrel_goto: ..agent_of_finding_similar_training_apparatus_operator5;;
+    *);;
+
+    -> ..agent_of_finding_similar_training_apparatus_operator5 (*
+    <- call;;// В первом параметре содержится название вызванной процедуры
+    -> rrel_1: rrel_fixed: rrel_scp_const: proc_find_similar_training_apparatus;;
+    -> rrel_2: rrel_fixed:rrel_scp_const: ..agent_of_finding_similar_training_apparatus_operator5_params (* // здесь описаны параметры, подаваемые на вход процедуре
+        -> rrel_1: rrel_fixed: rrel_scp_var: _parametr;;
+        -> rrel_2: rrel_fixed: rrel_scp_var: _answer;;
+        *);;
+// Знак scp-процесса, который может быть использован для того, чтобы дождаться завершения созданного scp-процесса
+    -> rrel_3: rrel_assign: rrel_scp_var: _descr;;
+    => nrel_goto: ..agent_of_finding_similar_training_apparatus_operator6;;
+    *);;
+// scp-оператор ожидания завершения выполнения подпрограммы
+    -> ..agent_of_finding_similar_training_apparatus_operator6 (*
+    <- waitReturn;;
+    -> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
+
+    => nrel_goto: ..agent_of_finding_similar_training_apparatus_operator_gen_answer;;
+    *);;
+// Связываем ответ и вопрос отношением ответ*
+    -> ..agent_of_finding_similar_training_apparatus_operator_gen_answer (*
+        <- genElStr5;;
+        -> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+        -> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc1;;
+        -> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
+        -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+        -> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+        
+        => nrel_goto: ..agent_of_finding_similar_training_apparatus_operator_return;;
+    *);;
+// Оператор завершения агентной программы
+    -> ..agent_of_finding_similar_training_apparatus_operator_return (*
+    <- return;;
+    *);;
+    *);;
+*);;

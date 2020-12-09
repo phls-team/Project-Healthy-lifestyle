@@ -1,0 +1,325 @@
+scp_program -> proc_find_similar_training_apparatus (*
+
+    -> rrel_params: ..proc_find_similar_training_apparatus_params (*
+        -> rrel_1: rrel_in: _parametr;; // входной тренажёр
+        -> rrel_2: rrel_in: _answer;;   // ответ
+    *);;
+
+    -> rrel_operators: ..proc_find_similar_training_apparatus_operator_set (*
+
+//создадим узел _cur_train_app, поместим туда тренажёр из узла _parametr 
+    -> rrel_init: ..find_similar_operator1 (*
+        <- genEl;;
+        -> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _cur_train_app;;
+	   
+        => nrel_goto: ..find_similar_operator2;;
+    *);;
+
+    -> ..find_similar_operator2 (*
+        <- varAssign;;
+        -> rrel_1: rrel_assign: rrel_scp_var: _cur_train_app;;
+        -> rrel_2: rrel_fixed: rrel_scp_const: _parametr;;
+
+        => nrel_goto: ..find_similar_operator2_1;; //find_similar_operator2_1
+    *);;
+
+/* test //выводит имя входного тренажера
+-> ..find_similar_operator2_111 (*
+    <- printEl;;
+
+    -> rrel_1: rrel_fixed: rrel_scp_var: _cur_train_app;;  
+    => nrel_goto: ..find_similar_operator2_1;;
+*);;
+*/
+    -> ..find_similar_operator2_1 (*
+        <- genElStr3;;
+        -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+        -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+        -> rrel_3: rrel_fixed: rrel_scp_const: _parametr;;
+        
+        => nrel_goto: ..find_similar_operator3;; //find_similar_operator3
+    *);;
+
+    -> ..find_similar_operator3 (*
+        <- genEl;;
+        -> rrel_1: rrel_assign: rrel_node: rrel_scp_var: rrel_link: _kol_similar;;
+	
+        => nrel_goto: ..pris_znach;;
+    *);;
+
+    -> ..pris_znach (*
+        <- varAssign;;
+        -> rrel_1: rrel_assign: rrel_link: rrel_scp_var: _kol_similar;;
+        -> rrel_2: rrel_fixed: rrel_scp_const: [0];;
+        
+        => nrel_goto: ..find_similar_operator3_1;;
+	*);;
+/* test
+-> ..find_similar_operator2_111 (*
+    <- printEl;;
+
+    -> rrel_1: rrel_fixed: rrel_scp_var: _kol_similar;;  //выводит что-то
+    => nrel_goto: ..find_similar_operator3_1;;
+*);;*/
+
+//создание сета _all_train_apps и добавление(скорее копирование) в него всех тренажёров
+    -> ..find_similar_operator3_1 (*
+        <- searchSetStr5;;
+        -> rrel_1: rrel_fixed: rrel_scp_const: concept_training_apparatus;;
+        -> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc1;;
+        -> rrel_3: rrel_assign: rrel_scp_var: _train_app;;
+        -> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+        -> rrel_5: rrel_fixed: rrel_scp_const: nrel_inclusion;;
+
+        -> rrel_set_3: rrel_assign: rrel_scp_var: _all_train_apps;;
+           
+        => nrel_then: ..find_similar_operator3_2;;      
+	    => nrel_else: ..proc_find_similar_training_apparatus_operator_return;;
+	*);;
+    -> ..find_similar_operator3_2 (*
+        <- searchSetStr5;;
+        -> rrel_1: rrel_fixed: rrel_scp_const: concept_cardiotraining_apparatus;;
+        -> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc1;;
+        -> rrel_3: rrel_assign: rrel_scp_var: _train_cardio_app;;
+        -> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+        -> rrel_5: rrel_fixed: rrel_scp_const: nrel_inclusion;;
+
+        -> rrel_set_3: rrel_fixed: rrel_scp_var: _all_train_apps;;
+           
+        => nrel_then: ..find_similar_operator5;;      //find_similar_operator5
+	    => nrel_else: ..proc_find_similar_training_apparatus_operator_return;;
+	*);;
+
+
+/*// test вывод сета всех тренажеров 
+-> ..proc_print_sets5 (*
+			 <- call;;
+			-> rrel_1: rrel_fixed: rrel_scp_const: proc_print_set;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: ... (*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _all_train_apps;;
+			*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _descr;;
+
+			=> nrel_goto: ..proc_print_set5_wait;;
+        *);;
+
+		-> ..proc_print_set5_wait (*
+			<- waitReturn;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
+
+			=> nrel_goto: ..find_similar_operator5;;
+		*);;
+*/
+
+// test - работает  //выводит имя входного тренажера
+-> ..find_similar_operator3_111 (*
+    <- printEl;;
+
+    -> rrel_1: rrel_fixed: rrel_scp_var: _cur_train_app;;  
+    => nrel_goto: ..find_similar_operator5;;
+*);;
+
+
+// создание сета _cur_muscle_set . Поместим туда все мышцы _cur_train_app
+    -> ..find_similar_operator5(*
+        <- searchSetStr5;;
+        -> rrel_1: rrel_fixed: rrel_scp_var: _cur_train_app;;
+        -> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc1;;
+        -> rrel_3: rrel_assign: rrel_scp_var: _cur_muscle;;
+        -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+        -> rrel_5: rrel_fixed: rrel_scp_const: nrel_involved_muscle;;
+        
+        -> rrel_set_3: rrel_assign: rrel_scp_var: rrel_node: _cur_muscle_set;; 
+        
+        => nrel_then: ..find_similar_operator6;;      //find_similar_operator6
+	    => nrel_else: ..proc_find_similar_training_apparatus_operator_return;;
+    *);;
+    
+
+// test вывод сета всех мышц входного тренажёра
+-> ..proc_print_sets (*
+			 <- call;;
+			-> rrel_1: rrel_fixed: rrel_scp_const: proc_print_set;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: ... (*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _cur_muscle_set;;
+			*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _descr;;
+
+			=> nrel_goto: ..proc_print_set_wait;;
+        *);;
+
+		-> ..proc_print_set_wait (*
+			<- waitReturn;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
+
+			=> nrel_goto: ..find_similar_operator6;;
+		*);;
+
+
+        // ------- Ц И К Л -------
+
+// берем один тренажёр из сета _all_train_apps
+    -> ..find_similar_operator6 (*
+        <- searchElStr3;;
+        -> rrel_1: rrel_fixed: rrel_scp_var: _all_train_apps;;
+        -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _erase_arc;;
+        -> rrel_3: rrel_assign: rrel_scp_var: _test_train_app;; //
+
+	    => nrel_then: ..find_similar_operator6_1;;
+	    => nrel_else: ..proc_find_similar_training_apparatus_operator_return;;
+	*);;
+
+	-> ..find_similar_operator6_1 (*
+        <- eraseEl;;
+        -> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _erase_arc;;
+        
+        => nrel_goto: ..find_similar_operator6_1_1;; //find_similar_operator6_1_1
+	*);;
+-> ..find_similar_operator6_111 (*
+    <- printEl;;
+
+    -> rrel_1: rrel_fixed: rrel_scp_var: _test_train_app;;  
+    => nrel_goto: ..find_similar_operator6_1_1;;
+*);;
+
+
+// обнуляем kol
+	-> ..find_similar_operator6_1_1 (*
+        <- contAssign;;	//копирование содержимого ссылки
+        -> rrel_1: rrel_fixed: rrel_link: rrel_scp_var: _kol_similar;;
+        -> rrel_2: rrel_fixed: rrel_scp_const: [0];;
+        
+        => nrel_goto: ..find_similar_operator7;;
+	*);;
+
+// создание сета _test_muscles_set . Поместим туда все мышцы _test_train_app
+    -> ..find_similar_operator7(*
+        <- searchSetStr5;;
+        -> rrel_1: rrel_fixed: rrel_scp_var: _test_train_app;;
+        -> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc1;; //было rrel_common: rrel_scp_var:
+        -> rrel_3: rrel_assign: rrel_scp_var: _test_muscle;;
+        -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+        -> rrel_5: rrel_fixed: rrel_scp_const: nrel_involved_muscle;;
+        
+        -> rrel_set_3: rrel_assign: rrel_scp_var: rrel_node: _test_muscles_set;;
+
+        => nrel_then: ..find_similar_operator8;;       //find_similar_operator8
+	    => nrel_else: ..find_similar_operator6;;
+    *);;
+// test вывод сета _test_muscles_set -РАБОТАЕТ 
+-> ..proc_print_sets7 (*
+			 <- call;;
+			-> rrel_1: rrel_fixed: rrel_scp_const: proc_print_set;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: ... (*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _test_muscles_set;;
+			*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _descr;;
+
+			=> nrel_goto: ..proc_print_set_wait7;;
+        *);;
+
+		-> ..proc_print_set_wait7 (*
+			<- waitReturn;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
+
+			=> nrel_goto: ..find_similar_operator8;;
+		*);;
+
+// Берем одну мышцу из _test_muscles_set и удаляем оттуда
+    -> ..find_similar_operator8 (*
+        <- searchElStr3;;
+        -> rrel_1: rrel_fixed: rrel_scp_var: _test_muscles_set;;
+        -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _erase_arc;;
+        -> rrel_3: rrel_assign: rrel_scp_var: _test_muscle;;
+        
+        => nrel_then: ..find_similar_operator8_1;;
+        => nrel_else: ..find_similar_operator10;;
+	*);;
+
+    -> ..find_similar_operator8_1 (*
+        <- eraseEl;;
+        -> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _erase_arc;;
+        
+        => nrel_goto: ..find_similar_operator9;;    
+	*);;
+
+// Ищем ее (_test_muscle) в _cur_muscle_set     
+    -> ..find_similar_operator9 (*
+        <- searchElStr3;;
+        -> rrel_1: rrel_fixed: rrel_scp_var: _cur_muscle_set;; 
+        -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+        -> rrel_3: rrel_fixed: rrel_scp_var: _test_muscle;;
+        
+        => nrel_then: ..find_similar_operator9_1;;
+        => nrel_else: ..find_similar_operator8;;
+	*);;
+// Если нашли, то кол++
+    -> ..find_similar_operator9_1 (*
+        <- contAdd;;
+        -> rrel_1: rrel_fixed: rrel_scp_var: _kol_similar;;
+        -> rrel_2: rrel_fixed: rrel_scp_var: _kol_similar;;
+        -> rrel_3: rrel_fixed: rrel_scp_const: [1];;
+        
+        => nrel_goto: ..find_similar_operator8;;
+	*);;
+
+// Если kol>2, проверяем на равенство со входным тренажером
+    -> ..find_similar_operator10 (*
+        <- ifGr;;
+        -> rrel_1: rrel_fixed: rrel_scp_var: _kol_similar;;
+        -> rrel_2: rrel_fixed: rrel_scp_const: [1];;
+        
+        => nrel_then: ..find_similar_operator10_1;;
+        => nrel_else: ..find_similar_operator6;;
+	*);;
+// НЕ РАВНЫ ли тренажеры
+    -> ..find_similar_operator10_1 (*
+        <- ifCoin;; 
+        -> rrel_1: rrel_fixed: rrel_scp_var: _test_train_app;;
+        -> rrel_2: rrel_fixed: rrel_scp_var: _parametr;; 
+        
+        => nrel_then: ..find_similar_operator6;; 
+        => nrel_else: ..find_similar_operator11;;
+	*);;
+//  answer
+    -> ..find_similar_operator11 (*
+        <- genElStr3;;
+        -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+        -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+        -> rrel_3: rrel_fixed: rrel_scp_var: _test_train_app;;
+        
+        => nrel_goto: ..find_similar_operator11_2;;
+	*);;
+
+	-> ..find_similar_operator11_2 (*
+        <- genElStr3;;
+        -> rrel_1: rrel_fixed: rrel_scp_var: _parametr;;
+        -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _add_arc;;
+        -> rrel_3: rrel_fixed: rrel_scp_var: _test_train_app;;
+        
+        => nrel_goto: ..find_similar_operator11_3;; 
+	*);;
+
+    -> ..find_similar_operator11_3 (*
+        <- genElStr3;;
+        -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+        -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+        -> rrel_3: rrel_fixed: rrel_scp_var: _add_arc;;
+        
+        => nrel_goto: ..find_similar_operator6;;
+	*);;
+    -> ..find_similar_operator11_4 (*
+        <- genElStr3;;
+        -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+        -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+        -> rrel_3: rrel_fixed: rrel_scp_const: nrel_inclusion;;
+        
+        => nrel_goto: ..find_similar_operator6;;
+	*);;
+
+    -> ..proc_find_similar_training_apparatus_operator_return (*
+	<- return;;
+	*);;
+
+*);;
+*);;
