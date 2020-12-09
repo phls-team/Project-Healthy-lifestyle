@@ -1,0 +1,67 @@
+nrel_protein_digestibility_corrected_amino_acid_score=>nrel_idtf:[protein_digestibility_corrected_amino_acid_score*] (* <- lang_en;; *);;
+nrel_protein_digestibility_corrected_amino_acid_score=>nrel_idtf:[аминокислотный коэффициент усвояемости белков*] (* <- lang_ru;; *);;
+nrel_protein_digestibility_corrected_amino_acid_score=>nrel_main_idtf:[аминокислотный коэффициент усвояемости белков*] (* <- lang_ru;; *);;
+
+nrel_protein_digestibility_corrected_amino_acid_score<-rrel_key_sc_element:...
+(*
+<-definition;;=>nrel_main_idtf:[Опр.(аминокислотный коэффициент усвояемости белков*)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+(*
+->[Аминокислотный коэффициент усвояемости белков* - метод оценки качества белка, основанный на потребностях к аминокислотам человека и его способности переваривать их.](* <- lang_ru;; *);;
+*);;
+*);;
+
+
+nrel_protein_digestibility_corrected_amino_acid_score=>nrel_first_domain:concept_human;;
+nrel_protein_digestibility_corrected_amino_acid_score=>nrel_second_domain:...
+(*
+	<=nrel_combination:...
+(*
+	->concept_protein;;
+	->concept_amino_acid;;
+*);;
+*);;
+
+
+
+nrel_protein_digestibility_corrected_amino_acid_score<-binary_relation;;
+parameter->arity;;
+arity->binary_relation;;
+binary_relation=>nrel_measurement:2;;
+2<-number;;
+
+
+
+nrel_protein_digestibility_corrected_amino_acid_score<-oriented_relation;;
+asymmetric_relation->nrel_protein_digestibility_corrected_amino_acid_score;;
+transitive_relation->nrel_protein_digestibility_corrected_amino_acid_score;;
+antireflexive_relation->nrel_protein_digestibility_corrected_amino_acid_score;;
+binary_relation=>nrel_inclusion:asymmetric_relation;;
+binary_relation=>nrel_inclusion:transitive_relation;;
+binary_relation=>nrel_inclusion:antireflexive_relation;;
+relation=>nrel_inclusion:binary_relation;;
+relation=>nrel_inclusion:oriented_relation;;
+
+
+
+
+concept_amino_acid<=nrel_using_constants:...
+(*
+	->rrel_key_sc_element:nrel_protein_digestibility_corrected_amino_acid_score;;
+	<-statement;;
+	=>nrel_idtf:[Утверждение 1. Формула для расчёта процента PDCAAS](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[1 мг предельной аминокислоты в 1 г тестового белка / мг той же аминокислоты в 1 г эталонного белка) х процент истинной усвояемости.](* <- lang_ru;; *);;
+	*);;
+*);;
+
+
+
+sc_node_not_relation->asymmetric_relation;;
+asymmetric_relation=>nrel_main_idtf:
+[асимметричное отношение](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_human;;
+concept_human=>nrel_main_idtf:
+[человек](* <-lang_ru;; *);;
+

@@ -1,0 +1,147 @@
+concept_lysine=>nrel_idtf:[lysine] 
+	(*
+		<-lang_en;;
+	*);;
+concept_lysine=>nrel_idtf:[лизин]
+	(*
+		<-lang_ru;;	
+	*);;
+concept_lysine=>nrel_main_idtf:[лизин]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+concept_lysine<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр.(лизин)] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->[Лизин - незаменимая алифатическая аминокислота, одна из 20 протеиногенных аминокислот, жизненно важна для построения критических белков организма, входит в триаду аминокислот, особо учитываемых при определении общей полноценности питания.](* <- lang_ru;; *);;
+	*);;
+	*);;
+
+
+
+concept_lysine<-rrel_key_sc_element:...
+    (*
+        <-illustration;;
+        <=nrel_sc_text_translation:...
+    (*
+        ->rrel_example:
+        "file://images/lysine.png"
+    (*
+        =>nrel_format:format_png;;
+    *);;
+    *);;
+    *);;
+
+
+
+concept_lysine<-rrel_key_sc_element:...
+    (*
+        <-illustration;;
+        <=nrel_sc_text_translation:...
+    (*
+->rrel_example_1:
+"file://images/lysine-f.png"
+(*
+=>nrel_format:format_png;;
+*);;
+*);;
+*);;
+
+
+
+concept_lysine<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 1. Роль в организме](* <- lang_ru;; *);;
+
+=>nrel_using_constants:...
+	(*
+		->concept_organic_compound;;
+		->concept_protein;;
+	*);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Лизин необходим для роста, регенерации тканей, производства гормонов, антител, а также ферментов. Из лизина строятся белки мышц и коллагена - компонента соединительной ткани. Он отвечает за прочность кровеносных сосудов, эластичность связок. Отвечает за усвоение кальция. Предотвращает остеопороз, атеросклероз, инсульты и инфаркты. Регулирует деятельность молочных желез.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_lysine<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 2. Суточная потребность](* <- lang_ru;; *);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Суточная потребность в лизине составляет 3-5 грамм.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_lysine <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 3. Незаменимая аминокислота](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Организм не синтезирует лизин. Это вещество должно поступать в организм только извне, вместе с пищей.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_lysine <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 4. Факт о лизине](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Лизин – любимая аминокислота Шелдона Купера.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_lysine <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 5. Открытие](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Лизин выделен в 1889 г. Д. Дречселом из гидролизата казеина. Синтез лизина осуществлен в 1902 г. А. Фишером.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+
+concept_lysine=>nrel_foodsource:concept_protein;;
+
+concept_lysine=>nrel_inclusion:concept_protein;;
+
+sc_node_norole_relation->nrel_foodsource;;
+nrel_foodsource=>nrel_main_idtf:
+[пищевой источник](* <-lang_ru;; *);;

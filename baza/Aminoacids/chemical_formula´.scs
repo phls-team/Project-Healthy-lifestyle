@@ -1,0 +1,81 @@
+nrel_chemical_formula=>nrel_idtf:[chemical_formula´] (* <- lang_en;; *);;
+nrel_chemical_formula=>nrel_idtf:[химическая формула´] (* <- lang_ru;; *);;
+nrel_chemical_formula=>nrel_main_idtf:[химическая формула´] (* <- lang_ru;; *);;
+
+nrel_chemical_formula<-nrel_key_sc_element:...
+(*
+<-definition;;=>nrel_main_idtf:[Опр.(химическая формула´)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+(*
+->[Химическая формула´ - условное обозначение химического состава и структуры вещества с помощью символов химических элементов, числовых и вспомогательных знаков (скобок, тире и т. п.).](* <- lang_ru;; *);;
+*);;
+*);;
+
+
+nrel_chemical_formula=>nrel_first_domain:concept_chemistry;;
+nrel_chemical_formula=>nrel_second_domain:concept_formula;;
+
+
+
+nrel_chemical_formula<-binary_relation;;
+parameter->arity;;
+arity->binary_relation;;
+binary_relation=>nrel_measurement:2;;
+2<-number;;
+
+
+
+nrel_chemical_formula<-oriented_relation;;
+asymmetric_relation->nrel_chemical_formula;;
+transitive_relation->nrel_chemical_formula;;
+antireflexive_relation->nrel_chemical_formula;;
+binary_relation=>nrel_inclusion:asymmetric_relation;;
+binary_relation=>nrel_inclusion:transitive_relation;;
+binary_relation=>nrel_inclusion:antireflexive_relation;;
+relation=>nrel_inclusion:binary_relation;;
+relation=>nrel_inclusion:oriented_relation;;
+
+
+
+
+concept_chemical_formula<=nrel_using_constants:...
+(*
+	->nrel_key_sc_element:nrel_chemical_formula;;
+	<-statement;;
+	=>nrel_idtf:[Утверждение 1. Значение химической формулы](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->nrel_example:[Химическая формула отражает: качественный состав (из каких химических элементов состоит вещество); количественный состав (сколько атомов каждого элемента содержит реальная или условная молекула вещества).](* <- lang_ru;; *);;
+	*);;
+*);;
+
+concept_amino_acid<=nrel_using_constants:...
+(*
+	->nrel_key_sc_element:nrel_chemical_formula;;
+	<-statement;;
+	=>nrel_idtf:[Утверждение 2. Химическая формула аминокислоты](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->nrel_example:[В химическую формулу аминокислот входят карбоксильные группы – СООН и аминогруппы -NH2.](* <- lang_ru;; *);;
+	*);;
+*);;
+
+
+
+sc_node_not_relation->asymmetric_relation;;
+asymmetric_relation=>nrel_main_idtf:
+[асимметричное отношение](* <-lang_ru;; *);;
+
+
+sc_node_not_relation->concept_chemistry;;
+concept_chemistry=>nrel_main_idtf:
+[химия](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_formula;;
+concept_formula=>nrel_main_idtf:
+[формула](* <-lang_ru;; *);;
+
+
+
+sc_node_not_relation->concept_chemical_formula;;
+concept_chemical_formula=>nrel_main_idtf:
+[химическая формула](* <-lang_ru;; *);;
