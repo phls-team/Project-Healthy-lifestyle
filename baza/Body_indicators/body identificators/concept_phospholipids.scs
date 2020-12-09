@@ -1,0 +1,66 @@
+concept_phospholipids<-sc_node_not_relation;;
+concept_phospholipids => nrel_main_idtf: [фосфолипиды](*<- lang_ru;;*);;
+concept_phospholipids => nrel_main_idtf: [phospholipids](*<- lang_en;;*);;
+
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_phospholipids;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Фосфолипиды — сложные липиды, сложные эфиры многоатомных спиртов и высших жирных кислот. Содержат остаток фосфорной кислоты и соединённую с ней добавочную группу атомов различной химической природы.](*<- lang_ru;;*);;
+	    -> [Phospholipids - complex lipids, esters of polyhydric alcohols and higher fatty acids. They contain a phosphoric acid residue and an additional group of atoms of various chemical nature connected to it.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(фосфолипиды)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(phospholipids)](*<- lang_ru;;*);;
+   
+*);;
+
+
+
+
+
+concept_phospholipids<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://картинки/phospholipids.png"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;
+
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_phospholipids;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Свойства фосфолипидов:
+            
+    в них содержатся жирные кислоты, фосфорная кислота и дополнительная группа атомов, во многих случаях содержащая азот;
+    они есть во всех живых клетках;
+    они содержатся в нервной ткани, участвуют в доставке жиров, жирных кислот и холестерина;
+    способны формировать липосомы и биологические мембраны (липидный бислой).](*<- lang_ru;;*);;
+       -> [Phospholipid properties:
+            
+    they contain fatty acids, phosphoric acid and an additional group of atoms, in many cases containing nitrogen;
+    they are in all living cells;
+    they are found in the nervous tissue, are involved in the delivery of fats, fatty acids and cholesterol;
+    able to form liposomes and biological membranes (lipid bilayer)..](*<- lang_en;;*);;
+
+ *);;
+    => nrel_main_idtf: [Утв.(фосфолипиды)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(phospholipids)](*<- lang_ru;;*);;
+*);;
+
+
+	
+	concept_phospholipids => nrel_inclusion:
+	concept_phospholipids_concentration;;	
+

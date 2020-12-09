@@ -1,0 +1,20 @@
+concept_atherogenic_coefficient <- sc_node_not_relation;;
+
+concept_atherogenic_coefficient => nrel_main_idtf: [коэффициент атерогенности] (* <- lang_ru;; *);;
+concept_atherogenic_coefficient => nrel_main_idtf: [atherogenic coefficient] (* <- lang_en;; *);;
+
+d_concept_atherogenic_coefficient <- definition;;
+
+d_concept_atherogenic_coefficient => nrel_main_idtf: [Опр.(коэффициент атерогенности)] (* <- lang_ru;; *);;
+d_concept_atherogenic_coefficient => nrel_main_idtf: [Def.(atherogenic coefficient)] (* <- lang_en;; *);;
+
+d_concept_atherogenic_coefficient -> rrel_key_sc_element: concept_atherogenic_coefficient;;
+d_concept_atherogenic_coefficient <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Коэффициент атерогенности — расчётный показатель степени риска развития атеросклероза у человека.]
+		(* <- lang_ru;; *);;
+	*);;
+
+parameter -> concept_atherogenic_coefficient;;

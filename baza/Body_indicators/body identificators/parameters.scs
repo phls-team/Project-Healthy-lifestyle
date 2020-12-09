@@ -1,0 +1,27 @@
+concept_norm_for_women<- sc_node_not_relation;;
+concept_norm_for_women => nrel_main_idtf: [норма для женщин] (* <- lang_ru;; *);;
+concept_norm_for_women => nrel_main_idtf: [the norm for women] (* <- lang_en;; *);;
+
+concept_norm_for_women<-parameter;;
+
+concept_norm_for_men<- sc_node_not_relation;;
+concept_norm_for_men => nrel_main_idtf: [норма для мужчин] (* <- lang_ru;; *);;
+concept_norm_for_men => nrel_main_idtf: [the norm for men] (* <- lang_en;; *);;
+
+concept_norm_for_men<-parameter;;
+
+concept_norm_for_children<- sc_node_not_relation;;
+concept_norm_for_children => nrel_main_idtf: [норма для детей] (* <- lang_ru;; *);;
+concept_norm_for_children => nrel_main_idtf: [the norm for children] (* <- lang_en;; *);;
+
+concept_norm_for_children<-parameter;;
+
+rrel_minimal_value<-sc_node_role_relation; 
+=>nrel_main_idtf:[minimum allowable value](*<-lang_en;;*);
+=>nrel_main_idtf:[минимальное допустимое значение](*<-lang_ru;;*);;
+
+rrel_maximal_value<-sc_node_role_relation;
+=>nrel_main_idtf:[максимальное допустимое значение](*<-lang_ru;;*);
+=>nrel_main_idtf:[maximal allowable value](*<-lang_en;;*);;
+
+

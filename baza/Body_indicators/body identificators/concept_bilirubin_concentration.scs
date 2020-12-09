@@ -1,0 +1,21 @@
+concept_bilirubin_concentration <- sc_node_not_relation;;
+
+concept_bilirubin_concentration => nrel_main_idtf: [концентрация билирубина] (* <- lang_ru;; *);;
+concept_bilirubin_concentration => nrel_main_idtf: [bilirubin concentration] (* <- lang_en;; *);;
+
+d_concept_bilirubin_concentration <- definition;;
+
+d_concept_bilirubin_concentration => nrel_main_idtf: [Опр.(концентрация билирубина)] (* <- lang_ru;; *);;
+d_concept_bilirubin_concentration => nrel_main_idtf: [Def.(bilirubin concentration)] (* <- lang_en;; *);;
+
+d_concept_bilirubin_concentration -> rrel_key_sc_element: concept_bilirubin_concentration;;
+d_concept_bilirubin_concentration <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Концентрация билирубина - содержание билирубина в крови. Количество этого желчного пигмента измеряют в миллиграммах или в микромолях на литр плазмы.]
+		(* <- lang_ru;; *);;
+	*);;
+
+
+parameter -> concept_bilirubin_concentration;;

@@ -1,0 +1,22 @@
+concept_leukocyte_count <- sc_node_not_relation;;
+
+concept_leukocyte_count => nrel_main_idtf: [число лейкоцитов] (* <- lang_ru;; *);;
+concept_leukocyte_count => nrel_main_idtf: [leukocyte count] (* <- lang_en;; *);;
+
+d_concept_leukocyte_count <- definition;;
+
+d_concept_leukocyte_count => nrel_main_idtf: [Опр.(число лейкоцитов)] (* <- lang_ru;; *);;
+d_concept_leukocyte_count => nrel_main_idtf: [Def.(leukocyte count)] (* <- lang_en;; *);;
+ 
+d_concept_leukocyte_count -> rrel_key_sc_element: concept_leukocyte_count;;
+d_concept_leukocyte_count <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Число лейкоцитов - количество клеток лейкоцитов в крови человека.]
+		(* <- lang_ru;; *);;
+	*);;
+
+parameter -> concept_leukocyte_count;;
+
+ 

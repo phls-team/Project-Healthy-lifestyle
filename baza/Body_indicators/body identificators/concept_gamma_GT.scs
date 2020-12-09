@@ -1,0 +1,44 @@
+concept_gamma_GT_concetration<-sc_node_not_relation;;
+concept_gamma_GT_concetration => nrel_main_idtf: [гамма-ГТ](*<- lang_ru;;*);;
+concept_gamma_GT_concetration => nrel_main_idtf: [gamma-GT](*<- lang_en;;*);;
+
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_gamma_GT_concetration;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Гамма-ГТ — фермент, участвующий в обмене аминокислот. Катализирует перенос гамма-глутамилового остатка с гамма-глутамилового пептида на аминокислоту, другой пептид или, при гидролизе, на воду.](*<- lang_ru;;*);;
+	    -> [Gamma-GT - an enzyme involved in the exchange of amino acids. It catalyzes the transfer of a gamma-glutamyl residue from a gamma-glutamyl peptide to an amino acid, another peptide, or, upon hydrolysis, to water.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(гамма-ГТ)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(gamma-GT)](*<- lang_ru;;*);;
+   
+*);;
+
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_gamma_GT_concetration;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Локализация:
+
+    В клетках локализуется в мембране, лизосомах и цитоплазме.](*<- lang_ru;;*);;
+       -> [Localization:
+       
+    In cells, it is localized in the membrane, lysosomes and cytoplasm.](*<- lang_en;;*);;
+
+ *);;
+    => nrel_main_idtf: [Утв.(гамма-ГТ)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(gamma-GT)](*<- lang_ru;;*);;
+*);;
+
+concept_gamma_GT => nrel_inclusion:
+	concept_gamma_GT_concentration;;
+	
+	
+
+

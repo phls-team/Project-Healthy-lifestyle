@@ -1,0 +1,22 @@
+concept_gamma_GT_concentration <- sc_node_not_relation;;
+
+concept_gamma_GT_concentration => nrel_main_idtf: [концентрация гаммы-ГТ] (* <- lang_ru;; *);;
+concept_gamma_GT_concentration => nrel_main_idtf: [gamma-GT concentration] (* <- lang_en;; *);;
+
+d_concept_gamma_GT_concentration <- definition;;
+
+d_concept_gamma_GT_concentration => nrel_main_idtf: [Опр.(концентрация гаммы-ГТ)] (* <- lang_ru;; *);;
+d_concept_gamma_GT_concentration => nrel_main_idtf: [Def.(gamma-GT concentration)] (* <- lang_en;; *);;
+ 
+d_concept_gamma_GT_concentration -> rrel_key_sc_element: concept_gamma_GT_concentration;;
+d_concept_gamma_GT_concentration <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Концентрация гаммы-ГТ - содержание гаммы-ГТ в крови человека.]
+		(* <- lang_ru;; *);;
+	*);;
+
+parameter -> concept_gamma_GT_concentration;;
+
+

@@ -1,0 +1,68 @@
+concept_lipase<-sc_node_not_relation;;
+concept_lipase => nrel_main_idtf: [липаза](*<- lang_ru;;*);;
+concept_lipase => nrel_main_idtf: [lipase](*<- lang_en;;*);;
+
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_lipase;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Липаза — простой растворимый в воде белкок, умеренно растворимый в концентрированных растворах соли и свёртывающийся при нагревании (денатурация белка).](*<- lang_ru;;*);;
+	    -> [Lipase - simple water-soluble protein, sparingly soluble in concentrated salt solutions and clotting when heated (protein denaturation).](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(липаза)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(lipase)](*<- lang_ru;;*);;
+   
+*);;
+
+
+
+
+
+concept_lipase<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://картинки/lipase.png"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;
+
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_lipase;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Применение:
+
+    зарегистрирована в качестве пищевой добавки E1104.
+    
+                Классификация:
+    
+    относятся к эстеразам.](*<- lang_ru;;*);;
+       -> [Application:
+
+    registered as a food additive E1104.
+           Classification:
+    
+    belong to esterases.](*<- lang_en;;*);;
+
+ *);;
+    => nrel_main_idtf: [Утв.(липаза)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(lipase)](*<- lang_ru;;*);;
+*);;
+
+
+concept_lipase => nrel_inclusion:
+	concept_lipase_concentration;;
+	
+	
+

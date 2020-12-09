@@ -1,0 +1,20 @@
+concept_aspartate_aminotransferase_concentration <- sc_node_not_relation;;
+
+concept_aspartate_aminotransferase_concentration => nrel_main_idtf: [содержание аспартатаминотрансфераза] (* <- lang_ru;; *);;
+concept_aspartate_aminotransferase_concentration => nrel_main_idtf: [aspartate aminotransferase concentration] (* <- lang_en;; *);;
+
+d_concept_aspartate_aminotransferase_concentration <- definition;;
+
+d_concept_aspartate_aminotransferase_concentration => nrel_main_idtf: [Опр.(содержание аспартатаминотрансфераза)] (* <- lang_ru;; *);;
+d_concept_aspartate_aminotransferase_concentration => nrel_main_idtf: [Def.(aspartate aminotransferase concentration)] (* <- lang_en;; *);;
+
+d_concept_aspartate_aminotransferase_concentration -> rrel_key_sc_element: concept_aspartate_aminotransferase_concentration;;
+d_concept_aspartate_aminotransferase_concentration <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Содержание аспартатаминотрансфераза - содержание фермента аспартатаминотрансфераза, используемого для оценки функции сердца.]
+		(* <- lang_ru;; *);;
+	*);;
+
+parameter -> concept_aspartate_aminotransferase_concentration;;

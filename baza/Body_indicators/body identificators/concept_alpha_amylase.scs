@@ -1,0 +1,65 @@
+concept_alpha_amylase<-sc_node_not_relation;;
+concept_alpha_amylase => nrel_main_idtf: [альфа-амилаза](*<- lang_ru;;*);;
+concept_alpha_amylase => nrel_main_idtf: [alpha amylase](*<- lang_en;;*);;
+
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_alpha_amylase;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Альфа-амилаза — простой растворимый в воде белкок, умеренно растворимый в концентрированных растворах соли и свёртывающийся при нагревании (денатурация белка).](*<- lang_ru;;*);;
+	    -> [Alpha amylase - simple water-soluble protein, sparingly soluble in concentrated salt solutions and clotting when heated (protein denaturation).](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(альфа-амилаза)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(alpha amylase)](*<- lang_ru;;*);;
+   
+*);;
+
+
+
+
+
+concept_alpha_amylase<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://картинки/alpha_amylase.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;
+
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_alpha_amylase;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [В промышленности:
+
+    используется в производстве этанола для расщепления крахмала в зернах на сахара;
+    обрабатывает кукурузный крахмал на первом этапе производства кукурузного сиропа с высоким  содержанием фруктозы;
+    используется в некоторых моющих средствах, особенно в моющих средствах для мытья посуды и удаления крахмала.](*<- lang_ru;;*);;
+       -> [In industry:
+
+    used in ethanol production to break down starch in grains into sugars;
+    processes corn starch in the first stage of the production of high fructose corn syrup;
+    used in some detergents, especially dishwashing detergents and starch removers.](*<- lang_en;;*);;
+
+ *);;
+    => nrel_main_idtf: [Утв.(альфа-амилаза)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(alpha amylase)](*<- lang_ru;;*);;
+*);;
+
+
+concept_alpha_amylase => nrel_inclusion:
+	concept_alpha_amylase_concentration;;
+	
+	
+

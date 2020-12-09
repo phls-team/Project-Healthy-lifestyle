@@ -1,0 +1,22 @@
+concept_phospholipids_concentration <- sc_node_not_relation;;
+
+concept_phospholipids_concentration => nrel_main_idtf: [концентрация фосфолипидов] (* <- lang_ru;; *);;
+concept_phospholipids_concentration => nrel_main_idtf: [phospholipids concentration] (* <- lang_en;; *);;
+
+d_concept_phospholipids_concentration <- definition;;
+
+d_concept_phospholipids_concentration => nrel_main_idtf: [Опр.(концентрация фосфолипидов)] (* <- lang_ru;; *);;
+d_concept_phospholipids_concentration => nrel_main_idtf: [Def.(phospholipids concentration)] (* <- lang_en;; *);;
+ 
+d_concept_phospholipids_concentration -> rrel_key_sc_element: concept_phospholipids_concentration;;
+d_concept_phospholipids_concentration <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Концентрация фосфолипидов - содержание фосфолипидов в крови человека.]
+		(* <- lang_ru;; *);;
+	*);;
+
+parameter -> concept_phospholipids_concentration;;
+
+

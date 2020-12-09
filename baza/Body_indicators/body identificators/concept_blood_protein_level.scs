@@ -1,0 +1,20 @@
+concept_blood_protein_level <- sc_node_not_relation;;
+
+concept_blood_protein_level => nrel_main_idtf: [уровень белка] (* <- lang_ru;; *);;
+concept_blood_protein_level => nrel_main_idtf: [blood protein level] (* <- lang_en;; *);;
+
+d_concept_blood_protein_level <- definition;;
+
+d_concept_blood_protein_level => nrel_main_idtf: [Опр.(уровень белка)] (* <- lang_ru;; *);;
+d_concept_blood_protein_level => nrel_main_idtf: [Def.(blood protein level)] (* <- lang_en;; *);;
+
+d_concept_blood_protein_level -> rrel_key_sc_element: concept_blood_protein_level;;
+d_concept_blood_protein_level <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Уровень белка - содержание белка в крови.]
+		(* <- lang_ru;; *);;
+	*);;
+
+parameter -> concept_blood_protein_level;;
