@@ -1,0 +1,191 @@
+agent_of_finding_plant_by_water_and_moisture
+=> nrel_main_idtf:
+	[агентная scp-программа поиска заболеваний по симптомам] (* <- lang_ru;; *);
+	[agent scp-program of finding diseases by symptoms] (* <- lang_en;; *);
+	<- agent_scp_program;;
+
+scp_program -> agent_of_finding_plant_by_water_and_moisture
+	(*
+	-> rrel_params: .agent_of_finding_plant_by_water_and_moisture_params 
+		(*
+		-> rrel_1: rrel_in: _event;;
+		-> rrel_2: rrel_in: _input_arc;;
+		*);;
+
+	-> rrel_operators: .agent_of_finding_plant_by_water_and_moisture_operator_set 
+		(*
+		-> rrel_init: .agent_of_finding_plant_by_water_and_moisture_operator1A 
+			(*
+		  	<- searchElStr3;;
+		  	-> rrel_1: rrel_assign: rrel_scp_var: _temp;;
+		  	-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _quest;;
+
+		  	=> nrel_goto: .agent_of_finding_plant_by_water_and_moisture_operator1B;;
+			*);;
+
+		-> .agent_of_finding_plant_by_water_and_moisture_operator1B 
+			(*
+		  	<- searchElStr3;;
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: action_of_finding_plant_by_water_and_moisture;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+		  	=> nrel_then: .agent_of_finding_plant_by_water_and_moisture_operator1C;;
+		  	=> nrel_else: .agent_of_finding_plant_by_water_and_moisture_operator_return;;
+			*);;
+
+		-> .agent_of_finding_plant_by_water_and_moisture_operator1C
+			(*
+		 	<- searchElStr5;;
+
+		 	-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+		 	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		 	-> rrel_3: rrel_assign: rrel_scp_var: _param1;;
+            		-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+		 	-> rrel_5: rrel_fixed: rrel_scp_const: rrel_1;;
+
+			=> nrel_then: .agent_of_finding_plant_by_water_and_moisture_operator1D;;
+			=> nrel_else: .agent_of_finding_plant_by_water_and_moisture_operator_return;;
+			*);;
+
+		-> .agent_of_finding_plant_by_water_and_moisture_operator1D
+			(*
+		 	<- searchElStr5;;
+
+		 	-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+		 	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		 	-> rrel_3: rrel_assign: rrel_scp_var: _param2;;
+            		-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+		 	-> rrel_5: rrel_fixed: rrel_scp_const: rrel_2;;
+
+			=> nrel_then: .agent_of_finding_plant_by_water_and_moisture_operator1E;;
+			=> nrel_else: .agent_of_finding_plant_by_water_and_moisture_operator_return;;
+			*);;	 	
+
+
+	     -> .agent_of_finding_plant_by_water_and_moisture_operator1E
+			(*
+		 	<- searchElStr5;;
+
+		 	-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+		 	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		 	-> rrel_3: rrel_assign: rrel_scp_var: _param3;;
+            -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+		 	-> rrel_5: rrel_fixed: rrel_scp_const: rrel_3;;
+
+			=> nrel_then: .agent_of_finding_plant_by_water_and_moisture_operator2A;;
+			=> nrel_else: .agent_of_finding_plant_by_water_and_moisture_operator_return;;
+			*);;	 	
+
+
+
+		-> .agent_of_finding_plant_by_water_and_moisture_operator2A 
+			(*
+			<- genEl;;
+
+			-> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _answer;;
+
+			=> nrel_goto: .agent_of_finding_plant_by_water_and_moisture_operator2A_1;;
+			*);;
+
+        -> .agent_of_finding_plant_by_water_and_moisture_operator2A_1 
+			(*
+			<- genEl;;
+
+			-> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _answer1;;
+
+			=> nrel_goto: .agent_of_finding_plant_by_water_and_moisture_operator2A_2;;
+			*);;
+
+
+        -> .agent_of_finding_plant_by_water_and_moisture_operator2A_2 
+			(*
+			<- genEl;;
+
+			-> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _answer2;;
+
+			=> nrel_goto: .proc_find_min_ostov_operator5;;
+			*);;
+
+
+        -> .proc_find_min_ostov_operator5(*
+			<- call;;
+			-> rrel_1: rrel_fixed: rrel_scp_const: proc_analyz;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: ...
+            (*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _param1;;
+				-> rrel_2: rrel_fixed: rrel_scp_var: _answer1;;
+	            
+			*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _descrr;;
+
+			=> nrel_goto: .waitReturn;;
+							*);;
+			
+        ->.waitReturn (*
+            <- waitReturn;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: _descrr;;
+            => nrel_goto: .proc_find_min_ostov_operator6;;
+            *);;						
+
+
+        -> .proc_find_min_ostov_operator6(*
+			<- call;;
+			-> rrel_1: rrel_fixed: rrel_scp_const: proc_disease;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: ...
+            (*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _param2;;
+                -> rrel_2: rrel_fixed: rrel_scp_var: _param3;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _answer2;;
+			*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _descr;;
+
+			=> nrel_goto: .waitReturn2;;
+							*);;
+			
+        ->.waitReturn2 (*
+            <- waitReturn;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
+            => nrel_goto: .proc_find_min_ostov_operator7;;
+            *);;						
+
+
+		   -> .proc_find_min_ostov_operator7(*
+			<- call;;
+			-> rrel_1: rrel_fixed: rrel_scp_const: proc_intersection;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: ...
+            (*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _answer1;;
+                -> rrel_2: rrel_fixed: rrel_scp_var: _answer2;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
+			*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _descr;;
+
+			=> nrel_goto: .waitReturn3;;
+							*);;
+			
+        ->.waitReturn3 (*
+            <- waitReturn;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
+            => nrel_goto: .agent_of_finding_plant_by_water_and_moisture_operator3A;;
+            *);;	
+	
+
+		-> .agent_of_finding_plant_by_water_and_moisture_operator3A
+			(*
+		    <- genElStr5;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+            -> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
+            -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+            -> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+		  	=> nrel_goto: .agent_of_finding_plant_by_water_and_moisture_operator_return;;
+			*);;
+
+		-> .agent_of_finding_plant_by_water_and_moisture_operator_return 
+			(*
+		  	<- return;;
+			*);;
+		*);;
+	*);;

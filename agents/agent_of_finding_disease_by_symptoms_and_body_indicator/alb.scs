@@ -1,0 +1,21 @@
+concept_decreased_albumin <- sc_node_not_relation;;
+
+concept_decreased_albumin => nrel_main_idtf: [пониженный альбумин] (* <- lang_ru;; *);;
+concept_decreased_albumin => nrel_main_idtf: [decreased albumin] (* <- lang_en;; *);;
+
+
+concept_elevated_albumin <- sc_node_not_relation;;
+
+concept_elevated_albumin => nrel_main_idtf: [повышенный альбумин] (* <- lang_ru;; *);;
+concept_elevated_albumin => nrel_main_idtf: [elevated albumin] (* <- lang_en;; *);;
+
+
+ 
+ cholera=> nrel_symptom: concept_elevated_albumin;;
+ concept_hepatitis_B=> nrel_symptom: concept_elevated_albumin;;
+ concept_hepatitis_D=> nrel_symptom: concept_elevated_albumin;;
+ 
+ 
+concept_orvi=> nrel_symptom: concept_decreased_albumin;;
+hypermetropia=> nrel_symptom: concept_decreased_albumin;;
+viral_meningitis=> nrel_symptom: concept_decreased_albumin;;

@@ -1,0 +1,68 @@
+
+set_dis=>nrel_main_idtf:[множество возможных болезней] (*<-lang_ru;;*);
+[set possimble disease] (*<-lang_en;;*);;
+
+
+nrel_coeff=>nrel_main_idtf:[коеффициент*] (*<-lang_ru;;*);
+[coefficient] (*<-lang_en;;*);;
+
+
+	
+ nrel_symptom-> (bipolar_type_I_disorder => euphoria)(*
+		=>[0,51];;
+	*);;
+ nrel_symptom-> (bipolar_type_I_disorder => reckless_behaviour)(*
+		=>[0,6];;
+	*);;
+nrel_symptom-> (bipolar_type_II_disorder => euphoria)(*
+		=>[0,6];;
+	*);;
+ nrel_symptom-> (bipolar_type_II_disorder => reckless_behaviour)(*
+		=>[0,7];;
+	*);;
+
+nrel_symptom-> (cyclothymic_disorder => euphoria)(*
+		=>[0,7];;
+	*);;
+
+
+concept_illness->concept_deficit_in_the_ability_to_initiate_social_interaction_and_social_communication;
+                concept_deficit_in_the_ability_to_sustain_social_interaction_and_social_communication;
+                delay_in_the_acquisition_of_gross_and_fine_motor_skills;
+                impairment_in_the_execution_of_coordinated_motor_skills;
+                developmental_speech_sound_disorder;
+                developmental_speech_fluency_disorder;
+                developmental_language_disorder;
+                concept_difficulty_in_learning_reading;
+                difficulties_in_learning_academic_skills_other;
+                pattern_of_inattention_or_hyperactivity_impulsivity;
+                concept_delusion;
+                disorganization; 
+                hallucination;
+                perplexity;
+                rapid_speech;
+                euphoria;
+                irritability;
+                expansiveness;
+                increased_activity;
+                subjective_experience_of_increased_energy;
+                pressured_speech;
+                flight_of_ideas;
+                increased_self_esteem;
+                decreased_need_for_sleep;       
+                impulsive_behaviour;
+                reckless_behaviour;
+                rapid_changes_among_different_mood_states;
+                grandiosity;
+                distractibility;
+                fatigue;
+                difficulty_concentrating;
+                feelings_of_worthless;
+                excessive_guilt;
+                inappropriate_guilt;
+                feelings_of_hopelessness;
+                suicidality;
+                change_in_appetite;
+                change_in_sleep;
+                psychomotor_agitation;
+                retardation;;

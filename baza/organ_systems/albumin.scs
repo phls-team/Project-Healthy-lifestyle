@@ -1,0 +1,44 @@
+concept_albumin <- sc_node_not_relation;;
+
+concept_albumin => nrel_main_idtf: [альбумин] (* <- lang_ru;; *);;
+concept_albumin => nrel_main_idtf: [albumin] (* <- lang_en;; *);;
+
+d_concept_albumin <- definition;;
+
+d_concept_albumin => nrel_main_idtf: [Опр.(альбумин)] (* <- lang_ru;; *);;
+d_concept_albumin => nrel_main_idtf: [Def.(albumin )] (* <- lang_en;; *);;
+ 
+
+concept_albumin=>nrel_physical_and_chemical_properties:[Растворимость в воде.];[Растворимость в солевых растворах.];[При гидрозиле распадаются на различные аминокислоты.];[Альбумин может быть получены в кристаллическом виде.];;
+
+concept_albumin<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://картинки/albumin.png"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;
+
+concept_albumin=>nrel_norm_albymin_conc:30;;
+
+
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_albumin;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Альбумин — простые растворимые в воде белки, умеренно растворимые в концентрированных растворах соли и свёртывающиеся при нагревании.](*<- lang_ru;;*);;
+	    -> [Albumin is a simple water-soluble protein, moderately soluble in concentrated salt solutions and clotting when heated.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(альбумин)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(albumin)](*<- lang_ru;;*);;
+  
+*);;
+

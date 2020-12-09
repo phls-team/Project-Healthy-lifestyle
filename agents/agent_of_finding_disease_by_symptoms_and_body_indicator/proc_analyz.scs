@@ -1,0 +1,261 @@
+scp_program -> proc_analyz (*
+
+    -> rrel_params: .proc_anlyz_pearams (*
+	-> rrel_1: rrel_in: _parameter1;;
+	-> rrel_2: rrel_in: _answer;;
+ 
+	*);;
+
+	-> rrel_operators: .proc_anlyz_operator_set (*
+
+
+     -> rrel_init: ..analyz_operator0_1 (*
+	    <- genElStr3;;
+	    -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+	    -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _set_arc;;
+	    -> rrel_3: rrel_fixed: rrel_scp_const: set_dis;;
+	    => nrel_goto: ..analyz_operator0_2;;
+	    *);;
+
+    -> ..analyz_operator0_2 (*
+	    <- genElStr3;;
+	    -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+	    -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc3;;
+        -> rrel_3: rrel_fixed: rrel_scp_var: _set_arc;;
+	    => nrel_goto: ..analyz_operator1;;
+	    *);;
+
+    ->..analyz_operator1 (*
+	  <- searchElStr5;;
+        -> rrel_1: rrel_fixed: rrel_scp_const: organism;;
+        -> rrel_2: rrel_assign: rrel_scp_var: _arc;;
+        -> rrel_3: rrel_assign: rrel_scp_var: _empty_node;;
+        -> rrel_4: rrel_assign: rrel_scp_var: _arc;;
+        -> rrel_5: rrel_fixed: rrel_scp_const: nrel_norm_albymin_conc;;
+        => nrel_then: ..analyz_operator2;;
+        => nrel_else: ..proc_analyz_return;;
+	    *);;
+
+    -> ..analyz_operator2 (*
+	  <- searchElStr3;;
+        -> rrel_1: rrel_fixed: rrel_scp_var: _empty_node;;
+        -> rrel_2: rrel_assign: rrel_scp_var: _arc;;
+        -> rrel_3: rrel_assign: rrel_scp_var: _value_norm ;;
+        => nrel_then: ..analyz_operator3;;
+        => nrel_else: ..proc_analyz_return;;
+	    *);;
+
+
+
+    -> ..analyz_operator3 (*
+        <- searchElStr3;;
+	    -> rrel_1: rrel_fixed: rrel_scp_var: _parameter1;;
+	    -> rrel_2: rrel_assign: rrel_scp_var: _er;;
+	    -> rrel_3: rrel_assign: rrel_scp_var: _value_cur;;
+        => nrel_then: ..analyz_operator_print_1;;
+        => nrel_else: ..proc_analyz_return;;
+	    *);;
+
+
+
+     -> ..analyz_operator_print_1 (*
+	    <- print;;
+        -> rrel_1: rrel_fixed: rrel_scp_var: _value_cur;;
+        => nrel_goto: ..analyz_operator_print_2;;
+	    *);;
+
+
+    -> ..analyz_operator_print_2 (*
+	    <- print;;
+        -> rrel_1: rrel_fixed: rrel_scp_var: _value_norm;;
+        => nrel_goto: ..analyz_operator4;;
+	    *);;
+
+    ->..analyz_operator4 (*
+			<- ifGr;;
+			-> rrel_1: rrel_scp_var: _value_cur ;;
+			-> rrel_2: rrel_scp_var: _value_norm;;
+			=> nrel_then: ..diseases_operator5_1;;
+			=> nrel_else: ..analyz_operator7;;
+				*);;
+
+
+   
+
+    -> ..diseases_operator5_1 (*
+	    <- searchSetStr5;;
+	    -> rrel_1: rrel_assign: rrel_scp_var: _dis;; 
+	    -> rrel_2: rrel_assign:  rrel_scp_var: _curr1;;
+	    -> rrel_3: rrel_fixed: rrel_scp_const: concept_elevated_albumin;;
+        -> rrel_4: rrel_assign:  rrel_scp_var: _arc1;;
+	    -> rrel_5: rrel_fixed: rrel_scp_const: nrel_symptom;;
+        -> rrel_set_1: rrel_assign: rrel_scp_var: _disease;;
+	    => nrel_then: ..diseases_operator5_2;;
+	    => nrel_else: ..proc_analyz_return;;
+	    *);;
+
+    -> ..diseases_operator5_2 (*
+	    <- searchElStr3;;
+	    -> rrel_1: rrel_fixed: rrel_scp_var: _disease;; 
+	    -> rrel_2: rrel_assign:  rrel_scp_var: _erase_arc;;
+	    -> rrel_3: rrel_assign: rrel_scp_var: _dis;;
+	    => nrel_then: ..diseases_operator5_3;;
+	    => nrel_else: ..diseases_operator6_3;;
+	    *);;
+
+    -> ..diseases_operator5_3 (*
+	    <- eraseEl;;
+	    -> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _erase_arc;;
+	    => nrel_goto: ..diseases_operator5_4;;
+	    *);;
+
+
+    -> ..diseases_operator5_4 (*
+	    <- genElStr3;;
+	    -> rrel_1: rrel_fixed: rrel_scp_const: set_dis;;
+	    -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _elevated_arc;;
+	    -> rrel_3: rrel_fixed: rrel_scp_var: _dis;;
+	    => nrel_goto: ..diseases_operator6;;
+	    *);;
+
+    -> ..diseases_operator6 (*
+	    <- genElStr3;;
+	    -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+	    -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc3;;
+        -> rrel_3: rrel_fixed: rrel_scp_var: _elevated_arc;;
+	    => nrel_goto: ..diseases_operator6_1;;
+	    *);;
+
+
+
+    -> ..diseases_operator6_1 (*
+	    <- genElStr5;;
+	    -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+	    -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _dis_arc;;
+        -> rrel_3: rrel_fixed: rrel_scp_var: _dis;;
+        -> rrel_4: rrel_assign: rrel_pos_const_perm:rrel_scp_var:  _arc;;
+		-> rrel_5: rrel_fixed: rrel_scp_const: nrel_dis;;
+	    => nrel_goto: ..diseases_operator6_2;;
+	    *);;
+
+
+    -> ..diseases_operator6_2 (*
+	    <- genElStr3;;
+	    -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+	    -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc3;;
+        -> rrel_3: rrel_fixed: rrel_scp_var: _dis_arc;;
+	    => nrel_goto: ..diseases_operator5_2;;
+	    *);;
+
+
+    -> ..diseases_operator6_3 (*
+	    <- genElStr5;;
+	    -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+	    -> rrel_2: rrel_assign: rrel_scp_var: _arc3;;
+        -> rrel_3: rrel_fixed: rrel_scp_const: concept_elevated_albumin;;
+        -> rrel_4: rrel_assign: rrel_scp_var: _arc5;;
+        -> rrel_5: rrel_fixed: rrel_scp_const: nrel_symp_in_answer;;
+	    => nrel_goto: ..proc_analyz_return;;
+	    *);;
+
+
+    ->..analyz_operator7 (*
+			<- ifGr;;
+			-> rrel_1: rrel_scp_var:_value_norm;;
+			-> rrel_2: rrel_scp_var: _value_cur;;
+			=> nrel_then: ..diseases_operator8_1;;
+			=> nrel_else: ..proc_analyz_return;;
+				*);;
+
+
+
+
+    -> ..diseases_operator8_1 (*
+	    <- searchSetStr5;;
+	    -> rrel_1: rrel_assign: rrel_scp_var: _dis;; 
+	    -> rrel_2: rrel_assign:  rrel_scp_var: _curr1;;
+	    -> rrel_3: rrel_fixed: rrel_scp_const: concept_decreased_albumin;;
+        -> rrel_4: rrel_assign:  rrel_scp_var: _arc1;;
+	    -> rrel_5: rrel_fixed: rrel_scp_const: nrel_symptom;;
+        -> rrel_set_1: rrel_assign: rrel_scp_var: _disease;;
+	    => nrel_then: ..diseases_operator8_2;;
+	    => nrel_else: ..proc_analyz_return;;
+	    *);;
+
+    -> ..diseases_operator8_2 (*
+	    <- searchElStr3;;
+	    -> rrel_1: rrel_fixed: rrel_scp_var: _disease;; 
+	    -> rrel_2: rrel_assign:  rrel_scp_var: _erase_arc;;
+	    -> rrel_3: rrel_assign: rrel_scp_var: _dis;;
+	    => nrel_then: ..diseases_operator8_3;;
+	    => nrel_else: ..diseases_operator8_8;;
+	    *);;
+
+    -> ..diseases_operator8_3 (*
+	    <- eraseEl;;
+	    -> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _erase_arc;;
+	    => nrel_goto: ..diseases_operator8_4;;
+	    *);;
+
+
+    -> ..diseases_operator8_4 (*
+	    <- genElStr3;;
+	    -> rrel_1: rrel_fixed: rrel_scp_const: set_dis;;
+	    -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _sets_arc;;
+	    -> rrel_3: rrel_fixed: rrel_scp_var: _dis;;
+	    => nrel_goto: ..diseases_operator8_5;;
+	    *);;
+
+    -> ..diseases_operator8_5 (*
+	    <- genElStr3;;
+	    -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+	    -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc3;;
+        -> rrel_3: rrel_fixed: rrel_scp_var: _sets_arc;;
+	    => nrel_goto: ..diseases_operator8_6;;
+	    *);;
+
+
+
+    -> ..diseases_operator8_6 (*
+	    <- genElStr5;;
+	    -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+	    -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _dis_arc;;
+        -> rrel_3: rrel_fixed: rrel_scp_var: _dis;;
+        -> rrel_4: rrel_assign: rrel_pos_const_perm:rrel_scp_var:  _arc;;
+		-> rrel_5: rrel_fixed: rrel_scp_const: nrel_dis;;
+	    => nrel_goto: ..diseases_operator8_7;;
+	    *);;
+
+
+    -> ..diseases_operator8_7 (*
+	    <- genElStr3;;
+	    -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+	    -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc3;;
+        -> rrel_3: rrel_fixed: rrel_scp_var: _dis_arc;;
+	    => nrel_goto: ..diseases_operator8_2;;
+	    *);;
+
+
+    -> ..diseases_operator8_8 (*
+	    <- genElStr5;;
+	    -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+	    -> rrel_2: rrel_assign: rrel_scp_var: _arc3;;
+        -> rrel_3: rrel_fixed: rrel_scp_const: concept_decreased_albumin;;
+        -> rrel_4: rrel_assign: rrel_scp_var: _arc5;;
+        -> rrel_5: rrel_fixed: rrel_scp_const: nrel_symp_in_answer;;
+	    => nrel_goto: ..proc_analyz_return;;
+	    *);;
+
+
+
+
+    -> ..proc_analyz_return (*
+	<- return;;
+	*);;
+    
+*);;
+*);;
+
+
+
+

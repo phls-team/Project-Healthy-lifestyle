@@ -1,0 +1,320 @@
+scp_program -> proc_intersection (*
+
+    -> rrel_params: .proc_intersection_pearams (*
+	-> rrel_1: rrel_in: _param1;;
+    -> rrel_2: rrel_in: _param2;;
+	-> rrel_3: rrel_in: _answer;;
+ 
+	*);;
+
+	-> rrel_operators: .proc_intersection_operator_set (*
+
+
+     -> rrel_init: ..intersection_operator0_1 (*
+	    <- genElStr3;;
+	    -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+	    -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _set_arc;;
+	    -> rrel_3: rrel_fixed: rrel_scp_const: set_dis;;
+	    => nrel_goto: ..intersection_operator0_2;;
+	    *);;
+
+    -> ..intersection_operator0_2 (*
+	    <- genElStr3;;
+	    -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+	    -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc3;;
+        -> rrel_3: rrel_fixed: rrel_scp_var: _set_arc;;
+	    => nrel_goto: ..intersection_operator1;;
+	    *);;
+
+//внешний цикл
+
+    -> ..intersection_operator1 (*
+        <- searchSetStr5;;
+	    -> rrel_1: rrel_fixed: rrel_scp_var: _param1;;
+	    -> rrel_2: rrel_assign: rrel_scp_var: _er;;
+	    -> rrel_3: rrel_assign: rrel_scp_var: _value_cur;;
+        -> rrel_4: rrel_assign: rrel_pos_const_perm:rrel_scp_var:  _arc;;
+		-> rrel_5: rrel_fixed: rrel_scp_const: nrel_dis;;
+        -> rrel_set_3: rrel_assign: rrel_scp_var: _intersections_param1;;
+        => nrel_then: ..intersection_operator1_2;;
+        => nrel_else: ..proc_intersection_return;;
+	    *);;
+
+
+    -> ..intersection_operator1_2 (*
+        <- searchElStr3;;
+	    -> rrel_1: rrel_fixed: rrel_scp_var: _intersections_param1;;
+	    -> rrel_2: rrel_assign: rrel_scp_var: _erase1;;
+	    -> rrel_3: rrel_assign: rrel_scp_var: _intersection1;;
+        => nrel_then: ..intersection_operator1_3;;
+        => nrel_else: ..proc_intersection_return;;
+	    *);;
+
+
+	-> ..intersection_operator1_3 (*
+	    <- eraseEl;;
+	    -> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _erase1;;
+	    => nrel_goto: ..intersection_operator2;;
+	    *);;  
+
+
+//внутренний цикл
+
+     -> ..intersection_operator2 (*
+            <- searchSetStr5;;
+	        -> rrel_1: rrel_fixed: rrel_scp_var: _param2;;
+	        -> rrel_2: rrel_assign: rrel_scp_var: _er;;
+	        -> rrel_3: rrel_assign: rrel_scp_var: _value_cur;;
+            -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+		    -> rrel_5: rrel_fixed: rrel_scp_const: nrel_dis;;
+            -> rrel_set_3: rrel_assign: rrel_scp_var: _intersections_param2;;
+            => nrel_then: ..intersection_operator2_2;;
+            => nrel_else: ..proc_intersection_return;;
+	    *);;
+
+
+    -> ..intersection_operator2_2 (*
+        <- searchElStr3;;
+	    -> rrel_1: rrel_fixed: rrel_scp_var: _intersections_param2;;
+	    -> rrel_2: rrel_assign: rrel_scp_var: _erase2;;
+	    -> rrel_3: rrel_assign: rrel_scp_var: _intersection2;;
+        => nrel_then: ..intersection_operator2_3;;
+        => nrel_else: ..intersection_operator1_2;;
+	    *);;
+
+
+	-> ..intersection_operator2_3 (*
+	    <- eraseEl;;
+	    -> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _erase2;;
+	    => nrel_goto: ..intersection_operator3;;
+	    *);;  
+
+
+    -> ..intersection_operator3 (*
+        <- searchElStr5;;
+	    -> rrel_1: rrel_fixed: rrel_scp_var: _intersection1;;
+	    -> rrel_2: rrel_assign: rrel_scp_var: _er;;
+	    -> rrel_3: rrel_assign: rrel_scp_var: _value_cur1;;
+        -> rrel_4: rrel_assign: rrel_scp_var: _er3;;
+	    -> rrel_5: rrel_fixed: rrel_scp_const: nrel_main_idtf;;
+        => nrel_then: ..intersection_operator3_2;;
+        => nrel_else: ..proc_intersection_return;;
+	    *);;
+
+
+    -> ..intersection_operator3_2 (*
+        <- searchElStr5;;
+	    -> rrel_1: rrel_fixed: rrel_scp_var: _intersection2;;
+	    -> rrel_2: rrel_assign: rrel_scp_var: _er;;
+	    -> rrel_3: rrel_assign: rrel_scp_var: _value_cur2;;
+        -> rrel_4: rrel_assign: rrel_scp_var: _er3;;
+	    -> rrel_5: rrel_fixed: rrel_scp_const: nrel_main_idtf;;
+        => nrel_then: ..intersection_operator4;;
+        => nrel_else: ..proc_intersection_return;;
+	    *);;
+
+
+    -> ..intersection_operator4 (*
+        <- ifCoin;;
+        -> rrel_1:rrel_scp_var: _value_cur1;;
+        -> rrel_2:rrel_scp_var: _value_cur2;;
+        => nrel_then: ..intersections_operator5_1;;
+        => nrel_else: ..intersection_operator2_2;;
+	    *);;
+ 
+/////////
+
+
+    -> ..intersections_operator5_1 (*
+	    <- genElStr3;;
+	    -> rrel_1: rrel_fixed: rrel_scp_const: set_dis;;
+	    -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _elevated_arc;;
+	    -> rrel_3: rrel_fixed: rrel_scp_var: _intersection1;;
+	    => nrel_goto: ..intersections_operator5_2;;
+	    *);;
+
+    -> ..intersections_operator5_2 (*
+	    <- genElStr3;;
+	    -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+	    -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc3;;
+        -> rrel_3: rrel_fixed: rrel_scp_var: _elevated_arc;;
+	    => nrel_goto: ..intersections_operator5_3;;
+	    *);;
+
+
+
+    -> ..intersections_operator5_3 (*
+	    <- genElStr5;;
+	    -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+	    -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _dis_arc;;
+        -> rrel_3: rrel_fixed: rrel_scp_var: _intersection1;;
+        -> rrel_4: rrel_assign: rrel_pos_const_perm:rrel_scp_var:  _arc;;
+		-> rrel_5: rrel_fixed: rrel_scp_const: nrel_dis;;
+	    => nrel_goto: ..intersections_operator5_4;;
+	    *);;
+
+
+    -> ..intersections_operator5_4 (*
+	    <- genElStr3;;
+	    -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+	    -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc3;;
+        -> rrel_3: rrel_fixed: rrel_scp_var: _dis_arc;;
+	    => nrel_goto: ..intersections_operator6;;
+	    *);;
+
+
+
+    -> ..intersections_operator6 (*
+		     <- searchElStr5;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _intersection2;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm:rrel_scp_var:  _left_weight;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _weight;;
+            -> rrel_4: rrel_assign:rrel_scp_var:  _left_coef;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_coeff;;
+            => nrel_then: ..intersections_operator6_2;;
+            => nrel_else: ..proc_intersection_return;;
+        *);;
+		 
+    -> ..intersections_operator6_2 (*
+	    <- genElStr3;;
+	    -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+	    -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _weight_answer_arc;;
+        -> rrel_3: rrel_fixed: rrel_scp_var: _weight;;
+	    => nrel_goto: ..intersections_operator6_3;;
+	    *);;
+
+
+    -> ..intersections_operator6_3 (*
+	    <- genElStr3;;
+	    -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+	    -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _weight_arc;;
+        -> rrel_3: rrel_fixed: rrel_scp_var: _weight_answer_arc;;
+	    => nrel_goto: ..intersections_operator6_4;;
+	    *);;
+   
+    -> ..intersections_operator6_4 (*
+	    <- genElStr3;;
+	    -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+	    -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _weight_arc;;
+        -> rrel_3: rrel_fixed: rrel_scp_var: _left_weight;;
+	    => nrel_goto: ..intersections_operator6_5;;
+	    *);;
+
+
+    -> ..intersections_operator6_5 (*
+	    <- genElStr3;;
+	    -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+	    -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _nrel_symptom_arc;;
+        -> rrel_3: rrel_fixed: rrel_scp_const: nrel_symptom;;
+	    => nrel_goto: ..intersections_operator6_6;;
+	    *);;
+
+
+    -> ..intersections_operator6_6 (*
+	    <- genElStr3;;
+	    -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+	    -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _nrel_symptom_arc;;
+        -> rrel_3: rrel_fixed: rrel_scp_const: _nrel_symptom_arc;;
+	    => nrel_goto: ..intersections_operator7;;
+	    *);;
+
+
+////////////
+
+    -> ..intersections_operator7 (*
+		     <- searchElStr5;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _intersection1;;
+			-> rrel_2: rrel_assign:rrel_scp_var:  _sympt_arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: concept_elevated_albumin;;
+            -> rrel_4: rrel_assign:rrel_scp_var:  _arc_to_add;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_symptom;;
+            => nrel_then: ..intersections_operator7_2;;
+            => nrel_else: ..intersections_operator7_4;;
+        *);;
+
+
+
+
+     -> ..intersections_operator7_2 (*
+	    <- genElStr3;;
+	    -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+	    -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _elevated_arc;;
+        -> rrel_3: rrel_fixed: rrel_scp_const: concept_elevated_albumin;;
+	    => nrel_goto: ..intersections_operator7_3;;
+	    *);;
+
+    -> ..intersections_operator7_3 (*
+	    <- genElStr3;;
+	    -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+	    -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+        -> rrel_3: rrel_fixed: rrel_scp_var: _elevated_arc;;
+	    => nrel_goto: ..intersections_operator7_7;;
+	    *);;
+
+
+ -> ..intersections_operator7_4 (*
+	    <- genElStr3;;
+	    -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+	    -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _decreased_arc;;
+        -> rrel_3: rrel_fixed: rrel_scp_const: concept_decreased_albumin;;
+	    => nrel_goto: ..intersections_operator7_5;;
+	    *);;
+
+    -> ..intersections_operator7_5 (*
+	    <- genElStr3;;
+	    -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+	    -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+        -> rrel_3: rrel_fixed: rrel_scp_var: _decreased_arc;;
+	    => nrel_goto: ..intersections_operator7_6;;
+	    *);;
+
+
+
+
+
+    -> ..intersections_operator7_6 (*
+		     <- searchElStr5;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _intersection1;;
+			-> rrel_2: rrel_assign:rrel_scp_var: _sympt_arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: concept_decreased_albumin;;
+            -> rrel_4: rrel_assign:rrel_scp_var:  _arc_to_add;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_symptom;;
+            => nrel_then: ..intersections_operator7_7;;
+            => nrel_else: ..intersection_operator2_2;;
+        *);;
+
+
+   
+
+
+    -> ..intersections_operator7_7(*
+	    <- genElStr3;;
+	    -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+	    -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _nrel_symptom_arc;;
+        -> rrel_3: rrel_fixed: rrel_scp_var: _sympt_arc;;
+	    => nrel_goto: ..intersections_operator7_8;;
+	    *);;
+
+    -> ..intersections_operator7_8 (*
+	    <- genElStr3;;
+	    -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+	    -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _nrel_symptom_arc;;
+        -> rrel_3: rrel_fixed: rrel_scp_var: _arc_to_add;;
+	    => nrel_goto: ..intersection_operator2_2;;
+	    *);;
+
+   
+
+
+
+
+    -> ..proc_intersection_return (*
+	<- return;;
+	*);;
+    
+*);;
+*);;
+
+
+
+
