@@ -1,0 +1,15 @@
+ui_menu_file_for_finding_similar_training_apparatus <- ui_user_command_class_atom; ui_user_command_class_view_kb; ui_one_argument_command_class;;
+
+ui_menu_file_for_finding_similar_training_apparatus => nrel_main_idtf: [Какие тренажёры схожи с заданным тренажёром?] (* <- lang_ru;; *);;
+ui_menu_file_for_finding_similar_training_apparatus => nrel_main_idtf: [Which training apparatus are similar to a given training apparatus?] (* <- lang_en;; *);;
+
+ui_menu_file_for_finding_similar_training_apparatus => ui_nrel_command_template:
+[*
+	question_of_finding_similar_training_apparatus _-> ._question_of_finding_similar_training_apparatus_instance 
+	(* _-> ui_arg_1;; *);;
+	._question_of_finding_similar_training_apparatus_instance _<- question;;
+*];;
+
+ui_menu_file_for_finding_similar_training_apparatus => ui_nrel_command_lang_template:
+    [Какие тренажёры схожи с тренажёром $ui_arg_1 ?] (* <- lang_ru;; *);
+    [Which training apparatus are similar to a $ui_arg_1 ?] (* <- lang_en;; *);;
