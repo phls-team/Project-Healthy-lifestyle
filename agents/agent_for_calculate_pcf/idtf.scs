@@ -1,0 +1,11 @@
+nrel_consumed_calories => nrel_main_idtf: [потреблённые калории*] (* <- lang_ru;; *);;
+nrel_consumed_calories <- sc_node_norole_relation ;;
+
+nrel_consumed_proteins => nrel_main_idtf: [потреблённые белки*] (* <- lang_ru;; *);;
+nrel_consumed_proteins <- sc_node_norole_relation ;;
+
+nrel_consumed_fat => nrel_main_idtf: [потреблённые жиры*] (* <- lang_ru;; *);;
+nrel_consumed_fat <- sc_node_norole_relation ;;
+
+nrel_consumed_carbohydrate => nrel_main_idtf: [потреблённые углеводы*] (* <- lang_ru;; *);;
+nrel_consumed_carbohydrate <- sc_node_norole_relation ;;

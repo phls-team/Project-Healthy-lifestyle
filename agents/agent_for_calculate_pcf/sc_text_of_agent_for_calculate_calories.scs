@@ -1,0 +1,6 @@
+sc_text_of_agent_for_calculate_pcf
+-> rrel_key_sc_element:
+	agent_for_calculate_pcf;
+<- scp_program_sc_text;;
+
+sc_text_of_agent_for_calculate_pcf = [*^"file://agent_for_calculate_pcf.scsi"*];;

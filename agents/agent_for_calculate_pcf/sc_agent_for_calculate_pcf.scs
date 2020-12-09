@@ -1,0 +1,50 @@
+sc_agent_for_calculate_pcf
+=> nrel_main_idtf:
+	[sc-агент расчёта потребляемых калорий и БЖУ] (* <- lang_ru;; *);
+	[sc-agent of calculate calories and pcf] (* <- lang_en;; *);
+	
+<- abstract_sc_agent;
+
+=> nrel_primary_initiation_condition: 
+	(sc_event_add_output_arc => question_initiated);
+	
+=> nrel_initiation_condition_and_result: 
+	(..sc_agent_for_calculate_pcf_condition => ..sc_agent_for_calculate_pcf_result);
+	
+<= nrel_sc_agent_key_sc_elements: 
+	{
+	question_initiated;
+	question;
+	question_calculate_pcf
+	};
+
+
+=> nrel_inclusion: 
+	.platform_independent_realization_of_sc_agent_for_calculate_pcf
+	(*
+	<- platform_independent_abstract_sc_agent;;
+	<= nrel_sc_agent_program: 
+		{
+		agent_for_calculate_pcf
+		};;
+		
+	-> sc_agent_for_calculate_pcf_scp (* <- active_sc_agent;; *);;
+	*);;
+
+..sc_agent_for_calculate_pcf_condition
+= [*
+	question_calculate_pcf _-> .._question;;
+	question_initiated _-> .._question;;
+	question _-> .._question;;
+	.._question _-> rrel_1:: .._param1;;
+	.._question _-> rrel_2:: .._param2;;
+*];;
+..sc_agent_for_calculate_pcf_result
+= [*
+	question_calculate_pcf _-> .._question;;
+	question_finished _-> .._question;;
+	question _-> .._question;;
+	.._question _=> nrel_answer:: .._answer;;
+	.._question _-> rrel_1:: .._param1;;
+	.._question _-> rrel_2:: .._param2;;
+*];;
