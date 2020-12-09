@@ -1,0 +1,34 @@
+meningitis<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+[менингит](*<-lang_ru;;*);
+[meningitis](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ...(*
+<- definition;;
+=> nrel_main_idtf: [Опр.(менингит)](*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...(*
+-> rrel_example: [Менингит - воспаление оболочек спинного или головного мозга](*<-lang_ru;;*);;
+*);;
+*);
+
+<- rrel_key_sc_element: ...(*
+<- statement;;
+=> nrel_main_idtf: [Утв. 1 о менингите](*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...(*
+-> rrel_example: [Наиболее часто встречающиеся симптомы менингита — головная боль, ригидность затылочных мышц одновременно с лихорадкой, изменённым состоянием сознания и чувствительностью к свету (фотофобией) или звуку.](*<-lang_ru;;*);;
+*);;
+*);
+
+<- rrel_key_sc_element: ...(*
+<- statement;;
+=> nrel_main_idtf: [Утв. 2 о менингите](*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...(*
+-> rrel_example: [Менингит возникает как самостоятельное заболевание или как осложнение другого процесса. ](*<-lang_ru;;*);;
+*);;
+*);;
+
+
+concept_desease=>nrel_inclusion:meningitis;;
+concept_mental_illness=>nrel_inclusion:meningitis;;
+meningitis=>nrel_symptom:fever;headache;;

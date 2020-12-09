@@ -1,0 +1,42 @@
+concept_sports_rules=>nrel_idtf:[sports_rules]
+	(*
+		<-lang_en;;
+	*);;
+concept_sports_rules=>nrel_main_idtf:[спортивные правила]
+	(*
+		<-lang_ru;;
+	*);;
+concept_sports_rules<-rrel_key_sc_element:...
+	(*
+		<-definition;;=>nrel_main_idtf:
+[Опр.(спортивные правила)] 
+	(* 
+		<-lang_ru;;
+	*);;
+<=nrel_sc_text_translation:...
+	(*
+		->[Требование для исполнения некого списка условий всеми участниками спортивного мероприятия, за несоблюдение которых зачастую предусмотрена какая-либо мера наказания.]
+(* 
+<-lang_ru;; 
+*);;
+	*);;
+*);;
+
+concept_sports_rules<- rrel_key_sc_element:...
+		(*
+        <- explanation;;->rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утв.(цель правил)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[создание одинаковых условий соревнования всех участников, а так же обеспечение одинаковой формы проведения соревнований не зависимо от места проведения.](*<- lang_ru;;*);;
+			*);;
+*);;
+concept_sport=>nrel_inclusion:concept_sports_rules;;
+
+
+
+
+
+

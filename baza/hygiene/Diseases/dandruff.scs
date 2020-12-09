@@ -1,0 +1,40 @@
+dandruff=>nrel_main_idtf:[перхоть]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[dandruff]
+        (*
+                <-lang_en;;
+        *);;
+        definition ->...
+        (*
+        ->rrel_key_sc_element:dandruff;;
+        <= nrel_sc_text_translation: ...(*->rrel_example:[Перхоть - синдром, характеризуемый высокой скоростью чешуйчатого отслоения частиц кожи на протяжении сравнительно долгого времени.](*<-lang_ru;;*);;*);;
+        => nrel_main_idtf: [Опр.(артериальная гипертензия)](*<-lang_ru;;*);;
+*);;
+
+dandruff<-rrel_key_sc_element:...
+        (*
+
+                <-statement;;
+                =>nrel_main_idtf:[Утв.(про перхоть)](*<-lang_ru;;*);;
+                <=nrel_sc_text_translation:...
+                (*
+                        ->rrel_example:[Чаще всего встречается на коже головы, покрытой обильным волосяным покровом. Перхоть является легкой клинической формой себорейного дерматита.](*<-lang_ru;;*);;
+                *);;
+        *);;
+
+ dandruff<=nrel_inclusion:concept_desease;;
+
+dandruff<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://dandruff.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
+

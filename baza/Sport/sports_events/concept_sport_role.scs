@@ -1,0 +1,24 @@
+concept_sport_role<-sc_node_not_relation;
+=>nrel_main_idtf:
+[амплуа] (*<-lang_ru;;*);
+[sport role] (*<-lang_en;;*);;
+
+concept_sport_role<=nrel_subdividing:
+{
+concept_basketball_point_guard;
+concept_basketball_small_forward;
+concept_basketball_center
+};
+
+<-rrel_key_sc_element:..(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(амплуа)](*<-lang_ru;;*);;
+
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[  Амплуа - позиция, занимаемая игроком. ](* <- lang_ru;;*);;
+    *);;
+*);;
+
+
