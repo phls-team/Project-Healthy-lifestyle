@@ -1,0 +1,55 @@
+ui_menu_file_for_finding_sports_nutrition_for_a_specific_type
+<-	ui_user_command_class_atom;
+	ui_user_command_class_view_kb;
+	ui_one_argument_command_class;;
+
+// Указываем идентификаторы нашей операции в меню
+ui_menu_file_for_finding_sports_nutrition_for_a_specific_type
+	=> nrel_main_idtf: 
+		[Какое споривное питание соответсвует указанному виду?] 
+		(* <- lang_ru;; *);
+	=> nrel_idtf: 
+		[Запрос на нахождение определенного вида спортивного питания] 
+		(* <- lang_ru;; *);;
+
+ui_menu_file_for_finding_sports_nutrition_for_a_specific_type
+	=> nrel_main_idtf: 
+		[What sports nutrition corresponds to the specified type?] 
+		(* <- lang_en;; *);
+	=> nrel_idtf: 
+		[Request to find a specific type of sports nutrition] 
+		(* <- lang_en;; *);;
+
+ui_menu_file_for_finding_sports_nutrition_for_a_specific_type
+	=> nrel_main_idtf: 
+		[Якое спартовае харчаванне адпавядае паказаным ўвазе?] 
+		(* <- lang_by;; *);
+	=> nrel_idtf: 
+		[Запыт на знаходжанне пэўнага віду спартыўнага харчавання] 
+		(* <- lang_by;; *);;
+
+
+ui_menu_file_for_finding_sports_nutrition_for_a_specific_type => ui_nrel_command_template:
+[*
+	action_for_finding_sports_nutrition_for_a_specific_type _-> ._action_for_finding_sports_nutrition_for_a_specific_type_instance
+	(*
+		_->  ui_arg_1;;	 
+	*);;
+	._action_for_finding_sports_nutrition_for_a_specific_type_instance _<- question;;
+*];;
+
+// Указываем текстовый шаблон команды
+ui_menu_file_for_finding_sports_nutrition_for_a_specific_type
+	=> ui_nrel_command_lang_template: 
+		[Запрос на нахождение определенного вида спортивного питания: $ui_arg_1] 
+	(* <- lang_ru;; *);;
+
+ui_menu_file_for_finding_sports_nutrition_for_a_specific_type
+	=> ui_nrel_command_lang_template: 
+		[Request to find a specific type of sports nutrition: $ui_arg_1] 
+		(* <- lang_en;; *);;
+
+ui_menu_file_for_finding_sports_nutrition_for_a_specific_type
+	=> ui_nrel_command_lang_template: 
+		[Запыт на знаходжанне пэўнага віду спартыўнага харчавання: $ui_arg_1] 
+		(* <- lang_by;; *);;

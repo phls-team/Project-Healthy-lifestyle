@@ -1,0 +1,122 @@
+agent_finding_products_of_a_certain_type_of_sports_nutrition
+=> nrel_main_idtf:
+	[агентная scp-программа по нахождению всего спортивного питания, по определенному виду] (* <- lang_ru;; *);
+	[agent-based scp-program for finding all sports nutrition, for a specific type] (* <- lang_en;; *);
+	[агентная scp-праграма па знаходжанні за ўсё спартыўнага харчавання, па вызначаным ўвазе] (* <- lang_by;; *);
+	<- agent_scp_program;;
+
+scp_program -> agent_finding_products_of_a_certain_type_of_sports_nutrition
+ (*
+	-> rrel_params: ..agent_finding_products_of_a_certain_type_of_sports_nutrition
+	 (*
+		-> rrel_1: rrel_in: _event;;
+		-> rrel_2: rrel_in: _input_arc;;
+	*);;
+
+	-> rrel_operators: ..agent_finding_products_of_a_certain_type_of_sports_nutrition_set 
+	(*
+		->rrel_init: ..agent_finding_products_of_a_certain_type_of_sports_nutrition_operator1 
+		(*
+			<- searchElStr3;;
+			
+			-> rrel_1: rrel_assign: rrel_scp_var: _temp;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _quest;;
+	
+			=> nrel_goto: ..agent_finding_products_of_a_certain_type_of_sports_nutrition_operator2;;
+		*);;
+
+		-> ..agent_finding_products_of_a_certain_type_of_sports_nutrition_operator2 
+		(*
+			<- searchElStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_const: action_finding_products_of_a_certain_type_of_sports_nutrition;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+			=> nrel_then: ..agent_finding_products_of_a_certain_type_of_sports_nutrition_operator3;;
+			=> nrel_else: ..agent_finding_products_of_a_certain_type_of_sports_return;;
+		*);;
+		
+		-> ..agent_finding_products_of_a_certain_type_of_sports_nutrition_operator3 
+		(*
+			<- searchElStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _param;;
+
+			=> nrel_then: ..agent_finding_products_of_a_certain_type_of_sports_nutrition_test_check1;;
+			=> nrel_else: ..agent_finding_products_of_a_certain_type_of_sports_return;;
+		*);;
+
+		-> ..agent_finding_products_of_a_certain_type_of_sports_nutrition_test_check1
+				(*
+
+                    <- printNl ;;
+
+			        -> rrel_1: rrel_fixed: rrel_scp_const: [Агент успешно прошел проверку];;
+
+                	=>nrel_goto: ..agent_finding_products_of_a_certain_type_of_sports_nutrition_operator4;;
+				*);;
+	
+		
+		-> ..agent_finding_products_of_a_certain_type_of_sports_nutrition_operator4
+		(*
+			<- genEl;;
+			
+			-> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _answer;;
+
+			=> nrel_goto: ..agent_finding_products_of_a_certain_type_of_sports_nutrition_operator5;;
+		*);;
+
+
+		-> ..agent_finding_products_of_a_certain_type_of_sports_nutrition_operator5
+		(*
+			<- call;;
+			
+		        -> rrel_1: rrel_fixed: rrel_scp_const: proc_finding_products_of_a_certain_type_of_sports_nutrition;;
+		        -> rrel_2: rrel_fixed: rrel_scp_const: ...
+				(*
+					-> rrel_1: rrel_fixed: rrel_scp_var: _param;;
+					-> rrel_2: rrel_fixed: rrel_scp_var: _answer;;
+				*);;
+		        -> rrel_3: rrel_assign: rrel_scp_var: _descr;;
+
+			=> nrel_goto: ..agent_finding_products_of_a_certain_type_of_sports_nutrition_operator6;;
+		*);;
+
+		-> ..agent_finding_products_of_a_certain_type_of_sports_nutrition_operator6 
+		(*
+			<- waitReturn;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
+
+			=> nrel_goto: ..agent_finding_products_of_a_certain_type_of_sports_nutrition_operator7;;
+		*);;	
+		
+		 -> ..agent_finding_products_of_a_certain_type_of_sports_nutrition_operator7
+		        (*
+			        <- printEl ;;
+
+			        -> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+
+			    => nrel_goto: ..agent_finding_products_of_a_certain_type_of_sports_nutrition_answer ;;
+	        	*);;
+            
+
+		-> ..agent_finding_products_of_a_certain_type_of_sports_nutrition_answer
+		(*
+			<- genElStr5;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+
+			=>nrel_goto: ..agent_finding_products_of_a_certain_type_of_sports_return;;
+		*);; 
+
+		-> ..agent_finding_products_of_a_certain_type_of_sports_return (*
+		  <- return;;
+		*);;
+	*);;
+*);;
