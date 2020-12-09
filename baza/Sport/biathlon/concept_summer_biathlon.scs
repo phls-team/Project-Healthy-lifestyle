@@ -1,0 +1,58 @@
+concept_summer_biathlon
+<-sc_node_not_relation;
+<-concept_sport;
+<=nrel_species:concept_sport;
+=>nrel_main_idtf:
+[summer biathlon](*<-lang_en;;*);
+[летний биатлон](*<-lang_ru;;*);
+
+<-rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр. Летнего биатлона](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+    	nrel_species;
+		concept_biathlon;
+		concept_roller_skis;
+		concept_race
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Летний биатлон — <b><sc_element sys_idtf="nrel_species">разновидность</b>
+	<b><sc_element sys_idtf="concept_biathlon">биатлона</b>, 
+	в которой лыжная <b><sc_element sys_idtf="concept_race">гонка</b> заменена на кросс, 
+	гонку на <b><sc_element sys_idtf="concept_roller_skis">лыжероллерах</b>, 
+	велогонку или иной типичный для лета способ передвижения.](* <- lang_ru;; => nrel_format: format_html;; *);;	
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-statement;;
+	=>nrel_main_idtf:[Утв. Об летнем биатлоне](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+		concept_game;
+		concept_olympic_committee
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Иногда летний биатлон рассматривают как отдельный <b><sc_element sys_idtf="concept_game">вид спорта</b>, 
+	однако он не признаётся таковым Международным <b><sc_element sys_idtf="concept_olympic_committee">олимпийским комитетом</b>](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf:[Изобр. Летний биатлон](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+		"file://images/summer_biathlon.webp"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;
+
+
+concept_biathlon
+=>nrel_species:concept_summer_biathlon;;
+
+

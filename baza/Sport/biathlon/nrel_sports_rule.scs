@@ -1,0 +1,71 @@
+nrel_sports_rule
+<-sc_node_norole_relation;
+=>nrel_main_idtf:
+[sports_rule*](*<-lang_en;;*);
+[спортивное правило*](*<-lang_ru;;*);
+
+<-rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр. Спортивного правила](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+		nrel_participant;
+		concept_competition;
+		concept_athlete
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Спортивное правило - это такое правило, которое введено для 
+    уравнения условий для всех <b><sc_element sys_idtf="nrel_participant">участников</b> <b><sc_element sys_idtf="concept_competition">соревновня</b>. 
+	Данные правила введены для безопастности самих <b><sc_element sys_idtf="concept_athlete">спортсменов</b>, но 
+    иногда и для повышения зрелищности состязания](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-statement;;
+	=>nrel_main_idtf:[Утв. Об спортивном правиле](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+		concept_game;
+		concept_athlete;
+		concept_competition
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[В любом <b><sc_element sys_idtf="concept_game">виде спорта</b> каждый <b><sc_element sys_idtf="concept_athlete">спортсмен</b> 
+	обязан соблюдать правила. В случае их не выполнения вас могут оштрафовать, 
+	а в худшем случае снять с <b><sc_element sys_idtf="concept_competition">соревнований</b>](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+nrel_sports_rule
+<-...(*
+	<-sc_node_not_relation;;
+	<-arity;;
+	=>nrel_measurement:2(*<-number;;*);;
+*);;
+
+nrel_sports_rule
+=>nrel_first_domain:concept_game;
+=>nrel_second_domain:concept_sports_rules;
+=>nrel_definitional_domain:...
+(*
+	<=nrel_combination:
+	{
+		concept_game;
+		concept_sports_rules
+	};;
+*);;
+
+nrel_relation
+=>nrel_inclusion:binary_relation
+(*
+	=>nrel_inclusion:symmetric_relation(*-|>nrel_sports_rule;;*);;
+	=>nrel_inclusion:asymmetric_relation(*->nrel_sports_rule;;*);;
+	=>nrel_inclusion:transitive_relation(*-|>nrel_sports_rule;;*);;
+	=>nrel_inclusion:reflexive_relation(*-|>nrel_sports_rule;;*);;
+	=>nrel_inclusion:antireflexive_relation(*->nrel_sports_rule;;*);;
+*);
+=>nrel_inclusion:oriented_relation(*->nrel_sports_rule;;*);;
+

@@ -1,0 +1,31 @@
+concept_olympic_committee
+<-sc_node_not_relation;
+<-sports_organization;
+=>nrel_main_idtf:
+[olympic committee](*<-lang_en;;*);
+[олимпийский комитет](*<-lang_ru;;*);
+
+<-rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр. Олимпийский комитет](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Междунаро́дный олимпи́йский комите́т (сокр. МОК, фр. Comité international olympique, англ. International Olympic Committee) 
+    — международная организация, созданная для возрождения Олимпийских 
+    игр и пропаганды олимпийского движения. 
+    Штаб-квартира комитета находится в Лозанне (Швейцария).](* <- lang_ru;; => nrel_format: format_html;; *);;	
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-statement;;
+	=>nrel_main_idtf:[Утв. Об летнем биатлоне](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[МОК основан по инициативе барона Пьера де Кубертена 23 июня 
+    1894 года в Париже с целью возрождения и организации Олимпийских игр. 
+    Первым президентом МОК стал грек Деметриус Викелас.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;

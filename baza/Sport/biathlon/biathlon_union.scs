@@ -1,0 +1,32 @@
+concept_russian_biathlon_union
+<-sc_node_not_relation;
+<-sports_organization;
+=>nrel_main_idtf:
+[russian biathlon_union](*<-lang_en;;*);
+[союз биатлонистов россии](*<-lang_ru;;*);
+
+<-rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр. Летнего биатлона](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Сою́з биатлони́стов Росси́и — общероссийская общественная организация. 
+    Временный член (Решением Международного Союза Биатлонистов от 10 декабря 2017 года) Международного союза биатлонистов.](* <- lang_ru;; => nrel_format: format_html;; *);;	
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-statement;;
+	=>nrel_main_idtf:[Утв. Об летнем биатлоне](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+		concept_game;
+		concept_olympic_committee
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Союз биатлонистов России (СБР) учрежден в 1992 году и объединяет спортивные 
+    организации 49 субъектов Российской Федерации.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;

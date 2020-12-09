@@ -1,0 +1,41 @@
+concept_relay_race
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[relay race](*<-lang_en;;*);
+[эстафета](*<-lang_ru;;*);
+
+<-rrel_key_sc_element:...(*
+    <-definition;;
+    =>nrel_main_idtf:[Опр. Эстафета](*<-lang_ru;;*);;
+    =>nrel_using_constants:{
+		nrel_participant;
+        sport_discipline
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Эстафе́та (фр. estafette — «нарочный, посыльный, курьер») — совокупность 
+    командных <b><sc_element sys_idtf="sport_discipline">спортивных дисциплин</b>, 
+    в которых <b><sc_element sys_idtf="nrel_participant">участники</b> один за другим проходят этапы, 
+    передавая друг другу очередь перемещаться по дистанции.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-statement;;
+    =>nrel_main_idtf:[Утв. Об эстафете](*<-lang_ru;;*);;
+    =>nrel_using_constants:{
+        concept_athletics;
+        concept_athlete;
+        concept_finish;
+        swimming
+    };;
+    <=nrel_sc_text_translation:...
+    (*
+        ->rrel_example:
+    [ В <b><sc_element sys_idtf="concept_athletics">лёгкой атлетике</b> переход с этапа на этап осуществляется передачей эстафетной палочки 
+    (стадионные виды) или ленты (экиден); в лыжных видах — физическим касанием рукой <b><sc_element sys_idtf="concept_athlete">атлета</b> 
+    следующего этапа, в <b><sc_element sys_idtf="swimming">плавании</b> — касании бортика. 
+    Задача эстафетной команды — первой добраться до <b><sc_element sys_idtf="concept_finish">финиша</b>.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+    *);;
+*);;

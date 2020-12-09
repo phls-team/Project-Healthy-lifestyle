@@ -1,0 +1,46 @@
+concept_individual_race
+<-sc_node_not_relation;
+
+=>nrel_main_idtf:
+[individual race](*<-lang_en;;*);
+[индивидуальная гонка](*<-lang_ru;;*);
+
+<-rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр. Индивидуальной гонки](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+		nrel_species;
+		concept_race;
+    	concept_biathlon;
+		concept_biathlon_race
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Индивидуа́льная го́нка — классический <b><sc_element sys_idtf="nrel_species">вид</b> <b><sc_element sys_idtf="concept_biathlon_race">биатлонной гонки</b> на 20 км для мужчин, 
+    15 км для женщин и юниоров, 12,5 км для юниорок и юношей, и 10 км 
+    для девушек с четырьмя огневыми рубежами.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-statement;;
+	=>nrel_main_idtf:[Утв. Об индивидуальной гонке](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+		concept_athlete;
+		concept_biathlete;
+    	concept_start;
+    	concept_standing_shooting;
+    	concept_prone_shooting
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[<b><sc_element sys_idtf="concept_athlete">Спортсмены</b> проходят пять кругов по 4 км у мужчин, 
+    3 км у женщин и юниоров, 2,5 км у юниорок и юношей, и 2 км у девушек. 
+    <b><sc_element sys_idtf="concept_biathlete">Биатлонисты</b> <b><sc_element sys_idtf="concept_start">стартуют</b> 
+	с интервалом в 30 секунд. Первая и третья стрельба — <b><sc_element sys_idtf="concept_prone_shooting">лёжа</b>, 
+    вторая и четвёртая — <b><sc_element sys_idtf="concept_standing_shooting">стоя</b>. ](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+

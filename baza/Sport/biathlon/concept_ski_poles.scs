@@ -1,0 +1,47 @@
+concept_ski_poles
+<-sc_node_not_relation;
+<-concept_sport_equipment;
+=>nrel_main_idtf:
+[ski poles](*<-lang_en;;*);
+[лыжные палки](*<-lang_ru;;*);
+
+<-rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр. Лыжные палки](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+    	concept_sport_equipment;
+        concept_skiing
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Лыжные палки — <b><sc_element sys_idtf="concept_sport_equipment">спортивный инвентарь</b>, используемый лыжниками, альпинистами, 
+    туристами для удержания равновесия и ускорения движения при передвижении на <b><sc_element sys_idtf="concept_skiing">лыжах</b>.](* <- lang_ru;; => nrel_format: format_html;; *);;	
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-statement;;
+	=>nrel_main_idtf:[Утв. Об лыжных палках](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+		concept_game;
+        concept_physical_indicator
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Размер и форма лыжных палок, а так же материал, из которого они 
+    изготавливаются, зависят от <b><sc_element sys_idtf="concept_game">вида спорта</b>, 
+    <b><sc_element sys_idtf="concept_physical_indicator">физических данных</b> лыжника.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf:[Изобр. Летний биатлон](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+		"file://images/ski_poles.webp"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;

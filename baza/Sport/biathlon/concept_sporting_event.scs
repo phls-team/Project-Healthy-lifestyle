@@ -1,0 +1,49 @@
+concept_sporting_event
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[sporting event](*<-lang_en;;*);
+[спортивное событие](*<-lang_ru;;*);
+
+<-rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр. Спортивное событие](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+    	concept_competition
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Спортивные события — главный продукт спортивной индустрии. 
+    Под ним подразумевают <b><sc_element sys_idtf="concept_competition">соревнование</b>, для которого производятся все 
+    продукты в спортивной индустрии.](* <- lang_ru;; => nrel_format: format_html;; *);;	
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-statement;;
+	=>nrel_main_idtf:[Утв. Об спортивном событии](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+		concept_game;
+        concept_competition;
+        concept_athlete
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Без элемента <b><sc_element sys_idtf="concept_game">игры</b> лицензированные товары, прибыль и договоры об аренде стадионов не будут существовать.
+    В свою очередь, ни одно <b><sc_element sys_idtf="concept_competition">спортивное соревнование</b> 
+    не может существовать без <b><sc_element sys_idtf="concept_athlete">спортсменов</b>. ](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_sporting_event->
+championship;
+match;
+concept_competition;
+world_chess_championship;;
+
+concept_sporting_event=>nrel_species:
+championship;
+match;
+concept_competition;
+world_chess_championship;;

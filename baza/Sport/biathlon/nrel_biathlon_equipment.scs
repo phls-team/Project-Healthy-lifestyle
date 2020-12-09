@@ -1,0 +1,80 @@
+nrel_biathlon_equipment
+<-sc_node_role_relation;
+=>nrel_main_idtf:
+[biathlon_equipment*](*<-lang_en;;*);
+[экипировка для биатлона*](*<-lang_ru;;*);
+
+<-rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр. Экипировка для биатлона](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+    	concept_biathlon;
+    	concept_biathlon_suit;
+    	concept_rifle;
+    	concept_skiing;
+		concept_ski_poles
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Экипировка для <b><sc_element sys_idtf="concept_biathlon">биатлона</b> - это индивидуальный набор биатлониста, 
+	включающий в себя следующие элементы: 
+    <b><sc_element sys_idtf="concept_biathlon_suit">специальный цельный костюм</b>, 
+	<b><sc_element sys_idtf="concept_rifle">винтовку</b>, 
+	<b><sc_element sys_idtf="concept_skiing">лыжи</b> и 
+	<b><sc_element sys_idtf="concept_ski_poles">лыжные палки</b>.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-statement;;
+	=>nrel_main_idtf:[Утв. Об экипировке для биатлона](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+    concept_biathlon;
+    concept_training
+};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Залогом успешного выступления в <b><sc_element sys_idtf="concept_biathlon">биатлоне</b> являются не 
+    только постоянные напряженные спортивные <b><sc_element sys_idtf="concept_training">тренировки</b>, но и соответствующая экипировка. ](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+nrel_biathlon_equipment
+<-...(*
+	<-sc_node_not_relation;;
+	<-arity;;
+	=>nrel_measurement:2(*<-number;;*);;
+*);;
+
+nrel_biathlon_equipment
+=>nrel_domain:concept_sport;
+=>nrel_second_domain:concept_sport_equipment;
+=>nrel_definitional_domain:..
+(*
+	<=nrel_combination:
+	{
+		concept_sport;
+		concept_sport_equipment
+	};;
+*);;
+
+nrel_relation
+=>nrel_inclusion:binary_relation
+(*
+	=>nrel_inclusion:symmetric_relation(*-|>nrel_biathlon_equipment;;*);;
+	=>nrel_inclusion:asymmetric_relation(*->nrel_biathlon_equipment;;*);;
+	=>nrel_inclusion:transitive_relation(*-|>nrel_biathlon_equipment;;*);;
+	=>nrel_inclusion:reflexive_relation(*-|>nrel_biathlon_equipment;;*);;
+	=>nrel_inclusion:antireflexive_relation(*->nrel_biathlon_equipment;;*);;
+*);
+=>nrel_inclusion:oriented_relation(*->nrel_biathlon_equipment;;*);;
+
+concept_biathlon=>nrel_biathlon_equipment:
+	concept_biathlon_suit;
+	concept_rifle;
+    concept_skiing;
+	concept_ski_poles;;
+
+concept_summer_biathlon=>nrel_biathlon_equipment:concept_roller_skis;;
