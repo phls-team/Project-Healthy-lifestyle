@@ -1,0 +1,46 @@
+concept_shampoo<-sc_node_not_relation;;
+concept_shampoo=>nrel_main_idtf:[шампунь]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[shampoo]
+        (*
+                <-lang_en;;
+        *);;
+
+definition ->...
+(*
+->rrel_key_sc_element:concept_shampoo ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Шампунь - жидкое изделие, содержащее поверхностно-активные вещества, в соединении с водой, используемое как косметическое средство, предназначенное ухода за волосами.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Шампунь)](*<- lang_ru;;*);;
+*);;
+
+concept_shampoo<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://фото//shampoo.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+        => nrel_main_idtf: [Изображение](*<- lang_ru;;*);;
+*);;
+*);;
+
+statement->...
+(*
+->rrel_key_sc_element:concept_shampoo;;
+=> nrel_main_idtf: [Утверждение 1: Основные компоненты шампуня](*<- lang_ru;;*);;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Основными компонентами шампуня являются вода, поверхностно активные в-ва(ПАВ), консерванты, ароматизаторы, неорганические соли. В состав современных шампуней могут также входить масла или витамины.](*<-lang_ru;;*);;*);;
+*);;
+
+statement->...
+(*
+->rrel_key_sc_element:concept_shampoo;;
+=> nrel_main_idtf: [Утверждение 2: Факты из истории шампуня](*<- lang_ru;;*);;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Первый шампунь был изобретен в 1903 году немецким химиком Хансом Шварцкопфом, изначально он представлял из себя порошок, свой привычный вид(жидкость) шампунь приобрел уже в 1931 году.](*<-lang_ru;;*);;*);;
+*);;
+concept_soap=>nrel_inclusion:concept_personal_hygiene;;
+

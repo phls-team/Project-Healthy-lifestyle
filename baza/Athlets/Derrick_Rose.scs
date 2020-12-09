@@ -1,0 +1,72 @@
+Derrick_Rose
+
+<-sc_node_not_relation;
+<=nrel_inclusion:concept_person;
+<=nrel_inclusion:concept_athlete;
+
+=> nrel_main_idtf:
+          [Derrick Rose](*<-lang_en;;*);
+          [Деррик Роуз](*<-lang_ru;;*);
+
+
+=> nrel_weight:88;
+=> nrel_date_of_birth:[4 октября 1988];
+=> nrel_height:191;
+=> nrel_birthplace:[USA, Chicago, Illinois];;
+Derrick_Rose=> nrel_sport_role:concept_basketball_point_guard;;
+Derrick_Rose=> nrel_sport:concept_basketball;;
+
+Derrick_Rose <-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+[Опр.(Кто такой Деррик Роуз)] 
+	(* 
+		<-lang_ru;;
+	*);;
+	
+<=nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [Деррик Роуз - американский профессиональный спортсмен, баскетболист. Был задрафтован первым пиком в первом раунде драфта НБА в 2008 году командой Чикаго Буллс]
+(* 
+<-lang_ru;; 
+*);;
+
+	*);;
+	<=nrel_using_constants: {
+	concept_basketball_rules
+	};;
+*);;
+
+Derrick_Rose=>nrel_award:[Самый ценный игрок НБА (2011)];[Новичок года (2009)];[Член сборной всех звезд НБА (2011)];[Член сборной лучших новичков НБА (2009)];;
+Derrick_Rose=> nrel_sports_achivments: ...
+(*
+<= concept_competition: ...
+	(*
+		<-[Конкурс умений НБА (2009)](*<-lang_ru;;*);;
+		<=nrel_sports_award:gold_medal;;
+	*);;
+<= concept_competition: ...
+		(*
+		<-[Чемпионат мира по баскетболу в Турции (2010)](*<-lang_ru;;*);;
+		<=nrel_sports_award:gold_medal;;
+		*);;
+<= concept_competition: ...		
+		(*
+		<-[Чемпионат мира по баскетболу в Испании (2014)](*<-lang_ru;;*);;
+		<=nrel_sports_award:gold_medal;;
+		*);;
+*);
+		
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://Image/Derrick_Rose.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
+		

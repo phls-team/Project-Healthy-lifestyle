@@ -1,0 +1,51 @@
+concept_basketball_suit
+<-sc_node_not_relation;
+
+=>nrel_main_idtf:
+	[basketball suit](*<-lang_en;;*);
+	[баскетбольная форма](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(баскетбольная форма)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[баскетбольная форма – это спортивная одежда, предназначенная для игры в баскетбол.](*<- lang_ru;;*);;
+			*);;
+        	<= nrel_using_constants: {
+                concept_sportwear;
+                concept_basketball
+            };;
+		*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв. (О баскетбольной форме)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[баскетбольная форма является обязательной для ношения в матче, состоит из джерси и шорт. Имеет одинаковую расцветку для всей команды, а так же на обоих элементах нанесен номер спортсмена](*<- lang_ru;;*);;
+			*);;
+            <= nrel_using_constants: {
+                concept_basketball;
+                concept_shorts;
+                concept_basketball_jersey;
+                concept_athlete;
+                concept_sports_team
+            };;
+		*);
+
+<=nrel_inclusion:concept_basketball;
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://Image/basketwear.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

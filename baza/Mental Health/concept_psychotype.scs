@@ -1,0 +1,53 @@
+concept_psychotype
+<- sc_node_norole_relation;
+=> nrel_main_idtf: 
+	[психотип] 
+	(* 
+	<- lang_ru;; 
+	*);
+=> nrel_main_idtf: 
+	[psychotype] 
+	(* 
+	<- lang_en;; 
+	*);;
+
+concept_psychotype<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (психотип) ] (*<-lang_ru;;*);;
+	 <= nrel_sc_text_translation: ... (*
+
+      -> rrel_example:
+	  
+	[ Психотип - система индивидуальных установок и поведенческих стереотипов, образованная с целью объяснения разницы между <b><sc_element sys_idtf="concept_person">людьми</b></sc_element>] (* <- lang_ru;; => nrel_format: format_html;; 
+
+	*);;
+
+    *);;
+
+ *);
+
+=>nrel_inclusion:concept_character;
+
+<- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=>nrel_main_idtf:
+	[Утв. ] (*<-lang_ru;;*);;
+	<=nrel_sc_text_translation: ... (*
+
+	->rrel_example:
+
+	[Зачастую, конкретное разбиение по психотипам затруднено, так как у разных классификаций разный набор критериев для сравнения, наиболее часто выделяют следующие психотипы: Истероид, Эпилептоид, Параноял, Гипертим, Эмотив, Шизоид] (* <- lang_ru;;*);;
+
+    *);;
+ *);;
+concept_psychotype<=nrel_subdividing:
+{
+concept_hysteroid;
+concept_schizoid;
+concept_paranoid;
+concept_hypertime;
+concept_epileptoid;
+concept_emotive_type
+};;
+

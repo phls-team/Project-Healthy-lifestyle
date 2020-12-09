@@ -1,0 +1,73 @@
+concept_sports_team=>nrel_idtf:[sports team]
+	(*
+		<-lang_en;;
+	*);;
+concept_sports_team=>nrel_main_idtf:[спортивная команда]
+	(*
+		<-lang_ru;;
+	*);;
+concept_sports_team<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+[Опр.(спортивная команда)] 
+	(* 
+		<-lang_ru;;
+	*);;
+<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Группа спортсменов, представляющих единый клуб/организацию, которые принимают участие в соревнованиях. Участники команды несут коллективную ответственность за достижение результата команды в рамках соревнования]
+(* 
+<-lang_ru;; 
+*);;
+	*);;
+	
+	<=nrel_using_constants: {
+	sports_club
+	};;
+*);;
+
+concept_sports_team <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утв.(О спортивной команде)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[ Участники команды выступают одинаковой форме.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+concept_sports_team <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утв.(О спортивной команде)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[ Зачастую в команде так же имеется тренер.](*<- lang_ru;;*);;
+			*);;
+	
+	<=nrel_using_constants: {
+	concept_trainer
+	};;
+*);;
+
+concept_sports_team<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://sports_team.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;
+
+

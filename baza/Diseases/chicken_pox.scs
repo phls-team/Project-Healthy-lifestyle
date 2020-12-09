@@ -1,0 +1,41 @@
+chicken_pox<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+[ветрянка](*<-lang_ru;;*);
+[chicken pox](*<-lang_en;;*);
+[ветряная оспа](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ...(*
+<- definition;;
+=> nrel_main_idtf: [Опр.(ветрянка)](*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...(*
+-> rrel_example: [Ветрянка - вирусное инфекционное заболевание, которое проявляется лихорадкой и зудящей пузырьковой сыпью.](*<-lang_ru;;*);;
+*);;
+*);
+
+<- rrel_key_sc_element: ...(*
+<- statement;;
+=> nrel_main_idtf: [Утв. 1 о ветрянке](*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...(*
+-> rrel_example: [Большинство людей переносят ветряную оспу довольно легко и безо всяких осложнений. Однако, существует риск развития тяжёлых форм и осложнений.](*<-lang_ru;;*);;
+*);;
+*);
+
+<- rrel_key_sc_element: ...(*
+<- statement;;
+=> nrel_main_idtf: [Утв. 2 о ветрянке](*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...(*
+-> rrel_example: [Вакцина против ветряной оспы является безопасным и эффективным способом тх предотвращения и снижения вероятности развития заболевания.](*<-lang_ru;;*);;
+*);;
+*);;
+
+chicken_pox<- rrel_key_sc_element: ...(*
+<- illustration;;
+<=nrel_sc_text_translation: ...(*
+-> "file://chicken_pox.jpg"(*=>nrel_format: format_jpg;;*);;
+*);;
+*);;
+
+concept_desease=>nrel_inclusion:chicken_pox;;
+concept_virus=>nrel_inclusion:chicken_pox;;
+chicken_pox=>nrel_symptom:fever;headache;general_weakness;;

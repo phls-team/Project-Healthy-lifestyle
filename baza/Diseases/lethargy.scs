@@ -1,0 +1,25 @@
+lethargy<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+[летаргия](*<-lang_ru;;*);
+[lethargy](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ...(*
+<- definition;;
+=> nrel_main_idtf: [Опр.(летаргия)](*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...(*
+-> rrel_example: [Болезненное состояние, характеризующееся медлительностью, вялостью, усталостью.](*<-lang_ru;;*);;
+*);;
+*);
+
+<- rrel_key_sc_element: ...(*
+<- statement;;
+=> nrel_main_idtf: [Утв. 1 о летаргии](*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...(*
+-> rrel_example: [Летаргия может быть естественным ответом на недостаток сна, перенапряжение, стресс. Как правило, устраняется при нормализации режима сна и питания.](*<-lang_ru;;*);;
+*);;
+*);;
+
+concept_desease=>nrel_inclusion:lethargy;;
+concept_mental_illness=>nrel_inclusion:lethargy;;
+lethargy=>nrel_symptom:general_weakness;;

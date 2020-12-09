@@ -1,0 +1,65 @@
+nrel_sport_role
+
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+	[sport role*](*<-lang_en;;*);
+	[амплуа*](*<-lang_ru;;*);
+	
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(Амплуа)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Амплуа <b><sc_element sys_idtf="concept_athlete">спортсмена</b></sc_element> характеризует задачи, выполняемые им в матче.](*<- lang_ru;; => nrel_format: format_html;; *);;
+			*);;
+            <= nrel_using_constants: {
+               concept_athlete
+            };;
+		*);;
+
+nrel_sport_role<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Об амплуа)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[Зачастую этот термин используется <b><sc_element sys_idtf="concept_game">в игровых видах спорта</b></sc_element>, так же <b><sc_element sys_idtf="concept_athlete">спортсмены</b></sc_element> довольно редко меняют свое амплуа.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+      <=nrel_using_constants: {
+      concept_athlete;
+      concept_game
+      };;
+  *);;
+
+nrel_sport_role
+=>nrel_first_domain: concept_athlete;
+=>nrel_second_domain: concept_sport_role;
+
+=>nrel_definitional_domain:...
+(*
+  <= nrel_combination:... 
+    (*
+	->concept_athlete;;
+	->concept_sport_role;;
+    *);;
+*);;
+
+sc_node_not_relation->arity;;
+sc_node_not_relation->arity_2;;
+arity_2=>nrel_measurement:2;;
+arity_2->nrel_sport_role;;
+arity_2<-arity;;
+number->2;;
+
+relation => nrel_inclusion: oriented_relation;;
+relation => nrel_inclusion: binary_relation;;
+binary_relation => nrel_inclusion: antireflexive_relation;;
+binary_relation => nrel_inclusion: antitransitive_relation;;
+binary_relation => nrel_inclusion: antisymmetric_relation;;
+antireflexive_relation -> nrel_sport_role;;
+transitive_relation -> nrel_sport_role;;
+antisymmetric_relation -> nrel_sport_role;;
+binary_relation -> nrel_sport_role;;
+oriented_relation -> nrel_sport_role;;
+	

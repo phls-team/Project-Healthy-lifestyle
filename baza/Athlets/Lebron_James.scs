@@ -1,0 +1,72 @@
+Lebron_James
+
+<-sc_node_not_relation;
+<=nrel_inclusion:concept_person;
+<=nrel_inclusion:concept_athlete;
+
+=> nrel_main_idtf:
+          [Lebron James](*<-lang_en;;*);
+          [Kingjames](*<-lang_en;;*);
+          [Леброн Джеймс](*<-lang_ru;;*);
+
+=> nrel_sport:concept_basketball;
+=> nrel_weight:113;
+=> nrel_date_of_birth:[30 декабря 1984];
+=> nrel_height:113;
+=> nrel_birthplace:[USA, Akron, Ohio];
+=> nrel_sport_role:concept_basketball_small_forward;;
+
+Lebron_James <-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+[Опр.(Кто такой Леброн Джеймс)] 
+	(* 
+		<-lang_ru;;
+	*);;
+	
+<=nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [Леброн Джеймс - американский профессиональный спортсмен, баскетболист. Был задрафтован первым пиком в первом раунде драфта НБА в 2003 году командой Кливленд Кавалерс]
+(* 
+<-lang_ru;; 
+*);;
+
+	*);;
+	<=nrel_using_constants: {
+	concept_basketball_rules
+	};;
+*);;
+
+Lebron_James=>nrel_award:[Мистер баскетбол США (2002, 2003)];[Новичок года (2004)];[Член сборной всех звезд НБА (2005-2020)];[Член сборной лучших новичков НБА (2009)];[Самый ценный игрок финала НБА (2012, 2013, 2016, 2020)];[4-х кратный чемпион НБА (2012, 2013, 2016, 2020)];;
+Lebron_James=> nrel_sports_achivments: ...
+(*
+
+<= concept_competition: ...
+		(*
+		<-[Олимпийские игры в Пекине (2008)](*<-lang_ru;;*);;
+		<=nrel_sports_award:gold_medal;;
+		*);;
+<= concept_competition: ...
+		(*
+		<-[Олимпийские игры в Лондоне (2012)](*<-lang_ru;;*);;
+		<=nrel_sports_award:gold_medal;;
+		*);;
+<= concept_competition: ...		
+		(*
+		<-[Чемпионат мира по баскетболу в Америке (2007)](*<-lang_ru;;*);;
+		<=nrel_sports_award:gold_medal;;
+		*);;
+*);
+		
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://Image/James.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

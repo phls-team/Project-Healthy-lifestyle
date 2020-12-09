@@ -1,0 +1,67 @@
+Shaquille_O_Neal
+
+<-sc_node_not_relation;
+<=nrel_inclusion:concept_person;
+<=nrel_inclusion:concept_athlete;
+
+=> nrel_main_idtf:
+          [Shaquille O'Neal](*<-lang_en;;*);
+          [Шакил О'Нил](*<-lang_ru;;*);
+
+=> nrel_sport:concept_basketball;
+=> nrel_weight:147;
+=> nrel_date_of_birth:[6 марта 1972];
+=> nrel_height:216;
+=> nrel_birthplace:[USA, Newark, New Jersey];
+=> nrel_sport_role:concept_basketball_center;;
+
+Shaquille_O_Neal <-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+[Опр.(Кто такой Шакил О'Нил)] 
+	(* 
+		<-lang_ru;;
+	*);;
+	
+<=nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [Шакил О'Нил - американский профессиональный спортсмен, баскетболист. Был задрафтован первым пиком в первом раунде драфта НБА в 1992 году командой Орландо Меджик]
+(* 
+<-lang_ru;; 
+*);;
+
+	*);;
+	<=nrel_using_constants: {
+	concept_basketball_rules
+	};;
+*);;
+
+Shaquille_O_Neal=>nrel_award:[Самый ценный игрок НБА (2000)];[Новичок года (1993)];[Член сборной всех звезд НБА (2011)];[Член сборной лучших новичков НБА (2009)];[Самый ценный игрок финала НБА (2000-2002)];[Самый ценный игрок чемпионата мира по баскетболу (1994)];[4-х кратный чемпион НБА (2000,2001,2002,2006)];;
+Shaquille_O_Neal=> nrel_sports_achivments: ...
+(*
+
+<= concept_competition: ...
+		(*
+		<-[Олимпийские игры в Атланте (1996)](*<-lang_ru;;*);;
+		<=nrel_sports_award:gold_medal;;
+		*);;
+<= concept_competition: ...		
+		(*
+		<-[Чемпионат мира по баскетболу в Канаде (1994)](*<-lang_ru;;*);;
+		<=nrel_sports_award:gold_medal;;
+		*);;
+*);
+		
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://Image/Shaquille_O_Neal.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
+		

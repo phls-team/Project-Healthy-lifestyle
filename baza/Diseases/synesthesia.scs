@@ -1,0 +1,31 @@
+synesthesia<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+[синестезия](*<-lang_ru;;*);
+[synesthesia](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ...(*
+<- definition;;
+=> nrel_main_idtf: [Опр.(синестезия)](*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...(*
+-> rrel_example: [Нейрологический феномен, при котором раздражение в одной сенсорной или когнитивной системе ведет к автоматическому, непроизвольному отклику в другой сенсорной системе.](*<-lang_ru;;*);;
+*);;
+*);
+
+<- rrel_key_sc_element: ...(*
+<- statement;;
+=> nrel_main_idtf: [Утв. 1 о синестезии](*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...(*
+-> rrel_example: [Предпологается, что синестезия развивается в детстве в период, когда дети впервые сталкиваются с абстрактными понятиями.](*<-lang_ru;;*);;
+*);;
+*);;
+/*
+synesthesia<- rrel_key_sc_element: ...(*
+<- illustration;;
+<=nrel_sc_text_translation: ...(*
+-> "file://synesthesia.jpg"(*=>nrel_format: format_jpg;;*);;
+*);;
+*);;
+*/
+concept_desease=>nrel_inclusion:synesthesia;;
+concept_mental_illness=>nrel_inclusion:synesthesia;;
