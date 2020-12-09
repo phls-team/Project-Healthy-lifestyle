@@ -1,0 +1,36 @@
+
+d_concept_elevated_albumin <- definition;;
+
+d_concept_elevated_albumin => nrel_main_idtf: [Опр.(повышенный альбумин)] (* <- lang_ru;; *);;
+d_concept_elevated_albumin => nrel_main_idtf: [Def.(elevated albumin )] (* <- lang_en;; *);;
+ 
+ concept_elevated_albumin<-concept_illness;;
+
+concept_elevated_albumin<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://картинки/pov.png"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;
+
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_elevated_albumin;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Повышенный альбумин в крови происходит при обезвоживании, потере жидкости организмом. Альбумины обеспечивают около 80% онкотического давления плазмы. Именно альбумины легко теряются с мочой при заболеваниях почек.](*<- lang_ru;;*);;
+	    -> [Elevated albumin in the blood occurs with dehydration, loss of fluid by the body. Albumin provides about 80% of the plasma oncotic pressure. It is the albumin that is easily lost in the urine in kidney disease.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(повышенный альбумин)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(elevated albumin)](*<- lang_ru;;*);;
+  
+*);;
+

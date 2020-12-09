@@ -1,0 +1,568 @@
+scp_program -> proc_disease (*
+
+    -> rrel_params: .proc_search_diseases2_params (*
+	-> rrel_1: rrel_in: _parameter1;;
+    -> rrel_2: rrel_in: _parameter2;;
+	-> rrel_3: rrel_in: _answer;;
+	*);;
+
+	-> rrel_operators: .proc_search_diseases2_operator_set (*
+
+
+    -> rrel_init: ..diseases_operator1_1 (*
+	    <- genEl;;
+	    -> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _first_dis;;
+	    => nrel_goto: ..diseases_operator1_3;;
+	    *);;
+
+	->  ..diseases_operator1_2 (*
+	    <- genEl;;
+	    -> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _first_dis;;
+	    => nrel_goto: ..diseases_operator1_3;;
+	    *);;
+
+	->  ..diseases_operator1_3 (*
+	    <- genEl;;
+	    -> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _sec_dis;;
+	    => nrel_goto: ..diseases_operator1_4;;
+	    *);;
+
+   -> ..diseases_operator1_4 (*
+	    <- genElStr3;;
+	    -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+	    -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _set_arc;;
+	    -> rrel_3: rrel_fixed: rrel_scp_const: set_dis;;
+	    => nrel_goto: ..diseases_operator1_5;;
+	    *);;
+
+    -> ..diseases_operator1_5 (*
+	    <- genElStr3;;
+	    -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+	    -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc3;;
+        -> rrel_3: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _set_arc;;
+	    => nrel_goto: ..diseases_operator2;;
+	    *);;
+
+  
+    -> ..diseases_operator2 (*
+			<- varAssign;;
+			-> rrel_1: rrel_assign: rrel_scp_var: _max_weight;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: [0];;
+			=> nrel_goto: ..diseases_operator2_1;;
+		*);;
+    -> ..diseases_operator2_1 (*
+			<- varAssign;;
+			-> rrel_1: rrel_assign: rrel_scp_var: _sec_max_weight;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: [0];;
+			=> nrel_goto: ..diseases_operator2_2;;
+		*);;
+
+    -> ..diseases_operator2_2 (*
+			<- varAssign;;
+			-> rrel_1: rrel_assign: rrel_scp_var: _buf_weight;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: [0];;
+			=> nrel_goto: ..diseases_operator3_1;;
+		*);;
+
+
+ 
+	-> ..diseases_operator3_1 (*
+	    <- searchSetStr3;;
+	    -> rrel_1: rrel_fixed: rrel_scp_const: concept_disease;;
+	    -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+	    -> rrel_3: rrel_assign: rrel_scp_var: _disease;;
+	    -> rrel_set_3: rrel_assign: rrel_scp_var: _diseases;;
+	    => nrel_goto: ..diseases_operator3_2;;
+	    *);;
+//организуем цикл по болезням
+
+    -> ..diseases_operator3_2 (*
+	    <- searchElStr3;;
+	    -> rrel_1: rrel_fixed: rrel_scp_var: _diseases;;
+	    -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _erase_arc;;
+	    -> rrel_3: rrel_assign: rrel_scp_var: _dis;;
+	    => nrel_then: ..diseases_operator3_3;;
+	    => nrel_else: ..diseases_operator8_1;;
+	    *);;
+
+	-> ..diseases_operator3_3 (*
+	    <- eraseEl;;
+	    -> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _erase_arc;;
+	    => nrel_goto: ..diseases_operator4_1;;
+	    *);;
+
+    -> ..diseases_operator4_1 (*
+	    <- searchElStr5;;
+	    -> rrel_1: rrel_fixed: rrel_scp_var: _dis;; 
+	    -> rrel_2: rrel_assign:  rrel_scp_var: _curr1;;
+	    -> rrel_3: rrel_fixed: rrel_scp_var: _parameter1;;
+        -> rrel_4: rrel_assign:  rrel_scp_var: _arc1;;
+	    -> rrel_5: rrel_fixed: rrel_scp_const: nrel_symptom;;
+	    => nrel_then: ..diseases_operator4_2;;
+	    => nrel_else: ..diseases_operator3_2;;
+	    *);;
+   
+
+    -> ..diseases_operator4_2 (*
+	    <- searchElStr5;;
+	     -> rrel_1: rrel_fixed: rrel_scp_var: _dis;; 
+	    -> rrel_2: rrel_assign:  rrel_scp_var: _curr2;;
+	    -> rrel_3: rrel_fixed: rrel_scp_var: _parameter2;;
+        -> rrel_4: rrel_assign:  rrel_scp_var: _arc1;;
+	    -> rrel_5: rrel_fixed: rrel_scp_const: nrel_symptom;;
+	    => nrel_then: ..diseases_operator4_3;;
+	    => nrel_else: ..diseases_operator3_2;;
+	    *);;
+
+    -> ..diseases_operator4_3 (*
+			 <- searchElStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _curr1;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc3;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _curr_weight1;;
+			=> nrel_then: ..diseases_operator4_4;;		
+		 	=> nrel_else: ..diseases_operator3_2;;	
+		*);;  
+
+ 
+    -> ..diseases_operator4_4 (*
+			 <- searchElStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _curr2;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc3;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _curr_weight2;;
+			=> nrel_then: ..diseases_operator5_1;;		
+		 	=> nrel_else: ..diseases_operator3_2;;	
+		*);; 
+ 
+    
+    ->..diseases_operator5_1 (*
+			<- contAdd;;
+			-> rrel_1: rrel_assign: rrel_scp_var: _buf_weight;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _curr_weight1;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _curr_weight2;;
+			=> nrel_goto: ..diseases_operator5_2;;	
+						*);;  
+
+
+
+
+    ->..diseases_operator5_2 (*
+			<- ifGr;;
+			-> rrel_1: rrel_scp_var: _buf_weight;;
+			-> rrel_2: rrel_scp_var: _max_weight;;
+			=> nrel_then: ..diseases_operator6_111;;
+			=> nrel_else: ..diseases_operator7_less;;
+				*);;
+ 
+    -> ..diseases_operator6_111 (*
+	    <- searchElStr5;;
+	    -> rrel_1: rrel_fixed: rrel_scp_var: _first_dis ;;
+	    -> rrel_2: rrel_assign: rrel_scp_var: _erese;;
+	    -> rrel_3: rrel_assign: rrel_scp_var: _some_disase;;
+        -> rrel_4: rrel_assign: rrel_scp_var: _era;;
+	    -> rrel_5: rrel_fixed: rrel_scp_const: nrel_scp_var_value;;
+	    => nrel_then: ..diseases_operator6_12;;
+	    => nrel_else: ..diseases_operator6_23;;
+	    *);;
+
+
+	-> ..diseases_operator6_12 (*
+	    <- eraseEl;;
+	    -> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _era;;
+	    => nrel_goto: ..diseases_operator6_121;;
+	    *);;  
+
+    -> ..diseases_operator6_121 (*
+	    <- eraseEl;;
+	    -> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _erese;;
+	    => nrel_goto: ..diseases_operator6_22;;
+	    *);;  
+
+     -> ..diseases_operator6_22 (*
+		<- genElStr5;;
+		-> rrel_1: rrel_fixed: rrel_scp_var: _sec_dis;;
+        -> rrel_2: rrel_assign: rrel_scp_var: _arc1;;
+	    -> rrel_3: rrel_fixed: rrel_scp_var: _some_disase;;
+        -> rrel_4: rrel_assign: rrel_scp_var: _arc2;;
+	    -> rrel_5: rrel_fixed: rrel_scp_const: nrel_scp_var_value;;
+
+			=> nrel_goto: ..diseases_operator6_23;;
+		*);;
+
+
+    -> ..diseases_operator6_23 (*
+		<- genElStr5;;
+		-> rrel_1: rrel_fixed: rrel_scp_var: _first_dis;;
+        -> rrel_2: rrel_assign: rrel_scp_var: _arc1;;
+	    -> rrel_3: rrel_fixed: rrel_scp_var: _dis;;
+        -> rrel_4: rrel_assign: rrel_scp_var: _arc2;;
+	    -> rrel_5: rrel_fixed: rrel_scp_const: nrel_scp_var_value;;
+		=> nrel_goto: ..diseases_operator6_3;;
+		*);;
+
+  
+     -> ..diseases_operator6_3 (*
+			<- varAssign;;
+			-> rrel_1: rrel_assign: rrel_scp_var: _sec_max_weight;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _max_weight;;
+			=> nrel_goto: ..diseases_operator6_4;;
+		*);;
+
+
+    -> ..diseases_operator6_4 (*
+			<- varAssign;;
+			-> rrel_1: rrel_assign: rrel_scp_var: _max_weight;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _buf_weight;;
+			=> nrel_goto: ..diseases_operator7_6;;
+		*);;
+
+
+
+    
+
+//конец проверки на ifGR_1
+
+    ->..diseases_operator7_less (*
+			<- ifGr;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _buf_weight;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _sec_max_weight;;
+			=> nrel_then: ..diseases_operator7_2;;
+			=> nrel_else: ..diseases_operator7_6;;
+						*);;  
+
+
+
+ -> ..diseases_operator7_2 (*
+	    <- searchElStr5;;
+	    -> rrel_1: rrel_fixed: rrel_scp_var: _sec_dis;;
+	    -> rrel_2: rrel_assign: rrel_scp_var: _erese;;
+	    -> rrel_3: rrel_assign: rrel_scp_var: _some_disase;;
+        -> rrel_4: rrel_assign: rrel_scp_var: _era;;
+	    -> rrel_5: rrel_fixed: rrel_scp_const: nrel_scp_var_value;;
+	    => nrel_then: ..diseases_operator7_3;;
+	    => nrel_else: ..diseases_operator7_5;;
+	    *);;
+
+
+	-> ..diseases_operator7_3 (*
+	    <- eraseEl;;
+	    -> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _era;;
+	    => nrel_goto: ..diseases_operator7_4;;
+	    *);;  
+
+    -> ..diseases_operator7_4 (*
+	    <- eraseEl;;
+	    -> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _erese;;
+	    => nrel_goto: ..diseases_operator7_5;;
+	    *);;  
+
+
+    -> ..diseases_operator7_5 (*
+		<- genElStr5;;
+		-> rrel_1: rrel_fixed: rrel_scp_var: _sec_dis;;
+        -> rrel_2: rrel_assign: rrel_scp_var: _arc1;;
+	    -> rrel_3: rrel_fixed: rrel_scp_var: _dis;;
+        -> rrel_4: rrel_assign: rrel_scp_var: _arc2;;
+	    -> rrel_5: rrel_fixed: rrel_scp_const: nrel_scp_var_value;;
+        => nrel_goto: ..diseases_operator7_33;;
+		*);;
+
+    
+    -> ..diseases_operator7_33 (*
+			<- varAssign;;
+			-> rrel_1: rrel_assign: rrel_scp_var: _sec_max_weight;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _buf_weight;;
+			=> nrel_goto: ..diseases_operator7_6;;
+		*);;
+
+
+    -> ..diseases_operator7_6 (*
+			<- varAssign;;
+			-> rrel_1: rrel_assign: rrel_scp_var: _buf_weight;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: [0];;
+			=> nrel_goto: ..diseases_operator3_2;;
+		*);;
+
+
+    
+ //////////////////////////////
+
+
+	-> ..diseases_operator8_1 (*
+	    <- searchSetStr3;;
+	    -> rrel_1: rrel_fixed: rrel_scp_const: concept_disease;;
+	    -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+	    -> rrel_3: rrel_assign: rrel_scp_var: _disease1;;
+	    -> rrel_set_3: rrel_assign: rrel_scp_var: _diseases1;;
+	    => nrel_goto: ..diseases_operator8_2;;
+	    *);;
+
+
+    -> ..diseases_operator8_2 (*
+	    <- searchElStr3;;
+	    -> rrel_1: rrel_fixed: rrel_scp_var: _diseases1;;
+	    -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _erase_arc;;
+	    -> rrel_3: rrel_assign: rrel_scp_var: _dis1;;
+	    => nrel_then: ..diseases_operator8_3;;
+	    => nrel_else: ..proc_search_equipment_operator_return;;
+	    *);;
+
+	-> ..diseases_operator8_3 (*
+	    <- eraseEl;;
+	    -> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _erase_arc;;
+	    => nrel_goto: ..diseases_operator8_4;;
+	    *);;  
+
+
+    -> ..diseases_operator8_4 (*
+	    <- searchElStr5;;
+	    -> rrel_1: rrel_fixed: rrel_scp_var: _first_dis;;
+	    -> rrel_2: rrel_assign: rrel_scp_var: _er;;
+	    -> rrel_3: rrel_fixed: rrel_scp_var: _dis1;;
+        -> rrel_4: rrel_assign: rrel_scp_var: _era;;
+	    -> rrel_5: rrel_fixed: rrel_scp_const: nrel_scp_var_value;;
+	    => nrel_then: ..diseases_operator9_1;;
+	    => nrel_else: ..diseases_operator8_2;;
+	    *);;
+
+
+    -> ..diseases_operator9_1(*
+		     <- genElStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_const: set_dis;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var:  _left_arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _dis1;;
+		    => nrel_goto: ..diseases_operator9_2;;
+		 	
+		*);; 
+
+  
+    -> ..diseases_operator9_2(*
+	    <- genElStr3;;
+	    -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+	    -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _left_answer_arc;;
+	    -> rrel_3: rrel_fixed: rrel_scp_var: _left_arc;;
+	    => nrel_goto: ..diseases_operator9_3;;
+	    *);;
+
+    -> ..diseases_operator9_3 (*
+			 <- genElStr5;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm:rrel_scp_var:  _first_desease_arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _dis1;;
+            -> rrel_4: rrel_assign: rrel_pos_const_perm:rrel_scp_var:  _arc;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_dis;;
+			=> nrel_goto: ..diseases_operator9_4;;		
+		 	
+		*);; 
+
+
+    -> ..diseases_operator9_4(*
+	    <- genElStr3;;
+	    -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+	    -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _first_desease_answer_arc;;
+	    -> rrel_3: rrel_fixed: rrel_scp_var:rrel_pos_const_perm: _first_desease_arc;;
+	    => nrel_goto: ..diseases_operator9_4_1;;
+	    *);;
+
+
+
+-> ..diseases_operator9_4_1 (*
+	    <- searchSetStr3;;
+	    -> rrel_1: rrel_fixed: rrel_scp_const: concept_disease;;
+	    -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+	    -> rrel_3: rrel_assign: rrel_scp_var: _disease;;
+	    -> rrel_set_3: rrel_assign: rrel_scp_var: _diseases;;
+	    => nrel_goto: ..diseases_operator9_4_2;;
+	    *);;
+
+
+    -> ..diseases_operator9_4_2 (*
+	    <- searchElStr3;;
+	    -> rrel_1: rrel_fixed: rrel_scp_var: _diseases;;
+	    -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _erase_arc;;
+	    -> rrel_3: rrel_assign: rrel_scp_var: _dis_s;;
+	    => nrel_then: ..diseases_operator9_4_3;;
+	    => nrel_else: ..proc_search_equipment_operator_return;;
+	    *);;
+
+	-> ..diseases_operator9_4_3 (*
+	    <- eraseEl;;
+	    -> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _erase_arc;;
+	    => nrel_goto: ..diseases_operator9_4_4;;
+	    *);;  
+
+    -> ..diseases_operator9_4_4 (*
+	    <- searchElStr5;;
+	    -> rrel_1: rrel_fixed: rrel_scp_var: _sec_dis;;
+	    -> rrel_2: rrel_assign: rrel_scp_var: _erase_arc;;
+	    -> rrel_3: rrel_fixed: rrel_scp_var: _dis_s;;
+        -> rrel_4: rrel_assign: rrel_scp_var: _erase_arc;;
+	    -> rrel_5: rrel_fixed: rrel_scp_const: nrel_scp_var_value;;
+	    => nrel_then: ..diseases_operator9_5;;
+	    => nrel_else: ..diseases_operator9_4_2;;
+	    *);;
+
+    -> ..diseases_operator9_5 (*
+		     <- genElStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_const: set_dis;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm:rrel_scp_var:  _right_arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _dis_s;;
+		 => nrel_goto: ..diseases_operator9_6;;
+		 	
+		*);; 
+
+
+
+    -> ..diseases_operator9_6(*
+	    <- genElStr3;;
+	    -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+	    -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _right_answer_arc;;
+	    -> rrel_3: rrel_fixed: rrel_scp_var: _right_arc;;
+	    => nrel_goto: ..diseases_operator9_7;;
+	    *);;
+
+
+    -> ..diseases_operator9_7 (*
+			 <- genElStr5;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm:rrel_scp_var:  _second_desease_arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _dis_s;;
+            -> rrel_4: rrel_assign: rrel_pos_const_perm:rrel_scp_var:  _arc;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_dis;;
+			=> nrel_goto: ..diseases_operator9_8;;		
+		 	
+		*);; 
+
+    -> ..diseases_operator9_8(*
+	    <- genElStr3;;
+	    -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+	    -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _second_desease_answer_arc;;
+	    -> rrel_3: rrel_fixed: rrel_scp_var:rrel_pos_const_perm: _second_desease_arc;;
+	    => nrel_goto: ..diseases_operator9_9;;
+	    *);;
+
+
+    -> ..diseases_operator9_9 (*
+		     <- genElStr5;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _dis1;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm:rrel_scp_var:  _left_weight;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _max_weight;;
+            -> rrel_4: rrel_assign:rrel_scp_var:  _left_coef;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_coeff;;
+		 => nrel_goto: ..diseases_operator9_10;;
+		 	
+		*);; 
+    -> ..diseases_operator9_10 (*
+		     <- genElStr5;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _dis_s;;
+			-> rrel_2: rrel_assign:rrel_pos_const_perm :rrel_scp_var:  _right_weight;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _sec_max_weight;;
+            -> rrel_4: rrel_assign:rrel_scp_var:  _right_coef;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_coeff;;
+		 => nrel_goto: ..diseases_operator9_11;;
+		 	
+		*);; 
+
+    -> ..diseases_operator9_11 (*
+			 <- genElStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm:rrel_scp_var:  _left_weight_answ;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _left_weight;;
+			=> nrel_goto: ..diseases_operator9_12;;		
+		 	
+		*);; 
+
+    -> ..diseases_operator9_12 (*
+			 <- genElStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm:rrel_scp_var:  _right_weight_answ;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _right_weight;;
+			=> nrel_goto: ..diseases_operator9_13;;		
+		 	
+		*);; 
+
+
+  -> ..diseases_operator9_13 (*
+			 <- genElStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm:rrel_scp_var:  _max_weight_arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _max_weight;;
+			=> nrel_goto: ..diseases_operator9_14;;		
+		 	
+		*);; 
+
+    -> ..diseases_operator9_14 (*
+			 <- genElStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm:rrel_scp_var:  _max_weight_arc_ans;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _max_weight_arc;;
+			=> nrel_goto: ..diseases_operator9_15;;		
+		 	
+		*);;
+
+
+
+    -> ..diseases_operator9_15 (*
+			 <- genElStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm:rrel_scp_var:  _sec_max_weight_arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _sec_max_weight;;
+			=> nrel_goto: ..diseases_operator9_16;;		
+		 	
+		*);; 
+
+    -> ..diseases_operator9_16 (*
+			 <- genElStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm:rrel_scp_var:  _sec_max_weight_arc_ans;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _sec_max_weight_arc;;
+			=> nrel_goto: ..diseases_operator9_17;;		
+		 	
+		*);; 
+
+
+
+    -> ..diseases_operator9_17 (*
+			 <- genElStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm:rrel_scp_var:  _sec_max_weight_arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _right_coef;;
+			=> nrel_goto: ..diseases_operator9_18;;		
+		 	
+		*);; 
+
+    -> ..diseases_operator9_18 (*
+			 <- genElStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm:rrel_scp_var:  _sec_max_weight_arc_ans;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _left_coef;;
+			=> nrel_goto: ..diseases_operator9_19;;		
+		*);; 
+
+    -> ..diseases_operator9_19 (*
+			 <- genElStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm:rrel_scp_var:  _coef_weight_arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_coeff;;
+			=> nrel_goto: ..diseases_operator9_20;;		
+		 	
+		*);; 
+
+    -> ..diseases_operator9_20 (*
+			 <- genElStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm:rrel_scp_var:  _sec_max_weight_arc_ans;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _coef_weight_arc;;
+			=> nrel_goto: ..proc_search_equipment_operator_return;;		
+		 	
+		*);; 
+
+
+
+
+    -> ..proc_search_equipment_operator_return (*
+	<- return;;
+	*);;
+    
+*);;
+*);;
+

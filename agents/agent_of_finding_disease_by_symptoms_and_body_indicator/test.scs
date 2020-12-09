@@ -1,0 +1,208 @@
+organism=>nrel_norm_albymin_conc:30;;
+30<-value;;
+
+nrel_norm_albymin_conc<-sc_node_norole_relation;;
+nrel_norm_albymin_conc=>nrel_main_idtf:[норма содержания альбумина] (*<-lang_ru;;*);;
+nrel_norm_albymin_conc=>nrel_main_idtf:[albumin content] (*<-lang_en;;*);;
+
+
+nrel_symptom-> (concept_HIV => fever)(*
+		=>[0,4];;
+	*);;
+ nrel_symptom-> (concept_HIV => concept_sore_throat)(*
+		=>[0,6];;
+	*);;
+nrel_symptom-> (concept_orvi => cough)(*
+		=>[0,5];;
+	*);;
+ nrel_symptom-> (concept_orvi => fever)(*
+		=>[0,8];;
+	*);;
+
+nrel_symptom-> (concept_orvi => concept_sore_throat)(*
+		=>[0,4];;
+	*);;
+	
+	
+nrel_symptom-> (viral_meningitis => fever)(*
+		=>[0,4];;
+	*);;
+
+
+nrel_symptom-> (viral_meningitis => cough)(*
+		=>[0,6];;
+	*);;
+	
+nrel_symptom-> (viral_meningitis => headache)(*
+		=>[0,4];;
+	*);;
+	
+nrel_symptom-> (anthrax => headache)(*
+		=>[0,2];;
+	*);;
+
+nrel_symptom-> (anthrax => pain_and_weakness_in_muscles)(*
+		=>[0,1];;
+	*);;
+	
+nrel_symptom-> (concept_whooping_cough => pain_and_weakness_in_muscles)(*
+		=>[0,1];;
+	*);;
+	
+nrel_symptom-> (concept_whooping_cough => cough)(*
+		=>[0,6];;
+	*);;
+	
+nrel_symptom-> (concept_whooping_cough => vomiting)(*
+		=>[0,3];;
+	*);;
+
+
+nrel_symptom-> (concept_whooping_cough => concept_sore_throat)(*
+		=>[0,2];;
+	*);;
+
+
+nrel_symptom-> (concept_whooping_cough => difficulty_swallowing)(*
+		=>[0,2];;
+	*);;
+
+nrel_symptom-> (concept_whooping_cough => fever)(*
+		=>[0,2];;
+	*);;
+
+
+nrel_symptom-> (concept_tetanus => difficulty_swallowing)(*
+		=>[0,3];;
+	*);;
+
+
+nrel_symptom-> (concept_tetanus => fever)(*
+		=>[0,1];;
+	*);;
+
+
+nrel_symptom-> (concept_tetanus => convulsions)(*
+		=>[0,9];;
+	*);;
+
+
+nrel_symptom-> (concept_hepatitis_B => vomiting)(*
+		=>[0,3];;
+	*);;
+	
+nrel_symptom-> (concept_hepatitis_C => vomiting)(*
+		=>[0,3];;
+	*);;
+
+
+nrel_symptom-> (concept_hepatitis_D => vomiting)(*
+		=>[0,3];;
+	*);;
+
+
+nrel_symptom-> (concept_hepatitis_B => pain_and_weakness_in_muscles)(*
+		=>[0,2];;
+	*);;
+	
+nrel_symptom-> (concept_hepatitis_D => pain_and_weakness_in_muscles)(*
+		=>[0,4];;
+	*);;
+	
+nrel_symptom-> (concept_gastritis => irritability)(*
+		=>[0,3];;
+	*);;
+	
+nrel_symptom-> (
+bipolar_type_II_disorder => irritability)(*
+		=>[0,4];;
+	*);;
+	
+nrel_symptom-> (bipolar_type_I_disorder => irritability)(*
+		=>[0,4];;
+	*);;
+	
+nrel_symptom-> (concept_bubonic_plague => fever)(*
+		=>[0,4];;
+	*);;
+	
+nrel_symptom-> (concept_bubonic_plague => general_weakness_and_fatigue)(*
+		=>[0,3];;
+	*);;
+	
+nrel_symptom-> (concept_hepatitis_D => general_weakness_and_fatigue)(*
+		=>[0,2];;
+	*);;
+
+nrel_symptom-> (concept_hepatitis_D => fever)(*
+		=>[0,02];;
+	*);;
+	
+nrel_symptom-> (concept_hepatitis_B => general_weakness_and_fatigue)(*
+		=>[0,3];;
+	*);;
+	
+nrel_symptom-> (concept_hepatitis_C => general_weakness_and_fatigue)(*
+		=>[0,4];;
+	*);;
+	
+nrel_symptom-> (concept_hepatitis_E => general_weakness_and_fatigue)(*
+		=>[0,5];;
+	*);;
+	
+nrel_symptom-> (cholera => vomiting)(*
+		=>[0,3];;
+	*);;
+
+
+nrel_symptom-> (cholera => concept_loose_stools)(*
+		=>[0,3];;
+	*);;
+	
+nrel_symptom-> (cholera => adynamia)(*
+		=>[0,3];;
+	*);;
+
+	
+nrel_symptom-> (cholera => fever)(*
+		=>[0,3];;
+	*);;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
