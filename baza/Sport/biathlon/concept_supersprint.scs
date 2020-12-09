@@ -1,0 +1,37 @@
+concept_supersprint
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[supersprint](*<-lang_en;;*);
+[суперспринт](*<-lang_ru;;*);
+
+<-rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр. Суперспринт](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+        nrel_species;
+        concept_biathlon_race;
+        concept_start
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Суперспринт (англ.  super sprint — бег на очень короткие дистанции) — 
+    <b><sc_element sys_idtf="nrel_species">вид</b> <b><sc_element sys_idtf="concept_biathlon_race">биатлонной гонки</b>, которая состоит 
+    из двух самостоятельных <b><sc_element sys_idtf="concept_start">стартов</b> 
+    проводящихся за один день: «Суперспринт — квалификация» и «Суперспринт — финал».](* <- lang_ru;; => nrel_format: format_html;; *);;	
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-statement;;
+	=>nrel_main_idtf:[Утв. Об суперспринте](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+        concept_competition
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Суперспринт один из самых молодых видов биатлонных <b><sc_element sys_idtf="concept_competition">состязаний</b>. 
+    Отсюда он пока не входит в календарь крупных международных соревнований](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;

@@ -1,0 +1,54 @@
+concept_biathlon_suit
+<-sc_node_not_relation;
+<-concept_sport_equipment;
+<-concept_tracksuit;
+<=nrel_species:concept_tracksuit;
+
+=>nrel_main_idtf:
+[biathlon suit](*<-lang_en;;*);
+[костюм для биатлона](*<-lang_ru;;*);
+
+<-rrel_key_sc_element:...(*
+    <-definition;;
+    =>nrel_main_idtf:[Опр. Костюм для биатлона](*<-lang_ru;;*);;
+    =>nrel_using_constants:{
+        concept_tracksuit;
+        nrel_species
+    };;
+    <=nrel_sc_text_translation:...
+    (*
+        ->rrel_example:
+    [Лыжный костюм - <b><sc_element sys_idtf="nrel_species">разновидность</b> <b><sc_element sys_idtf="concept_tracksuit">спортивного костюма</b>, 
+    сделанный из плотной ткани и 
+    застегивающийся либо сзади, либо на груди.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-statement;;
+    =>nrel_main_idtf:[Утв. Об костюме для биатлона](*<-lang_ru;;*);;
+    =>nrel_using_constants:{
+	    concept_biathlon;
+        concept_tracksuit;
+        concept_athlete;
+        concept_race
+    };;
+    <=nrel_sc_text_translation:...
+    (*
+        ->rrel_example:
+    [При высоких скоростях, а в <b><sc_element sys_idtf="concept_biathlon">биатлоне</b> 
+    они достигают до 80 километров в час, 
+    основная функция хорошего <b><sc_element sys_idtf="concept_tracksuit">костюма</b> – это уменьшить сопротивление воздуха (обтекание) 
+    и согреть <b><sc_element sys_idtf="concept_athlete">спортсмена</b> во время <b><sc_element sys_idtf="concept_race">гонки</b>.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf:[Изобр. Летний биатлон](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+		"file://images/biathlon_suit.jpg"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;

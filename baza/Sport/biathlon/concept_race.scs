@@ -1,0 +1,79 @@
+concept_race
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[race](*<-lang_en;;*);
+[гонка](*<-lang_ru;;*);
+
+<-rrel_key_sc_element:...(*
+    <-definition;;
+    =>nrel_main_idtf:[Опр. Гонки](*<-lang_ru;;*);;
+    =>nrel_using_constants:{
+        concept_competition;
+        nrel_participant;
+        contept_start;
+        concept_finish
+    };;
+    <=nrel_sc_text_translation:...
+    (*
+        ->rrel_example:
+    [Го́нка — <b><sc_element sys_idtf="concept_competition">соревнование</b>, подразумевающее одновременный 
+    <b><sc_element sys_idtf="contept_start">старт</b> группы нескольких (двух или более) <b><sc_element sys_idtf="nrel_participant">участников</b> и фиксацию 
+    порядка <b><sc_element sys_idtf="concept_finish">финиша</b> каждого из участников. ](*<- lang_ru;; =>nrel_format: format_html;;*);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-statement;;
+    =>nrel_main_idtf:[Утв. Об гонке](*<-lang_ru;;*);;
+    =>nrel_using_constants:{
+        nrel_species;
+        concept_individual_race;
+        concept_sprint;
+        concept_pursuit_race;
+        concept_mass_start;
+        concept_relay_race;
+        concept_mixed_relay;
+        concept_single_mixed_relay;
+        concept_supersprint
+    };;
+    <=nrel_sc_text_translation:...
+    (*
+    ->rrel_example:[На сегодня в рамках крупнейших международных биатлонных 
+    соревнований проводится восемь <b><sc_element sys_idtf="nrel_species">видов</b> гонок:
+    <b><sc_element sys_idtf="concept_individual_race">индивидуальная гонка</b>, 
+    <b><sc_element sys_idtf="concept_sprint">спринт</b>, 
+    <b><sc_element sys_idtf="concept_pursuit_race">гонка преследования</b>, 
+    <b><sc_element sys_idtf="concept_mass_start">масс-старт</b>, 
+    <b><sc_element sys_idtf="concept_relay_race">эстафета</b>, 
+    <b><sc_element sys_idtf="concept_mixed_relay">смешанная эстафета</b>, 
+    <b><sc_element sys_idtf="concept_single_mixed_relay">одиночная смешанная эстафета</b>,
+    <b><sc_element sys_idtf="concept_supersprint">суперспринт</b>](*<- lang_ru;; =>nrel_format: format_html;;*);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf:[Изобр. Летний биатлон](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+		"file://images/race.jpg"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;
+
+contept_start=>nrel_main_idtf:[старт](* <- lang_ru;; *);[start](* <- lang_en;; *);;
+concept_finish=>nrel_main_idtf:[финиш](* <- lang_ru;; *);[finish](* <- lang_en;; *);;
+
+concept_race=>nrel_species:
+    concept_individual_race;
+    concept_sprint;
+    concept_pursuit_race;
+    concept_mass_start;
+    concept_relay_race;
+    concept_mixed_relay;
+    concept_single_mixed_relay;
+    concept_supersprint;
+    concept_biathlon_race;;
+
+concept_team_race=>nrel_main_idtf:[командная гонка](* <- lang_ru;; *);[team race](* <- lang_en;; *);;
+concept_team_race=>nrel_species:concept_race;;

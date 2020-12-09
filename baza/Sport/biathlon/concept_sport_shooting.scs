@@ -1,0 +1,58 @@
+concept_sport_shooting
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[sport shooting](*<-lang_en;;*);
+[спортивная стрельба](*<-lang_ru;;*);
+
+<-rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр. Спортивной стрельбы](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+    	concept_sport;
+    	concept_athlete;
+    	concept_target
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Спортивная стрельба - вид деятельности в <b><sc_element sys_idtf="concept_sport">спорте</b>, при котором 
+    задача <b><sc_element sys_idtf="concept_athlete">спортсменов</b> заключается в том, чтобы поразить как можно больше <b><sc_element sys_idtf="concept_target">мишений</b>,
+    для получения большего количества осчков или не получения штрафа](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-statement;;
+	=>nrel_main_idtf:[Утв. Об спортивной стрельбе стрельбе](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+    	concept_biathlon;
+		concept_sprint;
+    	concept_team_race;
+    	concept_prone_shooting;
+		concept_standing_shooting;
+    	concept_biathlete
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Стрельба в <b><sc_element sys_idtf="concept_biathlon">биатлонне</b>. В <b><sc_element sys_idtf="concept_sprint">спринте</b> 
+	и на каждом этапе <b><sc_element sys_idtf="concept_team_race">командных видов гонок</b> <b><sc_element _idtf="concept_biathlete">биатлонисты</b> 
+	стреляют два раза — сначала из <b><sc_element sys_idtf="concept_prone_shooting">положения лёжа</b>, 
+	затем — <b><sc_element sys_idtf="concept_standing_shooting">стоя</b>.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_biathlete=>nrel_main_idtf:[биатлонист](* <- lang_ru;; *);[biathlete](* <- lang_en;; *);;
+athlete=>nrel_species:concept_biathlete;;
+
+concept_shooting
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[shooting](*<-lang_en;;*);
+[стрельба](*<-lang_ru;;*);
+
+=>nrel_species:
+	concept_prone_shooting;
+	concept_standing_shooting;
+=>nrel_inclusion:
+	concept_sport_shooting;;

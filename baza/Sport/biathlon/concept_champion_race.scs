@@ -1,0 +1,39 @@
+concept_champiom_race
+<-sc_node_not_relation;
+<-concept_sporting_event;
+=>nrel_main_idtf:
+[champiom race](*<-lang_en;;*);
+[гонка чемпионов](*<-lang_ru;;*);
+
+<-rrel_key_sc_element:...(*
+    <-definition;;
+    =>nrel_main_idtf:[Опр. Гонки чемрионов](*<-lang_ru;;*);;
+    =>nrel_using_constants:{
+        concept_competition;
+        concept_biathlon;
+        year
+    };;
+    <=nrel_sc_text_translation:...
+    (*
+        ->rrel_example:
+    [Го́нка чемпио́нов — ежегодное коммерческое <b><sc_element sys_idtf="concept_competition">соревнование</b> 
+    по <b><sc_element sys_idtf="concept_biathlon">биатлону</b>, 
+    которое проходит в России с <b><sc_element sys_idtf="year">2011 года</b>. ](*<- lang_ru;; =>nrel_format: format_html;;*);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-statement;;
+    =>nrel_main_idtf:[Утв. Об гонке чемпионов](*<-lang_ru;;*);;
+    =>nrel_using_constants:{
+        concept_mass_start
+    };;
+    <=nrel_sc_text_translation:...
+    (*
+    ->rrel_example:[Программа Гонки чемпионов включает в себя 
+    детские заезды, гонку звёзд шоу-бизнеса и концерт. Основная 
+    часть состоит из пристрелки, по итогам которой определяется 
+    стартовый список на <b><sc_element sys_idtf="concept_mass_start">масс-старты</b>. ](*<- lang_ru;; =>nrel_format: format_html;;*);;
+    *);;
+*);;
+

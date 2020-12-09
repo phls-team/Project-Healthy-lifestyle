@@ -1,0 +1,43 @@
+concept_target
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[target](*<-lang_en;;*);
+[мишень](*<-lang_ru;;*);
+
+<-rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр. Мишень](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+    	concept_training
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Мише́нь — искусственная цель при <b><sc_element sys_idtf="concept_training">тренировках</b> и на соревнованиях 
+    по стрельбе на полигонах и в тирах.](* <- lang_ru;; => nrel_format: format_html;; *);;	
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-statement;;
+	=>nrel_main_idtf:[Утв. Об мишени](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+		fruit_apple
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[<b><sc_element sys_idtf="fruit_apple">Яблочко</b> — центр мишени. Использование связано с традицией: в древности 
+    в качестве мишени использовали подручные предметы, в том числе и фрукты. ](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf:[Изобр. Летний биатлон](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+		"file://images/target.jpg"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;

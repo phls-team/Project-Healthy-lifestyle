@@ -1,0 +1,47 @@
+concept_sprint
+<-sc_node_not_relation;
+
+=>nrel_main_idtf:
+[sprint](*<-lang_en;;*);
+[спринт](*<-lang_ru;;*);
+
+<-rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр. Спринт](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+    	nrel_species;
+    	concept_biathlon_race;
+		running
+	};;
+	<=nrel_sc_text_translation:...
+    (*
+    	->rrel_example:
+    [Спри́нт (англ. ... sprint — <b><sc_element sys_idtf="running">бег</b> на короткие дистанции) — <b><sc_element sys_idtf="nrel_species">вид</b> 
+	<b><sc_element sys_idtf="concept_biathlon_race">биатлонной гонки</b> 
+    на 10 км для мужчин и юниоров, на 7,5 км для женщин, юниорок и юношей, 
+    и на 6 км для девушек с двумя огневыми рубежами.](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-statement;;
+	=>nrel_main_idtf:[Утв. Об спринте](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+		concept_athlete;
+    	concept_start;
+    	concept_biathlete
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+        ->rrel_example:[ <b><sc_element sys_idtf="concept_athlete">Спортсмены</b> проходят три круга по 3,3 км у мужчин и юниоров, 
+    2,5 км у женщин, юниорок и юношей, и 2 км у девушек. 
+    <b><sc_element sys_idtf="concept_biathlete">Биатлонисты</b> 
+	<b><sc_element sys_idtf="concept_start">стартуют</b> с интервалом от 30 секунд.  ](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_biathlon_race
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[biathlon race](*<-lang_en;;*);
+[биатлонная гонка](*<-lang_ru;;*);;

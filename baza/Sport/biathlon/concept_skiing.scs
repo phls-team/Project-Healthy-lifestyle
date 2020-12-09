@@ -1,0 +1,44 @@
+concept_skiing
+<-sc_node_not_relation;
+<-concept_sport_equipment;
+=>nrel_main_idtf:
+[skiing](*<-lang_en;;*);
+[лыжи](*<-lang_ru;;*);
+
+<-rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр. Лыж](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+    	human
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Лы́жи — изделие (приспособление) для перемещения 
+    <b><sc_element sys_idtf="human">человека</b> и другого изделия (части опоры) по снегу.](* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-statement;;
+	=>nrel_main_idtf:[Утв. Об лыжах](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Лыжи крепятся к ногам с помощью креплений, в настоящее время для 
+    использования лыж в большинстве случаев необходимы специальные лыжные ботинки.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf:[Изобр. Летний биатлон](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+		"file://images/skiing.jpg"(*=>nrel_format:format_png;;*);;
+	*);;
+*);
+
+=>nrel_species:concept_roller_skis;
+->concept_roller_skis;;

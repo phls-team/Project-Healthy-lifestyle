@@ -1,0 +1,41 @@
+concept_mass_start
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[mass-start](*<-lang_en;;*);
+[масс-старт](*<-lang_ru;;*);
+
+<-rrel_key_sc_element:...(*
+    <-definition;;
+    =>nrel_main_idtf:[Опр. Масс-старта](*<-lang_ru;;*);;
+    =>nrel_using_constants:{
+		concept_race;
+        nrel_species;
+        concept_biathlon_race;
+        contept_start
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Масс-ста́рт (или <b><sc_element sys_idtf="concept_race">гонка</b> с общего <b><sc_element sys_idtf="contept_start">старта</b>) — 
+    <b><sc_element sys_idtf="nrel_species">вид</b> <b><sc_element sys_idtf="concept_race">биатлонной гонки</b> на 15 км 
+    у мужчин, 12,5 км у женщин и юниоров, 10 км у юниорок и юношей, и 7,5 км у 
+    девушек с четырьмя огневыми рубежами. ](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-statement;;
+    =>nrel_main_idtf:[Утв. Об масс-старте](*<-lang_ru;;*);;
+    =>nrel_using_constants:{
+        concept_biathlete;
+        concept_athlete;
+        concept_start
+    };;
+    <=nrel_sc_text_translation:...
+    (*
+        ->rrel_example:
+    [При масс-старте <b><sc_element sys_idtf="concept_biathlete">биатлонисты</b> (как правило — 
+    30 лучших <b><sc_element sys_idtf="concept_athlete">спортсменов</b> в рамках тех или иных биатлонных 
+    соревнований) стартуют одновременно с общего <b><sc_element sys_idtf="concept_start">старта</b>. ](*<- lang_ru;; =>nrel_format: format_html;;*);;
+    *);;
+*);;

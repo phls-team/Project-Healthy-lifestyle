@@ -1,0 +1,51 @@
+concept_biathlon_world_championship
+<-sc_node_not_relation;
+<-concept_sporting_event;
+<-championship;
+=>nrel_main_idtf:
+[biathlon world championship](*<-lang_en;;*);
+[чемпионат мира по биатлону](*<-lang_ru;;*);
+
+<-rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр. Чемпионат мира по биатлону](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+		concept_biathlon;
+		championship;
+        concept_competition;
+        year;
+        concept_athlete
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Чемпионат Европы по биатлону (полное название — Открытый <b><sc_element sys_idtf="championship">чемпионат</b> Европы по 
+    <b><sc_element sys_idtf="concept_biathlon">биатлону</b>) 
+    — континентальные <b><sc_element sys_idtf="concept_competition">соревнования</b> по биатлону, проходящие с <b><sc_element sys_idtf="year">1994 года</b>. 
+    В соревнованиях могут 
+    принимать участие <b><sc_element sys_idtf="concept_athlete">спортсмены</b> из любой страны мира.](* <- lang_ru;; => nrel_format: format_html;; *);;	
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-statement;;
+	=>nrel_main_idtf:[Утв. Об чемпионате мира по биатлону](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+		concept_sprint;
+        concept_pursuit_race;
+        concept_individual_race;
+        concept_relay_race;
+        concept_mixed_relay
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[С сезона 2009/2010 чемпионаты Европы включают в 
+    себя выступления в <b><sc_element sys_idtf="concept_sprint">спринте</b>, <b><sc_element sys_idtf="concept_pursuit_race">гонке преследования</b> 
+    и <b><sc_element sys_idtf="concept_individual_race">индивидуальной гонке</b> у мужчин, женщин, юниоров 
+    и юниорок, а также выступления в <b><sc_element sys_idtf="concept_relay_race">эстафетах</b> у 
+    мужчин и женщин, и <b><sc_element sys_idtf="concept_mixed_relay">смешанной эстафете</b> у юниоров и юниорок.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_biathlon=>nrel_non_cube_competition:concept_biathlon_world_championship;;

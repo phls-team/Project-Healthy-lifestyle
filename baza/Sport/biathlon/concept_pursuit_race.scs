@@ -1,0 +1,41 @@
+concept_pursuit_race
+<-sc_node_not_relation;
+=>nrel_main_idtf:[pursuit race](*<-lang_en;;*);
+[гонка преследования](*<-lang_ru;;*);
+=>nrel_idtf:[пасьют](*<-lang_ru;;*);
+
+<-rrel_key_sc_element:...(*
+    <-definition;;
+    =>nrel_main_idtf:[Опр. Гонка преследования](*<-lang_ru;;*);;
+    =>nrel_using_constants:{
+        concept_biathlon_race;
+        concept_race;
+        concept_start;
+        concept_sprint;
+        concept_individual_race;
+        concept_mass_start
+    };;
+    <=nrel_sc_text_translation:...
+    (*
+        ->rrel_example:[Го́нка пресле́дования (или пасьют, от англ. pursuit — преследование) — 
+        вид <b><sc_element sys_idtf="concept_biathlon_race">биатлонной гонки</b>: на 12,5 км для мужчин и юниоров; на 10 км для женщин, юниорок 
+        и юношей; и на 7,5 км для девушек — с четырьмя огневыми рубежами, которая проводится по итогам 
+        <b><sc_element sys_idtf="concept_race">гонки</b> с раздельным <b><sc_element sys_idtf="concept_start">стартом</b> 
+        (в настоящее время, как правило, <b><sc_element sys_idtf="concept_sprint">спринта</b>, хотя были прецеденты, 
+        когда квалификацией для гонки преследования служила <b><sc_element sys_idtf="concept_individual_race">индивидуальная гонка</b> 
+        или <b><sc_element sys_idtf="concept_mass_start">масс-старт</b>). ](* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+*);
+
+<-rrel_key_sc_element:...(*
+    <-statement;;
+    =>nrel_main_idtf:[Утв. Об спринте](*<-lang_ru;;*);;
+    =>nrel_using_constants:{
+	    concept_date
+    };;
+    <=nrel_sc_text_translation:...
+    (*
+        ->rrel_example:[ Гонка преследования — относительно молодой вид биатлонных состязаний. 
+        Впервые на официальных международных стартах она была проведена <b><sc_element sys_idtf="concept_date">1 декабря 1996 года</b>  ](*<- lang_ru;; =>nrel_format: format_html;;*);;
+    *);;
+*);;

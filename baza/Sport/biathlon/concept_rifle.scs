@@ -1,0 +1,54 @@
+concept_rifle
+<-sc_node_not_relation;
+
+=>nrel_main_idtf:
+[rifle](*<-lang_en;;*);
+[винтовка](*<-lang_ru;;*);
+
+<-rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр. Винтовка](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Винтовка (первоначально — «винтовальное ружьё»; от винт, в свою очередь, 
+    предположительно от нем. Gewinde «нарезка; резьба») — нарезное стрелковое оружие, 
+    конструктивно предназначенное для удержания и управления при стрельбе двумя 
+    руками с упором приклада в плечо](* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-statement;;
+	=>nrel_main_idtf:[Утв. Об винтовке](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+		concept_biathlon;
+    	number
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Спортивная винтовка «Биатлон-7-2» редназначена для 
+    стрельбы в соревнованиях по <b><sc_element sys_idtf="concept_biathlon">биатлону</b> на дистанции <b><sc_element sys_idtf="number">50</b> м для мужчин и юниоров.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf:[Изобр. Летний биатлон](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+		"file://images/rifle.jpg"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;
+
+concept_stort_rifle
+<-sc_node_not_relation;
+<-concept_sport_equipment;
+=>nrel_main_idtf:
+[sport rifle](*<-lang_en;;*);
+[спортивная винтовка](*<-lang_ru;;*);;
+
+concept_rifle=>nrel_species:concept_stort_rifle;;
+concept_rifle=>nrel_inclusion:concept_stort_rifle;;

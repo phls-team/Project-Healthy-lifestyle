@@ -1,0 +1,66 @@
+nrel_non_cube_competition
+<-sc_node_norole_relation;
+=>nrel_main_idtf:
+[non-cup competition*](*<-lang_en;;*);
+[некубковое соревнование*](*<-lang_ru;;*);
+
+<-rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр. Неубковое соревнование](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+		concept_competition;
+		concept_medal
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[К некубковым соревнованиям относятся <b><sc_element sys_idtf="concept_competition">созтязания</b>, наградой в которой является 
+    не кубок, а иные предметы(<b><sc_element sys_idtf="concept_medal">медали</b>, грамоты и т.д.)](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-statement;;
+	=>nrel_main_idtf:[Утв. Об некубковом соревновании](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+		concept_competition;
+		concept_medal
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[К некубковым <b><sc_element sys_idtf="concept_competition">соревнованиям</b> можно отнести олимпиады, 
+    наградой там выступают <b><sc_element sys_idtf="concept_medal">медали</b>](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+nrel_non_cube_competition
+<-...(*
+	<-sc_node_not_relation;;
+	<-arity;;
+	=>nrel_measurement:2(*<-number;;*);;
+*);;
+
+nrel_non_cube_competition
+=>nrel_first_domain:concept_game;
+=>nrel_second_domain:concept_sporting_event;
+=>nrel_definitional_domain:...
+(*
+	<=nrel_combination:
+	{
+		concept_game;
+		concept_sporting_event
+	};;
+*);;
+
+nrel_relation
+=>nrel_inclusion:binary_relation
+(*
+	=>nrel_inclusion:symmetric_relation(*-|>nrel_non_cube_competition;;*);;
+	=>nrel_inclusion:asymmetric_relation(*->nrel_non_cube_competition;;*);;
+	=>nrel_inclusion:transitive_relation(*-|>nrel_non_cube_competition;;*);;
+	=>nrel_inclusion:reflexive_relation(*-|>nrel_non_cube_competition;;*);;
+	=>nrel_inclusion:antireflexive_relation(*->nrel_non_cube_competition;;*);;
+*);
+=>nrel_inclusion:oriented_relation(*->nrel_non_cube_competition;;*);;
+

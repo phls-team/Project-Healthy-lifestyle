@@ -1,0 +1,59 @@
+concept_roller_skis
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[roller skis](*<-lang_en;;*);
+[роликовые лыжи](*<-lang_ru;;*);
+
+=>nrel_idtf:[лыжероллеры](*<-lang_ru;;*);
+
+<-rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр. Ролликовых лыж](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+    	concept_skiing;
+    	concept_wheel;
+    	concept_platform;
+    	concept_athlete
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Роликовые лыжи - это средство для передвижения по твёрдой поверхности, 
+    имитирующее <b><sc_element sys_idtf="concept_skiing">лыжи</b>, использующее для передвижения <b><sc_element sys_idtf="concept_wheel">колёса</b>, 
+    закреплённые на <b><sc_element sys_idtf="concept_platform">платформе</b>, на которой стоит <b><sc_element sys_idtf="concept_athlete">спортсмен</b>.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-statement;;
+	=>nrel_main_idtf:[Утв. Об роликовых лыжах](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+		concept_training;
+    	concept_game;
+		sport_competitions;
+    	concept_level
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Первоначально роликовые лыжи применялись как средство <b><sc_element sys_idtf="concept_training">тренировки</b> 
+    лыжников в летнее время. Однако позднее роликовые лыжи превратились в 
+    самостоятельный <b><sc_element sys_idtf="concept_game">вид спорта</b>, по которому проводятся <b><sc_element sys_idtf="sport_competitions">соревнования</b> 
+	различного <b><sc_element sys_idtf="concept_level">уровня</b>.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf:[Изобр. Летний биатлон](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+		"file://images/roller_skis.jpg"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;
+
+concept_wheel=>nrel_main_idtf:[колесо](* <- lang_ru;; *);[wheel](* <- lang_en;; *);;
+concept_platform=>nrel_main_idtf:[платформа](* <- lang_ru;; *);[platform](* <- lang_en;; *);;
+
+

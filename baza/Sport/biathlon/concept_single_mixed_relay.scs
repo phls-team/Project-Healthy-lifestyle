@@ -1,0 +1,38 @@
+concept_single_mixed_relay
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[single mixed relay](*<-lang_en;;*);
+[одиночная смешанная эстафета](*<-lang_ru;;*);
+=>nrel_idtf:
+[сингл-микст](*<-lang_ru;;*);
+
+<-rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр. Одиночная смешанная эстафета](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+        concept_competition;
+    	year;
+        concept_biathlon
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Одиночная смешанная эстафета (также сингл-микст, до 2016 года — супермикст) — 
+    это командное <b><sc_element sys_idtf="concept_competition">соревнование</b> в <b><sc_element sys_idtf="concept_biathlon">биатлоне</b>
+    , появившееся в <b><sc_element sys_idtf="year">2015 году</b>.](* <- lang_ru;; => nrel_format: format_html;; *);;	
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-statement;;
+	=>nrel_main_idtf:[Утв. Об одиночной смешанной эстафете](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+        concept_athlete
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Команда состоит из двух <b><sc_element sys_idtf="oncept_athlete">спортсменов</b> — мужчины и женщины — 
+    которые передают друг другу эстафету на протяжении в общей сложности восьми огневых рубежей](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;

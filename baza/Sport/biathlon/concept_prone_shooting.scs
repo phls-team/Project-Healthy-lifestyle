@@ -1,0 +1,44 @@
+concept_prone_shooting
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[prone shooting](*<-lang_en;;*);
+[стрельба из положения лёжа](*<-lang_ru;;*);
+
+<-rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр. Стрельбы из положения лёжа](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+    	nrel_species
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Стрельба из положения лёжа - <b><sc_element sys_idtf="nrel_species"> разновидность</b> стрельбы, при котором стрелок 
+    принимает положения лёжа](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-statement;;
+	=>nrel_main_idtf:[Утв. Об стрельбе из положения лёжа](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+    	concept_competition
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Правильная изготовка для стрельбы лежа – это 
+    залог успеха в стрелковых <b><sc_element sys_idtf="concept_competition"> соревнованиях</b>, 
+	включающих данное упражнение.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf:[Изобр. Летний биатлон](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+		"file://images/prone_shooting.jpeg"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;
