@@ -1,0 +1,106 @@
+
+concept_epiemic<-sc_node_not_relation;;
+
+concept_epiemic=>nrel_main_idtf:[эпидемия]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[epiemic]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_epiemic=>nrel_idtf:[пандемия]
+        (*
+                <-lang_ru;;
+        *);
+nrel_idtf: [повальная болезнь]
+        (*
+                <-lang_ru;;
+        *);
+
+nrel_idtf: [панзоотия]
+        (*
+                <-lang_ru;;
+        *);;
+
+
+concept_epiemic<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Эпидемия)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Эпиде́мия (греч. επιδημία — повальная болезнь, от ἐπι — на, среди и δῆμος — народ) — прогрессирующее во времени и пространстве распространение инфекционного заболевания среди людей, значительно превышающее обычно регистрируемый на данной территории уровень заболеваемости и способное стать источником чрезвычайной ситуации.]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_desease;
+        infectious
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_sport_eat ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Эпидемический процесс заключается в непрерывной передаче заболевания (в случае инфекционного заболевания — возбудителя инфекции) в популяции.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Эпидемический процесс)](*<- lang_ru;;*);;
+  =>nrel_using_constants:{
+        concept_transmission_path;
+        infectious;
+        concept_desease
+        };;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_epiemic ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Инфекции, источниками которых является только человек, являются антропонозами, источниками которых являются и человек, и животные, — антропозоонозами.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Инфекции)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+        concept_person;
+        concept_animals
+        };;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_epiemic ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[При всех инфекционных заболеваниях от момента заражения до появления первых видимых признаков заболевания проходит определенное время, называемое инкубационным периодом. Длительность этого периода при различных инфекциях неодинакова — от нескольких часов до нескольких лет. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Момент заражения до проявение болезни)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+nrel_incubation_period
+        };;
+*);;
+
+
+concept_epiemic<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//graphic.png"
+        (*
+                =>nrel_format:format_png;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Пример эпидемии: график, показывающей количество новых заражений с течением времени.)](*<- lang_ru;;*);;
+*);;
+*);;
+
+concept_epiemic=>nrel_transmission_path:
+concept_airborne;
+concept_inoculation;
+concept_artificial;
+concept_household;
+concept_airborne_dust;
+concept_household;
+concept_alimentary;
+concept_alimentary;;
+
+

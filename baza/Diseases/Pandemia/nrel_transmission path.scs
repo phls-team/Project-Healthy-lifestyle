@@ -1,0 +1,33 @@
+
+nrel_transmission_path
+ <-sc_node_norole_relation;
+=> nrel_main_idtf: 
+		 [передача заболевания*](*<- lang_ru;;*);
+		 [disease transmission*](*<- lang_en;;*);
+
+
+=> nrel_first_domain: concept_desease;
+=> nrel_second_domain: concept_transmission_path;
+
+
+<-antireflexive_relation;
+<-antitransitive_relation ;
+<-antisymmetric_relation;;
+
+nrel_transmission_path => nrel_definitional_domain:concept_desease;;
+nrel_transmission_path => nrel_definitional_domain:concept_transmission_path;;
+
+
+parameter -> arity;;
+arity -> binary_relation;;
+binary_relation -> nrel_collagen_content;;
+binary_relation => nrel_measurement: 2;;
+number -> 2;;
+
+
+
+relation => nrel_inclusion: binary_relation;;
+
+binary_relation => nrel_inclusion: antireflexive_relation;;
+binary_relation => nrel_inclusion: antitransitive_relation;;
+binary_relation => nrel_inclusion: antisymmetric_relation;;
