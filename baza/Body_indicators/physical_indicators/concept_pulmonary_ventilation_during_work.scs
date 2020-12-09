@@ -1,0 +1,33 @@
+concept_pulmonary_ventilation_during_work <- sc_node_not_relation;;
+
+concept_pulmonary_ventilation_during_work => nrel_main_idtf: [лёгочная вентиляция в работе] (* <- lang_ru;; *);;
+concept_pulmonary_ventilation_during_work => nrel_main_idtf: [pulmonary_ventilation] (* <- lang_en;; *);;
+
+d_concept_pulmonary_ventilation_during_work <- definition;;
+
+d_concept_pulmonary_ventilation_during_work => nrel_main_idtf: [Опр.(лёгочная вентиляция в работе)] (* <- lang_ru;; *);;
+d_concept_pulmonary_ventilation_during_work => nrel_main_idtf: [Def.(pulmonary_ventilation)] (* <- lang_en;; *);;
+
+d_concept_pulmonary_ventilation_during_work -> rrel_key_sc_element: concept_pulmonary_ventilation_during_work;;
+d_concept_pulmonary_ventilation_during_work <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[лёгочная вентиляция в работе — состояние лёгких при интенсивной работе.]
+		(* <- lang_ru;; *);;
+	*);;
+
+    statement -> ...
+    (*
+  
+    -> rrel_key_sc_element: concept_hip_girth;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Лёгочная вентиляция в работе может увеличиваться до 25-и раз в объёме.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(лёгочная вентиляция в работе)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+            -> concept_volume;;
+        *);;
+    *);;

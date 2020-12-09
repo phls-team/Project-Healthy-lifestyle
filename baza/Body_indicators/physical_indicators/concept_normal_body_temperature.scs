@@ -1,0 +1,36 @@
+concept_normal_body_temperature <- sc_node_not_relation;;
+
+concept_normal_body_temperature => nrel_main_idtf: [нормальная температура] (* <- lang_ru;; *);;
+concept_normal_body_temperature => nrel_main_idtf: [normal_body_temperature] (* <- lang_en;; *);;
+
+d_concept_normal_body_temperature <- definition;;
+
+d_concept_normal_body_temperature => nrel_main_idtf: [Опр.(Нормальная температура)] (* <- lang_ru;; *);;
+d_concept_normal_body_temperature => nrel_main_idtf: [Def.(normal_body_temperature)] (* <- lang_en;; *);;
+
+d_concept_normal_body_temperature -> rrel_key_sc_element: concept_normal_body_temperature;;
+d_concept_normal_body_temperature <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Нормальная температура
+     — температура тела человека в диапазоне от 35,5 до 37,2 °C.]
+		(* <- lang_ru;; *);;
+	*);;
+
+concept_normal_body_temperature <-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(Нормальная температура)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://normal_temperature.jpg"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;

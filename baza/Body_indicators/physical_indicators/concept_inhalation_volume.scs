@@ -1,0 +1,35 @@
+concept_inhalation_volume <- sc_node_not_relation;;
+
+concept_inhalation_volume => nrel_main_idtf: [дыхательный объём вдоха] (* <- lang_ru;; *);;
+concept_inhalation_volume => nrel_main_idtf: [inhalation_volume] (* <- lang_en;; *);;
+
+d_concept_inhalation_volume <- definition;;
+
+d_concept_inhalation_volume => nrel_main_idtf: [Опр.(дыхательный объём вдоха)] (* <- lang_ru;; *);;
+d_concept_inhalation_volume => nrel_main_idtf: [Def.(inhalation_volume)] (* <- lang_en;; *);;
+
+d_concept_inhalation_volume -> rrel_key_sc_element: concept_inhalation_volume;;
+d_concept_inhalation_volume <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[дыхательный объём вдоха — объём выдоха-вдоха при спокойном дыхании.]
+		(* <- lang_ru;; *);;
+	*);;
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_inhalation_volume;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [составляет около 500 см³.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(дыхательный объём вдоха)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+            -> concept_volume;;
+        *);;
+*);;
+
+concept_physical_indicator => nrel_inclusion: concept_inhalation_volume;;

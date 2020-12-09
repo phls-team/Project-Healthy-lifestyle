@@ -1,0 +1,38 @@
+concept_subfebrile_body_temperature <- sc_node_not_relation;;
+
+concept_subfebrile_body_temperature => nrel_main_idtf: [субфебрильная температура] (* <- lang_ru;; *);;
+concept_subfebrile_body_temperature => nrel_main_idtf: [subfebrile_body_temperature] (* <- lang_en;; *);;
+
+d_concept_subfebrile_body_temperature <- definition;;
+
+d_concept_subfebrile_body_temperature => nrel_main_idtf: [Опр.(Субфебрильная температура)] (* <- lang_ru;; *);;
+d_concept_subfebrile_body_temperature => nrel_main_idtf: [Def.(subfebrile_body_temperature)] (* <- lang_en;; *);;
+
+d_concept_subfebrile_body_temperature -> rrel_key_sc_element: concept_subfebrile_body_temperature;;
+d_concept_subfebrile_body_temperature <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Субфебрильная температура
+     — повышение температуры тела на протяжении длительного времени в пределах 37,1—38,0 °C.]
+		(* <- lang_ru;; *);;
+	*);;
+
+concept_subfebrile_body_temperature <-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(виды повышенной температуры)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://increased_temperature.jpg"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+fever => nrel_inclusion: concept_subfebrile_body_temperature;;

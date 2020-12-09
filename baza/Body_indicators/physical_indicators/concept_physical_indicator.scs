@@ -1,0 +1,39 @@
+concept_physical_indicator <- sc_node_not_relation;;
+
+concept_physical_indicator => nrel_main_idtf: [физический показатель] (* <- lang_ru;; *);;
+concept_physical_indicator => nrel_main_idtf: [physical indicator] (* <- lang_en;; *);;
+
+d_concept_physical_indicator <- definition;;
+
+d_concept_physical_indicator => nrel_main_idtf: [Опр.(физический показатель)] (* <- lang_ru;; *);;
+d_concept_physical_indicator => nrel_main_idtf: [Def.(physical indicator)] (* <- lang_en;; *);;
+
+d_concept_physical_indicator -> rrel_key_sc_element: concept_physical_indicator;;
+d_concept_physical_indicator <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Физический показатель — характеристика, определяющая уровень жизнедеятельности, а также системный ответ организма на физическую нагрузку.]
+		(* <- lang_ru;; *);;
+	*);;
+
+concept_body_indicator => nrel_inclusion: concept_physical_indicator;;
+
+concept_physical_indicator=>nrel_inclusion:
+	concept_human_temperature;
+	concept_heart_rate;
+	concept_respiratory_rate;
+	concept_blood_pressure;
+	concept_vital_lungs_capacity;
+	concept_waist_circumference;
+	concept_hip_girth;
+	concept_chest_girth;
+	concept_head_circumference;
+	concept_mixed_food_disgestibility;
+	concept_inhalation_volume;
+	concept_reserve_inhalation_volume;
+	concept_reserve_exhalation_volume;
+	concept_residual_air;
+	concept_pulmonary_ventilation;
+	concept_intrapleural_pressure;
+	concept_systolic_volume;;

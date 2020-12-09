@@ -1,0 +1,54 @@
+concept_heart_rate <- sc_node_not_relation;;
+
+concept_heart_rate => nrel_main_idtf: [частота сердечных сокращений] (* <- lang_ru;; *);;
+concept_heart_rate => nrel_main_idtf: [heart_rate] (* <- lang_en;; *);;
+
+d_concept_heart_rate <- definition;;
+
+d_concept_heart_rate => nrel_main_idtf: [Опр.(Частота сердечных сокращений)] (* <- lang_ru;; *);;
+d_concept_heart_rate => nrel_main_idtf: [Def.(heart_rate)] (* <- lang_en;; *);;
+
+d_concept_heart_rate -> rrel_key_sc_element: concept_heart_rate;;
+d_concept_heart_rate <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Частота сердечных сокращений —  физическая величина, получаемая в результате измерения числа сердечных систол в единицу времени.]
+		(* <- lang_ru;; *);;
+	*);;
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_heart_rate;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [измеряется в единицах: «число ударов в минуту» (уд/мин)](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(частота сердечных сокращений)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+            -> concept_measure;;
+            -> concept_physical_indicator;;
+            -> concept_beats_per_minute;;
+        *);;
+*);;
+
+concept_heart_rate <-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(Частота сердечных сокращений)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://bpm.jpg"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+concept_physical_indicator => nrel_inclusion: concept_heart_rate;;

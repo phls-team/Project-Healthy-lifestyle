@@ -1,0 +1,55 @@
+concept_vital_lungs_capacity <- sc_node_not_relation;;
+
+concept_vital_lungs_capacity => nrel_main_idtf: [жизненная ёмкость лёгких] (* <- lang_ru;; *);;
+concept_vital_lungs_capacity => nrel_main_idtf: [vital_lungs_capacity] (* <- lang_en;; *);;
+
+d_concept_vital_lungs_capacity <- definition;;
+
+d_concept_vital_lungs_capacity => nrel_main_idtf: [Опр.(жизненная ёмкость лёгких)] (* <- lang_ru;; *);;
+d_concept_vital_lungs_capacity => nrel_main_idtf: [Def.(vital_lungs_capacity)] (* <- lang_en;; *);;
+
+d_concept_vital_lungs_capacity -> rrel_key_sc_element: concept_vital_lungs_capacity;;
+d_concept_vital_lungs_capacity <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[жизненная ёмкость лёгких — максимальный объём воздуха, который может быть набран в лёгкие после максимально полного выдоха.]
+		(* <- lang_ru;; *);;
+	*);;
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_vital_lungs_capacity;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [На практике измеряется с помощью спирометра как максимальный объём воздуха, который человек может выдохнуть после самого глубокого вдоха.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(жизненная ёмкость лёгких)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+            -> concept_spirometer;;
+            -> concept_maximum_air_volume;;
+            -> concept_inhalation;;
+            -> concept_exhalation;;
+        *);;
+*);;
+
+concept_vital_lungs_capacity <-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(жизненная ёмкость лёгких)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://vital_lungs_capacity.png"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);;
+
+concept_physical_indicator => nrel_inclusion: concept_vital_lungs_capacity;;

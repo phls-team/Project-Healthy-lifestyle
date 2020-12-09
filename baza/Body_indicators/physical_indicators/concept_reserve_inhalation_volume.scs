@@ -1,0 +1,52 @@
+concept_reserve_inhalation_volume <- sc_node_not_relation;;
+
+concept_reserve_inhalation_volume => nrel_main_idtf: [резервный объём вдоха] (* <- lang_ru;; *);;
+concept_reserve_inhalation_volume => nrel_main_idtf: [reserve_inhalation_volume] (* <- lang_en;; *);;
+
+d_concept_reserve_inhalation_volume <- definition;;
+
+d_concept_reserve_inhalation_volume => nrel_main_idtf: [Опр.(резервный объём вдоха)] (* <- lang_ru;; *);;
+d_concept_reserve_inhalation_volume => nrel_main_idtf: [Def.(reserve_inhalation_volume)] (* <- lang_en;; *);;
+
+d_concept_reserve_inhalation_volume -> rrel_key_sc_element: concept_reserve_inhalation_volume;;
+d_concept_reserve_inhalation_volume <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Резервный объём вдоха — объём дополнительного вдоха.]
+		(* <- lang_ru;; *);;
+	*);;
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_reserve_inhalation_volume;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [после спокойного вдоха составляет около 1500 см³.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(Резервный объём вдоха)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+            -> concept_volume;;
+        *);;
+*);;
+
+concept_reserve_inhalation_volume <-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(Резервный объём вдоха)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://vital_lungs_capacity.png"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);;
+
+concept_physical_indicator => nrel_inclusion: concept_reserve_inhalation_volume;;

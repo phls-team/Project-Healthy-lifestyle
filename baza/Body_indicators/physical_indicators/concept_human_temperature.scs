@@ -1,0 +1,32 @@
+concept_human_temperature <- sc_node_not_relation;;
+
+concept_human_temperature => nrel_main_idtf: [температура тела] (* <- lang_ru;; *);;
+concept_human_temperature => nrel_main_idtf: [human_temperature] (* <- lang_en;; *);;
+
+d_concept_human_temperature <- definition;;
+
+d_concept_human_temperature => nrel_main_idtf: [Опр.(Температура тела)] (* <- lang_ru;; *);;
+d_concept_human_temperature => nrel_main_idtf: [Def.(human_temperature)] (* <- lang_en;; *);;
+
+d_concept_human_temperature -> rrel_key_sc_element: concept_human_temperature;;
+d_concept_human_temperature <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Температура тела
+     — показатель теплового состояния организма человека.]
+		(* <- lang_ru;; *);;
+	*);;
+
+concept_physical_indicator => nrel_inclusion: concept_human_temperature;;
+
+concept_human_temperature<=nrel_subdividing:
+{
+    concept_basal_temperature;
+    concept_decreased_body_temperature;
+    concept_normal_body_temperature;
+    concept_subfebrile_body_temperature;
+    concept_febrile_body_temperature;
+    concept_pyretic_body_temperature;
+    concept_hyperpyretic_body_temperature
+};;

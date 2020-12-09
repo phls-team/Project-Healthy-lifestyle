@@ -1,0 +1,37 @@
+concept_febrile_body_temperature <- sc_node_not_relation;;
+
+concept_febrile_body_temperature => nrel_main_idtf: [фебрильная температура] (* <- lang_ru;; *);;
+concept_febrile_body_temperature => nrel_main_idtf: [febrile_body_temperature] (* <- lang_en;; *);;
+
+d_concept_febrile_body_temperature <- definition;;
+
+d_concept_febrile_body_temperature => nrel_main_idtf: [Опр.(Фебрильная температура)] (* <- lang_ru;; *);;
+d_concept_febrile_body_temperature => nrel_main_idtf: [Def.(febrile_body_temperature)] (* <- lang_en;; *);;
+
+d_concept_febrile_body_temperature -> rrel_key_sc_element: concept_febrile_body_temperature;;
+d_concept_febrile_body_temperature <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Фебрильная температура
+     — повышение температуры тела на протяжении длительного времени в пределах 38,0-39,0 °C.]
+		(* <- lang_ru;; *);;
+	*);;
+
+concept_febrile_body_temperature <-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(виды повышенной температуры)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://increased_temperature.jpg"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+fever => nrel_inclusion: concept_febrile_body_temperature;;

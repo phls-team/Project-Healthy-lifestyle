@@ -1,0 +1,36 @@
+concept_mixed_food_disgestibility <- sc_node_not_relation;;
+
+concept_mixed_food_disgestibility => nrel_main_idtf: [усвояемость смешанной пищи] (* <- lang_ru;; *);;
+concept_mixed_food_disgestibility => nrel_main_idtf: [mixed_food_disgestibility] (* <- lang_en;; *);;
+
+d_concept_mixed_food_disgestibility <- definition;;
+
+d_concept_mixed_food_disgestibility => nrel_main_idtf: [Опр.(усвояемость смешанной пищи)] (* <- lang_ru;; *);;
+d_concept_mixed_food_disgestibility => nrel_main_idtf: [Def.(mixed_food_disgestibility)] (* <- lang_en;; *);;
+
+d_concept_mixed_food_disgestibility -> rrel_key_sc_element: concept_mixed_food_disgestibility;;
+d_concept_mixed_food_disgestibility <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[усвояемость смешанной пищи — количество пищевых веществ, усвоенных организмом, по отношению к общему количеству потребляемых веществ.]
+		(* <- lang_ru;; *);;
+	*);;
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_mixed_food_disgestibility;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [В зависимости от качественного состава пищи повышается или понижается ее усвояемость.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(усвояемость смешанной пищи)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+            -> concept_food;;
+            -> concept_food_quality;;
+        *);;
+*);;
+
+concept_physical_indicator => nrel_inclusion: concept_mixed_food_disgestibility;;

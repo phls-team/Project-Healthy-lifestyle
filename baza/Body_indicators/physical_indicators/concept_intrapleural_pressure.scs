@@ -1,0 +1,36 @@
+concept_intrapleural_pressure <- sc_node_not_relation;;
+
+concept_intrapleural_pressure => nrel_main_idtf: [внутриплевральное давление] (* <- lang_ru;; *);;
+concept_intrapleural_pressure => nrel_main_idtf: [intrapleural_pressure] (* <- lang_en;; *);;
+
+d_concept_intrapleural_pressure <- definition;;
+
+d_concept_intrapleural_pressure => nrel_main_idtf: [Опр.(внутриплевральное давление)] (* <- lang_ru;; *);;
+d_concept_intrapleural_pressure => nrel_main_idtf: [Def.(intrapleural_pressure)] (* <- lang_en;; *);;
+
+d_concept_intrapleural_pressure -> rrel_key_sc_element: concept_intrapleural_pressure;;
+d_concept_intrapleural_pressure <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[внутриплевральное давление — давление внутри плевральной полости.]
+		(* <- lang_ru;; *);;
+	*);;
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_intrapleural_pressure;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Обычно давление в плевральной полости немного меньше атмосферного](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(внутриплевральное давление)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+            -> concept_pressure;;
+            -> concept_pleural_cavity;;
+        *);;
+*);;
+
+concept_physical_indicator => nrel_inclusion: concept_intrapleural_pressure;;

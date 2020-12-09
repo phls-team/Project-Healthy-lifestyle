@@ -1,0 +1,54 @@
+concept_hip_girth <- sc_node_not_relation;;
+
+concept_hip_girth => nrel_main_idtf: [обхват бёдер] (* <- lang_ru;; *);;
+concept_hip_girth => nrel_main_idtf: [hip_girth] (* <- lang_en;; *);;
+
+d_concept_hip_girth <- definition;;
+
+d_concept_hip_girth => nrel_main_idtf: [Опр.(обхват бёдер)] (* <- lang_ru;; *);;
+d_concept_hip_girth => nrel_main_idtf: [Def.(hip_girth)] (* <- lang_en;; *);;
+
+d_concept_hip_girth -> rrel_key_sc_element: concept_hip_girth;;
+d_concept_hip_girth <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[обхват бёдер — измеряют полный обхват бедер, с учетом выступа живота. .]
+		(* <- lang_ru;; *);;
+	*);;
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_hip_girth;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Лента должна проходить горизонтально вокруг туловища, сзади – по наиболее выступающим точкам ягодиц.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(обхват бёдер)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+            -> concept_torso;;
+            -> concept_measuring_tape;;
+            -> concept_buttocks;;
+        *);;
+*);;
+
+concept_hip_girth <-rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;	
+=> nrel_main_idtf: [Фото(обхват бёдер)]  (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://body_parameters.jpg"
+			(*
+			<- lang_ru;;
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
+
+concept_physical_indicator => nrel_inclusion: concept_hip_girth;;

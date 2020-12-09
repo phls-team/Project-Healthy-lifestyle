@@ -1,0 +1,42 @@
+concept_pulmonary_ventilation <- sc_node_not_relation;;
+
+concept_pulmonary_ventilation => nrel_main_idtf: [лёгочная вентиляция] (* <- lang_ru;; *);;
+concept_pulmonary_ventilation => nrel_main_idtf: [pulmonary_ventilation] (* <- lang_en;; *);;
+
+d_concept_pulmonary_ventilation <- definition;;
+
+d_concept_pulmonary_ventilation => nrel_main_idtf: [Опр.(лёгочная вентиляция)] (* <- lang_ru;; *);;
+d_concept_pulmonary_ventilation => nrel_main_idtf: [Def.(pulmonary_ventilation)] (* <- lang_en;; *);;
+
+d_concept_pulmonary_ventilation -> rrel_key_sc_element: concept_pulmonary_ventilation;;
+d_concept_pulmonary_ventilation <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[лёгочная вентиляция — объем воздуха, который проходит через легкие за одну минуту.]
+		(* <- lang_ru;; *);;
+	*);;
+
+statement -> ...
+(*
+  
+    -> rrel_key_sc_element: concept_pulmonary_ventilation;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Величина легочной вентиляции определяется умножением величины дыхательного объема на частоту дыхания.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.1(лёгочная вентиляция)](*<- lang_ru;;*);;
+    => nrel_using_constants: ...
+        (*
+            -> concept_tidal_volume;;
+			-> concept_respiratory_rate;;
+        *);;
+*);;
+
+concept_pulmonary_ventilation<=nrel_subdividing:
+{
+    concept_pulmonary_ventilation_during_rest;
+    concept_pulmonary_ventilation_during_work
+};;
+
+concept_physical_indicator => nrel_inclusion: concept_pulmonary_ventilation;;
