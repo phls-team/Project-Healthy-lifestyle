@@ -1,0 +1,47 @@
+ui_menu_zoj_search_agents <- ui_user_command_class_noatom;
+=> nrel_main_idtf: [Поисковые агенты] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Search agents] (* <- lang_en;; *);
+<= nrel_ui_commands_decomposition:
+{
+	ui_menu_file_for_finding_sport_by_rodina_and_opening_year; // UI файлы наших агентов
+	ui_menu_file_for_finding_fruit_by_birthplace_and_ripening_time;
+	ui_menu_file_for_finding_fruit_by_variety_and_ripening_time;
+	ui_menu_file_for_finding_disease_by_symptom_and_minimal_incubation_period;
+	ui_menu_file_for_finding_disease_by_symptom_and_maximal_incubation_period;
+	ui_menu_file_for_findind_vagetables_by_birthplace_and_ripening_time;
+	ui_menu_file_for_finding_vagetable_by_variety_and_ripening_time;
+	ui_menu_file_for_finding_recommended_daily_steps;
+	ui_menu_file_for_calculate_daily_intake_of_calories;
+	ui_menu_file_for_definition_daily_dose_of_vitamin;
+	ui_menu_file_for_finding_products_to_replenish_the_daily_dose_of_vitamin;
+	ui_menu_file_for_calculates_workout_time_to_burn_a_certain_amount_of_calories;
+	ui_menu_file_for_finding_sport_by_minimal_total_of_participants_and_match_time;
+	ui_menu_file_for_finding_disease_by_symptom_and_minimal_incubation_period;
+	ui_menu_file_for_finding_disease_by_symptom_and_maximal_incubation_period;
+	ui_menu_file_for_finding_disease_by_pandemia_year_start_and_vaccine;
+	ui_menu_file_for_finding_disease_by_pandemia_year_end_and_vaccine;
+	ui_menu_file_for_finding_vaccine_by_disease_and_creation_year;
+	ui_menu_file_for_calculate_degree_of_obesity;
+	ui_menu_file_for_finding_fruits_and_vegetables_by_min_max_calories;
+	ui_menu_file_for_finding_similar_training_apparatus;
+	ui_menu_file_for_finding_sports_nutrition_for_a_specific_type;
+	ui_menu_finding_products_of_a_certain_type_of_sports_nutrition;
+	ui_menu_file_for_finding_disease_by_symptom_and_end_pandemia;
+	ui_menu_file_for_calculate_pcf
+};
+
+<- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:	
+		...
+		(*
+		-> [Поисковые агенты - это sc-программы позволяющие производить поиск в базе знаний на предмет существующих знаний, которые удовлетворяют заданым критериям.] 			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		-> [Search agents - is a sc-programs that allowed to do search operations in knowledge base.] (* <- lang_en;; *);;
+		*);;
+	*);;
+
