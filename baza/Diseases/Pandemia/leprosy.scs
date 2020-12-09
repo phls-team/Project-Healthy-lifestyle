@@ -73,6 +73,11 @@ skin_lesions<-sc_node_norole_relation;
 =>nrel_main_idtf:[поражение кожи](*<-lang_ru;;*);
 =>nrel_main_idtf:[skin lesions](*<-lang_en;;*);;
 
+hoarseness <- concept_illness;;
+labored_breathing <- concept_illness;;
+inflammation_of_the_larynx <- concept_illness;;
+skin_lesions <- concept_illness;;
+
 inflammation_of_the_larynx<-sc_node_norole_relation;
 =>nrel_main_idtf:[воспаление гортани](*<-lang_ru;;*);
 =>nrel_main_idtf:[inflammation of the larynx](*<-lang_en;;*);;

@@ -70,40 +70,30 @@ scp_program -> agent_for_finding_disease_by_symptom_and_end_pandemia
 
 			-> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _answer;;
 
-			=> nrel_goto: ..agent_for_finding_disease_by_symptom_and_end_pandemia_operator_6_1;;
+			=> nrel_goto: ..agent_for_finding_disease_by_symptom_and_end_pandemia_operator_working_scp_agent;;
 			*);;
 
-		-> ..agent_for_finding_disease_by_symptom_and_end_pandemia_operator_6_1
+		 // Агент успешно нашел входные данные и выводит об этом на консоль
+            -> ..agent_for_finding_disease_by_symptom_and_end_pandemia_operator_working_scp_agent
+				(*
+
+                    <- printNl ;;
+
+			        -> rrel_1: rrel_fixed: rrel_scp_const: [Агент успешно запустился];;
+
+                	=>nrel_goto: ..agent_for_finding_disease_by_symptom_and_end_pandemia_operator_6;;
+				*);;
+                
+            
+		-> ..agent_for_finding_disease_by_symptom_and_end_pandemia_operator_6
 			(*
 			<- sys_search;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_const: [* 
-								  _f _<- concept_epidemic;;
+								  _f _<- concept_epiemic;;
 								  _f _=> nrel_symptom:: _locCom;;
 								  _locCom _<- concept_illness;;
-									_locCom _=>nrel_transmission_path: _locCom2;;
-								  _f _=> nrel_pandemia:: _yCom;;
-								  _yCom _-> rrel_year_of_pandemia_end:: _y;;
-								   *];;
-			-> rrel_2: rrel_fixed: rrel_scp_const: ...;;
-			-> rrel_3: rrel_fixed: rrel_scp_const: ... (* 
-										-> ... (* -> rrel_1: rrel_fixed: rrel_scp_const: _y;;
-										-> rrel_2: rrel_fixed: rrel_scp_var: _param2;; *);;
-								   *);;
-			-> rrel_4: rrel_fixed: rrel_scp_var: _answer;;
-
-			=> nrel_then: ..agent_for_finding_disease_by_symptom_and_end_pandemia_operator_7;;
-			=> nrel_else: ..agent_for_finding_disease_by_symptom_and_end_pandemia_operator_6_2;;			
-			*);;
-
-		-> ..agent_for_finding_disease_by_symptom_and_end_pandemia_operator_6_2
-			(*
-			<- sys_search;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_const: [* 
-								  _f _<- concept_disease;;
-								  _f _=> nrel_symptom:: _locCom;;
-								  _locCom _<- concept_illness;;
+								  //_f _=>nrel_transmission_path: _concept;;
 								  _f _=> nrel_pandemia:: _yCom;;
 								  _yCom _-> rrel_year_of_pandemia_end:: _y;;
 								   *];;
@@ -207,30 +197,6 @@ scp_program -> agent_for_finding_disease_by_symptom_and_end_pandemia
 			*);;
 
 		-> ..agent_for_finding_disease_by_symptom_and_end_pandemia_operator_15
-			(*
-			<- genElStr3;;
-
-		  	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
-		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
-		  	-> rrel_3: rrel_fixed: rrel_scp_const: nrel_transmission_path;;
-
-		  	=> nrel_goto: ..agent_for_finding_disease_by_symptom_and_end_pandemia_operator_15_1;;
-			*);;
-
-		-> ..agent_for_finding_disease_by_symptom_and_end_pandemia_operator_15_1
-			(*
-			<- genElStr3;;
-
-		  	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
-		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
-		  	-> rrel_3: rrel_fixed: rrel_scp_const: _locCom2;;
-
-		  	=> nrel_goto: ..agent_for_finding_disease_by_symptom_and_end_pandemia_operator_16;;
-			*);;
-
-
-
-		-> ..agent_for_finding_disease_by_symptom_and_end_pandemia_operator_16
 			(*
 			<- genElStr5;;
 

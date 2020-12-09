@@ -1,5 +1,7 @@
 cholera=>nrel_main_idtf:[холера](*<-lang_ru;;*);[cholera](*<-lang_en;;*);;
 concept_part1OfSubClassOf01_01=>nrel_inclusion:cholera;;
+
+cholera<-concept_epiemic;;
 cholera<-concept_disease;;
 cholera<-rrel_sc_key_element:...
 (*
