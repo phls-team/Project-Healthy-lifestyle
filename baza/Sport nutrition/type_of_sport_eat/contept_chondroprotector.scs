@@ -1,0 +1,84 @@
+defenition ->...
+(*
+->rrel_key_sc_element:concept_hondroprotector ;;
+     <= nrel_sc_text_translation: ...(*->rrel_example:[Хондропротекторы — препараты для уклепления суставов и связок.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Хондропротекторы)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_drug;
+concept_joint;
+concept_ligament
+};;
+*);;
+
+concept_hondroprotector<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//hondroprotector.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Хондропротекторы)](*<- lang_ru;;*);;
+*);;
+*);;
+
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_hondroprotector ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Хондропротекторы способствуют восстановлению хрящей больного сустава, улучшают выработку суставной жидкости, укрепляют соединительный ткани.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Польза хондропротекторов)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_cartilage;
+concept_joint;
+concept_joint_fluid;
+concept_connective_tissue
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_hondroprotector ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Хондропротекторы фенилкетонурия и индивидуальная непереносимость.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Противопоказания к приему хондропротекторов)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_phenylketonuria;
+concept_intolerance
+};;
+*);;
+
+concept_hondroprotector=>nrel_inclusion:
+concept_glucosamine;
+concept_collagen;
+concept_chondroitin_sulfate;;
+
+concept_glucosamine<-sc_node_not_relation;;
+
+concept_glucosamine=>nrel_main_idtf:[глюкозамин]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[glucosamine]
+        (*
+                <-lang_en;;
+        *);;   
+
+concept_collagen<-sc_node_not_relation;;
+
+concept_collagen=>nrel_main_idtf:[коллаген]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[collagen]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_hondroprotector->rrel_example:
+animal_flex;
+collaregen;
+flexagen_forte;;
+
+

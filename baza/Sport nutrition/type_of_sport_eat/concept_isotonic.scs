@@ -1,0 +1,157 @@
+concept_isotonic<-sc_node_not_relation;;
+
+concept_isotonic
+   =>nrel_main_idtf:
+   [изотоник]
+        (* <-lang_ru;; *);
+   =>nrel_main_idtf:
+   [isotonic]
+        (* <-lang_en;; *);;
+
+
+
+defenition ->...
+(*
+->rrel_key_sc_element:concept_isotonic ;;
+     <= nrel_sc_text_translation: ...(*->rrel_example:[Изотоники — разновидность спортивных напитков для поддержания баланса жидкости и электролитов в организме.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Изотоники)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_sports_drinks;
+concept_fluid_balance;
+concept_electrolyte_balance;
+concept_organism
+};;
+*);;
+
+concept_isotonic<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//isotonic.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Изотоники)](*<- lang_ru;;*);;
+*);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_isotonic ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Изотоники рекомендуется пить во время физической нагрузки, также можно пить до нагрузки или после нее.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Время приема изотоников)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_physical_activity
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_isotonic ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Употребление изотоников повышает выносливость, помогает поддерживать водно-солевой баланс и PH крови.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Польза изотоников)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_endurance;
+concept_water_salt_balance;
+concept_blood_ph
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_isotonic ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[У изотоников нет противопоказаний, не рекомендуется диабетикам из-за большого содержания сахара.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Противопоказания)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_contradiction;
+concept_diabetic;
+concept_sugar_content
+};;
+*);;
+
+
+concept_isotonic=>nrel_inclusion:
+concept_liquid_isotonic;
+concept_powdered_isotonic;;
+
+
+concept_liquid_isotonic<-sc_node_not_relation;;
+
+concept_creatine_monohydrate=>nrel_main_idtf:[жидкий изотоник]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[liquid isotonic]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_powdered_isotonic<-sc_node_not_relation;;
+
+concept_creatine_anhydrate=>nrel_main_idtf:[изотоник в порошке]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[powdered isotonic]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_isotonic->rrel_example:
+maxler_max_motion;
+RLine_ISO_UP;;
+
+
+concept_isotonic=>nrel_contains:
+concept_electrolytes;
+concept_sugar;
+concept_mineral;
+concept_salt;
+concept_antioxidant;;
+
+concept_electrolytes<-sc_node_not_relation;;
+
+concept_electrolytes=>nrel_main_idtf:[электролиты]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[electrolytes]
+        (*
+                <-lang_en;;
+        *);;
+        
+ concept_sugar<-sc_node_not_relation;;
+
+concept_sugar=>nrel_main_idtf:[сахар]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[sugar]
+        (*
+                <-lang_en;;
+        *);;       
+        
+concept_salt=>nrel_main_idtf:[соль]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[salt]
+        (*
+                <-lang_en;;
+        *);;   
+        
+concept_antioxidant=>nrel_main_idtf:[антиоксидант]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[antioxidant]
+        (*
+                <-lang_en;;
+        *);;   
+                      
+
+//concept_sport_eat=>nrel_inclusion:concept_isotonic;;
+
+

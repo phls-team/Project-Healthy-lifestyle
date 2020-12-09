@@ -1,0 +1,182 @@
+leprosy=>nrel_main_idtf:[лепра]
+(*<-lang_ru;;*);
+nrel_main_idtf:[leprosy](*<-lang_en;;*);;
+
+concept_epiemic->leprosy;;
+leprosy<-concept_disease;;
+
+leprosy=>nrel_idtf:[проказа]
+        (*
+                <-lang_ru;;
+        *);
+nrel_idtf: [hansen's disease]
+        (*
+                <-lang_ru;;
+        *);;
+
+leprosy<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//Leprosy.jpg"
+        (*
+                =>nrel_format:format_png;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Лицо 24-летнего больного лепрой. 1886 год)](*<- lang_ru;;*);;
+*);;
+*);;
+
+
+leprosy<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//Tropmed-91-216-g001.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Rash on the chest and abdomen due to leprosy)](*<- lang_ru;;*);;
+*);;
+*);;
+
+leprosy<-rrel_sc_key_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:[Опр.(Лепра)](*<-lang_ru;;*);;
+=>nrel_main_idtf:[Def.(Leprosy)](*<-lang_en;;*);;
+*);
+<=nrel_sc_text_translation:...
+(*
+->[разновидность гранулематоза (хронического инфекционного заболевания), вызываемая микобактериями Mycobacterium leprae и Mycobacterium lepromatosis; протекает с преимущественными поражениями кожи, периферической нервной системы, иногда передней камеры глаза, верхних дыхательных путей выше гортани, яичек, а также кистей и стоп.](*<-lang_ru;;*);;
+*);
+<=nrel_sc_text_translation:...
+(*
+-> [Infection can lead to damage of the nerves, respiratory tract, skin, and eyes.This nerve damage may result in a lack of ability to feel pain, which can lead to the loss of parts of a person's extremities from repeated injuries or infection due to unnoticed wounds.An infected person may also experience muscle weakness and poor eyesight.Leprosy symptoms may begin within one year, but for some people symptoms may take 20 years or more to occur.](*<-lang_en;;*);;
+*);;
+
+leprosy<-sc_node_norole_relation;
+=>nrel_incubation_period:...
+(*
+->rrel_minimalPeriod: 6_months;;
+->rrel_maximalPeriod: 10_years;;
+*);;
+
+leprosy<-sc_node_norole_relation;
+=>nrel_unique_idtf:[U07.1](*<-lang_ru;;*);
+=>nrel_unique_idtf:[U07.1](*<-lang_en;;*);;
+
+skin_lesions<-sc_node_norole_relation;
+=>nrel_main_idtf:[поражение кожи](*<-lang_ru;;*);
+=>nrel_main_idtf:[skin lesions](*<-lang_en;;*);;
+
+hoarseness <- concept_illness;;
+labored_breathing <- concept_illness;;
+inflammation_of_the_larynx <- concept_illness;;
+skin_lesions <- concept_illness;;
+
+inflammation_of_the_larynx<-sc_node_norole_relation;
+=>nrel_main_idtf:[воспаление гортани](*<-lang_ru;;*);
+=>nrel_main_idtf:[inflammation of the larynx](*<-lang_en;;*);;
+
+labored_breathing<-sc_node_norole_relation;
+=>nrel_main_idtf:[затрудненное дыхание](*<-lang_ru;;*);
+=>nrel_main_idtf:[labored breathing](*<-lang_en;;*);;
+
+hoarseness<-sc_node_norole_relation;
+=>nrel_main_idtf:[охриплость](*<-lang_ru;;*);
+=>nrel_main_idtf:[hoarseness](*<-lang_en;;*);;
+
+leprosy=>nrel_symptom:skin_lesions;inflammation_of_the_larynx;difficulty_swallowing;;
+
+leprosy=>nrel_period_of_full_development:skin_lesions;inflammation_of_the_larynx;difficulty_swallowing;
+labored_breathing;hoarseness;;
+
+nrel_healing<-sc_node_norole_relation;
+=>nrel_main_idtf:[лечение](*<-lang_ru;;*);
+=>nrel_main_idtf:[healing](*<-lang_en;;*);;
+
+leprosy<-sc_node_norole_relation;
+=>nrel_healing:...
+(*
+<-statement;;
+=>nrel_main_idtf:[Утв.(лечение)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[ В прошлом лепру лечили разными способами, но первый настоящий прорыв в лечении произошел в 1940-х годах, когда был разработан дапсон — препарат, останавливающий развитие болезни. Но лечение было многолетним, даже пожизненным, что затрудняло его для пациентов. В 1960-х гг. стала развиваться устойчивость M. leprae к дапсону — единственному противолепрозному препарату, известному в то время в мире. В начале 1960-х годов были открыты рифампицин и клофазимин, которые были включены в схему лечения, названную позднее комбинированной лекарственной терапией (КЛТ).
+
+В 1981 г. ВОЗ рекомендовала КЛТ. В настоящее время рекомендуемый курс КЛТ включает следующие препараты: дапсон, рифампицин и клофазимин. Курс лечения продолжается шесть месяцев в случае олигобациллярной лепры и 12 месяцев при ее мультибациллярной форме. КЛТ убивает патогенный микроорганизм и приводит к излечению пациента.
+
+С 1995 г. ВОЗ бесплатно предоставляет КЛТ всем пациентам с лепрой в мире. Первоначально бесплатную КЛТ финансировал Фонд Ниппона, а с 2000 г. бесплатные поставки КЛТ осуществляются в рамках соглашения с компанией Новартис, которая недавно обязалась продлить их, как минимум, до 2020 года.
+
+Задача по ликвидации лепры как проблемы общественного здравоохранения (т.е. сокращение ее распространенности до показателя менее 1 случая на 10 000 человек) была выполнена во всем мире в 2000 г. За последние 20 лет лечение КЛТ было предоставлено более 16 миллионам пациентов.](*<-lang_ru;;*);;
+*);;
+=>nrel_main_idtf:[St.(healing)](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Leprosy is an age-old disease, described in the literature of ancient civilizations. Throughout history, people afflicted have often been ostracized by their communities and families.
+
+Although leprosy was managed differently in the past, the first breakthrough occurred in the 1940s with the development of the medicine dapsone. The duration of treatment lasted many years, often a lifetime, making compliance difficult. In the 1960s, M. leprae started to develop resistance to dapsone, the only known anti-leprosy medicine at that time. In the early 1960s, rifampicin and clofazimine were discovered and subsequently added to the treatment regimen, which was later labelled as multidrug therapy (MDT).
+
+In 1981, WHO recommended MDT. The currently recommended MDT regimen consists of medicines: dapsone, rifampicin and clofazimine. This treatment lasts for six months for pauci-bacillary and 12 months for multi-bacillary cases. MDT kills the pathogen and cures the patient.
+
+Since 1995 WHO has provided MDT free of cost. Free MDT was initially funded by The Nippon Foundation, and since 2000 it is donated through an agreement with Novartis until at least 2020.
+
+Elimination of leprosy as public health problem (defined as a registered prevalence of less than 1 case per 10 000 population) was achieved globally in 2000. More than 16 million leprosy patients have been treated with MDT over the past 20 years.](*<-lang_en;;*);;
+*);;
+*);;
+
+
+6_months<-sc_node_role_relation;;
+6_months=>nrel_main_idtf:[6 месяцев]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[6 months]
+        (*
+                <-lang_en;;
+        *);;
+
+10_years<-sc_node_role_relation;;
+10_years=>nrel_main_idtf:[10 лет]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[10 years]
+        (*
+                <-lang_en;;
+        *);;
+
+leprosy<-sc_node_norole_relation;
+=>nrel_pandemia:...
+(*
+->rrel_year_of_pandemia_start: XIII;;
+->rrel_year_of_pandemia_end: XVI;;
+*);;
+
+XIII<-sc_node_role_relation;;
+XIII=>nrel_main_idtf:[8 век]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[8 century]
+        (*
+                <-lang_en;;
+        *);;
+
+
+XVI<-sc_node_role_relation;;
+XVI=>nrel_main_idtf:[9 век]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[9 century]
+        (*
+                <-lang_en;;
+        *);;
+
+leprosy=>nrel_transmission_path:concept_airborne;;
+

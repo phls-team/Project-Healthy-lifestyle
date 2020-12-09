@@ -1,0 +1,24 @@
+element_C <-sc_node_not_relation;;
+
+element_C =>nrel_main_idtf:[углевод]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[carbohydrate]
+        (*
+                <-lang_en;;
+        *);;
+
+element_C<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//img4.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Общая формула углеводов)](*<- lang_ru;;*);;
+*);;
+*);;

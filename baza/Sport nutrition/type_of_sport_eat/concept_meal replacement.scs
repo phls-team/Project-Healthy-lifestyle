@@ -1,0 +1,128 @@
+concept_meal_replacement<-sc_node_not_relation;;
+
+concept_meal_replacement
+   =>nrel_main_idtf:
+   [заменитель еды]
+        (* <-lang_ru;; *);
+   =>nrel_main_idtf:
+   [meal_replacement]
+        (* <-lang_en;; *);;
+
+
+
+defenition ->...
+(*
+->rrel_key_sc_element:concept_meal_replacement ;;
+     <= nrel_sc_text_translation: ...(*->rrel_example:[Заменитель еды — препарат для замены обычного приема пищи.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Заменитель еды)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_drug;
+concept_ordinary_meal
+};;
+*);;
+
+concept_meal_replacement<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//meal_replacement.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Заменители еды)](*<- lang_ru;;*);;
+*);;
+*);;
+
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_meal_replacement ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Заменители еды надо принимать до или после тренировок.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Время приема заменителей еды)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_training
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_meal_replacement ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Заменители еды быстро восполняют потери энергии,  оптимизируют поступление калорий, способствуют улучшению спортивных показателей.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Польза заменителей еды)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_energy_loss;
+concept_calories_intake;
+concept_sport_rate
+};;
+*);;
+
+
+ concept_meal_replacement=>nrel_inclusion:
+concept_mixture;
+concept_bar;
+concept_soup;
+concept_drink;;
+
+
+concept_mixture<-sc_node_not_relation;;
+
+concept_mixture=>nrel_main_idtf:[смесь]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[mixture]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_bar<-sc_node_not_relation;;
+
+concept_bar=>nrel_main_idtf:[батончик]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[bar]
+        (*
+                <-lang_en;;
+        *);; 
+        
+        
+          concept_soup<-sc_node_not_relation;;
+
+concept_soup=>nrel_main_idtf:[суп]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[soup]
+        (*
+                <-lang_en;;
+        *);;
+        
+        
+        concept_drink<-sc_node_not_relation;;
+
+concept_drink=>nrel_main_idtf:[напиток]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[drink]
+        (*
+                <-lang_en;;
+        *);; 
+      
+
+concept_meal_replacement->rrel_example:
+vplab_high_protein_pancakes;
+optimum_nutrion_opti_fit_lean_protein_shake;
+powder_pak_pudding_fit_lean;;
+
+concept_meal_replacement=>nrel_contains:
+concept_protein;
+concept_microelement;
+concept_macroelement;;
+
+
+
+

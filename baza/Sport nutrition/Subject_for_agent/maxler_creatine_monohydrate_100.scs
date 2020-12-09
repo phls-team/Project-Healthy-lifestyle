@@ -1,0 +1,36 @@
+maxler_creatine_monohydrate_100=>
+nrel_main_idtf:[Maxler Creatine Monohydrate 100%]
+        (*
+                <-lang_ru;;
+        *);;
+
+maxler_creatine_monohydrate_100<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//maxler_creatine_monohydrate_100.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [(Maxler Creatine Monohydrate 100%)](*<- lang_ru;;*);;
+*);;
+*);;
+ 
+
+defenition ->...
+(*
+->rrel_key_sc_element:maxler_creatine_monohydrate_100;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Creatine Monohydrate 100% – это 100%-й моногидрант креатина в виде порошка от компании Maxler с максимальным содержанием действующего вещества, способствующий повышению силовых возможностей организма и поддержанию его работоспособности.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Creatine Monohydrate 100%)](*<- lang_ru;;*);;
+*);;
+
+
+
+maxler_creatine_monohydrate_100=>nrel_belonging: concept_creatine;;
+
+maxler_creatine_monohydrate_100=>nrel_carbohydrates_content:less_0_1g_per_3g;;
+maxler_creatine_monohydrate_100=>nrel_fats_content:less_0_1g_per_3g;;
+maxler_creatine_monohydrate_100=>nrel_protein_content:less_0_1g_per_3g;;
+maxler_creatine_monohydrate_100=>nrel_calorie_content:less_0_1kkal_per_3g;;

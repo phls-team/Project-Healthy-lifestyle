@@ -1,0 +1,92 @@
+concept_carbohydrate_protein_mixtures<-sc_node_not_relation;;
+
+concept_carbohydrate_protein_mixtures=>nrel_main_idtf:[углеводно-белковые смеси]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[carbohydrate protein mixtures]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_carbohydrate_protein_mixtures=>nrel_idtf:[гейнер]
+        (*
+                <-lang_ru;;
+        *);
+nrel_idtf:[gain]
+        (*
+                <-lang_en;;
+        *);;
+
+
+defenition ->...
+(*
+->rrel_key_sc_element:concept_carbohydrate_protein_mixtures ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Углеводно-белковые смеси -  пищевая добавка при спортивном питании.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Углеводно-белковые смеси)](*<- lang_ru;;*);;
+*);;
+
+concept_carbohydrate_protein_mixtures=>nrel_consist:
+concept_carbohydrates;
+concept_mineral;
+concept_creatine;;
+
+
+concept_carbohydrate_protein_mixtures<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//geyner.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Мужчина принимает гейнер)](*<- lang_ru;;*);;
+*);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_vitamin_complexes ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[очередь необходим людям, твёрдо решившим набрать мышечный вес, занимаясь силовым тренингом поскольку углеводы являются лучшим топливом для физических нагрузок в тренажёрном зале, а белок — незаменимый строительный материал для роста мускулатуры и набора мышечной массы (миофибриллярная гипертрофия — увеличение мышечного волокна).](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Кому необходим в первую очередь гейнер)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+        concept_physical_exercises
+};;
+*);;
+
+concept_carbohydrate_protein_mixtures<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//xxx.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Пример гейнера)](*<- lang_ru;;*);;
+*);;
+*);;
+
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_carbohydrate_protein_mixtures ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Гейнеры действуют в течение нескольких часов. Они очень быстро восстанавливают энергетические запасы клеток человеческого организма. В период, когда физической активности нет, гейнеры имеет смысл принимать только в случае затруднений при наращивании мышечной массы. Также гейнеры могут добавлять в свой рацион те люди, у которых при занятиях спортом нет сложившегося режима питания. Но при наборе мышечной массы рекомендуется соблюдать специальную диету с 5-6 разовым питанием (включая белково-углеводные коктейли).](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Действие гейнера)](*<- lang_ru;;*);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_carbohydrate_protein_mixtures ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Гейнер создаётся из обычных пищевых компонентов, поэтому ничем не отличается от обычных продуктов, его могут принимать как мужчины так и женщины, в любом возрасте. Также, вследствие большого содержания простых углеводов, при попадании влаги или неправильных условиях хранения в продукте может происходить размножение бактерий. После приёма такого гейнера возникает типичная картина пищевого отравления. При возникновении диареи отмените гейнер на пару дней, а затем продолжите приём в меньших дозах.
+Тем не менее, при использовании гейнера, а также других видов спортивного питания, содержащего высокие дозы белка, возможно негативные аллергические реакции на организм: диарея, зуд, крапивница и т.д. Также, при длительном приеме, ввиду повышенной нагрузки на печень, возможно развитие ее патологических изменений.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Побочные эфекты гейнера)](*<- lang_ru;;*);;
+*);;
+
+concept_carbohydrate_protein_mixtures->rrel_example:
+serious_mass;
+muscle_mass;
+true_mass;;

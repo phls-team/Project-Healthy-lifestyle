@@ -1,0 +1,34 @@
+muscle_pharm=>
+nrel_main_idtf:[MusclePharm Energy Sport]
+        (*
+                <-lang_ru;;
+        *);;
+
+muscle_pharm<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//musclepharm-energy-sport-355ml.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [(MusclePharm Energy Spor)](*<- lang_ru;;*);;
+*);;
+*);;
+
+
+defenition ->...
+(*
+->rrel_key_sc_element:muscle_pharm ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Энергетический напиток Energy Sport от MusclePharm поможет вам восстановить силы и подготовить свой организм для предстоящей тренировки или соревнований, чтобы в процессе не было форс-мажора вроде упадка сил и невозможности завершить начатый подход или, к примеру, дистанцию.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Guarana Liquid)](*<- lang_ru;;*);;
+*);;
+
+muscle_pharm=>nrel_belonging: concept_energy_drink;;
+
+muscle_pharm=>nrel_carbohydrates_content:4_9g_per_25ml;;
+muscle_pharm=>nrel_fats_content:less_1g_per_25ml;;
+muscle_pharm=>nrel_protein_content:0_3g_per_25ml;;
+muscle_pharm=>nrel_coffeine_content:150mg_per_25ml;;

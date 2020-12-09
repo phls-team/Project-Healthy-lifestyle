@@ -1,0 +1,50 @@
+wtf_labz_puft_man=>
+nrel_main_idtf:[WTF Labz Puft Man]
+        (*
+                <-lang_ru;;
+        *);;
+
+wtf_labz_puft_man<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//wtf_labz_puft_man.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [(TF Labz Puft Man)](*<- lang_ru;;*);;
+*);;
+*);;
+
+
+defenition ->...
+(*
+->rrel_key_sc_element:wtf_labz_puft_man ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Puft Man – это нитробустер от компании WTF Labz, предназначенная для пампинга, увеличения выносливости и скорости восстановления мышц.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Puft Man)](*<- lang_ru;;*);;
+*);;
+
+wtf_labz_puft_man=>nrel_belonging: concept_nitrogen_oxide_doner;;
+
+wtf_labz_puft_man=>nrel_contains:
+concept_Mg;
+hydromax;
+amentoflavone;
+vitamin_C;;
+
+amentoflavone=>
+nrel_main_idtf:[Amentoflavone]
+        (*
+                <-lang_ru;;
+        *);;
+        
+hydromax=>
+nrel_main_idtf:[Hydromax]
+        (*
+                <-lang_ru;;
+        *);;
+        
+
+

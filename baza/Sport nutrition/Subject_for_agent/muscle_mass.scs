@@ -1,0 +1,32 @@
+muscle_mass=> nrel_main_idtf:[BioTech USA Muscle Mass]
+        (*
+                <-lang_ru;;
+        *);;
+
+muscle_mass<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//biotech-usa-muscle-mass-2270g-1.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(BioTech USA Muscle Mass)](*<- lang_ru;;*);;
+*);;
+*);;
+
+
+defenition ->...
+(*
+->rrel_key_sc_element:muscle_mass ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[BioTech USA Muscle Mass - белково-углеводная смесь с полным набором аминокислот, BCAA, глютамина для быстрого восстановления сил после тренировки и активного набора мышечной массы.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Serious Mass)](*<- lang_ru;;*);;
+*);;
+
+muscle_mass=>nrel_belonging: concept_carbohydrate_protein_mixtures;;
+
+muscle_mass=>nrel_carbohydrates_content:48g_per_70g;;
+muscle_mass=>nrel_fats_content:1_9g_per_70g;;
+muscle_mass=>nrel_protein_content:12g_per_70g;;

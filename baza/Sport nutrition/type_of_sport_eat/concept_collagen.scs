@@ -1,0 +1,108 @@
+concept_collagen<-sc_node_not_relation;;
+
+concept_collagen=>nrel_main_idtf:
+   [коллаген]
+        (* <-lang_ru;; *);
+
+   =>nrel_main_idtf:
+   [collagen]
+        (* <-lang_en;; *);;
+
+
+defenition ->...
+(*
+->rrel_key_sc_element:concept_collagen ;;
+     <= nrel_sc_text_translation: ...(*->rrel_example:[Коллаген — хондропротектор, способствующий комплексному обновлению соединительной ткани.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Коллаген)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+concept_hondroprotector;
+concept_regeneration;
+concept_connective_tissue
+};;
+*);;
+
+concept_collagen<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//collagen_supplement.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(БАД)](*<- lang_ru;;*);;
+*);;
+*);;
+
+defenition ->...
+(*
+->rrel_key_sc_element:concept_collagen ;;
+     <= nrel_sc_text_translation: ...
+       (*
+        ->rrel_example:[Коллаген - фибрилярный белок, содержащийся во всех тканях организма.](*<-lang_ru;;*);;*);;
+      => nrel_main_idtf: [Определение(Коллаген в организме человека)](*<- lang_ru;;*);;
+      <=nrel_using_constants:{
+      concept_fibrillary_protein;
+      concept_tissue;
+      concept_organism
+      };;
+*);;
+
+concept_collagen<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//collagen_formula.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Химическая структура коллагена)](*<- lang_ru;;*);;
+*);;
+*);;
+
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_gcollagen ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Коллаген делает суставы и кожу более эластичными, обеспечивает им устойчивость к механическим повреждениям.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Польза коллаген)](*<- lang_ru;;*);;
+ <=nrel_using_constants:{
+concept_mechanical_injury;
+concept_joint;
+concept_skin
+};;
+*);;
+
+
+
+//concept_sport_eat=>nrel_inclusion:concept_collagen;;
+
+concept_collagen=>nrel_inclusion:
+concept_fibrillar_collagen;
+concept_non_fibrillar_collagen;;
+
+concept_fibrillar_collagen<-sc_node_not_relation;;
+
+concept_fibrillar_collagen=>nrel_main_idtf:[фибриллярный коллаген]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[fibrillar collagen]
+        (*
+                <-lang_en;;
+        *);;
+        
+        concept_fibrillar_collagen<-sc_node_not_relation;;
+
+concept_non_fibrillar_collagen=>nrel_main_idtf:[нефибриллярный коллаген]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[non fibrillar collagen]
+        (*
+                <-lang_en;;
+        *);;
+

@@ -1,0 +1,36 @@
+powder_pak_pudding_fit_lean=>
+nrel_main_idtf:[Powder Pak Pudding Fit Lean]
+        (*
+                <-lang_ru;;
+        *);;
+
+powder_pak_pudding_fit_lean<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//powder_pak_pudding_fit_lean.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [(Powder Pak Pudding Fit Lean)](*<- lang_ru;;*);;
+*);;
+*);;
+ 
+
+defenition ->...
+(*
+->rrel_key_sc_element:powder_pak_pudding_fit_lean ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Powder Pak Pudding Fit Lean – низкокалорийный белковый пудинг без лактозы, глютена, вредных для желудка сахарных спиртов от компании Optimum Nutrition.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Powder Pak Pudding Fit Lean)](*<- lang_ru;;*);;
+*);;
+
+
+
+powder_pak_pudding_fit_lean=>nrel_belonging: concept_meal_replacement;;
+
+powder_pak_pudding_fit_lean=>nrel_carbohydrates_content:4g_per_128g;;
+powder_pak_pudding_fit_lean=>nrel_fats_content:2_5g_per_128g;;
+powder_pak_pudding_fit_lean=>nrel_protein_content:15g_per_128g;;
+powder_pak_pudding_fit_lean=>nrel_energy_value:100kkal_per_128g;;

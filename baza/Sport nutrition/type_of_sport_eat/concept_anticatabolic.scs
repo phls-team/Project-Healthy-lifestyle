@@ -1,0 +1,83 @@
+concept_anticatabolic<-sc_node_not_relation;;
+
+concept_anticatabolic
+   =>nrel_main_idtf:
+   [антикатаболик]
+        (* <-lang_ru;; *);
+   =>nrel_main_idtf:
+   [anticatabolic]
+        (* <-lang_en;; *);;
+
+concept_anticatabolic=>nrel_idtf:[Блокаторы кортизола]
+        (*
+                <-lang_ru;;
+        *);;
+
+
+defenition ->...
+(*
+->rrel_key_sc_element:concept_anticatabolic ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Антикатаболики — препараты и спортивные добавки, снижающие в организме количество катаболических гормонов и тем самым мешающие распаду мышц.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Антикатаболики)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_drug;
+concept_sport_supplement;
+concept_organism;
+concept_catabolic_hormone;
+concept_muscle_destruction
+};;
+*);;
+
+concept_anticatabolic<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//anticatabolic.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Антикатаболики)](*<- lang_ru;;*);;
+*);;
+*);;
+
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_anticatabolic ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Антикатаболики бы­ва­ют двух ти­пов: пер­вые - га­сят дефицит питательных веществ, вторые – дефицит ана­бо­ли­чес­ких гор­мо­нов.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Типы антикатаболиков)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_nutritional_deficiency;
+concept_anabolic_hormone_deficiency
+};;
+*);;
+
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_anticatabolic;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Антикатаболики могут быть назначены только врачом при избытке разрушающих мышцы гормонов, в противном случае прием антикатаболиков может привести к замедлению роста мышц..](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Правила приема антикатаболиков)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_doctor;
+concept_endurance;
+concept_muscle_destruction_hormone_overproduction;
+concept_muscle_growth_reduction
+};;
+*);;
+
+//concept_sport_eat=>nrel_inclusion:concept_anticatabolic;;
+concept_anticatabolic=>nrel_inclusion:concept_BCAA;;
+
+
+concept_anticatabolic->rrel_example:
+olimp_anabolic_amino_9000_mega_tabs;
+weider_anabolic_evolution;;
+
+
+concept_BCAA=>nrel_main_idtf:[BCAA]
+        (*
+                <-lang_ru;;
+        *);;

@@ -1,0 +1,25 @@
+concept_creatine<-sc_node_not_relation;;
+
+concept_creatine=>nrel_main_idtf:[креатин]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[creatine]
+        (*
+                <-lang_en;;
+        *);;
+
+
+concept_creatine<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//с.png"
+        (*
+                =>nrel_format:format_png;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Формула креатина)](*<- lang_ru;;*);;
+*);;
+*);;

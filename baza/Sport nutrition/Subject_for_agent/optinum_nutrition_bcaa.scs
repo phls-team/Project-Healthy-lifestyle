@@ -1,0 +1,33 @@
+optinum_nutrition_bcaa=>
+nrel_main_idtf:[Optimum Nutrition BCAA 1000]
+        (*
+                <-lang_ru;;
+        *);;
+
+optinum_nutrition_bcaa<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//optimum-bcaa-1000-2.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [(Optimum Nutrition BCAA 1000)](*<- lang_ru;;*);;
+*);;
+*);;
+
+
+defenition ->...
+(*
+->rrel_key_sc_element:optinum_nutrition_bcaa ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[BCAA 1000 – это высокотехнологичный комплекс аминокислот от Optimum Nutrition, состоящий из незаменимых аминокислот с разветвлённой боковой цепочкой BCAA, которые по праву считаются основными строительными блоками мышечных тканей и волокон.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Optimum Nutrition BCAA 1000)](*<- lang_ru;;*);;
+*);;
+
+optinum_nutrition_bcaa=>nrel_belonging: concept_amino_acids;;
+
+optinum_nutrition_bcaa=>nrel_L_leucine_content:500mg_per_2capsules;;
+optinum_nutrition_bcaa=>nrel_isoleucine_content:250mg_per_2capsules;;
+optinum_nutrition_bcaa=>nrel_L_valine_content:250mg_per_2capsules;;

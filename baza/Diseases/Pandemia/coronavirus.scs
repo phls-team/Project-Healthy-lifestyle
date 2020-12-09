@@ -1,0 +1,151 @@
+coronavirus=>nrel_main_idtf:[коронавирусная инфекция]
+(*<-lang_ru;;*);
+nrel_main_idtf:[coronavirus](*<-lang_en;;*);;
+
+concept_epiemic->coronavirus;;
+coronavirus<-concept_disease;;
+
+coronavirus=>nrel_idtf:[коронавирус]
+        (*
+                <-lang_ru;;
+        *);
+nrel_idtf: [COVID-19]
+        (*
+                <-lang_ru;;
+        *);;
+
+coronavirus<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//symptoms.png"
+        (*
+                =>nrel_format:format_png;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Симптомы COVID-19)](*<- lang_ru;;*);;
+*);;
+*);;
+
+
+coronavirus<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//23312_lores.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Симптомы COVID-19)](*<- lang_ru;;*);;
+*);;
+*);;
+
+coronavirus<-rrel_sc_key_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:[Опр.(COVID-19)](*<-lang_ru;;*);;
+=>nrel_main_idtf:[Def.(COVID-19)](*<-lang_en;;*);;
+*);
+<=nrel_sc_text_translation:...
+(*
+->[потенциально тяжёлая острая респираторная инфекция, вызываемая коронавирусом SARS-CoV-2 (2019-nCoV). Представляет собой опасное заболевание, которое может протекать как в форме острой респираторной вирусной инфекции лёгкого течения, так и в тяжёлой форме.Наиболее частым осложнением заболевания является вирусная пневмония, способная приводить к острому респираторному дистресс-синдрому и последующей острой дыхательной недостаточности, при которых чаще всего необходимы кислородная терапия и респираторная поддержка.](*<-lang_ru;;*);;
+*);
+<=nrel_sc_text_translation:...
+(*
+->[ is a contagious disease caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). The first case was identified in Wuhan, China, in December 2019. It has since spread worldwide, leading to an ongoing pandemic.](*<-lang_en;;*);;
+*);;
+
+coronavirus<-sc_node_norole_relation;
+=>nrel_incubation_period:...
+(*
+->rrel_minimalPeriod: 5_1_days;;
+->rrel_maximalPeriod: 11_5_days;;
+*);;
+
+coronavirus<-sc_node_norole_relation;
+=>nrel_unique_idtf:[U07.1](*<-lang_ru;;*);
+=>nrel_unique_idtf:[U07.1](*<-lang_en;;*);;
+
+dry_cough<-sc_node_norole_relation;
+=>nrel_main_idtf:[сухой кашель](*<-lang_ru;;*);
+=>nrel_main_idtf:[dry cough](*<-lang_en;;*);;
+
+loss_of_charm<-sc_node_norole_relation;
+=>nrel_main_idtf:[потеря обаяния](*<-lang_ru;;*);
+=>nrel_main_idtf:[loss of charm](*<-lang_en;;*);;
+
+loss_of_charm <- concept_illness;;
+dry_cough <- concept_illness;;
+
+coronavirus=>nrel_symptom:fever;dry_cough;general_weakness_and_fatigue;loss_of_charm;;
+coronavirus=>nrel_period_of_full_development:fever;dry_cough;general_weakness_and_fatigue;pain_and_weakness_in_muscles;
+runny_nose;pneumonia;loss_of_charm;;
+nrel_healing<-sc_node_norole_relation;
+=>nrel_main_idtf:[лечение](*<-lang_ru;;*);
+=>nrel_main_idtf:[healing](*<-lang_en;;*);;
+coronavirus<-sc_node_norole_relation;
+=>nrel_healing:...
+(*
+<-statement;;
+=>nrel_main_idtf:[Утв.(лечение)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[Против вируса SARS-CoV-2 отсутствует какая-либо специфичная противовирусная терапия. По состоянию на 16 октября 2020 года лишь кортикостероиды оказались эффективными в тяжёлых и критических случаях COVID-19. Антибиотики против вирусов бесполезны и не применяются в лечении. Однако они могут быть назначены в случае обнаружения бактериальной вторичной инфекции. В основном пациенты получают симптоматическую и поддерживающую терапию. Основной задачей лечения больных с острой дыхательной недостаточностью является поддержание достаточного уровня оксигенации организма, поскольку недостаток кислорода может привести к необратимым нарушениям в работе жизненно важных органов и летальному исходу. В тяжёлых случаях лечение направлено на поддержание жизненно важных функций организма.
+
+Если лечение в стационаре по каким-либо причинам невозможно, в лёгких случаях без тревожных признаков и при отсутствии хронических болезней допустим уход за больным в домашних условиях. Однако при наличии одышки, кровохарканья, повышенного выделения мокроты, признаков гастроэнтерита или изменениях психического состояния показана госпитализация.
+
+При этом клинические рекомендации ВОЗ и Китая отличаются друг от друга. В китайских рекомендациях, в отличие от рекомендаций ВОЗ, включены спорные методы лечения, такие как применение кортикостероидов, антибиотики и противовирусные средства.
+
+ВОЗ также предупреждает, что курение, применение народных средств, в том числе на основе трав, и самолечение, включая антибиотики, никак не помогут бороться с инфекцией, но могут нанести вред здоровью.](*<-lang_ru;;*);;
+*);;
+=>nrel_main_idtf:[St.(healing)](*<-lang_en;;*);;
+<=nrel_sc_text_translation:...
+(*
+->[The management of COVID-19 includes supportive care, which may include fluid therapy, oxygen support, and supporting other affected vital organs. The WHO is in the process of including dexamethasone in guidelines for treatment for hospitalized patients, and it is recommended for consideration in Australian guidelines for patients requiring oxygen. CDC recommends those who suspect they carry the virus wear a simple face mask. Extracorporeal membrane oxygenation (ECMO) has been used to address the issue of respiratory failure, but its benefits are still under consideration. Personal hygiene and a healthy lifestyle and diet have been recommended to improve immunity.Supportive treatments may be useful in those with mild symptoms at the early stage of infection.Nasal breathing is suggested as such a procedure based on several peer reviewed studies.
+The WHO, the Chinese National Health Commission, and the United States' National Institutes of Health have published recommendations for taking care of people who are hospitalised with COVID‑19. Intensivists and pulmonologists in the U.S. have compiled treatment recommendations from various agencies into a free resource, the IBCC.](*<-lang_en;;*);;
+*);;
+*);;
+
+
+5_1_days<-sc_node_role_relation;;
+5_1_days=>nrel_main_idtf:[5,1 дня]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[5,1 days]
+        (*
+                <-lang_en;;
+        *);;
+
+11_5_days<-sc_node_role_relation;;
+11_5_days=>nrel_main_idtf:[11,5 дня]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[11,5 days]
+        (*
+                <-lang_en;;
+        *);;
+
+coronavirus<-sc_node_norole_relation;
+=>nrel_pandemia:...
+(*
+->rrel_year_of_pandemia_start: 2019;;
+->rrel_year_of_pandemia_end: unknown;;
+*);;
+
+unknown<-sc_node_role_relation;;
+unknown=>nrel_main_idtf:[неизвестно]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[unknown]
+        (*
+                <-lang_en;;
+        *);;
+
+coronavirus=>nrel_transmission_path:concept_airborne;;
+

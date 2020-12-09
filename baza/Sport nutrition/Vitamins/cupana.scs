@@ -1,0 +1,24 @@
+cupana <-sc_node_not_relation;;
+
+cupana =>nrel_main_idtf:[гуарана]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[cupana]
+        (*
+                <-lang_en;;
+        *);;
+
+cupana<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//Paullinia_cupana_-_Köhler–s_Medizinal-Pflanzen-234.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Гуарана)](*<- lang_ru;;*);;
+*);;
+*);;

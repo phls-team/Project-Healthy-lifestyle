@@ -1,0 +1,24 @@
+element_H <-sc_node_not_relation;;
+
+element_H =>nrel_main_idtf:[водород]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[hydrogen]
+        (*
+                <-lang_en;;
+        *);;
+
+element_H<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//images.jpeg"
+        (*
+                =>nrel_format:format_jpeg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Водород)](*<- lang_ru;;*);;
+*);;
+*);;

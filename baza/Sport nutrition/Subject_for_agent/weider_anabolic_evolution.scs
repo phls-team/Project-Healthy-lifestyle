@@ -1,0 +1,36 @@
+weider_anabolic_evolution=>
+nrel_main_idtf:[Weider Anabolic Evolution]
+        (*
+                <-lang_ru;;
+        *);;
+
+weider_anabolic_evolution<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//weider_anabolic_evolution.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [(Weider Anabolic Evolution)](*<- lang_ru;;*);;
+*);;
+*);;
+ 
+
+defenition ->...
+(*
+->rrel_key_sc_element:weider_anabolic_evolution ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Anabolic Evolution – это самый сложный энергетик от коипании Weider с повышенной пищевой ценностью и низким гликемическим индексом для профессиональных атлетов, активно способствующий восстановлению и росту сухой мышечной массы.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Anabolic Evolution)](*<- lang_ru;;*);;
+*);;
+
+
+
+weider_anabolic_evolution=>nrel_belonging: concept_anticatabolic;;
+
+weider_anabolic_evolution=>nrel_carbohydrates_content:53g_per_78g;;
+weider_anabolic_evolution=>nrel_fat_content:7_9g_per_78g;;
+weider_anabolic_evolution=>nrel_protein_content:40g_per_78g;;
+weider_anabolic_evolution=>nrel_energy_value:449kkal_per_78g;;

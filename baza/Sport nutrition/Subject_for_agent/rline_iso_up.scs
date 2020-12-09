@@ -1,0 +1,34 @@
+rline_iso_up=>
+nrel_main_idtf:[RLine ISO UP]
+        (*
+                <-lang_ru;;
+        *);;
+
+rline_iso_up<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//rline_iso_up.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [(RLine ISO UP)](*<- lang_ru;;*);;
+*);;
+*);;
+ 
+
+defenition ->...
+(*
+->rrel_key_sc_element:rline_iso_up ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[ISO UP – это смесь   для приготовления изотоников от компании RLine для восполнения потерь жидкости и минералов и дополнительного заряда энергии.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(ISO UP)](*<- lang_ru;;*);;
+*);;
+
+
+
+rline_iso_up=>nrel_belonging: concept_isotonic;;
+
+rline_iso_up=>nrel_carbohydrates_content:23_3g_per_25g;;
+rline_iso_up=>nrel_energy_value:105kkal_per_25g;;

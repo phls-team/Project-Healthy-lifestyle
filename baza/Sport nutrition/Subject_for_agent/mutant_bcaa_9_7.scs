@@ -1,0 +1,36 @@
+mutant_bcaa_9_7=>
+nrel_main_idtf:[Mutant BCAA 9,7]
+        (*
+                <-lang_ru;;
+        *);;
+
+mutant_bcaa_9_7<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//mutant_bcaa_9_7.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [(BCAA 9,7)](*<- lang_ru;;*);;
+*);;
+*);;
+
+
+defenition ->...
+(*
+->rrel_key_sc_element:mutant_bcaa_9_7 ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[BCAA 9,7 – это аминокислотный комплекс с BCAA и электролитами от компании Mutant, который способен помочь увеличить мышечную массу, силу, выносливость и укрепить иммунитет.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(BCAA 9,7)](*<- lang_ru;;*);;
+*);;
+
+mutant_bcaa_9_7=>nrel_belonging: concept_amino_acids;;
+
+mutant_bcaa_9_7=>nrel_contains:
+concept_Mg;
+concept_K;
+amentoflavone;
+vitamin_C;;
+

@@ -1,0 +1,33 @@
+
+nrel_creatine_content
+ <-sc_node_norole_relation;
+=> nrel_main_idtf: 
+		 [содержание креатина*](*<- lang_ru;;*);
+		 [creatine content*](*<- lang_en;;*);
+
+
+=> nrel_first_domain: concept_product;
+ => nrel_second_domain: concept_creatine;
+
+
+<-antireflexive_relation;
+<-antitransitive_relation ;
+<-antisymmetric_relation;;
+
+nrel_creatine_content => nrel_definitional_domain:concept_product;;
+nrel_creatine_content => nrel_definitional_domain:concept_creatine;;
+nrel_calorie_content => nrel_first_domain: concept_product;;
+nrel_calorie_content => nrel_second_domain: concept_creatine;;
+parameter -> arity;;
+arity -> binary_relation;;
+binary_relation -> nrel_creatine_content;;
+binary_relation => nrel_measurement: 2;;
+number -> 2;;
+
+
+
+relation => nrel_inclusion: binary_relation;;
+
+binary_relation => nrel_inclusion: antireflexive_relation;;
+binary_relation => nrel_inclusion: antitransitive_relation;;
+binary_relation => nrel_inclusion: antisymmetric_relation;;

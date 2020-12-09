@@ -1,0 +1,88 @@
+concept_phosphatidylserine<-sc_node_not_relation;;
+
+concept_phosphatidylserine
+   =>nrel_main_idtf:
+   [фосфатидилсерин]
+        (* <-lang_ru;; *);
+   =>nrel_main_idtf:
+   [phosphatidylserine]
+        (* <-lang_en;; *);;
+
+concept_phosphatidylserine=>nrel_idtf:[PS]
+        (*
+                <-lang_en;;
+        *);;
+
+
+
+defenition ->...
+(*
+->rrel_key_sc_element:concept_phosphatidylserine ;;
+     <= nrel_sc_text_translation: ...(*->rrel_example:[Фосфатидилсерин — биологически активная добавка к пище, разновидность антикатаболиков.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Фосфатидилсерин)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+concept_biologically_active_additive;
+concept_anticatabolic
+};;
+*);;
+
+concept_phosphatidylserine<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//phosphatidylserine_supplement.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(БАД)](*<- lang_ru;;*);;
+*);;
+*);;
+
+defenition ->...
+(*
+->rrel_key_sc_element:concept_phosphatidylserine ;;
+     <= nrel_sc_text_translation: ...
+       (*
+        ->rrel_example:[Фосфатидилсерин - фосфолипид, составная часть цитоплазматической мембраны.](*<-lang_ru;;*);;*);;
+      => nrel_main_idtf: [Определение(Фосфатидилсерин как химическое вещество)](*<- lang_ru;;*);;
+      <=nrel_using_constants:{
+      concept_cytoplasmatic_membrane;
+      concept_phospholipid
+      };;
+*);;
+
+concept_phosphatidylserine<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//phosphatidylserine_formula.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Химическая структура фосфатидилсерина)](*<- lang_ru;;*);;
+*);;
+*);;
+
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_phosphatidylserine ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Фосфатидилсерин снимает стресс после физических нагрузок, предотвращает повреждение мышц, повышает точность.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Позьза фосфатидилсерина)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_stress;
+concept_physical_activity;
+concept_muscle_damage;
+concept_precision
+};;
+*);;
+
+concept_anticatabolic=>nrel_inclusion:concept_phosphatidylserine;;
+
+//concept_sport_eat=>nrel_inclusion:concept_phosphatidylserine;;
+
+
