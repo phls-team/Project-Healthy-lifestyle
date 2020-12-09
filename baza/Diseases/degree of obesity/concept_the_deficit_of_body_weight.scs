@@ -1,0 +1,12 @@
+concept_the_deficit_of_body_weight
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [the deficit of body weight](*<-lang_en;;*);
+          [дефицит массы тела](*<-lang_ru;;*);
+
+=>nrel_min_imt_value:[0];
+=>nrel_max_imt_value:[18.5];
+
+<=nrel_inclusion:concept_degree_of_obesity;;

@@ -1,0 +1,12 @@
+concept_first_degree_of_obesity
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [first degree of obesity](*<-lang_en;;*);
+          [первая степень ожирения](*<-lang_ru;;*);
+
+=>nrel_min_imt_value:[30.001];
+=>nrel_max_imt_value:[35];
+
+<=nrel_inclusion:concept_degree_of_obesity;;

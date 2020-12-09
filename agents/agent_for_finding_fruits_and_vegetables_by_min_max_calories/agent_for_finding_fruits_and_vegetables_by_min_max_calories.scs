@@ -1,0 +1,455 @@
+agent_for_finding_fruits_and_vegetables_by_min_max_calories
+=> nrel_main_idtf:
+	[агентная scp-программа поиска подходящих фруктов и овощей по калорийности основываясь на минимальной и максимальной границе] 
+	(* <- lang_ru;; *);
+	[agent scp-program for finding suitable fruits and vegetables by calorie content based on the minimum and maximum border] 
+	(* <- lang_en;; *);
+
+<- agent_scp_program;;
+
+scp_program -> agent_for_finding_fruits_and_vegetables_by_min_max_calories
+	(*
+		-> rrel_params: ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_params 
+			(*
+				-> rrel_1: rrel_in: _event;;
+				-> rrel_2: rrel_in: _input_arc;;
+			*);;
+
+		->rrel_operators: ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator_set 
+			(*
+				->rrel_init: ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator1 
+					(*
+						<- searchElStr3;;
+
+						-> rrel_1: rrel_assign: rrel_scp_var: _temp;;
+						-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
+						-> rrel_3: rrel_assign: rrel_scp_var: _quest;;
+
+						=>nrel_goto: ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator2;;
+					*);;
+				-> ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator2 
+					(*
+						<- searchElStr3;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_const: question_finding_fruits_and_vegetables_by_min_max_calories ;;
+						-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+						=>nrel_then: ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator3;;
+						=>nrel_else: ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator_return;;
+					*);;
+				-> ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator3 
+					(*
+						<- searchElStr5;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+						-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+						-> rrel_3: rrel_assign: rrel_scp_var: _param1;;
+						-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: rrel_1;;
+
+						=>nrel_then: ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator3_1;;
+						=>nrel_else: ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator_return;;
+					*);;
+
+				-> ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator3_1
+					(*
+						<- searchElStr5 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _param1 ;;
+						-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc1 ;;
+						-> rrel_3: rrel_assign: rrel_scp_var: rrel_link: _param1_link ;;
+						-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2 ;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_system_identifier ;;
+
+						=> nrel_then: ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator3a ;;
+						=> nrel_else: ..agent_for_calculate_degree_of_obesity_operator_return ;;
+					*);;
+
+				-> ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator3a
+					(*
+						<- searchElStr5;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+						-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+						-> rrel_3: rrel_assign: rrel_scp_var: _param2;;
+						-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: rrel_2;;
+
+						=>nrel_then: ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator3a_1;;
+						=>nrel_else: ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator_return;;
+					*);;
+
+				-> ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator3a_1
+					(*
+						<- searchElStr5 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _param2 ;;
+						-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc1 ;;
+						-> rrel_3: rrel_assign: rrel_scp_var: rrel_link: _param2_link ;;
+						-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2 ;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_system_identifier ;;
+
+						=> nrel_then: ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator4 ;;
+						=> nrel_else: ..agent_for_calculate_degree_of_obesity_operator_return ;;
+					*);;
+				//Создание узла, где будет ответ
+				-> ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator4
+					(*
+						<- genEl ;;
+
+						-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _answer ;;
+
+					 	=> nrel_goto: ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator5;;
+					*);;
+				//Создание массива фруктов и массива овощей
+				-> ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator5
+					(*
+						<- searchSetStr5;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_const: concept_fruit ;;
+						-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc1 ;;
+						-> rrel_3: rrel_assign: rrel_scp_var: _fruit ;;
+						-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2 ;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_inclusion ;;
+
+						->rrel_set_3: rrel_assign: rrel_scp_var: _set_of_fruits_and_vegetables;;
+
+						=> nrel_then: ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator5a ;;
+						=> nrel_else: ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator_return ;;
+					*);;
+
+				-> ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator5a
+					(*
+						<- searchSetStr5 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_const: concept_vegetable ;;
+						-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc1 ;;
+						-> rrel_3: rrel_assign: rrel_scp_var: _vegetable ;;
+						-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2 ;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_inclusion ;;
+
+						->rrel_set_3: rrel_fixed: rrel_scp_var: _set_of_fruits_and_vegetables;;
+
+						=> nrel_then: ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator7 ;;
+						=> nrel_else: ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator_return ;;
+					*);;
+
+				/*-> ..proc_print_sets
+					(*
+						<- call;;
+					-> rrel_1: rrel_fixed: rrel_scp_const: proc_print_set;;
+					-> rrel_2: rrel_fixed: rrel_scp_const: ... (*
+						-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_fruits_and_vegetables;;
+					*);;
+					-> rrel_3: rrel_assign: rrel_scp_var: _descr;;
+
+					=> nrel_goto: ..proc_print_set_wait;;
+				*);;
+
+				-> ..proc_print_set_wait (*
+					<- waitReturn;;
+					-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
+
+					=> nrel_goto: ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator6;;
+				*);;*/
+
+				//Получаем вершину из множества фруктов и овощей
+				-> ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator7
+					(*
+						<- searchElStr3;;
+						-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_fruits_and_vegetables;;
+						-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+						-> rrel_3: rrel_assign: rrel_scp_var: _element_of_set;;
+
+						=> nrel_then: ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator8;;
+						=> nrel_else: ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator14;;
+					*);;
+
+				//поиск количества калорий в данном элементе множества
+				-> ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator8
+					(*
+						<- searchElStr5 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _element_of_set ;;
+						-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc1 ;;
+						-> rrel_3: rrel_assign: rrel_scp_var: _calories_value ;;
+						-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2 ;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_calorie_content ;;
+
+						=> nrel_then: ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator9;;
+						=> nrel_else: ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator13;;
+					*);;
+
+				-> ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator8a 
+						(*
+						<- printEl;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _element_of_set;;
+
+						=> nrel_goto: ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator9;;
+						*);;
+
+				-> ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator9
+					(*
+						<- searchElStr5 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _calories_value ;;
+						-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc1 ;;
+						-> rrel_3: rrel_assign: rrel_scp_var: rrel_link: _calories_value_link ;;
+						-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2 ;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_system_identifier ;;
+
+						=> nrel_then: ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator10 ;;
+						=> nrel_else: ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator13 ;;
+					*);;
+				//Сравнение с 1 параметром (минимум)
+				-> ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator10
+					(*
+						<- ifGr;;
+
+						-> rrel_1: rrel_scp_var: _calories_value_link;;
+						-> rrel_2: rrel_scp_var: _param1_link;;
+
+						=> nrel_then: ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator11;;
+						=> nrel_else: ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator13;;
+					*);;
+				//Сравнение со 2 параметром (максимум)
+				-> ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator11
+					(*
+						<- ifGr;;
+
+						-> rrel_1: rrel_scp_var: _param2_link;;
+						-> rrel_2: rrel_scp_var: _calories_value_link;;
+
+						=> nrel_then: ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator12;;
+						=> nrel_else: ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator13;;
+					*);;
+				//При успешном прохождении двух сравнений элемент добавляется к ответу
+				-> ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator12
+					(*
+						<- searchElStr5;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_const: concept_fruit ;;
+						-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc1 ;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _element_of_set ;;
+						-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2 ;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_inclusion ;;
+
+						=> nrel_then: ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator12b ;;
+						=> nrel_else: ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator12a ;;
+					*);;
+
+				-> ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator12a
+					(*
+						<- searchElStr5;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_const: concept_vegetable ;;
+						-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc1 ;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _element_of_set ;;
+						-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2 ;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_inclusion ;;
+
+						=> nrel_then: ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator12b ;;
+						=> nrel_else: ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator_return ;;
+					*);;
+
+				-> ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator12b
+					(*
+						<- genElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _element_of_set ;;
+
+						=> nrel_goto: ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator12c ;;
+					*);;
+
+				-> ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator12c
+					(*
+						<- genElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _arc1 ;;
+
+						=> nrel_goto: ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator12d ;;
+					*);;
+
+				-> ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator12d
+					(*
+						<- genElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _arc2 ;;
+
+						=> nrel_goto: ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator12e ;;
+					*);;
+
+				-> ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator12e
+					(*
+						<- genElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_const: nrel_inclusion ;;
+
+						=> nrel_goto: ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator12f ;;
+					*);;
+
+				-> ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator12f
+						(*
+						<- printEl;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _element_of_set;;
+
+						=> nrel_goto: ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator13;;
+						*);;
+
+				//удаление элемента из множества фруктов и овощей
+				-> ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator13 (*
+						<- searchElStr3;;
+						-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_fruits_and_vegetables;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _element_of_set;;
+
+
+						=> nrel_then: ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator13_1;;
+						=> nrel_else: ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator_return;;
+					*);;
+
+					-> ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator13_1 (*
+						<- eraseEl;;
+						-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc2;;
+
+						=> nrel_goto: ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator7;;	
+					*);;
+
+				//Добавление к ответу понятие фрукт и овощ
+				->  ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator14
+					(*
+						<- genElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_const: concept_fruit ;;
+
+						=> nrel_goto: ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator14a ;;
+					*);;
+
+				->  ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator14a
+					(*
+						<- genElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_const: concept_vegetable ;;
+
+						=> nrel_goto: ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator16 ;;
+					*);;
+
+				//Добавление к корневому элементу "продукт" элемент "фрукт"
+				-> ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator16
+					(*
+						<- searchElStr5;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_const: concept_product ;;
+						-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc1 ;;
+						-> rrel_3: rrel_fixed: rrel_scp_const: concept_fruit ;;
+						-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2 ;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_inclusion ;;
+
+						=> nrel_then: ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator16a ;;
+						=> nrel_else: ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator_return ;;
+					*);;
+
+				->  ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator16a
+					(*
+						<- genElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _arc1 ;;
+
+						=> nrel_goto: ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator16a_1 ;;
+					*);;
+
+				->  ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator16a_1
+					(*
+						<- genElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _arc2 ;;
+
+						=> nrel_goto: ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator16b ;;
+					*);;
+				//Добавление к корневому элементу "продукт" элемент "овощ"
+				-> ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator16b
+					(*
+						<- searchElStr5;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_const: concept_product ;;
+						-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc1 ;;
+						-> rrel_3: rrel_fixed: rrel_scp_const: concept_vegetable ;;
+						-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2 ;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_inclusion ;;
+
+						=> nrel_then: ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator16c ;;
+						=> nrel_else: ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator_return ;;
+					*);;
+
+				->  ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator16c
+					(*
+						<- genElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _arc1 ;;
+
+						=> nrel_goto: ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator16d ;;
+					*);;
+
+				->  ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator16d
+					(*
+						<- genElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _arc2 ;;
+
+						=> nrel_goto: ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator16e ;;
+					*);;
+
+				->  ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator16e
+					(*
+						<- genElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_const: concept_product ;;
+
+						=> nrel_goto: ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator15 ;;
+					*);;
+
+				//Генерация ответа
+				->  ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator15
+					(*
+						<- genElStr5;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+						-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
+						-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+
+						=>nrel_goto: ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator_return;;
+					*);;
+				//до сюда
+				-> ..agent_for_finding_fruits_and_vegetables_by_min_max_calories_operator_return
+					(*
+						<- return ;;
+					*);;
+			*);;
+	*);;

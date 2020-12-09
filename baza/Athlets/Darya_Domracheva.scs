@@ -1,8 +1,8 @@
 Darya_Domracheva
 
 <-sc_node_not_relation;
-<=nrel_inclusion:concept_person;
-<=nrel_inclusion:concept_athlete;
+<-concept_person;
+<-concept_athlete;
 
 => nrel_main_idtf:
           [Darya Domracheva](*<-lang_en;;*);
@@ -10,7 +10,7 @@ Darya_Domracheva
 
 => nrel_sport:concept_biathlon;
 => nrel_weight:58;
-=> nrel_age:33;
+=> nrel_age: 33;
 => nrel_sports_rank:international_master_of_sports;
 => nrel_height:168;
 => nrel_birthplace: Belarus;

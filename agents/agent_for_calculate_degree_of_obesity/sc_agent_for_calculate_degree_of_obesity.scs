@@ -1,0 +1,50 @@
+sc_agent_for_calculate_degree_of_obesity
+=> nrel_main_idtf:
+	[sc-агент расчета степени ожирения спортсмена основываясь на его ИМТ] 
+	(* <- lang_ru;; *);
+	[sc-agent of calculate degree of obesity of an athlete based on his BMI] 
+	(* <- lang_en;; *);
+
+<- abstract_sc_agent;
+
+=> nrel_primary_initiation_condition: 
+	(sc_event_add_output_arc => question_initiated);
+
+=> nrel_initiation_condition_and_result: 
+	(..sc_agent_for_calculate_degree_of_obesity_condition => ..sc_agent_for_calculate_degree_of_obesity_result);
+
+<= nrel_sc_agent_key_sc_elements: 
+	{
+	question_initiated;
+	question;
+	question_calculate_degree_of_obesity
+	};
+
+=> nrel_inclusion: 
+	.platform_independent_realization_of_sc_agent_for_calculate_degree_of_obesity
+	(*
+	<- platform_independent_abstract_sc_agent;;
+	<= nrel_sc_agent_program: 
+		{
+		agent_for_calculate_degree_of_obesity	
+		};;
+	-> sc_agent_for_calculate_degree_of_obesity   
+		(* <- active_sc_agent;; *);;
+	*);;
+
+..sc_agent_for_calculate_degree_of_obesity
+= [*
+	question_calculate_degree_of_obesity _-> .._question;;
+	question_initiated _-> .._question;;
+	question _-> .._question;;
+	.._question _-> rrel_1:: .._parameter;;
+*];;
+
+..sc_agent_for_calculate_degree_of_obesity
+= [*
+	question_calculate_degree_of_obesity _-> .._question;;
+	question_finished _-> .._question;;
+	question _-> .._question;;
+	.._question _=> nrel_answer:: .._final_answer;;
+	.._question _-> rrel_1:: .._parameter;;
+*];;

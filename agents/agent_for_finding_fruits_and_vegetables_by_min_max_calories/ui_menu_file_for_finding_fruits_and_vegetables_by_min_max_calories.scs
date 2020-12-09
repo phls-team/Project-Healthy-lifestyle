@@ -1,0 +1,35 @@
+ui_menu_file_for_finding_fruits_and_vegetables_by_min_max_calories <- ui_user_command_class_atom; ui_user_command_class_view_kb; ui_one_argument_command_class;;
+
+ui_menu_file_for_finding_fruits_and_vegetables_by_min_max_calories
+=> nrel_main_idtf:
+	[Какие фрукты и овощи подходят по калорийности основываясь на минимальной и максимальной границе ?]
+	(* <- lang_ru;; *);
+=> nrel_idtf:
+	[Поиск подходящих фруктов и овощей.]
+	(* <- lang_ru;; *);;
+
+ui_menu_file_for_finding_fruits_and_vegetables_by_min_max_calories
+=> nrel_main_idtf:
+	[What fruits and vegetables are suitable for calorie content at the minimum and maximum border?]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Finding suitable fruits and vegetables.]
+	(* <- lang_en;; *);;
+
+ui_menu_file_for_finding_fruits_and_vegetables_by_min_max_calories => ui_nrel_command_template:
+	[*
+		question_finding_fruits_and_vegetables_by_min_max_calories _-> .question_finding_fruits_and_vegetables_by_min_max_calories
+			(*
+			_-> rrel_1:: ui_arg_1;;
+			_-> rrel_2:: ui_arg_2;;
+			*);;
+		.question_finding_fruits_and_vegetables_by_min_max_calories _<- question;;
+	*];;
+
+ui_menu_file_for_finding_fruits_and_vegetables_by_min_max_calories => ui_nrel_command_lang_template:
+	[Какие фрукты и овощи подходят по калорийности относительно минимальной $ui_arg_1 и максимальной $ui_arg_2 границы ?]
+	(* <- lang_ru;; *);;
+
+ui_menu_file_for_finding_fruits_and_vegetables_by_min_max_calories => ui_nrel_command_lang_template:
+	[What fruits and vegetables are suitable for calorie content at the minimum $ui_arg_1 and maximum $ui_arg_2 border?]
+	(* <- lang_en;; *);;

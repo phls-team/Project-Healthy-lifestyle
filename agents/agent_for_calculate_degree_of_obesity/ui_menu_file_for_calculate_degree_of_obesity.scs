@@ -1,0 +1,34 @@
+ui_menu_file_for_calculate_degree_of_obesity <- ui_user_command_class_atom; ui_user_command_class_view_kb; ui_one_argument_command_class;;
+
+ui_menu_file_for_calculate_degree_of_obesity
+=> nrel_main_idtf:
+	[Какая степень ожирения спортсмена основываясь на его ИМТ ?]
+	(* <- lang_ru;; *);
+=> nrel_idtf:
+	[Подсчет результата степени ожирения.]
+	(* <- lang_ru;; *);;
+
+ui_menu_file_for_calculate_degree_of_obesity
+=> nrel_main_idtf:
+	[What is the degree of obesity of an athlete based on his BMI?]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Calculation of the result of the degree of obesity.]
+	(* <- lang_en;; *);;
+
+ui_menu_file_for_calculate_degree_of_obesity => ui_nrel_command_template:
+	[*
+		question_calculate_degree_of_obesity _-> .question_calculate_degree_of_obesity
+			(*
+			_-> rrel_1:: ui_arg_1;;
+			*);;
+		.question_calculate_degree_of_obesity _<- question;;
+	*];;
+
+ui_menu_file_for_calculate_degree_of_obesity => ui_nrel_command_lang_template:
+	[Какая степень ожирения спортсмена $ui_arg_1 основываясь на его ИМТ ?]
+	(* <- lang_ru;; *);;
+
+ui_menu_file_for_calculate_degree_of_obesity => ui_nrel_command_lang_template:
+	[What is the degree of obesity of an athlete $ui_arg_1 based on his BMI?]
+	(* <- lang_en;; *);;

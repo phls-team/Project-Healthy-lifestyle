@@ -1,0 +1,12 @@
+concept_normal_body_weight
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [normal body weight](*<-lang_en;;*);
+          [нормальная масса тела](*<-lang_ru;;*);
+
+=>nrel_min_imt_value:[18.501];
+=>nrel_max_imt_value:[25];
+
+<=nrel_inclusion:concept_degree_of_obesity;;

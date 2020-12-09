@@ -1,0 +1,12 @@
+concept_third_degree_of_obesity
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [third degree of obesity](*<-lang_en;;*);
+          [третья степень ожирения](*<-lang_ru;;*);
+
+=>nrel_min_imt_value:[40.001];
+=>nrel_max_imt_value:[100];
+
+<=nrel_inclusion:concept_degree_of_obesity;;	

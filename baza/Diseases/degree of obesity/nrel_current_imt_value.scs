@@ -1,0 +1,17 @@
+nrel_current_imt_value
+ 
+<-sc_node_norole_relation;
+
+=> nrel_main_idtf:
+          [current imt value*](*<-lang_en;;*);
+          [текущее значение имт*](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(текущее значение имт)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Текущее значение имт — показывает текущее значение имт.](*<- lang_ru;;*);;
+			*);;
+		*);;
