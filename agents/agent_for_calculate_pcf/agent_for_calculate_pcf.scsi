@@ -1,0 +1,479 @@
+agent_for_calculate_pcf
+=>nrel_main_idtf:
+[агентная scp-программа расчёта потреблённых калорий и БЖУ] (* <- lang_ru;; *);
+[agent scp-program for calculate calories and pcf] (* <- lang_en;; *);
+<- agent_scp_program;;
+
+
+scp_program -> agent_for_calculate_pcf
+(*
+	-> rrel_params : ..agent_for_calculate_pcf_params
+	(*
+		-> rrel_1: rrel_in: _event;;
+		-> rrel_2: rrel_in: _input_arc;;
+	*);;
+	-> rrel_operators : ..agent_for_calculate_pcf_operators
+	(*
+		-> rrel_init : ..agent_for_calculate_pcf_quest_1
+		(*
+			<- searchElStr3;;
+		
+			-> rrel_1: rrel_assign: rrel_scp_var: _temp;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _quest;;
+		
+			=> nrel_goto: ..agent_for_calculate_pcf_quest_2 ;;
+		*);;
+		
+		-> ..agent_for_calculate_pcf_quest_2
+		(*
+			<- searchElStr3;;
+	
+			-> rrel_1: rrel_fixed: rrel_scp_const: question_calculate_pcf ;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+			=>nrel_then: ..agent_for_calculate_pcf_quest_3 ;;
+			=>nrel_else: ..agent_for_calculate_pcf_operator_return;;
+		*);;
+		-> ..agent_for_calculate_pcf_quest_3
+		(*
+			<- searchElStr5;;
+	
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _param1;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_1;;
+
+			=>nrel_then: ..agent_for_calculate_pcf_quest_4;;
+			=>nrel_else: ..agent_for_calculate_pcf_operator_return;;
+		*);;
+		
+		-> ..agent_for_calculate_pcf_quest_4
+			(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _param2;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_2;;
+
+			=>nrel_then: ..agent_for_calculate_pcf_quest_5 ;;
+			=>nrel_else: ..agent_for_calculate_pcf_operator_return;;
+		*);;
+		-> ..agent_for_calculate_pcf_quest_5
+		(*
+			<- genEl ;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _answer ;;
+
+			=> nrel_goto: ..agent_for_calculate_pcf_operator_1A ;;
+		*);;
+		-> ..agent_for_calculate_pcf_operator_1A
+		(*
+			<- sys_search ;;
+			
+			-> rrel_1 : rrel_fixed : rrel_scp_const : search_pcf_template_1 ;;
+			-> rrel_2 : rrel_fixed : rrel_scp_const : ...
+			(*
+				-> ...
+				(*
+					-> rrel_1: rrel_fixed: rrel_scp_const: _calories_value ;;
+					-> rrel_2: rrel_assign: rrel_scp_var: rrel_link: _new_calories_value ;;
+				*);;
+				-> ...
+				(*
+					-> rrel_1: rrel_fixed: rrel_scp_const: _proteins_value ;;
+					-> rrel_2: rrel_assign: rrel_scp_var: rrel_link: _new_proteins_value ;;
+				*);;
+			*);;
+			-> rrel_3 : rrel_fixed : rrel_scp_const : ...
+			(*
+				-> ...
+				(*
+					-> rrel_1 : rrel_fixed : rrel_scp_const : _product ;;
+					-> rrel_2 : rrel_fixed : rrel_scp_var : _param1 ;;
+				*);;
+			*);;
+
+			=> nrel_then: ..agent_for_calculate_pcf_operator_1B ;;
+			=> nrel_else: ..agent_for_calculate_pcf_operator_return ;;
+		*);;
+		-> ..agent_for_calculate_pcf_operator_1B
+		(*
+			<- sys_search ;;
+			
+			-> rrel_1 : rrel_fixed : rrel_scp_const : search_pcf_template_2 ;;
+			-> rrel_2 : rrel_fixed : rrel_scp_const : ...
+			(*
+				-> ...
+				(*
+					-> rrel_1: rrel_fixed: rrel_scp_const: _fat_value ;;
+					-> rrel_2: rrel_assign: rrel_scp_var: rrel_link: _new_fat_value ;;
+				*);;
+				-> ...
+				(*
+					-> rrel_1: rrel_fixed: rrel_scp_const: _carbohydrate_value ;;
+					-> rrel_2: rrel_assign: rrel_scp_var: rrel_link: _new_carbohydrate_value ;;
+				*);;
+			*);;
+			-> rrel_3 : rrel_fixed : rrel_scp_const : ...
+			(*
+				-> ...
+				(*
+					-> rrel_1 : rrel_fixed : rrel_scp_const : _product ;;
+					-> rrel_2 : rrel_fixed : rrel_scp_var : _param1 ;;
+				*);;
+			*);;
+
+			=> nrel_then: ..agent_for_calculate_pcf_operator_1C ;;
+			=> nrel_else: ..agent_for_calculate_pcf_operator_return ;;
+		*);;
+		-> ..agent_for_calculate_pcf_operator_1C
+		(*
+			<- searchElStr5 ;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _param2 ;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _com ;;
+			-> rrel_3: rrel_assign: rrel_scp_var: rrel_link: _param2_value ;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_value ;;
+
+			=> nrel_goto: ..agent_for_calculate_pcf_operator_2 ;;
+		*);;
+		-> ..agent_for_calculate_pcf_operator_2
+		(*
+			<- contDiv ;;
+			
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_link: _temp ;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _param2_value ;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [100] ;;
+
+			=> nrel_goto: ..agent_for_calculate_pcf_operator_3A ;;
+		*);;
+		-> ..agent_for_calculate_pcf_operator_3A
+		(*
+			<- contMult ;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_link: _result_calories ;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _temp ;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _new_calories_value ;;
+	
+			=> nrel_goto: ..agent_for_calculate_pcf_operator_3B ;;
+		*);;
+		-> ..agent_for_calculate_pcf_operator_3B
+		(*
+			<- contMult ;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_link: _result_proteins ;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _temp ;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _new_proteins_value ;;
+	
+			=> nrel_goto: ..agent_for_calculate_pcf_operator_3C ;;
+		*);;
+		-> ..agent_for_calculate_pcf_operator_3C
+		(*
+			<- contMult ;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_link: _result_fat ;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _temp ;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _new_fat_value ;;
+	
+			=> nrel_goto: ..agent_for_calculate_pcf_operator_3D ;;
+		*);;
+		-> ..agent_for_calculate_pcf_operator_3D
+		(*
+			<- contMult ;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_link: _result_carbohydrate ;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _temp ;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _new_carbohydrate_value ;;
+	
+			=> nrel_goto: ..agent_for_calculate_pcf_operator_4A ;;
+		*);;
+		-> ..agent_for_calculate_pcf_operator_4A
+		(*
+			<- genElStr5;;
+
+		        -> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _answer_node_calories;;
+            		-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: rrel_const: _com;;
+            		-> rrel_3: rrel_fixed: rrel_scp_var: rrel_link: _result_calories;;
+            		-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+            		-> rrel_5: rrel_fixed: rrel_scp_const: nrel_system_identifier;;
+
+			=> nrel_goto: ..agent_for_calculate_pcf_operator_4B ;;
+		*);;
+		-> ..agent_for_calculate_pcf_operator_4B
+		(*
+			<- genElStr5;;
+
+		        -> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _answer_node_proteins;;
+            		-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: rrel_const: _com;;
+            		-> rrel_3: rrel_fixed: rrel_scp_var: rrel_link: _result_proteins;;
+            		-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+            		-> rrel_5: rrel_fixed: rrel_scp_const: nrel_system_identifier;;
+
+			=> nrel_goto: ..agent_for_calculate_pcf_operator_4C ;;
+		*);;
+		-> ..agent_for_calculate_pcf_operator_4C
+		(*
+			<- genElStr5;;
+
+		        -> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _answer_node_fat;;
+            		-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: rrel_const: _com;;
+            		-> rrel_3: rrel_fixed: rrel_scp_var: rrel_link: _result_fat;;
+            		-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+            		-> rrel_5: rrel_fixed: rrel_scp_const: nrel_system_identifier;;
+
+			=> nrel_goto: ..agent_for_calculate_pcf_operator_4D ;;
+		*);;
+		-> ..agent_for_calculate_pcf_operator_4D
+		(*
+			<- genElStr5;;
+
+		        -> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _answer_node_carbohydrate;;
+            		-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: rrel_const: _com;;
+            		-> rrel_3: rrel_fixed: rrel_scp_var: rrel_link: _result_carbohydrate;;
+            		-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+            		-> rrel_5: rrel_fixed: rrel_scp_const: nrel_system_identifier;;
+
+			=> nrel_goto: ..agent_for_calculate_pcf_operator_5A ;;
+		*);;
+		-> ..agent_for_calculate_pcf_operator_5A
+		(*
+			<- genElStr5;;
+
+		        -> rrel_1: rrel_fixed: rrel_scp_var: _param1 ;;
+            		-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: rrel_const: _answer_com_calories;;
+            		-> rrel_3: rrel_fixed: rrel_scp_var: _answer_node_calories ;;
+            		-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _answer_arc_calories;;
+            		-> rrel_5: rrel_fixed: rrel_scp_const: nrel_consumed_calories ;;
+		
+			=> nrel_goto: ..agent_for_calculate_pcf_operator_5B ;;
+		*);;
+		-> ..agent_for_calculate_pcf_operator_5B
+		(*
+			<- genElStr5;;
+
+		        -> rrel_1: rrel_fixed: rrel_scp_var: _param1 ;;
+            		-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: rrel_const: _answer_com_proteins;;
+            		-> rrel_3: rrel_fixed: rrel_scp_var: _answer_node_proteins ;;
+            		-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _answer_arc_proteins;;
+            		-> rrel_5: rrel_fixed: rrel_scp_const: nrel_consumed_proteins ;;
+		
+			=> nrel_goto: ..agent_for_calculate_pcf_operator_5C ;;
+		*);;
+		-> ..agent_for_calculate_pcf_operator_5C
+		(*
+			<- genElStr5;;
+
+		        -> rrel_1: rrel_fixed: rrel_scp_var: _param1 ;;
+            		-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: rrel_const: _answer_com_fat;;
+            		-> rrel_3: rrel_fixed: rrel_scp_var: _answer_node_fat ;;
+            		-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _answer_arc_fat;;
+            		-> rrel_5: rrel_fixed: rrel_scp_const: nrel_consumed_fat ;;
+		
+			=> nrel_goto: ..agent_for_calculate_pcf_operator_5D ;;
+		*);;
+		-> ..agent_for_calculate_pcf_operator_5D
+		(*
+			<- genElStr5;;
+
+		        -> rrel_1: rrel_fixed: rrel_scp_var: _param1 ;;
+            		-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: rrel_const: _answer_com_carbohydrate;;
+            		-> rrel_3: rrel_fixed: rrel_scp_var: _answer_node_carbohydrate ;;
+            		-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _answer_arc_carbohydrate;;
+            		-> rrel_5: rrel_fixed: rrel_scp_const: nrel_consumed_carbohydrate ;;
+		
+			=> nrel_goto: ..agent_for_calculate_pcf_operator_6 ;;
+		*);;
+		-> ..agent_for_calculate_pcf_operator_6
+		(*
+			<- genElStr3 ;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _param1 ;;
+
+			=> nrel_goto: ..agent_for_calculate_pcf_operator_7A ;;
+		*);;
+		-> ..agent_for_calculate_pcf_operator_7A
+		(*
+			<- genElStr3 ;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _answer_com_calories ;;
+
+			=> nrel_goto: ..agent_for_calculate_pcf_operator_7B ;;
+		*);;
+		-> ..agent_for_calculate_pcf_operator_7B
+		(*
+			<- genElStr3 ;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _answer_com_proteins ;;
+
+			=> nrel_goto: ..agent_for_calculate_pcf_operator_7C ;;
+		*);;
+		-> ..agent_for_calculate_pcf_operator_7C
+		(*
+			<- genElStr3 ;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _answer_com_fat ;;
+
+			=> nrel_goto: ..agent_for_calculate_pcf_operator_7D ;;
+		*);;
+		-> ..agent_for_calculate_pcf_operator_7D
+		(*
+			<- genElStr3 ;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _answer_com_carbohydrate ;;
+
+			=> nrel_goto: ..agent_for_calculate_pcf_operator_8A ;;
+		*);;
+		-> ..agent_for_calculate_pcf_operator_8A
+		(*
+			<- genElStr3 ;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _answer_node_calories ;;
+
+			=> nrel_goto: ..agent_for_calculate_pcf_operator_8B ;;
+		*);;
+		-> ..agent_for_calculate_pcf_operator_8B
+		(*
+			<- genElStr3 ;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _answer_node_proteins ;;
+
+			=> nrel_goto: ..agent_for_calculate_pcf_operator_8C ;;
+		*);;
+		-> ..agent_for_calculate_pcf_operator_8C
+		(*
+			<- genElStr3 ;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _answer_node_fat ;;
+
+			=> nrel_goto: ..agent_for_calculate_pcf_operator_8D ;;
+		*);;
+		-> ..agent_for_calculate_pcf_operator_8D
+		(*
+			<- genElStr3 ;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _answer_node_carbohydrate ;;
+
+			=> nrel_goto: ..agent_for_calculate_pcf_operator_9A ;;
+		*);;
+		-> ..agent_for_calculate_pcf_operator_9A
+		(*
+			<- genElStr3 ;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _answer_arc_calories ;;
+
+			=> nrel_goto: ..agent_for_calculate_pcf_operator_9B ;;
+		*);;
+		-> ..agent_for_calculate_pcf_operator_9B
+		(*
+			<- genElStr3 ;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _answer_arc_proteins ;;
+
+			=> nrel_goto: ..agent_for_calculate_pcf_operator_9C ;;
+		*);;
+		-> ..agent_for_calculate_pcf_operator_9C
+		(*
+			<- genElStr3 ;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _answer_arc_fat ;;
+
+			=> nrel_goto: ..agent_for_calculate_pcf_operator_9D ;;
+		*);;
+		-> ..agent_for_calculate_pcf_operator_9D
+		(*
+			<- genElStr3 ;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _answer_arc_carbohydrate ;;
+
+			=> nrel_goto: ..agent_for_calculate_pcf_operator_10A ;;
+		*);;
+		-> ..agent_for_calculate_pcf_operator_10A
+		(*
+			<- genElStr3 ;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_consumed_calories ;;
+
+			=> nrel_goto: ..agent_for_calculate_pcf_operator_10B ;;
+		*);;
+		-> ..agent_for_calculate_pcf_operator_10B
+		(*
+			<- genElStr3 ;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_consumed_proteins ;;
+
+			=> nrel_goto: ..agent_for_calculate_pcf_operator_10C ;;
+		*);;
+		-> ..agent_for_calculate_pcf_operator_10C
+		(*
+			<- genElStr3 ;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_consumed_fat ;;
+
+			=> nrel_goto: ..agent_for_calculate_pcf_operator_10D ;;
+		*);;
+		-> ..agent_for_calculate_pcf_operator_10D
+		(*
+			<- genElStr3 ;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_consumed_carbohydrate ;;
+
+			=> nrel_goto: ..agent_for_calculate_pcf_operator_11 ;;
+		*);;
+		-> ..agent_for_calculate_pcf_operator_11 
+		(*
+			<- genElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _com6;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc12;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+
+			=> nrel_goto: ..agent_for_calculate_pcf_operator_return ;;
+		*);;
+		-> ..agent_for_calculate_pcf_operator_return
+		(*
+			<- return ;;
+		*);;
+	*);;
+*);; 
