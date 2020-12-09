@@ -1,0 +1,71 @@
+concept_albumin<-sc_node_not_relation;;
+concept_albumin => nrel_main_idtf: [альбумин](*<- lang_ru;;*);;
+concept_albumin => nrel_main_idtf: [albumin](*<- lang_en;;*);;
+
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_albumin;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Альбумин — простой растворимый в воде белкок, умеренно растворимый в концентрированных растворах соли и свёртывающийся при нагревании (денатурация белка).](*<- lang_ru;;*);;
+	    -> [Albumin - simple water-soluble protein, sparingly soluble in concentrated salt solutions and clotting when heated (protein denaturation).](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(альбумин)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(albumin)](*<- lang_ru;;*);;
+   
+*);;
+
+
+
+
+
+concept_albumin<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://картинки/albumin.png"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;
+
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_albumin;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Физические, химические и биологические свойства:
+
+    кроме воды растворимы в солевых растворах, кислотах и щелочах;
+    при гидролизе распадаются на различные аминокислоты;
+    альбумины могут быть получены в кристаллическом виде;
+    проявляют высокую связывающую способность по отношению к различным низкомолекулярным соединениям, содержат гидрофильные и липофильные связи.](*<- lang_ru;;*);;
+       -> [Physical, chemical and biological properties:
+
+    except for water, they are soluble in saline solutions, acids and alkalis;
+    when hydrolyzed, they break down into various amino acids;
+    albumin can be obtained in crystalline form;
+    They show a high binding capacity in relation to various low molecular weight compounds, contain hydrophilic and lipophilic bonds.](*<- lang_en;;*);;
+
+ *);;
+    => nrel_main_idtf: [Утв.(альбумин)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(albumin)](*<- lang_ru;;*);;
+*);;
+
+
+concept_albumin => nrel_inclusion:
+	concept_albumin_concentration;;
+	
+
+
+
+
+
+

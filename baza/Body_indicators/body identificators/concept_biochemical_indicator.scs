@@ -1,0 +1,51 @@
+concept_biochemical_indicator <- sc_node_not_relation;;
+
+concept_biochemical_indicator => nrel_main_idtf: [биохимический показатель] (* <- lang_ru;; *);;
+concept_biochemical_indicator => nrel_main_idtf: [biochemical indicator] (* <- lang_en;; *);;
+
+d_concept_biochemical_indicator <- definition;;
+
+d_concept_biochemical_indicator => nrel_main_idtf: [Опр.(биохимический показатель)] (* <- lang_ru;; *);;
+d_concept_biochemical_indicator => nrel_main_idtf: [Def.(biochemical indicator)] (* <- lang_en;; *);;
+
+d_concept_biochemical_indicator -> rrel_key_sc_element: concept_biochemical_indicator;;
+d_concept_biochemical_indicator <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Биохимический показатель — характеризует содержание химических элементов в организме.]
+		(* <- lang_ru;; *);;
+	*);;
+
+parameter => nrel_inclusion: concept_biochemical_indicator;;
+
+concept_biochemical_indicator=>nrel_inclusion:
+	
+	
+	
+	concept_blood_sugar_level;
+
+	concept_erythrocyte_count;
+	concept_leukocyte_count;
+	concept_platelet_count;
+	
+	concept_non_protein_nitrogen;
+	
+	
+	
+	concept_atherogenic_coefficient;
+	concept_bilirubin_concentration;
+	concept_albumin_concentration;
+	
+	concept_gematokrit;
+	
+	concept_gamma_GT_concentration;
+	concept_phospholipids_concentration;
+	concept_alpha_amylase_concentration;
+	concept_lipase_concentration;
+	
+	concept_aspartate_aminotransferase_concentration;;
+
+	
+	
+	

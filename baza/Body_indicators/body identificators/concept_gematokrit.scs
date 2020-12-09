@@ -1,0 +1,21 @@
+concept_gematokrit <- sc_node_not_relation;;
+
+concept_gematokrit => nrel_main_idtf: [гематокрит] (* <- lang_ru;; *);;
+concept_gematokrit => nrel_main_idtf: [gematokrit] (* <- lang_en;; *);;
+
+d_concept_gematokrit <- definition;;
+
+d_concept_gematokrit => nrel_main_idtf: [Опр.(гематокрит)] (* <- lang_ru;; *);;
+d_concept_gematokrit => nrel_main_idtf: [Def.(gematokrit)] (* <- lang_en;; *);;
+ 
+d_concept_gematokrit -> rrel_key_sc_element: concept_gematokrit;;
+d_concept_gematokrit <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Гематокрит — объем красных кровяных клеток в крови.]
+		(* <- lang_ru;; *);;
+	*);;
+	
+
+ parameter -> concept_gematokrit;;

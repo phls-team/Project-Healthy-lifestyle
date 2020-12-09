@@ -1,0 +1,22 @@
+concept_platelet_count <- sc_node_not_relation;;
+
+concept_platelet_count => nrel_main_idtf: [число тромбоцитов] (* <- lang_ru;; *);;
+concept_platelet_count => nrel_main_idtf: [platelet count] (* <- lang_en;; *);;
+
+d_concept_platelet_count <- definition;;
+
+d_concept_platelet_count => nrel_main_idtf: [Опр.(concept_platelet_count)] (* <- lang_ru;; *);;
+d_concept_platelet_count => nrel_main_idtf: [Def.(erythrocyte count)] (* <- lang_en;; *);;
+ 
+d_concept_platelet_count -> rrel_key_sc_element: concept_platelet_count;;
+d_concept_platelet_count <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Число тромбоцитов - количество клеток тромбоцитов в крови человека.]
+		(* <- lang_ru;; *);;
+	*);;
+
+parameter -> concept_platelet_count;;
+
+ 

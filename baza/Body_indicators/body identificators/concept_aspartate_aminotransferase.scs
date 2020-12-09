@@ -1,0 +1,59 @@
+concept_aspartate_aminotransferase <-sc_node_not_relation;;
+concept_aspartate_aminotransferase => nrel_main_idtf: [АСТ](*<- lang_ru;;*);;
+concept_aspartate_aminotransferase => nrel_main_idtf: [ACT](*<- lang_en;;*);;
+
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_aspartate_aminotransferase;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Аспартатаминотрансфераза — фермент, участвующий в обмене аминокислот, эндогенный фермент из группы трансфераз, подгруппы аминотрансфераз (трансаминаз).](*<- lang_ru;;*);;
+	    -> [Aspartate-aminotransferase - enzyme involved in the exchange of amino acids, endogenous enzyme from the group of transferases, subgroup of aminotransferases (transaminases).](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Аспартатаминотрансфераза)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(Aspartate-aminotransferase)](*<- lang_ru;;*);;
+   
+*);;
+
+
+
+
+
+concept_aspartate_aminotransferase<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://картинки/ACT.png"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;
+
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_aspartate_aminotransferase;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [История изучения:
+
+    Аспартатаминотрансфераза стала первым белком, аминокислотную последовательность (т.е. первичную структуру) которого установили советские учёные.](*<- lang_ru;;*);;
+       -> [Study history:
+
+    Aspartate aminotransferase became the first protein, the amino acid sequence (i.e., the primary structure) of which was established by Soviet scientists.](*<- lang_en;;*);;
+
+ *);;
+    => nrel_main_idtf: [Утв.(АСТ)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(ACT)](*<- lang_ru;;*);;
+*);;
+
+
+concept_aspartate_aminotransferase => nrel_inclusion:
+	concept_aspartate_aminotransferase_concentration;;
+

@@ -1,0 +1,22 @@
+concept_triglyceride_level <- sc_node_not_relation;;
+
+concept_erythrocyte_count => nrel_main_idtf: [число эритроцитов] (* <- lang_ru;; *);;
+concept_erythrocyte_count => nrel_main_idtf: [erythrocyte count] (* <- lang_en;; *);;
+
+d_concept_erythrocyte_count <- definition;;
+
+d_concept_erythrocyte_count => nrel_main_idtf: [Опр.(число эритроцитов)] (* <- lang_ru;; *);;
+d_concept_erythrocyte_count => nrel_main_idtf: [Def.(erythrocyte count)] (* <- lang_en;; *);;
+ 
+d_concept_erythrocyte_count -> rrel_key_sc_element: concept_erythrocyte_count;;
+d_concept_erythrocyte_count <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Число эритроцитов - количество клеток эритроцитов в крови человека.]
+		(* <- lang_ru;; *);;
+	*);;
+
+parameter -> concept_erythrocyte_count;;
+
+ 

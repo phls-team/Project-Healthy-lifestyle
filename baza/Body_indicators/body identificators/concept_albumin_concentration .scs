@@ -1,0 +1,22 @@
+concept_albumin_concentration <- sc_node_not_relation;;
+
+concept_albumin_concentration => nrel_main_idtf: [концентрация альбумина] (* <- lang_ru;; *);;
+concept_albumin_concentration => nrel_main_idtf: [albumin concentration] (* <- lang_en;; *);;
+
+d_concept_albumin_concentration <- definition;;
+
+d_concept_albumin_concentration => nrel_main_idtf: [Опр.(концентрация альбумина)] (* <- lang_ru;; *);;
+d_concept_albumin_concentration => nrel_main_idtf: [Def.(albumin concentration)] (* <- lang_en;; *);;
+ 
+d_concept_albumin_concentration -> rrel_key_sc_element: concept_albumin_concentration;;
+d_concept_albumin_concentration <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Концентрация альбумина - содержание альбумина в крови человека.]
+		(* <- lang_ru;; *);;
+	*);;
+
+parameter -> concept_albumin_concentration;;
+
+ 

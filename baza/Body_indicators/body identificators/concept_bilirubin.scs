@@ -1,0 +1,65 @@
+concept_bilirubin<-sc_node_not_relation;;
+concept_bilirubin => nrel_main_idtf: [билирубин](*<- lang_ru;;*);;
+concept_bilirubin => nrel_main_idtf: [bilirubin](*<- lang_en;;*);;
+
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_bilirubin;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Билирубин — жёлчный пигмент, один из главных компонентов жёлчи в организме человека и животных.](*<- lang_ru;;*);;
+	    -> [Bilirubin is a bile pigment, one of the main components of bile in humans and animals.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(билирубин)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(bilirubin)](*<- lang_ru;;*);;
+   
+*);;
+
+
+
+
+
+concept_bilirubin<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://картинки/bilirubin.png"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;
+
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_bilirubin;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Физико-химические свойства:
+
+    Чистый билирубин представляет собой коричневые ромбические кристаллы;
+    Нерастворим в воде, трудно растворим в диэтиловом эфире, глицерине, в этаноле. Растворим в бензоле, хлороформе, хлорбензоле и разведённых растворах щёлочей; 
+    Билирубин поглощает синий свет с длиной волны 450—460 нм, химически трансформируясь в водорастворимую форму — люмирубин.](*<- lang_ru;;*);;
+       -> [Physicochemical properties:
+
+    Pure bilirubin is brown rhombic crystals;
+    Insoluble in water, it is difficult to dissolve in diethyl ether, glycerin, ethanol. Let's dissolve in benzene, chloroform, chlorobenzene and diluted alkali solutions;
+    Bilirubin absorbs blue light with a wavelength of 450-460 nm, chemically transforming into a water-soluble form - lumirubin.](*<- lang_en;;*);;
+
+ *);;
+    => nrel_main_idtf: [Утв.(билирубин)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(bilirubin)](*<- lang_ru;;*);;
+*);;
+
+
+concept_bilirubin => nrel_inclusion:
+	concept_bilirubin_concentration;;
+	
+	
+

@@ -1,0 +1,22 @@
+concept_alpha_amylase_concentration <- sc_node_not_relation;;
+
+concept_alpha_amylase_concentration => nrel_main_idtf: [концентрация альфа-амилазы] (* <- lang_ru;; *);;
+concept_alpha_amylase_concentration => nrel_main_idtf: [alpha amylase concentration] (* <- lang_en;; *);;
+
+d_concept_alpha_amylase_concentration <- definition;;
+
+d_concept_alpha_amylase_concentration => nrel_main_idtf: [Опр.(концентрация альфа-амилазы)] (* <- lang_ru;; *);;
+d_concept_alpha_amylase_concentration => nrel_main_idtf: [Def.(alpha amylase concentration)] (* <- lang_en;; *);;
+ 
+d_concept_alpha_amylase_concentration -> rrel_key_sc_element: concept_alpha_amylase_concentration;;
+d_concept_alpha_amylase_concentration <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Концентрация альфа-амилазы - содержание альфа-амилазы в крови человека.]
+		(* <- lang_ru;; *);;
+	*);;
+
+parameter -> concept_alpha_amylase_concentration;;
+
+

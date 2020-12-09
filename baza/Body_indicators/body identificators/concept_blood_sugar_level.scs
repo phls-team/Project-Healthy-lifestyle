@@ -1,0 +1,21 @@
+concept_blood_sugar_level <- sc_node_not_relation;;
+
+concept_blood_sugar_level => nrel_main_idtf: [уровень сахара в крови] (* <- lang_ru;; *);;
+concept_blood_sugar_level => nrel_main_idtf: [blood sugar level] (* <- lang_en;; *);;
+
+d_concept_blood_sugar_level <- definition;;
+
+d_concept_blood_sugar_level => nrel_main_idtf: [Опр.(уровень сахара в крови)] (* <- lang_ru;; *);;
+d_concept_blood_sugar_level => nrel_main_idtf: [Def.(blood sugar level)] (* <- lang_en;; *);;
+
+d_concept_blood_sugar_level -> rrel_key_sc_element: concept_blood_sugar_level;;
+d_concept_blood_sugar_level <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Уровень сахара в крови - это жизненно важный показатель, который необходимо контролировать при диабете.]
+		(* <- lang_ru;; *);;
+	*);;
+
+
+parameter -> concept_blood_sugar_level;;

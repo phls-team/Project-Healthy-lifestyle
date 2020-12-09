@@ -1,0 +1,23 @@
+concept_lipase_concentration <- sc_node_not_relation;;
+
+concept_lipase_concentration => nrel_main_idtf: [концентрация липазы] (* <- lang_ru;; *);;
+concept_lipase_concentration => nrel_main_idtf: [lipase concentration] (* <- lang_en;; *);;
+
+d_concept_lipase_concentration <- definition;;
+
+d_concept_lipase_concentration => nrel_main_idtf: [Опр.(концентрация липазы)] (* <- lang_ru;; *);;
+d_concept_lipase_concentration => nrel_main_idtf: [Def.(lipase concentration)] (* <- lang_en;; *);;
+ 
+d_concept_lipase_concentration -> rrel_key_sc_element: concept_lipase_concentration;;
+d_concept_lipase_concentration <= nrel_sc_text_translation: 
+	...
+	(*
+	-> rrel_example: 
+		[Концентрация липазы - содержание липазы в крови человека.]
+		(* <- lang_ru;; *);;
+	*);;
+
+parameter -> concept_lipase_concentration;;
+
+
+
