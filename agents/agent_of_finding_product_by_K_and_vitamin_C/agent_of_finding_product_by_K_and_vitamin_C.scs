@@ -1,0 +1,236 @@
+agent_of_finding_product_by_K_and_vitamin_C
+=> nrel_main_idtf:
+	[агентная scp-программа поиска продуктов по содержанию витамина С и калия] (* <- lang_ru;; *);
+	[agent scp-program of finding product by vitamin C and potassium] (* <- lang_en;; *);
+	<- agent_scp_program;;
+
+scp_program -> agent_of_finding_product_by_K_and_vitamin_C
+	(*
+	-> rrel_params: .agent_of_finding_product_by_K_and_vitamin_C_params 
+		(*
+		-> rrel_1: rrel_in: _event;;
+		-> rrel_2: rrel_in: _input_arc;;
+		*);;
+
+	-> rrel_operators: .agent_of_finding_product_by_K_and_vitamin_C_operator_set 
+		(*
+		-> rrel_init: .agent_of_finding_product_by_K_and_vitamin_C_operator1A 
+			(*
+		  	<- searchElStr3;;
+		  	-> rrel_1: rrel_assign: rrel_scp_var: _temp;;
+		  	-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _quest;;
+
+		  	=> nrel_goto: .agent_of_finding_product_by_K_and_vitamin_C_operator1B;;
+			*);;
+			// -> .agent_of_finding_product_by_K_and_vitamin_C_operatorW 
+			// (*
+			// <- printNl;;
+
+			// -> rrel_1: rrel_fixed: rrel_scp_const: [jjjjjjjjjjjjjjj];;
+
+			// => nrel_goto: .agent_of_finding_product_by_K_and_vitamin_C_operator1B;;
+			// *);;  
+
+		-> .agent_of_finding_product_by_K_and_vitamin_C_operator1B 
+			(*
+		  	<- searchElStr3;;
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: action_of_finding_product_by_K_and_vitamin_C;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+		  	=> nrel_then: .agent_of_finding_product_by_K_and_vitamin_C_operator1C;;
+		  	=> nrel_else: .agent_of_finding_product_by_K_and_vitamin_C_operator_return;;
+			*);;
+
+		-> .agent_of_finding_product_by_K_and_vitamin_C_operator1C
+			(*
+		 	<- searchElStr5;;
+
+		 	-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+		 	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		 	-> rrel_3: rrel_assign: rrel_scp_var: _param1;;
+            		-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+		 	-> rrel_5: rrel_fixed: rrel_scp_const: rrel_1;;
+
+			=> nrel_then: .agent_of_finding_product_by_K_and_vitamin_C_operator1D;;
+			=> nrel_else: .agent_of_finding_product_by_K_and_vitamin_C_operator_return;;
+			*);;
+// -> .agent_of_finding_product_by_K_and_vitamin_C_operatorS 
+// 			(*
+// 			<- printNl;;
+
+// 			-> rrel_1: rrel_fixed: rrel_scp_const: [Nnssssssssssssssss];;
+
+// 			=> nrel_goto: .agent_of_finding_product_by_K_and_vitamin_C_operator1D;;
+// 			*);;  
+		-> .agent_of_finding_product_by_K_and_vitamin_C_operator1D
+			(*
+		 	<- searchElStr5;;
+
+		 	-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+		 	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		 	-> rrel_3: rrel_assign: rrel_scp_var: _param2;;
+            		-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+		 	-> rrel_5: rrel_fixed: rrel_scp_const: rrel_2;;
+
+			=> nrel_then: .agent_of_finding_product_by_K_and_vitamin_C_operator2A;;
+			=> nrel_else: .agent_of_finding_product_by_K_and_vitamin_C_operator_return;;
+			*);;	 	
+
+		-> .agent_of_finding_product_by_K_and_vitamin_C_operator2A 
+			(*
+			<- genEl;;
+
+			-> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _answer;;
+
+			=> nrel_goto: .agent_of_finding_product_by_K_and_vitamin_C_operator2B;;
+			*);;
+
+		-> .agent_of_finding_product_by_K_and_vitamin_C_operator2B
+			(*
+			<- sys_search;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: [* concept_product _=> nrel_inclusion:: _a;; 
+								  _a _=> nrel_K_content:: _d;; 
+								  _a _=> nrel_vitamin_C_content:: _h;; *];;
+			-> rrel_2: rrel_fixed: rrel_scp_const: ...;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: ... (* -> ... (* -> rrel_1: rrel_fixed: rrel_scp_const: _d;;
+										-> rrel_2: rrel_fixed: rrel_scp_var: _param1;; *);;
+								      -> ... (* -> rrel_1: rrel_fixed: rrel_scp_const: _h;;
+												-> rrel_2: rrel_fixed: rrel_scp_var: _param2;; *);;
+									
+								   *);;
+			-> rrel_4: rrel_fixed: rrel_scp_var: _answer;;
+
+			=> nrel_then: .agent_of_finding_product_by_K_and_vitamin_C_operator2BC;;
+			=> nrel_else: .agent_of_finding_product_by_K_and_vitamin_C_operator_return;;			
+			*);;
+
+		-> .agent_of_finding_product_by_K_and_vitamin_C_operator2BC 
+			(*
+			<- printEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+
+			=> nrel_goto: .agent_of_finding_product_by_K_and_vitamin_C_operator2C;;
+			*);;  
+
+		-> .agent_of_finding_product_by_K_and_vitamin_C_operator2C
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var:rrel_const: _node;;
+
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer;;
+
+			=> nrel_goto: .agent_of_finding_product_by_K_and_vitamin_C_operator3A;; 
+			*);;
+  
+		-> .agent_of_finding_product_by_K_and_vitamin_C_operator3A
+			(*
+			<- genElStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _param1;;
+
+		  	=> nrel_goto: .agent_of_finding_product_by_K_and_vitamin_C_operator3B;;
+			*);;
+			
+		-> .agent_of_finding_product_by_K_and_vitamin_C_operator3B
+			(*
+			<- genElStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _param2;;
+
+		  	=> nrel_goto: .agent_of_finding_product_by_K_and_vitamin_C_operator3D;;
+			*);;
+
+		// -> .agent_of_finding_product_by_K_and_vitamin_C_operator3C
+		// 	(*
+		// 	<- genElStr3;;
+
+		//   	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+		//   	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		//   	-> rrel_3: rrel_fixed: rrel_scp_const: concept_product;;
+
+		//   	=> nrel_goto: .agent_of_finding_product_by_K_and_vitamin_C_operator3D;;
+		// 	*);;
+			
+		-> .agent_of_finding_product_by_K_and_vitamin_C_operator3D
+			(*
+			<- genElStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_const: nrel_vitamin_C_content;;
+
+		  	=> nrel_goto: .agent_of_finding_product_by_K_and_vitamin_C_operator3E;;
+			*);;
+
+		-> .agent_of_finding_product_by_K_and_vitamin_C_operator3E
+			(*
+			<- genElStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_const: nrel_K_content;;
+
+		  	=> nrel_goto: .agent_of_finding_product_by_K_and_vitamin_C_operator3F;;
+			*);;
+			
+		-> .agent_of_finding_product_by_K_and_vitamin_C_operator3F
+			(*
+			<- genElStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_const: concept_product;;
+
+		  	=> nrel_goto: .agent_of_finding_product_by_K_and_vitamin_C_operator3K;;
+			*);;
+-> .agent_of_finding_product_by_K_and_vitamin_C_operator3K
+			(*
+			<- genElStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_const: nrel_inclusion;;
+
+		  	=> nrel_goto: .agent_of_finding_product_by_K_and_vitamin_C_operator3G;;
+			*);;
+		-> .agent_of_finding_product_by_K_and_vitamin_C_operator3G
+			(*
+			<- genElStr5;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+		  	-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
+		  	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+		  	-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+
+		  	=> nrel_goto: .agent_of_finding_product_by_K_and_vitamin_C_operator_return;;
+			*);;
+
+
+			// -> .agent_of_finding_product_by_K_and_vitamin_C_operatorS2
+			// (*
+			// <- printNl;;
+
+			// -> rrel_1: rrel_fixed: rrel_scp_const: [Nnssssssssssssssss];;
+
+			// => nrel_goto: .agent_of_finding_product_by_K_and_vitamin_C_operator_return;;
+			// *);;  
+
+
+		-> .agent_of_finding_product_by_K_and_vitamin_C_operator_return 
+			(*
+		  	<- return;;
+			*);;
+		*);;
+	*);;
