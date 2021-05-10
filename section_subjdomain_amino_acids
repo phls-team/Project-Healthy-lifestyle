@@ -1,0 +1,134 @@
+section_subject_domain_of_amino_acids
+=> nrel_main_idtf:
+	[Раздел. Предметная область Аминокислот]
+	(* <- lang_ru;; *);
+	[Section. Subject domain of Amino acids]
+	(* <- lang_en;; *);;
+
+
+
+section_subject_domain_of_amino_acids<=nrel_section_decomposition:
+    {
+    section_subject_domain_of_alpha_amino_acids;
+    section_subject_domain_of_beta_amino_acids;
+    section_subject_domain_of_gamma_amino_acids;
+    section_subject_domain_of_delta_amino_acids
+    };;
+
+
+section_subject_domain_of_amino_acids->rrel_key_sc_element:
+    nrel_neurotransmitter_transport;
+    nrel_biosynthesis;
+    concept_carbon;
+    concept_hydrogen;
+    concept_oxygen;
+    concept_nitrogen;;
+
+subject_domain_of_amino_acids
+=> nrel_main_idtf:
+	[Предметная область Аминокислот]
+	(* <- lang_ru;; *);
+	[Subject domain of Amino acids]
+	(* <- lang_en;; *);
+<- subject_domain;
+-> rrel_maximum_studied_object_class: acids;
+-> rrel_not_maximum_studied_object_class:
+    concept_essential_amino_acids;
+    concept_semi_essential_amino_acids;
+    concept_non_essential_amino_acids;;
+
+
+
+amino_acids<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Аминокислоты]
+	(* <- lang_ru;; *);
+	[Amino acids]
+	(* <- lang_en;; *);
+<= nrel_basic_decomposition:
+	{
+    concept_amino_functional_group;
+    concept_carboxyl_functional_group
+	};
+=> nrel_inclusion: concept_proteins; concept_peptides;;
+
+
+concept_essential_amino_acids
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[незамениемые аминокислоты]
+	(* <- lang_ru;; *);
+	[essential amino acids]
+	(* <- lang_en;; *);
+
+=> nrel_inclusion: concept_food_source;
+
+
+=>nrel_private_subject_domain: 
+    {
+    subject_domain_of_isoleucine;
+    subject_domain_of_lysine;
+    subject_domain_of_threonine
+    };
+
+-> rrel_explored_relation :
+    {
+    nrel_daily_subsistence;
+	nrel_role_in_organism
+	};
+
+
+
+concept_semi_essential_amino_acids
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[условно заменимые аминокислоты]
+	(* <- lang_ru;; *);
+	[semi essential amino acids]
+	(* <- lang_en;; *);
+
+=> nrel_inclusion: concept_essential_amino_acids_source;
+
+
+=>nrel_private_subject_domain: 
+    {
+    subject_domain_of_arginine;
+    subject_domain_of_histidine
+    };
+
+-> rrel_explored_relation :
+    {
+    nrel_daily_subsistence;
+	nrel_role_in_organism
+	};
+
+
+
+concept_non_essential_amino_acids
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[заменимые аминокислоты]
+	(* <- lang_ru;; *);
+	[non essential amino acids]
+	(* <- lang_en;; *);
+
+=> nrel_inclusion: concept_organism_source;
+
+=> nrel_decomposition:{
+	concept_amino_acids;
+	concept_metabolism
+};
+
+
+=>nrel_private_subject_domain: 
+    {
+    subject_domain_of_alanine;
+    subject_domain_of_tyrosine;
+    subject_domain_of_proline
+    };
+
+-> rrel_explored_relation :
+    {
+    nrel_daily_subsistence;
+	nrel_role_in_organism
+	};

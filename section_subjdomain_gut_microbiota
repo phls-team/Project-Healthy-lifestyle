@@ -1,0 +1,104 @@
+section_subject_domain_of_gut_microbiome
+=> nrel_main_idtf:
+	[Раздел. Предметная область Кишечной микрофлоры]
+	(* <- lang_ru;; *);
+	[Section. Subject domain of Gut Microbiome]
+	(* <- lang_en;; *);;
+
+
+
+section_subject_domain_of_gut_microbiome<=nrel_section_decomposition:
+    {
+    section_subject_domain_of_bacteriome;
+    section_subject_domain_of_mycobiome;
+    section_subject_domain_of_digestive_tract;
+    section_subject_domain_of_virome
+    };;
+
+
+section_subject_domain_of_gut_microbiome->rrel_key_sc_element:
+    nrel_composition;
+    nrel_ variation;
+    concept_bacteria;
+    concept_archaea;
+    concept_fungi;;
+    
+
+subject_domain_of_gut_microbiome
+=> nrel_main_idtf:
+	[Предметная область Кишечной микрофлоры]
+	(* <- lang_ru;; *);
+	[Subject domain of Gut microbiome]
+	(* <- lang_en;; *);
+<- subject_domain;
+-> rrel_maximum_studied_object_class: concept_bacteria;
+-> rrel_not_maximum_studied_object_class:
+    concept_enzymes;
+    concept_lactose;
+    concept_biotin;;
+
+
+
+gut_microbiome<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Кишечная микрофлора]
+	(* <- lang_ru;; *);
+	[Gut microbiome]
+	(* <- lang_en;; *);
+<= nrel_basic_decomposition:
+	{
+    concept_probiotics;
+    concept_prebiotics;
+    concept_bacteriome
+	};
+=> nrel_inclusion: concept_microorganisms; concept_gut_flora;;
+
+
+concept_probiotics
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Пробиотики]
+	(* <- lang_ru;; *);
+	[Probiotics]
+	(* <- lang_en;; *);
+
+=> nrel_inclusion: concept_fermented_food;
+
+
+=>nrel_private_subject_domain: 
+    {
+    subject_domain_of_lactobacillus;
+    subject_domain_of_bifidobacteria
+    };
+
+-> rrel_explored_relation :
+    {
+    nrel_daily_subsistence;
+	nrel_role_in_organism
+	};
+
+
+
+concept_prebiotics
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Пребиотики]
+	(* <- lang_ru;; *);
+	[Prebiotics]
+	(* <- lang_en;; *);
+
+=> nrel_inclusion: concept_fibers;
+
+
+=>nrel_private_subject_domain: 
+    {
+    subject_domain_of_inulin;
+    subject_domain_of_fructo-oligosaccharides;
+    subject_domain_of_galacto-oligosaccharides
+    };
+
+-> rrel_explored_relation :
+    {
+    nrel_daily_subsistence;
+	nrel_role_in_organism
+	};
