@@ -1,0 +1,106 @@
+concept_ultrasound_diagnostics=>nrel_idtf:[ultrasound diagnostics] 
+	(*
+		<-lang_en;;
+	*);;
+concept_ultrasound_diagnostics=>nrel_idtf:[ультразвуковая диагностика]
+	(*
+		<-lang_ru;;	
+	*);;
+concept_ultrasound_diagnostics=>nrel_main_idtf:[ультразвуковая диагностика]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+concept_ultrasound_diagnostics<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр.(ультразвуковая диагностика)] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->[Ультразвуковая диагностика - распознавание патологических изменений отдельных органов и систем с помощью методов дистантного ультразвукового исследования.](* <- lang_ru;; *);;
+	*);;
+	*);;
+
+
+
+concept_ultrasound_diagnostics<-rrel_key_sc_element:...
+    (*
+        <-illustration;;
+        <=nrel_sc_text_translation:...
+    (*
+        ->rrel_example:
+        "file://images/ultrasound_diagnostics.png"
+    (*
+        =>nrel_format:format_png;;
+    *);;
+    *);;
+    *);;
+
+
+
+
+concept_ultrasound_diagnostics<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 1. Принцип работы ультразвуковой диагностики](* <- lang_ru;; *);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Ультразвуковая диагностика основана на принципе эхолокации (излучении зондирующего импульса ультразвука и приеме сигналов, отраженных от поверхностей раздела тканевых сред, обладающих различными акустическими свойствами). Методы У. д. дополняют рентгенодиагностику, компьютерную томографию и радиоизотопную диагностику при распознавании заболеваний, дифференциальной диагностике, наблюдении за динамикой патологического процесса и оценке результатов лечения.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_ultrasound_diagnostics<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 2. Использование ультразвуковой диагностики в медицине](* <- lang_ru;; *);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Использование методов ультразвуковой диагностики позволяет получить важную диагностическую информацию о состоянии различных органов, напр, печени, поджелудочной железы, селезенки, почек, мочевого пузыря, предстательной железы, надпочечников, щитовидной железы и др. ]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_ultrasound_diagnostics <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 3. Подготовка к исследованию](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Пациент не должен пить и есть в течение 8 ч перед исследованием. Если жидкость необходима для предот­вращения дегидратации, можно давать пациенту только воду. При острой симптоматике исследование можно проводить без подготовки. Детям, если позволяют клинические условия, пища и вода не даются в течение 3 ч до исследования.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_ultrasound_diagnostics <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 4. Противопоказания](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[УЗД не имеет противопоказаний. Ее назначают беременным женщинам для оценки состояния плода. Также ее используют при тяжелом состоянии пациентов, металлических имплантатах в теле, разных состояниях, требующих немедленного врачебного вмешательства.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_ultrasound_diagnostics=>nrel_inclusion:concept_check_up;;

@@ -1,0 +1,92 @@
+concept_lymphatic_drainage=>nrel_idtf:[lymphatic drainage] 
+	(*
+		<-lang_en;;
+	*);;
+concept_lymphatic_drainage=>nrel_idtf:[лимфодренаж]
+	(*
+		<-lang_ru;;	
+	*);;
+concept_lymphatic_drainage=>nrel_main_idtf:[лимфодренаж]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+concept_lymphatic_drainage<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр.(лимфодренаж)] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->[Лимфодренаж - метод физиотерапии, выполняемый с целью улучшения оттока венозной крови и лимфатической жидкости.](* <- lang_ru;; *);;
+	*);;
+	*);;
+
+
+
+concept_lymphatic_drainage<-rrel_key_sc_element:...
+    (*
+        <-illustration;;
+        <=nrel_sc_text_translation:...
+    (*
+->rrel_example_1:
+"file://images/lymphatic_drainage.png"
+(*
+        =>nrel_format:format_png;;
+    *);;
+    *);;
+    *);;
+
+
+
+concept_lymphatic_drainage<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 1. Классификация методов лимфодренажа](* <- lang_ru;; *);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[По способу воздействия: мануальный и аппаратный; по глубине воздействия: поверхностный и глубокий; по площади воздействия: зональный и общий.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_lymphatic_drainage<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 2. Противопоказаниями](* <- lang_ru;; *);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Противопоказаниями к выполнению лимфодренажа являются туберкулёз, сахарный диабет, бронхиальная астма, хроническая почечная недостаточность. Процедуру не выполняют после операции ваготомии, при склонности к тромбообразованию, в период беременности.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_lymphatic_drainage <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 3. Подготовка к процедуре](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[К процедуре лимфодренажа не нужно специально готовиться. Однако есть ряд условий, которые желательно соблюдать. Так, в течение всего курса нежелательно употреблять алкоголь. Важно следить за питанием и ограничить перед сном количество выпиваемой жидкости. Процедуру желательно проводить в вечернее время, спустя несколько часов после приема пищи.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_lymphatic_drainage=>nrel_inclusion:concept_prophylaxy;;
+concept_lymphatic_drainage=>nrel_inclusion:concept_COVID19_rehab;;

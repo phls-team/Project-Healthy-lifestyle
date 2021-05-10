@@ -1,0 +1,104 @@
+concept_biopsy=>nrel_idtf:[biopsy] 
+	(*
+		<-lang_en;;
+	*);;
+concept_biopsy=>nrel_idtf:[биопсия]
+	(*
+		<-lang_ru;;	
+	*);;
+concept_biopsy=>nrel_main_idtf:[биопсия]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+concept_biopsy<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр.(биопсия)] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->[Биопсия - метод исследования, при котором проводится прижизненное взятие клеток или тканей (биоптата) из организма с диагностической или исследовательской целью.](* <- lang_ru;; *);;
+	*);;
+	*);;
+
+
+
+concept_biopsy<-rrel_key_sc_element:...
+    (*
+        <-illustration;;
+        <=nrel_sc_text_translation:...
+    (*
+->rrel_example_1:
+"file://images/biopsy.png"
+(*
+        =>nrel_format:format_png;;
+    *);;
+    *);;
+    *);;
+
+
+
+concept_biopsy<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 1. Цели биопсии](* <- lang_ru;; *);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Биопсия — наиболее достоверный метод исследования в случае необходимости установления клеточного состава ткани. Взятие тканей и последующее их исследование под микроскопом позволяет определить точный клеточный состав исследуемого материала.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_biopsy<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 2. Показания к проведению биопсии](* <- lang_ru;; *);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Выполнение биопсии требуется при подозрении на заболевание, диагноз которого не может быть установлен достоверно или полноценно с помощью других методов исследования. Традиционно такими заболеваниями являются онкологические. Однако сегодня биопсия широко применяется в диагностике не опухолевых заболеваний. Прежде всего, в гастроэнтерологии и гинекологии.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_biopsy <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 3. Противопоказания](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Противопоказания к проведению биопсии: наличие патологий крови и проблем, связанных с кровесвертываемостью; непереносимость некоторых препаратов; хроническая недостаточность миокарда.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_biopsy <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 4. Уход после процедуры](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[После биопсического исследования рекомендуется физический покой. В течение нескольких дней после процедуры возможна болезненность в месте забора биоптата.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+concept_biopsy=>nrel_inclusion:concept_check_up;;

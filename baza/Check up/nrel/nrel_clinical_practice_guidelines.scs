@@ -1,0 +1,60 @@
+nrel_clinical_practice_guidelines=>nrel_idtf:[analysis result*] (* <- lang_en;; *);;
+nrel_clinical_practice_guidelines=>nrel_idtf:[клинические рекомендации*] (* <- lang_ru;; *);;
+nrel_clinical_practice_guidelines=>nrel_main_idtf:[клинические рекомендации*] (* <- lang_ru;; *);;
+
+nrel_clinical_practice_guidelines<-rrel_key_sc_element:...
+(*
+<-definition;;=>nrel_main_idtf:[Опр.(клинические рекомендации*)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+(*
+->[Клинические рекомендации* - систематически разрабатываемые документы, адресованные практикующим врачам и содержащие разъяснения по вопросам оказания надлежащей медицинской помощи в конкретной клинической ситуации.](* <- lang_ru;; *);;
+*);;
+*);;
+
+
+nrel_clinical_practice_guidelines=>nrel_first_domain:concept_healthcare;;
+nrel_clinical_practice_guidelines=>nrel_second_domain:concept_guideline;;
+
+
+
+nrel_clinical_practice_guidelines<-binary_relation;;
+parameter->arity;;
+arity->binary_relation;;
+binary_relation=>nrel_measurement:2;;
+2<-number;;
+
+
+nrel_clinical_practice_guidelines<-oriented_relation;;
+asymmetric_relation->nrel_clinical_practice_guidelines;;
+transitive_relation->nrel_clinical_practice_guidelines;;
+antireflexive_relation->nrel_clinical_practice_guidelines;;
+binary_relation=>nrel_inclusion:asymmetric_relation;;
+binary_relation=>nrel_inclusion:transitive_relation;;
+binary_relation=>nrel_inclusion:antireflexive_relation;;
+relation=>nrel_inclusion:binary_relation;;
+relation=>nrel_inclusion:oriented_relation;;
+
+
+
+concept_check_up<=nrel_using_constants:...
+(*
+	->rrel_key_sc_element:nrel_clinical_practice_guidelines;;
+	<-statement;;
+	=>nrel_idtf:[Утверждение. Внедрение клинических рекомендаций](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Клинические рекомендации являются фундаментальным основанием медицинской практики и используются в большинстве стран мира уже на протяжении нескольких десятилетий.](* <- lang_ru;; *);;
+	*);;
+*);;
+
+sc_node_not_relation->concept_healthcare;;
+concept_healthcare=>nrel_main_idtf:
+[здравоохранение](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_guideline;;
+concept_guideline=>nrel_main_idtf:
+[руководящее указание](* <-lang_ru;; *);;
+
+
+sc_node_not_relation->asymmetric_relation;;
+asymmetric_relation=>nrel_main_idtf:
+[асимметричное отношение](* <-lang_ru;; *);;

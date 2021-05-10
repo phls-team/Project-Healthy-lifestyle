@@ -1,0 +1,96 @@
+concept_breathing_exercises=>nrel_idtf:[breathing exercises] 
+	(*
+		<-lang_en;;
+	*);;
+concept_breathing_exercises=>nrel_idtf:[дыхательная гимнастика]
+	(*
+		<-lang_ru;;	
+	*);;
+concept_breathing_exercises=>nrel_main_idtf:[дыхательная гимнастика]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+concept_breathing_exercises<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр.(дыхательная гимнастика)] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->[Дыхательная гимнастика - различные комплексы упражнений, предназначенные для тренировки дыхательных мышц, активной работы разных отделов легких, при необходимости — улучшения выделения мокроты из них.](* <- lang_ru;; *);;
+	*);;
+	*);;
+
+
+concept_breathing_exercises<-rrel_key_sc_element:...
+    (*
+        <-illustration;;
+        <=nrel_sc_text_translation:...
+    (*
+->rrel_example_1:
+"file://images/breathingexercises.png"
+(*
+        =>nrel_format:format_png;;
+    *);;
+    *);;
+    *);;
+
+
+
+concept_breathing_exercises<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 1. Цели дыхательной гимнастики](* <- lang_ru;; *);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Дыхательные упражнения помогают задействовать нижние отделы легких, которые хуже вентилируются, а также укрепить дыхательную мускулатуру. Гимнастику можно проводить с первого дня заболевания.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_breathing_exercises<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 2. Противопоказания](* <- lang_ru;; *);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Упражнения запрещено проводить, если у больного коронавирусом:
+
+    высокое артериальное давление и склонность к гипертоническим кризам;
+    психические отклонения, из-за которых он не может адекватно оценивать действительность и четко следовать указаниям;
+    тяжелая форма миопии, резко повышенное внутриглазное давление;
+    в анамнезе перенесенный инфаркт в течение последних 6 месяцев;
+    острые невриты, миозиты и радикулиты, которые мешают полноценным движениям грудной клетки.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_breathing_exercises <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 3. Техника выполнения](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Занятия должны начинаться с нескольких упражнений и подходов в день, постепенно можно нарастить нагрузку и делать по 8−10 повторений каждого упражнения. Такая дыхательная гимнастика подойдет для тех, у кого отходит мокрота (если она обильная — лучше перед занятием положить рядом с собой салфетку).](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_breathing_exercises=>nrel_inclusion:concept_COVID19_rehab;;

@@ -1,0 +1,60 @@
+nrel_social_distance=>nrel_idtf:[social distance*] (* <- lang_en;; *);;
+nrel_social_distance=>nrel_idtf:[социальная дистанция*] (* <- lang_ru;; *);;
+nrel_social_distance=>nrel_main_idtf:[социальная дистанция*] (* <- lang_ru;; *);;
+
+nrel_social_distance<-rrel_key_sc_element:...
+(*
+<-definition;;=>nrel_main_idtf:[Опр.(социальная дистанция*)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+(*
+->[Социальная дистанция* - мера защиты от заражения COVID-19, заключающаяся в соблюдении минимального расстояния в 1,5 метра между людьми.](* <- lang_ru;; *);;
+*);;
+*);;
+
+
+nrel_social_distance=>nrel_first_domain:concept_coronavirus;;
+nrel_social_distance=>nrel_second_domain:concept_distance;;
+
+
+
+nrel_social_distance<-binary_relation;;
+parameter->arity;;
+arity->binary_relation;;
+binary_relation=>nrel_measurement:2;;
+2<-number;;
+
+
+nrel_social_distance<-oriented_relation;;
+asymmetric_relation->nrel_social_distance;;
+transitive_relation->nrel_social_distance;;
+antireflexive_relation->nrel_social_distance;;
+binary_relation=>nrel_inclusion:asymmetric_relation;;
+binary_relation=>nrel_inclusion:transitive_relation;;
+binary_relation=>nrel_inclusion:antireflexive_relation;;
+relation=>nrel_inclusion:binary_relation;;
+relation=>nrel_inclusion:oriented_relation;;
+
+
+concept_COVID19_rehab<=nrel_using_constants:...
+(*
+	->rrel_key_sc_element:nrel_social_distance;;
+	<-statement;;
+	=>nrel_idtf:[Утверждение. Нарушение дистанции](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[При нарушении дистанции аэрозоль (смесь воздуха и частиц) от инфицированного человека с его дыханием может попасть на лицо, глаза, кожу, одежду, возможно вдыхание частиц неинфицированного человека. При этом становится возможна передача воздушно-капельным и контактным путями вируса SARS-CoV-2.](* <- lang_ru;; *);;
+	*);;
+*);;
+
+sc_node_not_relation->concept_coronavirus;;
+concept_coronavirus=>nrel_main_idtf:
+[коронавирус](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_distance;;
+concept_distance=>nrel_main_idtf:
+[дистанция](* <-lang_ru;; *);;
+
+
+
+sc_node_not_relation->asymmetric_relation;;
+asymmetric_relation=>nrel_main_idtf:
+[асимметричное отношение](* <-lang_ru;; *);;

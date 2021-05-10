@@ -1,0 +1,55 @@
+nrel_type_of_medical_inspection=>nrel_idtf:[type of medical inspection´] (* <- lang_en;; *);;
+nrel_type_of_medical_inspection=>nrel_idtf:[тип медицинского обследования´] (* <- lang_ru;; *);;
+nrel_type_of_medical_inspection=>nrel_main_idtf:[тип медицинского обследования´] (* <- lang_ru;; *);;
+
+nrel_type_of_medical_inspection<-nrel_key_sc_element:...
+(*
+<-definition;;=>nrel_main_idtf:[Опр.(тип медицинского обследования´)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+(*
+->[Тип медицинского обследования´ - определенный комплекс медицинских процедур, проводимых с целью выявления патологических состояний, заболеваний и факторов риска их развития.](* <- lang_ru;; *);;
+*);;
+*);;
+
+
+nrel_type_of_medical_inspection=>nrel_first_domain:concept_check_up;;
+nrel_type_of_medical_inspection=>nrel_second_domain:concept_type;;
+
+
+
+nrel_type_of_medical_inspection<-binary_relation;;
+parameter->arity;;
+arity->binary_relation;;
+binary_relation=>nrel_measurement:2;;
+2<-number;;
+
+
+
+nrel_type_of_medical_inspection<-oriented_relation;;
+asymmetric_relation->nrel_type_of_medical_inspection;;
+transitive_relation->nrel_type_of_medical_inspection;;
+antireflexive_relation->nrel_type_of_medical_inspection;;
+binary_relation=>nrel_inclusion:asymmetric_relation;;
+binary_relation=>nrel_inclusion:transitive_relation;;
+binary_relation=>nrel_inclusion:antireflexive_relation;;
+relation=>nrel_inclusion:binary_relation;;
+relation=>nrel_inclusion:oriented_relation;;
+
+
+
+
+concept_check_up<=nrel_using_constants:...
+(*
+	->nrel_key_sc_element:nrel_type_of_medical_inspection;;
+	<-statement;;
+	=>nrel_idtf:[Утверждение. Типы медицинских обследований](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->nrel_example:[По типу медицинские обследования делятся на Обязательные (предварительные; периодические; предсменные, предрейсовые медицинские осмотры; послесменные, послерейсовые медицинские осмотры) и Внеочередные.](* <- lang_ru;; *);;
+	*);;
+*);;
+
+
+
+sc_node_not_relation->asymmetric_relation;;
+asymmetric_relation=>nrel_main_idtf:
+[асимметричное отношение](* <-lang_ru;; *);;

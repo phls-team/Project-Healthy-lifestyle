@@ -1,0 +1,91 @@
+concept_esophagogastroduodenoscopy=>nrel_idtf:[esophagogastroduodenoscopy] 
+	(*
+		<-lang_en;;
+	*);;
+concept_esophagogastroduodenoscopy=>nrel_idtf:[эзофагогастродуоденоскопия]
+	(*
+		<-lang_ru;;	
+	*);;
+concept_esophagogastroduodenoscopy=>nrel_main_idtf:[эзофагогастродуоденоскопия]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+concept_esophagogastroduodenoscopy<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр.(эзофагогастродуоденоскопия)] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->[Эзофагогастродуоденоскопия - визуальное обследование верхних отделов желудочно-кишечного тракта (пищевод, желудок, двенадцатиперстная кишка) посредством видеогастроскопа.](* <- lang_ru;; *);;
+	*);;
+	*);;
+
+
+concept_esophagogastroduodenoscopy<-rrel_key_sc_element:...
+    (*
+        <-illustration;;
+        <=nrel_sc_text_translation:...
+    (*
+->rrel_example_1:
+"file://images/esophagogastroduodenoscopy.png"
+(*
+        =>nrel_format:format_png;;
+    *);;
+    *);;
+    *);;
+
+
+
+concept_esophagogastroduodenoscopy<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 1. Метод исследования](* <- lang_ru;; *);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Перед проведением гастроскопии пациенту может быть проведена местная анестезия корня языка при помощи распылителя с анестетиком. Возможно проведение гастроскопии с применением общей анестезии, препараты для которой вводятся внутривенно. Через специальный канал эндоскопа подается воздух, чтобы расправлять просвет органов и облегчать осмотр слизистой. При необходимости врач не только проводит визуальный осмотр, но и производит биопсию из участка слизистой для морфологической верификации процесса.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_esophagogastroduodenoscopy<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 2. Применение в медицине](* <- lang_ru;; *);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Диагностическая видеоэзофагогастродуоденоскопия позволяет определить анатомические изменения в верхних отделах желудочно-кишечного тракта, детально изучить слизистую оболочку пищевода, желудка и двенадцатиперстной кишки, обнаружить воспалительную или опухолевую патологию, а также уточнить локализацию и степень распространенности процесса.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_esophagogastroduodenoscopy <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 3. Противопоказания](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Абсолютными противопоказаниями к проведению ЭГДС являются инфаркт миокарда и инсульт в острой стадии. К относительным противопоказаниям можно отнести наличие у пациента тяжелых заболеваний органов сердечно-сосудистой системы, дыхания, нервной системы, выраженных нарушений свертывающей системы крови.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+
+concept_esophagogastroduodenoscopy=>nrel_inclusion:concept_check_up;;

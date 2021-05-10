@@ -1,0 +1,90 @@
+concept_prostate_ultrasound_diagnostics=>nrel_idtf:[prostate_ultrasound_diagnostics] 
+	(*
+		<-lang_en;;
+	*);;
+concept_prostate_ultrasound_diagnostics=>nrel_idtf:[УЗИ  предстательной железы]
+	(*
+		<-lang_ru;;	
+	*);;
+concept_prostate_ultrasound_diagnostics=>nrel_main_idtf:[УЗИ  предстательной железы]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+concept_prostate_ultrasound_diagnostics<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр.(УЗИ  предстательной железы)] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->[УЗИ  предстательной железы - лабораторное исследование, позволяющее определить патологический процесс, локализированный в органах мочеполовой системы.](* <- lang_ru;; *);;
+	*);;
+	*);;
+
+
+concept_prostate_ultrasound_diagnostics<-rrel_key_sc_element:...
+    (*
+        <-illustration;;
+        <=nrel_sc_text_translation:...
+    (*
+->rrel_example_1:
+"file://images/prostate_ultrasound_diagnostics.png"
+(*
+        =>nrel_format:format_png;;
+    *);;
+    *);;
+    *);;
+
+
+
+concept_prostate_ultrasound_diagnostics<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 1. Применение в медицине](* <- lang_ru;; *);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[УЗИ предстательной железы дает возможность определить наличие следующих заболеваний: дисфункция репродуктивных органов; наличие онкологического образования; простатит; травмы мочевого пузыря; проблемное мочеиспускание; возникновение конкрементов; гиперплазия простаты доброкачественного типа.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_prostate_ultrasound_diagnostics<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 2. Подготовка к исследованию](* <- lang_ru;; *);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Для трансабдоминального УЗИ предстательной железы нужно иметь наполненный мочевой пузырь. Поэтому при подготовке к исследованию необходимо выпить около 1 литра негазированной жидкости примерно за час до обследования. Для трансректального УЗИ простаты важно иметь свободную прямую кишку. Поэтому желательно проводить это обследование натощак. Накануне вечером рекомендуется сделать очистительную клизму. .]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_prostate_ultrasound_diagnostics <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 3. Метод исследования](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[При диагностике ультразвук проникает через тканевые структуры, отражаясь по-разному от пораженных и здоровых поверхностей. Изображение транслируется на дисплей в режиме реального времени, полученные сведения анализирует специалист, на основе которых он ставит точный диагноз.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_prostate_ultrasound_diagnostics=>nrel_inclusion:concept_check_up;;

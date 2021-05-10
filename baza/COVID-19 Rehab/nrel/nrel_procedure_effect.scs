@@ -1,0 +1,53 @@
+nrel_procedure_effect=>nrel_idtf:[procedure effect*] (* <- lang_en;; *);;
+nrel_procedure_effect=>nrel_idtf:[эффект процедуры*] (* <- lang_ru;; *);;
+nrel_procedure_effect=>nrel_main_idtf:[эффект процедуры*] (* <- lang_ru;; *);;
+
+nrel_procedure_effect<-rrel_key_sc_element:...
+(*
+<-definition;;=>nrel_main_idtf:[Опр.(эффект процедуры*)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+(*
+->[Эффект процедуры* - результат действий, направленных на достижение результата в плане оказания помощи людям, у которых проблемы со здоровьем.](* <- lang_ru;; *);;
+*);;
+*);;
+
+
+nrel_procedure_effect=>nrel_first_domain:concept_procedure;;
+nrel_procedure_effect=>nrel_second_domain:concept_result;;
+
+
+
+nrel_procedure_effect<-binary_relation;;
+parameter->arity;;
+arity->binary_relation;;
+binary_relation=>nrel_measurement:2;;
+2<-number;;
+
+
+nrel_procedure_effect<-oriented_relation;;
+asymmetric_relation->nrel_procedure_effect;;
+transitive_relation->nrel_procedure_effect;;
+antireflexive_relation->nrel_procedure_effect;;
+binary_relation=>nrel_inclusion:asymmetric_relation;;
+binary_relation=>nrel_inclusion:transitive_relation;;
+binary_relation=>nrel_inclusion:antireflexive_relation;;
+relation=>nrel_inclusion:binary_relation;;
+relation=>nrel_inclusion:oriented_relation;;
+
+
+
+concept_speleotherapy<=nrel_using_constants:...
+(*
+	->rrel_key_sc_element:nrel_procedure_effect;;
+	<-statement;;
+	=>nrel_idtf:[Утверждение. Эффект процедуры спелеотерапии](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Несколько сеансов спелеотерапии дают следующие результаты: повышается гемоглобин; улучшается кровообращение; активизируются иммунные процессы в организме; стабилизируется эмоциональное состояние; гормональный фон приходит в норму; снижается уровень тревожности; снижается артериальное давление; улучшается метаболизм.](* <- lang_ru;; *);;
+	*);;
+*);;
+
+
+
+sc_node_not_relation->asymmetric_relation;;
+asymmetric_relation=>nrel_main_idtf:
+[асимметричное отношение](* <-lang_ru;; *);;

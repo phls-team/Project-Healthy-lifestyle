@@ -1,0 +1,92 @@
+concept_electrotherapy=>nrel_idtf:[electrotherapy] 
+	(*
+		<-lang_en;;
+	*);;
+concept_electrotherapy=>nrel_idtf:[электролечение]
+	(*
+		<-lang_ru;;	
+	*);;
+concept_electrotherapy=>nrel_main_idtf:[электролечение]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+concept_electrotherapy<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр.(электролечение)] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->[Электролечение - наиболее широко применяемая разновидность физиотерапии, а именно лечение при помощи воздействия на пациента электрического тока или электромагнитного поля.](* <- lang_ru;; *);;
+	*);;
+	*);;
+
+
+
+concept_electrotherapy<-rrel_key_sc_element:...
+    (*
+        <-illustration;;
+        <=nrel_sc_text_translation:...
+    (*
+->rrel_example_1:
+"file://images/electrotherapy.png"
+(*
+        =>nrel_format:format_png;;
+    *);;
+    *);;
+    *);;
+
+
+
+concept_electrotherapy<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 1. Разновидности](* <- lang_ru;; *);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[К электротерапии относятся: франклинизация; воздействие постоянным электрическим током (гальванизация, электрофорез); воздействие переменным током низкой частоты (электростимуляция, электросон, электроанестезия), магнитотерапия.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_electrotherapy<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 2. Техника безопасности](* <- lang_ru;; *);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Для обеспечения безопасности больного и персонала электролечение должно проводиться в условиях, исключающих возможность прикосновения больного к заземленным предметам (трубы водопроводной и отопительной систем и др.). Нельзя проводить электролечение в сырых помещениях, в комнатах со стенами и полом, покрытыми кафельной плиткой. Электротерапевтические процедуры могут осуществляться только специально подготовленным медперсоналом.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_electrotherapy <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 3. Противопоказания](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[электротерапия противопоказана в случаях: индивидуальная непереносимость; тяжелое состояние пациента; беременность; остро протекающие инфекционные заболевания; дыхательная, сердечная недостаточность; онкологические заболевания; эпилепсия; туберкулез; алкогольное и наркотическое опьянение.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_electrotherapy=>nrel_inclusion:concept_prophylaxy;;
+concept_electrotherapy=>nrel_inclusion:concept_COVID19_rehab;;

@@ -1,0 +1,91 @@
+concept_hospital_screening=>nrel_idtf:[hospital screening] 
+	(*
+		<-lang_en;;
+	*);;
+concept_hospital_screening=>nrel_idtf:[госпитальный скрининг]
+	(*
+		<-lang_ru;;	
+	*);;
+concept_hospital_screening=>nrel_main_idtf:[госпитальный скрининг]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+concept_hospital_screening<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр.(госпитальный скрининг)] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->[Госпитальный скрининг - анализ, который позволяет диагностировать особо опасные инфекции, такие как СПИД, сифилис, гепатит B и гепатит C, на ранних стадиях.](* <- lang_ru;; *);;
+	*);;
+	*);;
+
+
+concept_hospital_screening<-rrel_key_sc_element:...
+    (*
+        <-illustration;;
+        <=nrel_sc_text_translation:...
+    (*
+->rrel_example_1:
+"file://images/hospital_screening.png"
+(*
+        =>nrel_format:format_png;;
+    *);;
+    *);;
+    *);;
+
+
+
+concept_hospital_screening<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 1. Подготовка к исследованию](* <- lang_ru;; *);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Кровь сдается натощак (спустя 4-5 часов после приема пищи). За сутки до исследования отменить занятия в спортзале.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_hospital_screening<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 2. Показания](* <- lang_ru;; *);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Комплекс назначается для диагностирования заболеваний при: регулярном повышении температуры; болях в мышцах и суставах; постоянном головокружении; нарушении аппетита; частой заболеваемости различными инфекциями; привкусе горечи во рту; болях в области правого подреберья; наличии твердого или мягкого шанкра на гениталиях.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_hospital_screening <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 3. Интерпретация результатов анализа](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Анализ имеет качественную оценку, результаты выдаются: отрицательный результат - показатель нормы - означает, что антител вируса гепатита С, антител к бледной спирохете, к ВИЧ - 1и/или ВИЧ - 2, антигена «HBs» и ВИЧ не обнаружено; положительный результат - свидетельствует о текущем или перенесенном заболевании; сомнительный результат - может свидетельствовать о ранней стадии заболевания, рекомендуется повторить тест через десять дней. На результаты анализа может оказать влияние неправильная подготовка пробы: гемолиз - разрушение эритроцитов, хилез - повышение уровня жиров крови.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_hospital_screening=>nrel_inclusion:concept_check_up;;
+concept_hospital_screening=>nrel_inclusion:concept_blood;;
