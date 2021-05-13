@@ -1,0 +1,64 @@
+section_subject_domain_of_summer_sports
+=> nrel_main_idtf: 
+	[Раздел. Предметная область летних видов спорта]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf: 
+	[Section. Subject domain of summer sports]
+	(* <- lang_en;; *);
+	
+<= nrel_section_decomposition: 
+	{
+		section_subject_domain_of_swimming;
+		section_subject_domain_of_cycling_track;
+		section_subject_domain_of_volleyball;
+		section_subject_domain_of_athletics;
+		section_subject_domain_of_basketball;
+		section_subject_domain_of_shooting
+	};
+
+<- rrel_key_sc_element:
+		concept_water;
+		nrel_award;
+        	nrel_sport_role;
+		concept_sports_team;
+		summer_sport;;
+		
+
+section_subject_domain_of_summer_sports = 
+[*
+	subject_domain_of_summer_sports
+
+=> nrel_main_idtf: 
+	[Предметная область летних видов спорта]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf: 
+	[Subject domain of summer sports]
+	(* <- lang_en;; *);
+
+=> nrel_private_subject_domain:
+		subject_domain_of_swimming;
+		subject_domain_of_cycling_track;
+		subject_domain_of_volleyball;
+		subject_domain_of_athletics;
+		subject_domain_of_basketball;
+		subject_domain_of_shooting;
+
+<= nrel_private_subject_domain:
+	subject_domain_sport;
+		
+-> rrel_maximum_studied_object_class:
+	summer_sport;
+
+-> rrel_explored_general_subject_domain_concept:
+	nrel_award;
+	nrel_sports_rule;
+	
+-> rrel_not_maximum_studied_object_class:
+	concept_sports_team;
+	
+-> rrel_explored_relation:
+	nrel_award;
+	nrel_sports_rule;
+
+<- subject_domain;;
+*];;

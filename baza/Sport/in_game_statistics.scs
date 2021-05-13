@@ -1,0 +1,42 @@
+concept_in_game_statistics <- sc_node_not_relation;;
+
+concept_in_game_statistics => nrel_main_idtf:
+[статистика матча] (*<-lang_ru;;*);
+[in-game stats] (*<-lang_en;;*);;
+
+concept_n_game_statistics <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (статистика матча)] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Статистика матча учитывает показатели и внутриматчевые достижения <b><sc_element_idtf="concept_athlete">игроков</b></sc_element> либо <b><sc_element_idtf="concept_sports_team">команд</b></sc_element>, в течении одного <b><sc_element_idtf="match">матча</b></sc_element>](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_in_game_statistics <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (статистика матча)] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[За частую на основе статистики матча можно сформировать представление как об отдельном <b><sc_element_idtf="concept_athlete">игроке</b></sc_element>, так и о <b><sc_element_idtf="concept_sports_team">команде</b></sc_element> в целом](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_in_game_statistics<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://stats.jpg"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;

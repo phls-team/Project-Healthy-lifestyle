@@ -1,0 +1,30 @@
+referee_commissioner <- sc_node_not_relation;;
+
+referee_commissioner => nrel_main_idtf:
+[коммиссар матча] (*<-lang_ru;;*);
+[Referee commissioner] (*<-lang_en;;*);;
+
+referee_commissioner <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (коммиссар матча)] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Один из главных членов судейской коллегии, обеспечивающий проведение матча.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+referee_commissioner <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (коммиссар матча)] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[В отличии от рефери, коммиссар матча не принимает участие в судействе, он следит за всеми неигровыми аспектами матча](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+

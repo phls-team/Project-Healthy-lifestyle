@@ -1,0 +1,47 @@
+concept_sports_assotiation=>nrel_idtf:[basketball_court]
+	(*<-lang_en;;*);;
+concept_sports_assotiation=>nrel_main_idtf:[спортивная ассоциация]
+	(*<-lang_ru;;*);;
+
+concept_sports_assotiation <-rrel_key_sc_element:...
+	(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр.(спортивная ассоциация)]
+	(*<-lang_ru;;*);;
+	=>nrel_main_idtf:[Def.(sports assotiation)] 
+	(*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+	-> rrel_example: [Ассоциация по виду (видам) спорта – некоммерческая организация, созданная в форме общественного объединения либо союза (ассоциации) в целях развития вида (видов) спорта, организации и проведения спортивных соревнований по данному виду (видам) спорта.]
+(*<-lang_ru;; *);;
+	-> rrel_example: [A sports club, athletics club or sports association is an eclectic institution oriented to multiple sports, which fields many teams and in several sports, working under the same umbrella organization. In a larger sense, it may also refer to any sports institution, even those that have only one sports team or a single sports department.](*<-lang_en;;*);;
+	*);;
+*);;
+
+concept_sports_assotiation <- rrel_key_sc_element:...
+	(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+	=> nrel_main_idtf:[Утв.(про спортивную ассоциацию)]
+	(* <- lang_ru;; *);;
+	=>nrel_main_idtf:[St.(sports assotiation)] 
+	(*<-lang_en;;*);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Ассоциации по виду (видам) спорта:
+
+осуществляют развитие и популяризацию вида (видов) спорта;
+
+участвуют в подготовке спортивного резерва, спортсменов высокого класса;
+
+организуют и проводят спортивные соревнования в порядке, установленном законодательством, осуществляют организацию судейства таких спортивных соревнований;
+
+разрабатывают и утверждают программы развития вида (видов) спорта;
+
+способствуют укреплению международного сотрудничества в сфере физической культуры и спорта по развитию вида (видов) спорта](*<- lang_ru;;*);;
+-> rrel_example: [Association for Sport and Physical Education's members include physical education teachers, coaches, athletic directors and trainers, researchers, sport management professionals, and college and university faculty. For their over 15,000 members, NASPE publishes physical education position statements concerning physical education, physical activity, professionalism, and technology issues.](*<-lang_en;;*);;
+
+			*);;
+*);;
+

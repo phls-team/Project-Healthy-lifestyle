@@ -1,0 +1,42 @@
+osgood_schlatter_disease <- sc_node_not_relation;;
+
+osgood_schlatter_disease => nrel_main_idtf:
+[Болезнь Осгуда–Шлаттера] (*<-lang_ru;;*);
+[Osgood–Schlatter disease] (*<-lang_en;;*);;
+
+osgood_schlatter_disease <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (Болезнь Осгуда–Шлаттера)] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Болезнь Шляттера  - это один из вариантов остеодистрофии строения кости из-за проблем с ее питанием в области головки большеберцовой кости голени.  Болезнь Шляттера характеризуется формированием болезненной шишки в зоне нижнего полюса коленной чашечки. Заболевание характерно для юношеского возраста, встречается в возрасте от 10 до 18 лет. Поражение в основном одностороннее.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://shlatter.png"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;
+osgood_schlatter_disease <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Болезнь Осгуда–Шлаттера)] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Болезнь в основном дебютирует в возрасте полового созревания, и чаще возникает у тех детей, кто интенсивно занимается активными видами спорта.  Традиционно мальчики занимаются спортом больше, поэтому болезни Шляттера они подвержены чаще, хотя сегодня и девочки нередко страдают от данной патологии. Болезнь возникает в период активного скелетного вытяжения и постепенно прекращается по мере роста костного скелета.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+concept_desease=>nrel_inclusion:osgood_schlatter_disease;;

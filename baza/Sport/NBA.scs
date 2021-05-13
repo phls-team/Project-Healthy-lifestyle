@@ -1,0 +1,61 @@
+NBA=>nrel_idtf:[National basketball assotiation]
+	(*
+		<-lang_en;;
+	*);;
+NBA=>nrel_main_idtf:[Национальная баскетбольная ассоциация]
+	(*
+		<-lang_ru;;
+	*);
+=>nrel_idtf:[НБА](*<-lang_ru;;*);;
+NBA<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+[Опр.(Национальная баскетбольная ассоциация)] 
+	(* 
+		<-lang_ru;;
+	*);;
+<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Национальная баскетбольная ассоциация - одна из крупнейших мировых <b><sc_element sys_idtf="concept_sports_assotiation">ассоциаций</b></sc_element>, имеющая несколько <b><sc_element sys_idtf="concept_sports_league">лиг</b></sc_element> и регулярно проводящая <b><sc_element sys_idtf="championship">чемпионаты</b></sc_element> по <b><sc_element sys_idtf="concept_basketball">баскетболу</b></sc_element>.]
+(* 
+<-lang_ru;; 
+=> nrel_format: format_html;;
+*);;
+	*);;
+	
+<=nrel_using_constants: {
+	concept_sports_assotiation;
+	concept_sports_league;
+	championship;
+	concept_basketball
+	};;
+*);;
+
+NBA <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утв.(О НБА)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[НБА было основана в 1946 6 июня в городе Нью-Йорк. На сегодняшний день НБА является самой успешной баскетбольной организацией в мире.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+NBA<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://NBA.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;
+
+NBA<=nrel_inclusion:concept_sports_assotiation;;

@@ -1,0 +1,41 @@
+concept_sport_combination <- sc_node_not_relation;;
+
+concept_sport_combination => nrel_main_idtf:
+[Спортивная комбинация] (*<-lang_ru;;*);
+[sports combination] (*<-lang_en;;*);;
+
+concept_sport_combination <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (Спортивная комбинация)] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[объединённые общим замыслом приёмы игры, направленные на достижение преимущества, перевеса и победы.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_sport_combination <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Спортивная комбинация)] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[в командных видах спорта комбинации являются основным способом получения преимущества в атаке.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+concept_sport_combination<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://combination.png"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;

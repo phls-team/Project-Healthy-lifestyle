@@ -1,0 +1,60 @@
+nrel_players_amount <- sc_node_norole_relation;;
+
+nrel_players_amount => nrel_main_idtf:
+[Количество игроков в команде*] (*<-lang_ru;;*);
+[Amount of team members*] (*<-lang_en;;*);;
+
+nrel_players_amount <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (Количество игроков в команде*)] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Характеризует количество <b><sc_element sys_idtf="concept_athlete">спортсменов</b></sc_element> в <b><sc_element sys_idtf="concept_sports_team">команде</b></sc_element>](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+nrel_players_amount
+=> nrel_first_domain: concept_sports_team;
+=> nrel_second_domain: number;
+
+=> nrel_definitional_domain: ...
+(*
+	<= nrel_combination:
+	{
+		concept_sports_team;
+		number
+	};;
+*);;
+
+arity -> ...
+(*
+	-> nrel_players_amount;;
+	=> nrel_measurement: 2;;
+*);;
+
+relation => nrel_inclusion: oriented_relation
+(*
+	-> nrel_players_amount;;
+*);;
+
+relation => nrel_inclusion: binary_relation
+(*
+	 => nrel_inclusion: symmetric_relation
+	(*
+		-|> nrel_players_amount;;
+	*);;
+
+	 => nrel_inclusion: transitive_relation
+	(*
+		-|> nrel_players_amount;;
+	*);;
+
+	 => nrel_inclusion: reflexive_relation
+	(*
+		-|> nrel_players_amount;;
+	*);;
+
+*);;
