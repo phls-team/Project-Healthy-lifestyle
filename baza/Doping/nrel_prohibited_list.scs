@@ -1,0 +1,37 @@
+nrel_prohibited_list <- sc_node_relation;
+
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- antisymmetric_relation;
+<- antitransitive_relation;
+
+=> nrel_main_idtf:
+    [prohibited_list*](*<- lang_en;;*);
+    [запрещенный_список*](*<- lang_ru;;*);
+
+ <- rrel_key_sc_element:... (*
+    <- definition;;
+    => nrel_main_idtf: 
+        [Опр. (запрещенный_список*)](*<- lang_ru;;*);
+        [Def. (prohibited_list*)](*<- lang_en;;*);;
+    <= nrel_sc_text_translation:...(*
+        -> rrel_example: "file://HTML/nrel_prohibited_list_ru.html"(*<- lang_ru;;=>nrel_format:format_html;;*);;
+        -> rrel_example: "file://HTML/nrel_prohibited_list_en.html"(*<- lang_en;;=>nrel_format:format_html;;*);;
+    *);;
+*);   
+
+=> nrel_first_domain: world_anti_doping_agency;
+=> nrel_second_domain: concept_doping_agents;
+=> nrel_definitional_domain: world_anti_doping_agency;
+
+-> rrel_key_sc_element: ...(*
+		<- illustration;;
+		=>nrel_main_idtf:
+		    [Рис. (prohibited_list*)](*<-lang_ru;;*);
+		    [Pic. (запрещённый_список*)](*<-lang_en;;*);;
+	    <=nrel_sc_text_translation:...
+	    (*
+		->"file://JPEG/prohibited_list.jpg"(*=>nrel_format:format_jpg;;*);;
+	    *);;
+*);;

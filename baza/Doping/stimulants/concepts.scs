@@ -1,0 +1,124 @@
+concept_crotetamide <- sc_node_not_relation;;
+concept_crotetamide
+=> nrel_main_idtf:
+[Кротетамид](*<-lang_ru;;*);
+[Crotetamide](*<-lang_en;;*);;
+
+
+
+concept_lisdexamphetamine <- sc_node_not_relation;;
+concept_lisdexamphetamine
+=> nrel_main_idtf:
+[Лиздексамфетамин](*<-lang_ru;;*);
+[Lisdexamphetamine](*<-lang_en;;*);;
+
+
+
+concept_mesocarb <- sc_node_not_relation;;
+concept_mesocarb
+=> nrel_main_idtf:
+[Мезокарб](*<-lang_ru;;*);
+[Mesocarb](*<-lang_en;;*);;
+
+
+
+concept_methamphetamine_d_minus <- sc_node_not_relation;;
+concept_methamphetamine_d_minus
+=> nrel_main_idtf:
+[Метамфетамин (d-)](*<-lang_ru;;*);
+[Methamphetamine d(-)](*<-lang_en;;*);;
+
+
+
+concept_p_methylamphetamine <- sc_node_not_relation;;
+concept_p_methylamphetamine
+=> nrel_main_idtf:
+[п-метиламфетамин](*<-lang_ru;;*);
+[p-methylamphetamine](*<-lang_en;;*);;
+
+
+concept_mefenorex <- sc_node_not_relation;;
+concept_mefenorex
+=> nrel_main_idtf:
+[Мефенорекс](*<-lang_ru;;*);
+[Mefenorex](*<-lang_en;;*);;
+
+
+
+concept_mefentermin <- sc_node_not_relation;;
+concept_mefentermin
+=> nrel_main_idtf:
+[Мефентермин](*<-lang_ru;;*);
+[Mefentermin ](*<-lang_en;;*);;
+
+
+
+
+concept_modafinil <- sc_node_not_relation;;
+concept_modafinil
+=> nrel_main_idtf:
+[Модафинил](*<-lang_ru;;*);
+[Modafinil](*<-lang_en;;*);;
+
+
+
+
+concept_norfenfluramine <- sc_node_not_relation;;
+concept_norfenfluramine
+=> nrel_main_idtf:
+[Норфенфлурамин](*<-lang_ru;;*);
+[Norfenfluramine](*<-lang_en;;*);;
+
+
+
+concept_prenylamine <- sc_node_not_relation;;
+concept_prenylamine
+=> nrel_main_idtf:
+[Прениламин](*<-lang_ru;;*);
+[Prenylamine](*<-lang_en;;*);;
+
+
+
+concept_prol <- sc_node_not_relation;;
+concept_prol
+=> nrel_main_idtf:
+[Прол](*<-lang_ru;;*);
+[Prol](*<-lang_en;;*);;
+
+
+
+concept_fendimetrazine <- sc_node_not_relation;;
+concept_fendimetrazine
+=> nrel_main_idtf:
+[Фендиметразин](*<-lang_ru;;*);
+[Fendimetrazine](*<-lang_en;;*);;
+
+
+
+
+concept_phenethylline <- sc_node_not_relation;;
+concept_phenethylline
+=> nrel_main_idtf:
+[Фенэтиллин](*<-lang_ru;;*);
+[Phenethylline](*<-lang_en;;*);;
+
+
+
+
+concept_phenamine <- sc_node_not_relation;;
+concept_phenamine
+=> nrel_main_idtf:
+[Фенамин](*<-lang_ru;;*);
+[Phenamine](*<-lang_en;;*);;
+
+
+
+
+concept_phentermine <- sc_node_not_relation;;
+concept_phentermine
+=> nrel_main_idtf:
+[Фентермин](*<-lang_ru;;*);
+[Phentermine](*<-lang_en;;*);;
+
+
+

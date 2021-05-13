@@ -1,0 +1,19 @@
+section_subject_domain_of_stimulants
+=> nrel_main_idtf: 
+	[Раздел. Предметная область стимуляторов]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf: 
+	[Section. Subject domain of stimulants]
+	(* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+		
+		subject_domain_of_stimulants;
+		nrel_side_effects;
+        nrel_symptoms;
+		
+        concept_psychostimulants;
+	
+		concept_stimulants;;
+
+section_subject_domain_of_stimulants = [*^"file://subject_domain_of_doping_stimulants.scsi"*];;

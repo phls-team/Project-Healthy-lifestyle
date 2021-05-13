@@ -1,0 +1,15 @@
+concept_doping_agents
+
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [doping agents]
+          (*<-lang_en;;*);
+          [допинговые средства]
+          (*<-lang_ru;;*);
+
+=> nrel_inclusion: concept_stimulants;
+=> nrel_inclusion: concept_painkiller;
+=> nrel_inclusion: concept_anabolic_agents;
+=> nrel_inclusion: concept_diuretics;
+=> nrel_inclusion: concept_peptide_hormones;;
