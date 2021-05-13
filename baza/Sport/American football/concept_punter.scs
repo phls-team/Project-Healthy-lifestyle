@@ -1,0 +1,66 @@
+concept_punter<-sc_node_not_relation;;
+
+concept_punter=>nrel_main_idtf:[пантер]
+(* 
+<-lang_ru;; 
+*);
+nrel_main_idtf:[punter]
+        (* 
+        <-lang_en;; 
+        *);;
+ concept_punter=>nrel_idtf:[P]
+        (*
+                <-lang_ru;;
+        *);
+nrel_idtf:[P]
+        (*
+                <-lang_en;;
+        *);;
+
+
+defenition ->...
+(*
+->rrel_key_sc_element:concept_punter;;
+     <= nrel_sc_text_translation: ...(*->rrel_example:[Пантер — один из наиболее важных игроков спецкоманд.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Пантер)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_player;
+concept_special_team
+};;
+*);;
+
+
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_punter;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Задача пантера - поймать мяч, брошенный лонг снэппером и совершить пант.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(О выполняемой функции)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_long_snapper;
+concept_ball
+};;
+*);;
+
+  
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+

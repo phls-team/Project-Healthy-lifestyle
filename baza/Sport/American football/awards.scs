@@ -1,0 +1,54 @@
+Super_Bowl_MVP<-sc_node_not_relation;;
+Super_Bowl_MVP=> nrel_main_idtf:
+          [Super Bowl MVP](*<-lang_en;;*);
+          [MVP Супербоула](*<-lang_ru;;*);;
+ 
+ Pro_Bowl<-sc_node_not_relation;;
+ Pro_Bowl=> nrel_main_idtf:
+          [Pro Bowl](*<-lang_en;;*);
+          [Пробоул](*<-lang_ru;;*);;
+ 
+Super_Bowl_champion<-sc_node_not_relation;;
+Super_Bowl_champion=> nrel_main_idtf:
+          [Super Bowl champion](*<-lang_en;;*);
+          [чемпион Супербоула](*<-lang_ru;;*);;
+          
+First_team_All_Pro<-sc_node_not_relation;;
+First_team_All_Pro=> nrel_main_idtf:
+          [First team All-Pro](*<-lang_en;;*);
+          [Перва команда All-Pro](*<-lang_ru;;*);;            
+          
+NFL_Most_Valuable_Player<-sc_node_not_relation;;
+NFL_Most_Valuable_Player=> nrel_main_idtf:
+          [NFL Most Valuable Player](*<-lang_en;;*);
+          [Самый ценный игрок NFL](*<-lang_ru;;*);;        
+      
+NFL_Offensive_Player_of_the_Year<-sc_node_not_relation;;
+NFL_Offensive_Player_of_the_Year=> nrel_main_idtf:
+          [NFL Offensive Player of the Year](*<-lang_en;;*);
+          [Лучший нападающий года NFL](*<-lang_ru;;*);;
+          
+NFL_Comeback_Player_of_the_Year<-sc_node_not_relation;;
+NFL_Comeback_Player_of_the_Year=> nrel_main_idtf:
+          [NFL Comeback Player of the Year](*<-lang_en;;*);
+          [Лучшее возвращение года NFL](*<-lang_ru;;*);;  
+          
+NFL_passing_yards_leader<-sc_node_not_relation;;
+NFL_passing_yards_leader=> nrel_main_idtf:
+          [NFL passing yards leader](*<-lang_en;;*);
+          [Лидер по количеству пасовых ярдов NFL](*<-lang_ru;;*);;            
+          
+Bert_Bell_Award<-sc_node_not_relation;;
+Bert_Bell_Award=> nrel_main_idtf:
+          [Bert Bell Award](*<-lang_en;;*);
+          [Награда Берта Белла](*<-lang_ru;;*);; 
+          
+National_champion<-sc_node_not_relation;;
+National_champion=> nrel_main_idtf:
+          [National champion](*<-lang_en;;*);
+          [Чемпион страны](*<-lang_ru;;*);;    
+          
+NFL_passing_touchdowns_leader<-sc_node_not_relation;;
+NFL_passing_touchdowns_leader=> nrel_main_idtf:
+          [NFL passing touchdowns leader](*<-lang_en;;*);
+          [Лидер по тачдаунов NFL](*<-lang_ru;;*);;            

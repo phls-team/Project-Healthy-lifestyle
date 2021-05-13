@@ -1,0 +1,76 @@
+concept_holder<-sc_node_not_relation;;
+
+concept_holder=>nrel_main_idtf:[Холдер]
+(* 
+<-lang_ru;; 
+*);
+nrel_main_idtf:[holder]
+        (* 
+        <-lang_en;; 
+        *);;
+ concept_holder=>nrel_idtf:[H]
+        (*
+                <-lang_ru;;
+        *);
+nrel_idtf:[H]
+        (*
+                <-lang_en;;
+        *);;
+
+
+defenition ->...
+(*
+->rrel_key_sc_element:concept_holder;;
+     <= nrel_sc_text_translation: ...(*->rrel_example:[Холдер — игрок, выступающий в спецкоманде и располагающийся в 7-8 ярдах от линии схватки.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Лонг снэппер)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_player;
+concept_special_team
+};;
+*);;
+
+
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_holder;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Задача холдера - ловля мяча, отброшенного лонг снэппером, установка и удерживание мяча на земле для того, чтобы кикер мог пробить одноочковую реализацию или филд гол .](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(О выполняемой функции)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_long_snapper;
+concept_kicker;
+concept_field_goal;
+concept_ball
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_holder;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Обычно в качестве холдера на поле выходит запасной квотербек или пантер.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(О холдере)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_quaterback;
+concept_punter
+};;
+*);;
+  
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+

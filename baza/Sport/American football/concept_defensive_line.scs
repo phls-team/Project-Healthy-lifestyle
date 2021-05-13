@@ -1,0 +1,72 @@
+concept_defensive_line<-sc_node_not_relation;;
+
+concept_defensive_line=>nrel_main_idtf:[линия защиты]
+(* 
+<-lang_ru;; 
+*);
+nrel_main_idtf:[defensive line]
+        (* 
+        <-lang_en;; 
+        *);;
+
+ concept_defensive_line=>nrel_idtf:[DL]
+        (*
+                <-lang_ru;;
+        *);
+nrel_idtf:[DL]
+        (*
+                <-lang_en;;
+        *);;
+
+
+
+
+defenition ->...
+(*
+->rrel_key_sc_element:concept_defensive_line ;;
+     <= nrel_sc_text_translation: ...(*->rrel_example:[Линия защиты — от 3 до 6 игроков, расположенных напротив линии нападения.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Линия нападения)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_player;
+concept_offensive_line
+};;
+*);;
+
+concept_defensive_line<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//defensive_line.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Линия защиты)](*<- lang_ru;;*);;
+*);;
+*);;
+
+
+
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_defensive_line;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Игроки линии защиты пытаются остановить бегущего игрока с мячом до того, как он сможет принести ярды команде нападения или блокировать квотербека до того, как он сможет выполнить пас.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(О задаче линии нападения)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+nrel_aim;
+concept_player;
+concept_yard;
+concept_quaterback;
+concept_offensive_line
+};;
+*);;
+
+
+
+
+concept_defensive_line=>nrel_inclusion:
+concept_defensive_back;
+concept_linebacker;;
+

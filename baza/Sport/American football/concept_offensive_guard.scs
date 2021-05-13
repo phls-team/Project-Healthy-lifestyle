@@ -1,0 +1,66 @@
+concept_offensive_guard<-sc_node_not_relation;;
+
+concept_offensive_guard=>nrel_main_idtf:[оффенсив гард]
+(* 
+<-lang_ru;; 
+*);
+nrel_main_idtf:[offensive guard]
+        (* 
+        <-lang_en;; 
+        *);;
+ concept_offensive_guard=>nrel_idtf:[G]
+        (*
+                <-lang_ru;;
+        *);
+nrel_idtf:[G]
+        (*
+                <-lang_en;;
+        *);;
+
+
+defenition ->...
+(*
+->rrel_key_sc_element:concept_offensive_guard;;
+     <= nrel_sc_text_translation: ...(*->rrel_example:[Oффенсив гарды — 2 игрока лайнменов нападения расположенные по бокам  от центра.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Oффенсив гард)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_player;
+concept_offensive_linemen;
+concept_center
+};;
+*);;
+
+
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_offensive_guard;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Функция оффенсив гардов заключается в блокировании игроков соперника.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(О выполняемой функции)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_opponent
+};;
+*);;
+
+  
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+

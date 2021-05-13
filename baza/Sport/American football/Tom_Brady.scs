@@ -1,0 +1,57 @@
+Tom_Brady
+<-sc_node_not_relation;
+<-concept_person;
+<-concept_athlete;
+
+=> nrel_main_idtf:
+          [Tom Brady](*<-lang_en;;*);
+          [Том Брэди](*<-lang_ru;;*);
+
+
+=> nrel_weight:102;
+=> nrel_age:43;
+=> nrel_height:193;
+=> nrel_birthplace: USA;
+=> nrel_sport_role:concept_quaterback;
+=> nrel_team:Tampa_Bay_Buccaneers;
+=> nrel_sports_achivments: ..union;;
+..union<=nrel_combination:
+{
+        Super_Bowl_champion;
+        Super_Bowl_MVP;
+        NFL_Most_Valuable_Player;
+        NFL_Offensive_Player_of_the_Year;
+        NFL_Comeback_Player_of_the_Year;
+        First_team_All_Pro;
+        NFL_passing_yards_leader;
+        Bert_Bell_Award;
+	National_champion
+};;
+
+nrel_sport_role<- sc_node_norole_relation;;
+          
+Tom_Brady<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://Фото/Tom_Brady.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
+
+Tampa_Bay_Buccaneers<-sc_node_not_relation;;
+
+Tampa_Bay_Buccaneers=>nrel_main_idtf:[Тампа-Бэй Бакканирс]
+(* 
+<-lang_ru;; 
+*);
+nrel_main_idtf:[Tampa Bay Buccaneers]
+        (* 
+        <-lang_en;; 
+        *);;
+      
+                              	
+	

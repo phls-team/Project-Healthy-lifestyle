@@ -1,0 +1,73 @@
+concept_offensive_line<-sc_node_not_relation;;
+
+concept_offensive_line=>nrel_main_idtf:[линия нападения]
+(* 
+<-lang_ru;; 
+*);
+nrel_main_idtf:[offensive line]
+        (* 
+        <-lang_en;; 
+        *);;
+
+
+
+
+
+defenition ->...
+(*
+->rrel_key_sc_element:concept_offensive_line ;;
+     <= nrel_sc_text_translation: ...(*->rrel_example:[Линия нападения — пять игроков, расположенных возле линии розыгрыша мяча.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Линия нападения)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_player;
+concept_ball
+};;
+*);;
+
+concept_offensive_line<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//offensive_line.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Линия нападения)](*<- lang_ru;;*);;
+*);;
+*);;
+
+
+
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_offensive_line;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Задача линии нападения – защитить пасующих игроков и расчистить путь для бегущих игроков, раздвинув игроков защиты.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(О задаче линии нападения)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+nrel_aim;
+concept_player;
+concept_running_back;
+concept_defensive_line
+};;
+*);;
+
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_offensive_line ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[За исключением центрального игрока (центра или OC), лайнмены нападения обычно не касаются мяча.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(О владении мячом)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_center;
+concept_offensive_linemen
+};;
+*);;
+
+
+concept_offensive_line=>nrel_inclusion:
+concept_offensive_linemen;
+concept_backs_and_recievers;;
+

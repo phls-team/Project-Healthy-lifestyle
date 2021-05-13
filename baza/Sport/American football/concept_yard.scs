@@ -1,0 +1,61 @@
+concept_yard<-sc_node_not_relation;;
+
+concept_yard=>nrel_main_idtf:[ярд]
+(* 
+<-lang_ru;; 
+*);
+nrel_main_idtf:[yard]
+        (* 
+        <-lang_en;; 
+        *);;
+
+
+
+
+
+defenition ->...
+(*
+->rrel_key_sc_element:concept_yard ;;
+     <= nrel_sc_text_translation: ...(*->rrel_example:[Ярд — метрическая единица измерения расстояния.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Ярд)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+
+concept_measure;
+concept_distance
+};;
+*);;
+
+concept_yard<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//yard.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Ярд)](*<- lang_ru;;*);;
+*);;
+*);;
+
+
+
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_yard;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Сейчас ярд равен 36 дюймам, что значит 91,44 см.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(О ярде)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+nrel_equal_numbers;
+concept_inch;
+concept_centimetre
+};;
+*);;
+
+
+
+
+
+

@@ -1,0 +1,63 @@
+concept_special_team<-sc_node_not_relation;;
+
+concept_special_team=>nrel_main_idtf:[специальная команда]
+(* 
+<-lang_ru;; 
+*);
+nrel_main_idtf:[special_team]
+        (* 
+        <-lang_en;; 
+        *);;
+
+
+
+
+defenition ->...
+(*
+->rrel_key_sc_element:concept_special_team ;;
+     <= nrel_sc_text_translation: ...(*->rrel_example:[Специальная команда - игроки, участвующие в розыгрышах, в которых выполняется удар по мячу.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Специальная команда)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_player;
+concept_ball
+};;
+*);;
+
+concept_special_team<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//special_team.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Специальная команда)](*<- lang_ru;;*);;
+*);;
+*);;
+
+
+
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_special_team;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Большинство игроков спецкоманд играют в защитных и атакующих группах.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Об игроках спецкоманды)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_player;
+concept_defensive_line;
+concept_offensive_line
+};;
+*);;
+
+
+
+
+concept_offensive_line=>nrel_inclusion:
+concept_kicker;
+concept_punter;
+concept_long_snapper;
+concept_holder;;
+

@@ -1,0 +1,92 @@
+section_subject_domain_of_american_football_player_position
+=> nrel_main_idtf: 
+	[Раздел. Предметная область позиций игроков американского футбола]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf: 
+	[Section. Subject domain of american football player position]
+	(* <- lang_en;; *);
+	
+
+
+
+<- rrel_key_sc_element:
+		
+               concept_sport_role;
+               subject_domain_of_american_football_player_position;
+               concept_offensive_line;
+	concept_offensive_linemen;
+	concept_backs_and_recievers;
+	concept_kicker; 
+	concept_running_back;
+	concept_tight_end;
+	concept_center;
+	concept_offensive_guard;
+       concept_offensive_tackle;
+       concept_quaterback;
+       concept_wide_reciever;
+       concept_defensive_line;
+       concept_defensive_back;
+       concept_linebacker;
+       concept_special_team;	
+       concept_punter;
+       concept_long_snapper;
+       concept_holder;
+               nrel_sport_role;;
+               
+
+section_subject_domain_of_american_football_player_position = [*
+subject_domain_of_american_football_player_position
+
+=> nrel_main_idtf: 
+	[Предметная область позиций игроков американского футбола]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf: 
+	[Subject domain of american football player position]
+	(* <- lang_en;; *);
+
+
+		
+<= nrel_private_subject_domain:
+	section_subject_domain_of_american_football_player_position;
+		
+-> rrel_maximum_studied_object_class:
+	concept_sport_role;
+
+-> rrel_not_maximum_studied_object_class:
+	concept_offensive_line;
+	concept_offensive_linemen;
+	concept_backs_and_recievers;
+	concept_kicker; 
+	concept_running_back;
+	concept_tight_end;
+	concept_center;
+	concept_offensive_guard;
+       concept_offensive_tackle;
+       concept_quaterback;
+       concept_wide_reciever;
+       concept_defensive_line;
+       concept_defensive_back;
+       concept_linebacker;
+       concept_special_team;	
+       concept_punter;
+       concept_long_snapper;
+       concept_holder;
+
+-> rrel_explored_relation:
+	nrel_sport_role;
+	
+	
+<- subject_domain;;
+*];;
+
+
+concept_player<-sc_node_not_relation;;
+
+concept_player=>nrel_main_idtf:[игрок]
+(* 
+<-lang_ru;; 
+*);
+nrel_main_idtf:[player]
+        (* 
+        <-lang_en;; 
+        *);;

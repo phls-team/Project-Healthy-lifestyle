@@ -1,0 +1,62 @@
+concept_field_goal<-sc_node_not_relation;;
+
+concept_field_goal=>nrel_main_idtf:[филд-гол]
+(* 
+<-lang_ru;; 
+*);
+nrel_main_idtf:[field goal]
+        (* 
+        <-lang_en;; 
+        *);;
+
+
+
+
+
+defenition ->...
+(*
+->rrel_key_sc_element:concept_field_goal ;;
+     <= nrel_sc_text_translation: ...(*->rrel_example:[Филд-гол - один из возможных способов набрать очки в американском футболе, удар, при котором кикер должен попасть в ворота.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Филд-гол)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_point;
+concept_kicker;
+concept_goal
+};;
+*);;
+
+concept_team<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//field_goal.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Филд-гол)](*<- lang_ru;;*);;
+*);;
+*);;
+
+
+
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_field_goal;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Филд-гол даёт команде 3 очка.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Об очках за исполнение филд-гола)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+nrel_aim;
+concept_point;
+concept_team
+};;
+*);;
+
+
+
+
+
+
+

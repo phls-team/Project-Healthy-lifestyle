@@ -1,0 +1,52 @@
+concept_offensive_linemen<-sc_node_not_relation;;
+
+concept_offensive_linemen=>nrel_main_idtf:[лайнмены нападения]
+(* 
+<-lang_ru;; 
+*);
+nrel_main_idtf:[offensive linemen]
+        (* 
+        <-lang_en;; 
+        *);;
+
+
+
+
+
+defenition ->...
+(*
+->rrel_key_sc_element:concept_offensive_linemen ;;
+     <= nrel_sc_text_translation: ...(*->rrel_example:[Лайнмены нападения — игорк центра, двое гардов по обе стороны от центра и два тэкла.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Лайнмены нападения)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_player;
+concept_offensive_guard;
+concept_offensive_tackle
+};;
+*);;
+
+concept_offensive_linemen<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//offensive_linemen.JPG"
+        (*
+                =>nrel_format:format_JPG;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Лайнмены нападения)](*<- lang_ru;;*);;
+*);;
+*);;
+
+
+
+
+
+
+
+concept_offensive_linemen=>nrel_inclusion:
+concept_center;
+concept_offensive_guard;
+concept_offensive_tackle;;
+

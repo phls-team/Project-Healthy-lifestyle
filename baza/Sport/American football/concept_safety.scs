@@ -1,0 +1,59 @@
+concept_safety<-sc_node_not_relation;;
+
+concept_safety=>nrel_main_idtf:[сэйфти]
+(* 
+<-lang_ru;; 
+*);
+nrel_main_idtf:[safety]
+        (* 
+        <-lang_en;; 
+        *);;
+
+
+
+
+
+defenition ->...
+(*
+->rrel_key_sc_element:concept_safety ;;
+     <= nrel_sc_text_translation: ...(*->rrel_example:[Сэйфти — падение игрока, владеющего мячом, в своей зачетной зоне.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Сэйти)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_player;
+concept_ball
+};;
+*);;
+
+concept_safety<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//safety.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Сэйфти)](*<- lang_ru;;*);;
+*);;
+*);;
+
+
+
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_safety;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Сэйфти стоит 2 очка.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Об очках за сэйфти)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+nrel_aim;
+concept_point
+};;
+*);;
+
+
+
+
+
+

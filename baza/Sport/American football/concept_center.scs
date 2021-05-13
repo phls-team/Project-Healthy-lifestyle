@@ -1,0 +1,66 @@
+concept_center<-sc_node_not_relation;;
+
+concept_center=>nrel_main_idtf:[центр]
+(* 
+<-lang_ru;; 
+*);
+nrel_main_idtf:[center]
+        (* 
+        <-lang_en;; 
+        *);;
+ concept_center=>nrel_idtf:[С]
+        (*
+                <-lang_ru;;
+        *);
+nrel_idtf:[С]
+        (*
+                <-lang_en;;
+        *);;
+
+
+defenition ->...
+(*
+->rrel_key_sc_element:concept_center ;;
+     <= nrel_sc_text_translation: ...(*->rrel_example:[Центр — игрок лайнменов нападения расположенный в середине линии нападения.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Центр)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_player;
+concept_offensive_linemen;
+concept_offensive_line
+};;
+*);;
+
+
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_center;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Центр начинает розыгрыш, вводя мяч в игру и передавая его назад, за линию схватки.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(О выполняемой функции)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_ball
+};;
+*);;
+
+  
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+

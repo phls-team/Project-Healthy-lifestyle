@@ -1,0 +1,78 @@
+concept_long_snapper<-sc_node_not_relation;;
+
+concept_long_snapper=>nrel_main_idtf:[Лонг снэппер]
+(* 
+<-lang_ru;; 
+*);
+nrel_main_idtf:[long snapper]
+        (* 
+        <-lang_en;; 
+        *);;
+ concept_long_snapper=>nrel_idtf:[LS]
+        (*
+                <-lang_ru;;
+        *);
+nrel_idtf:[LS]
+        (*
+                <-lang_en;;
+        *);;
+
+
+defenition ->...
+(*
+->rrel_key_sc_element:concept_long_snapper;;
+     <= nrel_sc_text_translation: ...(*->rrel_example:[Лонг снэппер — игрок, выступающий в спецкоманде на позиции центра нападения.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Лонг снэппер)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_player;
+concept_special_team
+};;
+*);;
+
+
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_long_snapper;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Задача лонг снэппера - точно отбросить мяч назад холдеру или пантеру.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(О выполняемой функции)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_holder;
+concept_punter;
+concept_ball
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_long_snapper;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Обычно амплуа центра нападения и лонг снэппера не совмещаются одним игроком.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(О лонг снэппере)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_sport_role;
+concept_player;
+concept_center
+};;
+*);;
+  
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+

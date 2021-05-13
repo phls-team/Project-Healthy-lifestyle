@@ -1,0 +1,63 @@
+NFL<-sc_node_not_relation;;
+
+NFL=>nrel_main_idtf:[Национальная футбольная лига]
+(* 
+<-lang_ru;; 
+*);
+nrel_main_idtf:[National Football League]
+        (* 
+        <-lang_en;; 
+        *);;
+
+NFL=>nrel_idtf:[NFL]
+        (*
+                <-lang_ru;;
+        *);
+        nrel_idtf:[NFL]
+        (*
+                <-lang_en;;
+        *);;
+
+
+NFL<=nrel_inclusion: championship;;
+
+defenition ->...
+(*
+->rrel_key_sc_element:concept_offensive_line ;;
+     <= nrel_sc_text_translation: ...(*->rrel_example:[Национальная футбольная лига — профессиональная лига американского футбола в США.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Национальная футбольная лига)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_champiionship;
+concept_american_football;
+USA
+};;
+*);;
+
+NFL<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//NFL.png"
+        (*
+                =>nrel_format:format_png;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Национальная футбольная лига)](*<- lang_ru;;*);;
+*);;
+*);;
+
+
+
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_offensive_line;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[В настоящее время в НФЛ играет 32 команды, разделенные на 2 конференции по 16 команд: Американскую и Национальную.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(О Национальная футбольная лига)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_team
+};;
+*);;
+
+

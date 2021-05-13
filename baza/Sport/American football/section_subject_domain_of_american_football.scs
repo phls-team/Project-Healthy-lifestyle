@@ -1,0 +1,62 @@
+section_subject_domain_of_american_football
+=> nrel_main_idtf: 
+	[Раздел. Предметная область американского футбола]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf: 
+	[Section. Subject domain of american football]
+	(* <- lang_en;; *);
+	
+<= nrel_section_decomposition: 
+	{
+	        section_subject_domain_of_american_football_tactics;
+               section_subject_domain_of_american_football_rules_of_game;
+               section_subject_domain_of_american_football_famous_players;
+               section_subject_domain_of_american_football_championships;
+               section_subject_domain_of_american_football_sport_uniform;
+               section_subject_domain_of_american_football_player_position
+	};
+
+=> nrel_section_decomposition:section_subject_domain_of_ball_games;
+
+<- rrel_key_sc_element:
+		
+               concept_american_football;
+               subject_domain_of_american_football;
+               nrel_game_time;
+               nrel_equipment_used;
+               nrel_sport_role;
+               nrel_team;;
+
+section_subject_domain_of_american_football = [*
+subject_domain_of_american_football
+
+=> nrel_main_idtf: 
+	[Предметная область американского футбола]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf: 
+	[Subject domain of american football]
+	(* <- lang_en;; *);
+
+=> nrel_private_subject_domain:
+subject_domain_of_american_football_tactics;
+subject_domain_of_american_football_rules_of_game;
+subject_domain_of_american_football_famous_players;
+subject_domain_of_american_football_championships;
+subject_domain_of_american_football_sport_uniform;
+subject_domain_of_american_football_player_position;
+		
+<= nrel_private_subject_domain:
+	section_subject_domain_of_american_football;
+		
+-> rrel_maximum_studied_object_class:
+	concept_american_football;
+	
+
+-> rrel_explored_relation:
+	nrel_game_time;
+	nrel_equipment_used;
+	nrel_sport_role;
+	nrel_team;
+	
+<- subject_domain;;
+*];;

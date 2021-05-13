@@ -1,0 +1,60 @@
+concept_punt<-sc_node_not_relation;;
+
+concept_punt=>nrel_main_idtf:[пант]
+(* 
+<-lang_ru;; 
+*);
+nrel_main_idtf:[punt]
+        (* 
+        <-lang_en;; 
+        *);;
+
+
+
+
+
+defenition ->...
+(*
+->rrel_key_sc_element:concept_punt ;;
+     <= nrel_sc_text_translation: ...(*->rrel_example:[Пант — удар ногой по мячу, выпущенному из рук в сторону зачетной зоны соперника.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Ярд)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+
+concept_ball;
+concept_opponent
+};;
+*);;
+
+concept_punt<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//punt.jpeg"
+        (*
+                =>nrel_format:format_jpeg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Пант)](*<- lang_ru;;*);;
+*);;
+*);;
+
+
+
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_punt;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Обычно пант пробивается на четвертом дауне, таким образом команда, которая может упустить владение мячом, передает владение не в месте розыгрыша, а в месте, максимально отдаленном от своей зачетной зоны.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(О ярде)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_team;
+concept_ball
+};;
+*);;
+
+
+
+
+
+
