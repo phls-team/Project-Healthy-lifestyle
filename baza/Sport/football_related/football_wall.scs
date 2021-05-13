@@ -1,0 +1,49 @@
+concept_football_wall=>nrel_idtf:[football_wall]
+	(*
+		<-lang_en;;
+	*);;
+concept_football_wall=>nrel_main_idtf:[футбольная стенка]
+	(*
+		<-lang_ru;;
+	*);;
+concept_football_wall <-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+[Опр.(футбольная стенка)] 
+	(* 
+		<-lang_ru;;
+	*);;
+	
+<=nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [ живой заслон из игроков, который выстраивается на пути мяча при исполнении штрафного для помощи вратарю ]
+(* 
+<-lang_ru;; 
+*);;
+
+	*);;
+	<=nrel_using_constants: {
+	concept_football;
+	concept_sports_rules
+	};;
+*);;
+concept_football_wall <- rrel_key_sc_element:...
+	(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утв.(о стенке)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[ расстояние от мяча до стенки не должно быть менее 9.15 м ](*<- lang_ru;;*);;
+
+			*);;		
+<=nrel_using_constants: {
+	concept_athlete;
+	concept_game
+	};;
+*);;
+concept_football=>nrel_inclusion:concept_football_wall;;
+concept_sports_rules=>nrel_inclusion:concept_football_wall;;

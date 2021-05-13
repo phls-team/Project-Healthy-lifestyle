@@ -1,0 +1,49 @@
+concept_football_save=>nrel_idtf:[football_save]
+	(*
+		<-lang_en;;
+	*);;
+concept_football_save=>nrel_main_idtf:[футбольный сейв]
+	(*
+		<-lang_ru;;
+	*);;
+concept_football_save <-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+[Опр.(футбольный сейв)] 
+	(* 
+		<-lang_ru;;
+	*);;
+	
+<=nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [ неожиданно отбитый вратарем мяч ]
+(* 
+<-lang_ru;; 
+*);;
+
+	*);;
+	<=nrel_using_constants: {
+	concept_football;
+	concept_sports_rules
+	};;
+*);;
+concept_football_save <- rrel_key_sc_element:...
+	(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утв.(о сейве)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[ качественный сейв голкипера – это один из самых ярких моментов матча ](*<- lang_ru;;*);;
+
+			*);;		
+<=nrel_using_constants: {
+	concept_athlete;
+	concept_game
+	};;
+*);;
+concept_football=>nrel_inclusion:concept_football_save;;
+concept_sports_rules=>nrel_inclusion:concept_football_save;;

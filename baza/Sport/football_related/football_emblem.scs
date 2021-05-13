@@ -1,0 +1,49 @@
+concept_football_emblem=>nrel_idtf:[football_emblem]
+	(*
+		<-lang_en;;
+	*);;
+concept_football_emblem=>nrel_main_idtf:[футбольная эмблема]
+	(*
+		<-lang_ru;;
+	*);;
+concept_football_emblem <-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+[Опр.(футбольная эмблема)] 
+	(* 
+		<-lang_ru;;
+	*);;
+	
+<=nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [ официальная символика спортивного клуба, изображение, обычно включающее в себя название команды ]
+(* 
+<-lang_ru;; 
+*);;
+
+	*);;
+	<=nrel_using_constants: {
+	concept_football;
+	concept_sports_rules
+	};;
+*);;
+concept_football_emblem <- rrel_key_sc_element:...
+	(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утв.(об эмблеме)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[ зачастую эмблема наносится на форму футболистов, изображается на сувенирной продукции ](*<- lang_ru;;*);;
+
+			*);;		
+<=nrel_using_constants: {
+	concept_athlete;
+	concept_game
+	};;
+*);;
+concept_football=>nrel_inclusion:concept_football_emblem;;
+concept_sports_rules=>nrel_inclusion:concept_football_emblem;;

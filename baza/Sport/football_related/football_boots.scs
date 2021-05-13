@@ -1,0 +1,49 @@
+concept_football_boots=>nrel_idtf:[football_boots]
+	(*
+		<-lang_en;;
+	*);;
+concept_football_boots=>nrel_main_idtf:[футбольные бутсы]
+	(*
+		<-lang_ru;;
+	*);;
+concept_football_boots <-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+[Опр.(футбольные бутсы)] 
+	(* 
+		<-lang_ru;;
+	*);;
+	
+<=nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [обувь, которую используют при игре в футбол]
+(* 
+<-lang_ru;; 
+*);;
+
+	*);;
+	<=nrel_using_constants: {
+	concept_football;
+	concept_sports_rules
+	};;
+*);;
+concept_football_boots <- rrel_key_sc_element:...
+	(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утв.(о бутсах)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[ зачастую игроки используют бутсы либо бампы ](*<- lang_ru;;*);;
+
+			*);;		
+<=nrel_using_constants: {
+	concept_athlete;
+	concept_game
+	};;
+*);;
+concept_football=>nrel_inclusion:concept_football_boots;;
+concept_sports_rules=>nrel_inclusion:concept_football_boots;;

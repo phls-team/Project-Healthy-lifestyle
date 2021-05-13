@@ -1,0 +1,49 @@
+concept_football_transfer=>nrel_idtf:[football_transfer]
+	(*
+		<-lang_en;;
+	*);;
+concept_football_transfer=>nrel_main_idtf:[футбольный трансфер]
+	(*
+		<-lang_ru;;
+	*);;
+concept_football_transfer <-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+[Опр.(футбольный трансфер)] 
+	(* 
+		<-lang_ru;;
+	*);;
+	
+<=nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [ сделка, проводимая в период, специально отведённый для покупки и продажи игроков ]
+(* 
+<-lang_ru;; 
+*);;
+
+	*);;
+	<=nrel_using_constants: {
+	concept_football;
+	concept_sports_rules
+	};;
+*);;
+concept_football_transfer <- rrel_key_sc_element:...
+	(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утв.(о трансфере)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[ зачастую футбольные трансферы волнуют болельщиков не меньше, чем результаты матчей ](*<- lang_ru;;*);;
+
+			*);;		
+<=nrel_using_constants: {
+	concept_athlete;
+	concept_game
+	};;
+*);;
+concept_football=>nrel_inclusion:concept_football_transfer;;
+concept_sports_rules=>nrel_inclusion:concept_football_transfer;;

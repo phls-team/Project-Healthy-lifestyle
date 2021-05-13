@@ -1,0 +1,49 @@
+concept_football_crossbar=>nrel_idtf:[football_crossbar]
+	(*
+		<-lang_en;;
+	*);;
+concept_football_crossbar=>nrel_main_idtf:[футбольная перекладина]
+	(*
+		<-lang_ru;;
+	*);;
+concept_football_crossbar <-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+[Опр.(футбольная перекладина)] 
+	(* 
+		<-lang_ru;;
+	*);;
+	
+<=nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [ верхняя штанга ворот ]
+(* 
+<-lang_ru;; 
+*);;
+
+	*);;
+	<=nrel_using_constants: {
+	concept_football;
+	concept_sports_rules
+	};;
+*);;
+concept_football_crossbar <- rrel_key_sc_element:...
+	(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утв.(о перекладине)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[ попадание в перекладину часто ведет к непредсказуемым отскокам ](*<- lang_ru;;*);;
+
+			*);;		
+<=nrel_using_constants: {
+	concept_athlete;
+	concept_game
+	};;
+*);;
+concept_football=>nrel_inclusion:concept_football_crossbar;;
+concept_sports_rules=>nrel_inclusion:concept_football_crossbar;;

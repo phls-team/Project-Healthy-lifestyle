@@ -1,0 +1,49 @@
+concept_football_team=>nrel_idtf:[football_team]
+	(*
+		<-lang_en;;
+	*);;
+concept_football_team=>nrel_main_idtf:[футбольная команда]
+	(*
+		<-lang_ru;;
+	*);;
+concept_football_team <-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+[Опр.(футбольная команда)] 
+	(* 
+		<-lang_ru;;
+	*);;
+	
+<=nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [команда, состоящая из 11 игроков]
+(* 
+<-lang_ru;; 
+*);;
+
+	*);;
+	<=nrel_using_constants: {
+	concept_football;
+	concept_sports_rules
+	};;
+*);;
+concept_football_team <- rrel_key_sc_element:...
+	(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утв.(о команде)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[ зачастую в футбольной команде присутсвуют запасные игроки ](*<- lang_ru;;*);;
+
+			*);;		
+<=nrel_using_constants: {
+	concept_athlete;
+	concept_game
+	};;
+*);;
+concept_football=>nrel_inclusion:concept_football_team;;
+concept_sports_rules=>nrel_inclusion:concept_football_team;;

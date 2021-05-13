@@ -1,0 +1,49 @@
+concept_football_offside=>nrel_idtf:[football_offside]
+	(*
+		<-lang_en;;
+	*);;
+concept_football_offside=>nrel_main_idtf:[футбольный офсайд]
+	(*
+		<-lang_ru;;
+	*);;
+concept_football_offside <-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+[Опр.(футбольный офсайд)] 
+	(* 
+		<-lang_ru;;
+	*);;
+	
+<=nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [ положение «вне игры» ]
+(* 
+<-lang_ru;; 
+*);;
+
+	*);;
+	<=nrel_using_constants: {
+	concept_football;
+	concept_sports_rules
+	};;
+*);;
+concept_football_offside <- rrel_key_sc_element:...
+	(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утв.(об офсайде)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[ решения о наличии положения вне игры принимаются боковыми помощниками судьи ](*<- lang_ru;;*);;
+
+			*);;		
+<=nrel_using_constants: {
+	concept_athlete;
+	concept_game
+	};;
+*);;
+concept_football=>nrel_inclusion:concept_football_offside;;
+concept_sports_rules=>nrel_inclusion:concept_football_offside;;

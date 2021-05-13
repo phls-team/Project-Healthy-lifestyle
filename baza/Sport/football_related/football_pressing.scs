@@ -1,0 +1,49 @@
+concept_football_pressing=>nrel_idtf:[football_pressing]
+	(*
+		<-lang_en;;
+	*);;
+concept_football_pressing=>nrel_main_idtf:[футбольный прессинг]
+	(*
+		<-lang_ru;;
+	*);;
+concept_football_pressing <-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+[Опр.(футбольный прессинг)] 
+	(* 
+		<-lang_ru;;
+	*);;
+	
+<=nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [ тактика коллективного отбора мяча, создания препятствий для начала атаки ]
+(* 
+<-lang_ru;; 
+*);;
+
+	*);;
+	<=nrel_using_constants: {
+	concept_football;
+	concept_sports_rules
+	};;
+*);;
+concept_football_pressing <- rrel_key_sc_element:...
+	(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утв.(о прессинге)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[ прессинг может выполняться как на своей, так и на чужой половине поля ](*<- lang_ru;;*);;
+
+			*);;		
+<=nrel_using_constants: {
+	concept_athlete;
+	concept_game
+	};;
+*);;
+concept_football=>nrel_inclusion:concept_football_pressing;;
+concept_sports_rules=>nrel_inclusion:concept_football_pressing;;

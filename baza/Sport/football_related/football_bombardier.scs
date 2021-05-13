@@ -1,0 +1,49 @@
+concept_football_bombardier=>nrel_idtf:[football_bombardier]
+	(*
+		<-lang_en;;
+	*);;
+concept_football_bombardier=>nrel_main_idtf:[футбольный бомбардир]
+	(*
+		<-lang_ru;;
+	*);;
+concept_football_bombardier <-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+[Опр.(футбольный бомбардир)] 
+	(* 
+		<-lang_ru;;
+	*);;
+	
+<=nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [ игрок, играющий в амплуа нападающего и забивающий много голов ]
+(* 
+<-lang_ru;; 
+*);;
+
+	*);;
+	<=nrel_using_constants: {
+	concept_football;
+	concept_sports_rules
+	};;
+*);;
+concept_football_bombardier <- rrel_key_sc_element:...
+	(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утв.(о бомбардире)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[ зачастую вся команда старается любой ценой вывести такого игрока на опасную позицию ](*<- lang_ru;;*);;
+
+			*);;		
+<=nrel_using_constants: {
+	concept_athlete;
+	concept_game
+	};;
+*);;
+concept_football=>nrel_inclusion:concept_football_bombardier;;
+concept_sports_rules=>nrel_inclusion:concept_football_bombardier;;

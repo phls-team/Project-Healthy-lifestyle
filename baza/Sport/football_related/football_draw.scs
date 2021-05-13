@@ -1,0 +1,49 @@
+concept_football_draw=>nrel_idtf:[football_draw]
+	(*
+		<-lang_en;;
+	*);;
+concept_football_draw=>nrel_main_idtf:[футбольная ничья]
+	(*
+		<-lang_ru;;
+	*);;
+concept_football_draw <-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+[Опр.(футбольная ничья)] 
+	(* 
+		<-lang_ru;;
+	*);;
+	
+<=nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [ результат матча, при котором не выявлен победитель ]
+(* 
+<-lang_ru;; 
+*);;
+
+	*);;
+	<=nrel_using_constants: {
+	concept_football;
+	concept_sports_rules
+	};;
+*);;
+concept_football_draw <- rrel_key_sc_element:...
+	(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утв.(о ничье)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[ в случае ничейного исхода, в турнирах с круговой системой команды получают по одному очку, которые идут в общий зачёт турнирной таблицы ](*<- lang_ru;;*);;
+
+			*);;		
+<=nrel_using_constants: {
+	concept_athlete;
+	concept_game
+	};;
+*);;
+concept_football=>nrel_inclusion:concept_football_draw;;
+concept_sports_rules=>nrel_inclusion:concept_football_draw;;

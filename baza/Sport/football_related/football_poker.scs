@@ -1,0 +1,49 @@
+concept_football_poker=>nrel_idtf:[football_poker]
+	(*
+		<-lang_en;;
+	*);;
+concept_football_poker=>nrel_main_idtf:[футбольный покер]
+	(*
+		<-lang_ru;;
+	*);;
+concept_football_poker <-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+[Опр.(футбольный покер)] 
+	(* 
+		<-lang_ru;;
+	*);;
+	
+<=nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [ четыре гола, забитые в течение матча одним игроком в ворота соперника ]
+(* 
+<-lang_ru;; 
+*);;
+
+	*);;
+	<=nrel_using_constants: {
+	concept_football;
+	concept_sports_rules
+	};;
+*);;
+concept_football_poker <- rrel_key_sc_element:...
+	(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утв.(о покере)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[ зачастую покер совершается в ворота противника, а не в свои ](*<- lang_ru;;*);;
+
+			*);;		
+<=nrel_using_constants: {
+	concept_athlete;
+	concept_game
+	};;
+*);;
+concept_football=>nrel_inclusion:concept_football_poker;;
+concept_sports_rules=>nrel_inclusion:concept_football_poker;;
