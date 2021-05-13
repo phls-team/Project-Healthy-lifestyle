@@ -1,0 +1,51 @@
+concept_slalom <- sc_node_not_relation;;
+
+concept_slalom => nrel_main_idtf:
+[Слалом] (*<-lang_ru;;*);
+[Slalom] (*<-lang_en;;*);;
+
+concept_slalom <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (Слалом)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_mountain
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[спуск с горы на лыжах по трассе длиной 450—500 м, размеченной воротами.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_slalom <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Слалом)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_gate;
+		concept_competition
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Во время прохождения трассы спортсмены обязаны проехать через все ворота; за пропуск ворот или пересечение их одной лыжей спортсмены снимаются с соревнований.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_slalom<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://Pictures/slalom.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;

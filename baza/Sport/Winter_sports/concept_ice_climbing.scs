@@ -1,0 +1,52 @@
+concept_ice_climbing <- sc_node_not_relation;;
+
+concept_ice_climbing => nrel_main_idtf:
+[Ледолазание] (*<-lang_ru;;*);
+[Ice climbing] (*<-lang_en;;*);;
+
+concept_ice_climbing <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (Ледолазание)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_ice;
+		concept_gear
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[экстремальный вид спорта, заключающийся в преодолении крутых ледовых склонов с помощью специального снаряжения.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_ice_climbing <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Ледолазание)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_waterfall;
+		concept_ice_building
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Ледовые склоны могут быть естественного происхождения: замёрзшими водопадами, большими сосульками; или искусственно создаваемыми ледовыми сооружениями.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_ice_climbing<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://Pictures/ice_climbing.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;

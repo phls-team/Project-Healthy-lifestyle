@@ -1,0 +1,60 @@
+section_subject_domain_of_skiing_sport
+=> nrel_main_idtf: 
+	[Раздел. Предметная область лыжного спорта]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf: 
+	[Section. Subject domain of skiing sport]
+	(* <- lang_en;; *);
+	
+<= nrel_section_decomposition: 
+	{
+		section_subject_domain_of_freestyle;
+		section_subject_domain_of_biathlon
+	};
+	
+<- rrel_key_sc_element:
+	concept_mountain;
+	concept_snow;
+	nrel_award;
+	nrel_sports_rule;
+	concept_skiing;
+	concept_skiing_sport;;
+		
+
+section_subject_domain_of_skiing_sport = 
+[*
+	subject_domain_of_skiing_sport
+
+=> nrel_main_idtf: 
+	[Предметная область лыжного спорта]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf: 
+	[Subject domain of skiing_sport]
+	(* <- lang_en;; *);
+	
+=> nrel_private_subject_domain:
+	subject_domain_of_freestyle;
+	subject_domain_of_biathlon;
+
+<= nrel_private_subject_domain:
+	subject_domain_skiing_sport;
+		
+-> rrel_maximum_studied_object_class:
+	concept_skiing_sport;
+
+-> rrel_explored_general_subject_domain_concept:
+	nrel_award;
+	nrel_sports_rule;
+	
+-> rrel_not_maximum_studied_object_class:
+	concept_mountain;
+	concept_skiing;
+	concept_snow;
+	concept_skiing_sport;
+	
+-> rrel_explored_relation:
+	nrel_award;
+	nrel_sports_rule;
+
+<- subject_domain;;
+*];;

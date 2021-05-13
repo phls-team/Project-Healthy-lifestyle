@@ -1,0 +1,50 @@
+concept_alpine_skiing_combined <- sc_node_not_relation;;
+
+concept_alpine_skiing_combined => nrel_main_idtf:
+[Горнолыжная комбинация] (*<-lang_ru;;*);
+[Alpine skiing combined] (*<-lang_en;;*);;
+
+concept_alpine_skiing_combined <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (Горнолыжная комбинация)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_skiing
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[дисциплина горнолыжного спорта, победитель которой определяется по результатам, показанным в нескольких видах.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_alpine_skiing_combined <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Горнолыжная комбинация)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_skiing
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Также иногда называется альпийская комбинация и горнолыжное двоеборье.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_alpine_skiing_combined<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://Pictures/alpine_skiing_combined.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;

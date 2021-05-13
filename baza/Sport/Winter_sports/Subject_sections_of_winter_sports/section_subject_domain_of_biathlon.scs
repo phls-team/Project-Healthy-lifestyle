@@ -1,0 +1,49 @@
+section_subject_domain_of_biathlon
+=> nrel_main_idtf: 
+	[Раздел. Предметная область биатлона]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf: 
+	[Section. Subject domain of biathlon]
+	(* <- lang_en;; *);
+	
+<- rrel_key_sc_element:
+		concept_snow;
+		nrel_award;
+		nrel_sports_rule;
+		concept_skiing;
+		concept_biathlon;;
+		
+
+section_subject_domain_of_biathlon = 
+[*
+	subject_domain_of_biathlon
+
+=> nrel_main_idtf: 
+	[Предметная область биатлона]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf: 
+	[Subject domain of biathlon]
+	(* <- lang_en;; *);
+
+<= nrel_private_subject_domain:
+	subject_domain_biathlon;
+		
+-> rrel_maximum_studied_object_class:
+	concept_biathlon;
+
+-> rrel_explored_general_subject_domain_concept:
+	nrel_award;
+	nrel_sports_rule;
+	
+-> rrel_not_maximum_studied_object_class:
+	concept_skates;
+	concept_snow;
+	concept_biathlon;
+	concept_skiing;
+	
+-> rrel_explored_relation:
+	nrel_award;
+	nrel_sports_rule;
+
+<- subject_domain;;
+*];;

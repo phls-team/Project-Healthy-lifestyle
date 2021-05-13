@@ -1,0 +1,51 @@
+concept_snowskate <- sc_node_not_relation;;
+
+concept_snowskate => nrel_main_idtf:
+[Сноускейт] (*<-lang_ru;;*);
+[Snowskate] (*<-lang_en;;*);;
+
+concept_snowskate <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (Сноускейт)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_snow
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[спортивный снаряд для езды по снегу.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_snowskate <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Сноускейт)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_skateboard;
+		concept_deck
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Существует несколько видов сноускейтов, но объединяет их все отсутствие креплений для ног и дека наподобие скейтборда с резиновой водонепроницаемой поверхностью для лучшего сцепления с обувью райдера.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_snowskate<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://snowskate.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;

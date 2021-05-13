@@ -1,0 +1,146 @@
+section_subject_domain_of_winter_sports
+=> nrel_main_idtf: 
+	[Раздел. Предметная область зимних видов спорта]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf: 
+	[Section. Subject domain of winter sports]
+	(* <- lang_en;; *);
+	
+<= nrel_section_decomposition: 
+	{
+		section_subject_domain_of_skating;
+		section_subject_domain_of_skiing_sport;
+		section_subject_domain_of_luge;
+		section_subject_domain_of_snowboarding;
+		section_subject_domain_of_curling;
+		section_subject_domain_of_hockey;
+		section_subject_domain_of_bobsleigh
+	};
+
+<- rrel_key_sc_element:
+		concept_ice;
+		concept_snow;
+		nrel_award;
+		nrel_sports_rule;
+		winter_sports;
+		concept_alpine_skiing_combined;
+		concept_bandy;
+		concept_broomball;
+		concept_curling_stone;
+		concept_downhill;
+		concept_eisstock_sport;
+		concept_freeride;
+		concept_ice_climbing;
+		concept_military_patrol_competition;
+		concept_mogul;
+		concept_new_school_skiing;
+		concept_nordic_combined;
+		concept_ringette;
+		concept_short_track_speed_skating;
+		concept_skates;
+		concept_skeleton;
+		concept_skiboard;
+		concept_skiboarding;
+		concept_skiing_sport;
+		concept_skijoring;
+		concept_ski_jumping;
+		concept_ski_race;
+		concept_slalom;
+		concept_sledge_hockey;
+		concept_sleigh;
+		concept_slopestyle;
+		concept_snowboard;
+		concept_snowboard_cross;
+		concept_snowkiting;
+		concept_snow_rugby;
+		concept_snowskate;
+		concept_speed_competition;
+		concept_speedgliding;
+		concept_speedway_on_ice;
+		concept_synchronized_figure_skating;
+		concept_telemark;
+		concept_wok_racing;
+		concept_yukigassen;;
+		
+
+section_subject_domain_of_winter_sports = 
+[*
+	subject_domain_of_winter_sports
+
+=> nrel_main_idtf: 
+	[Предметная область зимних видов спорта]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf: 
+	[Subject domain of winter sports]
+	(* <- lang_en;; *);
+
+=> nrel_private_subject_domain:
+		subject_domain_of_skating;
+		subject_domain_of_skiing_sport;
+		subject_domain_of_luge;
+		subject_domain_of_snowboarding;
+		subject_domain_of_curling;
+		subject_domain_of_hockey;
+		subject_domain_of_rock_climbing;
+		subject_domain_of_bobsleigh;
+		subject_domain_of_ski_jumping;
+
+<= nrel_private_subject_domain:
+	subject_domain_sport;
+		
+-> rrel_maximum_studied_object_class:
+	winter_sport;
+
+-> rrel_explored_general_subject_domain_concept:
+	nrel_award;
+	nrel_sports_rule;
+	
+-> rrel_not_maximum_studied_object_class:
+	concept_ice;
+	concept_snow;
+	winter_sport;
+	concept_alpine_skiing_combined;
+	concept_bandy;
+	concept_broomball;
+	concept_curling_stone;
+	concept_downhill;
+	concept_eisstock_sport;
+	concept_freeride;
+	concept_ice_climbing;
+	concept_military_patrol_competition;
+	concept_mogul;
+	concept_new_school_skiing;
+	concept_nordic_combined;
+	concept_ringette;
+	concept_short_track_speed_skating;
+	concept_skates;
+	concept_skeleton;
+	concept_skiboard;
+	concept_skiboarding;
+	concept_skiing_sport;
+	concept_skijoring;
+	concept_ski_jumping;
+	concept_ski_race;
+	concept_slalom;
+	concept_sledge_hockey;
+	concept_sleigh;
+	concept_slopestyle;
+	concept_snowboard;
+	concept_snowboard_cross;
+	concept_snowkiting;
+	concept_snow_rugby;
+	concept_snowskate;
+	concept_speed_competition;
+	concept_speedgliding;
+	concept_speedway_on_ice;
+	concept_synchronized_figure_skating;
+	concept_telemark;
+	concept_wok_racing;
+	concept_yukigassen;
+	
+-> rrel_explored_relation:
+	nrel_award;
+	nrel_sports_rule;
+
+<- subject_domain;;
+*];;

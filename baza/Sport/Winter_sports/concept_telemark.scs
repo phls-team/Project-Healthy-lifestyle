@@ -1,0 +1,52 @@
+concept_telemark <- sc_node_not_relation;;
+
+concept_telemark => nrel_main_idtf:
+[Телемарк] (*<-lang_ru;;*);
+[Telemark] (*<-lang_en;;*);;
+
+concept_telemark <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (Телемарк)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_skiing_sport;
+		concept_skiing
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[одна из дисциплин лыжного спорта, а также популярный вид активного отдыха, стиль катания на специальных лыжах, базирующийся на разножке и естественном для человека движении — шаге.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_telemark <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Телемарк)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_leg;
+		concept_knee
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Поворот в телемарке инициируется ведущей ногой, при этом оба колена согнуты, а пятка задней ноги приподнята над лыжей.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_telemark<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://Pictures/telemark.png"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;

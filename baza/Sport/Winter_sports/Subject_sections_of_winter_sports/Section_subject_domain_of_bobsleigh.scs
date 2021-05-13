@@ -1,0 +1,49 @@
+section_subject_domain_of_bobsleigh
+=> nrel_main_idtf: 
+	[Раздел. Предметная область бобслея]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf: 
+	[Section. Subject domain of bobsleigh]
+	(* <- lang_en;; *);
+	
+<- rrel_key_sc_element:
+		concept_snow;
+		nrel_award;
+		nrel_sports_rule;
+		concept_bob;
+		concept_bobsleigh;;
+		
+
+section_subject_domain_of_bobsleigh = 
+[*
+	subject_domain_of_bobsleigh
+
+=> nrel_main_idtf: 
+	[Предметная область бобслея]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf: 
+	[Subject domain of bobsleigh]
+	(* <- lang_en;; *);
+
+<= nrel_private_subject_domain:
+	subject_domain_bobsleigh;
+		
+-> rrel_maximum_studied_object_class:
+	concept_bobsleigh;
+
+-> rrel_explored_general_subject_domain_concept:
+	nrel_award;
+	nrel_sports_rule;
+	
+-> rrel_not_maximum_studied_object_class:
+	concept_skates;
+	concept_snow;
+	concept_bobsleigh;
+	concept_bob;
+	
+-> rrel_explored_relation:
+	nrel_award;
+	nrel_sports_rule;
+
+<- subject_domain;;
+*];;

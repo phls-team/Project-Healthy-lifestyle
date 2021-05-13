@@ -1,0 +1,51 @@
+concept_snowboard <- sc_node_not_relation;;
+
+concept_snowboard => nrel_main_idtf:
+[Сноубоорд] (*<-lang_ru;;*);
+[snowboard] (*<-lang_en;;*);;
+
+concept_snowboard <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (Сноуборд)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_snow;
+		concept_mountain
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[спортивный снаряд, предназначенный для спуска с заснеженных склонов и гор.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_snowboard <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Сноуборд)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_rider
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Сноуборд представляет собой многослойную конструкцию форме доски с загнутыми торцами, со среднестатистической длиной 140—165 см и шириной примерно с длину ступни райдера с металлическим кантом по периметру нижней части и креплениями для ног.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_snowboard<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://snowboard.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;

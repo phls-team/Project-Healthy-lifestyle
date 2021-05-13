@@ -1,0 +1,49 @@
+section_subject_domain_of_ski_jumping
+=> nrel_main_idtf: 
+	[Раздел. Предметная область прыжков с трамплина]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf: 
+	[Section. Subject domain of ski_jumping]
+	(* <- lang_en;; *);
+	
+<- rrel_key_sc_element:
+		concept_snow;
+		nrel_award;
+		nrel_sports_rule;
+		concept_skiing;
+		concept_ski_jumping;;
+		
+
+section_subject_domain_of_ski_jumping = 
+[*
+	subject_domain_of_ski_jumping
+
+=> nrel_main_idtf: 
+	[Предметная область прыжков с трамплина]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf: 
+	[Subject domain of ski_jumping]
+	(* <- lang_en;; *);
+
+<= nrel_private_subject_domain:
+	subject_domain_ski_jumping;
+		
+-> rrel_maximum_studied_object_class:
+	concept_ski_jumping;
+
+-> rrel_explored_general_subject_domain_concept:
+	nrel_award;
+	nrel_sports_rule;
+	
+-> rrel_not_maximum_studied_object_class:
+	concept_skates;
+	concept_snow;
+	concept_ski_jumping;
+	concept_skiing;
+	
+-> rrel_explored_relation:
+	nrel_award;
+	nrel_sports_rule;
+
+<- subject_domain;;
+*];;

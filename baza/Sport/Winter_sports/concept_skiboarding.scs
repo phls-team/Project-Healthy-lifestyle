@@ -1,0 +1,52 @@
+concept_skiboarding <- sc_node_not_relation;;
+
+concept_skiboarding => nrel_main_idtf:
+[Скибординг] (*<-lang_ru;;*);
+[Skiboarding] (*<-lang_en;;*);;
+
+concept_skiboarding <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (Скибординг)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_skiboard;
+		concept_snow
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[зимний вид спорта, который сочетает в себе элементы роликов, коньков, сноуборда и лыж.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_skiboarding <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Скибординг)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_skiing;
+		concept_skiboard
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Скиборды в отличие от стандартных горных лыж используются без лыжных палок в сочетании со стандартными горнолыжными ботинками, которые пристёгиваются к скибордам с использованием креплений.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_skiboarding<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://Pictures/skiboarding.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;

@@ -1,0 +1,52 @@
+concept_freeride <- sc_node_not_relation;;
+
+concept_freeride => nrel_main_idtf:
+[Фрирайд] (*<-lang_ru;;*);
+[Freeride] (*<-lang_en;;*);;
+
+concept_freeride <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (Фрирайд)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_skiing;
+		concept_snowboard
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[катание на сноуборде или горных лыжах вне подготовленных трасс и, как правило, вне области обслуживания горнолыжной индустрии.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_freeride <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Фрирайд)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_skiing;
+		concept_snowboard
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Считается, что именно при катании по нетронутому снегу наиболее полно раскрываются все возможности сноуборда и горных лыж.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_freeride<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://Pictures/freeride.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;

@@ -1,0 +1,52 @@
+concept_synchronized_figure_skating <- sc_node_not_relation;;
+
+concept_synchronized_figure_skating => nrel_main_idtf:
+[Синхронное фигурное катание] (*<-lang_ru;;*);
+[Synchronized figure skating] (*<-lang_en;;*);;
+
+concept_synchronized_figure_skating <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (Синхронное фигурное катание)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_figure_skating;
+		concept_discipline
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[дисциплина фигурного катания.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_synchronized_figure_skating <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Синхронное фигурное катание)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_bandy;
+		concept_ice_climbing
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Не является олимпийским видом спорта, хотя идут постоянные попытки внести его в олимпийскую программу, наряду с ледолазанием и хоккеем с мячом ](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_synchronized_figure_skating<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://Pictures/synchronized_figure_skating.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;

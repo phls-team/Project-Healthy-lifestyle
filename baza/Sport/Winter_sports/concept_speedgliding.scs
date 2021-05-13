@@ -1,0 +1,51 @@
+concept_speedgliding <- sc_node_not_relation;;
+
+concept_speedgliding => nrel_main_idtf:
+[Спидглайдинг] (*<-lang_ru;;*);
+[Speedgliding] (*<-lang_en;;*);;
+
+concept_speedgliding <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (Спидглайдинг)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_freeride;
+		concept_parachute
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[экстремальный вид спорта, комбинация фрирайда и полета со специальным крылом похожим на скоростной парашют .](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_speedgliding <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Спидглайдинг)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_speedflying
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[также известный как спидрайдинг или спидфлаинг](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_speedgliding<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://Pictures/speedgliding.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;

@@ -1,0 +1,51 @@
+concept_snowboard_cross <- sc_node_not_relation;;
+
+concept_snowboard_cross => nrel_main_idtf:
+[Сноуборд-кросс] (*<-lang_ru;;*);
+[Snowboard cross] (*<-lang_en;;*);;
+
+concept_snowboard_cross <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (Сноуборд-кросс)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_snowboard;
+		concept_snow
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[спортивная дисциплина сноуборда, в которой на специально подготовленной трассе состязаются в скорости от четырёх до шести спортсменов одновременно.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_snowboard_cross <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Сноуборд-кросс)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_olympic_games
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[C 2006 года входит в программу зимних Олимпийских игр.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_snowboard_cross<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://Pictures/snowboard_cross.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;

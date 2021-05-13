@@ -1,0 +1,50 @@
+concept_ice <- sc_node_not_relation;;
+
+concept_ice => nrel_main_idtf:
+[Лёд] (*<-lang_ru;;*);
+[ice] (*<-lang_en;;*);;
+
+concept_ice <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (Лёд)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{	
+		concept_water
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[вода в твёрдом агрегатном состоянии](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_ice <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Лёд)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_water
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Льдом иногда называют некоторые вещества в твёрдом агрегатном состоянии, которым свойственно иметь жидкую или газообразную форму при комнатной температуре](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_ice<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://ice.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;

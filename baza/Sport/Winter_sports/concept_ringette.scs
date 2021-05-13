@@ -1,0 +1,53 @@
+concept_ringette <- sc_node_not_relation;;
+
+concept_ringette => nrel_main_idtf:
+[Рингетт] (*<-lang_ru;;*);
+[Ringette] (*<-lang_en;;*);;
+
+concept_ringette <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (Рингетт)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_hockey;
+		concept_ring;
+		concept_stick
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[исключительно женский командный вид спорта из семейства хоккеев. Игра, в которой шайба заменена на резиновое кольцо, а клюшка на палку, стал исключительно женским видом спорта.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_ringette <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Рингетт)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_hockey;
+		concept_inventor
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[В 1963 году новую разновидность хоккея представил широкой публике канадский изобретатель шотландского происхождения Сэм Джекс.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_ringette<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://Pictures/ringette.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;

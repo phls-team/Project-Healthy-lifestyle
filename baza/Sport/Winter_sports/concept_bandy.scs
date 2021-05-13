@@ -1,0 +1,53 @@
+concept_bandy <- sc_node_not_relation;;
+
+concept_bandy => nrel_main_idtf:
+[Хоккей с мячом] (*<-lang_ru;;*);
+[Bandy] (*<-lang_en;;*);;
+
+concept_bandy <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (Хоккей с мячом)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_ice;
+		concept_player;
+		concept_ball
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[зимняя спортивная командная игра, проводящаяся на ледяном поле с участием двух команд десять полевых игроков и одному вратарю в каждой. Все игроки для передвижения по льду используют коньки. Полевые игроки, используя клюшки, пытаются ими забить мяч в ворота другой команды.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_bandy <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Хоккей с мячом)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_game;
+		nrel_judge
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Продолжительность игры — 2 тайма по 45 минут; при неблагоприятных условиях по решению судьи — 3 тайма по 30 минут](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_bandy<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://Pictures/bandy.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;

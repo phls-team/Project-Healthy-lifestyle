@@ -1,0 +1,54 @@
+concept_sledge_hockey <- sc_node_not_relation;;
+
+concept_sledge_hockey => nrel_main_idtf:
+[Следж-хоккей] (*<-lang_ru;;*);
+[Sledge hockey] (*<-lang_en;;*);;
+
+concept_sledge_hockey <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (Следж-хоккей)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_ice;
+		concept_hockey;
+		concept_puck
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[ командная спортивная игра на льду, аналог хоккея с шайбой для людей с ограниченными возможностями. ](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_sledge_hockey <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Следж-хоккей)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_sledge;
+		concept_puck;
+		concept_gate
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Игра заключается в противоборстве на специальных санях двух команд, которые, передавая шайбу клюшками, стремятся забросить её наибольшее количество раз в ворота соперника и не пропустить в свои.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_sledge_hockey<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://Pictures/sledge_hockey.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;

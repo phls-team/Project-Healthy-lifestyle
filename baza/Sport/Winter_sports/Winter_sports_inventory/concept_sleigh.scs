@@ -1,0 +1,50 @@
+concept_sleigh <- sc_node_not_relation;;
+
+concept_sleigh => nrel_main_idtf:
+[Сани] (*<-lang_ru;;*);
+[sleigh] (*<-lang_en;;*);;
+
+concept_sleigh <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (Сани)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_snow
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[распространённый тип повозки без колёс, обычно имеют полозья.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_sleigh <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Сани)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_snow
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Для тяги используют лошадей, оленей, мулов, Быков , собак.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_sleigh<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://sleigh.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;

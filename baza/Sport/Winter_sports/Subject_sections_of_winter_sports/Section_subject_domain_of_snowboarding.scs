@@ -1,0 +1,50 @@
+section_subject_domain_of_snowboarding
+=> nrel_main_idtf: 
+	[Раздел. Предметная область сноубординга]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf: 
+	[Section. Subject domain of snowboarding]
+	(* <- lang_en;; *);
+	
+<- rrel_key_sc_element:
+		concept_mountain;
+		concept_snow;
+		nrel_award;
+		nrel_sports_rule;
+		concept_snowboard;
+		concept_snowboarding;;
+		
+
+section_subject_domain_of_snowboarding = 
+[*
+	subject_domain_of_snowboarding
+
+=> nrel_main_idtf: 
+	[Предметная область сноубординга]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf: 
+	[Subject domain of snowboarding]
+	(* <- lang_en;; *);
+
+<= nrel_private_subject_domain:
+	subject_domain_snowboarding;
+		
+-> rrel_maximum_studied_object_class:
+	concept_snowboarding;
+
+-> rrel_explored_general_subject_domain_concept:
+	nrel_award;
+	nrel_sports_rule;
+	
+-> rrel_not_maximum_studied_object_class:
+	concept_mountain;
+	concept_snowboard;
+	concept_snow;
+	concept_snowboarding;
+	
+-> rrel_explored_relation:
+	nrel_award;
+	nrel_sports_rule;
+
+<- subject_domain;;
+*];;

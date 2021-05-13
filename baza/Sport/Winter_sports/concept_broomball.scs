@@ -1,0 +1,54 @@
+concept_broomball <- sc_node_not_relation;;
+
+concept_broomball => nrel_main_idtf:
+[Брумбол] (*<-lang_ru;;*);
+[Broomball] (*<-lang_en;;*);;
+
+concept_broomball <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (Брумбол)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_ice;
+		concept_player;
+		concept_goalkeeper
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[зимняя спортивная командная игра, проводящаяся на ледяном поле с участием двух команд, состоящих из пяти полевых игроков и вратаря.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_broomball <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Брумбол)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_hockey;
+		concept_ball;
+		concept_footwear
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Похожа на симбиоз хоккея с шайбой и флорбола, главные отличия от хоккея выражаются в инвентаре: мяч вместо шайбы; палка с симметричным пластиковым наконечником вместо клюшки; обувь с цепкой резиновой подошвой вместо коньков.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_broomball<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://Pictures/broomball.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;

@@ -1,0 +1,50 @@
+concept_new_school_skiing <- sc_node_not_relation;;
+
+concept_new_school_skiing => nrel_main_idtf:
+[Ньюскул] (*<-lang_ru;;*);
+[New school skiing] (*<-lang_en;;*);;
+
+concept_new_school_skiing <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (Ньюскул)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_skiing
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[стиль катания на горных лыжах, включающий в себя бигэйр , слоупстайл, хафпайп, катание по различным рейлам, боксам, перилам, стенам, как в специально оборудованных парках, так и в «естественных» условиях — одно из самых молодых и зрелищных направлений во фристайле.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_new_school_skiing <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Ньюскул)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_skiing
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Для такого вида спорта используются специальные лыжи «твинтип»](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_new_school_skiing<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://Pictures/new_school_skiing.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;

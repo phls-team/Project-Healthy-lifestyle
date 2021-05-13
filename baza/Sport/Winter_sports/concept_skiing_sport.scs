@@ -1,0 +1,56 @@
+concept_skiing_sport=>nrel_idtf:[skiing_sport]
+	(*<-lang_en;;*);;
+concept_skiing_sport=>nrel_main_idtf:[Лыжный спорт]
+	(*<-lang_ru;;*);;
+	concept_skiing_sport=>nrel_main_idtf:[Лыжный спорт]
+	(*<-lang_ru;;*);;
+
+concept_skiing_sport <-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+[Опр.(Лыжный спорт)] 
+	(* 
+		<-lang_ru;;
+	*);;
+	
+<=nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [Лыжный спорт - это совокупность различных видов зимнего спорта, в соревнованиях по которым спортсмены используют лыжи.]
+(* 
+<-lang_ru;;
+ => nrel_format: format_html;;  
+*);;
+
+	*);;
+	<=nrel_using_constants:
+	concept_skiing;;
+*);;
+
+concept_skiing_sport <- rrel_key_sc_element:...
+	(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утв.(про Лыжный спорт)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Существуют виды, включающие в себя элементы лыжного спорта, а также неолимпийские и малораспространенные виды лыжного спорта.](*<- lang_ru;;*);;
+
+			*);;
+*);;
+
+concept_skiing_sport<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://Pictures/skiing_sport.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;
+winter_sports=>nrel_inclusion:concept_skiing_sport;;

@@ -1,0 +1,51 @@
+concept_skeleton <- sc_node_not_relation;;
+
+concept_skeleton => nrel_main_idtf:
+[Скелетон] (*<-lang_ru;;*);
+[skeleton] (*<-lang_en;;*);;
+
+concept_skeleton <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (Скелетон)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_sleigh;
+		concept_ice
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[зимний олимпийский вид спорта, представляющий собой спуск по ледяному жёлобу на двухполосных санях на укрепленной раме](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_skeleton <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Скелетон)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		nrel_winner
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[победитель определяется по сумме двух или четырёх заездов.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_skeleton<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://Pictures/skeleton.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;
