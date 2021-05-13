@@ -1,0 +1,49 @@
+concept_retina
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[retina](*<-lang_en;;*);
+[сетчатка](*<-lang_ru;;*);
+
+<-rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр.(Сетчатка)](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+    	concept_eye;
+        concept_nervous_system
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Сетча́тка (лат. retína) — внутренняя оболочка <b><sc_element sys_idtf="concept_eye">глаза</b>, являющаяся периферическим 
+    отделом зрительного анализатора; содержит фоторецепторные клетки, обеспечивающие 
+    восприятие и преобразование электромагнитного излучения видимой части спектра 
+    в <b><sc_element sys_idtf="concept_nervous_system">нервные импульсы</b>, а также обеспечивает их первичную обработку.](* <- lang_ru;; => nrel_format: format_html;; *);;	
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-statement;;
+	=>nrel_main_idtf:[Утв.1(Сетчатка)](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+        concept_vitreous;
+        concept_eye
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Анатомически сетчатка представляет собой тонкую оболочку, 
+    прилежащую на всём своём протяжении с внутренней стороны к <b><sc_element sys_idtf="concept_vitreous">стекловидному телу</b>, 
+    а с наружной — к сосудистой оболочке <b><sc_element sys_idtf="concept_eye">глазного яблока</b>.
+](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf:[Изобр.(Сетчатка)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+		"file://images/cornea.jpg"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;

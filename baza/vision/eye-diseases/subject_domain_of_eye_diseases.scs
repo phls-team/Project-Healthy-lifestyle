@@ -1,0 +1,42 @@
+subject_domain_of_eye_diseases
+
+=> nrel_main_idtf: 
+	[Предметная область глазные заболевания]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf: 
+	[Subject domain of eye diseases]
+	(* <- lang_en;; *);
+
+=> nrel_private_subject_domain:{
+		subject_domain_of_eye_cornea;
+		subject_domain_of_eye_retina;
+		subject_domain_of_eye_iris;
+		subject_domain_of_eye_lens;
+		subject_domain_of_eye_vitreous;
+		subject_domain_of_eye_pupil;
+		subject_domain_of_eye_sclera;
+		subject_domain_of_eye_choroid;
+		subject_domain_of_optic_nerve
+};
+		
+<= nrel_private_subject_domain:
+	section_subject_domain_of_eye_diseases;
+		
+-> rrel_maximum_studied_object_class:
+	concept_eye_diseases;
+	
+-> rrel_not_maximum_studied_object_class:
+	conjunctivitis;
+	concept_blindness;
+	concept_astigmatism;
+	concept_leukoma;
+	concept_cataract;
+	concept_color_blindness;
+	concept_myopia;
+	concept_hypermetropia;
+	concept_blindness;
+	
+-> rrel_explored_relation:
+    nrel_eye_component;
+	
+<- subject_domain;;

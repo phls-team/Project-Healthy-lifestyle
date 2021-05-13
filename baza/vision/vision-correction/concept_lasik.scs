@@ -1,0 +1,41 @@
+concept_lasik <- sc_node_not_relation;;
+
+concept_lasik => nrel_main_idtf:
+[лазерная коррекция зрения] (*<-lang_ru;;*);
+[LASIK] (*<-lang_en;;*);;
+
+concept_lasik <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (лазерная коррекция зрения)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_vision
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[LASIK — вид коррекции <b><sc_element sys_idtf="concept_vision">зрения</b> при помощи эксимерного лазера.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_lasik <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (лазерная коррекция зрения)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_hypermetropia;
+		concept_myopia;
+		concept_astigmatism;
+		concept_vision
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Лазерная коррекция зрения позволяет исправить различные нарушения зрения: <b><sc_element sys_idtf="concept_hypermetropia">дальнозоркость</b> (до +4,00 диоптрий), <b><sc_element sys_idtf="concept_myopia">близорукость</b> (до −15,00 диоптрий), <b><sc_element sys_idtf="concept_astigmatism">астигматизм</b> (до ±3,00 диоптрий). Операция выполняется быстро и позволяет вернуть человеку нормальное <b><sc_element sys_idtf="concept_vision">зрение</b>.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+

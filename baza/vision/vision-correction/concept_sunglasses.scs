@@ -1,0 +1,49 @@
+concept_sunglasses <- sc_node_not_relation;;
+
+concept_sunglasses => nrel_main_idtf:
+[солнцезащитные очки ] (*<-lang_ru;;*);
+[sunglasses] (*<-lang_en;;*);;
+
+concept_sunglasses <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (солнцезащитные очки )] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_glasses;
+		concept_eye
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Солнцезащитные очки — <b><sc_element sys_idtf="concept_glasses">очки</b>, надеваемые для защиты <b><sc_element sys_idtf="concept_eye">глаз</b> от солнечного света и ультрафиолетовых лучей.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_sunglasses <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (солнцезащитные очки )] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_person;
+		concept_eye
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Большинство <b><sc_element sys_idtf="concept_person">людей</b> испытывают дискомфорт от прямого солнечного света, поскольку на улице человеческий <b><sc_element sys_idtf="concept_eye">глаз</b> получает гораздо больше света, чем в помещении.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf:[Изобр.(Гимнастика для глаз)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+		"file://images/sunglasses.jpg"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;

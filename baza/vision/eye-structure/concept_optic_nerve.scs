@@ -1,0 +1,51 @@
+concept_optic_nerve
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[optic nerve](*<-lang_en;;*);
+[зрительный нерв](*<-lang_ru;;*);
+
+<-rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр.(Зрительный нерв)](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+    	concept_nervous_system;
+        concept_retina;
+        cerebrum
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Зри́тельный нерв — вторая пара черепных <b><sc_element sys_idtf="concept_nervous_system">нервов</b>, по которым зрительные раздражения, 
+    воспринятые чувствительными клетками <b><sc_element sys_idtf="concept_retina">сетчатки</b>, 
+    передаются в <b><sc_element sys_idtf="cerebrum">головной мозг</b>.](* <- lang_ru;; => nrel_format: format_html;; *);;	
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-statement;;
+	=>nrel_main_idtf:[Утв.1(Зрительный нерв)](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+        concept_retina;
+        concept_nervous_system
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Зрительный нерв представляет собой <b><sc_element sys_idtf="concept_nervous_system">нерв</b> специальной чувствительности. 
+    Каждый зрительный нерв человека содержит от 770 000 до 1,7 миллиона нервных волокон, 
+    которые являются аксонами ганглиозных клеток одной сетчатки. 
+    В центральной ямке, которая имеет высокую остроту, эти ганглиозные клетки 
+    соединяются с 5 фоторецепторными клетками, в других областях <b><sc_element sys_idtf="concept_retina">сетчатки</b> они соединяются со многими тысячами фоторецепторов.
+](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf:[Изобр.(Зрительный нерв)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+		"file://images/optic_nerve.png"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;

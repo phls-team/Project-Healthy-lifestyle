@@ -1,0 +1,45 @@
+concept_epicanthus <- sc_node_not_relation;;
+
+concept_epicanthus => nrel_main_idtf:
+[эпикантус] (*<-lang_ru;;*);
+[epicanthus] (*<-lang_en;;*);;
+
+concept_epicanthus <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (эпикантус)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_eyelid;
+		concept_eye;
+		concept_lacrimal_apparatus
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Эпика́нтус — часть складки верхнего <b><sc_element sys_idtf="concept_eyelid">века</b> у внутреннего угла <b><sc_element sys_idtf="concept_eye">глаза</b>, в большей или меньшей степени прикрывающая <b><sc_element sys_idtf="concept_lacrimal_apparatusслёзный">бугорок</b>.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_epicanthus <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (эпикантус)] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Причины возникновения эпикантуса до сих пор не определены однозначно. Ряд авторов выдвинул гипотезу, что черты лица монголоидного типа — это специальный приспособительный признак для жизни в условиях суровых холодов.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf:[Изобр.(Радужка)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+		"file://images/epicanthus.jpg"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;

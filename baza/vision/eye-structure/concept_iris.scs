@@ -1,0 +1,52 @@
+concept_iris
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[iris](*<-lang_en;;*);
+[радужка](*<-lang_ru;;*);
+[радужная оболочка глаза](*<-lang_ru;;*);
+
+<-rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр.(Радужка)](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+    	concept_eye;
+        concept_pupil
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Ра́дужная оболо́чка гла́за, радужка — 
+	тонкая подвижная оптическая диафрагма <b><sc_element sys_idtf="concept_eye">глаза</b> у позвоночных, 
+	с отверстием (<b><sc_element sys_idtf="concept_pupil">зрачком</b>) в центре. ](* <- lang_ru;; => nrel_format: format_html;; *);;	
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-statement;;
+	=>nrel_main_idtf:[Утв.1(Радужка)](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+		concept_cornea;
+		concept_eye;
+		concept_lens;
+		muscles
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Радужка расположена за <b><sc_element sys_idtf="concept_cornea">роговицей</b>, между передней и задней камерами 
+	<b><sc_element sys_idtf="concept_eye">глаза</b>, перед <b><sc_element sys_idtf="concept_lens">хрусталиком</b>. 
+	Практически светонепроницаема. Содержит пигментные клетки (у млекопитающих — меланоциты), 
+	круговые <b><sc_element sys_idtf="muscles">мышцы</b>, сужающие зрачок, и радиальные, расширяющие его.
+](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf:[Изобр.(Радужка)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+		"file://images/iris.jpg"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;

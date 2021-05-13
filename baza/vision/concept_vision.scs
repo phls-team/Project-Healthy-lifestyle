@@ -1,0 +1,53 @@
+concept_vision
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[vision](*<-lang_en;;*);
+[vision system](*<-lang_en;;*);
+[зрение](*<-lang_ru;;*);
+[зрительная система](*<-lang_ru;;*);
+
+<-rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр.(Зрение)](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+    	concept_binocular_vision
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Зри́тельная систе́ма (зри́тельный анализа́тор, о́рган зре́ния) — <b><sc_element sys_idtf="concept_binocular_vision">бинокулярная</b> 
+    (стереоскопическая) оптическая система биологической природы, эволюционно возникшая у животных и способная воспринимать 
+    электромагнитное излучение видимого спектра (свет), 
+    создавая ощущение положения предметов в пространстве.](* <- lang_ru;; => nrel_format: format_html;; *);;	
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-statement;;
+	=>nrel_main_idtf:[Утв.1(Зрение)](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+		concept_rhodopsin;
+		concept_iodapsin;
+		concept_melanopsin
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Нормальным раздражителем органа зрения является свет. 
+    Под влиянием света в палочках, колбочках и светочувствительных 
+    ганглионарных клетках происходит распад зрительных пигментов (
+    <b><sc_element sys_idtf="concept_rhodopsin">родопсина</b>, 
+    <b><sc_element sys_idtf="concept_iodapsin">йодопсина</b> и 
+    <b><sc_element sys_idtf="concept_melanopsin">меланопсина</b>).](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf:[Изобр.(Зрение)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+		"file://images/vision.jpeg"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;

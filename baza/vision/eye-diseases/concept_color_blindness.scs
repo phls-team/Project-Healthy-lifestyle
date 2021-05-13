@@ -1,0 +1,40 @@
+concept_color_blindness
+<-sc_node_not_relation;
+<-concept_disease;
+=>nrel_main_idtf:
+[color blindness](*<-lang_en;;*);
+[дальтонизм](*<-lang_ru;;*);
+
+<-rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр.(Дальтонизм)](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+    	concept_vision;
+        concept_person
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Дальтони́зм, цветовая слепота, — наследственная, реже приобретённая, 
+    особенность <b><sc_element sys_idtf="concept_vision">зрения</b> 
+    <b><sc_element sys_idtf="concept_person">человека</b> и приматов, выражающаяся в сниженной способности 
+    или полной неспособности видеть или различать все или некоторые цвета. 
+    Названа в честь Джона Дальтона, который впервые описал один из видов цветовой слепоты 
+    на основании собственных ощущений в 1794 году.](* <- lang_ru;; => nrel_format: format_html;; *);;	
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-statement;;
+	=>nrel_main_idtf:[Утв.1(Дальтонизм)](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+		concept_eye
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Наиболее распространенной причиной дальтонизма является унаследованная 
+    проблема при развитии одного или нескольких из трёх наборов колбочек в 
+    <b><sc_element sys_idtf="concept_eye">глазу</b>.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;

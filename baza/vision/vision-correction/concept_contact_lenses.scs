@@ -1,0 +1,49 @@
+concept_contact_lenses
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[contact lenses](*<-lang_en;;*);
+[контактные линзы](*<-lang_ru;;*);
+
+<-rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр.(Контактные линзы)](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+    	concept_eye;
+        concept_cornea
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Контактные линзы — линзы, которые надеваются непосредственно на <b><sc_element sys_idtf="concept_cornea">роговицу</b> 
+    <b><sc_element sys_idtf="concept_eye">глаза</b>.](* <- lang_ru;; => nrel_format: format_html;; *);;	
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-statement;;
+	=>nrel_main_idtf:[Утв.1(Контактные линзы)](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+        concept_vision;
+        concept_myopia;
+        concept_hypermetropia;
+        concept_astigmatism
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Чаще всего они используются с целью коррекции нарушений <b><sc_element sys_idtf="concept_vision">зрения</b>: 
+    <b><sc_element sys_idtf="concept_myopia">близорукости (миопии)</b>, 
+    <b><sc_element sys_idtf="concept_hypermetropia">дальнозоркости (гиперметропии)</b>, 
+    <b><sc_element sys_idtf="concept_astigmatism">астигматизма</b> и пресбиопии.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf:[Изобр.(Контактные линзы)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+		"file://images/contact_lenses.jpeg"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;

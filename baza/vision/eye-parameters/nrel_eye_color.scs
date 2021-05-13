@@ -1,0 +1,81 @@
+nrel_eye_color <- sc_node_norole_relation;;
+
+nrel_eye_color => nrel_main_idtf:
+[цвет глаз*] (*<-lang_ru;;*);
+[eye color*] (*<-lang_en;;*);;
+
+nrel_eye_color <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (цвет глаз)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_iris
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[<b><sc_element sys_idtf="concept_iris">Радужная оболочка</b> состоит из переднего — мезодермального, и заднего — эктодермального слоёв.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+nrel_eye_color <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (цвет глаз)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_iris;
+		concept_collagen
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Наружный слой сосудов <b><sc_element sys_idtf="concept_iris">радужной оболочки</b>, образованный из <b><sc_element sys_idtf="concept_collagen">коллагеновых</b> волокон, отличается тёмно-синим цветом. Если волокна внешнего эктодермального слоя радужной оболочки отличаются малой плотностью и малым содержанием меланина, то он имеет синий цвет.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+nrel_eye_color
+=> nrel_first_domain: concept_eye;
+=> nrel_second_domain: concept_colour;
+
+=> nrel_definitional_domain: ...
+(*
+	<= nrel_combination:
+	{
+		concept_eye;
+		concept_colour
+	};;
+*);;
+
+arity -> ...
+(*
+	-> nrel_eye_color;;
+	=> nrel_measurement: 2;;
+*);;
+
+relation => nrel_inclusion: oriented_relation
+(*
+	-> nrel_eye_color;;
+*);;
+
+relation => nrel_inclusion: binary_relation
+(*
+	 => nrel_inclusion: symmetric_relation
+	(*
+		-|> nrel_eye_color;;
+	*);;
+
+	 => nrel_inclusion: transitive_relation
+	(*
+		-|> nrel_eye_color;;
+	*);;
+
+	 => nrel_inclusion: reflexive_relation
+	(*
+		-|> nrel_eye_color;;
+	*);;
+
+*);;

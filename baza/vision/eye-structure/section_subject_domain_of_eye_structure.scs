@@ -1,0 +1,50 @@
+section_subject_domain_of_eye_structure
+=> nrel_main_idtf: 
+	[Раздел. Предметная область структура глаза]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf: 
+	[Section. Subject domain of eye structure]
+	(* <- lang_en;; *);
+	
+=> nrel_section_decomposition:
+	{
+		section_subject_domain_of_vision
+	};
+	
+<= nrel_section_decomposition: 
+	{
+		section_subject_domain_of_eye_cornea;
+		section_subject_domain_of_eye_retina;
+		section_subject_domain_of_eye_iris;
+		section_subject_domain_of_eye_lens;
+		section_subject_domain_of_eye_vitreous;
+		section_subject_domain_of_eye_pupil;
+		section_subject_domain_of_eye_sclera;
+		section_subject_domain_of_eye_choroid;
+		section_subject_domain_of_optic_nerve
+	};
+
+<- rrel_key_sc_element:
+	subject_domain_of_eye_structure;
+    	concept_cornea;
+	concept_retina;
+	concept_iris;
+	concept_lens;
+	concept_vitreous;
+	concept_pupil;
+	concept_sclera;
+	concept_choroid;
+	concept_optic_nerve;
+	subject_domain_of_eye_structure;
+	concept_epicanthus;
+	concept_eyebrow;
+	concept_eye_component;
+	concept_eyelashes;
+	concept_eyelid;
+	concept_eye_socket;
+	concept_lacrimal_apparatus;
+	concept_lacrimal_glands;
+	concept_tear;
+	nrel_eye_component;;
+
+section_subject_domain_of_eye_structure = [*^"file://subject_domain_of_eye_structure.scs"*];;

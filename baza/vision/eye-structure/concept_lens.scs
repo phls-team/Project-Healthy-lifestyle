@@ -1,0 +1,51 @@
+concept_lens
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[lens](*<-lang_en;;*);
+[хрусталик](*<-lang_ru;;*);
+
+<-rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр.(Хрусталик)](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+    	concept_eye;
+        concept_vitreous;
+        concept_iris
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Хруста́лик — прозрачное тело, расположенное внутри <b><sc_element sys_idtf="concept_eye">глазного яблока</b> между 
+    <b><sc_element sys_idtf="concept_vitreous">стекловидным телом</b> и <b><sc_element sys_idtf="concept_iris">радужкой</b>; 
+    является биологической линзой, хрусталик составляет важную 
+    часть светопреломляющего и светопроводящего аппарата глаза.](* <- lang_ru;; => nrel_format: format_html;; *);;	
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-statement;;
+	=>nrel_main_idtf:[Утв.1(Хрусталик)](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+        concept_vitreous;
+        concept_iris
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Хрусталик представляет собой прозрачное двояковыпуклое округлое эластичное образование, 
+    циркулярно фиксированное к цилиарному телу. Задняя поверхность хрусталика прилегает 
+    к <b><sc_element sys_idtf="concept_vitreous">стекловидному телу</b>, спереди от него находятся 
+    <b><sc_element sys_idtf="concept_iris">радужка</b> и передняя и задняя камеры.
+](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf:[Изобр.(Хрусталик)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+		"file://images/lens.jpg"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;

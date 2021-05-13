@@ -1,0 +1,49 @@
+concept_tear <- sc_node_not_relation;;
+
+concept_tear => nrel_main_idtf:
+[слеза] (*<-lang_ru;;*);
+[tear] (*<-lang_en;;*);;
+
+concept_tear <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (слеза)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_lacrimal_glands;
+		concept_eye
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Слеза́— жидкость, вырабатываемая <b><sc_element sys_idtf="concept_lacrimal_glands">слёзными желёзами</b> для смачивания и очищения поверхности <b><sc_element sys_idtf="concept_eye">глаза</b> у земноводных, пресмыкающихся, птиц и млекопитающих.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_tear <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (слеза)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_cornea;
+		concept_sclera
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Слёзы образуют на поверхности <b><sc_element sys_idtf="concept_cornea">роговицы</b>, <b><sc_element sys_idtf="concept_sclera">склеры</b> и конъюнктивы слёзную плёнку выполняющую защитную функцию.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf:[Изобр.(Радужка)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+		"file://images/tear.jpeg"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;

@@ -1,0 +1,59 @@
+concept_cataract
+<-sc_node_not_relation;
+<-concept_disease;
+=>nrel_main_idtf:
+[cataract](*<-lang_en;;*);
+[катаракта](*<-lang_ru;;*);
+
+<-rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр.(Катаракта)](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+    	concept_eye;
+        concept_vision;
+        concept_lens;
+        concept_protein;
+        concept_denaturation
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Катара́кта — патологическое состояние, 
+    связанное с помутнением <b><sc_element sys_idtf="concept_lens">хрусталика</b> 
+    <b><sc_element sys_idtf="concept_eye">глаза</b> и вызывающее различные степени расстройства 
+    <b><sc_element sys_idtf="concept_vision">зрения</b> вплоть до полной его утраты. 
+    Помутнение хрусталика обусловлено <b><sc_element sys_idtf="concept_denaturation">денатурацией</b> 
+    <b><sc_element sys_idtf="concept_protein">белка</b>, входящего в его состав.](* <- lang_ru;; => nrel_format: format_html;; *);;	
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-statement;;
+	=>nrel_main_idtf:[Утв.1(Катаракта)](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+		concept_genetic_disease;
+        concept_disease;
+        concept_eye;
+        concept_person
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Существует много причин, способствующих развитию катаракты. К ним относятся: пожилой возраст, 
+    неблагоприятные воздействия окружающей среды, <b><sc_element sys_idtf="concept_genetic_disease">генетическая предрасположенность</b>, 
+    приём некоторых лекарственных средств, сопутствующие общие <b><sc_element sys_idtf="concept_disease">заболевания</b>, заболевания или травмы 
+    <b><sc_element sys_idtf="concept_eye">глаз</b>. 
+    Катарактой страдает почти каждый шестой <b><sc_element sys_idtf="concept_person">человек</b> 
+    старше 40 лет и подавляющая часть населения старше 80 лет](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf:[Изобр.(Лейкома)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+		"file://images/cataract.png"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;

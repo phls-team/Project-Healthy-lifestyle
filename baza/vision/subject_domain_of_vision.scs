@@ -1,0 +1,35 @@
+subject_domain_of_vision
+
+=> nrel_main_idtf: 
+	[Предметная область зрение]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf: 
+	[Subject domain of vision]
+	(* <- lang_en;; *);
+
+=> nrel_private_subject_domain:{
+		subject_domain_of_vision_correction;
+		subject_domain_of_eye_structure;
+		subject_domain_of_eye_diseases;
+		subject_domain_of_eye_parameters
+};
+		
+<= nrel_private_subject_domain:
+	section_subject_domain_of_vision;
+		
+-> rrel_maximum_studied_object_class:
+	concept_vision;
+	
+-> rrel_not_maximum_studied_object_class:
+	concept_eye;
+	concept_eye_vision;
+	ophthalmic_hygroscopic_cotton_wool;
+	concept_binocular_vision;
+	concept_monocular_vision;
+	
+-> rrel_explored_relation:
+	nrel_eye_parameters;
+	nrel_eye_gymnastics;
+	nrel_eye_diseases;
+	
+<- subject_domain;;

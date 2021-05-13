@@ -1,0 +1,51 @@
+concept_vitreous
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[vitreous](*<-lang_en;;*);
+[стекловидное тело](*<-lang_ru;;*);
+
+<-rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр.(Стекловидное тело)](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+    	concept_eye;
+        concept_lens;
+        concept_retina
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Стекловидное тело — гелеподобное (студнеобразное) прозрачное вещество, 
+    заполняющее пространство между <b><sc_element sys_idtf="concept_lens">хрусталиком</b> и 
+    <b><sc_element sys_idtf="concept_retina">сетчаткой</b> в глазу. Оно занимает около 2/3 объёма 
+    <b><sc_element sys_idtf="concept_eye">лазного яблока</b>, является его постоянной структурой, 
+    не регенерирует и замещается при потере внутриглазной жидкостью.](* <- lang_ru;; => nrel_format: format_html;; *);;	
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-statement;;
+	=>nrel_main_idtf:[Утв.1(Стекловидное тело)](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+        concept_lens;
+        concept_retina
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Стекловидное тело принято подразделять на 3 части: <b><sc_element sys_idtf="concept_lens">захрусталиковую</b> (pars retrolentalis); 
+    ресничную (pars cillaris), прилегающую к плоской части ресничного тела, и заднюю (pars posterior), 
+    примыкающую к <b><sc_element sys_idtf="concept_retina">сетчатке</b>.
+](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf:[Изобр.(Стекловидное тело)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+		"file://images/vitreous.jpg"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;

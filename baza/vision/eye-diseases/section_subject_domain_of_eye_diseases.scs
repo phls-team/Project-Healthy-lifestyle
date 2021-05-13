@@ -1,0 +1,44 @@
+section_subject_domain_of_eye_diseases
+=> nrel_main_idtf: 
+	[Раздел. Предметная область глазные заболеваеия]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf: 
+	[Section. Subject domain of eye diseases]
+	(* <- lang_en;; *);
+	
+=> nrel_section_decomposition:
+	{
+		section_subject_domain_of_vision
+	};
+	
+<= nrel_section_decomposition: 
+	{
+		section_subject_domain_of_astigmatism;
+		section_subject_domain_of_glaucoma;
+		section_subject_domain_of_heterochromia;
+		section_subject_domain_of_leukoma;
+		section_subject_domain_of_cataract;
+		section_subject_domain_of_blindness;
+		section_subject_domain_of_myopia;
+		section_subject_domain_of_hypermetropia;
+		section_subject_domain_of_hypermetropia;
+		section_subject_domain_of_color_blindness;
+		section_subject_domain_of_conjunctivitis
+	};
+
+<- rrel_key_sc_element:
+		concept_eye_diseases;
+		subject_domain_of_eye_diseases;
+		concept_astigmatism;
+		concept_glaucoma;
+		concept_heterochromia;
+		concept_leukoma;
+		concept_cataract;
+		concept_blindness;
+		concept_myopia;
+		concept_hypermetropia;
+		concept_color_blindness;
+		conjunctivitis;;
+
+
+section_subject_domain_of_eye_diseases = [*^"file://subject_domain_of_eye_diseases.scs"*];;

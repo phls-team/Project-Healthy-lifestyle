@@ -1,0 +1,37 @@
+concept_hypermetropia
+<-sc_node_not_relation;
+<-concept_disease;
+=>nrel_main_idtf:
+[hypermetropia](*<-lang_en;;*);
+[гиперметропи́я](*<-lang_ru;;*);
+[дальнозоркость](*<-lang_ru;;*);
+
+<-rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр.(Дальнозоркость)](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+    	concept_vision
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Дальнозоркость (гиперметропи́я) — это дефект <b><sc_element sys_idtf="concept_vision">зрения</b>, при котором лучше 
+    видно расположенные вдали объекты, а близко расположенные объекты видно плохо.](* <- lang_ru;; => nrel_format: format_html;; *);;	
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-statement;;
+	=>nrel_main_idtf:[Утв.1(Дальнозоркость)](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+		concept_retina;
+        concept_eye
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Этот дефект заключается в том, что из-за аномалии рефракции в 
+    покое аккомодации изображение фокусируется не на <b><sc_element sys_idtf="concept_retina">сетчатке</b> 
+    <b><sc_element sys_idtf="concept_eye">глаза</b>, а за сетчаткой. ](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;

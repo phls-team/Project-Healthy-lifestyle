@@ -1,0 +1,50 @@
+concept_eyebrow <- sc_node_not_relation;;
+
+concept_eyebrow => nrel_main_idtf:
+[бровь] (*<-lang_ru;;*);
+[eyebrow] (*<-lang_en;;*);;
+
+concept_eyebrow <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (бровь)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_leather;
+		concept_eye_socket;
+		hair;
+		muscles
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Бро́вь — дугообразное возвышение <b><sc_element sys_idtf="concept_leather">кожи</b> над <b><sc_element sys_idtf="concept_eye_socket">глазницей</b>, имеющее <b><sc_element sys_idtf="hair">волосяной покров</b> и снабжённое особым <b><sc_element sys_idtf="muscles">мускулом</b>, corrugator supercilii.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_eyebrow <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (бровь)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_eye
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Бровь оттеняет <b><sc_element sys_idtf="concept_eye">глаз</b> от падающего сверху света и защищает от стекания пота и других жидкостей.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf:[Изобр.(Радужка)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+		"file://images/eyebrow.jpg"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;

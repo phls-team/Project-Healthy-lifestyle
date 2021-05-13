@@ -1,0 +1,48 @@
+concept_eyelashes <- sc_node_not_relation;;
+
+concept_eyelashes => nrel_main_idtf:
+[рестницы] (*<-lang_ru;;*);
+[eyelashes] (*<-lang_en;;*);;
+
+concept_eyelashes <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (рестницы)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_eye
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Функцией ресниц является защита <b><sc_element sys_idtf="concept_eye">глаз</b> от частиц грязи, пыли, песка, а также от мелких насекомых.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_eyelashes <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (рестницы)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_eyelid;
+		concept_person
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Веки расположены в 2-3 ряда по переднему ребру свободного края <b><sc_element sys_idtf="concept_eyelid">век</b> у <b><sc_element sys_idtf="concept_person">человека</b>. ](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf:[Изобр.(Радужка)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+		"file://images/eyelashes.jpeg"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;

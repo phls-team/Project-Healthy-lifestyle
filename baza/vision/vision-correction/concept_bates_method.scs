@@ -1,0 +1,36 @@
+concept_bates_method
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[bates method](*<-lang_en;;*);
+[метод Бейтса](*<-lang_ru;;*);
+
+<-rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр.(Метод Бейтса)](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+        concept_vision
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Метод Бейтса — не признанный наукой немедикаментозный метод восстановления <b><sc_element sys_idtf="concept_vision">зрения</b>, 
+    изобретённый американским врачом-офтальмологом Уильямом Горацио Бейтсом.](* <- lang_ru;; => nrel_format: format_html;; *);;	
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-statement;;
+	=>nrel_main_idtf:[Утв.1(Метод Бейтса)](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+		concept_myopia;
+        concept_astigmatism;
+        concept_hypermetropia
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Бейтс заявлял о полном излечении от <b><sc_element sys_idtf="concept_myopia">миопии</b>, 
+    <b><sc_element sys_idtf="concept_hypermetropia">дальнозоркости</b>, 
+    <b><sc_element sys_idtf="concept_astigmatism">астигматизма</b>, пресбиопии по его методу.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;

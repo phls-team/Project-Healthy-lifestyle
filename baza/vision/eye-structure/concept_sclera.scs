@@ -1,0 +1,45 @@
+concept_sclera
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[sclera](*<-lang_en;;*);
+[склера](*<-lang_ru;;*);
+
+<-rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр.(Склера)](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+    	concept_eye;
+        concept_collagen
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Скле́ра — белочная оболочка — наружная плотная соединительнотканная оболочка <b><sc_element sys_idtf="concept_eye">глаза</b>, 
+    выполняющая защитную и опорную функции. Образована собранными в пучки <b><sc_element sys_idtf="concept_collagen">коллагеновыми</b> волокнами.](* <- lang_ru;; => nrel_format: format_html;; *);;	
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-statement;;
+	=>nrel_main_idtf:[Утв.1(Склера)](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+		nrel_age
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Средняя толщина от 0,3 до 1 миллиметра. Толщина склеры у детей мала настолько, 
+    что через неё просвечивает зрительный пигмент, придающий ей голубой оттенок. С <b><sc_element sys_idtf="nrel_age">возрастом</b> толщина склеры увеличивается.
+](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf:[Изобр.(Скле́ра)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+		"file://images/sclera.jpg"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;

@@ -1,0 +1,52 @@
+concept_gymnastics_for_the_eyes
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[gymnastics for the eyes](*<-lang_en;;*);
+[гимнастика для глаз](*<-lang_ru;;*);
+
+<-rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр.(Гимнастика для глаз)](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+        concept_vision
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Гимнастика для глаз – это эффективная и простая помощь при переутомлении <b><sc_element sys_idtf="concept_vision">зрения</b>, 
+    которую вы можете оказать себе самостоятельно.](* <- lang_ru;; => nrel_format: format_html;; *);;	
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-statement;;
+	=>nrel_main_idtf:[Утв.1(Гимнастика для глаз)](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+		exercise;
+        muscles;
+        concept_person
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Есть множество комплексов <b><sc_element sys_idtf="exercise">упражнений</b>, разработанных для того, 
+    чтобы справиться со зрительной усталостью и укрепить глазные <b><sc_element sys_idtf="muscles">мышцы</b>. 
+    Одни из них универсальные, другие – оптимизированы для отдельных категорий <b><sc_element sys_idtf="concept_person">людей</b>.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf:[Изобр.(Гимнастика для глаз)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+		"file://images/eye_gymnastic.jpg"(*=>nrel_format:format_png;;*);;
+	*);;
+*);
+
+=>nrel_improvement:
+concept_vision;
+
+=>nrel_methods:
+bates_method;;

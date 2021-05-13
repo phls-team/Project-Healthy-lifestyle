@@ -1,0 +1,36 @@
+concept_eye_diseases
+<-sc_node_not_relation;
+<-concept_disease;
+=>nrel_main_idtf:
+[eye diseases](*<-lang_en;;*);
+[заболевания глаз](*<-lang_ru;;*);
+
+<-rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр.(Заболевания глаз)](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+    	concept_eye;
+        concept_person
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Заболевания глаз — органические и функциональные поражения зрительного анализатора <b><sc_element sys_idtf="concept_person">человека</b>, 
+    ограничивающие его способность видеть, а также поражения придаточного аппарата <b><sc_element sys_idtf="concept_eye">глаза</b>.](* <- lang_ru;; => nrel_format: format_html;; *);;	
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-statement;;
+	=>nrel_main_idtf:[Утв.1(Заболевания глаз)](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+		concept_person;
+		concept_blindness
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[По состоянию на 2010 год, нарушениями зрения страдали 285 миллионов <b><sc_element sys_idtf="concept_person">человек</b>, 
+	из которых у 39 млн. диагностирована <b><sc_element sys_idtf="concept_blindness">слепота</b>.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;

@@ -1,0 +1,37 @@
+concept_binocular_vision
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[binocular vision](*<-lang_en;;*);
+[stereoscopic vision](*<-lang_en;;*);
+[бинокулярное зрение](*<-lang_ru;;*);
+[стерескопическое зрение](*<-lang_ru;;*);
+
+<-rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр.(Бинокулярное зрение)](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+    	concept_eye;
+        concept_person
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Бинокуля́рное зре́ние — способность одновременно чётко видеть изображение предмета обоими <b><sc_element sys_idtf="concept_eye">глазами</b>; 
+    в этом случае <b><sc_element sys_idtf="concept_person">человек</b> видит одно изображение предмета, на который смотрит. 
+    Бинокулярное зрение также называют стереоскопическим.](* <- lang_ru;; => nrel_format: format_html;; *);;	
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-statement;;
+	=>nrel_main_idtf:[Утв.1(Бинокулярное зрение)](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+		concept_monocular_vision
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Если бинокулярное зрение не развивается, возможно зрение только правым или левым глазом. 
+    Такое зрение называется <b><sc_element sys_idtf="concept_monocular_vision">монокулярным</b>.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;

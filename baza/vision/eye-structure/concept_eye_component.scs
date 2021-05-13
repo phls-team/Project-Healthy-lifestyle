@@ -1,0 +1,18 @@
+concept_eye_component
+<-sc_node_not_relation;
+<-concept_elements;
+=> nrel_main_idtf: 
+	[компонента глаза]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf: 
+	[eye component]
+	(* <- lang_en;; *);
+->	concept_cornea;
+	concept_retina;
+	concept_iris;
+	concept_lens;
+	concept_vitreous;
+	concept_pupil;
+	concept_sclera;
+	concept_choroid;
+	concept_optic_nerve;;

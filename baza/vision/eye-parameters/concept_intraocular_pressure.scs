@@ -1,0 +1,38 @@
+concept_intraocular_pressure <- sc_node_not_relation;;
+
+concept_intraocular_pressure => nrel_main_idtf:
+[внутреглазное давление] (*<-lang_ru;;*);
+[intraocular pressure] (*<-lang_en;;*);;
+
+concept_intraocular_pressure <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (внутреглазное давление)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_eye
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Внутриглазное давление ( ВГД ) — давление жидкости внутри <b><sc_element sys_idtf="concept_eye">глаза</b>.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_intraocular_pressure <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (внутреглазное давление)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_vision
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Внутриглазное давление измеряют с помощью тонометра в рамках комплексной проверки <b><sc_element sys_idtf="concept_vision">зрения</b>.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+

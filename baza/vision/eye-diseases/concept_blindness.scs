@@ -1,0 +1,35 @@
+concept_blindness
+<-sc_node_not_relation;
+<-concept_disease;
+=>nrel_main_idtf:
+[blindness](*<-lang_en;;*);
+[слепота](*<-lang_ru;;*);
+
+<-rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр.(Слепота)](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+    	concept_vision
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Слепота́ — медицинский термин, подразумевающий полное отсутствие 
+    <b><sc_element sys_idtf="concept_vision">зрения</b> или его серьёзное повреждение.](* <- lang_ru;; => nrel_format: format_html;; *);;	
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-statement;;
+	=>nrel_main_idtf:[Утв.1(Слепота)](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+		concept_color_blindness;
+        concept_vision
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Различают полную слепоту (амавро́з) и частичное выпадение поля <b><sc_element sys_idtf="concept_vision">зрения</b> (ското́ма) 
+    или половин полей зрения (гемианопси́я). Кроме того, выделяют цветовую слепоту (<b><sc_element sys_idtf="concept_color_blindness">дальтони́зм</b>).](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;

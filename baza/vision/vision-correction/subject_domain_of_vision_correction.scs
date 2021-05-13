@@ -1,0 +1,31 @@
+subject_domain_of_vision_correction
+
+=> nrel_main_idtf: 
+	[Предметная область коррекция зрения]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf: 
+	[Subject domain of vision correction]
+	(* <- lang_en;; *);
+
+=> nrel_private_subject_domain:{
+		subject_domain_of_lasik;
+		subject_domain_of_gymnastics_for_the_eyes;
+		subject_domain_of_contact_lenses
+};
+		
+<= nrel_private_subject_domain:
+	section_subject_domain_of_eye_gymnastics;
+		
+-> rrel_maximum_studied_object_class:
+	concept_vision;
+	
+-> rrel_not_maximum_studied_object_class:
+		concept_gymnastics_for_the_eyes;
+		concept_bates_method;
+		concept_contact_lenses;
+		concept_lasik;
+		concept_monocle;
+		concept_sunglasses;
+		concept_glasses;
+	
+<- subject_domain;;

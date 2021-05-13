@@ -1,0 +1,38 @@
+concept_monocle <- sc_node_not_relation;;
+
+concept_monocle => nrel_main_idtf:
+[моно́кль] (*<-lang_ru;;*);
+[monocle] (*<-lang_en;;*);;
+
+concept_monocle <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (моно́кль)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_vision
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Моно́кль — один из видов оптических приборов для коррекции или улучшения <b><sc_element sys_idtf="concept_vision">зрения</b>.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_monocle <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (моно́кль)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_eye
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Монокль как оптический прибор был изобретён в XIV веке. Первоначально он представлял собой линзу, закреплённую на длинной ручке, которая держалась над текстом либо перед <b><sc_element sys_idtf="concept_eye">глазами</b>.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+

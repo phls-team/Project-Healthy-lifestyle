@@ -1,0 +1,49 @@
+concept_lacrimal_apparatus <- sc_node_not_relation;;
+
+concept_lacrimal_apparatus => nrel_main_idtf:
+[слёзный аппарат] (*<-lang_ru;;*);
+[lacrimal apparatus] (*<-lang_en;;*);;
+
+concept_lacrimal_apparatus <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (слёзный аппарат)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_eye_socket;
+		concept_tear
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Слёзный аппарата является физиологической системой, содержащей <b><sc_element sys_idtf="concept_eye_socket">орбитальные структуры</b> для <b><sc_element sys_idtf="concept_tear">слезного</b> производства и дренажа](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_lacrimal_apparatus <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (слёзный аппарат)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_eye;
+		concept_organ
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Является вспомогательной структурой <b><sc_element sys_idtf="concept_eye">глаз</b>. Подразделяется на <b><sc_element sys_idtf="concept_organ">органы</b> слезопродукции и органы слезотведения (дренирования).](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf:[Изобр.(Радужка)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+		"file://images/lacrimal_apparatus.png"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;

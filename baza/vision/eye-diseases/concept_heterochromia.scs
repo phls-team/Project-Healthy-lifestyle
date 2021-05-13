@@ -1,0 +1,40 @@
+concept_heterochromia <- sc_node_not_relation;
+<-concept_disease;;
+
+concept_heterochromia => nrel_main_idtf:
+[гетерохромия] (*<-lang_ru;;*);
+[heterochromia] (*<-lang_en;;*);;
+
+concept_heterochromia <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (гетерохромия)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_iris;
+		concept_eye
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Гетерохромия — различный цвет <b><sc_element sys_idtf="concept_iris">радужной оболочки</b> правого и левого <b><sc_element sys_idtf="concept_eye">глаза</b> или разная окраска различных участков радужной оболочки одного глаза.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_heterochromia <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (гетерохромия)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_eye
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[У новорождённых детей цвет глаз часто ярче обычного. Почти всегда с возрастом <b><sc_element sys_idtf="concept_eye">глаз</b> тускнеет, но иногда может сохранять глубину цвета. Это редкое явление, но чаще встречается при полной гетерохромии, хотя вероятность такого явления по-прежнему мала.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
