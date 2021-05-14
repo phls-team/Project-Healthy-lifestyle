@@ -1,0 +1,92 @@
+concept_bioptron=>nrel_idtf:[bioptron] 
+	(*
+		<-lang_en;;
+	*);;
+concept_bioptron=>nrel_idtf:[биоптрон]
+	(*
+		<-lang_ru;;	
+	*);;
+concept_bioptron=>nrel_main_idtf:[биоптрон]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+concept_bioptron<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр.(биоптрон)] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->[Биоптрон - метод лечения и профилактики заболеваний на основе светового воздействия.](* <- lang_ru;; *);;
+	*);;
+	*);;
+
+
+
+concept_bioptron<-rrel_key_sc_element:...
+    (*
+        <-illustration;;
+        <=nrel_sc_text_translation:...
+    (*
+->rrel_example_1:
+"file://images/bioptron.png"
+(*
+        =>nrel_format:format_png;;
+    *);;
+    *);;
+    *);;
+
+
+
+concept_bioptron<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 1. Метод воздействия](* <- lang_ru;; *);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Прибор Биопторон обладает световыми характеристиками, благодаря которым организм человека преображает свет в электрохимическую энергию, запускающую реакции в клетках для нормального функционирования организма. В результате в организме улучшается метаболизм, усиливаются защитные силы.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_bioptron<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 2. Применение Биоптрона](* <- lang_ru;; *);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Прибор широко применяется: для заживления ран; облегчения болезненных ощущений при остеохондрозе, ревматоидном артрите, артрозе, боли в пояснице, шее и др.; для облегчения ощущений при спортивных травмах; в лечении акне, экземы, псориаза, герпеса.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_bioptron<- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 3. Правила применения](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Продолжительность и кратность использования зависят от диагноза/проблемы. Общий принцип работы: перед применением аппарата область воздействия нужно очистить – убрать повязки, одежду и т. п.; принять удобное положение, расслабиться. Включить аппарат и направить его на проблемную зону. Держать ручку под углом в 90 градусов с расстояния не меньше 10 см; кратность использования – 1-2 раза в день. Продолжительность воздействия – от 4 до 10 минут. Точное время должен обозначить врач.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_bioptron=>nrel_inclusion:concept_prophylaxy;;
+concept_bioptron=>nrel_inclusion:concept_COVID19_rehab;;

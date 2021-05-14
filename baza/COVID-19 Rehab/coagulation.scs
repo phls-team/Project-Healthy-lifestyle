@@ -1,0 +1,91 @@
+concept_coagulation=>nrel_idtf:[coagulation] 
+	(*
+		<-lang_en;;
+	*);;
+concept_coagulation=>nrel_idtf:[коагулограмма]
+	(*
+		<-lang_ru;;	
+	*);;
+concept_coagulation=>nrel_main_idtf:[коагулограмма]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+concept_coagulation<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр.(коагулограмма)] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->[Коагулограмма - комплексное гематологическое исследование, направленное на определение показателей свертываемости крови.](* <- lang_ru;; *);;
+	*);;
+	*);;
+
+
+concept_coagulation<-rrel_key_sc_element:...
+    (*
+        <-illustration;;
+        <=nrel_sc_text_translation:...
+    (*
+->rrel_example_1:
+"file://images/coagulation.png"
+(*
+        =>nrel_format:format_png;;
+    *);;
+    *);;
+    *);;
+
+
+
+concept_coagulation<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 1. Методы исследования](* <- lang_ru;; *);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Расшифровка результатов и показатели нормы коагулограммы напрямую зависят от методики ее проведения. Выполнять диагностическую процедуру могут по методу Сухарева (капиллярная кровь) или Ли-Уайта (венозный биоматериал).]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_coagulation<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 2. Подготовка к анализу](* <- lang_ru;; *);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Накануне теста необходимо: исключить жирные и острые блюда; отказаться от сигарет и спиртного; ограничить физическую активность; избегать стрессов, переутомления, психоэмоциональных нагрузок; прекратить прием антикоагулянтов, НПВП и других препаратов, способных повлиять на свертываемость крови.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_coagulation <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 3. Отклонения показателей от нормы](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[При обнаружении отклонений в скрининговой коагулограмме может потребоваться исследование более широкого спектра показателей: Д-димера, антитромбина III, волчаночного антикоагулянта, протеина С, протеина S и т. д.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_coagulation=>nrel_inclusion:concept_COVID19_rehab;;
+concept_coagulation=>nrel_inclusion:concept_blood;;

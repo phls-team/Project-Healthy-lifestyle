@@ -1,0 +1,51 @@
+nrel_drug_elimination_mechanism=>nrel_idtf:[drug elimination mechanism*] (* <- lang_en;; *);;
+nrel_drug_elimination_mechanism=>nrel_idtf:[механизм выведения препарата*] (* <- lang_ru;; *);;
+nrel_drug_elimination_mechanism=>nrel_main_idtf:[механизм выведения препарата*] (* <- lang_ru;; *);;
+
+nrel_drug_elimination_mechanism<-rrel_key_sc_element:...
+(*
+<-definition;;=>nrel_main_idtf:[Опр.(механизм выведения препарата*)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+(*
+->[Механизм выведения препарата* - путь очищения биологических жидкостей или тканей организма от вещества в процессе его биотрансформации, перераспределения в организме, а также выведения из организма.](* <- lang_ru;; *);;
+*);;
+*);;
+
+
+nrel_drug_elimination_mechanism=>nrel_first_domain:concept_medication;;
+nrel_drug_elimination_mechanism=>nrel_second_domain:concept_elimination;;
+
+
+
+nrel_drug_elimination_mechanism<-binary_relation;;
+parameter->arity;;
+arity->binary_relation;;
+binary_relation=>nrel_measurement:2;;
+2<-number;;
+
+
+nrel_drug_elimination_mechanism<-oriented_relation;;
+asymmetric_relation->nrel_drug_elimination_mechanism;;
+transitive_relation->nrel_drug_elimination_mechanism;;
+antireflexive_relation->nrel_drug_elimination_mechanism;;
+binary_relation=>nrel_inclusion:asymmetric_relation;;
+binary_relation=>nrel_inclusion:transitive_relation;;
+binary_relation=>nrel_inclusion:antireflexive_relation;;
+relation=>nrel_inclusion:binary_relation;;
+relation=>nrel_inclusion:oriented_relation;;
+
+
+concept_COVID19_rehab<=nrel_using_constants:...
+(*
+	->rrel_key_sc_element:nrel_drug_elimination_mechanism;;
+	<-statement;;
+	=>nrel_idtf:[Утверждение. Коэффициент очищения организма](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Клиренс или коэффициент очищения — показатель скорости очищения биологических жидкостей или тканей организма от вещества в процессе его биотрансформации, перераспределения в организме, а также выведения из организма.](* <- lang_ru;; *);;
+	*);;
+*);;
+
+
+sc_node_not_relation->asymmetric_relation;;
+asymmetric_relation=>nrel_main_idtf:
+[асимметричное отношение](* <-lang_ru;; *);;

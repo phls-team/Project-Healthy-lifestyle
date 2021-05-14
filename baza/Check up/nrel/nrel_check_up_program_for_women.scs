@@ -1,0 +1,52 @@
+nrel_check_up_program_for_women=>nrel_idtf:[check-up program for women*] (* <- lang_en;; *);;
+nrel_check_up_program_for_women=>nrel_idtf:[программа обследования для женщин*] (* <- lang_ru;; *);;
+nrel_check_up_program_for_women=>nrel_main_idtf:[программа обследования для женщин*] (* <- lang_ru;; *);;
+
+nrel_check_up_program_for_women<-rrel_key_sc_element:...
+(*
+<-definition;;=>nrel_main_idtf:[Опр.(программа обследования для женщин*)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+(*
+->[Программа обследования для женщин* - комплекс лабораторных, инструментальных и функциональных исследований, которые позволяют выявить нарушения в системах женского организма.](* <- lang_ru;; *);;
+*);;
+*);;
+
+
+nrel_check_up_program_for_women=>nrel_first_domain:concept_check_up;;
+nrel_check_up_program_for_women=>nrel_second_domain:concept_female;;
+
+
+nrel_check_up_program_for_women<-binary_relation;;
+parameter->arity;;
+arity->binary_relation;;
+binary_relation=>nrel_measurement:2;;
+2<-number;;
+
+
+nrel_check_up_program_for_women<-oriented_relation;;
+asymmetric_relation->nrel_check_up_program_for_women;;
+transitive_relation->nrel_check_up_program_for_women;;
+antireflexive_relation->nrel_check_up_program_for_women;;
+binary_relation=>nrel_inclusion:asymmetric_relation;;
+binary_relation=>nrel_inclusion:transitive_relation;;
+binary_relation=>nrel_inclusion:antireflexive_relation;;
+relation=>nrel_inclusion:binary_relation;;
+relation=>nrel_inclusion:oriented_relation;;
+
+
+
+concept_check_up<=nrel_using_constants:...
+(*
+	->rrel_key_sc_element:nrel_check_up_program_for_women;;
+	<-statement;;
+	=>nrel_idtf:[Утверждение. программа обследования для женщин](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Входящие в программу комплексного обследования жеского организма исследования выявляют возможные заболевания репродуктивной системы, оценивают состояние микрофлоры влагалища, вероятность наличия заболеваний, передающихся половым путем, а также включают базовый онкоскрининг с целью профилактики рака шейки матки.](* <- lang_ru;; *);;
+	*);;
+*);;
+
+
+
+sc_node_not_relation->asymmetric_relation;;
+asymmetric_relation=>nrel_main_idtf:
+[асимметричное отношение](* <-lang_ru;; *);;

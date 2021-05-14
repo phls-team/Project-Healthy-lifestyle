@@ -1,0 +1,67 @@
+nrel_maximum_permissible_dose=>nrel_idtf:[maximum permissible dose´] (* <- lang_en;; *);;
+nrel_maximum_permissible_dose=>nrel_idtf:[предельно допустимая доза´] (* <- lang_ru;; *);;
+nrel_maximum_permissible_dose=>nrel_main_idtf:[предельно допустимая доза´] (* <- lang_ru;; *);;
+
+nrel_maximum_permissible_dose<-nrel_key_sc_element:...
+(*
+<-definition;;=>nrel_main_idtf:[Опр.(предельно допустимая доза´)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+(*
+->[Предельно допустимая доза´ - медицинский норматив, регламентирующий наибольшее допустимое значение индивидуальной эквивалентной дозы во всем теле человека или отдельных органах.](* <- lang_ru;; *);;
+*);;
+*);;
+
+
+nrel_maximum_permissible_dose=>nrel_first_domain:concept_medication;;
+nrel_maximum_permissible_dose=>nrel_second_domain:concept_doze;;
+
+
+
+nrel_maximum_permissible_dose<-binary_relation;;
+parameter->arity;;
+arity->binary_relation;;
+binary_relation=>nrel_measurement:2;;
+2<-number;;
+
+
+
+nrel_maximum_permissible_dose<-oriented_relation;;
+asymmetric_relation->nrel_maximum_permissible_dose;;
+transitive_relation->nrel_maximum_permissible_dose;;
+antireflexive_relation->nrel_maximum_permissible_dose;;
+binary_relation=>nrel_inclusion:asymmetric_relation;;
+binary_relation=>nrel_inclusion:transitive_relation;;
+binary_relation=>nrel_inclusion:antireflexive_relation;;
+relation=>nrel_inclusion:binary_relation;;
+relation=>nrel_inclusion:oriented_relation;;
+
+
+concept_magnetic_resonance_imaging<=nrel_using_constants:...
+(*
+	->nrel_key_sc_element:nrel_maximum_permissible_dose;;
+	<-statement;;
+	=>nrel_idtf:[Утверждение. Предельно допустимая доза излучения при МРТ](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->nrel_example:[В качестве предельно допустимой дозы для у- и рентгеновского излучения принята 0,05 r и для b-излучения — 0,05 фэр в день.](* <- lang_ru;; *);;
+	*);;
+*);;
+
+
+
+sc_node_not_relation->asymmetric_relation;;
+asymmetric_relation=>nrel_main_idtf:
+[асимметричное отношение](* <-lang_ru;; *);;
+
+
+sc_node_not_relation->concept_medication;;
+concept_medication=>nrel_main_idtf:
+[медикамент](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_doze;;
+concept_doze=>nrel_main_idtf:
+[доза](* <-lang_ru;; *);;
+
+
+sc_node_not_relation->concept_maximum_permissible_dose;;
+concept_maximum_permissible_dose=>nrel_main_idtf:
+[предельно допустимая доза](* <-lang_ru;; *);;

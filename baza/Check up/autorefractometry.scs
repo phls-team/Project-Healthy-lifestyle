@@ -1,0 +1,104 @@
+concept_autorefractometry=>nrel_idtf:[autorefractometry] 
+	(*
+		<-lang_en;;
+	*);;
+concept_autorefractometry=>nrel_idtf:[авторефрактометрия]
+	(*
+		<-lang_ru;;	
+	*);;
+concept_autorefractometry=>nrel_main_idtf:[авторефрактометрия]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+concept_autorefractometry<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр.(авторефрактометрия)] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->[Авторефрактометрия - диагностическая процедура в офтальмологии, которая проводится с использованием специального прибора - авторефрактометра.](* <- lang_ru;; *);;
+	*);;
+	*);;
+
+
+concept_autorefractometry<-rrel_key_sc_element:...
+    (*
+        <-illustration;;
+        <=nrel_sc_text_translation:...
+    (*
+->rrel_example_1:
+"file://images/autorefractometry.png"
+(*
+        =>nrel_format:format_png;;
+    *);;
+    *);;
+    *);;
+
+
+
+concept_autorefractometry<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 1. Метод исследования](* <- lang_ru;; *);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[При исследовании специальный прибор – авторефрактометр – испускает лучи в инфракрасном спектре. Они проходят через зрачок, преломляются, отражаются от сетчатки и улавливаются специальными датчиками. Способность глаза преломлять свет рассчитывается компьютерной программой. Результаты врач получает в виде распечатки с рядом цифровых показателей. Метод подходит для диагностики как взрослых, так и детей.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_autorefractometry<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 2. Применение в медицине](* <- lang_ru;; *);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Авторефрактометрия дает возможность для выявления близорукости, дальнозоркости и астигматизма.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_autorefractometry <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 3. Преимущества и недостатки](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[ Авторефрактометрия отличается следующими преимуществами: отсутствие боли и дискомфорта, высокая скорость проведения исследования (3-5 минут), оперативное получение результатов диагностики, возможность использования вместе с другими исследованиями. Единственным недостатком метода является усиление аккомодации. Результаты диагностики нередко имеют погрешность с уклоном к близорукости.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_autorefractometry <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 4. Методика проведения](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[ Процесс диагностики является полностью автоматическим. Пациент располагается напротив рефрактометра и фиксирует взгляд на изображении (домике, воздушном шарике и др.). Врач наводит пучок света по центру зрачка. Далее проводятся все замеры. Обследование каждого глаза осуществляется отдельно. Сразу же после окончания диагностики пациент может получить распечатку с результатами. .](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_autorefractometry=>nrel_inclusion:concept_check_up;;

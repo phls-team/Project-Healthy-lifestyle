@@ -1,0 +1,56 @@
+nrel_concentration_in_blood=>nrel_idtf:[concentration in blood*] (* <- lang_en;; *);;
+nrel_concentration_in_blood=>nrel_idtf:[концентрация в крови*] (* <- lang_ru;; *);;
+nrel_concentration_in_blood=>nrel_main_idtf:[концентрация в крови*] (* <- lang_ru;; *);;
+
+nrel_concentration_in_blood<-rrel_key_sc_element:...
+(*
+<-definition;;=>nrel_main_idtf:[Опр.(концентрация в крови*)] (* <- lang_ru;; *);;<=nrel_sc_text_translation:...
+(*
+->[Концентрация в крови* -  совокупность процессов абсорбции, распределения и элиминации, происходящих в организме человека, которые пересекаются во времени.](* <- lang_ru;; *);;
+*);;
+*);;
+
+
+nrel_concentration_in_blood=>nrel_first_domain:concept_blood;;
+nrel_concentration_in_blood=>nrel_second_domain:concept_concentration;;
+
+
+
+nrel_concentration_in_blood<-binary_relation;;
+parameter->arity;;
+arity->binary_relation;;
+binary_relation=>nrel_measurement:2;;
+2<-number;;
+
+
+nrel_concentration_in_blood<-oriented_relation;;
+asymmetric_relation->nrel_concentration_in_blood;;
+transitive_relation->nrel_concentration_in_blood;;
+antireflexive_relation->nrel_concentration_in_blood;;
+binary_relation=>nrel_inclusion:asymmetric_relation;;
+binary_relation=>nrel_inclusion:transitive_relation;;
+binary_relation=>nrel_inclusion:antireflexive_relation;;
+relation=>nrel_inclusion:binary_relation;;
+relation=>nrel_inclusion:oriented_relation;;
+
+
+
+concept_complete_blood_count<=nrel_using_constants:...
+(*
+	->rrel_key_sc_element:nrel_concentration_in_blood;;
+	<-statement;;
+	=>nrel_idtf:[Утверждение. Концентрация препарата в крови](* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Если распределение происходит значительно быстрее, чем элиминация, снижение концентрации в крови вначале происходит быстро, а затем замедляется. Фаза быстрого снижения обозначается как α-фаза (фаза распределения), медленного — как β-фаза (фаза элиминации). Если препарат распределяется быстрее, чем абсорбируется, концентрацию препарата в крови можно описать математически упрощенной функцией Бейтмена (k1 и k2 — константы скорости для абсорбции и элиминации соответственно).](* <- lang_ru;; *);;
+	*);;
+*);;
+
+sc_node_not_relation->concept_concentration;;
+concept_concentration=>nrel_main_idtf:
+[концентрация](* <-lang_ru;; *);;
+
+
+sc_node_not_relation->asymmetric_relation;;
+asymmetric_relation=>nrel_main_idtf:
+[асимметричное отношение](* <-lang_ru;; *);;

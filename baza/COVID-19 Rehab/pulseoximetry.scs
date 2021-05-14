@@ -1,0 +1,91 @@
+concept_pulse_oximetry=>nrel_idtf:[pulse oximetry] 
+	(*
+		<-lang_en;;
+	*);;
+concept_pulse_oximetry=>nrel_idtf:[пульсоксиметрия]
+	(*
+		<-lang_ru;;	
+	*);;
+concept_pulse_oximetry=>nrel_main_idtf:[пульсоксиметрия]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+concept_pulse_oximetry<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр.(пульсоксиметрия)] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->[Пульсоксиметрия - неинвазивный метод определения степени насыщения крови кислородом, проводится с помощью пульсоксиметра.](* <- lang_ru;; *);;
+	*);;
+	*);;
+
+
+concept_pulse_oximetry<-rrel_key_sc_element:...
+    (*
+        <-illustration;;
+        <=nrel_sc_text_translation:...
+    (*
+->rrel_example_1:
+"file://images/pulseoximetry.png"
+(*
+        =>nrel_format:format_png;;
+    *);;
+    *);;
+    *);;
+
+
+
+concept_pulse_oximetry<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 1. Показания](* <- lang_ru;; *);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Показания для пульсоксиметрии: дыхательная недостаточность или явное подозрение на неё; контроль состояния пациента: во время наркоза и в послеоперационном периоде; во время кислородной терапии; в ходе лечения тяжёлых пациентов; диагностика некоторых нарушений сна, например, синдрома обструктивного апноэ.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_pulse_oximetry<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 2. Нормы показаний](* <- lang_ru;; *);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Нормы показаний: 95—98 % у здоровых испытуемых; более высокие значения бывают при кислородной терапии; значения ниже этого уровня указывают на дыхательную недостаточность.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_pulse_oximetry <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 3. Подготовка к исследованию](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[В условную подготовку пациента к пульсоксиметрии входят следующие рекомендации: не употреблять стимулирующие вещества; отказ от курения; отказ от алкоголя; не использовать крема для рук и лак для ногтей; питаться в обычном режиме.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+
+concept_pulse_oximetry=>nrel_inclusion:concept_COVID19_rehab;;

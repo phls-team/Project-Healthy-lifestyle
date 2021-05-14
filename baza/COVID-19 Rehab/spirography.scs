@@ -1,0 +1,90 @@
+concept_spirography=>nrel_idtf:[spirography] 
+	(*
+		<-lang_en;;
+	*);;
+concept_spirography=>nrel_idtf:[спирография]
+	(*
+		<-lang_ru;;	
+	*);;
+concept_spirography=>nrel_main_idtf:[спирография]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+concept_spirography<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр.(спирография)] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->[Спирография - метод описания изменений легочного объема, которые регистрируются при естественном и форсированном дыхании.](* <- lang_ru;; *);;
+	*);;
+	*);;
+
+
+concept_spirography<-rrel_key_sc_element:...
+    (*
+        <-illustration;;
+        <=nrel_sc_text_translation:...
+    (*
+->rrel_example_1:
+"file://images/spirography.png"
+(*
+        =>nrel_format:format_png;;
+    *);;
+    *);;
+    *);;
+
+
+
+concept_spirography<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 1. Применение в медицине](* <- lang_ru;; *);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[С помощью спирографии диагностируются острые и хронические бронхолегочные патологии разного происхождения в повседневной врачебной практике. Метод применяют во время профилактических осмотров спортсменов и работников вредных производств, а также для оценки эффективности лечебных процедур.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_spirography<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 2. Противопоказания](* <- lang_ru;; *);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Состояния, препятствующие проведению спирографии: тяжелое общее состояние пациента; токсикоз при беременности; стенокардия; серьезная недостаточность кровообращения; артериальная гипертензия, гипертонический криз; инфаркт миокарда; тяжелая легочная недостаточность.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_spirography <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 3. Подготовка к исследованию](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Обследование лучше проводить утром, натощак, после 15–20-минутного отдыха. Кофе и сигареты за час до обследования придется исключить. Если пациент применяет бронхолитические препараты, их прием потребуется отменить за день до назначенного обследования.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_spirography=>nrel_inclusion:concept_COVID19_rehab;;

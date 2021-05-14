@@ -1,0 +1,90 @@
+concept_cervical_cytology=>nrel_idtf:[cervical cytology] 
+	(*
+		<-lang_en;;
+	*);;
+concept_cervical_cytology=>nrel_idtf:[цитология шейки матки]
+	(*
+		<-lang_ru;;	
+	*);;
+concept_cervical_cytology=>nrel_main_idtf:[цитология шейки матки]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+concept_cervical_cytology<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр.(цитология шейки матки)] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->[Цитология шейки матки - лабораторное исследование, которое определяет клеточную структуру шейки матки, а также клеток цервикального канала.](* <- lang_ru;; *);;
+	*);;
+	*);;
+
+
+concept_cervical_cytology<-rrel_key_sc_element:...
+    (*
+        <-illustration;;
+        <=nrel_sc_text_translation:...
+    (*
+->rrel_example_1:
+"file://images/cervical_cytology.png"
+(*
+        =>nrel_format:format_png;;
+    *);;
+    *);;
+    *);;
+
+
+
+concept_cervical_cytology<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 1. Применение в медицине](* <- lang_ru;; *);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Основная задача, которую решает цитология шейки матки, это – предотвращение онкологического процесса. Раннее обнаружение атипичных клеток позволяет вовремя остановить РШМ (рак шейки матки), который по статистике стоит на третьем месте в ряду самых распространенных онкопатологий у женщин.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_cervical_cytology<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 2. Подготовка к исследованию](* <- lang_ru;; *);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Подготовка заключается в следующих действиях: исключить санацию (гигиенические процедуры) в виде спринцеваний; несколько дней до процедуры (2-3 дня) следует придерживаться режима воздержания в интимной жизни; не пользоваться гигиеническими тампонами, таблетками, жидкостями, кремами, свечами и гелями для влагалища; за 2 часа до теста женщине нужно воздержаться от мочеиспускания.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_cervical_cytology <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 3. Метод исследования](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Гинеколог производит соскоб с внешнего участка шейки матки (экзоцервикса), а также с поверхности слизистой влагалища специальным шпателем (шпатель Эйра). Клетки канала шейки (цервикального канала) забирают с помощью эндобраша - цервикального зонда, что позволяет получить достаточное количество информативного материала.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_cervical_cytology=>nrel_inclusion:concept_check_up;;

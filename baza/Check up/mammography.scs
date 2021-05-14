@@ -1,0 +1,105 @@
+concept_mammography=>nrel_idtf:[mammography] 
+	(*
+		<-lang_en;;
+	*);;
+concept_mammography=>nrel_idtf:[маммография]
+	(*
+		<-lang_ru;;	
+	*);;
+concept_mammography=>nrel_main_idtf:[маммография]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+concept_mammography<-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+			[Опр.(маммография)] 
+	(* 
+		<-lang_ru;;
+	*);;
+		<=nrel_sc_text_translation:...
+	(*
+		->[Маммография - раздел медицинской диагностики, занимающийся неинвазивным исследованием молочной железы, преимущественно женской.](* <- lang_ru;; *);;
+	*);;
+	*);;
+
+
+concept_mammography<-rrel_key_sc_element:...
+    (*
+        <-illustration;;
+        <=nrel_sc_text_translation:...
+    (*
+->rrel_example_1:
+"file://images/mammography.png"
+(*
+        =>nrel_format:format_png;;
+    *);;
+    *);;
+    *);;
+
+
+
+concept_mammography<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 1. Виды маммографии](* <- lang_ru;; *);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Аминокислоты учавствуют в процессе создания ферментов, гормонов, белков.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_mammography<-rrel_key_sc_element:...
+	(*
+		<-statement;;
+		=>nrel_main_idtf:[Утверждение 2. Частота исследования](* <- lang_ru;; *);;
+	
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Врачи не советуют делать маммографию груди, если отсутствуют каких-либо жалоб, в возрасте до сорока лет.]
+	(*
+		<-lang_ru;; 
+	*);;
+	*);;
+	*);;
+
+
+concept_mammography <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 3. Метод исследования](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Процедура занимает не более 10 минут. Для снимка грудь должна быть зафиксирована между двумя планками и слегка сжата. Снимок делается в двух проекциях, чтобы можно было точно определить местонахождение новообразования, если оно будет найдено. Поскольку симметрия является одним из факторов диагностики, всегда следует проводить исследование обеих молочных желез.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_mammography <- rrel_key_sc_element:...
+		(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утверждение 4. Противопоказания](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[Абсолютными противопоказаниями к маммографии являются беременность и кормление грудью. Относительным противопоказанием является возраст до 35 лет, когда рентгеновское излучение имеет больше влияния на организм.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_mammography=>nrel_inclusion:concept_check_up;;
+concept_mammography=>nrel_inclusion:concept_breast;;
