@@ -1,0 +1,211 @@
+scp_program -> proc_finding_products_of_a_certain_type_of_sports_nutrition (*
+	
+	-> rrel_params: ..proc_finding_products_of_a_certain_type_of_sports_nutrition_params (*
+		-> rrel_1: rrel_in: _type_of_sports_eat;;
+		-> rrel_2: rrel_in: _result;;
+	*);;
+
+	-> rrel_operators: ..proc_finding_products_of_a_certain_type_of_sports_nutrition_operator_set (*
+
+				-> rrel_init: ..proc_search_all_output
+					(*
+						<- genEl;;
+						-> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var:_set_elem;;
+						=> nrel_goto:..find_sports_nutrition;;
+					*);;
+			
+				-> ..find_sports_nutrition
+					 (*
+						<- searchSetStr5;;
+						-> rrel_1: rrel_assign: rrel_scp_var: _type;;
+						-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: rrel_const: _arc2;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _type_of_sports_eat;;
+						-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc4;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_belonging;;
+
+						-> rrel_set_1 : rrel_fixed: rrel_scp_var: _set_elem;;
+						-> rrel_set_2 : rrel_fixed: rrel_scp_var: _set_elem;;
+						=> nrel_then: ..proc_check_answer;;
+						=> nrel_else: ..proc_run_testcase_operator_return;;	
+					*);;
+
+				-> ..proc_check_answer
+					(*
+						<-searchElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _set_elem ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2 ;;
+						-> rrel_3: rrel_assign: rrel_scp_var: _curr_elem ;;
+	
+						=> nrel_then: ..proc_erase_arc ;;
+						=> nrel_else: ..proc_gen_answer_all;;
+						
+					*);;
+
+				-> ..proc_erase_arc
+					(*
+						<- eraseEl ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: rrel_erase: _arc2 ;;
+	
+						=> nrel_goto: ..proc_search_all_input_operator ;;
+					*);;
+
+				-> ..proc_search_all_input_operator 
+					(*
+						<- searchElStr3;;
+						-> rrel_1: rrel_fixed: rrel_scp_const: system_element;;
+						-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+						
+						-> rrel_3: rrel_fixed: rrel_scp_var: _curr_elem;;
+						
+						=> nrel_then: ..proc_check_answer;;
+						=> nrel_else: ..proc_search_all_input_operator_2;;
+					*);;
+
+				-> ..proc_search_all_input_operator_2
+					 (*
+						<- searchElStr3;;
+						-> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+						-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var:_arc2;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _curr_elem;;
+
+						=> nrel_then: ..proc_check_answer;;
+						=> nrel_else: ..proc_gen_answer;;
+					*);;					
+
+ 				-> ..proc_gen_answer
+					(*
+						<- genElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _result ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: rrel_const: _result_com ;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _curr_elem ;;
+	
+						=> nrel_goto: ..proc_check_answer ;;
+					*);;
+
+              
+                -> ..proc_gen_answer_all
+					(*
+						<- genElStr3;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: rrel_const: _arc2 ;;
+						
+						-> rrel_3: rrel_assign: rrel_scp_var: _type ;;
+		
+						=> nrel_goto: ..proc_gen_answer_all_1 ;;
+					*);; 
+
+ 				-> ..proc_gen_answer_all_1
+					(*
+						<- genElStr3 ;;
+
+						-> rrel_1: rrel_assign: rrel_scp_var: _type ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: rrel_const: _result_com ;;
+						-> rrel_3: rrel_assign: rrel_scp_var: _result_node ;;
+	
+						=> nrel_goto: ..proc_gen_answer_1 ;;
+					*);;
+
+              
+                -> ..proc_gen_answer_1
+					(*
+						<- genElStr5 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _result_node ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: rrel_const: _result_com_2 ;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _type_of_sports_eat ;;
+						-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: rrel_const: _result_arc ;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_belonging ;;
+
+						=> nrel_goto: ..proc_gen_answer_2 ;;
+					*);;
+
+
+				-> ..proc_gen_answer_2
+					(*
+						<- genElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _result ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _result_com ;;
+	
+						=> nrel_goto: ..proc_gen_answer_3 ;;
+					*);;
+
+					-> ..proc_gen_answer_3
+					(*
+						<- genElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _result ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _result_node ;;
+	
+						=> nrel_goto: ..proc_gen_answer_4 ;;
+					*);;
+		
+
+                -> ..proc_gen_answer_4
+					(*
+						<- genElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _result ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _result_com_2 ;;
+	
+						=> nrel_goto: ..proc_gen_answer_5 ;;
+					*);;
+
+				  -> ..proc_gen_answer_5
+					(*
+						<- genElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _result ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _result_arc ;;
+	
+						=> nrel_goto: ..proc_result ;;
+					*);;
+
+
+				-> ..proc_result
+                (*
+                    <- genElStr3;;
+
+                    -> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+		  	        -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+		  	        -> rrel_3: rrel_fixed: rrel_scp_var: _type_of_sports_eat;;
+
+                    => nrel_goto: ..proc_result1_2 ;;
+                *);;
+
+				-> ..proc_result1_2
+					(*
+						<- genElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _result ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_const: nrel_belonging ;;
+	
+						=> nrel_goto: ..proc_result2 ;;
+					*);;
+
+
+                -> ..proc_result2
+					(*
+						<- genElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _result ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_const: _type ;;
+	
+						=> nrel_goto: ..proc_run_testcase_operator_return ;;
+					*);;        
+
+		-> ..proc_run_testcase_operator_return (*
+			<- return;;
+		*);;
+	*);;
+*);;

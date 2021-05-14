@@ -1,0 +1,21 @@
+ui_menu_finding_products_of_a_certain_type_of_sports_nutrition  
+<- ui_user_command_class_atom; 
+ui_user_command_class_view_kb;
+ui_one_argument_command_class;;
+
+ui_menu_finding_products_of_a_certain_type_of_sports_nutrition  => nrel_main_idtf: [Найти всё товары спортивного питания, относящеся к определенному виду спортивного питания] (* <- lang_ru;; *);;
+ui_menu_finding_products_of_a_certain_type_of_sports_nutrition  => nrel_main_idtf: [Find all sports nutrition products related to a specific sports nutrition] (* <- lang_en;; *);;
+ui_menu_finding_products_of_a_certain_type_of_sports_nutrition  => nrel_main_idtf: [Знайсці ўсё тавары спартыўнага харчавання, относящеся да вызначанага выгляду спартыўнага харчавання] (* <- lang_by;; *);;
+ui_menu_finding_products_of_a_certain_type_of_sports_nutrition  => ui_nrel_command_template:
+	[*
+		action_finding_products_of_a_certain_type_of_sports_nutrition _-> ._action_finding_products_of_a_certain_type_of_sports_nutrition_instance
+			(*
+				_-> ui_arg_1;;				
+			*);;
+		._action_finding_products_of_a_certain_type_of_sports_nutrition_instance _<- question;;
+
+	*];;
+
+ui_menu_finding_products_of_a_certain_type_of_sports_nutrition  => ui_nrel_command_lang_template: [Какое товары/объекты мы нашли?] (* <- lang_ru;; *);;
+ui_menu_finding_products_of_a_certain_type_of_sports_nutrition  => ui_nrel_command_lang_template: [What products / objects did we find?] (* <- lang_en;; *);;
+ui_menu_finding_products_of_a_certain_type_of_sports_nutrition  => ui_nrel_command_lang_template: [Якое тавары / аб'екты мы знайшлі?] (* <- lang_by;; *);;

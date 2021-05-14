@@ -1,0 +1,1 @@
+/home/user/ostis/kb/Казаченко Евгений/Project-Healthy-lifestyle/agents/my_agents/agent_of_finding_diseases_by_symptom_and_pandemia_end/sc_agent_for_finding_disease_by_symptom_and_end_pandemia.scs
