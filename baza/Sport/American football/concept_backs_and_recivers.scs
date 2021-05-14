@@ -1,0 +1,52 @@
+concept_backs_and_recievers<-sc_node_not_relation;;
+
+concept_backs_and_recievers=>nrel_main_idtf:[Беки и ресиверы]
+(* 
+<-lang_ru;; 
+*);
+nrel_main_idtf:[backs and recievers]
+        (* 
+        <-lang_en;; 
+        *);;
+
+
+
+
+
+defenition ->...
+(*
+->rrel_key_sc_element:concept_backs_and_recievers ;;
+     <= nrel_sc_text_translation: ...(*->rrel_example:[Беки и ресиверы —  шестеро игроков, находящихся по краям или сзади линии нападения.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Лайнмены нападения)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_offensive_line;
+concept_player
+};;
+*);;
+
+concept_backs_and_recievers<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//backs_and_recievers.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Беки и ресиверы)](*<- lang_ru;;*);;
+*);;
+*);;
+
+
+
+
+
+
+
+concept_offensive_line=>nrel_inclusion:
+concept_quaterback;
+concept_running_back;
+concept_tight_end;
+concept_wide_reciever;;
+

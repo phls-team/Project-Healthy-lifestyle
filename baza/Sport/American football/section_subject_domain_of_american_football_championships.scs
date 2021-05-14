@@ -1,0 +1,48 @@
+section_subject_domain_of_american_football_championships
+=> nrel_main_idtf: 
+	[Раздел. Предметная область чемпионатов по американскому футболу]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf: 
+	[Section. Subject domain of american football championships]
+	(* <- lang_en;; *);
+	
+
+
+
+<- rrel_key_sc_element:
+		
+               championship;
+               subject_domain_of_american_football_championships;
+               NFL;
+               nrel_location;;
+               
+
+section_subject_domain_of_american_football_championships = [*
+subject_domain_of_american_football_championships
+
+=> nrel_main_idtf: 
+	[Предметная область чемпионатов по американскому футболу]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf: 
+	[Subject domain of american football championships]
+	(* <- lang_en;; *);
+
+
+		
+<= nrel_private_subject_domain:
+	section_subject_domain_of_american_football_championships;
+		
+-> rrel_maximum_studied_object_class:
+	championship;
+
+-> rrel_not_maximum_studied_object_class:
+	       NFL;
+              
+
+-> rrel_explored_relation:
+	nrel_sports_achivments;
+               nrel_location;
+	
+	
+<- subject_domain;;
+*];;

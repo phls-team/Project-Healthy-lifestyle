@@ -1,0 +1,33 @@
+
+
+concept_quick_hits<-sc_node_not_relation;;
+concept_quick_hits=> nrel_main_idtf:
+          [quick hits](*<-lang_en;;*);
+          [быстрые удары](*<-lang_ru;;*);;
+ 
+concept_buttonhooks<-sc_node_not_relation;;
+concept_buttonhooks=> nrel_main_idtf:
+          [buttonhooks](*<-lang_en;;*);
+          [баттонхуки](*<-lang_ru;;*);;
+ 
+concept_slants<-sc_node_not_relation;;
+concept_slants=> nrel_main_idtf:
+          [slants](*<-lang_en;;*);
+          [сланты](*<-lang_ru;;*);;
+          
+concept_mirror<-sc_node_not_relation;;
+concept_mirror=> nrel_main_idtf:
+          [mirror](*<-lang_en;;*);
+          [зеркало](*<-lang_ru;;*);;            
+          
+concept_double_flies<-sc_node_not_relation;;
+concept_double_flies=> nrel_main_idtf:
+          [double flies](*<-lang_en;;*);
+          [двойные флаи](*<-lang_ru;;*);;        
+      
+concept_all_streaks<-sc_node_not_relation;;
+concept_all_streaks=> nrel_main_idtf:
+          [all streaks](*<-lang_en;;*);
+          [все полосы](*<-lang_ru;;*);;
+          
+

@@ -1,0 +1,55 @@
+section_subject_domain_of_american_football_rules_of_game
+=> nrel_main_idtf: 
+	[Раздел. Предметная область правил игры в американский футбол]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf: 
+	[Section. Subject domain of american football rules of game]
+	(* <- lang_en;; *);
+	
+
+
+
+<- rrel_key_sc_element:
+		
+               concept_game_rules;
+               subject_domain_of_american_football_rules_of_game;
+      nrel_game_time;
+      nrel_kolvo;
+               concept_touchdown;
+               concept_field_goal;
+               concept_safety;
+               concept_kick_off;;
+               
+
+section_subject_domain_of_american_football_rules_of_game = [*
+subject_domain_of_american_football_rules_of_game
+
+=> nrel_main_idtf: 
+	[Предметная область правил игры в американский футбол]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf: 
+	[Subject domain of american football rules of game]
+	(* <- lang_en;; *);
+
+
+		
+<= nrel_private_subject_domain:
+	section_subject_domain_of_american_football_rules_of_game;
+		
+-> rrel_maximum_studied_object_class:
+	concept_game_rules;
+
+-> rrel_not_maximum_studied_object_class:
+	concept_offensive_line;
+	concept_touchdown;
+               concept_field_goal;
+               concept_safety;
+               concept_kick_off;
+
+-> rrel_explored_relation:
+	nrel_game_time;
+      nrel_kolvo;
+	
+	
+<- subject_domain;;
+*];;

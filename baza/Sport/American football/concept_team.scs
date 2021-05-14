@@ -1,0 +1,49 @@
+concept_team<-sc_node_not_relation;;
+
+concept_team=>nrel_main_idtf:[команда]
+(* 
+<-lang_ru;; 
+*);
+nrel_main_idtf:[team]
+        (* 
+        <-lang_en;; 
+        *);;
+        
+concept_team=>nrel_idtf:[спортивная команда]
+        (*
+                <-lang_ru;;
+        *);;
+
+
+
+
+defenition ->...
+(*
+->rrel_key_sc_element:concept_team ;;
+     <= nrel_sc_text_translation: ...(*->rrel_example:[Спортивная команда — это группа спортсменов, представляющих единый клуб, общество города, страну и т. д., которые принимают участие в соревнованиях.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Спортивная команда)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_championship
+};;
+*);;
+
+concept_team<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//team.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Команда)](*<- lang_ru;;*);;
+*);;
+*);;
+
+
+
+concept_team->rrel_example:
+Green_Bay_Packers;
+Tampa_Bay_Buccaneers;;
+

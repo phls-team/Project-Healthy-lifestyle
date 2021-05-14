@@ -1,0 +1,52 @@
+section_subject_domain_of_american_football_famous_players
+=> nrel_main_idtf: 
+	[Раздел. Предметная область известных игроков в американский футбол]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf: 
+	[Section. Subject domain of american football famous players]
+	(* <- lang_en;; *);
+	
+
+
+
+<- rrel_key_sc_element:
+		
+               concept_player;
+               subject_domain_of_american_football_famous_players;
+               Mike_Evans;
+               Aaron_Rodgers;
+               Tom_Brady;
+               nrel_sports_achivments;
+               nrel_team;;
+               
+
+section_subject_domain_of_american_football_famous_players = [*
+subject_domain_of_american_football_famous_players
+
+=> nrel_main_idtf: 
+	[Предметная область известных игроков в американский футбол]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf: 
+	[Subject domain of american football famous players]
+	(* <- lang_en;; *);
+
+
+		
+<= nrel_private_subject_domain:
+	section_subject_domain_of_american_football_famous_players;
+		
+-> rrel_maximum_studied_object_class:
+	concept_player;
+
+-> rrel_not_maximum_studied_object_class:
+	       Mike_Evans;
+               Aaron_Rodgers;
+               Tom_Brady;
+
+-> rrel_explored_relation:
+	nrel_sports_achivments;
+               nrel_team;
+	
+	
+<- subject_domain;;
+*];;

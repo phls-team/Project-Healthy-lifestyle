@@ -1,0 +1,43 @@
+Aaron_Rodgers
+<-sc_node_not_relation;
+<-concept_person;
+<-concept_athlete;
+
+=> nrel_main_idtf:
+          [Aaron Rodgers](*<-lang_en;;*);
+          [Аарон Роджерс](*<-lang_ru;;*);
+
+
+=> nrel_weight:102;
+=> nrel_age:37;
+=> nrel_height:188;
+=> nrel_birthplace: USA;
+=> nrel_sport_role:concept_quaterback;
+=>nrel_team:Green_Bay_Packers;
+=> nrel_sports_achivments: ..union;;
+..union<=nrel_combination:
+{
+        Super_Bowl_champion;
+        Super_Bowl_MVP;
+        NFL_Most_Valuable_Player;
+        First_team_All_Pro;
+        NFL_passing_touchdowns_leader
+};;
+
+
+          
+Aaron_Rodgers<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://Фото/Aaron_Rodgers.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
+
+      
+                              	
+	

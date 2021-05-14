@@ -1,0 +1,67 @@
+concept_defensive_back<-sc_node_not_relation;;
+
+concept_defensive_back=>nrel_main_idtf:[задний защитник]
+(* 
+<-lang_ru;; 
+*);
+nrel_main_idtf:[defensive back]
+        (* 
+        <-lang_en;; 
+        *);;
+ concept_defensive_back=>nrel_idtf:[DB]
+        (*
+                <-lang_ru;;
+        *);
+nrel_idtf:[DB]
+        (*
+                <-lang_en;;
+        *);;
+
+
+defenition ->...
+(*
+->rrel_key_sc_element:concept_defensive_back ;;
+     <= nrel_sc_text_translation: ...(*->rrel_example:[Задние защитники — 3 игрока защиты.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Задние защитники)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_player
+};;
+*);;
+
+
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_defensive_back;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Задние защитники прикрывают принимающих игроков и пытаются помешать завершению паса, изредка атакуют квотербека.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(О выполняемой функции)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_player;
+concept_pass;
+concept_quaterback
+
+};;
+*);;
+
+  
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+

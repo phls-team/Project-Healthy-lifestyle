@@ -1,0 +1,74 @@
+concept_touchdown<-sc_node_not_relation;;
+
+concept_touchdown=>nrel_main_idtf:[тачдаун]
+(* 
+<-lang_ru;; 
+*);
+nrel_main_idtf:[touchdown]
+        (* 
+        <-lang_en;; 
+        *);;
+
+
+
+
+
+defenition ->...
+(*
+->rrel_key_sc_element:concept_touchdown ;;
+     <= nrel_sc_text_translation: ...(*->rrel_example:[Тачдаун — это занос мяча в зачётную зону соперника.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Тачдаун)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+kind_of_sport;
+concept_end_zone;
+concept_opponent;
+concept_point;
+concept_ball
+};;
+*);;
+
+concept_touchdown<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//touchdown.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Тачдаун)](*<- lang_ru;;*);;
+*);;
+*);;
+
+
+
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_touchdown;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[За выполнение тачдауна команде даётся 6 очков.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Цель игры)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_team;
+concept_point
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_touchdown ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[После тачдауна атакующая команда может добавить себе ещё одно или два очка, если забьёт гол в ворота со свободного удара, или, соответственно, сделает ещё один тачдаун с этой же точки.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Дополнительные очки)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_team;
+concept_point;
+concept_goal
+};;
+*);;
+
+
+
+
+
+

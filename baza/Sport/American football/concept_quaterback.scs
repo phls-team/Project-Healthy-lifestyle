@@ -1,0 +1,101 @@
+concept_quaterback<-sc_node_not_relation;;
+
+concept_quaterback=>nrel_main_idtf:[квотербэк]
+(* 
+<-lang_ru;; 
+*);
+nrel_main_idtf:[quaterback]
+        (* 
+        <-lang_en;; 
+        *);;
+ concept_quaterback=>nrel_idtf:[QB]
+        (*
+                <-lang_ru;;
+        *);
+nrel_idtf:[QB]
+        (*
+                <-lang_en;;
+        *);;
+
+
+defenition ->...
+(*
+->rrel_key_sc_element:concept_quaterback ;;
+     <= nrel_sc_text_translation: ...(*->rrel_example:[Квотербек — самый важный игрок команды нападения, который получает мяч от центра и начинает розыгрыш.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Квотербек)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_player;
+concept_ball
+};;
+*);;
+
+concept_quaterback<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//quaterback.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Квотербек)](*<- lang_ru;;*);;
+*);;
+*);;
+
+
+
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_quaterback;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[После получения мяча, у квотербека есть три дальнейших варианта поведения: бежать с мячом вперед, передать мяч другому игроку из рук в руки или бросить ему пас.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(О поведении квотербека при розыгрыше)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_player;
+concept_ball;
+concept_pass
+};;
+*);;
+
+  
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+
+concept_field<-sc_node_not_relation;;
+
+concept_field=>nrel_main_idtf:[поле]
+(* 
+<-lang_ru;; 
+*);
+nrel_main_idtf:[field]
+        (* 
+        <-lang_en;; 
+        *);;
+concept_american_football_field<-sc_node_not_relation;;        
+concept_american_football_field=>nrel_main_idtf:[поле для американского футбола]
+(* 
+<-lang_ru;; 
+*);
+nrel_main_idtf:[american football field]
+        (* 
+        <-lang_en;; 
+        *);;       

@@ -1,0 +1,87 @@
+concept_running_back<-sc_node_not_relation;;
+
+concept_running_back=>nrel_main_idtf:[Раннинбек]
+(* 
+<-lang_ru;; 
+*);
+nrel_main_idtf:[running back]
+        (* 
+        <-lang_en;; 
+        *);;
+ concept_running_back=>nrel_idtf:[RB]
+        (*
+                <-lang_ru;;
+        *);
+nrel_idtf:[бегущий]
+        (*
+                <-lang_ru;;
+        *);
+nrel_idtf:[RB]
+        (*
+                <-lang_en;;
+        *);;
+
+
+defenition ->...
+(*
+->rrel_key_sc_element:concept_running_back ;;
+     <= nrel_sc_text_translation: ...(*->rrel_example:[Бегущий - игрок, находящийся позади квотербека или рядом с ним.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Раннинбек)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_player;
+concept_quaterback
+};;
+*);;
+
+concept_running_back<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//running_back.jpeg"
+        (*
+                =>nrel_format:format_jpeg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Раннинбек)](*<- lang_ru;;*);;
+*);;
+*);;
+
+
+
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_running_back;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Раннинбек специализируется на беге с мячом во время выносных комбинаций, участвует в блоке, ловит пасы и в редких случаях кидает мяч другому игроку.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(О выполняемых функциях)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_player;
+concept_ball;
+concept_pass
+};;
+*);;
+
+  
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+
+

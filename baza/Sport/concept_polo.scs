@@ -1,0 +1,92 @@
+concept_polo<-sc_node_not_relation;;
+
+concept_polo=>nrel_main_idtf:[поло]
+(* 
+<-lang_ru;; 
+*);
+nrel_main_idtf:[polo]
+        (* 
+        <-lang_en;; 
+        *);;
+        
+concept_polo=>nrel_idtf:[конное поло]
+        (*
+                <-lang_ru;;
+        *);;
+
+
+
+
+
+defenition ->...
+(*
+->rrel_key_sc_element:concept_polo ;;
+     <= nrel_sc_text_translation: ...(*->rrel_example:[Поло — командный вид спорта с мячом, в котором участники играют верхом на лошадях и перемещают мяч по полю с помощью специальной клюшки.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Поло)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+team_sport;
+concept_ball;
+nrel_participan;
+concept_horse;
+concept_club
+};;
+*);;
+
+concept_polo<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//polo.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Поло)](*<- lang_ru;;*);;
+*);;
+*);;
+
+
+
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_polo;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[В игре участвуют 2 команды по 4 игрока в каждой. Один из игроков – вратарь, а другие три – нападающие и защитники.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Цель игры)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+nrel_aim;
+concept_team;
+concept_player;
+concept_goalkeeper;
+concept_quaterback;
+concept_forward
+};;
+*);;
+
+
+
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_polo ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Игра может состоять из 4, 6, 8 периодов по 7,5 минут.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Продолжительность игры)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+nrel_game_time;
+concept_minute;
+concept_quater
+};;
+*);;
+
+
+
+concept_sport=>nrel_inclusion:concept_polo;;
+concept_polo=>nrel_opening_year:...(* -> rrel_number_of_year:1889;;*);;
+concept_polo=>nrel_kolvo:4;;
+concept_polo=>nrel_game_time:...(* -> rrel_number_of_match_time:45;;*);;
+concept_polo=>nrel_rodina:England;;
+concept_polo<=nrel_inclusion:team_sport;;
+
+
+

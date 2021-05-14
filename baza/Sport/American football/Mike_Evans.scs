@@ -1,0 +1,42 @@
+Mike_Evans
+<-sc_node_not_relation;
+<-concept_person;
+<-concept_athlete;
+
+=> nrel_main_idtf:
+          [Mike Evans](*<-lang_en;;*);
+          [Майк Эванс](*<-lang_ru;;*);
+
+
+=> nrel_weight:105;
+=> nrel_age:27;
+=> nrel_height:196;
+=> nrel_birthplace: USA;
+=> nrel_sport_role:concept_wide_reciver;
+=> nrel_team:Tampa_Bay_Buccaneers;
+=> nrel_sports_achivments: ..union;;
+..union<=nrel_combination:
+{
+        Super_Bowl_champion;
+        First_team_All_Pro;
+      Pro_Bowl
+};;
+
+
+          
+Mike_Evans<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://Фото/Mike_Evans.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
+
+
+      
+                              	
+	

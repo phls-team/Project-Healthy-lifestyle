@@ -1,0 +1,60 @@
+nrel_team
+<- sc_node_norole_relation;;
+nrel_team => nrel_main_idtf: [команда*]
+        (*
+            <- lang_ru;;
+        *);
+
+nrel_main_idtf: [team*]
+        (*
+            <- lang_en;;
+        *);;
+  
+
+definition ->...
+(*
+->rrel_key_sc_element: nrel_yard_measurement;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Команда - бинарное ориентированное отношение, связывающее командный вид спорта с игроком*. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (команда*)](*<- lang_ru;;*);;
+=> nrel_using_constants: 
+{
+    nrel_binary_relation;
+    team_sport;
+    concept_player
+};;
+*);;
+
+
+..arity_2=>nrel_measurement:2;;
+..arity_2->nrel_team;;
+..arity_2<-arity;;
+number->2;;
+
+nrel_team => nrel_first_domain: team_sport;;
+nrel_team => nrel_second_domain: concept_player;;
+..union<=nrel_combination:
+{
+        team_sport;
+	concept_player
+};;
+nrel_team => nrel_definitional_domain: ..union;; 
+
+relation => nrel_inclusion: oriented_relation;; 
+relation => nrel_inclusion: binary_relation;;
+oriented_relation -> nrel_team;;
+binary_relation => nrel_inclusion: antireflexive_relation;;
+binary_relation => nrel_inclusion: antitransitive_relation;;
+binary_relation => nrel_inclusion: antisymmetric_relation;; 
+antireflexive_relation -> nrel_team;; 
+antitransitive_relation -> nrel_team;;
+antisymmetric_relation -> nrel_team;;
+
+
+
+
+
+
+
+
+
+

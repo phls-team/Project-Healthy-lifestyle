@@ -1,0 +1,70 @@
+concept_kick_off<-sc_node_not_relation;;
+
+concept_kick_off=>nrel_main_idtf:[кик-офф]
+(* 
+<-lang_ru;; 
+*);
+nrel_main_idtf:[kick-off]
+        (* 
+        <-lang_en;; 
+        *);;
+
+
+
+
+
+defenition ->...
+(*
+->rrel_key_sc_element:concept_kick_off ;;
+     <= nrel_sc_text_translation: ...(*->rrel_example:[Кик-офф — вариант стартового удара в американском футболе.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Кик-офф)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_american_football
+};;
+*);;
+
+concept_american_football<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//kick_off.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Кик-офф)](*<- lang_ru;;*);;
+*);;
+*);;
+
+
+
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_kick_off;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Игрок разбегается и бьёт по мячу со всей силы, пытаясь сделать так, чтобы возвращающая команда не смогла далеко продвинуть мяч.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Об исполнении удара)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+nrel_aim;
+concept_player;
+concept_ball;
+concept_team
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_kick_off ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[По правилам мяч должен пролететь минимум 10 ярдов.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Протяженности удара)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+
+concept_yard;
+concept_ball
+};;
+*);;
+
+
+
+

@@ -1,0 +1,66 @@
+concept_offensive_tackle<-sc_node_not_relation;;
+
+concept_offensive_tackle=>nrel_main_idtf:[оффенсив тэкл]
+(* 
+<-lang_ru;; 
+*);
+nrel_main_idtf:[offensive tackle]
+        (* 
+        <-lang_en;; 
+        *);;
+ concept_offensive_tackle=>nrel_idtf:[T]
+        (*
+                <-lang_ru;;
+        *);
+nrel_idtf:[T]
+        (*
+                <-lang_en;;
+        *);;
+
+
+defenition ->...
+(*
+->rrel_key_sc_element:concept_offensive_tackle ;;
+     <= nrel_sc_text_translation: ...(*->rrel_example:[Oффенсив тэклы — 2 игрока лайнменов нападения расположенные по бокам  от гардов.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Oффенсив тэкл)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_player;
+concept_offensive_linemen;
+concept_offensive_guard
+};;
+*);;
+
+
+
+statement ->...
+(*
+->rrel_key_sc_element: offensive_tackle;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Функция оффенсив гардов заключается в блокировании игроков соперника во время выносных и пасовых комбинаций.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(О выполняемой функции)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_opponent
+};;
+*);;
+
+  
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+

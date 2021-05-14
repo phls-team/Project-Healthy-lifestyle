@@ -1,0 +1,90 @@
+concept_american_football<-sc_node_not_relation;;
+
+concept_american_football=>nrel_main_idtf:[американский футбол]
+(* 
+<-lang_ru;; 
+*);
+nrel_main_idtf:[american football]
+        (* 
+        <-lang_en;; 
+        *);;
+
+
+
+
+
+defenition ->...
+(*
+->rrel_key_sc_element:concept_american_football ;;
+     <= nrel_sc_text_translation: ...(*->rrel_example:[Американский футбол — контактный <sc_element sys_idtf="team_sport">командный вид спорта</sc_element>, где необходимо продвигать мяч в сторону очковой зоны на стороне соперника и зарабатывать очки.](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+=> nrel_main_idtf: [Определение(Американский футбол)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+kind_of_sport;
+concept_end_zone;
+concept_opponent;
+concept_point;
+concept_ball
+};;
+*);;
+
+concept_american_football<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//american_football.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Американский футбол)](*<- lang_ru;;*);;
+*);;
+*);;
+
+
+
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_american_football;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[<b>Цель игры<b> – набрать максимальное количество очков, занеся мяч в зачетную зону противника (<sc_element sys_idtf="concept_touchdown">тачдаун</sc_element>) или забив его в ворота с поля (<sc_element sys_idtf="concept_field_goal">филд-гол</sc_element>).](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Цель игры)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+nrel_aim;
+concept_point;
+concept_ball;
+concept_end_zone;
+concept_touchdown;
+concept_field_goal;
+concept_field;
+concept_goal;
+concept_opponent
+};;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_american_football ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Продолжительность игры составляет 60 минут, которое разделено на четыре четверти по 15 минут.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Продолжительность игры)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+nrel_game_time;
+concept_minute;
+concept_quater
+};;
+*);;
+
+
+
+concept_sport=>nrel_inclusion:concept_american_football;;
+concept_american_football=>nrel_opening_year:...(* -> rrel_number_of_year:1869;;*);;
+concept_american_football=>nrel_kolvo:11;;
+concept_american_football=>nrel_game_time:...(* -> rrel_number_of_match_time:60;;*);;
+concept_american_football=>nrel_rodina:America;;
+concept_american_football<=nrel_inclusion:team_sport;;
+
+concept_american_football->rrel_example:
+Mike_Evans;
+Aaron_Rodgers;
+Tom_Brady;;
+

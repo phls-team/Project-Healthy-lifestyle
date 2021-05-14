@@ -1,0 +1,33 @@
+section_subject_domain_of_ball_games
+=> nrel_main_idtf: 
+	[Раздел. Предметная область игр с мячом]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf: 
+	[Section. Subject domain of ball games]
+	(* <- lang_en;; *);
+	
+<= nrel_section_decomposition: 
+	{
+	      
+               section_subject_domain_of_football;
+               section_subject_domain_of_basketball
+	};;
+
+
+section_subject_domain_of_basketball
+=> nrel_main_idtf: 
+	[Раздел. Предметная область баскетбола]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf: 
+	[Section. Subject domain of basketball]
+	(* <- lang_en;; *);;
+	
+
+
+section_subject_domain_of_football
+=> nrel_main_idtf: 
+	[Раздел. Предметная область футбола]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf: 
+	[Section. Subject domain of football]
+	(* <- lang_en;; *);;

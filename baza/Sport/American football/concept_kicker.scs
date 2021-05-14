@@ -1,0 +1,65 @@
+concept_kicker<-sc_node_not_relation;;
+
+concept_kicker=>nrel_main_idtf:[кикер]
+(* 
+<-lang_ru;; 
+*);
+nrel_main_idtf:[kicker]
+        (* 
+        <-lang_en;; 
+        *);;
+ concept_kicker=>nrel_idtf:[K]
+        (*
+                <-lang_ru;;
+        *);
+nrel_idtf:[K]
+        (*
+                <-lang_en;;
+        *);;
+
+
+defenition ->...
+(*
+->rrel_key_sc_element:concept_kicker;;
+     <= nrel_sc_text_translation: ...(*->rrel_example:[Кикер — один из наиболее важных игроков спецкоманд.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Кикер)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_player;
+concept_special_team
+};;
+*);;
+
+
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_kicker;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Кикер выполняет начальный удар, филд-гол и реализацию.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(О выполняемой функции)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_field_goal
+};;
+*);;
+
+  
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+

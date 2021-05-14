@@ -1,0 +1,84 @@
+concept_tight_end<-sc_node_not_relation;;
+
+concept_tight_end=>nrel_main_idtf:[Тайтэнд]
+(* 
+<-lang_ru;; 
+*);
+nrel_main_idtf:[tight end]
+        (* 
+        <-lang_en;; 
+        *);;
+ concept_tight_end=>nrel_idtf:[TE]
+        (*
+                <-lang_ru;;
+        *);
+
+nrel_idtf:[TE]
+        (*
+                <-lang_en;;
+        *);;
+
+
+defenition ->...
+(*
+->rrel_key_sc_element:concept_tight_end ;;
+     <= nrel_sc_text_translation: ...(*->rrel_example:[Тайтэнд - игрок, находящийся рядом с линией нападения.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Тайтэнд)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_player;
+concept_offensive_line
+};;
+*);;
+
+concept_tight_end<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//tight_end.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Тайтэнд)](*<- lang_ru;;*);;
+*);;
+*);;
+
+
+
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_tight_end;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Во время розыгрыша он может играть как принимающий(ловить пас), так и как игрок линии нападения(защищая квотербека или расчищая пространство для бегущего.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(О выполняемых функциях)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_offensive_line;
+concept_quaterback;
+concept_pass
+};;
+*);;
+
+  
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+
+

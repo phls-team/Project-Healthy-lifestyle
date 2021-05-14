@@ -1,0 +1,82 @@
+concept_wide_reciever<-sc_node_not_relation;;
+
+concept_wide_reciever=>nrel_main_idtf:[ресивер]
+(* 
+<-lang_ru;; 
+*);
+nrel_main_idtf:[wide reciever]
+        (* 
+        <-lang_en;; 
+        *);;
+ concept_wide_reciever=>nrel_idtf:[WR]
+        (*
+                <-lang_ru;;
+        *);
+nrel_idtf:[WR]
+        (*
+                <-lang_en;;
+        *);;
+
+
+defenition ->...
+(*
+->rrel_key_sc_element:concept_wide_reciever ;;
+     <= nrel_sc_text_translation: ...(*->rrel_example:[Ресивер — игрок, специализирующийся на приеме пасов.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение(Ресивер)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_player;
+concept_pass
+};;
+*);;
+
+concept_wide_reciever<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Фото//reciever.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Ресивер)](*<- lang_ru;;*);;
+*);;
+*);;
+
+
+
+
+statement ->...
+(*
+->rrel_key_sc_element: concept_wide_reciever;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Его главная задача — пробежать по заранее запланированному маршруту и оказаться незаблокированным соперником во время ловли мяча, но иногда ресиверов используют для блокирования игроков соперника во время выносных комбинаций.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(О задаче ресивера)](*<- lang_ru;;*);;
+<=nrel_using_constants:{
+concept_opponent;
+concept_ball;
+concept_pass
+};;
+*);;
+
+  
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+
