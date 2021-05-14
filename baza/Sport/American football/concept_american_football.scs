@@ -83,8 +83,19 @@ concept_american_football=>nrel_game_time:...(* -> rrel_number_of_match_time:60;
 concept_american_football=>nrel_rodina:America;;
 concept_american_football<=nrel_inclusion:team_sport;;
 
-concept_american_football->rrel_example:
+concept_american_football<=nrel_sport:
 Mike_Evans;
 Aaron_Rodgers;
 Tom_Brady;;
 
+nrel_sport
+<- sc_node_norole_relation;;
+nrel_sport => nrel_main_idtf: [спорт*]
+        (*
+            <- lang_ru;;
+        *);
+
+nrel_main_idtf: [sport*]
+        (*
+            <- lang_en;;
+        *);;
