@@ -1,0 +1,54 @@
+concept_slopestyle <- sc_node_not_relation;;
+
+concept_slopestyle => nrel_main_idtf:
+[Слоупстайл] (*<-lang_ru;;*);
+[Slopestyle] (*<-lang_en;;*);;
+
+concept_slopestyle <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (Слоупстайл)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_competition;
+		concept_freestyle;
+		concept_snowboard;
+		concept_mountainboarding
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[тип соревнований по таким видам спорта как: фристайл, сноуборд, маунтинбординг, состоящий из выполнения серии акробатических прыжков на трамплинах, пирамидах, контр-уклонах, дропах, перилах и т.д., расположенных последовательно на всём протяжении трассы.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_slopestyle <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Слоупстайл)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_athlet;
+		concept_trick
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Слоупстайл требует хорошей технической подготовки спортсменов и точности выполнения трюков, так как падение на трассе может привести к потере скорости и невозможности выполнения следующего трюка. ](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_slopestyle<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://Pictures/slopestyle.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;

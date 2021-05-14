@@ -1,0 +1,50 @@
+concept_military_patrol_competition <- sc_node_not_relation;;
+
+concept_military_patrol_competition => nrel_main_idtf:
+[Соревнования военных патрулей] (*<-lang_ru;;*);
+[Military patrol competition] (*<-lang_en;;*);;
+
+concept_military_patrol_competition <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (Соревнования военных патрулей)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_biathlon
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[зимний командный вид спорта, предшественник современного биатлона.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_military_patrol_competition <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Соревнования военных патрулей)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_century
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Пользовался популярностью в первой половине XX века.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_military_patrol_competition<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://Pictures/military_patrol_competition.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;

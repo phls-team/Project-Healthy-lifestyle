@@ -1,0 +1,49 @@
+section_subject_domain_of_skating
+=> nrel_main_idtf: 
+	[Раздел. Предметная область конькобежного спорта]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf: 
+	[Section. Subject domain of skating]
+	(* <- lang_en;; *);
+	
+<- rrel_key_sc_element:
+		concept_ice;
+		concept_snow;
+		nrel_award;
+		nrel_sports_rule;
+		concept_skates;
+		concept_skating;;
+		
+
+section_subject_domain_of_skating = 
+[*
+	subject_domain_of_skating
+
+=> nrel_main_idtf: 
+	[Предметная область конькобежного спорта]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf: 
+	[Subject domain of skating]
+	(* <- lang_en;; *);
+
+<= nrel_private_subject_domain:
+	subject_domain_skating;
+		
+-> rrel_maximum_studied_object_class:
+	concept_skating;
+
+-> rrel_explored_general_subject_domain_concept:
+	nrel_award;
+	nrel_sports_rule;
+	
+-> rrel_not_maximum_studied_object_class:
+	concept_ice;
+	concept_snow;
+	concept_skating;
+	
+-> rrel_explored_relation:
+	nrel_award;
+	nrel_sports_rule;
+
+<- subject_domain;;
+*];;

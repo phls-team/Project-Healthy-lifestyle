@@ -1,0 +1,53 @@
+concept_eisstock_sport <- sc_node_not_relation;;
+
+concept_eisstock_sport => nrel_main_idtf:
+[Айсшток] (*<-lang_ru;;*);
+[eisstock_sport] (*<-lang_en;;*);;
+
+concept_eisstock_sport <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (Айсшток)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_ice;
+		concept_eisstock
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[омандный вид спорта на ледяной площадке. Играющие по очереди бросают на лёд штоки таким образом, чтобы шток скользил по льду в заданном направлении.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_eisstock_sport <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Айсшток)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_eisstock;
+		concept_target;
+		concept_game
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Цель игры — кинуть шток так, чтобы он, в зависимости от разновидности игры, либо остановился как можно ближе к мишени, либо пролетел как можно дальше.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_eisstock_sport<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://Pictures/eisstock_sport.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;

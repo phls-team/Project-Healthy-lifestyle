@@ -1,0 +1,69 @@
+concept_ski_jumping <- sc_node_not_relation;;
+
+concept_ski_jumping => nrel_main_idtf:
+[Прыжки на лыжах с трамплина] (*<-lang_ru;;*);
+[ski_jumping] (*<-lang_en;;*);;
+
+concept_ski_jumping <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (Прыжки на лыжах с трамплина)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_skiing;
+		concept_mountain
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[вид спорта, включающий прыжки на лыжах со специально оборудованных трамплинов.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_ski_jumping <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Прыжки на лыжах с трамплина)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_skiing;
+		concept_mountain;
+		concept_winter_sport
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Выступают как самостоятельный вид спорта, а также входят в программу лыжного двоеборья.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_ski_jumping <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Прыжки на лыжах с трамплина)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_skiing
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Соревнования проводятся под эгидой Международной федерации лыжного спорта.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_ski_jumping<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://Pictures/ski_jumping.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;

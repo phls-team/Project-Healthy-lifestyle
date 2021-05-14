@@ -1,0 +1,50 @@
+concept_skates <- sc_node_not_relation;;
+
+concept_skates => nrel_main_idtf:
+[Коньки] (*<-lang_ru;;*);
+[skates] (*<-lang_en;;*);;
+
+concept_skates <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (Коньки)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_ice
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[это спортивный или прогулочный инвентарь, который представляет собой совокупность специализированных ботинок и прикрепляемой к ним системе подвижных или неподвижных лезвий.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_skates <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Коньки)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_ice
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Используются для передвижения по ровной твёрдой ледяной поверхности.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_skates<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://skates.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;

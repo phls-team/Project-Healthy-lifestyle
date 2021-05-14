@@ -1,0 +1,55 @@
+concept_snowkiting <- sc_node_not_relation;;
+
+concept_snowkiting => nrel_main_idtf:
+[Сноукайтинг] (*<-lang_ru;;*);
+[snowkiting] (*<-lang_en;;*);;
+
+concept_snowkiting <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (Сноукайтинг)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_kite;
+		concept_ice;
+		concept_snow;
+		concept_snowboard;
+		concept_skates;
+		concept_skiing
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[вид спорта и активного отдыха представляющего собой занятия с буксировочным кайтом на снежном покрытии или льду с применением лыж, сноуборда или коньков.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_snowkiting <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Сноукайтинг)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_alps
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Является исконно альпийским видом спорта, так как зародился в 70-х годах, в Альпах в результате экспериментов Дитера Стразиллы.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_snowkiting<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://Pictures/snowkiting.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;

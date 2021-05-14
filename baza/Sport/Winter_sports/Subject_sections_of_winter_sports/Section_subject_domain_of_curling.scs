@@ -1,0 +1,48 @@
+section_subject_domain_of_curling
+=> nrel_main_idtf: 
+	[Раздел. Предметная область кёрлинга]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf: 
+	[Section. Subject domain of curling]
+	(* <- lang_en;; *);
+	
+<- rrel_key_sc_element:
+		concept_ice;
+		nrel_award;
+		nrel_sports_rule;
+		concept_curling_stone;
+		concept_curling;;
+		
+
+section_subject_domain_of_curling = 
+[*
+	subject_domain_of_curling
+
+=> nrel_main_idtf: 
+	[Предметная область кёрлинга]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf: 
+	[Subject domain of curling]
+	(* <- lang_en;; *);
+
+<= nrel_private_subject_domain:
+	subject_domain_curling;
+		
+-> rrel_maximum_studied_object_class:
+	concept_curling;
+
+-> rrel_explored_general_subject_domain_concept:
+	nrel_award;
+	nrel_sports_rule;
+	
+-> rrel_not_maximum_studied_object_class:
+	concept_curling_stone;
+	concept_ice;
+	concept_curling;
+	
+-> rrel_explored_relation:
+	nrel_award;
+	nrel_sports_rule;
+
+<- subject_domain;;
+*];;

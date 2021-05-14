@@ -1,0 +1,53 @@
+concept_short_track_speed_skating <- sc_node_not_relation;;
+
+concept_short_track_speed_skating => nrel_main_idtf:
+[Шорт-трек] (*<-lang_ru;;*);
+[Short track speed skating] (*<-lang_en;;*);;
+
+concept_short_track_speed_skating <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (Шорт-трек)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_skiing;
+		concept_ice;
+		concept_skiing_sport
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Скоростной бег на коньках на короткой дорожке, вид конькобежного спорта.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_short_track_speed_skating <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Шорт-трек)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_ice;
+		concept_athlete
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[На дистанции спортсмены одновременно бегут по овальной ледовой дорожке длиной 111,12 м.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_short_track_speed_skating<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://Pictures/short_track_speed_skating.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;

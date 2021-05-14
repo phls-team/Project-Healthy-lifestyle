@@ -1,0 +1,51 @@
+concept_skijoring <- sc_node_not_relation;;
+
+concept_skijoring => nrel_main_idtf:
+[Скиджоринг] (*<-lang_ru;;*);
+[skijoring] (*<-lang_en;;*);;
+
+concept_skijoring <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (Скиджоринг)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_skiing;
+		concept_dog
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[одна из дисциплин ездового спорта, в котором лыжник-гонщик передвигается свободным стилем по лыжной дистанции вместе с одной или несколькими собаками.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_skijoring <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Скиджоринг)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_horse
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Скиджоринг может быть также с лошадью или за авто- или мототранспортом.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_skijoring<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://Pictures/skijoring.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;

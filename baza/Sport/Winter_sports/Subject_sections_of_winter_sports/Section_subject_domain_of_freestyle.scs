@@ -1,0 +1,48 @@
+section_subject_domain_of_freestyle
+=> nrel_main_idtf: 
+	[Раздел. Предметная область фристайла]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf: 
+	[Section. Subject domain of freestyle]
+	(* <- lang_en;; *);
+	
+<- rrel_key_sc_element:
+		concept_snow;
+		nrel_award;
+		nrel_sports_rule;
+		concept_skiing;
+		concept_freestyle;;
+		
+
+section_subject_domain_of_freestyle = 
+[*
+	subject_domain_of_freestyle
+
+=> nrel_main_idtf: 
+	[Предметная область фристайла]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf: 
+	[Subject domain of freestyle]
+	(* <- lang_en;; *);
+
+<= nrel_private_subject_domain:
+	subject_domain_freestyle;
+		
+-> rrel_maximum_studied_object_class:
+	concept_freestyle;
+
+-> rrel_explored_general_subject_domain_concept:
+	nrel_award;
+	nrel_sports_rule;
+	
+-> rrel_not_maximum_studied_object_class:
+	concept_snow;
+	concept_freestyle;
+	concept_skiing;
+	
+-> rrel_explored_relation:
+	nrel_award;
+	nrel_sports_rule;
+
+<- subject_domain;;
+*];;

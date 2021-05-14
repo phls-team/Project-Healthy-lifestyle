@@ -1,0 +1,50 @@
+concept_nordic_combined <- sc_node_not_relation;;
+
+concept_nordic_combined => nrel_main_idtf:
+[Лыжное двоеборье] (*<-lang_ru;;*);
+[Nordic Combined] (*<-lang_en;;*);;
+
+concept_nordic_combined <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (Лыжное двоеборье)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_skiing
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[олимпийский вид спорта, сочетающий в своей программе прыжки на лыжах с трамплина и лыжные гонки.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_nordic_combined <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Лыжное двоеборье)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_skiing
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Другое название — северная комбинация.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_nordic_combined<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://Pictures/nordic_combined.png"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;

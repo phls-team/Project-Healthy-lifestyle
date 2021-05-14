@@ -1,0 +1,52 @@
+concept_speedway_on_ice <- sc_node_not_relation;;
+
+concept_speedway_on_ice => nrel_main_idtf:
+[Спидвей на льду ] (*<-lang_ru;;*);
+[Speedway on ice] (*<-lang_en;;*);;
+
+concept_speedway_on_ice <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (Спидвей на льду )] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_ice;
+		concept_track
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[ мотогонки, проводящийся на покрытом льдом овальном треке.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_speedway_on_ice <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Спидвей на льду )] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_track;
+		concept_ice
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Гоночная трасса аналогична трассе для гаревых мотогонок, часто соревнования проходят на тех же самых треках, только покрытых льдом.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_speedway_on_ice<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://Pictures/speedway_on_ice.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;

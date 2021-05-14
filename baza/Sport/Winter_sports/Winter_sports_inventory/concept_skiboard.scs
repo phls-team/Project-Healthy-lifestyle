@@ -1,0 +1,52 @@
+concept_skiboard <- sc_node_not_relation;;
+
+concept_skiboard => nrel_main_idtf:
+[Скиборд] (*<-lang_ru;;*);
+[Skiboards] (*<-lang_en;;*);;
+
+concept_skiboard <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (Скиборд)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_skiing;
+		concept_snow
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[короткие лыжи от 75 см до 110 см](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_skiboard <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Скиборд)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{	
+		concept_skiboarding;
+		concept_mountain
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[используются в скибординге для скоростного спуска с заснеженных склонов и гор.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_skiboard<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://skiboards.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;

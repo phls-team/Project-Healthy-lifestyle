@@ -1,0 +1,53 @@
+concept_snow_rugby <- sc_node_not_relation;;
+
+concept_snow_rugby => nrel_main_idtf:
+[Снежное регби] (*<-lang_ru;;*);
+[Snow rugby] (*<-lang_en;;*);;
+
+concept_snow_rugby <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (Снежное регби)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_ball;
+		concept_area;
+		concept_pass
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[спортивная командная игра с овальным мячом, который игроки каждой команды, передавая друг другу руками и ногами, причём пас руками осуществляется только назад, стараются приземлить в зачётном поле](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_snow_rugby <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Снежное регби)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_rugby;
+		concept_gate
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[в отличие от классического регби ворота в игре, как правило, не используются.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_snow_rugby<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://Pictures/snow_rugby.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;

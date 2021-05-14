@@ -1,0 +1,50 @@
+concept_curling_stone <- sc_node_not_relation;;
+
+concept_curling_stone => nrel_main_idtf:
+[Камень для кёрлинга] (*<-lang_ru;;*);
+[curling stone] (*<-lang_en;;*);;
+
+concept_curling_stone <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (Камень для кёрлинга)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_curling
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Специальный тяжёлый гранитный снаряд](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_curling_stone <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Камень для кёрлинга)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_curling
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Камни должны иметь диаметр 11,5 дюйма , высоту – 4,5 дюйма , и вес 44 фунта.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_curling_stone<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://curling_stone.png"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;

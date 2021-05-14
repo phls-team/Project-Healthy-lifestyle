@@ -1,0 +1,52 @@
+concept_mogul <- sc_node_not_relation;;
+
+concept_mogul => nrel_main_idtf:
+[Могул] (*<-lang_ru;;*);
+[Mogul] (*<-lang_en;;*);;
+
+concept_mogul <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (Могул)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_freestyle;
+		concept_snow
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[дисциплина лыжного фристайла, состоит в спуске на горных лыжах по бугристому склону.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_mogul <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Могул)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_discipline;
+		concept_snowboarding
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[По ошибке, иногда данную дисциплину приписывают и сноубордистам, однако в сноуборде такой дисциплины не существует.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_mogul<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://Pictures/mogul.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;

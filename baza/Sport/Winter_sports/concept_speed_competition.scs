@@ -1,0 +1,51 @@
+concept_speed_competition <- sc_node_not_relation;;
+
+concept_speed_competition => nrel_main_idtf:
+[Соревнования на скорость] (*<-lang_ru;;*);
+[Speed competition] (*<-lang_en;;*);;
+
+concept_speed_competition <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (Соревнования на скорость)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_competition;
+		concept_mountain
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[соревнования по скоростному спуску на лыжах, проводимые на специально подготовленном склоне.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_speed_competition <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Соревнования на скорость)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_speed
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Это самый скоростной вид спорта, не являющийся моторным, за исключением прыжков с парашютом. ](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_speed_competition<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://Pictures/speed_competition.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;

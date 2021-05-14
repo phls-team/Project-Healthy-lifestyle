@@ -1,0 +1,51 @@
+concept_wok_racing <- sc_node_not_relation;;
+
+concept_wok_racing => nrel_main_idtf:
+[Скоростной съезд на воках] (*<-lang_ru;;*);
+[Wok racing] (*<-lang_en;;*);;
+
+concept_wok_racing <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (Скоростной съезд на воках)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_wok;
+		concept_bobsleigh
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[вид спорта, который поддерживается и развивается благодаря усилиям немецкого телеведущего Штефана Рааба. Модифицированный китайский вок съезжает в бобслейном желобе.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_wok_racing <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Скоростной съезд на воках)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_show
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Этот вид спорта транслируется немецким телеканалом ProSieben и является специальным шоу телепередачи TV total, продюсером которой является Штефан Рааб.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_wok_racing<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://Pictures/wok_racing.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;

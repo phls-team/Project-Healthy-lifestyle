@@ -1,0 +1,70 @@
+concept_ski_race <- sc_node_not_relation;;
+
+concept_ski_race => nrel_main_idtf:
+[Лыжные гонки] (*<-lang_ru;;*);
+[Ski race] (*<-lang_en;;*);;
+
+concept_ski_race <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (Лыжные гонки)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_race;
+		concept_skiing;
+		concept_snow
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[циклический зимний вид спорта, в котором соревнуются по времени прохождения дистанции по специально подготовленной снежной трассе с использованием беговых лыж и лыжных палок.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_ski_race <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Лыжные гонки)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_race;
+		concept_skiing;
+		concept_snow
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Официальные соревнования проводят на дистанциях длиной от 800 м до 70 км. ](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_ski_race <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Лыжные гонки)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_competition
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Лыжные гонки входят в программу Зимних Олимпийских игр с 1924 года.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_ski_race<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://Pictures/ski_race.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;

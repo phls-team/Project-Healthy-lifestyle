@@ -1,0 +1,50 @@
+concept_yukigassen <- sc_node_not_relation;;
+
+concept_yukigassen => nrel_main_idtf:
+[Юкигассен] (*<-lang_ru;;*);
+[Yukigassen] (*<-lang_en;;*);;
+
+concept_yukigassen <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (Юкигассен)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_snowball
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[командная игра в снежки, появившаяся в конце 1980-х в Японии.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_yukigassen <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Юкигассен)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		nrel_sport_rule
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[В 1988 году в городе Собэцу были приняты правила юкигассена, впоследствии ставшие всеяпонскими.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_yukigassen<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://Pictures/yukigassen.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;
