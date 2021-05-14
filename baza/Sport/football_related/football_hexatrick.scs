@@ -1,0 +1,49 @@
+concept_football_hexatrick=>nrel_idtf:[football_hexatrick]
+	(*
+		<-lang_en;;
+	*);;
+concept_football_hexatrick=>nrel_main_idtf:[футбольный гекса-трик]
+	(*
+		<-lang_ru;;
+	*);;
+concept_football_hexatrick <-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+[Опр.(футбольный гекса-трик)] 
+	(* 
+		<-lang_ru;;
+	*);;
+	
+<=nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [  шесть голов, забитых в течение матча одним игроком в ворота соперника ]
+(* 
+<-lang_ru;; 
+*);;
+
+	*);;
+	<=nrel_using_constants: {
+	concept_football;
+	concept_sports_rules
+	};;
+*);;
+concept_football_hexatrick <- rrel_key_sc_element:...
+	(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утв.(о гекса-трике)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[ зачастую гекса-трик совершается в ворота противника, а не в свои ](*<- lang_ru;;*);;
+
+			*);;		
+<=nrel_using_constants: {
+	concept_athlete;
+	concept_game
+	};;
+*);;
+concept_football=>nrel_inclusion:concept_football_hexatrick;;
+concept_sports_rules=>nrel_inclusion:concept_football_hexatrick;;

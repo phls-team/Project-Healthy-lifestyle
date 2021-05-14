@@ -1,0 +1,49 @@
+concept_football_pass=>nrel_idtf:[football_pass]
+	(*
+		<-lang_en;;
+	*);;
+concept_football_pass=>nrel_main_idtf:[футбольный пас]
+	(*
+		<-lang_ru;;
+	*);;
+concept_football_pass <-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+[Опр.(футбольный пас)] 
+	(* 
+		<-lang_ru;;
+	*);;
+	
+<=nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [ передача мяча от одного игрока команды другому игроку этой же команды ]
+(* 
+<-lang_ru;; 
+*);;
+
+	*);;
+	<=nrel_using_constants: {
+	concept_football;
+	concept_sports_rules
+	};;
+*);;
+concept_football_pass <- rrel_key_sc_element:...
+	(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утв.(о пасе)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[ зачастую игрок любого амплуа умеет отдать хороший пас ](*<- lang_ru;;*);;
+
+			*);;		
+<=nrel_using_constants: {
+	concept_athlete;
+	concept_game
+	};;
+*);;
+concept_football=>nrel_inclusion:concept_football_pass;;
+concept_sports_rules=>nrel_inclusion:concept_football_pass;;

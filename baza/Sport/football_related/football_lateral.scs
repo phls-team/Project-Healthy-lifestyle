@@ -1,0 +1,49 @@
+concept_football_lateral=>nrel_idtf:[football_lateral]
+	(*
+		<-lang_en;;
+	*);;
+concept_football_lateral=>nrel_main_idtf:[футбольный латераль]
+	(*
+		<-lang_ru;;
+	*);;
+concept_football_lateral <-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+[Опр.(футбольный латераль)] 
+	(* 
+		<-lang_ru;;
+	*);;
+	
+<=nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [ крайний защитник, активно поддерживающий атаку либо вообще закрывающий всю бровку ]
+(* 
+<-lang_ru;; 
+*);;
+
+	*);;
+	<=nrel_using_constants: {
+	concept_football;
+	concept_sports_rules
+	};;
+*);;
+concept_football_lateral <- rrel_key_sc_element:...
+	(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утв.(о латерале)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[ зачастую латералями называют всех фланговых игроков линии обороны, активно поддерживающих атаку ](*<- lang_ru;;*);;
+
+			*);;		
+<=nrel_using_constants: {
+	concept_athlete;
+	concept_game
+	};;
+*);;
+concept_football=>nrel_inclusion:concept_football_lateral;;
+concept_sports_rules=>nrel_inclusion:concept_football_lateral;;

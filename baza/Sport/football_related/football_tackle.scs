@@ -1,0 +1,49 @@
+concept_football_tackle=>nrel_idtf:[football_tackle]
+	(*
+		<-lang_en;;
+	*);;
+concept_football_tackle=>nrel_main_idtf:[футбольный подкат]
+	(*
+		<-lang_ru;;
+	*);;
+concept_football_tackle <-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+[Опр.(футбольный подкат)] 
+	(* 
+		<-lang_ru;;
+	*);;
+	
+<=nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [  эффективный способ отобрать мяч у соперника ]
+(* 
+<-lang_ru;; 
+*);;
+
+	*);;
+	<=nrel_using_constants: {
+	concept_football;
+	concept_sports_rules
+	};;
+*);;
+concept_football_tackle <- rrel_key_sc_element:...
+	(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утв.(о подкате)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[ чтобы выполнить подкат, футболисту необходимо обладать хорошей техникой и физической формой ](*<- lang_ru;;*);;
+
+			*);;		
+<=nrel_using_constants: {
+	concept_athlete;
+	concept_game
+	};;
+*);;
+concept_football=>nrel_inclusion:concept_football_tackle;;
+concept_sports_rules=>nrel_inclusion:concept_football_tackle;;

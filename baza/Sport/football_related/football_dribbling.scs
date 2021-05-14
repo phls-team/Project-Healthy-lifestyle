@@ -1,0 +1,49 @@
+concept_football_dribbling=>nrel_idtf:[football_dribbling]
+	(*
+		<-lang_en;;
+	*);;
+concept_football_dribbling=>nrel_main_idtf:[футбольный дриблинг]
+	(*
+		<-lang_ru;;
+	*);;
+concept_football_dribbling <-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+[Опр.(футбольный дриблинг)] 
+	(* 
+		<-lang_ru;;
+	*);;
+	
+<=nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [ движение в различных направлениях игрока с мячом ]
+(* 
+<-lang_ru;; 
+*);;
+
+	*);;
+	<=nrel_using_constants: {
+	concept_football;
+	concept_sports_rules
+	};;
+*);;
+concept_football_dribbling <- rrel_key_sc_element:...
+	(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утв.(о дриблинге)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[ зачастую «дриблером» называют футболиста, умело ведущего мяч ](*<- lang_ru;;*);;
+
+			*);;		
+<=nrel_using_constants: {
+	concept_athlete;
+	concept_game
+	};;
+*);;
+concept_football=>nrel_inclusion:concept_football_dribbling;;
+concept_sports_rules=>nrel_inclusion:concept_football_dribbling;;

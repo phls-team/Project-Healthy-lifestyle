@@ -1,0 +1,49 @@
+concept_football_champion=>nrel_idtf:[football_champion]
+	(*
+		<-lang_en;;
+	*);;
+concept_football_champion=>nrel_main_idtf:[футбольный чемпион]
+	(*
+		<-lang_ru;;
+	*);;
+concept_football_champion <-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+[Опр.(футбольный чемпион)] 
+	(* 
+		<-lang_ru;;
+	*);;
+	
+<=nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [ команда, выигравшая чемпионат ]
+(* 
+<-lang_ru;; 
+*);;
+
+	*);;
+	<=nrel_using_constants: {
+	concept_football;
+	concept_sports_rules
+	};;
+*);;
+concept_football_champion <- rrel_key_sc_element:...
+	(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утв.(о чемпионе)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[ каждый игрок такой команды также является чемпионом ](*<- lang_ru;;*);;
+
+			*);;		
+<=nrel_using_constants: {
+	concept_athlete;
+	concept_game
+	};;
+*);;
+concept_football=>nrel_inclusion:concept_football_champion;;
+concept_sports_rules=>nrel_inclusion:concept_football_champion;;

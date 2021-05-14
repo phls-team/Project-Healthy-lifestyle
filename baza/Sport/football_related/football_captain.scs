@@ -1,0 +1,49 @@
+concept_football_captain=>nrel_idtf:[football_captain]
+	(*
+		<-lang_en;;
+	*);;
+concept_football_captain=>nrel_main_idtf:[футбольный капитан]
+	(*
+		<-lang_ru;;
+	*);;
+concept_football_captain <-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+[Опр.(футбольный капитан)] 
+	(* 
+		<-lang_ru;;
+	*);;
+	
+<=nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [ лидер команды, носит повязку, которая отличает его от других игроков ]
+(* 
+<-lang_ru;; 
+*);;
+
+	*);;
+	<=nrel_using_constants: {
+	concept_football;
+	concept_sports_rules
+	};;
+*);;
+concept_football_captain <- rrel_key_sc_element:...
+	(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утв.(о капитане)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[ зачастую капитан является образцом во всем, лицом всей команды. ](*<- lang_ru;;*);;
+
+			*);;		
+<=nrel_using_constants: {
+	concept_athlete;
+	concept_game
+	};;
+*);;
+concept_football=>nrel_inclusion:concept_football_captain;;
+concept_sports_rules=>nrel_inclusion:concept_football_captain;;

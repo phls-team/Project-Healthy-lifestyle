@@ -1,0 +1,49 @@
+concept_football_penalty=>nrel_idtf:[football_penalty]
+	(*
+		<-lang_en;;
+	*);;
+concept_football_penalty=>nrel_main_idtf:[футбольный пенальти]
+	(*
+		<-lang_ru;;
+	*);;
+concept_football_penalty <-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+[Опр.(футбольный пенальти)] 
+	(* 
+		<-lang_ru;;
+	*);;
+	
+<=nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [удар по воротам с 11 метров]
+(* 
+<-lang_ru;; 
+*);;
+
+	*);;
+	<=nrel_using_constants: {
+	concept_football;
+	concept_sports_rules
+	};;
+*);;
+concept_football_penalty <- rrel_key_sc_element:...
+	(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утв.(о пенальти)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[ зачастую пенальти назначается после нарушения правил ](*<- lang_ru;;*);;
+
+			*);;		
+<=nrel_using_constants: {
+	concept_athlete;
+	concept_game
+	};;
+*);;
+concept_football=>nrel_inclusion:concept_football_penalty;;
+concept_sports_rules=>nrel_inclusion:concept_football_penalty;;

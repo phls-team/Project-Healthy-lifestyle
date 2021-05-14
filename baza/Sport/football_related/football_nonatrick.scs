@@ -1,0 +1,49 @@
+concept_football_nonatrick=>nrel_idtf:[football_nonatrick]
+	(*
+		<-lang_en;;
+	*);;
+concept_football_nonatrick=>nrel_main_idtf:[футбольный нона-трик]
+	(*
+		<-lang_ru;;
+	*);;
+concept_football_nonatrick <-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+[Опр.(футбольный нона-трик)] 
+	(* 
+		<-lang_ru;;
+	*);;
+	
+<=nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [ девять голов, забитых в течение матча одним игроком в ворота соперника ]
+(* 
+<-lang_ru;; 
+*);;
+
+	*);;
+	<=nrel_using_constants: {
+	concept_football;
+	concept_sports_rules
+	};;
+*);;
+concept_football_nonatrick <- rrel_key_sc_element:...
+	(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утв.(о нона-трике)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[ зачастую нона-трик совершается в ворота противника, а не в свои ](*<- lang_ru;;*);;
+
+			*);;		
+<=nrel_using_constants: {
+	concept_athlete;
+	concept_game
+	};;
+*);;
+concept_football=>nrel_inclusion:concept_football_nonatrick;;
+concept_sports_rules=>nrel_inclusion:concept_football_nonatrick;;

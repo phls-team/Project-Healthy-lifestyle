@@ -1,0 +1,49 @@
+concept_football_ball=>nrel_idtf:[football_ball]
+	(*
+		<-lang_en;;
+	*);;
+concept_football_ball=>nrel_main_idtf:[футбольный мяч]
+	(*
+		<-lang_ru;;
+	*);;
+concept_football_ball <-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+[Опр.(футбольный мяч)] 
+	(* 
+		<-lang_ru;;
+	*);;
+	
+<=nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [мяч, который используют при игре в футбол]
+(* 
+<-lang_ru;; 
+*);;
+
+	*);;
+	<=nrel_using_constants: {
+	concept_football;
+	concept_sports_rules
+	};;
+*);;
+concept_football_ball <- rrel_key_sc_element:...
+	(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утв.(о мяче)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[футболисты пинают мяч ногами, передают передачи, забивают голы](*<- lang_ru;;*);;
+
+			*);;		
+<=nrel_using_constants: {
+	concept_athlete;
+	concept_game
+	};;
+*);;
+concept_football=>nrel_inclusion:concept_football_ball;;
+concept_sports_rules=>nrel_inclusion:concept_football_ball;;

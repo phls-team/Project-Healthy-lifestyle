@@ -1,0 +1,51 @@
+concept_football_foul=>nrel_idtf:[football_foul]
+	(*
+		<-lang_en;;
+	*);;
+concept_football_foul=>nrel_main_idtf:[футбольный фол]
+	(*
+		<-lang_ru;;
+	*);;
+
+concept_football_foul <-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+[Опр.(фол)] 
+	(* 
+		<-lang_ru;;
+	*);;
+	
+<=nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [нарушение футбольных правил, которое наказывается некоторым образом]
+(* 
+<-lang_ru;; 
+*);;
+
+	*);;
+	<=nrel_using_constants: {
+	concept_football_rules
+	};;
+*);;
+
+concept_football_foul <- rrel_key_sc_element:...
+	(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утв.(про фол)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[ при фиксировании нарушения игра останавливается судьей путем подачи зв. сигнала(свистка)](*<- lang_ru;;*);;
+
+			*);;		
+<=nrel_using_constants: {
+	referee;
+	concept_game
+	};;
+*);;
+concept_football_rules=>nrel_inclusion:concept_football_foul;;
+
+

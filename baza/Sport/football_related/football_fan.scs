@@ -1,0 +1,49 @@
+concept_football_fan=>nrel_idtf:[football_fan]
+	(*
+		<-lang_en;;
+	*);;
+concept_football_fan=>nrel_main_idtf:[болельщик]
+	(*
+		<-lang_ru;;
+	*);;
+concept_football_fan <-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+[Опр.(футбольный болельщик)] 
+	(* 
+		<-lang_ru;;
+	*);;
+	
+<=nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [ приверженец определённой футбольной команды ]
+(* 
+<-lang_ru;; 
+*);;
+
+	*);;
+	<=nrel_using_constants: {
+	concept_football;
+	concept_sports_rules
+	};;
+*);;
+concept_football_fan <- rrel_key_sc_element:...
+	(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утв.(о болельщике)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[ зачастую болельщик воспринимает неудачи и победы команды, как свои собственные](*<- lang_ru;;*);;
+
+			*);;		
+<=nrel_using_constants: {
+	concept_athlete;
+	concept_game
+	};;
+*);;
+concept_football=>nrel_inclusion:concept_football_fan;;
+concept_sports_rules=>nrel_inclusion:concept_football_fan;;

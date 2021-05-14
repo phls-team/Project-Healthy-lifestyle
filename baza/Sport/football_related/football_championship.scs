@@ -1,0 +1,49 @@
+concept_football_championship=>nrel_idtf:[football_championship]
+	(*
+		<-lang_en;;
+	*);;
+concept_football_championship=>nrel_main_idtf:[футбольный чемпионат]
+	(*
+		<-lang_ru;;
+	*);;
+concept_football_championship <-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+[Опр.(футбольный чемпионат)] 
+	(* 
+		<-lang_ru;;
+	*);;
+	
+<=nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [ круговое состязание среди определенного количества команд с целью определения сильнейшего ]
+(* 
+<-lang_ru;; 
+*);;
+
+	*);;
+	<=nrel_using_constants: {
+	concept_football;
+	concept_sports_rules
+	};;
+*);;
+concept_football_championship <- rrel_key_sc_element:...
+	(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утв.(о чемпионате)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[ зачастую в чемпионатах присутсвуют фавориты и аутсайдеры ](*<- lang_ru;;*);;
+
+			*);;		
+<=nrel_using_constants: {
+	concept_athlete;
+	concept_game
+	};;
+*);;
+concept_football=>nrel_inclusion:concept_football_championship;;
+concept_sports_rules=>nrel_inclusion:concept_football_championship;;

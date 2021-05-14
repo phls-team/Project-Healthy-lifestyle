@@ -1,0 +1,49 @@
+concept_football_double=>nrel_idtf:[football_double]
+	(*
+		<-lang_en;;
+	*);;
+concept_football_double=>nrel_main_idtf:[футбольный дубль]
+	(*
+		<-lang_ru;;
+	*);;
+concept_football_double <-rrel_key_sc_element:...
+	(*
+		<-definition;;
+		=>nrel_main_idtf:
+[Опр.(футбольный дубль)] 
+	(* 
+		<-lang_ru;;
+	*);;
+	
+<=nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [ победа одновременно в чемпионате и розыгрыше Кубка страны ]
+(* 
+<-lang_ru;; 
+*);;
+
+	*);;
+	<=nrel_using_constants: {
+	concept_football;
+	concept_sports_rules
+	};;
+*);;
+concept_football_double <- rrel_key_sc_element:...
+	(*
+        <- explanation;;
+        -> rrel_key_sc_element:output ;;
+		=> nrel_main_idtf: 
+         [Утв.(о дубле)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			    -> rrel_example: 
+		[ зачастую происходит в лигах, где есть один ярко выраженный фаворит ](*<- lang_ru;;*);;
+
+			*);;		
+<=nrel_using_constants: {
+	concept_athlete;
+	concept_game
+	};;
+*);;
+concept_football=>nrel_inclusion:concept_football_double;;
+concept_sports_rules=>nrel_inclusion:concept_football_double;;
