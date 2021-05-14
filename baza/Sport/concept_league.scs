@@ -1,0 +1,37 @@
+concept_sports_league
+
+=> nrel_main_idtf:
+	[sports league](*<-lang_en;;*);
+	[спортивная лига](*<-lang_ru;;*);
+	
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(лига)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Спортивная лига является группой <b><sc_element sys_idtf="concept_sports_team">спортивных команд</b></sc_element> или отдельных <b><sc_element sys_idtf="concept_athlete">спортсменов</b></sc_element>, которые конкурируют друг с другом и зарабатывают баллы в <b><sc_element sys_idtf="championship">чемпионатах</b></sc_element> по конкретному <b><sc_element sys_idtf="concept_game">виду спорта</b></sc_element>.](*<- lang_ru;; => nrel_format: format_html;; *);;
+			*);;
+            <= nrel_using_constants: {
+               concept_athlete;
+               concept_sports_team;
+               championship;
+               concept_game
+            };;
+		*);;
+
+concept_sports_league<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Про лигу)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...(*
+->rrel_example:
+[Зачастую лига является одной из низших форм организации спортивных сообществ, выше, например, может быть <b><sc_element sys_idtf="concept_sports_assotiation">спортивная ассоциация</b></sc_element>, которая может включать в себя несколько лиг.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+      <=nrel_using_constants: {
+      concept_sports_assotiation
+      };;
+  *);
+
+<=nrel_inclusion:concept_sports_assotiation;;
+

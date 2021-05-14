@@ -1,0 +1,51 @@
+sports_title <- sc_node_not_relation;;
+
+sports_title => nrel_main_idtf:
+[Спортивный титул] (*<-lang_ru;;*);
+[Sports title] (*<-lang_en;;*);;
+
+sports_title <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (Спортивный титул)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+	championship;
+	concept_athlete
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Спортивный титул - ступень развития, либо достижение спортсмена, полученные в результате участия в одном или нескольких чемпионатов.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+sports_title <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Спортивный титул)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		basketball_mvp
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Зачастую титулы могут иметь как степени(прим.разряды), так и одиночный характер(прим.MVP).](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+basketball_mvp=>nrel_inclusion:sports_title;;
+sports_title<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://title.jpg"
+	(*
+		=>nrel_format:format_jpg;;
+	*);;	
+*);;
+*);;

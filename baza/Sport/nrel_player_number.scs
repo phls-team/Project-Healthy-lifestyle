@@ -1,0 +1,96 @@
+nrel_player_number <- sc_node_norole_relation;;
+
+nrel_player_number => nrel_main_idtf:
+[Номер игрока*] (*<-lang_ru;;*);
+[Player number*] (*<-lang_en;;*);;
+
+nrel_player_number <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (Номер игрока)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+	concept_sports_team;
+	concept_athlete
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Номер, присвоеный <b><sc_element sys_idtf="concept_athlete">игроку</b></sc_element> <b><sc_element sys_idtf="concept_sports_team">команды</b></sc_element>, находящийся на его форме.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+nrel_player_number <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Номер игрока)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+	concept_sporting_event;
+	concept_in_game_statistics;
+	concept_athlete
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Номер присваивается <b><sc_element sys_idtf="concept_athlete">игроку</b></sc_element> для удобства ведения <b><sc_element sys_idtf="concept_in_game_statistics">статистики</b></sc_element> матча, а так же контроля <b><sc_element sys_idtf="concept_sporting_event">спортивного мероприятия</b></sc_element>.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+nrel_player_number
+=> nrel_first_domain: concept_athlete;
+=> nrel_second_domain: number;
+
+=> nrel_definitional_domain: ...
+(*
+	<= nrel_combination:
+	{
+		concept_athlete;
+		number
+	};;
+*);;
+
+arity -> ...
+(*
+	-> nrel_player_number;;
+	=> nrel_measurement: 2;;
+*);;
+
+relation => nrel_inclusion: oriented_relation
+(*
+	-> nrel_player_number;;
+*);;
+
+relation => nrel_inclusion: binary_relation
+(*
+	 => nrel_inclusion: symmetric_relation
+	(*
+		-|> nrel_player_number;;
+	*);;
+
+	 => nrel_inclusion: transitive_relation
+	(*
+		-|> nrel_player_number;;
+	*);;
+
+	 => nrel_inclusion: reflexive_relation
+	(*
+		-|> nrel_player_number;;
+	*);;
+
+*);;
+nrel_player_number<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+"file://number.png"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;
+

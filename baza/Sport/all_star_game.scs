@@ -1,0 +1,30 @@
+all_star_game <- sc_node_not_relation;;
+
+all_star_game => nrel_main_idtf:
+[Матч всех звезд] (*<-lang_ru;;*);
+[All-star game] (*<-lang_en;;*);;
+
+all_star_game <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (Матч всех звезд)] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Матч всех звезд является особым матчем в чемпионате, в котором принимают участие лучшие игроки по показателям в регулярном сезоне.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+all_star_game <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Матч всех звезд)] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Участники матча звезд могут выбираться как по показателям статистики, так и путем голосования зрителей.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
