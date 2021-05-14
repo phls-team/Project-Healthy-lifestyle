@@ -1,0 +1,38 @@
+concept_myopia
+<-sc_node_not_relation;
+<-concept_disease;
+=>nrel_main_idtf:
+[myopia](*<-lang_en;;*);
+[миопия](*<-lang_ru;;*);
+[близорукость](*<-lang_ru;;*);
+
+<-rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр.(Близорукость)](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+    	concept_vision;
+        concept_person
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Близору́кость — дефект <b><sc_element sys_idtf="concept_vision">зрения</b>, 
+    при котором <b><sc_element sys_idtf="concept_person">человек</b> вблизи видит хорошо, 
+    а вдали — плохо.](* <- lang_ru;; => nrel_format: format_html;; *);;	
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-statement;;
+	=>nrel_main_idtf:[Утв.1(Близорукость)](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+		concept_retina
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Этот дефект заключается в том, что из-за аномалии рефракции 
+    изображение фокусируется не на <b><sc_element sys_idtf="concept_retina">сетчатке</b> 
+    <b><sc_element sys_idtf="concept_eye">глаза</b>, а перед ней.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;

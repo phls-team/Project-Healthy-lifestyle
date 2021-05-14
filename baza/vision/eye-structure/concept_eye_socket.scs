@@ -1,0 +1,47 @@
+concept_eye_socket <- sc_node_not_relation;;
+
+concept_eye_socket => nrel_main_idtf:
+[глазница] (*<-lang_ru;;*);
+[ eye socket] (*<-lang_en;;*);;
+
+concept_eye_socket <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (глазница)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_eye
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Глазница — парная полость в черепе, содержащая <b><sc_element sys_idtf="concept_eye">глазное яблоко</b> с его придатками.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_eye_socket <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (глазница)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_eye
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[У взрослого человека объем глазницы в среднем составляет 30 мл, из которых 6,5 мл занимает <b><sc_element sys_idtf="concept_eye">глазное яблоко</b>.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf:[Изобр.(Радужка)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+		"file://images/eye_socket.jpg"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;

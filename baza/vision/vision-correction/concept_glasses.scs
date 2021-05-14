@@ -1,0 +1,51 @@
+concept_glasses
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[glasses](*<-lang_en;;*);
+[очки](*<-lang_ru;;*);
+
+<-rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр.(Очки)](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+    	concept_eye;
+        concept_vision
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Очки́ — самый распространённый из оптических приборов, предназначенный для коррекции 
+    человеческого <b><sc_element sys_idtf="concept_vision">зрения</b> при оптических несовершенствах 
+    <b><sc_element sys_idtf="concept_eye">глаза</b> либо для защиты глаз от различных вредных воздействий.](* <- lang_ru;; => nrel_format: format_html;; *);;	
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-statement;;
+	=>nrel_main_idtf:[Утв.1(Очки)](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+        concept_vision;
+        concept_eye;
+        muscles;
+        concept_lens
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Очками со специальными линзами пользуются, когда параметры <b><sc_element sys_idtf="concept_vision">зрения</b> 
+    отклоняются от нормы, независимо от того, относится ли отклонение к 
+    форме <b><sc_element sys_idtf="concept_eye">глазного яблока</b> и преломляющих поверхностей, к преломляющей силе оптических сред, 
+    к изменению <b><sc_element sys_idtf="muscles">мышечной</b> системы (косоглазие) или к 
+    изменению плотности и эластичности <b><sc_element sys_idtf="concept_lens">хрусталика</b> и проч.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf:[Изобр.(Очки)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+		"file://images/glasses.jpg"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;

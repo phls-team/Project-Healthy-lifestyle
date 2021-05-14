@@ -1,0 +1,31 @@
+section_subject_domain_of_vision
+=> nrel_main_idtf: 
+	[Раздел. Предметная область зрение]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf: 
+	[Section. Subject domain of vision]
+	(* <- lang_en;; *);
+	
+=> nrel_section_decomposition:
+	{
+		section_subject_domain_health
+	};
+	
+<= nrel_section_decomposition: 
+	{
+		section_subject_domain_of_vision_correction;
+		section_subject_domain_of_eye_structure;
+		section_subject_domain_of_eye_diseases;
+		section_subject_domain_of_eye_parameters
+	};
+
+<- rrel_key_sc_element:
+		concept_eye;
+		concept_eye_vision;
+		ophthalmic_hygroscopic_cotton_wool;
+		concept_binocular_vision;
+		concept_monocular_vision;;
+		
+
+
+section_subject_domain_of_vision = [*^"file://subject_domain_of_vision.scs"*];;

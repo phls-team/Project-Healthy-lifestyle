@@ -1,0 +1,54 @@
+concept_glaucoma <- sc_node_not_relation;;
+
+concept_glaucoma => nrel_main_idtf:
+[глаукома] (*<-lang_ru;;*);
+[glaucoma] (*<-lang_en;;*);;
+
+concept_glaucoma <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (глаукома)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_disease;
+		concept_intraocular_pressure;
+		concept_person;
+		concept_vision;
+		concept_optic_nerve
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Глауко́ма — большая группа глазных <b><sc_element sys_idtf="concept_disease">заболеваний</b>, характеризующаяся постоянным или периодическим повышением <b><sc_element sys_idtf="concept_intraocular_pressure">внутриглазного давления</b> выше приемлемого для данного <b><sc_element sys_idtf="concept_person">человека</b> уровня с последующим развитием типичных дефектов поля <b><sc_element sys_idtf="concept_vision">зрения</b>, снижением остроты зрения и атрофией <b><sc_element sys_idtf="concept_optic_nerve">зрительного нерва</b>.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_glaucoma <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (глаукома)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_intraocular_pressure;
+		concept_vision;
+		concept_eye;
+		concept_blindness
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Повышенное <b><sc_element sys_idtf="concept_intraocular_pressure">внутриглазное давление</b> приводит к потере <b><sc_element sys_idtf="concept_vision">зрения</b> в пораженном <b><sc_element sys_idtf="concept_eye">глазу</b> и ведёт к <b><sc_element sys_idtf="concept_blindness">слепоте</b>, если его не лечить.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf:[Изобр.(Лейкома)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+		"file://images/glaukoma.jpg"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;

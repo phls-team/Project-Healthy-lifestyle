@@ -1,0 +1,32 @@
+concept_asian_eye_shape <- sc_node_not_relation;
+<- concept_eye_cut;;
+
+concept_asian_eye_shape => nrel_main_idtf:
+[азиатский разрез глаз] (*<-lang_ru;;*);
+[asian eye shape] (*<-lang_en;;*);;
+
+concept_asian_eye_shape <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (азиатский разрез глаз)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_eye
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Восточные (азиатские, восходящие) <b><sc_element sys_idtf="concept_eye">глаза</b> - ось восходящая (наружный участок глаз выше внутреннего).](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf:[Изобр.(Лейкома)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+		"file://images/asian_eye_shape.jpg"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;

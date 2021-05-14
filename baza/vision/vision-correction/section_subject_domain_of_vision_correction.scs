@@ -1,0 +1,32 @@
+section_subject_domain_of_vision_correction
+=> nrel_main_idtf: 
+	[Раздел. Предметная область коррекция зрения]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf: 
+	[Section. Subject domain of vision correction]
+	(* <- lang_en;; *);
+	
+=> nrel_section_decomposition:
+	{
+		section_subject_domain_of_vision
+	};
+	
+<= nrel_section_decomposition: 
+	{
+		section_subject_domain_of_lasik;
+		section_subject_domain_of_gymnastics_for_the_eyes;
+		section_subject_domain_of_contact_lenses
+	};
+
+<- rrel_key_sc_element:
+		subject_domain_of_vision_correction;
+		concept_gymnastics_for_the_eyes;
+		concept_bates_method;
+		concept_contact_lenses;
+		concept_lasik;
+		concept_monocle;
+		concept_sunglasses;
+		concept_glasses;;
+
+
+section_subject_domain_of_vision_correction = [*^"file://subject_domain_of_vision_correction.scs"*];;

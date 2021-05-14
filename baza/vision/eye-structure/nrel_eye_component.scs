@@ -1,0 +1,81 @@
+nrel_eye_component
+<-sc_node_norole_relation;
+=>nrel_main_idtf:
+[eye component*](*<-lang_en;;*);
+[компонент глаза*](*<-lang_ru;;*);
+
+<-rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр.(Компонент глаза)](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+		concept_eye
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Компонент глаза - это состовной элемент <b><sc_element sys_idtf="concept_eye">глазного яблока</b>](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-statement;;
+	=>nrel_main_idtf:[Утв.1(Компонент глаза)](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+            concept_elements;
+            set;
+            concept_person;
+            concept_eye;
+            concept_cornea;
+        	concept_retina;
+            concept_iris;
+            concept_lens;
+	        concept_vitreous;
+	        concept_pupil;
+	        concept_sclera;
+	        concept_choroid;
+	        concept_optic_nerve
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[<b><sc_element sys_idtf="concept_eye">Глазное яблоко</b> <b><sc_element sys_idtf="concept_person">человека</b> состоит из 
+    <b><sc_element sys_idtf="set">множества</b> <b><sc_element sys_idtf="concept_elements">элементов</b>, среди которых 
+    <b><sc_element sys_idtf="concept_cornea">роговица</b>, 
+    <b><sc_element sys_idtf="concept_retina">сетчатка</b>, 
+    <b><sc_element sys_idtf="concept_iris">радужка</b>, 
+    <b><sc_element sys_idtf="concept_lens">хрусталик</b>, 
+    <b><sc_element sys_idtf="concept_vitreous">стекловидное тело</b>, 
+    <b><sc_element sys_idtf="concept_pupil">зрачёк</b>, 
+    <b><sc_element sys_idtf="concept_sclera">склера</b>, 
+    <b><sc_element sys_idtf="concept_choroid">хориоидея</b>, 
+    <b><sc_element sys_idtf="concept_optic_nerve">зрительный нерв</b> и т.д.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);
+
+<-...(*
+	<-sc_node_not_relation;;
+	<-arity;;
+	=>nrel_measurement:2(*<-number;;*);;
+*);
+
+=>nrel_first_domain:concept_eye;
+=>nrel_second_domain:concept_eye_component;
+=>nrel_definitional_domain:...
+(*
+	<=nrel_combination:
+	{
+		concept_eye;
+		concept_eye_component
+	};;
+*);;
+
+nrel_relation
+=>nrel_inclusion:binary_relation
+(*
+	=>nrel_inclusion:symmetric_relation(*-|>nrel_eye_element;;*);;
+	=>nrel_inclusion:asymmetric_relation(*->nrel_eye_element;;*);;
+	=>nrel_inclusion:transitive_relation(*-|>nrel_eye_element;;*);;
+	=>nrel_inclusion:reflexive_relation(*-|>nrel_eye_element;;*);;
+	=>nrel_inclusion:antireflexive_relation(*->nrel_eye_element;;*);;
+*);
+=>nrel_inclusion:oriented_relation(*->nrel_eye_element;;*);;

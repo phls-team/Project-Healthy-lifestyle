@@ -1,0 +1,37 @@
+concept_cornea
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[cornea](*<-lang_en;;*);
+[роговица](*<-lang_ru;;*);
+
+<-rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр.(Рогови́ца)](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+    	concept_eye
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Рогови́ца, роговая оболочка — передняя наиболее выпуклая прозрачная часть фиброзной оболочки <b><sc_element sys_idtf="concept_eye">глазного яблока</b>, 
+	одна из светопреломляющих сред глаза.](* <- lang_ru;; => nrel_format: format_html;; *);;	
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-statement;;
+	=>nrel_main_idtf:[Утв.1(Рогови́ца)](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+		concept_eye;
+		blood_vessels;
+		concept_sclera
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Роговица — прозрачная оболочка, покрывающая переднюю часть <b><sc_element sys_idtf="concept_eye">глаза</b>. 
+	В ней отсутствуют <b><sc_element sys_idtf="blood_vessels">кровеносные сосуды</b>, она имеет большую преломляющую силу. 
+	Входит в оптическую систему глаза. Роговица граничит с непрозрачной внешней оболочкой глаза — <b><sc_element sys_idtf="concept_sclera">склерой</b>.
+](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;

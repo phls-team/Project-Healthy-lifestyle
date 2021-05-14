@@ -1,0 +1,33 @@
+subject_domain_of_eye_parameters
+=> nrel_main_idtf: 
+	[Предметная область параметры глаз]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf: 
+	[Subject domain of eye parameters]
+	(* <- lang_en;; *);
+
+=> nrel_private_subject_domain:{
+		subject_domain_of_vision_correction;
+		subject_domain_of_eye_structure;
+		subject_domain_of_eye_diseases;
+		subject_domain_of_eye_parameters
+};
+		
+<= nrel_private_subject_domain:
+	section_subject_domain_of_eye_parameters;
+		
+-> rrel_maximum_studied_object_class:
+	concept_eye;
+	
+-> rrel_not_maximum_studied_object_class:
+	concept_asian_eye_shape;
+	concept_classic_eye_shape;
+	concept_intraocular_pressure;
+	concept_european_eye_shape;
+	concept_eye_cut;
+	
+-> rrel_explored_relation:
+	nrel_eye_color;
+	nrel_eye_cut;
+	
+<- subject_domain;;

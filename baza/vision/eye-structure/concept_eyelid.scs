@@ -1,0 +1,53 @@
+concept_eyelid <- sc_node_not_relation;;
+
+concept_eyelid => nrel_main_idtf:
+[веко] (*<-lang_ru;;*);
+[eyelid] (*<-lang_en;;*);;
+
+concept_eyelid <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (веко)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_leather;
+		concept_eye
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Веки — подвижные <b><sc_element sys_idtf="concept_leather">кожные</b> складки вокруг <b><sc_element sys_idtf="concept_eye">глаз</b> у позвоночных.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+concept_eyelid <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (веко)] (*<-lang_ru;;*);;
+=> nrel_using_constants:
+	{
+		concept_eye;
+		concept_tear;
+		concept_cornea;
+		concept_sclera;
+		concept_vision;
+		concept_intraocular_pressure
+	};;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Вики защищают <b><sc_element sys_idtf="concept_eye">глаза</b> от внешних повреждений, способствуют смачиванию их <b><sc_element sys_idtf="concept_tear">слёзной жидкостью</b>, очищению <b><sc_element sys_idtf="concept_cornea">роговицы</b> и <b><sc_element sys_idtf="concept_sclera">склеры</b>, способствуют фокусировке <b><sc_element sys_idtf="concept_vision">зрения</b> и регулированию <b><sc_element sys_idtf="concept_intraocular_pressure">внутриглазного давления</b>, участвует в формировании оптической геометрии роговицы.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf:[Изобр.(Радужка)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+		"file://images/eyelid.jpg"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;

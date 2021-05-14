@@ -1,0 +1,32 @@
+section_subject_domain_of_eye_parameters
+=> nrel_main_idtf: 
+	[Раздел. Предметная область параметры глаз]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf: 
+	[Section. Subject domain of eye parameters]
+	(* <- lang_en;; *);
+	
+=> nrel_section_decomposition:
+	{
+		section_subject_domain_of_vision
+	};
+	
+<= nrel_section_decomposition: 
+	{
+		section_subject_domain_of_eye_cut
+
+	};
+
+<- rrel_key_sc_element:
+		concept_asian_eye_shape;
+		concept_classic_eye_shape;
+		concept_european_eye_shape;
+		concept_eye_cut;
+		nrel_eye_color;
+		concept_intraocular_pressure; 
+		nrel_eye_cut;
+		subject_domain_of_eye_parameters;;
+		
+
+
+section_subject_domain_of_eye_parameters = [*^"file://subject_domain_of_eye_parameters.scs"*];;

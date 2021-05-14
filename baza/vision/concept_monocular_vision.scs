@@ -1,0 +1,36 @@
+concept_monocular_vision
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[monocular vision](*<-lang_en;;*);
+[монокулярное зрение](*<-lang_ru;;*);
+
+<-rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:[Опр.(Монокулярное зрение)](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+    	concept_eye
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[Монокулярное зрение характеризуется тем, что предметы и движущиеся объекты, 
+    попадающие в поле зрения смотрящего субъекта, 
+    воспринимаются преимущественно лишь одним <b><sc_element sys_idtf="concept_eye">глазом</b>.](* <- lang_ru;; => nrel_format: format_html;; *);;	
+	*);;
+*);
+
+<-rrel_key_sc_element:...(*
+	<-statement;;
+	=>nrel_main_idtf:[Утв.1(Монокулярное зрение)](*<-lang_ru;;*);;
+	=>nrel_using_constants:{
+		concept_binocular_vision;
+        concept_eye
+	};;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+	[В обычных условиях человек, не имеющий каких-либо отклонений в зрении, 
+    пользуется <b><sc_element sys_idtf="concept_binocular_vision">бинокулярным зрением</b>, то есть воспринимает визуальную информацию 
+    посредством двух <b><sc_element sys_idtf="concept_eye">глаз</b>. Монокулярное зрение измеряется в угловых величинах.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
