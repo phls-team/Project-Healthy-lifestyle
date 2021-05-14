@@ -1,0 +1,51 @@
+ui_menu_file_for_finding_disease_by_symptom_and_end_pandemia<- 
+ui_user_command_class_atom; 
+ui_user_command_class_view_kb;
+ui_one_argument_command_class;;
+
+ui_menu_file_for_finding_disease_by_symptom_and_end_pandemia
+=> nrel_main_idtf: 
+	[Какая болезнь-эпидемия соответствуют указанному симптомам и годом окончания пандемии?] 
+	(* <- lang_ru;; *);
+=> nrel_idtf: 
+	[Запрос определенного заболевания c указаннами симптомами и годом окончанием пандемии?] 
+	(* <- lang_ru;; *);;
+
+ui_menu_file_for_finding_disease_by_symptom_and_end_pandemia
+=> nrel_main_idtf: 
+	[Which epidemic disease corresponds to the indicated symptoms and the year of the end of the pandemic?] 
+	(* <- lang_en;; *);
+=> nrel_idtf: 
+	[Request for a specific disease with the specified symptoms and the year the pandemic ended?] 
+	(* <- lang_en;; *);;
+
+ui_menu_file_for_finding_disease_by_symptom_and_end_pandemia
+=> nrel_main_idtf: 
+	[Якая хвароба-эпідэмія адпавядаюць паказанаму сімптомах і годам заканчэння пандэміі?] 
+	(* <- lang_by;; *);
+=> nrel_idtf: 
+	[Запыт пэўнага захворвання c указаннем сімптомамі і годам заканчэннем пандэміі?] 
+	(* <- lang_by;; *);;
+
+ui_menu_file_for_finding_disease_by_symptom_and_end_pandemia => ui_nrel_command_template:
+	[*
+		action_for_finding_disease_by_symptom_and_end_pandemia _-> ._action_for_finding_disease_by_symptom_and_end_pandemia
+			(*
+			_-> rrel_1:: ui_arg_1;;	
+			_-> rrel_2:: ui_arg_2;;			
+			*);;
+		._action_for_finding_disease_by_symptom_and_end_pandemia _<- question;;
+	*];;
+
+ui_menu_file_for_finding_disease_by_symptom_and_end_pandemia => ui_nrel_command_lang_template: 
+	[Какие болезнь-эпидемия имеет симптомы $ui_arg_1 и год окончание пандемии $ui_arg_2 ?] 
+	(* <- lang_ru;; *);;
+
+ui_menu_file_for_finding_disease_by_symptom_and_end_pandemia => ui_nrel_command_lang_template: 
+	[Which epidemic disease symptoms $ ui_arg_1 and the year of the end of the pandemia $ ui_arg_2?] 
+	(* <- lang_en;; *);;
+
+ui_menu_file_for_finding_disease_by_symptom_and_end_pandemia => ui_nrel_command_lang_template: 
+	[Якія хвароба-эпідэмія мае сімптомы $ ui_arg_1 і год канчатак пандэміі $ ui_arg_2?] 
+	(* <- lang_by;; *);;
+
