@@ -1,0 +1,14 @@
+concept_kropropamide <- sc_node_not_relation;
+
+=> nrel_main_idtf:
+[кропропамид](*<-lang_ru;;*);
+[kropropamide](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ...(*
+<- definition;;
+=> nrel_main_idtf: [Опр.(кропропамид)](*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...(*
+-> rrel_example: [Кропропамид — дыхательный стимулятор. ](*<-lang_ru;;*);;
+*);;
+*);;
+

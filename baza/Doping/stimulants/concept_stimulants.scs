@@ -1,0 +1,84 @@
+concept_stimulants
+
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [stimulants]
+          (*<-lang_en;;*);
+          [стимуляторы]
+          (*<-lang_ru;;*);
+
+=> nrel_inclusion: concept_cocaine;
+=> nrel_inclusion: concept_adrafinil;
+=> nrel_inclusion: concept_amifenazole;
+=> nrel_inclusion: concept_amphetamine;
+=> nrel_inclusion: concept_benfluorex;
+=> nrel_inclusion: concept_benzylpiperazine;
+=> nrel_inclusion: concept_bromanthan;
+=> nrel_inclusion: concept_klobenzorex;
+=> nrel_inclusion: concept_kropropamide;
+=> nrel_inclusion: concept_crotetamide;
+=> nrel_inclusion: concept_lisdexamphetamine;
+=> nrel_inclusion: concept_mesocarb;
+=> nrel_inclusion: concept_methamphetamine_d_minus;
+=> nrel_inclusion: concept_p_methylamphetamine ;
+=> nrel_inclusion: concept_mefenorex ;
+=> nrel_inclusion: concept_mefentermin ;
+=> nrel_inclusion: concept_modafinil ;
+=> nrel_inclusion: concept_norfenfluramine  ;
+=> nrel_inclusion: concept_prenylamine ;
+=> nrel_inclusion: concept_prol;
+=> nrel_inclusion: concept_fendimetrazine  ;
+=> nrel_inclusion:concept_phenethylline ;
+=> nrel_inclusion:concept_phenamine ;
+=> nrel_inclusion: concept_phentermine;;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

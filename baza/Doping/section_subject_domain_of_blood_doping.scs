@@ -1,0 +1,22 @@
+section_subject_domain_of_blood_doping
+=> nrel_main_idtf: 
+	[Раздел. Предметная область кровяного допинга]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf: 
+	[Section. Subject domain of Blood Doping]
+	(* <- lang_en;; *);
+	
+=> nrel_section_decomposition:
+	{
+	section_subject_domain_of_doping
+	};
+
+<- rrel_key_sc_element:
+		
+		subject_domain_of_blood_doping;
+		concept_blood_doping;
+
+		nrel_side_effects;
+		nrel_methods;;
+
+section_subject_domain_of_doping = [*^"file://subject_domain_of_blood_doping.scsi"*];;

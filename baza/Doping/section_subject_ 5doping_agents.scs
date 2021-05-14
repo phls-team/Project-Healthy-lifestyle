@@ -1,0 +1,40 @@
+
+
+    section_subject_domain_of_painkiller
+	=> nrel_main_idtf:
+	[Раздел. Предметная область обезболивающего]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf: 
+	[Section. Subject domain of painkiller]
+	(* <- lang_en;; *);;
+
+
+
+    section_subject_domain_of_anabolic_agents
+=> nrel_main_idtf: 
+	[Раздел. Предметная область анаболических агентов (средств)]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf: 
+	[Section. Subject domain of anabolic agents]
+	(* <- lang_en;; *);;
+
+
+
+    section_subject_domain_of_diuretics
+=> nrel_main_idtf: 
+	[Раздел. Предметная область диуретиков]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf: 
+	[Section. Subject domain of diuretics]
+	(* <- lang_en;; *);;
+
+
+
+    section_subject_domain_of_peptide_hormones
+=> nrel_main_idtf: 
+	[Раздел. Предметная область пептидных гормонов]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf: 
+	[Section. Subject domain of peptide hormones]
+	(* <- lang_en;; *);;
+
