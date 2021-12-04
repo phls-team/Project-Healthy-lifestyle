@@ -1,0 +1,41 @@
+concept_legs_stretch
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [legs stretch](*<-lang_en;;*);
+          [растяжка ног](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(растяжка ног)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Это <b><sc_element sys_idtf="nrel_exercise">упражнение</b></sc_element> <b><sc_element sys_idtf="concept_stretch">растягивает</b></sc_element>  <b><sc_element sys_idtf="concept_calf_muscle">икроножную</b></sc_element>, камбаловидную, заднюю большеберцовую мышцу, двуглавую мышцу <b><sc_element sys_idtf="hips">бедра</b></sc_element>.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<=nrel_species:concept_stretch;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(растяжка ног)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Несмотря на огромное количество <b><sc_element sys_idtf="nrel_exercise">упражнений</b></sc_element> и необходимость их периодически менять в своём <b><sc_element sys_idtf="concept_training">тренировочном процессе</b></sc_element>.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://images/concept_legs_stretch.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

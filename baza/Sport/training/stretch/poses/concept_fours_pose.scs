@@ -1,0 +1,41 @@
+concept_fours_pose
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [fours pose](*<-lang_en;;*);
+          [поза на четвереньках](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(поза на четвереньках)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Эта поза для <b><sc_element sys_idtf="concept_legs_stretch">растяжки мышц ног</b></sc_element>.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<=nrel_species:concept_legs_stretch;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(поза на четвереньках)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Встаньте на четвереньки, лодыжку правой ноги положите на <b><sc_element sys_idtf="knee_joint">колено</b></sc_element> левой. Подайте <b><sc_element sys_idtf="hip_joint">таз</b></sc_element> назад, чтобы углубить <b><sc_element sys_idtf="concept_stretch">растяжку</b></sc_element>. Повторите с другой ногой.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://images/concept_fours_pose.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

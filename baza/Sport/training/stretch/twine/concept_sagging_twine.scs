@@ -1,0 +1,41 @@
+concept_sagging_twine
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [sagging twine](*<-lang_en;;*);
+          [провисной шпагат](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(провисной шпагат)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Основная характеристика этого вида — угол между <b><sc_element sys_idtf="hips">бёдрами</b></sc_element>, превышающий 180 градусов.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<=nrel_species:concept_twine;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(провисной шпагат)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Выполнение этого <b><sc_element sys_idtf="physical_excercise">упражнения</b></sc_element> требует высокой концентрации и хорошего тонуса <b><sc_element sys_idtf="muscles">мышц</b></sc_element>, а также постоянного самосовершенствования. Оно доступно далеко не всем.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://images/concept_sagging_twine.png"
+			(*
+				=> nrel_format : format_png ;;
+			*);;
+		*);;
+	*);;

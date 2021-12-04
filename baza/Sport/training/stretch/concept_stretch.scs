@@ -1,0 +1,41 @@
+concept_stretch
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [stretch](*<-lang_en;;*);
+          [растяжка](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(растяжка)] (* <- lang_ru;;*);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Специальные <b><sc_element sys_idtf="nrel_exercise">упражнения</b></sc_element> в <b><sc_element sys_idtf="concept_gymnastics">гимнастике</b></sc_element> и т. п. для <b><sc_element sys_idtf="concept_stretching">растягивания</b></sc_element>, разогревания связок и <b><sc_element sys_idtf="muscles">мышц</b></sc_element>.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<=nrel_species:concept_training;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(растяжка)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Если добавить к своей ежедневной активности упражнения на гибкость и растяжку и делать их регулярно, через какое-то время любой человек будет чувствовать себя бодрее и моложе.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://images/concept_stretch.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

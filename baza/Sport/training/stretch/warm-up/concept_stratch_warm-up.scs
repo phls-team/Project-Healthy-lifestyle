@@ -1,0 +1,42 @@
+concept_stretch_warm_up
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [warm-up before stratch](*<-lang_en;;*);
+          [разминка перед растяжкой](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(разминка перед растяжкой)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[это обязательный элемент <b><sc_element sys_idtf="concept_training">тренировки</b></sc_element>, который предшествует <b><sc_element sys_idtf="concept_stretch">растяжке</b></sc_element>.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<=nrel_species:concept_warm_up;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(разминка перед растяжкой)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[1. <b><sc_element sys_idtf="concept_joint">Суставная</b></sc_element> разминка: покрутите <b><sc_element sys_idtf="concept_joint">суставами</b></sc_element>, сделайте наклоны и <b><sc_element sys_idtf="turns">повороты</b></sc_element> корпуса.
+                            2. 5–7 минут кардио: <b><sc_element sys_idtf="running">бег</b></sc_element> или <b><sc_element sys_idtf="nrel_exercise">упражнения</b></sc_element> Jumping Jacks, «Скалолаз», бег на месте с высоким подниманием <b><sc_element sys_idtf="knee_joint">коленей</b></sc_element>, прыжки через <b><sc_element sys_idtf="jump_rope">скакалку</b></sc_element>.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://images/concept_stretch_warm-up.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

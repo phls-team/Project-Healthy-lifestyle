@@ -1,0 +1,43 @@
+concept_neck_stretch
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [neck stretch](*<-lang_en;;*);
+          [растяжка шеи](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(растяжка шеи)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Это <b><sc_element sys_idtf="nrel_exercise">упражнение</b></sc_element> <b><sc_element sys_idtf="concept_stretch">растягивает</b></sc_element> ременную <b><sc_element sys_idtf="muscles">мышцу</b></sc_element> шеи и подзатылочные <b><sc_element sys_idtf="muscles">мышцы</b></sc_element>.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<=nrel_species:concept_stretch;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(растяжка шеи)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Выпрямите спину, расслабьте верхнюю часть <b><sc_element sys_idtf="concept_body">тела</b></sc_element>. Медленно поворачивайте голову вправо, чтобы подбородок оказался на уровне <b><sc_element sys_idtf="shoulders">плеча</b></sc_element> и располагался параллельно полу.
+							В таком положении наклоните голову к правому <b><sc_element sys_idtf="shoulders">плечу</b></sc_element> и задержитесь на 30 секунд.
+							Повторите <b><sc_element sys_idtf="nrel_exercise">упражнение</b></sc_element>, наклоняя голову влево. Для достижения лучшего <b><sc_element sys_idtf="nrel_effect">эффекта</b></sc_element> придерживайте затылок правой и левой руками соответственно.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://images/concept_neck_stretch.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

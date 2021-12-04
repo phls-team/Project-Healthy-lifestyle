@@ -1,0 +1,41 @@
+concept_air_twine
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [air twine](*<-lang_en;;*);
+          [воздушный шпагат](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(воздушный шпагат)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Подпрыгивая и взмахивая ногами, <b><sc_element sys_idtf="concept_person">человек</b></sc_element> достигает нужного угла разворота в воздухе.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<=nrel_species:concept_twine;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(воздушный шпагат)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Делается в воздухе, чаще в прыжке, но некоторые умеют исполнять этот <b><sc_element sys_idtf="concept_elements">элемент</b></sc_element>, стоя на месте.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://images/concept_air_twine.png"
+			(*
+				=> nrel_format : format_png ;;
+			*);;
+		*);;
+	*);;

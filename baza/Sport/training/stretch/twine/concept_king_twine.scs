@@ -1,0 +1,41 @@
+concept_king_twine
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [king twine](*<-lang_en;;*);
+          [королевский шпагат](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(королевский шпагат)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Основным отличием этого <b><sc_element sys_idtf="species">вида</b></sc_element> является использование опор для двух стоп. При этом <b><sc_element sys_idtf="concept_body">тело</b></sc_element> остаётся на весу.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<=nrel_species:concept_twine;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(королевский шпагат)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Для исполнения <b><sc_element sys_idtf="concept_elements">элемента</b></sc_element> требуется не только абсолютная <b><sc_element sys_idtf="concept_flexibility">гибкость</b></sc_element>, крепость и эластичность связок и <b><sc_element sys_idtf="muscles">мышц</b></sc_element>, но и мышечная статистическая <b><sc_element sys_idtf="concept_power">сила</b></sc_element>.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://images/concept_king_twine.png"
+			(*
+				=> nrel_format : format_png ;;
+			*);;
+		*);;
+	*);;

@@ -1,0 +1,41 @@
+concept_dog_pose
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [dog pose](*<-lang_en;;*);
+          [поза собака мордой вниз](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(поза собака мордой вниз)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Эта поза для <b><sc_element sys_idtf="concept_lumbar_stretch">растяжки поясницы</b></sc_element>.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<=nrel_species:concept_lumbar_stretch;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(поза собака мордой вниз)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Встаньте на четвереньки, затем подайте <b><sc_element sys_idtf="hip_joint">таз</b></sc_element> назад и вверх, чтобы <b><sc_element sys_idtf="concept_body">тело</b></sc_element> напоминало угол. Руки и <b><sc_element sys_idtf="concept_back_muscles">спина</b></sc_element> должны вытянуться в одну линию, <b><sc_element sys_idtf="knee_joint">колени</b></sc_element> можно согнуть, а пятки — оторвать от пола. Главное, чтобы <b><sc_element sys_idtf="concept_back_muscles">спина</b></sc_element> оставалась прямой, без округления в пояснице.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://images/concept_dog_pose.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

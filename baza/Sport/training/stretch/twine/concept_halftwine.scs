@@ -1,0 +1,41 @@
+concept_halftwine
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [halftwine](*<-lang_en;;*);
+          [полушпагат](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(полушпагат)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Согнутая нога берёт на себя опору, а вторая нога отводится в сторону или назад и полностью выпрямляется.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_species:concept_twine;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(полушпагат)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Полушпагат применяется в разминке перед непосредственной <b><sc_element sys_idtf="concept_stretch">растяжкой</b></sc_element>.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://images/concept_halftwine.png"
+			(*
+				=> nrel_format : format_png ;;
+			*);;
+		*);;
+	*);;

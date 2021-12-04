@@ -1,0 +1,42 @@
+concept_turning_stretch
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [turning stretch](*<-lang_en;;*);
+          [растяжка с поворотом](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(растяжка с поворотом)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Это <b><sc_element sys_idtf="nrel_exercise">упражнение</b></sc_element> <b><sc_element sys_idtf="concept_stretch">растяжки</b></sc_element> работает на широчайшую <b><sc_element sys_idtf="concept_back_muscles">спины</b></sc_element><b><sc_element sys_idtf="concept_back_muscles">спины</b></sc_element><b><sc_element sys_idtf="concept_back_muscles">спины</b></sc_element><b><sc_element sys_idtf="concept_back_muscles">мышцу спины</b></sc_element> и боковые <b><sc_element sys_idtf="concept_torso_muscles">мышцы туловища</b></sc_element>.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<=nrel_species:concept_stretch;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(растяжка с поворотом)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Сядьте на стул или табурет, плотно прижав ступни к полу. Поверните верхнюю часть <b><sc_element sys_idtf="concept_body">тела</b></sc_element> вправо, оставив <b><sc_element sys_idtf="hips">бедра</b></sc_element> неподвижными, а позвоночник прямым. Руки расположите за головой.
+                            Можно положить левую руку на правое <b><sc_element sys_idtf="knee_joint">колено</b></sc_element> (или наоборот). Зафиксируйте <b><sc_element sys_idtf="concept_body">тело</b></sc_element> в таком положении на 10 секунд и повторите <b><sc_element sys_idtf="nrel_exercise">упражнение</b></sc_element>, повернувшись влево (или вправо, соответственно). Сделайте 3–5 подходов.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://images/concept_turning_stretch.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

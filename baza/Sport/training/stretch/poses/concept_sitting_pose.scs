@@ -1,0 +1,42 @@
+concept_sitting_pose
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [sitting pose](*<-lang_en;;*);
+          [поза сидя](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(поза сидя)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Эта поза для <b><sc_element sys_idtf="concept_legs_stretch">растяжки мышц ног</b></sc_element>.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<=nrel_species:concept_legs_stretch;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(поза сидя)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Сядьте на пол, вытяните ноги вперёд, выпрямите <b><sc_element sys_idtf="concept_back_muscles">спину</b></sc_element>. Согните одну ногу в <b><sc_element sys_idtf="knee_joint">колене</b></sc_element>, возьмитесь за голень руками и прижмите её к <b><sc_element sys_idtf="pectoral_muscles">груди</b></sc_element>. Голень должна быть параллельна полу, <b><sc_element sys_idtf="forearm">предплечья</b></sc_element> лежат сверху и прижимают её к <b><sc_element sys_idtf="pectoral_muscles">груди</b></sc_element>, одна кисть накрывает другую.
+                            Повторите с другой ногой.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://images/concept_sitting_pose.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

@@ -1,0 +1,41 @@
+concept_cat_pose
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [cat pose](*<-lang_en;;*);
+          [поза кошки](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(поза кошки)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Эта поза <b><sc_element sys_idtf="concept_stretch">растягиает</b></sc_element> прямую <b><sc_element sys_idtf="сoncept_stomach_muscles">мышцу живота</b></sc_element>, группу распрямляющих <b><sc_element sys_idtf="сoncept_back_muscles">мышц спины</b></sc_element>.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<=nrel_species:concept_abs_stretch;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(поза кошки)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Встаньте на четвереньки, упор на выпрямленные руки и <b><sc_element sys_idtf="knee_joint">колени</b></sc_element>. Втяните <b><sc_element sys_idtf="concept_stomach_muscles">живот</b></sc_element> так, чтобы <b><sc_element sys_idtf="concept_back_muscles">спина</b></sc_element> выгнулась дугой вверх. В этой позиции расслабьтесь и надавите <b><sc_element sys_idtf="concept_torso_muscles">туловищем</b></sc_element> вниз, создавая обратный прогиб в позвоночнике. Затем сделайте глубокий вдох, растяните <b><sc_element sys_idtf="сoncept_stomach_muscles">живот</b></sc_element> и на медленном выдохе напрягите абдоминальные <b><sc_element sys_idtf="muscles">мышцы</b></sc_element>.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://images/concept_cat_pose.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
