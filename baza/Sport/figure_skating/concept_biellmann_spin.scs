@@ -1,0 +1,48 @@
+concept_biellmann_spin
+
+=> nrel_main_idtf:[бильман] (* <-lang_ru;; *);
+=> nrel_main_idtf:[biellmann spin] (* <-lang_en;; *);
+
+<- sc_node_not_relation;
+	
+<- rrel_key_sc_element: 
+        ...
+        (*
+        <- definition;;
+        => nrel_main_idtf:
+	[Опр. (Бильман)] (*<-lang_ru;;*);;
+        <= nrel_sc_text_translation: 
+                ...
+	        (*
+		-> rrel_example:
+		[Вращение на одной ноге, при этом вторая нога поднята за спиной и удерживается двумя руками над головой за лезвие конька.](*<- lang_ru;;*);;
+	        *);;
+        *);
+        
+<- rrel_key_sc_element: 
+        ...
+        (*
+        <- statement;;
+        => nrel_main_idtf:
+	[Утв. (Бильман)] (*<-lang_ru;;*);;
+        <= nrel_sc_text_translation: 
+                ...
+	        (*
+		-> rrel_example:
+		[Бильман требует большой гибкости и почти всегда выполняется женщинами.](*<- lang_ru;; *);;
+	        *);;
+        *);
+        
+<-rrel_key_sc_element:
+        ...
+	(*
+	<-illustration;;
+	<=nrel_sc_text_translation:...
+	        (*
+		->rrel_example:
+                "file://Images/biellmann_spin.png"
+	          (*
+		  =>nrel_format:format_png;;
+	          *);;	
+                *);;
+        *);;

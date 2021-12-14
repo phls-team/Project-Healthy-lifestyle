@@ -1,0 +1,48 @@
+concept_ejextion
+
+=> nrel_main_idtf:[выброс] (* <-lang_ru;; *);
+=> nrel_main_idtf:[ejextion] (* <-lang_en;; *);
+
+<- sc_node_not_relation;
+	
+<- rrel_key_sc_element: 
+        ...
+        (*
+        <- definition;;
+        => nrel_main_idtf:
+	[Опр. (Выброс)] (*<-lang_ru;;*);;
+        <= nrel_sc_text_translation: 
+                ...
+	        (*
+		-> rrel_example:
+		[Прыжок с помощью партнёра, в котором партнёрша бросается партнёром в воздух на отрыве и приземляется без помощи партнёра на заднее наружное ребро.](*<- lang_ru;;*);;
+	        *);;
+        *);
+        
+<- rrel_key_sc_element: 
+        ...
+        (*
+        <- statement;;
+        => nrel_main_idtf:
+	[Утв. (Выброс)] (*<-lang_ru;;*);;
+        <= nrel_sc_text_translation: 
+                ...
+	        (*
+		-> rrel_example:
+		[Является одним из наиболее травмоопасных элментов парного катания.](*<- lang_ru;; *);;
+	        *);;
+        *);
+        
+<-rrel_key_sc_element:
+        ...
+	(*
+	<-illustration;;
+	<=nrel_sc_text_translation:...
+	        (*
+		->rrel_example:
+                "file://Images/ejextion.png"
+	          (*
+		  =>nrel_format:format_png;;
+	          *);;	
+                *);;
+        *);;

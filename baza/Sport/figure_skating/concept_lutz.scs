@@ -1,0 +1,48 @@
+concept_lutz
+
+=> nrel_main_idtf:[лутц] (* <-lang_ru;; *);
+=> nrel_main_idtf:[lutz] (* <-lang_en;; *);
+
+<- sc_node_not_relation;
+	
+<- rrel_key_sc_element: 
+        ...
+        (*
+        <- definition;;
+        => nrel_main_idtf:
+	[Опр. (Лутц)] (*<-lang_ru;;*);;
+        <= nrel_sc_text_translation: 
+                ...
+	        (*
+		-> rrel_example:
+		[Прыжок с противовращательным заходом (траектория похожа на змею).](*<- lang_ru;;*);;
+	        *);;
+        *);
+        
+<- rrel_key_sc_element: 
+        ...
+        (*
+        <- statement;;
+        => nrel_main_idtf:
+	[Утв. (Лутц)] (*<-lang_ru;;*);;
+        <= nrel_sc_text_translation: 
+                ...
+	        (*
+		-> rrel_example:
+		[Одинарный лутц оценивается в 0,6 балла, двойной - 2,1, тройной - 5,3, а четвертной - 11.](*<- lang_ru;; *);;
+	        *);;
+        *);
+        
+<-rrel_key_sc_element:
+        ...
+	(*
+	<-illustration;;
+	<=nrel_sc_text_translation:...
+	        (*
+		->rrel_example:
+                "file://Images/lutz.png"
+	          (*
+		  =>nrel_format:format_png;;
+	          *);;	
+                *);;
+        *);;

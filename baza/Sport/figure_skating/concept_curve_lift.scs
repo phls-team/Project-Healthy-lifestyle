@@ -1,0 +1,34 @@
+concept_curve_lift
+
+=> nrel_main_idtf:[поддержка по дуге] (* <-lang_ru;; *);
+=> nrel_main_idtf:[curve lift] (* <-lang_en;; *);
+
+<- sc_node_not_relation;
+	
+<- rrel_key_sc_element: 
+        ...
+        (*
+        <- definition;;
+        => nrel_main_idtf:
+	[Опр. (Поддержка по дуге)] (*<-lang_ru;;*);;
+        <= nrel_sc_text_translation: 
+                ...
+	        (*
+		-> rrel_example:
+		[Поддержка, при исполнении которой поднимающий партнёр скользит по одной дуге в любой позиции на одной или двух ногах.](*<- lang_ru;;*);;
+	        *);;
+        *);
+        
+<-rrel_key_sc_element:
+        ...
+	(*
+	<-illustration;;
+	<=nrel_sc_text_translation:...
+	        (*
+		->rrel_example:
+                "file://Images/curve_lift.png"
+	          (*
+		  =>nrel_format:format_png;;
+	          *);;	
+                *);;
+        *);;

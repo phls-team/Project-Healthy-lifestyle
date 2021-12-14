@@ -1,0 +1,48 @@
+concept_pair_figure_skating
+
+=> nrel_main_idtf:[парное фигурное катание] (* <-lang_ru;; *);
+=> nrel_main_idtf:[pair figure skating] (* <-lang_en;; *);
+
+<- sc_node_not_relation;
+	
+<- rrel_key_sc_element: 
+        ...
+        (*
+        <- definition;;
+        => nrel_main_idtf:
+	[Опр. (Парное фигурное катание)] (*<-lang_ru;;*);;
+        <= nrel_sc_text_translation: 
+                ...
+	        (*
+		-> rrel_example:
+		[Вид спорта, в котором спортсмены, мужчина и женщина, катаются в унисон, исполняя движения в такой гармонии друг с другом, что создаётся впечатление настоящего парного катания, а не независимого катания двух одиночников.](*<- lang_ru;;*);;
+	        *);;
+        *);
+        
+<- rrel_key_sc_element: 
+        ...
+        (*
+        <- statement;;
+        => nrel_main_idtf:
+	[Утв. (Парное фигурное катание)] (*<-lang_ru;;*);;
+        <= nrel_sc_text_translation: 
+                ...
+	        (*
+		-> rrel_example:
+		[Задача спортсменов в парном катании — продемонстрировать владение элементами так, чтобы создать впечатление единства действий.](*<- lang_ru;; *);;
+	        *);;
+        *);
+        
+<-rrel_key_sc_element:
+        ...
+	(*
+	<-illustration;;
+	<=nrel_sc_text_translation:...
+	        (*
+		->rrel_example:
+                "file://Images/pair_figure_skating.png"
+	          (*
+		  =>nrel_format:format_png;;
+	          *);;	
+                *);;
+        *);;

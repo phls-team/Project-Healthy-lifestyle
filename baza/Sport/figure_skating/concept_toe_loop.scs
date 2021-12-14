@@ -1,0 +1,48 @@
+concept_toe_loop
+
+=> nrel_main_idtf:[тулуп] (* <-lang_ru;; *);
+=> nrel_main_idtf:[toe_loop] (* <-lang_en;; *);
+
+<- sc_node_not_relation;
+	
+<- rrel_key_sc_element: 
+        ...
+        (*
+        <- definition;;
+        => nrel_main_idtf:
+	[Опр. (Тулуп)] (*<-lang_ru;;*);;
+        <= nrel_sc_text_translation: 
+                ...
+	        (*
+		-> rrel_example:
+		[Прыжок выполняется с наружного ребра правой ноги, отталкивание зубцом левого конька. Приземление на правую ногу, назад на наружное ребро.](*<- lang_ru;;*);;
+	        *);;
+        *);
+        
+<- rrel_key_sc_element: 
+        ...
+        (*
+        <- statement;;
+        => nrel_main_idtf:
+	[Утв. (Тулуп)] (*<-lang_ru;;*);;
+        <= nrel_sc_text_translation: 
+                ...
+	        (*
+		-> rrel_example:
+		[Одинарный флип оценивается в 0,4 балла, двойной - 1,3, тройной - 4,3, четвертной - 10,3.](*<- lang_ru;; *);;
+	        *);;
+        *);
+        
+<-rrel_key_sc_element:
+        ...
+	(*
+	<-illustration;;
+	<=nrel_sc_text_translation:...
+	        (*
+		->rrel_example:
+                "file://Images/toe_loop.png"
+	          (*
+		  =>nrel_format:format_png;;
+	          *);;	
+                *);;
+        *);;

@@ -1,0 +1,48 @@
+concept_loop
+
+=> nrel_main_idtf:[риттбергер] (* <-lang_ru;; *);
+=> nrel_main_idtf:[loop] (* <-lang_en;; *);
+
+<- sc_node_not_relation;
+	
+<- rrel_key_sc_element: 
+        ...
+        (*
+        <- definition;;
+        => nrel_main_idtf:
+	[Опр. (Риттбергер)] (*<-lang_ru;;*);;
+        <= nrel_sc_text_translation: 
+                ...
+	        (*
+		-> rrel_example:
+		[Фигурист с левым вращением скользит на правой ноге назад-наружу, лицом внутрь круга, свободная нога вперед-накрест. Все тело, за исключением опорной ноги, разворачивается против часовой стрелки, одновременно делается толчок правой ногой. Приземление на правую ногу назад-наружу.](*<- lang_ru;;*);;
+	        *);;
+        *);
+        
+<- rrel_key_sc_element: 
+        ...
+        (*
+        <- statement;;
+        => nrel_main_idtf:
+	[Утв. (Риттбергер)] (*<-lang_ru;;*);;
+        <= nrel_sc_text_translation: 
+                ...
+	        (*
+		-> rrel_example:
+		[Одинарный сальхов оценивается в 0,5 балла, двойной - 1,8, тройной - 5,1, четвертной - 12,0.](*<- lang_ru;; *);;
+	        *);;
+        *);
+        
+<-rrel_key_sc_element:
+        ...
+	(*
+	<-illustration;;
+	<=nrel_sc_text_translation:...
+	        (*
+		->rrel_example:
+                "file://Images/loop.png"
+	          (*
+		  =>nrel_format:format_png;;
+	          *);;	
+                *);;
+        *);;

@@ -1,0 +1,48 @@
+concept_free_program_figure_skating
+
+=> nrel_main_idtf:[Произвольная программа в фигурном катании] (* <-lang_ru;; *);
+=> nrel_main_idtf:[free program figure skating] (* <-lang_en;; *);
+
+<- sc_node_not_relation;
+	
+<- rrel_key_sc_element: 
+        ...
+        (*
+        <- definition;;
+        => nrel_main_idtf:
+	[Опр. (Произвольная программа в фигурном катании)] (*<-lang_ru;;*);;
+        <= nrel_sc_text_translation: 
+                ...
+	        (*
+		-> rrel_example:
+		[Продолжительность произвольной программы у мужчин - 4 минуты 30 секунд, а у женщин - 4 минуты 10 секунд.](*<- lang_ru;;*);;
+	        *);;
+        *);
+        
+<- rrel_key_sc_element: 
+        ...
+        (*
+        <- statement;;
+        => nrel_main_idtf:
+	[Утв. (Произвольная программа в фигурном катании)] (*<-lang_ru;;*);;
+        <= nrel_sc_text_translation: 
+                ...
+	        (*
+		-> rrel_example:
+		[Произвольные программы всегда разнообразны, они характерны и несколькими сменами ритма, подбором разнообразных мелодий.](*<- lang_ru;; *);;
+	        *);;
+        *);
+        
+<-rrel_key_sc_element:
+        ...
+	(*
+	<-illustration;;
+	<=nrel_sc_text_translation:...
+	        (*
+		->rrel_example:
+                "file://Images/free_program_figure_skating.png"
+	          (*
+		  =>nrel_format:format_png;;
+	          *);;	
+                *);;
+        *);;

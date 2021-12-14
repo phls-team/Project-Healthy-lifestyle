@@ -1,0 +1,54 @@
+concept_todesspirale
+
+=> nrel_main_idtf:[тодес] (* <-lang_ru;; *);
+=> nrel_main_idtf:[todesspirale] (* <-lang_en;; *);
+
+<- sc_node_not_relation;
+	
+<- rrel_key_sc_element: 
+        ...
+        (*
+        <- definition;;
+        => nrel_main_idtf:
+	[Опр. (Тодес)] (*<-lang_ru;;*);;
+        <= nrel_sc_text_translation: 
+                ...
+	        (*
+		-> rrel_example:
+		[Элемент парного фигурного катания на льду, когда партнёрша описывает спираль вокруг партнёра.](*<- lang_ru;;*);;
+	        *);;
+        *);
+        
+<- rrel_key_sc_element: 
+        ...
+        (*
+        <- statement;;
+        => nrel_main_idtf:
+	[Утв. (Тодес)] (*<-lang_ru;;*);;
+        <= nrel_sc_text_translation: 
+                ...
+	        (*
+		-> rrel_example:
+		[Оба партнёра должны выполнить минимум один оборот в позиции полного тодеса, когда колени партнёра явно согнуты.](*<- lang_ru;; *);;
+	        *);;
+        *);
+        
+<-rrel_key_sc_element:
+        ...
+	(*
+	<-illustration;;
+	<=nrel_sc_text_translation:...
+	        (*
+		->rrel_example:
+                "file://Images/todesspirale.png"
+	          (*
+		  =>nrel_format:format_png;;
+	          *);;	
+                *);;
+        *);
+        
+=>nrel_species:
+        concept_todesspirale_forward_inward;
+        concept_todesspirale_forward_outward;
+        concept_todesspirale_back_outward;
+        concept_todesspirale_back_inward;;

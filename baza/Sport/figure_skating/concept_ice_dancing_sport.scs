@@ -1,0 +1,35 @@
+concept_ice_dancing_sport
+
+=> nrel_main_idtf:[спортивные танцы на льду] (* <-lang_ru;; *);
+=> nrel_main_idtf:[ice dancing sport] (* <-lang_en;; *);
+
+<- sc_node_not_relation;
+	
+<- rrel_key_sc_element: 
+        ...
+        (*
+        <- definition;;
+        => nrel_main_idtf:
+	[Опр. (Спортивные танцы на льду)] (*<-lang_ru;;*);;
+        <= nrel_sc_text_translation: 
+                ...
+	        (*
+		-> rrel_example:
+		[Вид спорта, в котором запрещены акробатические элементы.](*<- lang_ru;;*);;
+	        *);;
+        *);
+        
+        
+<-rrel_key_sc_element:
+        ...
+	(*
+	<-illustration;;
+	<=nrel_sc_text_translation:...
+	        (*
+		->rrel_example:
+                "file://Images/ice_dancing_sport.png"
+	          (*
+		  =>nrel_format:format_png;;
+	          *);;	
+                *);;
+        *);;

@@ -1,0 +1,34 @@
+concept_stationary_lift
+
+=> nrel_main_idtf:[поддержка на месте] (* <-lang_ru;; *);
+=> nrel_main_idtf:[stationary lift] (* <-lang_en;; *);
+
+<- sc_node_not_relation;
+	
+<- rrel_key_sc_element: 
+        ...
+        (*
+        <- definition;;
+        => nrel_main_idtf:
+	[Опр. (Поддержка на месте)] (*<-lang_ru;;*);;
+        <= nrel_sc_text_translation: 
+                ...
+	        (*
+		-> rrel_example:
+		[Поддержка, при исполнении которой поднимающий партнёр остается на одном месте (без продвижения по площадке), при этом он может вращаться](*<- lang_ru;;*);;
+	        *);;
+        *);
+        
+<-rrel_key_sc_element:
+        ...
+	(*
+	<-illustration;;
+	<=nrel_sc_text_translation:...
+	        (*
+		->rrel_example:
+                "file://Images/stationary_lift.png"
+	          (*
+		  =>nrel_format:format_png;;
+	          *);;	
+                *);;
+        *);;

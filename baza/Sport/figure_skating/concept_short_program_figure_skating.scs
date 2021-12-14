@@ -1,0 +1,48 @@
+concept_short_program_figure_skating
+
+=> nrel_main_idtf:[Короткая программа в фигурном катании] (* <-lang_ru;; *);
+=> nrel_main_idtf:[short program figure skating] (* <-lang_en;; *);
+
+<- sc_node_not_relation;
+	
+<- rrel_key_sc_element: 
+        ...
+        (*
+        <- definition;;
+        => nrel_main_idtf:
+	[Опр. (Короткая программа в фигурном катании)] (*<-lang_ru;;*);;
+        <= nrel_sc_text_translation: 
+                ...
+	        (*
+		-> rrel_example:
+		[Продолжительность короткой программы - не более 2 минут 50 секунд.](*<- lang_ru;;*);;
+	        *);;
+        *);
+        
+<- rrel_key_sc_element: 
+        ...
+        (*
+        <- statement;;
+        => nrel_main_idtf:
+	[Утв. (Короткая программа в фигурном катании)] (*<-lang_ru;;*);;
+        <= nrel_sc_text_translation: 
+                ...
+	        (*
+		-> rrel_example:
+		[Если спортсмен (пара) не заканчивает программу в указанное время, то за каждые лишние 5 секунд с общего результата снимается 1 балл.](*<- lang_ru;; *);;
+	        *);;
+        *);
+        
+<-rrel_key_sc_element:
+        ...
+	(*
+	<-illustration;;
+	<=nrel_sc_text_translation:...
+	        (*
+		->rrel_example:
+                "file://Images/short_program_figure_skating.png"
+	          (*
+		  =>nrel_format:format_png;;
+	          *);;	
+                *);;
+        *);;

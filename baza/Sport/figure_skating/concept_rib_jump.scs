@@ -1,0 +1,25 @@
+concept_rib_jump
+
+=> nrel_main_idtf:[рёберные прыжки] (* <-lang_ru;; *);
+=> nrel_main_idtf:[rib jump] (* <-lang_en;; *);
+
+<- sc_node_not_relation;
+	
+<- rrel_key_sc_element: 
+        ...
+        (*
+        <- definition;;
+        => nrel_main_idtf:
+	[Опр. (Рёберные прыжки)] (*<-lang_ru;;*);;
+        <= nrel_sc_text_translation: 
+                ...
+	        (*
+		-> rrel_example:
+		[Прыжки, при которых отталкивание происходит от ребра опорного конька.](*<- lang_ru;;*);;
+	        *);;
+        *);
+        
+=>nrel_species:
+        concept_salchow;
+        concept_loop;
+        concept_axel_jump;;
