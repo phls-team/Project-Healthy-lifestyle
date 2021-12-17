@@ -1,0 +1,42 @@
+concept_lumbar_stretch
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [lumbar stretch](*<-lang_en;;*);
+          [растяжка поясницы](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(растяжка поясницы)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Это <b><sc_element sys_idtf="nrel_exercise">упражнение</b></sc_element> <b><sc_element sys_idtf="concept_stretch">растяжки</b></sc_element> работает на широчайшую <b><sc_element sys_idtf="concept_back_muscles">мышцу спины</b></sc_element>, <b><sc_element sys_idtf="press_muscles">пресс</b></sc_element> и <b><sc_element sys_idtf="muscles">мышцы</b></sc_element> ног.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<=nrel_species:concept_stretch;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(растяжка поясницы)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Выполняется у стены. Встаньте <b><sc_element sys_idtf="concept_back_muscles">спиной</b></sc_element> вплотную к стене и медленно скользите вниз, пока <b><sc_element sys_idtf="knee_joint">колени</b></sc_element> не будут согнуты под углом 90° или близко к тому.
+                            Задержитесь в положении сидя в течение 10 секунд, после чего вернитесь в исходную позицию. Повторите 8–12 раз.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://images/concept_lumbar_stretch.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

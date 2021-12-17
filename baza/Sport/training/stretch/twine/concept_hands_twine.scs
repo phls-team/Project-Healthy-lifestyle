@@ -1,0 +1,41 @@
+concept_hands_twine
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [hands twine](*<-lang_en;;*);
+          [шпагат на руках](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(шпагат на руках)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Встав в <b><sc_element sys_idtf="concept_handstand">стойку на руках</b></sc_element>, <b><sc_element sys_idtf="concept_person">человек</b></sc_element> медленно разводит ноги в стороны.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<=nrel_species:concept_twine;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(шпагат на руках)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Для этого варианта <b><sc_element sys_idtf="concept_athlete">спортсмен</b></sc_element> должен обладать уникальными навыками баланса и управления собственным <b><sc_element sys_idtf="concept_body">телом</b></sc_element>.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://images/concept_hands_twine.png"
+			(*
+				=> nrel_format : format_png ;;
+			*);;
+		*);;
+	*);;

@@ -1,0 +1,41 @@
+concept_pigeon_pose
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [pigeon pose](*<-lang_en;;*);
+          [поза голубя](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(поза голубя)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Эта поза для <b><sc_element sys_idtf="concept_legs_stretch">растяжки мышц ног</b></sc_element>.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<=nrel_species:concept_legs_stretch;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(поза голубя)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Сядьте на пол, одну ногу согните в <b><sc_element sys_idtf="knee_joint">колене</b></sc_element> под прямым углом и перенесите вперёд, вторую отведите назад и выпрямите. Можете наклониться вперёд и поставить на пол <b><sc_element sys_idtf="forearm">предплечья</b></sc_element>.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://images/concept_pigeon_pose.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

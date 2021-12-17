@@ -1,0 +1,43 @@
+concept_rectangular_stretch
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [rectangular stretch](*<-lang_en;;*);
+          [прямоугольная растяжка](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(прямоугольная растяжка)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Это <b><sc_element sys_idtf="nrel_exercise">упражнение</b></sc_element> <b><sc_element sys_idtf="concept_stretch">растяжки</b></sc_element> улучшает работу <b><sc_element sys_idtf="concept_deltoid">дельтовидных</b></sc_element> и большой <b><sc_element sys_idtf="concept_chest_muscles">грудной</b></sc_element> <b><sc_element sys_idtf="muscles">мышц</b></sc_element>.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<=nrel_species:concept_stretch;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(прямоугольная растяжка)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Выполняется в дверном проеме. Расположите руки на раме двери, причем так, чтобы угол в <b><sc_element sys_idtf="concept_arms_are_bent_at_the_elbows">локтевом сгибе</b></sc_element> составлял 90°. Угол между <b><sc_element sys_idtf="shoulders">плечом</b></sc_element> и <b><sc_element sys_idtf="concept_body">телом</b></sc_element> тоже должен быть прямым.
+							Выпрямите <b><sc_element sys_idtf="concept_back_muscles">спину</b></sc_element> и выставите одну ногу вперед. Зафиксировав руки и ноги, наклонитесь вперед.
+							Задержитесь в таком положении 20–30 секунд. Сделайте <b><sc_element sys_idtf="nrel_approach_number">2–3 подхода</b></sc_element>.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://images/concept_rectangular_stretch.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

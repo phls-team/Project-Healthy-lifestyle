@@ -1,0 +1,41 @@
+concept_chest_warm_up
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [chest warm-up](*<-lang_en;;*);
+          [разминка груди](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(разминка груди)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Это <b><sc_element sys_idtf="nrel_exercise">упражнение</b></sc_element> <b><sc_element sys_idtf="concept_warm_up">разминки</b></sc_element> работает на <b><sc_element sys_idtf="concept_stretch">растяжку</b></sc_element> <b><sc_element sys_idtf="pectoral_muscles">мышц груди</b></sc_element>.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<=nrel_species:concept_warm_up;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(разминка груди)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Поставьте руку на стену, опустите <b><sc_element sys_idtf="shoulders">плечо</b></sc_element> и развернитесь в противоположную сторону. Повторите с другой рукой.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://images/concept_chest_warm-up.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

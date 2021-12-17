@@ -1,0 +1,42 @@
+concept_fold_pose
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [fold pose](*<-lang_en;;*);
+          [поза складки](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(поза складки)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Встаньте прямо, сделайте <b><sc_element sys_idtf="rrel_first_step">шаг</b></sc_element> вперёд. Наклоните корпус почти до параллели с полом. Если оставить ногу прямой, больше растягивается верхняя часть задней стороны <b><sc_element sys_idtf="hips">бедра</b></sc_element>, если чуть согнуть ногу в <b><sc_element sys_idtf="knee_joint">колене</b></sc_element> — нижняя.
+                            Повторите с другой ногой.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<=nrel_species:concept_legs_stretch;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(поза складки)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Сядьте на пол, раздвиньте прямые ноги пошире, а затем наклонитесь вперёд. Старайтесь лечь <b><sc_element sys_idtf="concept_stomach_muscles">животом</b></sc_element> на пол, не сгибайте <b><sc_element sys_idtf="knee_joint">колени</b></sc_element>.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://images/concept_fold_pose.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

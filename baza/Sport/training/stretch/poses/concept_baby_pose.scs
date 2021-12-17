@@ -1,0 +1,41 @@
+concept_baby_pose
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [baby pose](*<-lang_en;;*);
+          [поза ребёнка](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(поза ребёнка)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Эта поза для <b><sc_element sys_idtf="concept_lumbar_stretch">растяжки поясницы</b></sc_element>.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<=nrel_species:concept_lumbar_stretch;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(поза ребёнка)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Сядьте на пол, <b><sc_element sys_idtf="buttocks">ягодицы</b></sc_element> должны касаться пяток. Наклонитесь вперёд, лягте животом на <b><sc_element sys_idtf="knee_joint">колени</b></sc_element> и вытяните руки.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://images/concept_baby_pose.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

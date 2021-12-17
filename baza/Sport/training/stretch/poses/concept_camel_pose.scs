@@ -1,0 +1,41 @@
+concept_camel_pose
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [camel pose](*<-lang_en;;*);
+          [поза верблюда](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(поза верблюда)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Эта поза для <b><sc_element sys_idtf="concept_abs_stretch">растяжки пресса</b></sc_element>.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<=nrel_species:concept_abs_stretch;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(поза верблюда)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Встаньте на <b><sc_element sys_idtf="knee_joint">колени</b></sc_element>, подайте <b><sc_element sys_idtf="pectoral_muscles">грудь</b></sc_element> вверх, вытягивая позвоночник, а затем отклонитесь назад, положив руки на пятки. Старайтесь прогибаться в <b><sc_element sys_idtf="concept_chest_muscles">грудном отделе</b></sc_element>. Голову не запрокидывайте, смотрите вверх.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://images/concept_camel_pose.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

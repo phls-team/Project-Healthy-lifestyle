@@ -1,0 +1,41 @@
+concept_longitudinal_twine
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [longitudinal twine](*<-lang_en;;*);
+          [продольный шпагат](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(продольный шпагат)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Одна нога находится впереди корпуса, а другая сзади, ноги располагаются перпендикулярно или под острым углом к корпусу.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_species:concept_twine;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(продольный шпагат)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Бывает лево- и правосторонним, в зависимости от ноги, оказывающейся спереди.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://images/concept_longitudinal_twine.png"
+			(*
+				=> nrel_format : format_png ;;
+			*);;
+		*);;
+	*);;

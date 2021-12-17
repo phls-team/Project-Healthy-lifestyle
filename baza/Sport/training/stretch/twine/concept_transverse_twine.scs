@@ -1,0 +1,41 @@
+concept_transverce_twine
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [transverce twine](*<-lang_en;;*);
+          [поперечный шпагат](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(поперечный шпагат)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[При поперечном шпагате ноги разведены в стороны до угла в 180 градусов и больше. В этом случае они располагаются по бокам.](*<- lang_ru;;*);;
+			*);;
+		*);
+
+<=nrel_species:concept_twine;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(поперечный шпагат)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[из-за особенностей строения <b><sc_element sys_idtf="muscles">мышц</b></sc_element> и <b><sc_element sys_idtf="concept_joint">суставов</b></sc_element> 13% <b><sc_element sys_idtf="concept_person">людей</b></sc_element> вообще никогда не смогут похвастаться такой <b><sc_element sys_idtf="concept_ability">способностью</b></sc_element>.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://images/concept_transverse_twine.png"
+			(*
+				=> nrel_format : format_png ;;
+			*);;
+		*);;
+	*);;

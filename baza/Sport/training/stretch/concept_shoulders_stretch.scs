@@ -1,0 +1,43 @@
+concept_shoulders_stretch
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [shoulders stretch](*<-lang_en;;*);
+          [растяжка плечевого пояса](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(растяжка плечевого пояса)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Это <b><sc_element sys_idtf="nrel_exercise">упражнение</b></sc_element> <b><sc_element sys_idtf="concept_stretch">растягивает</b></sc_element> <b><sc_element sys_idtf="concept_deltoid">дельтовидные</b></sc_element> и <b><sc_element sys_idtf="concept_trapezius_muscle">трапециевидную</b></sc_element> <b><sc_element sys_idtf="muscles">мышцу</b></sc_element>.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<=nrel_species:concept_stretch;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(растяжка плечевого пояса)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Сначала вытяните руки в стороны, после — скрестите перед собой так, чтобы ладони указывали вверх, а левый <b><sc_element sys_idtf="shoulder_elbow_joint">локоть</b></sc_element> оказался выше правого.
+							Если вы не можете соединить ладони между собой — положите правую руку на левое <b><sc_element sys_idtf="shoulders">плечо</b></sc_element>, левую — на правое. <b><sc_element sys_idtf="shoulder_elbow_joint">Локти</b></sc_element> должны быть параллельны полу, подбородок подтяните как можно ближе к <b><sc_element sys_idtf="pectoral_muscles">груди</b></sc_element>.
+							Оставайтесь в таком положении на 30 секунд, Повторите <b><sc_element sys_idtf="nrel_exercise">упражнение</b></sc_element>, поменяв руки местами.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://images/concept_shoulders_stretch.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

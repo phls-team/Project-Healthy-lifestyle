@@ -1,0 +1,43 @@
+concept_butterfly_stretch
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [butterfly stretch](*<-lang_en;;*);
+          [растяжка "Бабочка"](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(растяжка "Бабочка")] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Это <b><sc_element sys_idtf="nrel_exercise">упражнение</b></sc_element> <b><sc_element sys_idtf="concept_stretch">растяжки</b></sc_element> работает на широчайшую <b><sc_element sys_idtf="concept_back_muscles">спины</b></sc_element><b><sc_element sys_idtf="concept_back_muscles">спины</b></sc_element><b><sc_element sys_idtf="concept_back_muscles">спины</b></sc_element><b><sc_element sys_idtf="concept_back_muscles">мышцу спины</b></sc_element>, а также большую <b><sc_element sys_idtf="pectoral_muscles">грудную мышцу</b></sc_element>.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<=nrel_species:concept_stretch;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(растяжка "Бабочка")] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Положите ладони на <b><sc_element sys_idtf="shoulders">плечи</b></sc_element> (левую — на левое <b><sc_element sys_idtf="shoulders">плечо</b></sc_element>, правую — на правое). Аккуратно отведите локти назад, как будто пытаетесь соприкоснуться ими, пока не почувствуете, что верхняя часть <b><sc_element sys_idtf="concept_back_muscles">спины</b></sc_element> <b><sc_element sys_idtf="concept_stretch">растягивается</b></sc_element>.
+							Останьтесь в этом положении в течение 5–10 секунд.
+							Теперь вытяните локти вперед, соприкоснувшись ими. Задержитесь еще на 5–10 секунд.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://images/concept_butterfly_stretch.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

@@ -1,0 +1,42 @@
+concept_back_warm_up
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [back warm-up](*<-lang_en;;*);
+          [разминка спины](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(разминка спины)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Это <b><sc_element sys_idtf="nrel_exercise">упражнение</b></sc_element> <b><sc_element sys_idtf="concept_warm_up">разминки</b></sc_element> работает на <b><sc_element sys_idtf="concept_stretch">растяжку</b></sc_element> <b><sc_element sys_idtf="concept_back_muscles">мышц спины</b></sc_element>.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<=nrel_species:concept_warm_up;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(разминка спины)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Встаньте рядом со стойкой, <b><sc_element sys_idtf="concept_training_apparatus">тренажёром</b></sc_element> или другой опорой, повернитесь к ней левым <b><sc_element sys_idtf="shoulders">плечом</b></sc_element>. Правой рукой возьмитесь за стойку высоко над головой, подайте <b><sc_element sys_idtf="hip_joint">таз</b></sc_element> вправо и вниз, растягивая всю правую сторону м<b><sc_element sys_idtf="concept_body">тела</b></sc_element>.
+                            Повторите в другую сторону.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://images/concept_back_warm-up.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

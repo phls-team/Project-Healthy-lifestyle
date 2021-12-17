@@ -1,0 +1,41 @@
+concept_roll_pose
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [roll pose](*<-lang_en;;*);
+          [поза с валиком](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(поза с валиком)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Эта поза <b><sc_element sys_idtf="concept_stretch">растягивает</b></sc_element> прямые <b><sc_element sys_idtf="concept_stomach_muscles">мышцы живота</b></sc_element>, косые <b><sc_element sys_idtf="concept_stomach_muscles">мышцы живота</b></sc_element> (крупные и мелкие), поперечные брюшные мышцы, <b><sc_element sys_idtf="latissimus_dorsi">широчайшие мышцы спины</b></sc_element>.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<=nrel_species:concept_abs_stretch;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(поза с валиком)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Положите на пол мягкий мат, коврик или большое полотенце, скрученное в небольшой валик, и лягте на него <b><sc_element sys_idtf="concept_back_muscles">спиной</b></sc_element> так, чтобы валик оказался как раз под поясничным отделом. Затем вытяните руки за голову и постарайтесь <b><sc_element sys_idtf="concept_stretch">растянуться</b></sc_element> как можно сильнее.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://images/concept_roll_pose.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

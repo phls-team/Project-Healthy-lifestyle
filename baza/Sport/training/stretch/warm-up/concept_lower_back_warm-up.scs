@@ -1,0 +1,42 @@
+concept_lower_back_warm_up
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [lower back warm-up](*<-lang_en;;*);
+          [разминка поясницы](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(разминка поясницы)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Это <b><sc_element sys_idtf="nrel_exercise">упражнение</b></sc_element> <b><sc_element sys_idtf="concept_warm_up">разминки</b></sc_element> работает на <b><sc_element sys_idtf="concept_stretch">растяжку</b></sc_element> <b><sc_element sys_idtf="concept_back_muscles">мышц поясницы</b></sc_element>.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<=nrel_species:concept_warm_up;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(разминка поясницы)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Сядьте на пол, правую ногу переведите вперёд, левую — назад. Согните ноги в <b><sc_element sys_idtf="knee_joint">коленях</b></sc_element> под углом 90 градусов или чуть больше. Правую руку положите на пол, левую поднимите над головой. Левую ногу тяните вниз и назад, корпус наклоняйте вперёд и скручивайте в сторону правой ноги.
+                            Поменяйте ноги.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://images/concept_lower_back_warm-up.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

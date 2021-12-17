@@ -1,0 +1,41 @@
+concept_warm_up
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [warm-up](*<-lang_en;;*);
+          [разминка](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(разминка)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[комплекс <b><sc_element sys_idtf="nrel_exercise">упражнений</b></sc_element> для подготовки <b><sc_element sys_idtf="concept_body">тела</b></sc_element> к <b><sc_element sys_idtf="concept_physical_exercises">физической нагрузке</b></sc_element>, который поможет вам избежать <b><sc_element sys_idtf="concept_injury">травм</b></sc_element> и провести занятие максимально <b><sc_element sys_idtf="nrel_effect">эффективно</b></sc_element>.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<=nrel_species:concept_training;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(разминка)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Основной <b><sc_element sys_idtf="nrel_goal">целью</b></sc_element> является постепенное повышение <b><sc_element sys_idtf="concept_human_temperature">температуры тела</b></sc_element> и разогрев <b><sc_element sys_idtf="muscles">мышц</b></sc_element>, находящихся в состоянии бездействия.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://images/concept_warm-up.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

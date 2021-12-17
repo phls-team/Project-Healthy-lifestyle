@@ -1,0 +1,41 @@
+concept_stretching
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [stretching](*<-lang_en;;*);
+          [стретчинг](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(стретчинг)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Система <b><sc_element sys_idtf="concept_gymnastics">гимнастических упражнений</b></sc_element> для развития <b><sc_element sys_idtf="concept_flexibility">гибкости</b></sc_element>, подвижности <b><sc_element sys_idtf="concept_joint">суставов</b></sc_element> и <b><sc_element sys_idtf="concept_stretch">растяжки</b></sc_element> <b><sc_element sys_idtf="muscles">мышц</b></sc_element>.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<=nrel_species:concept_training;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(стретчинг)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Плавное растяжение и правильное <b><sc_element sys_idtf="concept_breathing">дыхание</b></sc_element> оказывают <b><sc_element sys_idtf="nrel_relaxation">расслабляющее</b></sc_element> действие на <b><sc_element sys_idtf="muscles">мышцы</b></sc_element> и снимают различные боли, вызванные <b><sc_element sys_idtf="concept_stress">стрессами</b></sc_element> и напряжениями <b><sc_element sys_idtf="concept_nervous_system">нервной системы</b></sc_element>.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://images/concept_stretching.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

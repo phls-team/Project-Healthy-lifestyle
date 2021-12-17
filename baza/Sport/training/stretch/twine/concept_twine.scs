@@ -1,0 +1,41 @@
+concept_twine
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [twine](*<-lang_en;;*);
+          [шпагат](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(шпагат)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Поза или положение <b><sc_element sys_idtf="concept_body">тела</b></sc_element>, при котором расставленные в противоположных направлениях ноги находятся на одной линии, а внутренние линии <b><sc_element sys_idtf="hips">бёдер</b></sc_element> образуют угол в 180 градусов.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<=nrel_species:concept_stretch;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(шпагат)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Шпагаты выполняются в танцах, <b><sc_element sys_idtf="concept_figure_skating">фигурном катании</b></sc_element>, <b><sc_element sys_idtf="sport_gymnastics">спортивной гимнастике</b></sc_element>, <b><sc_element sys_idtf="aerobic_excercise">спортивной аэробике</b></sc_element>, боевых искусствах, <b><sc_element sys_idtf="synchronised_swimming">синхронном плавании</b></sc_element>, капоэйре, <b><sc_element sys_idtf="concept_yoga">йоге</b></sc_element>. Шпагат является результатом <b><sc_element sys_idtf="concept_stretch">растяжки</b></sc_element>.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://images/concept_twine.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

@@ -1,0 +1,43 @@
+concept_superman_stretch
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [superman stretch](*<-lang_en;;*);
+          [растяжка "Супермен"](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(растяжка "Супермен")] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Это <b><sc_element sys_idtf="nrel_exercise">упражнение</b></sc_element> <b><sc_element sys_idtf="concept_stretch">растяжки</b></sc_element> работает на широчайшую <b><sc_element sys_idtf="concept_back_muscles">спины</b></sc_element><b><sc_element sys_idtf="concept_back_muscles">спины</b></sc_element><b><sc_element sys_idtf="concept_back_muscles">спины</b></sc_element><b><sc_element sys_idtf="concept_back_muscles">мышцу спины</b></sc_element>.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<=nrel_species:concept_stretch;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(растяжка "Супермен")] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Лягте на <b><sc_element sys_idtf="exercise_mat">коврик</b></sc_element> лицом вниз, вытяните руки перед собой. Синхронно поднимите руки и ноги на расстояние около 15 см от пола.
+                            Попробуйте в этот момент втянуть <b><sc_element sys_idtf="concept_stomach_muscles">живот</b></sc_element>, отрывая пупок — это поможет задействовать дополнительные группы <b><sc_element sys_idtf="muscles">мышц</b></sc_element>.
+                            Держите голову и конечности прямо. Оставайтесь в этой позе 2 секунды, вернитесь в исходное положение. Повторите 10 раз.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://images/concept_superman_stretch.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
