@@ -1,0 +1,53 @@
+concept_arrowhead<-sc_node_not_relation;;
+
+concept_arrowhead=>nrel_main_idtf:[наконечник стрелы]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[arrowhead]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_arrowhead<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Наконечник стрелы)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Наконечник стрелы - передний конец стрелы; также известный, как голова или острие]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_arrow
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_arrowhead ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Различить древнейшие каменные наконечники стрел от наконечников других видов древкового оружия не всегда просто. Согласно мнению одних исследователей, основным критерием является ширина крепёжной части наконечника, коррелирующая с толщиной древка. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Наконечник стрелы)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+	concept_shaftment
+        };;
+*);;
+
+concept_arrowhead<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Photos//arrowhead.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Пример наконченика стрелы.)](*<- lang_ru;;*);;
+*);;
+*);;

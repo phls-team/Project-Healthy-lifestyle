@@ -1,0 +1,53 @@
+concept_flatbow<-sc_node_not_relation;;
+
+concept_flatbow=>nrel_main_idtf:[плоский лук]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[flatbow]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_flatbow<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Плоский лук)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Плоский лук - не изогнутый лук с прямоугольным поперечным сечением. ]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_bow
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_flatbow ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Плоский лук - лучшая конструкция почти для всех материалов, потому что нагрузка на тетиву распределяется более равномерно, чем при закругленных секциях. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Плоский лук)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+	concept_bow_string
+        };;
+*);;
+
+concept_flatbow<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Photos//flatbow.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Плоский лук)](*<- lang_ru;;*);;
+*);;
+*);;

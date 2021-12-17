@@ -1,0 +1,56 @@
+concept_tong_ah<-sc_node_not_relation;;
+
+concept_tong_ah=>nrel_main_idtf:[тонга]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[tong-ah]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_tong_ah<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Тонга)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Тонга - устройство перетягивания, используемое в традиционной корейской стрельбе из лука, похожее на турецкую маджру. ]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_bow;
+	concept_majra
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_tong_ah ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Тонга позволяет вам вытащить короткую стрелу на полную длину натяжения с помощью полноразмерного лука. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Тонга)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+	concept_arrow;
+	concept_draw_length;
+	concept_bow
+        };;
+*);;
+
+concept_tong_ah<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Photos//tong-ah.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Тонга)](*<- lang_ru;;*);;
+*);;
+*);;

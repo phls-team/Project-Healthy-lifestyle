@@ -1,0 +1,55 @@
+concept_compound_bow<-sc_node_not_relation;;
+
+concept_compound_bow=>nrel_main_idtf:[блочный лук]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[compound bow]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_compound_bow<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Блочный лук)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Блочный лук - современный лук, в котором используется система тросов и шкивов. ]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_bow
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_compound_bow ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[В классических рекурсивных моделях блочных луков выстрел просисходит за счет распрямления плеч, которые сгибаются во время натяжения тетивы, в данном случае именно упругость плеч отвечат за
+баллистические характеристики полета стрелы. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Блочный лук)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+	concept_bow_string;
+	concept_arrow
+        };;
+*);;
+
+concept_compound_bow<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Photos//compound_bow.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Блочный лук)](*<- lang_ru;;*);;
+*);;
+*);;

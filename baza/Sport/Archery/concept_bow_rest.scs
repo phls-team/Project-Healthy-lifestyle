@@ -1,0 +1,53 @@
+concept_bow_rest<-sc_node_not_relation;;
+
+concept_bow_rest=>nrel_main_idtf:[рукоятка лука]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[bow rest]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_bow_rest<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Рукоятка лука)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Рукоятка лука - сновная часть лука, сверху и снизу специальными болтами к ней крепятся плечи. ]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_bow
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_bow_rest ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[ Рукоятка современного разборного лука изготавливается из легкого металла - магниевого, алюминиевого сплавов или композитных материалов вроде углеплатистика. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Рукоятка лука)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+        concept_bow
+        };;
+*);;
+
+concept_bow_rest<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Photos//bow_rest.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Рукоятка лука)](*<- lang_ru;;*);;
+*);;
+*);;

@@ -1,0 +1,53 @@
+concept_archery_boss<-sc_node_not_relation;;
+
+concept_archery_boss=>nrel_main_idtf:[босс]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[archery boss]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_archery_boss<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Босс)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Босс - мишень лучника, обычно сделанная из уплотненной пены или соломы. ]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_archery_target
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_archery_boss ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Такие мишени, как босс, обычно рукомендуется хранить вдали от влаги. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Босс)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+	concept_archery_target
+        };;
+*);;
+
+concept_archery_boss<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Photos//archery_boss.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Босс)](*<- lang_ru;;*);;
+*);;
+*);;

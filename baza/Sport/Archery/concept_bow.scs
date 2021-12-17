@@ -1,0 +1,57 @@
+concept_bow<-sc_node_not_relation;;
+
+concept_bow=>nrel_main_idtf:[лук]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[bow]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_bow<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(лук)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Лук - древнее оружие, обладающее упругостью, используемое для охоты и спорта.]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_sport
+        };;
+     *);;
+*);;
+
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_bow ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Луки разделяют на простые и составные, но все они представляют собой дугу с тетивой для метания стрел.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(лук)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+        concept_compouned_bow;
+ 	concept_bow_string;
+        concept_arrow
+        };;
+*);;
+
+
+concept_bow<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Photos//bow.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Лук.)](*<- lang_ru;;*);;
+*);;
+*);;

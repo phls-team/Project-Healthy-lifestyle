@@ -1,0 +1,57 @@
+concept_bow_string<-sc_node_not_relation;;
+
+concept_bow_string=>nrel_main_idtf:[тетива]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[bow_string]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_bow_string<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(тетива)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Тетива - волокно, соединяющее два конца лука для запуска стрел. ]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_bow;
+	concept_arrow
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_bow_string ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Обслуживание тетивы заключается в использовании дополнительной нити, которой обычно оборачивают основную часть тетивы в местах зарубок на древке лука.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Тетива)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+        concept_shaftment;
+        concept_bow
+        };;
+*);;
+
+
+
+concept_bow_string<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Photos//bow_string.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Пример тетивы.)](*<- lang_ru;;*);;
+*);;
+*);;

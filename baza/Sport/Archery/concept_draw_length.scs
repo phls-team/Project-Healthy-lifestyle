@@ -1,0 +1,57 @@
+concept_draw_length<-sc_node_not_relation;;
+
+concept_draw_length=>nrel_main_idtf:[длина натяжения]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[draw length]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_draw_length<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Длина натяжения)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[ Длина натяжения - технически заданная оптимальная длина натяжения для полной натяжки конкретного лука. ]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_bow
+        };;
+     *);;
+*);;
+
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_draw_length ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Как правило, длина натяжения будет примерно такой же, как длина стрелы, необходимая лучнику с блочным луком.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Длина натяжения)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+        concept_compouned_bow;
+ 	concept_archer;
+        concept_arrow
+        };;
+*);;
+
+
+concept_draw_length<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Photos//draw_length.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Длина натяжения.)](*<- lang_ru;;*);;
+*);;
+*);;

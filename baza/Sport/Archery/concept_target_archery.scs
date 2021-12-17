@@ -1,0 +1,53 @@
+concept_archery_target<-sc_node_not_relation;;
+
+concept_archery_target=>nrel_main_idtf:[мишень лучника]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[archery target]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_archery_target<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Мишень лучника)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Мишень лучника- общий термин для обозначения намеченной цели выстрела стрелы.  ]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_arrow
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_archery_target ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Каждый прокол стрелой на мишени лучника, после очередной серии выстрелов, помечается. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Мишень лучника)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+        concept_arrow
+        };;
+*);;
+
+concept_archery_target<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Photos//target_archery.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Мишень лучника)](*<- lang_ru;;*);;
+*);;
+*);;

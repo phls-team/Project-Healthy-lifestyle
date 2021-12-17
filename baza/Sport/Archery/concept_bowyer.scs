@@ -1,0 +1,50 @@
+concept_bowyer<-sc_node_not_relation;;
+
+concept_bowyer=>nrel_main_idtf:[bowyer]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_bowyer<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Bowyer)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[ Bowyer — мастер, изготавливающий луки. ]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_bow
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_bowyer ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Хотя когда-то bowyer была широко распространенная профессия, важность стрельбы из луков и арбалетов уменьшилась с появлением порохового оружия. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Bowyer)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+	concept_crossbow;
+	concept_bow
+        };;
+*);;
+
+concept_bowyer<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Photos//bowyer.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Bowyer)](*<- lang_ru;;*);;
+*);;
+*);;

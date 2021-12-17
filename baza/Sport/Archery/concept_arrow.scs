@@ -1,0 +1,56 @@
+concept_arrow<-sc_node_not_relation;;
+
+concept_arrow=>nrel_main_idtf:[стрела]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[arrow]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_arrow<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Стрела)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Стрела — метательный снаряд для стрельбы из лука и арбалета.]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_bow;
+	concept_crossbow
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_arrow ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Назначение стрелы обычно определяли видом наконечника.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Стрела)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+        concept_arrowhead
+        };;
+*);;
+
+
+
+concept_arrow<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Photos//arrow.png"
+        (*
+                =>nrel_format:format_png;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Пример стрелы.)](*<- lang_ru;;*);;
+*);;
+*);;

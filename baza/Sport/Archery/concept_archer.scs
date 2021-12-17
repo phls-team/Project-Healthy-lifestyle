@@ -1,0 +1,54 @@
+concept_archer<-sc_node_not_relation;;
+
+concept_archer=>nrel_main_idtf:[лучник]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[archer]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_archer<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Лучник)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[ Лучник — спортсмен, занимающийся стрельбой из лука. ]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_bow
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_archer ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Хотя, в зависимости от тетивы, нагрузка обычного лука может доходить до более чем 35 кг, лучник может спокойно стоять с натянутым луком, ощущая не более 3 кг. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Лучник)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+	concept_bow_string;
+	concept_bow
+        };;
+*);;
+
+concept_archer<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Photos//archer.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Лучник)](*<- lang_ru;;*);;
+*);;
+*);;

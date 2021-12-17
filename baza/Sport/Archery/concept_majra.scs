@@ -1,0 +1,53 @@
+concept_majra<-sc_node_not_relation;;
+
+concept_majra=>nrel_main_idtf:[маджра]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[majra]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_majra<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Маджра)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Маджра- приспособление для перерисовки, используемое в турецкой стрельбе из лука. ]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_bow
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_majra ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[На практике у турецких лучников маджра удерживается только веревочкой, привязаной к одному ее концу, может свободно двигаться.  ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Маджра)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+        concept_archer
+        };;
+*);;
+
+concept_majra<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Photos//majra.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Маджра)](*<- lang_ru;;*);;
+*);;
+*);;

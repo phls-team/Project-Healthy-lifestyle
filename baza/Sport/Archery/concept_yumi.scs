@@ -1,0 +1,55 @@
+concept_yumi<-sc_node_not_relation;;
+
+concept_yumi=>nrel_main_idtf:[юми]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[yumi]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_yumi<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Юми)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[ Юми — асимметричный японский лук, с расположением рукоятки приблизительно в одной трети длины лука снизу. ]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_bow;
+	concept_bow_rest
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_yumi ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Без тетивы лук юми выгибается в противоположную сторону. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Юми)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+	concept_bow_string;
+	concept_bow
+        };;
+*);;
+
+concept_yumi<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Photos//yumi.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Юми)](*<- lang_ru;;*);;
+*);;
+*);;

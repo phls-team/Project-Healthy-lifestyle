@@ -1,0 +1,55 @@
+concept_stabiliser<-sc_node_not_relation;;
+
+concept_stabiliser=>nrel_main_idtf:[стабилизатор]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[stabiliser]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_stabiliser<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Стабилизатор)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Стабилизатор - утяжеленный стержень или набор стержней, используемых для обеспечения баланса лука. ]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_bow
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_stabiliser ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Полезность стабилизатора достаточно подтверждена практикой, поэтому все спортивные луки оснащены им, за исключением луков для стрельбы без обвеса и лучного биатлона.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Стабилизатор)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+        concept_sport;
+	concept_bow;
+	concept_biathlon
+        };;
+*);;
+
+concept_stabiliser<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Photos//stabiliser.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Стабилизатор)](*<- lang_ru;;*);;
+*);;
+*);;

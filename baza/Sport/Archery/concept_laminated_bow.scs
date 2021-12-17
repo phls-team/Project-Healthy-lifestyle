@@ -1,0 +1,53 @@
+concept_composite_bow<-sc_node_not_relation;;
+
+concept_composite_bow=>nrel_main_idtf:[композитный лук]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[laminated bow]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_composite_bow<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Композитный лук)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Композитный лук - лук, сделанный из различных материалов, плотно соединённых между собой, что позволяет достичь наибольшей эффективности лука. ]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_bow
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_composite_bow ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Главное достоинство композитного лука по сравнению с простым заключалось в том, что при меньшем размере и меньшем максимальном усилии натяжения, попадания стрел такого лука были намного мощнее. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Композитный лук)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+	concept_arrow
+        };;
+*);;
+
+concept_composite_bow<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Photos/composite_bow.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Композитный лук)](*<- lang_ru;;*);;
+*);;
+*);;

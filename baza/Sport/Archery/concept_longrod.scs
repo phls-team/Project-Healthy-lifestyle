@@ -1,0 +1,53 @@
+concept_longrod<-sc_node_not_relation;;
+
+concept_longrodw=>nrel_main_idtf:[лонгрод]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[longrod]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_longrod<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Лонгрод)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Лонгрод - жезл, прикрепленный к луку для гашения вибраций. ]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_bow
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_longrod ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[В зависимости от желаемого ощущения от пользования луком жесткость стержней в лонгрод можно контролировать с помощью количества зажимов. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Лонгрод)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+        concept_bow
+        };;
+*);;
+
+concept_longrod<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Photos//longrod.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Лонгрод.)](*<- lang_ru;;*);;
+*);;
+*);;

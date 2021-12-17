@@ -1,0 +1,59 @@
+concept_crest<-sc_node_not_relation;;
+
+concept_crest=>nrel_main_idtf:[крест]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[crest]
+        (*
+                <-lang_en;;
+        *);;
+concept_crest=>nrel_idtf:[гребень]
+        (*
+                <-lang_ru;;
+        *);;
+
+concept_crest<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Крест)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Крест - Геральдические отметки, наносимые на стрелу и её древко, которые используются для идентификации bowyer или дизайна ]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_arrow;
+	concept_shaftment;
+	concept_bowyer
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_crest ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Станки для их рисования- это небольшие устройства, которые состоят из патрона и двигателя, прикрепленного к доске, производящего вращение стрелы для нанесения рисунка.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Крест)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+        concept_arrow
+        };;
+*);;
+
+concept_crest<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Photos//crest.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Пример гребня стрелы.)](*<- lang_ru;;*);;
+*);;
+*);;

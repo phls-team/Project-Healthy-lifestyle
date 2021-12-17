@@ -1,0 +1,55 @@
+concept_arrow_rest<-sc_node_not_relation;;
+
+concept_arrow_rest=>nrel_main_idtf:[упор стрелы]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[arrow rest]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_arrow_rest<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Упор стрелы)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Упор стрелы - устройство, используемое для удержания стрелы на рукоятке до тех пор, пока она не будет выпущена. ]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_arrow;
+	concept_bow_rest
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_arrow_rest ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Подставки для стрел крепятся сбоку от рукоятки лука, чтобы стрела могла опираться на них. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Упор стрелы)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+        concept_arrow;
+	concept_bow_rest
+        };;
+*);;
+
+concept_arrow_rest<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Photos//arrow_rest.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Пример упора стрелы.)](*<- lang_ru;;*);;
+*);;
+*);;

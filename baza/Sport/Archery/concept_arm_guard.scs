@@ -1,0 +1,56 @@
+concept_arm_guard<-sc_node_not_relation;;
+
+concept_arm_guard=>nrel_main_idtf:[защита руки]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[arm guard]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_arm_guard<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Защита руки)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Защита руки - защитный ремень или ножны для предплечья лучника (также известный как наручи). ]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_archer
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_arm_guard ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Помочь лучнику избежать негативных последствий, сопряженных с эксплуатацией, способна защита руки для стрельбы из лука.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Защита руки)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+        concept_archer;
+        concept_bow
+        };;
+*);;
+
+
+
+concept_arm_guard<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Photos//arm_guard.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Пример Защиты руки.)](*<- lang_ru;;*);;
+*);;
+*);;

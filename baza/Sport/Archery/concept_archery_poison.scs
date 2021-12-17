@@ -1,0 +1,55 @@
+concept_archery_poison<-sc_node_not_relation;;
+
+concept_archery_poison=>nrel_main_idtf:[яд лучника]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[archery poison]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_archery_poison<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Яд лучника)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Яд - токсичные добавки к наконечникам стрел для повышения эффективности охоты при использовании лука или арбалета. ]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_arrowhead;
+	concept_bow;
+	concept_crossbow
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_archery_poison ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Отравленные ядом стрелы широко используются в джунглях Ассама, Бирмы и Малайзии. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Яд лучника)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+        concept_arrow
+        };;
+*);;
+
+concept_archery_poison<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Photos//archery_poison.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Яд лучника)](*<- lang_ru;;*);;
+*);;
+*);;
