@@ -1,0 +1,30 @@
+concept_female<-sc_node_not_relation;;
+concept_female => nrel_main_idtf: [Женщина ](*<- lang_ru;;*);;
+concept_female => nrel_main_idtf: [Female ](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_female;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Же́нщина — взрослый человек женского пола. Слово «женщина» обычно обозначает взрослого человека, а для обозначения ребёнка или подростка используются слова «девочка» и «девушка». В некоторых случаях слово «женщина» используется вне зависимости от возраста, например в выражении «права женщин». Слово «женщина» также может обозначать гендерную идентичность, а не пол человека.](*<- lang_ru;;*);;
+-> [A woman is a female adult. The word "woman" usually refers to an adult, and the words "girl" and "girl" are used to refer to a child or teenager. In some cases, the word “woman” is used regardless of age, for example in the expression “women's rights”. The word “woman” can also refer to gender identity rather than gender.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(женщина )](*<- lang_ru;;*);;
+=> nrel_main_idtf: [St.(female)](*<- lang_en;;*);;
+*);;
+
+
+concept_female<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://FemaleGender.png"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;

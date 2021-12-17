@@ -1,0 +1,33 @@
+concept_anaerobic_training<-sc_node_not_relation;;
+concept_anaerobic_training => nrel_main_idtf: [анаэробная тренировка](*<- lang_ru;;*);;
+concept_anaerobic_training => nrel_main_idtf: [anaerobic training](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_anaerobic_training;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Анаэробные тренировки (тренинг, упражнения) - это вид физической нагрузки, при которой мышечные движения совершаются за счет энергии полученной в ходе анаэробного гликолиза, то есть окисление глюкозы происходит при отсуствии кислорода. Типичные анаэробные тренировки - силовой тренинг в бодибилдинге, пауэрлифтинге, армреслинге и т.д. Анаэробные тренировки отличаются периодизацией нагрузки (постоянная мышечная работа продолжается менее 3-5 минут, после чего требуется отдых). В анаэробных тренировках выделяются сеты - короткий промежуток времени, в течение которого производится высокоинтенсивная работа с большими весами.](*<- lang_ru;;*);;
+-> [Anaerobic training (training, exercise) is a type of physical activity in which muscle movements are performed due to the energy obtained during anaerobic glycolysis, that is, glucose is oxidized in the absence of oxygen. Typical anaerobic workouts are strength training in bodybuilding, powerlifting, armwrestling, etc. Anaerobic training is characterized by periodization of the load (constant muscle work lasts less than 3-5 minutes, after which rest is required). In anaerobic training, sets are distinguished - a short period of time during which high-intensity work with large weights is performed.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(анаэробная тренировка)](*<- lang_ru;;*);;
+=> nrel_main_idtf: [St.(anaerobic training)](*<- lang_en;;*);;
+*);;
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_anaerobic_training;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Анаэробные тренировки предназначены для повышения взрывной силы и увеличения мышечной массы.](*<- lang_ru;;*);;
+    -> [Anaerobic training is designed to increase explosive strength and increase muscle mass.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(анаэробная тренировка)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(anaerobic training)](*<- lang_ru;;*);;
+*);;
+
+concept_anaerobic_training=>nrel_anaerobic_exercise:anaerobic_exercise;;
+
+

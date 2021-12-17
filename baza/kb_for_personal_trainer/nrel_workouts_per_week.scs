@@ -1,0 +1,31 @@
+nrel_workouts_per_week
+<- sc_node_norole_relation;
+=> nrel_main_idtf: 
+	[тренировки в неделю*] 
+	(* 
+	<- lang_ru;; 
+	*);
+=> nrel_main_idtf: 
+	[workouts per week*] 
+	(* 
+	<- lang_en;; 
+	*);;
+	
+relation -> nrel_workouts_per_week;;
+
+nrel_workouts_per_week => nrel_first_domain: concept_human;;
+nrel_workouts_per_week => nrel_second_domain: number;;
+
+
+nrel_workouts_per_week => nrel_definitional_domain: ...
+(*
+<= nrel_subdividing: ... (*-> concept_human; number;;*);;
+*);; 
+
+nrel_workouts_per_week<-binary_relation;;
+parameter->arity;;
+arity->binary_relation;;
+binary_relation=>nrel_measurement:2;;
+2<-number;;
+
+nrel_workouts_per_week<-oriented_relation;;

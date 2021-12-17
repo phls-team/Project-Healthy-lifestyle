@@ -1,0 +1,31 @@
+nrel_workout
+<- sc_node_norole_relation;
+=> nrel_main_idtf: 
+	[ тренировка*] 
+	(* 
+	<- lang_ru;; 
+	*);
+=> nrel_main_idtf: 
+	[workout*] 
+	(* 
+	<- lang_en;; 
+	*);;
+	
+relation -> nrel_workout;;
+
+nrel_workout => nrel_first_domain: concept_human;;
+nrel_workout => nrel_second_domain: concept_aerobic_training;;
+
+
+nrel_workout => nrel_definitional_domain: ...
+(*
+<= nrel_subdividing: ... (*-> concept_human; concept_aerobic_training;;*);;
+*);; 
+
+nrel_workout<-binary_relation;;
+parameter->arity;;
+arity->binary_relation;;
+binary_relation=>nrel_measurement:2;;
+2<-number;;
+
+nrel_workout<-oriented_relation;;

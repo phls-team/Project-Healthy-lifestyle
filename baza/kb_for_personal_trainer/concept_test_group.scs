@@ -1,0 +1,70 @@
+concept_test_group
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[test group](*<-lang_en;;*);
+[тестовая группа](*<-lang_ru;;*);;
+
+Tema
+<-sc_node_not_relation;
+<-concept_person;
+<-concept_test_group;
+=>nrel_main_idtf:
+[Artsiom Salauyou](*<-lang_en;;*);
+[Артём Соловьёв](*<-lang_ru;;*);
+=> nrel_weight:95;
+=> nrel_height:186;
+=> nrel_age:19;
+=> nrel_gender:concept_male;
+=> nrel_workouts_per_week:3;;
+
+Alexis
+<-sc_node_not_relation;
+<-concept_person;
+<-concept_test_group;
+=>nrel_main_idtf:
+[Alexey Yeutuhov](*<-lang_en;;*);
+[Алексей Евтухов](*<-lang_ru;;*);
+=> nrel_weight:79;
+=> nrel_height:165;
+=> nrel_age:20;
+=> nrel_gender:concept_male;
+=> nrel_workouts_per_week:3;;
+
+Maximus
+<-sc_node_not_relation;
+<-concept_person;
+<-concept_test_group;
+=>nrel_main_idtf:
+[Maxim Shilo](*<-lang_en;;*);
+[Максим Шило](*<-lang_ru;;*);
+=> nrel_weight:65;
+=> nrel_height:165;
+=> nrel_age:19;
+=> nrel_gender:concept_male;
+=> nrel_workouts_per_week:3;;
+
+VanchoHooncho
+<-sc_node_not_relation;
+<-concept_person;
+<-concept_test_group;
+=>nrel_main_idtf:
+[Ivan Teterski](*<-lang_en;;*);
+[Иван Тетерский](*<-lang_ru;;*);
+=> nrel_weight:95;
+=> nrel_height:186;
+=> nrel_age:19;
+=> nrel_gender:concept_male;
+=> nrel_workouts_per_week:3;;
+
+Valik
+<-sc_node_not_relation;
+<-concept_person;
+<-concept_test_group;
+=>nrel_main_idtf:
+[Valentin Pilipeiko](*<-lang_en;;*);
+[Валентин Пилипейко](*<-lang_ru;;*);
+=> nrel_weight:62;
+=> nrel_height:175;
+=> nrel_age:20;
+=> nrel_gender:concept_male;
+=> nrel_workouts_per_week:3;;

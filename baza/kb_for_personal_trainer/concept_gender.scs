@@ -1,0 +1,31 @@
+concept_gender<-sc_node_not_relation;;
+concept_gender => nrel_main_idtf: [Гендер ](*<- lang_ru;;*);;
+concept_gender => nrel_main_idtf: [Gender ](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_gender;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Ге́ндер (англ. gender, от лат. genus «род») — спектр характеристик, относящихся к маскулинности и фемининности. В зависимости от контекста, под такими характеристиками могут подразумеваться социальные структуры (в частности, гендерные и другие социальные роли) или гендерная идентичность.](*<- lang_ru;;*);;
+-> [Gender (English gender, from Lat. Genus "genus") - a range of characteristics related to masculinity and femininity. Depending on the context, these characteristics can include social structures (in particular, gender and other social roles) or gender identity.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(гендер )](*<- lang_ru;;*);;
+=> nrel_main_idtf: [St.( gender)](*<- lang_en;;*);;
+*);;
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_gender;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Гендерная идентичность не связана с сексуальной ориентацией.](*<- lang_ru;;*);;
+    -> [Gender identity is not related to sexual orientation.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.( гендер)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.( gender)](*<- lang_ru;;*);;
+*);;
+
+concept_gender=> nrel_inclusion: concept_male; concept_female;;

@@ -1,0 +1,33 @@
+concept_aerobic_training<-sc_node_not_relation;;
+concept_aerobic_training => nrel_main_idtf: [Аэробная тренировка](*<- lang_ru;;*);;
+concept_aerobic_training => nrel_main_idtf: [Аerobic training](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_aerobic_training;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Аэробные тренировки (тренинг, упражнения)  - это любой вид физической активности, при которой задействовано множество мышц и потребляется большое количество кислорода.[1] Аэробные упражнения выполняются с низкой и средней интенсивностью, а также они отличаются динамическим, непрерывным и длительным характером выполнения (более 5 мин.), что сопровождается высокой частотой сердечных сокращений и учащенным дыханием.](*<- lang_ru;;*);;
+-> [Aerobic training (training, exercise) is any kind of physical activity, when muscles are used and a large amount of oxygen is consumed. Aerobic exercises are performed with low and medium intensity, and are also distinguished by a dynamic, continuous and long-term nature of performance (more than 5 minutes), which is accompanied by a high heart rate and rapid breathing.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(аэробная тренировка)](*<- lang_ru;;*);;
+=> nrel_main_idtf: [St.(aerobic training)](*<- lang_en;;*);;
+*);;
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_aerobic_training;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Аэробные тренировки предназначены для повышения выносливости организма, подъема тонуса, укрепления сердечно-сосудистой системы и сжигания жира.](*<- lang_ru;;*);;
+    -> [Aerobic workouts are designed to improve endurance, tone, cardiovascular health, and burn fat.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(аэробная тренировка)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(aerobic training)](*<- lang_ru;;*);;
+*);;
+
+
+concept_aerobic_training=>nrel_aerobic_exercise:aerobic_exercise;;
+
