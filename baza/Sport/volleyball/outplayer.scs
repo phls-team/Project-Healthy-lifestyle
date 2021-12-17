@@ -1,0 +1,29 @@
+outplayer <- sc_node_not_relation;;
+
+outplayer => nrel_main_idtf:
+[Доигровщик(вол.)] (*<-lang_ru;;*);;
+[Outplayer(voll.)] (*<-lang_en;;*);;
+
+outplayer <- rrel_key_sc_element: ...
+(*
+<- defenition;;
+=> nrel_main_idtf:
+	[Опр. (Доигровщик(вол.))] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Нападающий, играющий вторым <b><sc_element sys_idtf="pace">темпом</b></sc_element>.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+outplayer <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Доигровщик(вол.))] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Доигровщик является важным членом команды, т.к. от его действий зависит, уступит ли команда очко сопернику или нет.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;

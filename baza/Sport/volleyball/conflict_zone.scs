@@ -1,0 +1,29 @@
+conflict_zone <- sc_node_not_relation;;
+
+conflict_zone => nrel_main_idtf:
+[Зона конфликта(вол.)] (*<-lang_ru;;*);;
+[Conflict zone(voll.)] (*<-lang_en;;*);;
+
+conflict_zone <- rrel_key_sc_element: ...
+(*
+<- defenition;;
+=> nrel_main_idtf:
+	[Опр. (Зона конфликта(вол.))] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Зона между принимающими игроками, подача в которую сильно затрудняет приём.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+conflict_zone <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Зона конфликта(вол.))] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Исключить зоны конфликта игроки могут, взяв на себя прием мяча.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
