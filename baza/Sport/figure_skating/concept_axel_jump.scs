@@ -1,0 +1,48 @@
+concept_axel_jump
+
+=> nrel_main_idtf:[аксель] (* <-lang_ru;; *);
+=> nrel_main_idtf:[axel jump] (* <-lang_en;; *);
+
+<- sc_node_not_relation;
+	
+<- rrel_key_sc_element: 
+        ...
+        (*
+        <- definition;;
+        => nrel_main_idtf:
+	[Опр. (Аксель)] (*<-lang_ru;;*);;
+        <= nrel_sc_text_translation: 
+                ...
+	        (*
+		-> rrel_example:
+		[Фигурист скользит на правой ноге назад-наружу, разворачивается вперед и наступает на правую ногу, выпрыгивает в воздух, одновременно тормозя коньком и выбрасывая правую ногу вперед. Приземление на правуб ногу на ход назад-наружу.](*<- lang_ru;;*);;
+	        *);;
+        *);
+        
+<- rrel_key_sc_element: 
+        ...
+        (*
+        <- statement;;
+        => nrel_main_idtf:
+	[Утв. (Аксель)] (*<-lang_ru;;*);;
+        <= nrel_sc_text_translation: 
+                ...
+	        (*
+		-> rrel_example:
+		[Является самым сложным прыжком в фигурном катании.](*<- lang_ru;; *);;
+	        *);;
+        *);
+        
+<-rrel_key_sc_element:
+        ...
+	(*
+	<-illustration;;
+	<=nrel_sc_text_translation:...
+	        (*
+		->rrel_example:
+                "file://Images/axel.png"
+	          (*
+		  =>nrel_format:format_png;;
+	          *);;	
+                *);;
+        *);;

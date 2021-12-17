@@ -1,0 +1,52 @@
+concept_dance_support
+
+=> nrel_main_idtf:[поддержка] (* <-lang_ru;; *);
+=> nrel_main_idtf:[dance support] (* <-lang_en;; *);
+
+<- sc_node_not_relation;
+
+<- rrel_key_sc_element: 
+        ...
+        (*
+        <- definition;;
+        => nrel_main_idtf:
+	[Опр. (Поддержка)] (*<-lang_ru;;*);;
+        <= nrel_sc_text_translation: 
+                ...
+	        (*
+		-> rrel_example:
+		[Движение, во время которого один из партнеров поднимает другого партнера с активной или пассивной помощью другого партнера на любую допустимую высоту и удерживает его там, а затем опускает на лёд.](*<- lang_ru;;*);;
+	        *);;
+        *);
+        
+<- rrel_key_sc_element: 
+        ...
+        (*
+        <- statement;;
+        => nrel_main_idtf:
+	[Утв. (Поддержка)] (*<-lang_ru;;*);;
+        <= nrel_sc_text_translation: 
+                ...
+	        (*
+		-> rrel_example:
+		[Поддержки должны использоваться для отражения акцентов и характера избранной музыки.](*<- lang_ru;; *);;
+	        *);;
+        *);
+        
+<-rrel_key_sc_element:
+        ...
+	(*
+	<-illustration;;
+	<=nrel_sc_text_translation:...
+	        (*
+		->rrel_example:
+                "file://Images/support.png"
+	          (*
+		  =>nrel_format:format_png;;
+	          *);;	
+                *);;
+        *);
+        
+=>nrel_species:
+        concept_short_lift;
+        concept_long_lift;;

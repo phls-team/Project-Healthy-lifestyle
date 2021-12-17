@@ -1,0 +1,20 @@
+concept_reverse_rotational_lift
+
+=> nrel_main_idtf:[поддержка с вращанием в обе стороны] (* <-lang_ru;; *);
+=> nrel_main_idtf:[reverse rotational lift] (* <-lang_en;; *);
+
+<- sc_node_not_relation;
+	
+<- rrel_key_sc_element: 
+        ...
+        (*
+        <- definition;;
+        => nrel_main_idtf:
+	[Опр. (Поддержка с вращением в обе стороны)] (*<-lang_ru;;*);;
+        <= nrel_sc_text_translation: 
+                ...
+	        (*
+		-> rrel_example:
+		[Поддержка, при исполнении которой поднимающий партнёр, скользя (продвигаясь по льду), вращается сначала в одном, а затем в другом направлении.](*<- lang_ru;;*);;
+	        *);;
+        *);;

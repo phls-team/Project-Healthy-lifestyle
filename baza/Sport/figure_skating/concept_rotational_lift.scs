@@ -1,0 +1,34 @@
+concept_rotational_lift
+
+=> nrel_main_idtf:[вращательная поддержка] (* <-lang_ru;; *);
+=> nrel_main_idtf:[rotational lift] (* <-lang_en;; *);
+
+<- sc_node_not_relation;
+	
+<- rrel_key_sc_element: 
+        ...
+        (*
+        <- definition;;
+        => nrel_main_idtf:
+	[Опр. (Вращательная поддержка)] (*<-lang_ru;;*);;
+        <= nrel_sc_text_translation: 
+                ...
+	        (*
+		-> rrel_example:
+		[Поддержка, при исполнении которой поднимающий партнёр, скользя (продвигаясь по льду), вращается в одном из направлений (по или против часовой стрелки)](*<- lang_ru;;*);;
+	        *);;
+        *);
+        
+<-rrel_key_sc_element:
+        ...
+	(*
+	<-illustration;;
+	<=nrel_sc_text_translation:...
+	        (*
+		->rrel_example:
+                "file://Images/rotational_lift.png"
+	          (*
+		  =>nrel_format:format_png;;
+	          *);;	
+                *);;
+        *);;

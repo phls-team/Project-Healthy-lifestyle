@@ -1,0 +1,39 @@
+concept_figure_skatting_jump
+
+=> nrel_main_idtf:[прыжок в фигурном катании] (* <-lang_ru;; *);
+=> nrel_main_idtf:[figure skatting jump] (* <-lang_en;; *);
+
+<- sc_node_not_relation;
+	
+        
+<- rrel_key_sc_element: 
+        ...
+        (*
+        <- statement;;
+        => nrel_main_idtf:
+	[Утв. (Прыжок)] (*<-lang_ru;;*);;
+        <= nrel_sc_text_translation: 
+                ...
+	        (*
+		-> rrel_example:
+		[Прыжок является необходимым элементом фигурного катания.](*<- lang_ru;; *);;
+	        *);;
+        *);
+        
+<-rrel_key_sc_element:
+        ...
+	(*
+	<-illustration;;
+	<=nrel_sc_text_translation:...
+	        (*
+		->rrel_example:
+                "file://Images/jump.png"
+	          (*
+		  =>nrel_format:format_png;;
+	          *);;	
+                *);;
+        *);
+        
+=>nrel_species:
+        concept_rib_jump;
+        concept_scallop_jump;;

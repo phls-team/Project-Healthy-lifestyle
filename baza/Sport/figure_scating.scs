@@ -47,9 +47,10 @@ concept_figure_skating<- rrel_key_sc_element:...
 			*);;
 *);;
 
-
-
-
-
-
+concept_figure_skating => nrel_species:
+    concept_ice_dancing_sport;
+    concept_women_single_figure_skating;
+    concept_men_single_figure_skating;
+    concept_pair_figure_skating;
+    concept_synchronized_figure_skating;;
 

@@ -1,0 +1,25 @@
+concept_long_lift
+
+=> nrel_main_idtf:[Длинные поддержки] (* <-lang_ru;; *);
+=> nrel_main_idtf:[long_lift] (* <-lang_en;; *);
+
+<- sc_node_not_relation;
+	
+<- rrel_key_sc_element: 
+        ...
+        (*
+        <- definition;;
+        => nrel_main_idtf:
+	[Опр. (Длинные поддержки)] (*<-lang_ru;;*);;
+        <= nrel_sc_text_translation: 
+                ...
+	        (*
+		-> rrel_example:
+		[Длительность этих поддержек не должна превышать 12 секунд.](*<- lang_ru;;*);;
+	        *);;
+        *);
+        
+=>nrel_species:
+        concept_reverse_rotational_lift;
+        concept_serpentine_lift;
+        concept_combination_lift;;

@@ -1,0 +1,25 @@
+concept_scallop_jump
+
+=> nrel_main_idtf:[зубцовые прыжки] (* <-lang_ru;; *);
+=> nrel_main_idtf:[scallop jump] (* <-lang_en;; *);
+
+<- sc_node_not_relation;
+	
+<- rrel_key_sc_element: 
+        ...
+        (*
+        <- definition;;
+        => nrel_main_idtf:
+	[Опр. (Зубцовые прыжки)] (*<-lang_ru;;*);;
+        <= nrel_sc_text_translation: 
+                ...
+	        (*
+		-> rrel_example:
+		[Прыжки, при которых отталкивание происходит носком свободной ноги.](*<- lang_ru;;*);;
+	        *);;
+        *);
+        
+=>nrel_species:
+        concept_toe_loop;
+        concept_flip;
+        concept_lutz;;

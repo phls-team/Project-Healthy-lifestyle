@@ -1,0 +1,48 @@
+concept_salchow
+
+=> nrel_main_idtf:[сальхов] (* <-lang_ru;; *);
+=> nrel_main_idtf:[salchow] (* <-lang_en;; *);
+
+<- sc_node_not_relation;
+	
+<- rrel_key_sc_element: 
+        ...
+        (*
+        <- definition;;
+        => nrel_main_idtf:
+	[Опр. (Сальхов)] (*<-lang_ru;;*);;
+        <= nrel_sc_text_translation: 
+                ...
+	        (*
+		-> rrel_example:
+		[Заход на прыжок происходит с дуги назад-внутрь, одновременно с этим свободная нога делает мах вокруг тела. При отталкивании толчковая нога ставится на лед ребром конька. Толчок делается одной ногой. Приземление выполняется на наружное ребро на ход назад на маховую ногу.](*<- lang_ru;;*);;
+	        *);;
+        *);
+        
+<- rrel_key_sc_element: 
+        ...
+        (*
+        <- statement;;
+        => nrel_main_idtf:
+	[Утв. (Сальхов)] (*<-lang_ru;;*);;
+        <= nrel_sc_text_translation: 
+                ...
+	        (*
+		-> rrel_example:
+		[Одинарный сальхов оценивается в 0,4 балла, двойной - 1,3, тройной - 4,3, четвертной - 9,7.](*<- lang_ru;; *);;
+	        *);;
+        *);
+        
+<-rrel_key_sc_element:
+        ...
+	(*
+	<-illustration;;
+	<=nrel_sc_text_translation:...
+	        (*
+		->rrel_example:
+                "file://Images/salchow.png"
+	          (*
+		  =>nrel_format:format_png;;
+	          *);;	
+                *);;
+        *);;

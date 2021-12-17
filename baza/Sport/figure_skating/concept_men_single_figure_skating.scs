@@ -1,0 +1,35 @@
+concept_men_single_figure_skating
+
+=> nrel_main_idtf:[мужское одиночное фигурное катание] (* <-lang_ru;; *);
+=> nrel_main_idtf:[men's single figure skating] (* <-lang_en;; *);
+
+<- sc_node_not_relation;
+	
+<- rrel_key_sc_element: 
+        ...
+        (*
+        <- definition;;
+        => nrel_main_idtf:
+	[Опр. (Мужское одиночное фигурное катание)] (*<-lang_ru;;*);;
+        <= nrel_sc_text_translation: 
+                ...
+	        (*
+		-> rrel_example:
+		[Дисциплина фигурного катания, в которой принимает участие один мужчина.](*<- lang_ru;;*);;
+	        *);;
+        *);
+        
+        
+<-rrel_key_sc_element:
+        ...
+	(*
+	<-illustration;;
+	<=nrel_sc_text_translation:...
+	        (*
+		->rrel_example:
+                "file://Images/men_single_figure_skating.png"
+	          (*
+		  =>nrel_format:format_png;;
+	          *);;	
+                *);;
+        *);;

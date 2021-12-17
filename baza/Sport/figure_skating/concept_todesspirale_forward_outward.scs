@@ -1,0 +1,34 @@
+concept_todesspirale_forward_outward
+
+=> nrel_main_idtf:[Тодес вперед-наружу] (* <-lang_ru;; *);
+=> nrel_main_idtf:[todesspirale forward outward] (* <-lang_en;; *);
+
+<- sc_node_not_relation;
+	
+<- rrel_key_sc_element: 
+        ...
+        (*
+        <- definition;;
+        => nrel_main_idtf:
+	[Опр. (Тодес вперед-наружу)] (*<-lang_ru;;*);;
+        <= nrel_sc_text_translation: 
+                ...
+	        (*
+		-> rrel_example:
+		[Партнёр скользит назад на наружном ребре, партнёрша — вперед на внутреннем ребре. Партнёр исполняет циркуль и держит руку партнёрши полностью вытянутой рукой, одноименной с его скользящей ногой. Партнёрша наклонена вбок ко льду, и её рука полностью вытянута, когда она движется по кругу вокруг партнёра на четком наружном ребре.](*<- lang_ru;;*);;
+	        *);;
+        *);
+        
+<-rrel_key_sc_element:
+        ...
+	(*
+	<-illustration;;
+	<=nrel_sc_text_translation:...
+	        (*
+		->rrel_example:
+                "file://Images/todesspirale_forward_outward.png"
+	          (*
+		  =>nrel_format:format_png;;
+	          *);;	
+                *);;
+        *);;

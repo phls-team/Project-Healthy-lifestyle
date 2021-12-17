@@ -1,0 +1,55 @@
+concept_pirouette
+
+=> nrel_main_idtf:[пируэт] (* <-lang_ru;; *);
+=> nrel_main_idtf:[pirouette] (* <-lang_en;; *);
+
+<- sc_node_not_relation;
+	
+<- rrel_key_sc_element: 
+        ...
+        (*
+        <- definition;;
+        => nrel_main_idtf:
+	[Опр. (Пируэт)] (*<-lang_ru;;*);;
+        <= nrel_sc_text_translation: 
+                ...
+	        (*
+		-> rrel_example:
+		[Поворот, оборот вокруг себя.](*<- lang_ru;;*);;
+	        *);;
+        *);
+        
+<- rrel_key_sc_element: 
+        ...
+        (*
+        <- statement;;
+        => nrel_main_idtf:
+	[Утв. (Пируэт)] (*<-lang_ru;;*);;
+        <= nrel_sc_text_translation: 
+                ...
+	        (*
+		-> rrel_example:
+		[Пируэт является необходимым элементом фигурного каатания.](*<- lang_ru;; *);;
+	        *);;
+        *);
+        
+<-rrel_key_sc_element:
+        ...
+	(*
+	<-illustration;;
+	<=nrel_sc_text_translation:...
+	        (*
+		->rrel_example:
+                "file://Images/pirouette.png"
+	          (*
+		  =>nrel_format:format_png;;
+	          *);;	
+                *);;
+        *);
+        
+=>nrel_species:
+        concept_layback_spin;
+        concept_camel_spin;
+        concept_sit_spin;
+        concept_biellmann_spin;
+        concept_upright_spin;;
