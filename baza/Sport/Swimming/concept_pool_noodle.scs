@@ -1,0 +1,53 @@
+concept_pool_noodle<-sc_node_not_relation;;
+
+concept_pool_noodle=>nrel_main_idtf:[лапша для бассейна]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[pool_noodle]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_pool_noodle<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Лапша для бассейна)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Лапша для бассейна представляет собой цилиндрический кусок плавучей полиэтиленовой пены, иногда полый, предназначенный для плавания.]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+	swimming
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_pool_noodle;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Лапша для бассейна полезна при обучении плаванию, для плавания, для спасения, в различных видах игры на воде и для водных упражнений.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(лапша для бассейна)](*<- lang_ru;;*);;
+  =>nrel_using_constants:{
+        swimming
+        };;
+*);;
+
+concept_pool_noodle<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://photos//pool_noodle.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Пример лапши для бассейна)](*<- lang_ru;;*);;
+*);;
+*);;

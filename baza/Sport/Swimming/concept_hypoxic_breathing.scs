@@ -1,0 +1,54 @@
+concept_hypoxic_breathing<-sc_node_not_relation;;
+
+concept_hypoxic_breathing=>nrel_main_idtf:[гипоксическое дыхание]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[hypoxic_breathing]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_hypoxic_breathing<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Гипоксическое дыхание)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Гипоксическое дыхание — процесс прохождения дистанции с ограничением доступа к дыханию кислородом.]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_breathing
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_hypoxic_breathing;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Тренировки с использованием гипоксического дыхания способствуют повышению выносливости пловца.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(гипоксическое дыхание)](*<- lang_ru;;*);;
+  =>nrel_using_constants:{
+        concept_training;
+	concept_swimmer
+        };;
+*);;
+
+concept_hypoxic_breathing<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://photos//hypoxic_breathing.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Пример гипоксического дыхания)](*<- lang_ru;;*);;
+*);;
+*);;

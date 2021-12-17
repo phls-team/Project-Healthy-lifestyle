@@ -1,0 +1,53 @@
+concept_talrep_ring_hook<-sc_node_not_relation;;
+
+concept_talrep_ring_hook=>nrel_main_idtf:[талреп крюк-кольцо]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[talrep_ring_hook]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_talrep_ring_hook<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Талреп крюк-кольцо)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Талреп ключ-кольцо- устройство для натяжения троса волногасителей.]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_wave_damper
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_talrep_ring_hook;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Талреп крюк-кольцо различного размера можно обнаружить почти везде – от плавания до строительной площадки.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(талреп крюк-кольцо)](*<- lang_ru;;*);;
+  =>nrel_using_constants:{
+        swimming
+        };;
+*);;
+
+concept_talrep_ring_hook<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://photos//talrep_ring_hook.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Пример талрепа крюка-кольца)](*<- lang_ru;;*);;
+*);;
+*);;

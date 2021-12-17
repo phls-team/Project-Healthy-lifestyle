@@ -1,0 +1,53 @@
+concept_swimming_wetsuit<-sc_node_not_relation;;
+
+concept_swimming_wetsuit=>nrel_main_idtf:[гидрокостюм]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[swimming_wetsuit]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_swimming_wetsuit<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Гидрокостюм)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Гидрокостюм - это специальная одежда, он был создан в начале XX века и предназначен для того, чтобы повысить скорость плавания.]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        swimming
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_swimming_wetsuit;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[С помощью гидрокостюма пловец может улучшить свои показатели на соревнованиях.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Гидрокостюм)](*<- lang_ru;;*);;
+  =>nrel_using_constants:{
+	concept_swimmer
+        };;
+*);;
+
+concept_swimming_wetsuit<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://photos//swimming_wetsuit.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Пример гидрокостюма)](*<- lang_ru;;*);;
+*);;
+*);;

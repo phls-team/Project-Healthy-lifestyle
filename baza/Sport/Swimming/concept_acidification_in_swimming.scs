@@ -1,0 +1,54 @@
+concept_acidification_in_swimming<-sc_node_not_relation;;
+
+concept_acidification_in_swimming=>nrel_main_idtf:[закисление]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[acidification_in_swimming]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_acidification_in_swimming<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Закисление)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Закисление — образование в мышцах избыточного количества молочной кислоты.]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+       	muscles
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_acidification_in_swimming;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Главный показатель закисления мышц – это неприятные ощущения и боли в тех мышцах, над которыми вы работали, они начинаются уже на тренировке и могут продолжаться на следующий день. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Закисление)](*<- lang_ru;;*);;
+  =>nrel_using_constants:{
+        muscle;
+	concept_training
+        };;
+*);;
+
+concept_acidification_in_swimming<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://photos//acidification_in_swimming.png"
+        (*
+                =>nrel_format:format_png;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Пример закисления)](*<- lang_ru;;*);;
+*);;
+*);;

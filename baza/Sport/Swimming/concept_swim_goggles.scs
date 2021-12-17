@@ -1,0 +1,54 @@
+concept_swim_goggles<-sc_node_not_relation;;
+
+concept_swim_goggles=>nrel_main_idtf:[очки для плавания]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[swim_goggles]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_swim_goggles<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Очки для плавания)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Очки для плавания – аксессуар для спортивного плавания, который призван обеспечить пловцу нормальное зрение под водой, а также защищают глаза от хлорных испарений.]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        swimming;
+	concept_swimmer
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_swim_goggles;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Очки для плавания бывают для тренировок и для стартов.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Очки для плавания)](*<- lang_ru;;*);;
+  =>nrel_using_constants:{
+	concept_training
+        };;
+*);;
+
+concept_swim_goggles<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://photos//swim_goggles.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Пример очков для плавания)](*<- lang_ru;;*);;
+*);;
+*);;

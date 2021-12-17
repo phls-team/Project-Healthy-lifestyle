@@ -1,0 +1,55 @@
+concept_dry_swimming<-sc_node_not_relation;;
+
+concept_dry_swimming=>nrel_main_idtf:[сухое плавание]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[dry_swimming]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_dry_swimming<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Сухое плавание)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Сухое плавание – дополнительный комплекс упражнений вне водной среды, с помощью которых у пловца развивается выносливость, гибкость, растяжка, мышечная подготовка, а также осваивается и улучшается техника плавания.]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+       	concept_swimmer;
+	swimming;
+	muscles
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_dry_swimming;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Пригодиться сухое плавание может и в том случае, если возможности заниматься в воде нет, но есть желание сохранить результаты тренировок, поддержать форму.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Сухое плавание)](*<- lang_ru;;*);;
+  =>nrel_using_constants:{
+	concept_training
+        };;
+*);;
+
+concept_dry_swimming<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://photos//dry_swimming.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Сухое плавание)](*<- lang_ru;;*);;
+*);;
+*);;

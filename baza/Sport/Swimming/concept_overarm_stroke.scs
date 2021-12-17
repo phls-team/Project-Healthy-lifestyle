@@ -1,0 +1,53 @@
+concept_overarm_stroke<-sc_node_not_relation;;
+
+concept_overarm_stroke=>nrel_main_idtf:[овер-арм]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[overarm stroke]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_overarm_stroke<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Овер-арм)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Овер-арм(вынос руки) — вид спортивного плавания на боку.]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+	swimming
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_overarm_stroke;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[При овер-арм тело пловца расположено у поверхности воды на левом или правом боку в выпрямленном положении.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(овер-арм)](*<- lang_ru;;*);;
+  =>nrel_using_constants:{
+	concept_swimmer
+        };;
+*);;
+
+concept_overarm_stroke<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://photos//overarm_stroke.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Овер-арм)](*<- lang_ru;;*);;
+*);;
+*);;

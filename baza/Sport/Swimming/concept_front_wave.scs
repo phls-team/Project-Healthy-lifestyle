@@ -1,0 +1,55 @@
+concept_front_wave<-sc_node_not_relation;;
+
+concept_front_wave=>nrel_main_idtf:[передняя волна]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[front_wave]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_front_wave<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Передняя волна)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Передняя волна — волна, формирующаяся в момент продвижения тела пловца в воде.]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+       	concept_swimmer
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_front_wave;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[ Во время плавания вольным стилем отмечается формирование у макушки головы пловца передней волны.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Передняя волна)](*<- lang_ru;;*);;
+  =>nrel_using_constants:{
+        concept_swimming_freestyle;
+	swimming;
+	concept_swimmer
+        };;
+*);;
+
+concept_front_wave<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://photos//front_wave.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Пример передней волны)](*<- lang_ru;;*);;
+*);;
+*);;

@@ -1,0 +1,54 @@
+concept_swimming_flippers<-sc_node_not_relation;;
+
+concept_swimming_flippers=>nrel_main_idtf:[ласты для плавания]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[swimming_flippers]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_swimming_flippers<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Ласты для плавания)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Ласты для плавания – надеваемое на ноги приспособление, используемое как для плавания с аквалангом и маской, так и для тренировки в бассейне.]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_training;
+	swimming
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_swimming_flippers;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Ласты помогают пловцу плыть быстрее.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(ласты для плавания)](*<- lang_ru;;*);;
+  =>nrel_using_constants:{
+	concept_swimmer
+        };;
+*);;
+
+concept_swimming_flippers<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://photos//swimming_flippers.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Пример ласт для плвания)](*<- lang_ru;;*);;
+*);;
+*);;

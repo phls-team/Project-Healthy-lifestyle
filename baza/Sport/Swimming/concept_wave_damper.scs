@@ -1,0 +1,53 @@
+concept_wave_damper<-sc_node_not_relation;;
+
+concept_wave_damper=>nrel_main_idtf:[волногаситель]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[wave_damper]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_wave_damper<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Волногаситель)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Волногаситель- устройство, предназначенное для гашения волн, производимых пловцом, и не допущения их распространения на другие дорожки.]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_swimmer
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_wave_damper;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Волногаситель предназначен для создания отдельных водных дорожек для пловцов с тем, чтобы пловцы ориентировались в пространстве и не мешали.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Волногаситель)](*<- lang_ru;;*);;
+  =>nrel_using_constants:{
+	concept_swimmer
+        };;
+*);;
+
+concept_wave_damper<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://photos//wave_damper.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Пример волногасителя)](*<- lang_ru;;*);;
+*);;
+*);;

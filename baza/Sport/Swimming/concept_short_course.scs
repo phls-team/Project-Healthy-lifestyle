@@ -1,0 +1,54 @@
+concept_short_course<-sc_node_not_relation;;
+
+concept_short_course=>nrel_main_idtf:[короткая вода]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[short_course]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_short_course<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Короткая вода)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Короткая вода-бассейн для пловцов, длиной в 25 метров.]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_swimmer
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_short_course;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[На короткой воде результаты у пловцов значительно выше результатов на длинной воде.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Короткая вода)](*<- lang_ru;;*);;
+  =>nrel_using_constants:{
+	concept_swimmer;
+	concept_long_course
+        };;
+*);;
+
+concept_short_course<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://photos//short_course.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Пример короткой воды)](*<- lang_ru;;*);;
+*);;
+*);;

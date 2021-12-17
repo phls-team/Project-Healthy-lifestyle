@@ -1,0 +1,54 @@
+concept_swim_cap<-sc_node_not_relation;;
+
+concept_swim_cap=>nrel_main_idtf:[шапочка для плавания]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[swim_cap]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_swim_cap<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Шапочка для плавания)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Шапочка для плавания – головной убор для плавания в воде, защищает волосы пловца от хлорированной воды.]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        swimming;
+	concept_swimmer
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_swim_cap;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Шапочка для плавания является обязательным элементом для занятий плаванием в бассейне.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Шапочка для плавания)](*<- lang_ru;;*);;
+  =>nrel_using_constants:{
+	swimming
+        };;
+*);;
+
+concept_swim_cap<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://photos//swim_cap.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Пример шапочки для плавания)](*<- lang_ru;;*);;
+*);;
+*);;

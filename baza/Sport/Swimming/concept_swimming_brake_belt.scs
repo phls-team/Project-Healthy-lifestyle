@@ -1,0 +1,54 @@
+concept_swimming_break_belt<-sc_node_not_relation;;
+
+concept_swimming_break_belt=>nrel_main_idtf:[пояс тормозной]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[swimming_break_belt]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_swimming_break_belt<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Пояс тормозной)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Пояс тормозной- пояс, который используется для создания дополнительного сопротивления во время плавания.]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        swimming
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_swimming_break_belt;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Применение тормозного пояса помогает повысить выносливость, силу пловца, улучшить технику и внести разнообразие в тренировочный процесс.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Пояс тормозной)](*<- lang_ru;;*);;
+  =>nrel_using_constants:{
+	concept_swimmer;
+	concept_training
+        };;
+*);;
+
+concept_swimming_break_belt<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://photos//swimming_break_belt.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Пример пояса тормозного)](*<- lang_ru;;*);;
+*);;
+*);;

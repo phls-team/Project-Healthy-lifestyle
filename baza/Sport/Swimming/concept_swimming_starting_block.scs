@@ -1,0 +1,53 @@
+concept_swimming_starting_block<-sc_node_not_relation;;
+
+concept_swimming_starting_block=>nrel_main_idtf:[стартовая тумба в плавании]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[swimming_starting_block]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_swimming_starting_block<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Стартовая тумба в плавании)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Стартовая тумба в плавании- приподнятая платформа, установленная в конце бассейна, с которой пловцы начинают гонку.]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_swimmer
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_swimming_starting_block;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Стартовые тумбы в плавании используются для соревнований и тренировок по плаванию.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Стартовая тумба в плавании)](*<- lang_ru;;*);;
+  =>nrel_using_constants:{
+	concept_training
+        };;
+*);;
+
+concept_swimming_starting_block<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://photos//swimming_starting_block.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Пример стартовой тумбы в плавании)](*<- lang_ru;;*);;
+*);;
+*);;

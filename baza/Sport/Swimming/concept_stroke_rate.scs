@@ -1,0 +1,55 @@
+concept_stroke_rate<-sc_node_not_relation;;
+
+concept_stroke_rate=>nrel_main_idtf:[частота гребка]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[stroke_rate]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_stroke_rate<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Частота гребка)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Частота гребка— это количество гребков, которое пловец успевает сделать в минуту.]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_swimmer
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_stroke_rate;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Регулярность тренировок позволяет пловцу укреплять мышцы и увеличивать частоту гребка.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Частота гребка)](*<- lang_ru;;*);;
+  =>nrel_using_constants:{
+	concept_training;
+        muscles;
+	concept_swimmer
+        };;
+*);;
+
+concept_stroke_rate<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://photos//stroke_rate.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Пример частоты гребка)](*<- lang_ru;;*);;
+*);;
+*);;

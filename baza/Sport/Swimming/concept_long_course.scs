@@ -1,0 +1,54 @@
+concept_long_course<-sc_node_not_relation;;
+
+concept_long_course=>nrel_main_idtf:[длинная вода]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[long_course]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_long_course<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Длинная вода)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Длинная вода-бассейн для пловцов, длиной в 50 метров.]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_swimmer
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_long_course;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[На длинной воде результаты у пловцов значительно ниже результатов на короткой воде.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Длинная вода)](*<- lang_ru;;*);;
+  =>nrel_using_constants:{
+	concept_swimmer;
+	concept_short_course
+        };;
+*);;
+
+concept_long_course<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://photos//long_course.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Пример длинной воды)](*<- lang_ru;;*);;
+*);;
+*);;

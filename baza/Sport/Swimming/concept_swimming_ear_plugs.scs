@@ -1,0 +1,53 @@
+concept_swimming_ear_plugs<-sc_node_not_relation;;
+
+concept_swimming_ear_plugs=>nrel_main_idtf:[беруши для плавания]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[swimming_ear_plugs]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_swimming_ear_plugs<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Беруши для плавания)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Беруши- аксессуар для плавания, предотвращающий попадание воды внутрь уха.]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        swimming
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_swimming_ear_plugs;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Беруши для плавания могут использовать дети и взрослые с самого начала тренировки.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Беруши для плавания)](*<- lang_ru;;*);;
+  =>nrel_using_constants:{
+	concept_training
+        };;
+*);;
+
+concept_swimming_ear_plugs<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://photos//swimming_ear_plugs.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Пример беруш для плавания)](*<- lang_ru;;*);;
+*);;
+*);;
