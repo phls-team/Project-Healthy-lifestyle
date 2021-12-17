@@ -1,0 +1,29 @@
+control_ball <- sc_node_not_relation;;
+
+control_ball => nrel_main_idtf:
+[Контрольный мяч(вол.)] (*<-lang_ru;;*);;
+[Control ball(voll.)] (*<-lang_en;;*);;
+
+control_ball <- rrel_key_sc_element: ...
+(*
+<- defenition;;
+=> nrel_main_idtf:
+	[Опр. (Контрольный мяч(вол.))] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Очко, выигрыш которого решает судьбу партии или матча.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+control_ball <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Контрольный мяч(вол.))] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Контрольный мяч - самое ожидаемое(и самое сложное) очко партии или матча.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;

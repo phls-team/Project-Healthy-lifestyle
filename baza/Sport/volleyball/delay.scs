@@ -1,0 +1,29 @@
+delay <- sc_node_not_relation;;
+
+delay => nrel_main_idtf:
+[Задержка(вол.)] (*<-lang_ru;;*);;
+[Delay(voll.)] (*<-lang_en;;*);;
+
+delay <- rrel_key_sc_element: ...
+(*
+<- defenition;;
+=> nrel_main_idtf:
+	[Опр. (Задержка(вол.))] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Действие во время верхней передачи, при котором мяч не отскакивает от рук игрока сразу.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+delay <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Задержка(вол.))] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Задержка является нарушением, за которое очко и мяч отдается команде соперника.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;

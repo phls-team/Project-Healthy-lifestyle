@@ -1,0 +1,29 @@
+matchball <- sc_node_not_relation;;
+
+matchball => nrel_main_idtf:
+[Матчбол(вол.)] (*<-lang_ru;;*);;
+[matchball(voll.)] (*<-lang_en;;*);;
+
+matchball <- rrel_key_sc_element: ...
+(*
+<- defenition;;
+=> nrel_main_idtf:
+	[Опр. (Матчбол(вол.))] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Очко, выигрыш или проигрыш которого может решить исход всего матча.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+matchball <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Матчбол(вол.))] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Подача мяча, который может стать матчболом - самый напряженный для всех момент матча.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
