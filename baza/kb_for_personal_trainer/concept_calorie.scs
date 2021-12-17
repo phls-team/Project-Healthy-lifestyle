@@ -1,0 +1,35 @@
+concept_calorie<-sc_node_not_relation;;
+concept_calorie => nrel_main_idtf: [Калория](*<- lang_ru;;*);;
+concept_calorie => nrel_main_idtf: [Calorie](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_calorie;;
+    <= nrel_sc_text_translation:...
+        (*
+	-> [Кало́рия (лат. calor — тепло, жар) — внесистемная единица количества теплоты; 
+		энергия, необходимая для нагревания 1 грамма воды с 19.5 до 20.5 градусов Цельсия. 
+		Определены и используются три разновидности калории, немного различающиеся своей величиной.](*<- lang_ru;;*);;
+	-> [Caloria (Latin calor - heat, heat) is a non-systemic unit of the amount of heat;
+		energy required to heat 1 gram of water from 19.5 to 20.5 degrees Celsius. 
+		Three types of calories have been identified and used, each with a slightly different value.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(калория)](*<- lang_ru;;*);;
+=> nrel_main_idtf: [St.(calorie)](*<- lang_en;;*);;
+*);;
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_calorie;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Первым термин «калория» применил шведский физик Иоганн Вильке (1732—1796).](*<- lang_ru;;*);;
+    -> [The first to use the term "calorie" was the Swedish physicist Johann Wilke (1732-1796).](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(калория)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(calorie)](*<- lang_ru;;*);;
+*);;
+
+

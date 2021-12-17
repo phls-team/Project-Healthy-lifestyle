@@ -1,0 +1,31 @@
+concept_male<-sc_node_not_relation;;
+concept_male => nrel_main_idtf: [Мужчина ](*<- lang_ru;;*);;
+concept_male => nrel_main_idtf: [Male ](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_male;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Мужчи́на — человек мужского пола. Тот, кто обладает функциональными и морфологическими признаками, которые определяют мужской пол.](*<- lang_ru;;*);;
+-> [A man is a male person. Someone who possesses functional and morphological characteristics that determine the male gender.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(мужчина )](*<- lang_ru;;*);;
+=> nrel_main_idtf: [St.( male)](*<- lang_en;;*);;
+*);;
+
+
+concept_male<-rrel_key_sc_element:...
+	(*
+		<-illustration;;
+		<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+		"file://MaleGender.png"
+	(*
+		=>nrel_format:format_png;;
+	*);;	
+*);;
+*);;
+

@@ -1,0 +1,19 @@
+concept_repetitions<-sc_node_not_relation;;
+concept_repetitions => nrel_main_idtf: [Repetitions](*<- lang_ru;;*);;
+concept_repetitions => nrel_main_idtf: [Повторения](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_repetitions;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Повторения — повторное выполнения конкретного движения с отягощением в одном сете (подходе) в бодибилдинге(и в других видах спорта).](*<- lang_ru;;*);;
+-> [Repetitions - repetition of a specific movement with weights in one set (approach) in bodybuilding (and in other sports).](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(повторения)](*<- lang_ru;;*);;
+=> nrel_main_idtf: [St.(repetitions)](*<- lang_en;;*);;
+*);;
+
+
+

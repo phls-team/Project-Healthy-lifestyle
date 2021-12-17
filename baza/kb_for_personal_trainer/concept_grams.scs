@@ -1,0 +1,19 @@
+concept_grams<-sc_node_not_relation;;
+concept_grams => nrel_main_idtf: [Граммы](*<- lang_ru;;*);;
+concept_grams => nrel_main_idtf: [Grams](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_grams;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Грамм (фр. gramme; русское обозначение: г; международное: g) — единица измерения массы, одна из основных единиц системы СГС, дольная единица массы в Международной системе единиц (СИ). Впервые была введена во Франции 7 апреля 1795 года.](*<- lang_ru;;*);;
+-> [Gram (fr. Gramme; Russian designation: g; international: g) is a unit of mass measurement, one of the basic units of the CGS system, a fractional unit of mass in the International System of Units (SI). It was first introduced in France on April 7, 1795.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(граммы)](*<- lang_ru;;*);;
+=> nrel_main_idtf: [St.(grams)](*<- lang_en;;*);;
+*);;
+
+
+
