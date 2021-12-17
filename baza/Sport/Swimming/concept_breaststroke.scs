@@ -1,0 +1,53 @@
+concept_breaststroke<-sc_node_not_relation;;
+
+concept_breaststroke=>nrel_main_idtf:[брасс]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[breaststroke]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_epiemic<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Брасс)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Брасс - стиль плавания на груди, в котором руки подаются одновременно симметрично вперёд, а ноги совершают одновременный толчок в горизонтальной плоскости.]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_impulse
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_breaststroke ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Плавание в стиле брасс стоит на одной ступени с кролем по популярности.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Брасс)](*<- lang_ru;;*);;
+  =>nrel_using_constants:{
+        concept_swimming_freestyle
+        };;
+*);;
+
+concept_breaststroke<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://photos//breaststroke.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Пример брасса)](*<- lang_ru;;*);;
+*);;
+*);;

@@ -1,0 +1,53 @@
+concept_swimming_timekeeper<-sc_node_not_relation;;
+
+concept_swimming_timekeeper=>nrel_main_idtf:[хронометрист]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[swimming_timekeeper]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_swimming_starter<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Хронометрист)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Хронометрист – человек, который замеряет время пловца на определенной дорожке от старта до финиша.]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_swimmer
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_swimming_timekeeper;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[В индивидуальных соревнованиях на дистанциях, превышающих 400 м, перед последними 100 м хронометрист дает акустический сигнал пловцу, время которого он засекает.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Хронометрист)](*<- lang_ru;;*);;
+  =>nrel_using_constants:{
+	concept_swimmer
+        };;
+*);;
+
+concept_swimming_timekeeper<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://photos//swimming_timekeeper.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Пример хронометриста)](*<- lang_ru;;*);;
+*);;
+*);;

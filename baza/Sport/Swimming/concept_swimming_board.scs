@@ -1,0 +1,53 @@
+concept_swimming_board<-sc_node_not_relation;;
+
+concept_swimming_board=>nrel_main_idtf:[доска для плавания]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[swimming_board]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_swimming_board<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Доска для плавания)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Доска для плавания— приспособление для плавания, представляющее собой поплавок обычно плоской прямоугольной формы со скруглениями для уменьшения сопротивления воды.]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        swimming
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_swimming_board;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Существует два основных приема, при которых пловец может держать доску для плавания — дальний хват и ближний хват.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Доска для плавания)](*<- lang_ru;;*);;
+  =>nrel_using_constants:{
+	concept_swimmer
+        };;
+*);;
+
+concept_swimming_board<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://photos//swimming_board.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Пример доски для плавания)](*<- lang_ru;;*);;
+*);;
+*);;

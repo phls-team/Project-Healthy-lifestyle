@@ -1,0 +1,56 @@
+concept_pull_buoy<-sc_node_not_relation;;
+
+concept_pull_buoy=>nrel_main_idtf:[колобашка]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[pull_buoy]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_pull_buoy<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Колобашка)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Колобашка– это приспособление для плавания, используемое пловцами для тренировки рук.]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_swimmer;
+	swimming
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_pull_buoy;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Колобашка используется для тренировки мышц верхней части тела и улучшения техники плавания, перенося тем самым основную нагрузку на руки, в то время как ноги расслаблены и находятся у поверхности воды.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(колобашка)](*<- lang_ru;;*);;
+  =>nrel_using_constants:{
+        swimming;
+	muscles;
+	concept_training
+        };;
+*);;
+
+concept_pull_buoy<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://photos//pull_buoy.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Пример колобашки)](*<- lang_ru;;*);;
+*);;
+*);;

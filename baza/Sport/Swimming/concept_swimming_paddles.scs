@@ -1,0 +1,54 @@
+concept_swimming_paddles<-sc_node_not_relation;;
+
+concept_swimming_paddles=>nrel_main_idtf:[лопатки для плавания]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[swimming_paddles]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_swimming_paddles<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Лопатки для плавания)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Лопатки- снаряжение для плавания, используется в качестве тренажёра для рук на тренировках.]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_training;
+	swimming
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_swimming_paddles;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Лопатки для плавания увеличивают площадь поверхности ладоней, соответственно, пловец лучше чувствует воду при выполнении гребка, что способствует развитию правильной техники движения рук.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Лопатки для плавания)](*<- lang_ru;;*);;
+  =>nrel_using_constants:{
+	concept_swimmer
+        };;
+*);;
+
+concept_swimming_paddles<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://photos//swimming_paddles.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Пример лопаток для плавания)](*<- lang_ru;;*);;
+*);;
+*);;

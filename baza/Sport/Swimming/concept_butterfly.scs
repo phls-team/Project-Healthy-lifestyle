@@ -1,0 +1,56 @@
+concept_butterfly<-sc_node_not_relation;;
+
+concept_butterfly=>nrel_main_idtf:[баттерфляй]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[butterfly]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_butterfly<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Баттерфляй)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Баттерфляй- это стиль плавания на животе, в котором левая и правая части тела одновременно совершают симметричные движения: руки совершают широкий и мощный гребок, приподнимающий тело пловца над водой, ноги и таз совершают волнообразные движения.]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        swimming;
+	concept_swimmer
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_butterfly;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[В плане скорости он уступает вольному стилю, но на коротких дистанциях он опережает брасс и плавание на спине.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Баттерфляй)](*<- lang_ru;;*);;
+  =>nrel_using_constants:{
+        concept_swimming_freestyle;
+	concept_breaststroke;
+	concept_backstroke
+        };;
+*);;
+
+concept_butterfly<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://photos//butterfly.png"
+        (*
+                =>nrel_format:format_png;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Пример стиля плавания "баттерфляй")](*<- lang_ru;;*);;
+*);;
+*);;

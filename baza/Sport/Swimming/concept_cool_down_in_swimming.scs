@@ -1,0 +1,54 @@
+concept_cool_down_in_swimming<-sc_node_not_relation;;
+
+concept_cool_down_in_swimming=>nrel_main_idtf:[откупка]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[cool_down_in_swimming]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_cool_down_in_swimming<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Откупка)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Откупка— расслабленное плавание с аэробной нагрузкой, идет обычно либо после тяжелых серий, либо в конце тренировки.]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+	concept_training
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_cool_down_in_swimming;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Первое, что должен сделать пловец после того, как доплыл последнее задание в своей тренировке — откупаться.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Откупка)](*<- lang_ru;;*);;
+  =>nrel_using_constants:{
+        concept_swimmer;
+	concept_training
+        };;
+*);;
+
+concept_cool_down_in_swimming<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://photos//cool_down_in_swimming.png"
+        (*
+                =>nrel_format:format_png;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Пример откупки)](*<- lang_ru;;*);;
+*);;
+*);;

@@ -1,0 +1,53 @@
+concept_stroke_length<-sc_node_not_relation;;
+
+concept_stroke_length=>nrel_main_idtf:[длина гребка]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[stroke_length]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_stroke_length<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Длина гребка)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Длина гребка — эту длину измеряют, подсчитывая количество гребков, достаточных для того, чтобы пловец проплыл бассейн.]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_swimmer
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_stroke_length;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Длина гребка зависит от техники пловца.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Длина гребка)](*<- lang_ru;;*);;
+  =>nrel_using_constants:{
+	concept_swimmer
+        };;
+*);;
+
+concept_stroke_length<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://photos//stroke_length.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Пример длины гребка)](*<- lang_ru;;*);;
+*);;
+*);;

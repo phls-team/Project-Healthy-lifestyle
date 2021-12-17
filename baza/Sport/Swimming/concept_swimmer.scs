@@ -1,0 +1,54 @@
+concept_swimmer<-sc_node_not_relation;;
+
+concept_swimmer=>nrel_main_idtf:[пловец]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[swimmer]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_swimmer<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Пловец)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Пловец- спортсмен, занимающийся плаванием.]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        swimming
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_swimmer;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Когда пловец решает заняться любым другим видом спорта, его мышцы, сердце, легкие уже имеют большой запас мощности.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Пловец)](*<- lang_ru;;*);;
+  =>nrel_using_constants:{
+        muscles;
+	concept_sport
+        };;
+*);;
+
+concept_swimmer<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://photos//swimmer.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Пример пловца)](*<- lang_ru;;*);;
+*);;
+*);;

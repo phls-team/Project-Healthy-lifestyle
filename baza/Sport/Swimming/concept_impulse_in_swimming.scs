@@ -1,0 +1,53 @@
+concept_impulse_in_swimming<-sc_node_not_relation;;
+
+concept_impulse_in_swimming=>nrel_main_idtf:[толчок]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[impulse_in_swimming]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_impulse_in_swimming<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Толчок)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Толчок — ускоренное выпрямление ног в тазобедренных, коленных и голеностопных суставах, заканчивающееся энергичным распрямлением тела, отрывом ног от стартовой тумбочки и полётом в воздухе.]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_swimming_starting_block
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_impulse_in_swimming;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[В брассе огромную роль играют толчки ногами.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(толчок)](*<- lang_ru;;*);;
+  =>nrel_using_constants:{
+        concept_breaststroke
+        };;
+*);;
+
+concept_impulse_in_swimming<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://photos//impulse_in_swimming.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Пример толчка)](*<- lang_ru;;*);;
+*);;
+*);;

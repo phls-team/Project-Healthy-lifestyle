@@ -1,0 +1,58 @@
+concept_one_sided_breathing<-sc_node_not_relation;;
+
+concept_one_sided_breathing=>nrel_main_idtf:[одностороннее дыхание]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[one_sided_breathing]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_one_sided_breathing<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Одностороннее дыхание)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Одностороннее дыхание означает, что пловец периодически производит дыхание только с одной предпочитаемой им стороны: правой или левой.]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_breathing;
+	concept_swimmer
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_one_sided_breathing;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[При плавании вольным стилем дыхание может быть односторонним, то есть пловец каждый раз производит дыхание только вправо или влево, либо билатеральным, то есть вдохи совершаются на обе стороны.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(одностороннее дыхание)](*<- lang_ru;;*);;
+  =>nrel_using_constants:{
+        concept_swimming_freestyle;
+	concept_breathing;
+	concept_breath_sounds_bilaterally;
+	swimming;
+	concept_swimmer
+        };;
+*);;
+
+concept_one_sided_breathing<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://photos//one_sided_breathing.png"
+        (*
+                =>nrel_format:format_png;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Пример одностороннего дыхания)](*<- lang_ru;;*);;
+*);;
+*);;

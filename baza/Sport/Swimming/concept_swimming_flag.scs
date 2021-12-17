@@ -1,0 +1,56 @@
+concept_swimming_flag<-sc_node_not_relation;;
+
+concept_swimming_flag=>nrel_main_idtf:[флажок для плавания]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[swimming_flag]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_swimming_flag<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Флажок для плавания)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Флажок для плавания- знак, предназначенный для пловцов, плывущих способом на спине, чтобы они могли видеть близость стенки и подготовиться к повороту.]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_swimmer;
+	concept_backstroke
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_swimming_flag;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Благодаря шнурам с флажками для плавания пловцы на спине знают, что приближается стена бассейна и нужно готовиться к развороту.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Флажок для плавания)](*<- lang_ru;;*);;
+  =>nrel_using_constants:{
+	concept_swimmer;
+	swimming;
+	concept_backstroke
+        };;
+*);;
+
+concept_swimming_flag<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://photos//swimming_flag.png"
+        (*
+                =>nrel_format:format_png;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Пример флажка для плвания)](*<- lang_ru;;*);;
+*);;
+*);;

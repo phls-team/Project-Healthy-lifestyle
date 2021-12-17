@@ -1,0 +1,56 @@
+concept_medley_relay<-sc_node_not_relation;;
+
+concept_medley_relay=>nrel_main_idtf:[комбинированная эстафета]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[medley_relay]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_medley_relay<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Комбинированная эстафета)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Комбинированная эстафета- это плавательная дисциплина, в ходе которой четыре спортсмена по очереди проплывают дистанцию разными стилями: сначала баттерфляем, затем на спине, потом идет плавание брассом, и завершается заплыв вольным стилем.]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_butterfly;
+	concept_breaststroke;
+	concept_backstroke;
+	concept_swimming_freestyle
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_medley_relay;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[В программу официальных международных соревнований комплексное плавание входит с 1961 года.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(комплексное плавание)](*<- lang_ru;;*);;
+  =>nrel_using_constants:{
+        concept_competition
+        };;
+*);;
+
+concept_medley_relay<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://photos//medley_relay.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Пример комбинированной эстафеты)](*<- lang_ru;;*);;
+*);;
+*);;

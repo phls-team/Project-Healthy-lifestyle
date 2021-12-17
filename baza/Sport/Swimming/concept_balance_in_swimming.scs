@@ -1,0 +1,55 @@
+concept_balance_in_swimming<-sc_node_not_relation;;
+
+concept_balance_in_swimming=>nrel_main_idtf:[балансир]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[balance_in_swimming]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_balance_in_swimming<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Балансир)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Балансир- тренажер, предназначенный для увеличения силы и улучшения техники поворота корпуса при гребке во время плавания вольным стилем и на спине.]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+	swimming;
+	concept_backstroke;
+	concept_freestyle
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_balance_in_swimming;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Балансир достаточно многофункционален – так, его можно использовать и при обучении брассу.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(балансир)](*<- lang_ru;;*);;
+  =>nrel_using_constants:{
+        concept_breaststroke
+        };;
+*);;
+
+concept_balance_in_swimming<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://photos//balance_in_swimming.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Пример балансира)](*<- lang_ru;;*);;
+*);;
+*);;

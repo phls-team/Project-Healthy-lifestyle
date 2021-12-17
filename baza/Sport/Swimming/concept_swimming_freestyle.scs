@@ -1,0 +1,53 @@
+concept_swimming_freestyle<-sc_node_not_relation;;
+
+concept_swimming_freestyle=>nrel_main_idtf:[вольный стиль]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[swimming_freestyle]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_swimming_freestyle<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Вольный стиль)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Вольный стиль- стиль плавания на груди, при движении которым пловец совершает широкие гребки вдоль тела попеременно правой и левой руками, и одновременно постоянно выполняет удары ногами в вертикальной плоскости (по принципу работы ножниц).]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_swimmer
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_swimming_freestyle;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[В противоположность брассу кроль является самым быстрым стилем.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Вольный стиль)](*<- lang_ru;;*);;
+  =>nrel_using_constants:{
+        concept_breaststroke
+        };;
+*);;
+
+concept_swimming_freestyle<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://photos//swimming_freestyle.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Пример вольного стиля)](*<- lang_ru;;*);;
+*);;
+*);;

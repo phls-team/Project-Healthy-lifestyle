@@ -1,0 +1,53 @@
+concept_swimming_speed<-sc_node_not_relation;;
+
+concept_swimming_speed=>nrel_main_idtf:[скорость плавания]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[swimming_speed]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_swimming_speed<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Скорость плавания)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Скорость плавания- время, затраченное пловцом на прохождение определенной дистанции.]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+       	concept_swimmer
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_swimming_speed;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Вольный стиль занимает первое место среди всех стилей по скорости плавания.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Скорость плавания)](*<- lang_ru;;*);;
+  =>nrel_using_constants:{
+	concept_freestyle
+        };;
+*);;
+
+concept_swimming_speed<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://photos//swimming_speed.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Скорость плавания)](*<- lang_ru;;*);;
+*);;
+*);;

@@ -1,0 +1,53 @@
+concept_swimming_drafting<-sc_node_not_relation;;
+
+concept_swimming_drafting=>nrel_main_idtf:[драфтинг в плавании]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[swimming_drafting]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_swimming_drafting<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Драфтинг в плавании)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Драфтинг в плавании — маневр, при котором вы плывете сразу за другим пловцом или рядом с ним, получая от этого определенное преимущество.]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_swimmer
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_swimming_drafting;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Если говорить об облегчении процесса дыхания в ходе драфтинга, то разумным может показаться дыхание на противоположной стороне от лидера, чтобы вдох приходился над спокойной водой.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Драфтинг в плавании)](*<- lang_ru;;*);;
+  =>nrel_using_constants:{
+	concept_breathing
+        };;
+*);;
+
+concept_swimming_drafting<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://photos//swimming_drafting.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Пример драфтинга в плавании)](*<- lang_ru;;*);;
+*);;
+*);;

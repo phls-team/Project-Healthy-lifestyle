@@ -1,0 +1,57 @@
+concept_medley_swimming<-sc_node_not_relation;;
+
+concept_medley_swimming=>nrel_main_idtf:[комплексное плавание]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[medley_swimming]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_medley_swimming<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Комплексное плавание)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Комплексное плавание — плавательная дисциплина, в ходе которой спортсмены поочерёдно плывут четырьмя разными стилями:вольным стилем, на спине, брассом и баттерфляем.]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_butterfly;
+	concept_breaststroke;
+	concept_backstroke;
+	concept_swimming_freestyle
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_medley_swimming;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Кроме индивидуального комплексного плавания существует также командная форма соревнований, которая носит название комбинированная эстафета.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(комплексное плавание)](*<- lang_ru;;*);;
+  =>nrel_using_constants:{
+        concept_competition;
+	concept_medley_relay
+        };;
+*);;
+
+concept_medley_swimming<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://photos//medley_swimming.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Пример стиля плавания "комплексное плавание")](*<- lang_ru;;*);;
+*);;
+*);;

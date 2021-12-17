@@ -1,0 +1,57 @@
+concept_breath_sounds_bilaterally<-sc_node_not_relation;;
+
+concept_breath_sounds_bilaterally=>nrel_main_idtf:[билатеральное дыхание]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[breath_sounds_bilaterally]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_breath_sounds_bilaterally<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Билатеральное дыхание)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Билатеральное дыхание означает дыхание в воде на обе стороны, при котором происходит если не поочередная, то хотя бы регулярная смена стороны для вдоха.]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_breathing
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_breath_sounds_bilaterally;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[При плавании вольным стилем дыхание может быть односторонним, то есть пловец каждый раз производит дыхание только вправо или влево, либо билатеральным, то есть вдохи совершаются на обе стороны.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(билатеральное дыхание)](*<- lang_ru;;*);;
+  =>nrel_using_constants:{
+        concept_swimming_freestyle;
+	concept_one_sided_breathing;
+	concept_breathing;
+	swimming;
+	concept_swimmer
+        };;
+*);;
+
+concept_breath_sounds_bilaterally<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://photos//breath_sounds_bilaterally.png"
+        (*
+                =>nrel_format:format_png;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Пример билатерального дыхания)](*<- lang_ru;;*);;
+*);;
+*);;

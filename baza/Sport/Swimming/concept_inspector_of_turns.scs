@@ -1,0 +1,53 @@
+concept_inspector_of_turns<-sc_node_not_relation;;
+
+concept_inspector_of_turns=>nrel_main_idtf:[судья на повороте]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[inspector_of_turns]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_inspector_of_turns<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Судья на повороте)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Судья на повороте – определяет правильность выполнения поворотов на отведенной ему дорожке на соревнованиях по плаванию.]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        swimming
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_inspector_of_turns;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Каждый судья на повороте на поворотном конце бассейна должен учитывать число отрезков, пройденных участником по его дорожке, и показывать ему специальные цифровые таблички, обозначающие количество оставшихся до финиша длин бассейна в заплывах на дистанциях 800 и 1500 м вольным стилем.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Судья на повороте)](*<- lang_ru;;*);;
+  =>nrel_using_constants:{
+	concept_freestyle
+        };;
+*);;
+
+concept_inspector_of_turns<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://photos//inspector_of_turns.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Пример судьи на повороте)](*<- lang_ru;;*);;
+*);;
+*);;

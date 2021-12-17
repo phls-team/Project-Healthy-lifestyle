@@ -1,0 +1,53 @@
+concept_parachute_for_swimming<-sc_node_not_relation;;
+
+concept_parachute_for_swimming=>nrel_main_idtf:[парашют]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[parachute_for_swimming]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_overarm_stroke<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Парашют)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Парашют-тренажер для создания повышенного сопротивления во время плавания.]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+	swimming
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_parachute_for_swimming;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Парашют для плавания- один из самых эффективных тренажеров для развития мощности гребка и повышения силовой выносливости пловца.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(парашют)](*<- lang_ru;;*);;
+  =>nrel_using_constants:{
+	concept_swimmer
+        };;
+*);;
+
+concept_parachute_for_swimming<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://photos//parachute_for_swimming.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Парашют)](*<- lang_ru;;*);;
+*);;
+*);;

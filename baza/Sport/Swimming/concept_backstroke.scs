@@ -1,0 +1,54 @@
+concept_backstroke<-sc_node_not_relation;;
+
+concept_backstroke=>nrel_main_idtf:[плавание на спине]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[backstroke]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_backstroke<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Плавание на спине)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Плавание на спине-стиль плавания, который визуально похож на вольный стиль, но имеет следующие отличия: человек плывет на спине, а не на животе, и пронос над водой выполняется прямой рукой, а не согнутой, как в вольном стиле.]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+       	concept_swimming_freestyle;
+	concept_stomach
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_backstroke;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Плавание на спине укрепляет мышцы позвоночника.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Плавание на спине)](*<- lang_ru;;*);;
+  =>nrel_using_constants:{
+        muscle
+        };;
+*);;
+
+concept_backstroke<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://photos//backstroke.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Пример стиля плавания "плавание на спине")](*<- lang_ru;;*);;
+*);;
+*);;

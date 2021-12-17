@@ -1,0 +1,53 @@
+concept_swimming_starter<-sc_node_not_relation;;
+
+concept_swimming_starter=>nrel_main_idtf:[стартер]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[swimming_starter]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_swimming_starter<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Стартер)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Стартер – вызывает пловцов на старт, проверяет правильность занятых стартовых позиций и дает команду на старт.]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_swimmer
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_swimming_starter;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Когда пловцы и судьи будут готовы к старту, рефери, жестом вытянутой к стартеру руки, должен показать, что пловцы теперь находятся под его контролем.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Стартер)](*<- lang_ru;;*);;
+  =>nrel_using_constants:{
+	concept_swimmer
+        };;
+*);;
+
+concept_swimming_starter<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://photos//swimming_starter.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Пример стартера)](*<- lang_ru;;*);;
+*);;
+*);;
