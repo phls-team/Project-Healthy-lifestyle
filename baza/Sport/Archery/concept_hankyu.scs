@@ -1,0 +1,53 @@
+concept_hankyu<-sc_node_not_relation;;
+
+concept_hankyu=>nrel_main_idtf:[ханкю]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[yumi]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_hankyu<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Ханкю)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Ханкю — японский лук небольшого размера. ]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_bow
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_hankyu ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Небольшой размер лука ханкю обеспечивает удобство ношения и быстроту маневра в боевой ситуации. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Ханкю)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+	concept_bow
+        };;
+*);;
+
+concept_hankyu<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Photos//hankyu.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Ханкю)](*<- lang_ru;;*);;
+*);;
+*);;

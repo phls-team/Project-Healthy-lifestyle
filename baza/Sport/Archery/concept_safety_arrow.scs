@@ -1,0 +1,54 @@
+concept_safety_arrow<-sc_node_not_relation;;
+
+concept_safety_arrow=>nrel_main_idtf:[стрела безопасности]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[safety arrow]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_safety_arrow<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Стрела безопасности)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Стрела безопасности - стрела с широким наконечником или с мягкой головкой, часто используется для реконструкции. ]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_arrow;
+	concept_arrowhead
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_safety_arrow ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Вероятно, самая важная часть безопасной стрелы - это ее наконечник. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Стрела безопасности)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+        concept_arrowhead
+        };;
+*);;
+
+concept_safety_arrow<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Photos//safety_arrow.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Пример стрелы безопасности.)](*<- lang_ru;;*);;
+*);;
+*);;

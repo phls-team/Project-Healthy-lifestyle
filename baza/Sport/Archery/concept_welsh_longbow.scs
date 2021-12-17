@@ -1,0 +1,55 @@
+concept_welsh_longbow<-sc_node_not_relation;;
+
+concept_welsh_longbow=>nrel_main_idtf:[валлийский длинный лук]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[welsh_longbow]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_welsh_longbow<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Валлийский длинный лук)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[ Валлийский длинный лук - лук в рост человека или выше, распространённый в средневековой Англии.  ]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_bow
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_welsh_longbow ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[ Изготовлением валлийских луков, тетивы и стрел занимались специальные мастера, которые освобождались от уплаты налогов и даже от налоговых обязательств ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Валлийский длинный лук)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+	concept_bow_string;
+	concept_arrow;
+	concept_bowyer
+        };;
+*);;
+
+concept_welsh_longbow<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Photos/welsh_longbow.png"
+        (*
+                =>nrel_format:format_png;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Валлийский длинный лук)](*<- lang_ru;;*);;
+*);;
+*);;

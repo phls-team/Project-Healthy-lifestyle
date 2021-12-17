@@ -1,0 +1,55 @@
+concept_quiver<-sc_node_not_relation;;
+
+concept_quiver=>nrel_main_idtf:[колчан]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[quiver]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_quiver<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Колчан)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Колчан - контейнер для снарядов лучника (стрелы). ]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_arrow;
+	concept_archer
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_quiver ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Исходно русский термин колчан означал цилиндрический футляр для стрел, который носился у пояса и был частью снаряжения пешего лучника. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Колчан)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+        concept_arrow;
+	concept_archer
+        };;
+*);;
+
+concept_quiver<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Photos//quiver.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Колчан.)](*<- lang_ru;;*);;
+*);;
+*);;

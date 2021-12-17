@@ -1,0 +1,54 @@
+concept_archery<-sc_node_not_relation;;
+
+concept_archery=>nrel_main_idtf:[стрельба из лука]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[archery]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_archery<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Стрельба из лука)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[ Стрельба из лука — искусство или практическое умение по стрельбе в цель с использованием лука и стрел. ]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_bow;
+	concept_arrow
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_archery ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Искусство стрельбы из лука возникло в эпоху позднего палеолита либо раннего мезолита. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Стрельба из лука)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+	concept_bow
+        };;
+*);;
+
+concept_archery<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Photos//archery.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Стрельба из лука)](*<- lang_ru;;*);;
+*);;
+*);;

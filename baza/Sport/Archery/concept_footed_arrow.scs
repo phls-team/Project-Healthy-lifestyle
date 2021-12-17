@@ -1,0 +1,55 @@
+concept_footed_arrow<-sc_node_not_relation;;
+
+concept_footed_arrow=>nrel_main_idtf:[стрела с опорой]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[footed arrow]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_footed_arrow<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Стрела с опорой)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Стрела с опорой - стрела с древком, состоящим из двух пород дерева. ]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_arrow;
+	concept_shaftment
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_footed_arrow ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Стрелы с опорой обычно состоят из короткого отрезка твердой древесины возле наконечника стрелы, а остальная часть древка состоит из мягкой древесины. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Стрела с опорой)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+        concept_arrowhead;
+	concept_shaftment
+        };;
+*);;
+
+concept_footed_arrow<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Photos//footed_arrow.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Пример стрелы с опорой.)](*<- lang_ru;;*);;
+*);;
+*);;

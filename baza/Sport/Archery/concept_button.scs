@@ -1,0 +1,55 @@
+concept_button<-sc_node_not_relation;;
+
+concept_button=>nrel_main_idtf:[кнопка]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[button]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_button<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Кнопка)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Кнопка - регулируемый подпружиненный контакт для стрелы, установленной перпендикулярно самой стреле на упоре. ]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_arrow;
+	concept_arrow_rest
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_button ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[ Кнопка помогает центрировать стрелу, а затем стабилизирует полет стрелы при вылете из лука. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Кнопка)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+        concept_arrow;
+	concept_bow
+        };;
+*);;
+
+concept_button<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Photos//button.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Кнопка)](*<- lang_ru;;*);;
+*);;
+*);;

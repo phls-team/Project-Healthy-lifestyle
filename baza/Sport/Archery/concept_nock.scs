@@ -1,0 +1,53 @@
+concept_nock<-sc_node_not_relation;;
+
+concept_nock=>nrel_main_idtf:[нок]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[nock]
+        (*
+                <-lang_en;;
+        *);;
+concept_nock<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Нок)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Нок - насечка на заднем конце стрелы. ]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_arrow
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_nock ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[ В то же время термином нок называют выемки на концах луков, к которым прикреплена тетива или петля. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Нок)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+        concept_bow;
+	concept_bow_string	
+        };;
+*);;
+
+concept_nock<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Photos//nock.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Нок.)](*<- lang_ru;;*);;
+*);;
+*);;

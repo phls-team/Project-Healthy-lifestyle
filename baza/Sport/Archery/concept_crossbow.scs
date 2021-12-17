@@ -1,0 +1,58 @@
+concept_crossbow<-sc_node_not_relation;;
+
+concept_crossbow=>nrel_main_idtf:[арбалет]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[crossbow]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_crossbow<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Арбалет)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Арбалет - лук, установленный на прикладе, который стреляет снарядами, называемыми болтами или ссорами. ]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_bow;
+	concept_bolt
+        };;
+     *);;
+*);;
+
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_crossbow ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Арбалет, как правило, превосходил обычный лук по точности стрельбы и убойной силе, но, за редким исключением, он сильно проигрывал луку по скорострельности и дальности стрельбы в связи с утяжеленным процессом натяжения тетивы для возведения болта.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Арбалет)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+        concept_bow;
+ 	concept_bow_string;
+        concept_bolt
+        };;
+*);;
+
+
+concept_crossbow<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Photos//crossbow.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Арбалет.)](*<- lang_ru;;*);;
+*);;
+*);;

@@ -1,0 +1,54 @@
+concept_flu_flu_arrow<-sc_node_not_relation;;
+
+concept_flu_flu_arrow=>nrel_main_idtf:[стрела флу флу]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[flu flu arrow]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_flu_flu_arrow<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Стрела флу флу)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Стрела флу флу - специально разработанная стрела ближнего действия. ]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_arrow
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_flu_flu_arrow ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Особенностью этих стрел является их сравнительно небольшая дальность полета, что делает отличным вариантом для стрельбы по движущимся в воздухе мишеням ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Стрела флу флу)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+        concept_arrow;
+	concept_archery_target
+        };;
+*);;
+
+concept_flu_flu_arrow<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Photos//flu_flu_arrow.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Пример стрелы флу флу.)](*<- lang_ru;;*);;
+*);;
+*);;

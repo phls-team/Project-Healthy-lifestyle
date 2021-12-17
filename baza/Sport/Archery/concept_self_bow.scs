@@ -1,0 +1,50 @@
+concept_self_bow<-sc_node_not_relation;;
+
+concept_self_bow=>nrel_main_idtf:[self bow]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_self_bow<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Self bow)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[ Self bow - лук, сделанный из цельного куска материала (обычно дерева). ]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_bow
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_self_bow ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Хорошо продуманные self bow с большой натяжкой дают более высокую скорость стрелы, а сам лук короче. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Self bow)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+	concept_bow;
+	concept_arrow
+        };;
+*);;
+
+concept_self_bow<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Photos//self_bow.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Self bow)](*<- lang_ru;;*);;
+*);;
+*);;

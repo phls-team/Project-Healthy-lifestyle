@@ -1,0 +1,54 @@
+concept_shaftment<-sc_node_not_relation;;
+
+concept_shaftment=>nrel_main_idtf:[древко]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[shaftment]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_shaftment<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Древко)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Древко - часть стрелы, на которой лежит оперение. ]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_arrow;
+	concept_vane
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_shaftment ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Древко современной стрелы изготавливают в виде трубки. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Древко)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+        concept_arrow
+        };;
+*);;
+
+concept_shaftment<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Photos//shaftment.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Древко)](*<- lang_ru;;*);;
+*);;
+*);;

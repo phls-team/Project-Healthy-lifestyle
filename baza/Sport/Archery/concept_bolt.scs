@@ -1,0 +1,54 @@
+concept_bolt<-sc_node_not_relation;;
+
+concept_bolt=>nrel_main_idtf:[болт]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[bolt]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_bolt<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Болт)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Болт - арбалетный снаряд; также называется ссорой. ]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_crossbow
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_bolt ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Иногда болты имели стабилизаторы, но выреза для тетивы на торце обычно не было. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Болт)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+        concept_stabiliser;
+	concept_bos_string
+        };;
+*);;
+
+concept_bolt<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Photos//bolt.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Пример арбалетного болта.)](*<- lang_ru;;*);;
+*);;
+*);;

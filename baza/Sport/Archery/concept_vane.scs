@@ -1,0 +1,55 @@
+concept_vane<-sc_node_not_relation;;
+
+concept_vane=>nrel_main_idtf:[оперение]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[vane]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_vane<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Оперение)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Оперение - стабилизирующий плавник стрелы или арбалетного болта. ]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_arrow;
+	concept_bolt
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_vane ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Именно правильное оперение гарантирует устойчивость стрелы во время полёта и кучность попадания в мишень, от чего напрямую зависит результат стрельбы. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Оперение)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+        concept_arrow;
+	concept_archery_target
+        };;
+*);;
+
+concept_vane<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Photos//vane.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Оперение)](*<- lang_ru;;*);;
+*);;
+*);;

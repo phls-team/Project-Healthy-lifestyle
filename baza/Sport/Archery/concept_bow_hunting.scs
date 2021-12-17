@@ -1,0 +1,53 @@
+concept_bow_hunting<-sc_node_not_relation;;
+
+concept_bow_hunting=>nrel_main_idtf:[охота с луком]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[bow hunting]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_bow_hunting<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Охота с луком)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[ Охота с луком - практика охоты с использованием стрельбы из лука. ]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_archery
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_bow_hunting ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[ Многие коренные народы использовали эту технику в качестве основного метода охоты на протяжении тысячелетий, и она дошла до современного использования в спорте и охоте. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Охота с луком)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+	concept_sport
+        };;
+*);;
+
+concept_bow_hunting<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Photos//bow_hunting.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Охота с луком)](*<- lang_ru;;*);;
+*);;
+*);;

@@ -1,0 +1,54 @@
+concept_finger_tab<-sc_node_not_relation;;
+
+concept_finger_tab=>nrel_main_idtf:[вкладка]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[finger_tab]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_finger_tab<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Вкладка)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Вкладка - это небольшая кожаная или синтетическая нашивка, которая защищает пальцы лучника от тетивы. ]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_archer;
+	concept_bow_string
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_finger_tab ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Обычно вкладка привязана ремнем к руке лучника.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Вкладка)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+        concept_archer
+        };;
+*);;
+
+concept_finger_tab<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Photos//finger_tab.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Вкладка)](*<- lang_ru;;*);;
+*);;
+*);;

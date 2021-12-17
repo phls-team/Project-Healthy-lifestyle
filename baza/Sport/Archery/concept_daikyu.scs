@@ -1,0 +1,53 @@
+concept_daikyu<-sc_node_not_relation;;
+
+concept_daikyu=>nrel_main_idtf:[дайкю]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[daikyu]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_daikyu<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Дайкю)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[ Дайкю - японский длинный лук. ]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_bow
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_daikyu ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Дайкю требует силы для натягивания тетивы, но взамен предоставляет повышенную мощь и радиус стрельбы каждого выстрела. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Дайкю)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+	concept_bow_string
+        };;
+*);;
+
+concept_daikyu<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Photos//daikyu.png"
+        (*
+                =>nrel_format:format_png;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Дайкю)](*<- lang_ru;;*);;
+*);;
+*);;

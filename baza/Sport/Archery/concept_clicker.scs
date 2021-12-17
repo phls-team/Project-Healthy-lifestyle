@@ -1,0 +1,57 @@
+concept_clicker<-sc_node_not_relation;;
+
+concept_clicker=>nrel_main_idtf:[кликер]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[clicker]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_clicker<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Кликер)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Кликер - устройство, используемое для указания оптимальной длины натяжения лучника. ]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_archer;
+	concept_draw_length
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_clicker ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Когда лучник оттягивает стрелу, кликер падает с острия стрелы и щелкает при ударе по упору стрелы. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Кликер)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+        concept_archer;
+	concept_arrow;
+	concept_arrowhead;
+	concept_arrow_rest
+        };;
+*);;
+
+concept_clicker<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Photos//clicker.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Кликер)](*<- lang_ru;;*);;
+*);;
+*);;

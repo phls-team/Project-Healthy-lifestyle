@@ -1,0 +1,53 @@
+concept_thumb_ring<-sc_node_not_relation;;
+
+concept_thumb_ring=>nrel_main_idtf:[кольцо большого пальца]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[thumb_ring]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_thumb_ring<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Кольцо большого пальца)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Кольцо большого пальца - защитное кольцо для большого пальца лучника. ]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_archer
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_thumb_ring ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Обычно от кольца большого пальца выступает плоская поверхность, чтобы защитить подушечку пальца от тетивы. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Кольцо большого пальца)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+        concept_bow_string
+        };;
+*);;
+
+concept_thumb_ring<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Photos//thumb_ring.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Кольцо большого пальца)](*<- lang_ru;;*);;
+*);;
+*);;
