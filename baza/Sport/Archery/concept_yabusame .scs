@@ -1,0 +1,57 @@
+concept_yabusame<-sc_node_not_relation;;
+concept_yabusame<=nrel_inclusion:concept_activity;;
+concept_kyudo<=nrel_inclusion:concept_sport;;
+concept_yabusame<=nrel_inclusion:concept_archery;;
+
+concept_yabusame=>nrel_main_idtf:[ябусамэ]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[yabusame]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_yabusame<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Ябусамэ)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[ Ябусамэ — японское искусство конной стрельбы из лука, наиболее популярное в Камакуре. ]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_archery
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_yabusame ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[ Искусство стрельбы из лука Ябусамэ использовалось не только на войне, но и также являлось частым состязанием во время профессиональных соревнований среди самураев. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Охота с луком)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+	concept_competition;
+	concept_archery
+        };;
+*);;
+
+concept_yabusame<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Photos//yabusame.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Ябусамэ)](*<- lang_ru;;*);;
+*);;
+*);;

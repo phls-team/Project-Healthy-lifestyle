@@ -1,4 +1,5 @@
 concept_thumb_ring<-sc_node_not_relation;;
+concept_thumb_ring<=nrel_inclusion:concept_sport_equipment;;
 
 concept_thumb_ring=>nrel_main_idtf:[кольцо большого пальца]
         (*

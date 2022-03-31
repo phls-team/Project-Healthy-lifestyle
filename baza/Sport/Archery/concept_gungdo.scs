@@ -1,0 +1,48 @@
+concept_gungdo<-sc_node_not_relation;;
+concept_gungdo<=nrel_inclusion:concept_activity;;
+concept_gungdo<=nrel_inclusion:concept_sport;;
+concept_gungdo<=nrel_inclusion:concept_archery;;
+
+concept_gungdo=>nrel_main_idtf:[гюнгдо]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[gungdo]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_gungdo<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Гюнгдо)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Гюнгдо - корейская практика стрельбы из лука.]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_archery;
+        concept_bow
+        };;
+     *);;
+*);;
+
+
+concept_gungdo<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Photos//gungdo.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Гюнгдо)](*<- lang_ru;;*);;
+*);;
+*);;

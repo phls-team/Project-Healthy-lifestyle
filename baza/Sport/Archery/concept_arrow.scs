@@ -1,4 +1,20 @@
 concept_arrow<-sc_node_not_relation;;
+concept_arrow<=nrel_inclusion:concept_sport_equipment;;
+
+concept_arrow=>nrel_inclusion:{
+        concept_arrowhead;
+	concept_arrow_rest;
+	concept_nock;
+	concept_shaftment;
+	concept_crest;
+	concept_vane
+};;
+concept_arrow=>nrel_species:{
+        concept_bolt;
+	concept_flu_flu_arrow;
+	concept_footed_arrow;
+	concept_safety_arrow
+};;
 
 concept_arrow=>nrel_main_idtf:[стрела]
         (*

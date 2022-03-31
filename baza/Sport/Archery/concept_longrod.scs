@@ -1,6 +1,7 @@
 concept_longrod<-sc_node_not_relation;;
+concept_longrod<=nrel_inclusion:concept_sport_equipment;;
 
-concept_longrodw=>nrel_main_idtf:[лонгрод]
+concept_longrod=>nrel_main_idtf:[лонгрод]
         (*
                 <-lang_ru;;
         *);

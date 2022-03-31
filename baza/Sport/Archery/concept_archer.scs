@@ -1,4 +1,6 @@
 concept_archer<-sc_node_not_relation;;
+concept_archer<-concept_human;;
+concept_archer<= nrel_participant: concept_archery;;
 
 concept_archer=>nrel_main_idtf:[лучник]
         (*

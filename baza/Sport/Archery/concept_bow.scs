@@ -1,4 +1,23 @@
 concept_bow<-sc_node_not_relation;;
+concept_bow<=nrel_inclusion:concept_sport_equipment;;
+
+concept_bow=>nrel_inclusion:{
+        concept_bow_rest;
+	concept_bow_string;
+	concept_longrod;
+	concept_stabiliser
+};;
+concept_bow=>nrel_species:{
+        concept_compound_bow;
+	concept_crossbow;
+	concept_daikyu;
+	concept_flatbow;
+	concept_hankyu;
+	concept_composite_bow;
+	concept_self_bow;
+	concept_welsh_longbow;
+	concept_yumi
+};;
 
 concept_bow=>nrel_main_idtf:[лук]
         (*

@@ -1,4 +1,5 @@
 concept_welsh_longbow<-sc_node_not_relation;;
+concept_welsh_longbow<=nrel_inclusion:concept_sport_equipment;;
 
 concept_welsh_longbow=>nrel_main_idtf:[валлийский длинный лук]
         (*

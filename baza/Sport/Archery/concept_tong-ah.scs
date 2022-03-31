@@ -1,4 +1,5 @@
 concept_tong_ah<-sc_node_not_relation;;
+concept_tong_ah<=nrel_inclusion:concept_sport_equipment;;
 
 concept_tong_ah=>nrel_main_idtf:[тонга]
         (*

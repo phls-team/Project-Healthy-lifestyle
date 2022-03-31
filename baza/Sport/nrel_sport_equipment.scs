@@ -1,0 +1,48 @@
+nrel_sport_equipment
+<-sc_node_norole_relation;
+=>nrel_main_idtf:
+[sport equipment](*<-lang_en;;*);
+[спортивный инвентарь*](*<-lang_ru;;*);
+
+<-rrel_key_sc_element:...(*
+<-definition;;
+
+=>nrel_main_idtf:
+[Опр.(спортивный инвентарь)](*<-lang_ru;;*);;
+=>nrel_using_constants:{
+concept_sport;
+concept_sport_equipment;
+concept_competition;
+concept_sports_rules
+
+};;
+<=nrel_sc_text_translation:...(*
+->rrel_example:[Спортивный инвентарь - термин, обобщающий использование различных спортивных снарядов, приспособлений, устройств, механических и электронных средств, использование которых предусмотрено правилами соревнований по отдельным видам спорта.](* <- lang_ru;; => nrel_format: format_html;;*);;
+*);;
+*);
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:[Утв.(спортивный инвентарь)](*<-lang_ru;;*);;
+=>nrel_using_constants:{
+concept_sport_equipment;
+concept_physical_qualities_of_person;
+
+};;
+<=nrel_sc_text_translation:...(*
+->rrel_example:[Спортивная индустрия при производстве спортивного инвентаря широко использует новейшие достижения научно-технического прогресса, благодаря которому может возникнуть ситуация, когда спортсмен побеждает не благодаря своим физическим и интеллектуальным способностям или возможностям, а благодаря тому, что у него есть инвентарь, которого нет у соперников.](* <- lang_ru;; => nrel_format: format_html;;*);;
+*);;
+*);
+
+=>nrel_definitional_domain:..(*
+<=nrel_combination:{ concept_sport(*<=nrel_first_domain:nrel_sport_equipment;;*);
+ concept_sport_equipment(*<=nrel_second_domain:nrel_sport_equipment;;*)
+};;
+*);;
+nrel_participant<-antisymmetric_relation(*<=nrel_inclusion:binary_relation(*<=nrel_inclusion:relation;;*);;*);;
+nrel_participant<-antitransitive_relation(*<=nrel_inclusion:binary_relation;;*);;
+nrel_participant<-antireflexive_relation(*<=nrel_inclusion:binary_relation;;*);;
+nrel_participant<-oriented_relation(*<=nrel_inclusion:relation;;*);; 
+
+arity->...(*=>nrel_measurement:2(*<-number;;*);;
+->nrel_sport_equipment;;
+*);;

@@ -1,0 +1,57 @@
+concept_kyudo<-sc_node_not_relation;;
+concept_kyudo<=nrel_inclusion:concept_activity;;
+concept_kyudo<=nrel_inclusion:concept_sport;;
+concept_kyudo<=nrel_inclusion:concept_archery;;
+
+concept_kyudo=>nrel_main_idtf:[кюдо]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[kyudo]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_kyudo<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Кюдо)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[ Кюдо — японское искусство стрельбы из лука. ]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_archery
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_kyudo ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[ Кюдо может практиковаться как традиционный ритуал, как спортивная дисциплина, и как боевое искусство для самореализации с тренировкой правильности выполнения техники и красоты исполнения выстрела, как основной целью. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Кюдо)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+	concept_sport;
+	concept_training
+        };;
+*);;
+
+concept_kyudo<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Photos//kyudo.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Кюдо)](*<- lang_ru;;*);;
+*);;
+*);;

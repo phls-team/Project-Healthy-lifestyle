@@ -1,0 +1,45 @@
+nrel_additional_equipment
+<-sc_node_norole_relation;
+=>nrel_main_idtf:
+[additional equipment](*<-lang_en;;*);
+[дополнительный инвентарь*](*<-lang_ru;;*);
+
+<-rrel_key_sc_element:...(*
+<-definition;;
+
+=>nrel_main_idtf:
+[Опр.(дополнительный инвентарь)](*<-lang_ru;;*);;
+=>nrel_using_constants:{
+concept_sport_equipment
+
+};;
+<=nrel_sc_text_translation:...(*
+->rrel_example:[Дополнительный инвентарь - набор оборудования и спортивного снаряжения узкоспециального назначения. ](* <- lang_ru;; => nrel_format: format_html;;*);;
+*);;
+*);
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:[Утв.(дополнительный инвентарь)](*<-lang_ru;;*);;
+=>nrel_using_constants:{
+concept_sport_equipment;
+concept_training;
+concept_competition
+};;
+<=nrel_sc_text_translation:...(*
+->rrel_example:[Дополнительное оборудование не является обязательным, но зачастую рекомендуется к использованию в течение тренировок и соревнований, проходящих на профессионально уровне. ](* <- lang_ru;; => nrel_format: format_html;;*);;
+*);;
+*);
+
+=>nrel_definitional_domain:..(*
+<=nrel_combination:{ concept_sport(*<=nrel_first_domain:nrel_additional_equipment;;*);
+ concept_sport_equipment(*<=nrel_second_domain:nrel_additional_equipment;;*)
+};;
+*);;
+nrel_participant<-antisymmetric_relation(*<=nrel_inclusion:binary_relation(*<=nrel_inclusion:relation;;*);;*);;
+nrel_participant<-antitransitive_relation(*<=nrel_inclusion:binary_relation;;*);;
+nrel_participant<-antireflexive_relation(*<=nrel_inclusion:binary_relation;;*);;
+nrel_participant<-oriented_relation(*<=nrel_inclusion:relation;;*);; 
+
+arity->...(*=>nrel_measurement:2(*<-number;;*);;
+->nrel_additional_equipment;;
+*);;
