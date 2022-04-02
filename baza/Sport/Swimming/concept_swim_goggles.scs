@@ -1,4 +1,6 @@
 concept_swim_goggles<-sc_node_not_relation;;
+concept_swim_goggles<=nrel_inclusion: concept_personal_equipment;;
+
 
 concept_swim_goggles=>nrel_main_idtf:[очки для плавания]
         (*

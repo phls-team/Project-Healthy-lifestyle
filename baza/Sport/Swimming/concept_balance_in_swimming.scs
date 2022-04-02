@@ -1,4 +1,6 @@
 concept_balance_in_swimming<-sc_node_not_relation;;
+concept_balance_in_swimming<=nrel_inclusion: concept_sport_equipment;;
+concept_balance_in_swimming<=nrel_sport_equipment: concept_swimming;;
 
 concept_balance_in_swimming=>nrel_main_idtf:[балансир]
         (*

@@ -1,4 +1,5 @@
 concept_butterfly<-sc_node_not_relation;;
+concept_butterfly<=nrel_inclusion: concept_swimming_styles;;
 
 concept_butterfly=>nrel_main_idtf:[баттерфляй]
         (*

@@ -1,6 +1,5 @@
 concept_gungdo<-sc_node_not_relation;;
 concept_gungdo<=nrel_inclusion:concept_activity;;
-concept_gungdo<=nrel_inclusion:concept_sport;;
 concept_gungdo<=nrel_inclusion:concept_archery;;
 
 concept_gungdo=>nrel_main_idtf:[гюнгдо]

@@ -1,4 +1,6 @@
 concept_swim_cap<-sc_node_not_relation;;
+concept_swim_cap<=nrel_inclusion: concept_personal_equipment;;
+
 
 concept_swim_cap=>nrel_main_idtf:[шапочка для плавания]
         (*

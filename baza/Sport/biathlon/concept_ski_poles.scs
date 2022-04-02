@@ -1,6 +1,6 @@
 concept_ski_poles
 <-sc_node_not_relation;
-<-concept_sport_equipment;
+<=nrel_inclusion: concept_sport_equipment;
 =>nrel_main_idtf:
 [ski poles](*<-lang_en;;*);
 [лыжные палки](*<-lang_ru;;*);

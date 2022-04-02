@@ -1,4 +1,6 @@
 concept_swimmer<-sc_node_not_relation;;
+concept_swimmer<-concept_human;;
+concept_swimmer<=nrel_participant:concept_swimming;;
 
 concept_swimmer=>nrel_main_idtf:[пловец]
         (*

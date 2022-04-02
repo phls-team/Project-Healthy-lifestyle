@@ -1,4 +1,5 @@
 concept_dry_swimming<-sc_node_not_relation;;
+concept_dry_swimming<-concept_activity;;
 
 concept_dry_swimming=>nrel_main_idtf:[сухое плавание]
         (*
@@ -40,7 +41,7 @@ statement ->...
         };;
 *);;
 
-concept_dry_swimming<-rrel_key_sc_element:...
+concept_swimming_speed<-rrel_key_sc_element:...
         (*
                 <-illustration;;
                 <=nrel_sc_text_translation:...

@@ -1,4 +1,6 @@
 concept_swimming_flippers<-sc_node_not_relation;;
+concept_swimming_flippers<=nrel_inclusion: concept_sport_equipment;;
+concept_swimming_flippers<=nrel_sport_equipment: concept_swimming;;
 
 concept_swimming_flippers=>nrel_main_idtf:[ласты для плавания]
         (*

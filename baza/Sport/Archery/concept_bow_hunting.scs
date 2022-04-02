@@ -1,7 +1,19 @@
 concept_bow_hunting<-sc_node_not_relation;;
 concept_bow_hunting<=nrel_inclusion:concept_activity;;
 concept_bow_hunting<=nrel_inclusion:concept_sport;;
-concept_bow_hunting<=nrel_inclusion:concept_archery;;
+concept_bow_hunting<=nrel_archery_practice:concept_archery;;
+
+concept_bow_hunting=>nrel_sport_equipment:{
+concept_arrow;
+concept_bow;
+concept_quiver;
+concept_archery_poison
+};;
+concept_bow_hunting=>nrel_additional_equipment:{
+concept_finger_tab;
+concept_thumb_ring
+};;
+
 
 concept_bow_hunting=>nrel_main_idtf:[охота с луком]
         (*

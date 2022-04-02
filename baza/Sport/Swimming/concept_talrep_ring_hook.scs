@@ -1,4 +1,6 @@
 concept_talrep_ring_hook<-sc_node_not_relation;;
+concept_talrep_ring_hook<=nrel_inclusion: concept_sport_equipment;;
+concept_talrep_ring_hook<=nrel_sport_equipment: concept_swimming;;
 
 concept_talrep_ring_hook=>nrel_main_idtf:[талреп крюк-кольцо]
         (*

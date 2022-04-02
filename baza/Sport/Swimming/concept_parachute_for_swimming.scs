@@ -1,4 +1,6 @@
 concept_parachute_for_swimming<-sc_node_not_relation;;
+concept_parachute_for_swimming<=nrel_inclusion: concept_sport_equipment;;
+concept_parachute_for_swimming<=nrel_sport_equipment: concept_swimming;;
 
 concept_parachute_for_swimming=>nrel_main_idtf:[парашют]
         (*

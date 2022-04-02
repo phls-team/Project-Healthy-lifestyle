@@ -1,5 +1,4 @@
-concept_wave_damper<-sc_node_not_relation;;
-
+concept_wave_damper<=nrel_inclusion: concept_sport_equipment;;
 concept_wave_damper=>nrel_main_idtf:[волногаситель]
         (*
                 <-lang_ru;;

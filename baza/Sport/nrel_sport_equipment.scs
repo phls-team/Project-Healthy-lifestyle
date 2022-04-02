@@ -25,8 +25,7 @@ concept_sports_rules
 =>nrel_main_idtf:[Утв.(спортивный инвентарь)](*<-lang_ru;;*);;
 =>nrel_using_constants:{
 concept_sport_equipment;
-concept_physical_qualities_of_person;
-
+concept_physical_qualities_of_person
 };;
 <=nrel_sc_text_translation:...(*
 ->rrel_example:[Спортивная индустрия при производстве спортивного инвентаря широко использует новейшие достижения научно-технического прогресса, благодаря которому может возникнуть ситуация, когда спортсмен побеждает не благодаря своим физическим и интеллектуальным способностям или возможностям, а благодаря тому, что у него есть инвентарь, которого нет у соперников.](* <- lang_ru;; => nrel_format: format_html;;*);;

@@ -1,0 +1,59 @@
+concept_swimming_styles<-sc_node_not_relation;;
+
+concept_swimming_styles=>nrel_main_idtf:[стили плавания]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[swimming_styles]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_swimming_styles<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Стили плавания)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Стили плавания – различные способы преодоления дистанции пловцом в бассейне.]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_swimmer;
+	concept_swimming
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_swimming_styles;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Основными установленными стилями плавания являются следующие: вольный стиль, баттерфляй, брасс, кроль на спине.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(стили плавания)](*<- lang_ru;;*);;
+  =>nrel_using_constants:{
+	concept_swimming;
+	concept_backstroke;
+	concept_swimming_freestyle;
+	concept_medley_swimming;
+	concept_breaststroke;
+	concept_butterfly
+        };;
+*);;
+
+concept_swimming_styles<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://photos//medley_swimming.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Пример стилей плавания)](*<- lang_ru;;*);;
+*);;
+*);;

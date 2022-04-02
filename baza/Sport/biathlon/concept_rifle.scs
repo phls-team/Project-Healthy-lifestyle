@@ -45,7 +45,7 @@ concept_rifle
 
 concept_stort_rifle
 <-sc_node_not_relation;
-<-concept_sport_equipment;
+<=nrel_inclusion: concept_sport_equipment;
 =>nrel_main_idtf:
 [sport rifle](*<-lang_en;;*);
 [спортивная винтовка](*<-lang_ru;;*);;

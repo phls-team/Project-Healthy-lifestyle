@@ -1,6 +1,5 @@
 concept_kyudo<-sc_node_not_relation;;
 concept_kyudo<=nrel_inclusion:concept_activity;;
-concept_kyudo<=nrel_inclusion:concept_sport;;
 concept_kyudo<=nrel_inclusion:concept_archery;;
 
 concept_kyudo=>nrel_main_idtf:[кюдо]

@@ -2,6 +2,23 @@ concept_archery<-sc_node_not_relation;;
 concept_archery<=nrel_inclusion:concept_sport;;
 concept_archery<=nrel_inclusion:concept_activity;;
 
+concept_archery=>nrel_sport_equipment:{
+concept_arrow;
+concept_bow;
+concept_arm_guard;
+concept_button;
+concept_quiver
+};;
+concept_archery=>nrel_additional_equipment:{
+concept_archery_boss;
+concept_clicker;
+concept_majra;
+concept_finger_tab;
+concept_archery_target;
+concept_thumb_ring;
+concept_tong_ah
+};;
+
 concept_archery=>nrel_main_idtf:[стрельба из лука]
         (*
                 <-lang_ru;;
