@@ -1,0 +1,43 @@
+concept_wings
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [wings](*<-lang_en;;*);
+          ["крылья"](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.("крылья")] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[На вдохе поднимите прямые руки перед собой. Продолжая вдох, раздвиньте руки в стороны. 
+            Заканчивая вдох, поднимите руки над головой, ладони смотрят вперёд.
+            На выдохе сделайте наклон, руки заведите за <b><sc_element sys_idtf="concept_back_warm_up">спину</sc_element><b> и поднимите. Голова поднята, взгляд направлен вперёд.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<=nrel_species:concept_health_stretch;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.("крылья")] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Укрепляет <b><sc_element sys_idtf="concept_back_muscles">мышцы спины</sc_element><b> и <b><sc_element sys_idtf="shoulders">плеч</sc_element><b>, развивает диафрагму.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://images/concept_wings.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

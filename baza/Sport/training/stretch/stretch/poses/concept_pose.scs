@@ -1,0 +1,21 @@
+concept_pose
+
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [pose](*<-lang_en;;*);
+          [поза](*<-lang_ru;;*);
+
+
+=> nrel_species:concept_baby_pose;
+=> nrel_species:concept_camel_pose;
+=> nrel_species:concept_pose;
+=> nrel_species:concept_cat_pose;
+=> nrel_species:concept_dog_pose;
+=> nrel_species:concept_fold_pose;
+=> nrel_species:concept_frog_pose;
+=> nrel_species:concept_pigeon_pose;
+=> nrel_species:concept_roll_pose;
+=> nrel_species:concept_sitting_pose;
+=> nrel_species:concept_standing_pose;
+=> nrel_species:concept_wall_butterfly_pose_pose;;

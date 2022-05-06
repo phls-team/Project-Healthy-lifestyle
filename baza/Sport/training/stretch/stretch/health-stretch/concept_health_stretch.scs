@@ -1,0 +1,41 @@
+concept_health_stretch
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [health stretch](*<-lang_en;;*);
+          [лечебная растяжка](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(лечебная растяжка)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Лечебные упражнения, направленные на <b><sc_element sys_idtf="joint_construction_complex">восстановление</b></sc_element>, растягивание, разогревание связок и <b><sc_element sys_idtf="muscles">мышц</b></sc_element>.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<=nrel_species:concept_stretch;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(лечебная растяжка)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Лечебная растяжка улучшает эластичность <b><sc_element sys_idtf="muscles">мышц</b></sc_element> и подвижность суставов.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://images/concept_health_stretch.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

@@ -1,0 +1,44 @@
+concept_raise_apart_hands
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [raise apart hands](*<-lang_en;;*);
+          [подъём разведённых рук](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(подъём разведённых рук)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Разведите руки в стороны, выпрямив их. 
+            Ноги вместе, не напрягайте <b><sc_element sys_idtf="neck">шею</sc_element><b>, подбородок в паре сантиметров от пола. 
+            Можно опустить подбородок на <b><sc_element sys_idtf="exercise_mat">коврик</sc_element><b>. Из этого положения выполните подъем разведенных рук, сводя лопатки вместе. 
+            Задержитесь в этой <b><sc_element sys_idtf="concept_pose">позе</sc_element><b> пару секунд и вернитесь в начальное положение.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<=nrel_species:concept_health_stretch;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(подъём разведённых рук)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Занятие способствует укреплению <b><sc_element sys_idtf="concept_back_muscles">отдела спины</sc_element><b> и прилегающих <b><sc_element sys_idtf="muscles">мышц</sc_element><b>. <b><sc_element sys_idtf="nrel_exercise">Упражнение</sc_element><b> “вытягивает” позвоночный столб и мышечный каркас, позволяя вернуть их в правильное положение.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://images/concept_raise_apart_hands.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

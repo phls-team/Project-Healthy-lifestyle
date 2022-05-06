@@ -1,0 +1,41 @@
+concept_lift_bent_legs
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [lift bent legs](*<-lang_en;;*);
+          [подъём согнутых ног к животу](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(подъём согнутых ног к животу)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Лягте ровно, руки разместите рядом с корпусом “по швам”, ладонями развернув к полу. Голова смотрит прямо, не поворачивайте ее во время <b><sc_element sys_idtf="">тренировки</sc_element><b>. Согнутые ноги поставьте на пол. Затем медленно выполните <b><sc_element sys_idtf="lifting_legs">подтягивание ног</sc_element><b> к <b><sc_element sys_idtf="pectoral_muscles">груди</sc_element><b>, напрягая <b><sc_element sys_idtf="concept_stomach_muscles">живот</sc_element><b>.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<=nrel_species:concept_health_stretch;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(подъём согнутых ног к животу)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[<b><sc_element sys_idtf="nrel_exercise">Упражнение</sc_element><b> задействует <b><sc_element sys_idtf="concept_back_muscles">мышечный каркас спины</sc_element><b>, вытягивает позвоночный столб. Также полезная нагрузка распределяется на <b><sc_element sys_idtf="press_muscles">пресс</sc_element><b> и ноги, мягко укрепляя <b><sc_element sys_idtf="muscles">мышцы</sc_element><b>.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://images/concept_lift_bent_legs.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

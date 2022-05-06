@@ -1,0 +1,41 @@
+concept_swimmer
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [swimmer](*<-lang_en;;*);
+          [пловец](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(плоыец)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Выполните одновременный подъем правой руки и левой ноги вверх. Удерживайте пару секунд и затем опуститесь в <b><sc_element sys_idtf="nrel_starting_position">исходное положение</sc_element><b>.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<=nrel_species:concept_health_stretch;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(плоыец)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[тренировка задействует <b><sc_element sys_idtf="buttocks">ягодичные мышцы</sc_element><b> и <b><sc_element sys_idtf="press_muscles">мышцы кора</sc_element><b>.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://images/concept_swimmer.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

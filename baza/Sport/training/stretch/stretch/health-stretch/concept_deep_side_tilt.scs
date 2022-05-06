@@ -1,0 +1,41 @@
+concept_deep_side_tilt
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [deep side tilt](*<-lang_en;;*);
+          [глубокий наклон в сторону](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(глубокий наклон в сторону)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Начинайте наклоны от бёдер, рука ползёт по ноге к <b><sc_element sys_idtf="knee_joint">колену</sc_element><b>, другая закручивается вокруг головы. В крайней точке ладонь лежит на ухе или около него.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<=nrel_species:concept_health_stretch;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(глубокий наклон в сторону)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Развивает <b><sc_element sys_idtf="shoulders">мышцы плеч</sc_element><b> и талии, стимулирует <b><sc_element sys_idtf="concept_liver">печень</sc_element><b> и кишечник.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://images/concept_deep_side_tilt.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

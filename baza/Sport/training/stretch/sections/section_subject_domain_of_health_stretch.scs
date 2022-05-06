@@ -1,0 +1,15 @@
+section_subject_domain_of_health_stretch
+
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [section: subject domain of health stretch](*<-lang_en;;*);
+          [Раздел: предметная область лечебной растяжки](*<-lang_ru;;*);
+
+
+// ключевые элементы
+<- rrel_key_sc_element:concept_health_stretch;
+<- rrel_key_sc_element:subject_domain_of_health_stretch;
+
+
+<= non_atomic_section;;
