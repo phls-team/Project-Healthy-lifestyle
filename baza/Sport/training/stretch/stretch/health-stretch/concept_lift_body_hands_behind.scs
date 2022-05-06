@@ -1,0 +1,42 @@
+concept_lift_body_hands_behind
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [lift body hands behind](*<-lang_en;;*);
+          [подъём корпуса с руками за головой](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(подъём корпуса с руками за головой)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Руки разместите рядом с корпусом, голова опирается на подборок. Вытяните ноги. Проследите, чтобы носочки находились в натянутой позиции. Одной ногой начните плавно выполнять подъем. Задержитесь в верхней точке на несколько секунд, после мягко опустите ногу.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<=nrel_species:concept_health_stretch;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(подъём корпуса с руками за головой)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[<b><sc_element sys_idtf="nrel_exercise">Упражнение</sc_element><b> от остеохондроза задействует глубокие <b><sc_element sys_idtf="concept_back_muscles">мышцы спины</sc_element><b>, ног и <b><sc_element sys_idtf="buttocks">ягодиц</sc_element><b>, оказывает укрепляющее воздействие на <b><sc_element sys_idtf="muscles">мышечный</sc_element><b> корсет. 
+            Основная нагрузка приходится на поясничный отдел спины.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://images/concept_lift_body_hands_behind.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

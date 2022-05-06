@@ -1,0 +1,24 @@
+section_subject_domain_of_twine
+
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [section: subject domain of twine](*<-lang_en;;*);
+          [Раздел: предметная область шпагата](*<-lang_ru;;*);
+
+
+// ключевые элементы
+<- rrel_key_sc_element:concept_twine;
+<- rrel_key_sc_element:concept_air_twine;
+<- rrel_key_sc_element:concept_classic_twine;
+<- rrel_key_sc_element:concept_halftwine;
+<- rrel_key_sc_element:concept_hands_twine;
+<- rrel_key_sc_element:concept_king_twine;
+<- rrel_key_sc_element:concept_longitudinal_twine;
+<- rrel_key_sc_element:concept_sagging_twine;
+<- rrel_key_sc_element:concept_transverce_twine;
+<- rrel_key_sc_element:concept_vertical_twine;
+<- rrel_key_sc_element:subject_domain_of_twine;
+
+
+<= non_atomic_section;;

@@ -1,0 +1,41 @@
+concept_lift_straight_leg
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [lift straight leg](*<-lang_en;;*);
+          [подъём прямой ноги вверх](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(подъём прямой ноги вверх)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Занесите руки за голову, <b><sc_element sys_idtf="concept_arms_are_bent_at_the_elbows">локти</sc_element><b> смотрят в противоположные стороны. Далее выполните подъем корпуса, стараясь оторвать <b><sc_element sys_idtf="pectoral_muscles">грудь</sc_element><b> от пола. Не прогибайтесь чремерзно в <b><sc_element sys_idtf="concept_lumbar_stretch">поясничном отделе</sc_element><b>, основная нагрузка должна приходиться на среднюю част <b><sc_element sys_idtf="concept_back_muscles">спины</sc_element><b>.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<=nrel_species:concept_health_stretch;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(подъём прямой ноги вверх)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Это одно из лучших <b><sc_element sys_idtf="nrel_exercise">упражнений</sc_element><b> при <b><sc_element sys_idtf="scoliosis">сколиозе</sc_element><b> и кифозе, оказывающее благотворное влияние на <b><sc_element sys_idtf="concept_back_muscles">спину</sc_element><b>. Оно задействует практически все отделы позвоночника, как нижние, так и верхние отделы.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://images/concept_lift_straight_leg.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

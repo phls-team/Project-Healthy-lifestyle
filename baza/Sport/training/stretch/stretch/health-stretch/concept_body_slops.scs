@@ -1,0 +1,42 @@
+concept_body_slops
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [body slops](*<-lang_en;;*);
+          [наклон корпкса](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(наклон корпкса)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Встаньте прямо, руки поднимите над головой и сплетите пальцы в замок, повернув ладони к голове. Чем ближе руки к голове, тем эффективнее <b><sc_element sys_idtf="exercise">упражнение</sc_element><b>.
+            Мягко наклонитесь вперёд. Наклонитесь вправо. Наклонитесь назад. Наклонитесь влево.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<=nrel_species:concept_health_stretch;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(наклон корпкса)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Укрепляет <b><sc_element sys_idtf="concept_back_muscles">мышцы спины</sc_element><b>, раскрывает <b><sc_element sys_idtf="pectoral_muscles">грудь</sc_element><b> и растягивает <b><sc_element sys_idtf="concept_stomach_muscles">мышцы живота</sc_element><b>.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://images/concept_body_slops.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

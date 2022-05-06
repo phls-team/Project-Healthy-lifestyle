@@ -1,0 +1,26 @@
+section_subject_domain_of_stretch
+
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [section: subject domain of stretch](*<-lang_en;;*);
+          [раздел: предметная область растяжки](*<-lang_ru;;*);
+
+
+// ключевые элементы
+<- rrel_key_sc_element:concept_stretch;
+<- rrel_key_sc_element:concept_abs_stretch;
+<- rrel_key_sc_element:concept_boat_stretch;
+<- rrel_key_sc_element:concept_butterfly_stretch;
+<- rrel_key_sc_element:concept_legs_stretch;
+<- rrel_key_sc_element:concept_lumbar_stretch;
+<- rrel_key_sc_element:concept__neck_stretch;
+<- rrel_key_sc_element:concept_rectangular_stretch;
+<- rrel_key_sc_element:concept_shoulders_stretch;
+<- rrel_key_sc_element:concept_stretch_back_neck;
+<- rrel_key_sc_element:concept_upper_back_stretch;
+<- rrel_key_sc_element:concept_turning_stretch;
+<- rrel_key_sc_element:subject_domain_of_stretch;
+
+
+<= non_atomic_section;;

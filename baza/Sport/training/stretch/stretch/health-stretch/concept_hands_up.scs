@@ -1,0 +1,42 @@
+concept_hands_up
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [hands up](*<-lang_en;;*);
+          [подъём рук](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(подъём рук)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Со вдохом поднимитесь на носочки, руки поднимите вверх на 45 градусов.
+            С выдохом встаньте на стопу целиком, <b><sc_element sys_idtf="concept_hands_down">опустите руки</sc_element><b> до параллели с полом.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<=nrel_species:concept_health_stretch;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(подъём рук)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Развивает <b><sc_element sys_idtf="concept_power">силу</sc_element><b> <b><sc_element sys_idtf="shoulders">плеч</sc_element><b>, укрепляет арку стопы.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://images/concept_hands_up.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

@@ -1,0 +1,28 @@
+subject_domain_of_stretch_exc
+
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [subject domain of stretch exc](*<-lang_en;;*);
+          [предметная область упражнений на растяжку](*<-lang_ru;;*);
+
+
+// немаксимальный класс
+-> rrel_not_maximum_studied_object_class:subject_domain_of_stretch;
+-> rrel_not_maximum_studied_object_class:subject_domain_of_twine;
+-> rrel_not_maximum_studied_object_class:subject_domain_of_warm_up;
+-> rrel_not_maximum_studied_object_class:subject_domain_of_pose;
+-> rrel_not_maximum_studied_object_class:subject_domain_of_health_stretch;
+
+
+// исследуемое отношение
+-> rrel_explored_relation: nrel_stretching;
+-> rrel_explored_relation: nrel_exercise;
+-> rrel_explored_relation: nrel_effect;
+-> rrel_explored_relation: nrel_sports_achivments;
+-> rrel_explored_relation: rrel_action;
+-> rrel_explored_relation: rrel_exc_number;
+
+
+// предметная область
+<- subject_domain;;

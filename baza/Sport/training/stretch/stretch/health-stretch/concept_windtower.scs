@@ -1,0 +1,41 @@
+concept_windtower
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [windtower](*<-lang_en;;*);
+          [мельница](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(мельница)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Наклонитесь, разворачивая корпус влево и сгибая правое <b><sc_element sys_idtf="knee_joint">колено</sc_element><b>. Правая рука касается пола между ногами, левая вытянута наверх. Голова повёрнута к потолку, взгляд направлен на левую руку.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<=nrel_species:concept_health_stretch;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(мельница)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Развивает <b><sc_element sys_idtf="concept_flexibility">гибкость</sc_element><b> <b><sc_element sys_idtf="concept_back_muscles">мышц спины</sc_element><b>.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://images/concept_windtower.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

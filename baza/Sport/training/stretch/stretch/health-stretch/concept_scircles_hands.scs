@@ -1,0 +1,41 @@
+concept_circles_hands
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [circles hands](*<-lang_en;;*);
+          [круги руками](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(круги руками)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Медленно описывайте руками небольшие круги диаметром около 15 сантиметров. В основном движение исходит от <b><sc_element sys_idtf="<b><sc_element sys_idtf=" "> </sc_element><b>">плеч</sc_element><b>, напряжение чувствуется в их задней части.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<=nrel_species:concept_health_stretch;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(круги руками)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Развивает <b><sc_element sys_idtf="muscles">мышцы</sc_element><b> <b><sc_element sys_idtf="shoulders">плеч</sc_element><b>, спины и <b><sc_element sys_idtf="pectoral_muscles">груди</sc_element><b>, улучшает осанку.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://images/concept_circles_hands.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;

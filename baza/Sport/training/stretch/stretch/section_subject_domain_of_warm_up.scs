@@ -1,0 +1,11 @@
+section_subject_domain_of_warm_up
+
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [section: subject domain of warm up](*<-lang_en;;*);
+          [раздел: предметная область разминки](*<-lang_ru;;*);
+
+// максимальный класс объектов исследования
+-> rrel_maximum_studied_object_class: concept_warm_up;
+<- rrel_key_sc_element:concept_warm_up;;

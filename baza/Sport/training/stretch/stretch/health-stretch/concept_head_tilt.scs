@@ -1,0 +1,41 @@
+concept_head_tilt
+ 
+<-sc_node_not_relation;
+
+=> nrel_main_idtf:
+          [head tilt](*<-lang_en;;*);
+          [наклон головы](*<-lang_ru;;*);
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- definition;;
+		=> nrel_main_idtf: [Опр.(наклон головы)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Встаньте прямо, наклоните голову вперёд. Наклоните голову влево. Откиньте голову назад. Наклоните голову вправо.](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<=nrel_species:concept_health_stretch;
+
+<- rrel_key_sc_element: ... 
+		(*
+        <- statement;;
+		=> nrel_main_idtf: [Утв.(наклон головы)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:[Укрепляет <b><sc_element sys_idtf="neck">мышцы шеи</sc_element><b>, улучшает контроль над ними..](*<- lang_ru;;=>nrel_format:format_html;;*);;
+			*);;
+		*);
+
+<- rrel_key_sc_element : ...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation : ...
+		(*
+			-> "file://images/concept_head_tilt.jpg"
+			(*
+				=> nrel_format : format_jpg ;;
+			*);;
+		*);;
+	*);;
