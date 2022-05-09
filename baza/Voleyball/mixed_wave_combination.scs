@@ -1,0 +1,30 @@
+mixed_wave_combination <- sc_node_not_relation;;
+
+mixed_wave_combination => nrel_main_idtf:
+[Смешанная волна(вол.)] (*<-lang_ru;;*);;
+mixed_wave_combination => nrel_main_idtf:
+[Mixed wave combination(voll.)] (*<-lang_en;;*);;
+
+mixed_wave_combination <- rrel_key_sc_element: ...
+(*
+<- defenition;;
+=> nrel_main_idtf:
+	[Опр. Смешанная волна((вол.))] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Игрок первого <b><sc_element sys_idtf="pace">темпа</b></sc_element> идёт на нападающий удар в третьей <b><sc_element sys_idtf="concept_zone">зоне</b></sc_element>, игрок второго <b><sc_element sys_idtf="pace">темпа</b></sc_element> – во второй.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+mixed_wave_combination <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. Смешанная волна((вол.))] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[При исполнении комбинации "Смешанная волна" <b><sc_element sys_idtf="passer">пасеру</b></sc_element> гораздо легче контролировать передачу <b><sc_element sys_idtf="concept_pass">паса</b></sc_element>.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;

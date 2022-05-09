@@ -1,0 +1,30 @@
+pace <- sc_node_not_relation;;
+
+pace => nrel_main_idtf:
+[Темп(вол.)] (*<-lang_ru;;*);;
+pace => nrel_main_idtf:
+[Pace(voll.)] (*<-lang_en;;*);;
+
+pace <- rrel_key_sc_element: ...
+(*
+<- defenition;;
+=> nrel_main_idtf:
+	[Опр. (Темп(вол.))] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Порядок, которому следуют игроки при нападении.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+pace <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Темп(вол.))] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[С помощью темпов определяются роли игроков в комбинациях.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;

@@ -1,0 +1,30 @@
+protection <- sc_node_not_relation;;
+
+protection => nrel_main_idtf:
+[Защита(вол.)] (*<-lang_ru;;*);;
+protection => nrel_main_idtf:
+[Protection(voll.)] (*<-lang_en;;*);;
+
+protection <- rrel_key_sc_element: ...
+(*
+<- defenition;;
+=> nrel_main_idtf:
+	[Опр. (Защита(вол.))] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Действия игроков, предотвращающие атаку соперника или позволяющие оставить мяч в игре после этого.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+protection <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Защита(вол.))] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Чем лучше защита команды, тем больше у нее шансов выиграть партию.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;

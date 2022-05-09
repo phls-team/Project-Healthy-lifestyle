@@ -1,0 +1,30 @@
+backstop <- sc_node_not_relation;;
+
+backstop => nrel_main_idtf:
+[Заслон(вол.)] (*<-lang_ru;;*);;
+backstop => nrel_main_idtf:
+[Backstop(voll.)] (*<-lang_en;;*);;
+
+backstop <- rrel_key_sc_element: ...
+(*
+<- defenition;;
+=> nrel_main_idtf:
+	[Опр. (Заслон(вол.))] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Действия, которыми волейболисты одной команды мешают своим соперникам видеть подающего или траекторию полёта мяча.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+backstop <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Заслон(вол.))] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Если все члены команды умеют быстро занимать свои места, то заслон команды - весьма эффективная тактика.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
