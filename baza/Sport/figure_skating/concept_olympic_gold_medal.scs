@@ -1,0 +1,21 @@
+concept_olympic_gold_medal
+
+=> nrel_main_idtf:[Олимпийская золотая медаль] (* <-lang_ru;; *);
+=> nrel_main_idtf:[olympic gold medal] (* <-lang_en;; *);
+
+<- sc_node_not_relation;
+	
+        
+<- rrel_key_sc_element: 
+        ...
+        (*
+        <- definition;;
+        => nrel_main_idtf:
+	[Опр. (Олимпийская золотая медаль)] (*<-lang_ru;;*);;
+        <= nrel_sc_text_translation: 
+                ...
+	        (*
+		-> rrel_example:
+		[Золотая медаль, полученная на олимпийских играх](*<- lang_ru;;*);;
+	        *);;
+        *);;

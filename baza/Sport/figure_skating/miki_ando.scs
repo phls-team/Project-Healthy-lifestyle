@@ -1,0 +1,33 @@
+miki_ando
+
+=> nrel_main_idtf: [Мики Андо] (* <-lang_ru;; *);
+=> nrel_main_idtf:[Miki Ando] (* <-lang_en;; *);
+
+<- sc_node_not_relation;
+
+<-rrel_key_sc_element:
+        ...
+	(*
+	<-illustration;;
+	<=nrel_sc_text_translation:...
+	        (*
+		->rrel_example:
+                "file://Images/miki_ando.jpg"
+	          (*
+		  =>nrel_format:format_jpg;;
+	          *);;	
+                *);;
+        *);
+	
+        
+=>nrel_birthplace:
+       Japan;
+
+=>nrel_age:
+       34;
+
+=>nrel_sports_awards:
+       concept_gold_medal;
+
+=>nrel_height:
+       162;;

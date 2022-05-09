@@ -1,0 +1,30 @@
+concept_figure_skating_trainer
+
+=> nrel_main_idtf:[тренер в фигурном катании] (* <-lang_ru;; *);
+=> nrel_main_idtf:[figure skating trainer] (* <-lang_en;; *);
+
+<- sc_node_not_relation;
+
+<- rrel_key_sc_element: 
+        ...
+        (*
+        <- definition;;
+        => nrel_main_idtf:
+	        [Опр. (ИСУ)] (*<-lang_ru;;*);;
+        <= nrel_sc_text_translation: 
+                ...
+	        (*
+		-> rrel_example:
+		[Специалист в фигурном катании, руководящий тренировкой спортсменов.](*<- lang_ru;;*);;
+	        *);;
+        *);
+
+=>rrel_example: 
+    eteri_tutberidze;
+    tatyana_tarasova;
+    tamara_moskvina;
+    daniel_gleykchengauz;
+    machiko_yamada;
+    sergei_dudakov;;
+
+ concept_trainer => nrel_inclusion: concept_figure_skating_trainer;;

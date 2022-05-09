@@ -1,0 +1,33 @@
+concept_1S
+
+=> nrel_main_idtf:[Одиночный сальхов] (* <-lang_ru;; *);
+=> nrel_main_idtf:[1S - single salchow] (* <-lang_en;; *);
+
+<- sc_node_not_relation;
+	
+        
+<- rrel_key_sc_element: 
+        ...
+        (*
+        <- definition;;
+        => nrel_main_idtf:
+	[Опр. (Одиночный сальхов)] (*<-lang_ru;;*);;
+        <= nrel_sc_text_translation: 
+                ...
+	        (*
+		-> rrel_example:
+		"file://HTML/1S_def.html"
+                        (*<- lang_ru;;
+                        =>nrel_format:
+                        format_html;;*);;
+	        *);;
+        *);
+
+=>nrel_first_man_execution:
+        ulrich_salchow;
+
+=>nrel_first_woman_execution:
+        therese_weld;
+
+=>nrel_ISU_juding_system_evaluation:
+        0.4;;

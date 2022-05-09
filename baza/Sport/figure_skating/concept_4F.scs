@@ -1,0 +1,33 @@
+concept_4F
+
+=> nrel_main_idtf:[Четверной флип] (* <-lang_ru;; *);
+=> nrel_main_idtf:[4F - quadruple flip] (* <-lang_en;; *);
+
+<- sc_node_not_relation;
+	
+        
+<- rrel_key_sc_element: 
+        ...
+        (*
+        <- definition;;
+        => nrel_main_idtf:
+	[Опр. (Четверной флип)] (*<-lang_ru;;*);;
+        <= nrel_sc_text_translation: 
+                ...
+	        (*
+		-> rrel_example:
+		"file://HTML/4F_def.html"
+                        (*<- lang_ru;;
+                        =>nrel_format:
+                        format_html;;*);;
+	        *);;
+        *);
+
+=>nrel_first_man_execution:
+        shoma_uno;
+
+=>nrel_first_woman_execution:
+        alexandra_trusova;
+
+=>nrel_ISU_juding_system_evaluation:
+        11.3;;

@@ -1,0 +1,33 @@
+concept_4S
+
+=> nrel_main_idtf:[Четверной сальхов] (* <-lang_ru;; *);
+=> nrel_main_idtf:[4S - quadruple salchow] (* <-lang_en;; *);
+
+<- sc_node_not_relation;
+	
+        
+<- rrel_key_sc_element: 
+        ...
+        (*
+        <- definition;;
+        => nrel_main_idtf:
+	[Опр. (Четверной сальхов)] (*<-lang_ru;;*);;
+        <= nrel_sc_text_translation: 
+                ...
+	        (*
+		-> rrel_example:
+		"file://HTML/4S_def.html"
+                        (*<- lang_ru;;
+                        =>nrel_format:
+                        format_html;;*);;
+	        *);;
+        *);
+
+=>nrel_first_man_execution:
+       timothy_goebel;
+
+=>nrel_first_woman_execution:
+       miki_ando;
+
+=>nrel_ISU_juding_system_evaluation:
+        10.3;;

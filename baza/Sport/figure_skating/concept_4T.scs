@@ -1,0 +1,33 @@
+concept_4T
+
+=> nrel_main_idtf:[Четверной тулуп] (* <-lang_ru;; *);
+=> nrel_main_idtf:[4S - quadruple toe loop] (* <-lang_en;; *);
+
+<- sc_node_not_relation;
+	
+        
+<- rrel_key_sc_element: 
+        ...
+        (*
+        <- definition;;
+        => nrel_main_idtf:
+	[Опр. (Четверной тулуп)] (*<-lang_ru;;*);;
+        <= nrel_sc_text_translation: 
+                ...
+	        (*
+		-> rrel_example:
+		"file://HTML/4T_def.html"
+                        (*<- lang_ru;;
+                        =>nrel_format:
+                        format_html;;*);;
+	        *);;
+        *);
+
+=>nrel_first_man_execution:
+        kurt_browning;
+
+=>nrel_first_woman_execution:
+        alexandra_trusova;
+
+=>nrel_ISU_juding_system_evaluation:
+        9.8;;

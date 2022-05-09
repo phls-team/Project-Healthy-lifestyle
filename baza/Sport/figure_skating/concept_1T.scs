@@ -1,0 +1,30 @@
+concept_1T
+
+=> nrel_main_idtf:[Одиночный тулуп] (* <-lang_ru;; *);
+=> nrel_main_idtf:[1S - single toe loop] (* <-lang_en;; *);
+
+<- sc_node_not_relation;
+	
+        
+<- rrel_key_sc_element: 
+        ...
+        (*
+        <- definition;;
+        => nrel_main_idtf:
+	[Опр. (Одиночный тулуп)] (*<-lang_ru;;*);;
+        <= nrel_sc_text_translation: 
+                ...
+	        (*
+		-> rrel_example:
+		"file://HTML/1T_def.html"
+                        (*<- lang_ru;;
+                        =>nrel_format:
+                        format_html;;*);;
+	        *);;
+        *);
+
+=>nrel_first_man_execution:
+        bruce_mapes;
+
+=>nrel_ISU_juding_system_evaluation:
+        0.4;;

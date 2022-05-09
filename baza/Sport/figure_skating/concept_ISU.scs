@@ -1,0 +1,30 @@
+concept_ISU
+
+=> nrel_main_idtf:[Международный союз конькобежцев] (* <-lang_ru;; *);
+=> nrel_main_idtf:[International Skating Union] (* <-lang_en;; *);
+
+<- sc_node_not_relation;
+	
+        
+<- rrel_key_sc_element: 
+        ...
+        (*
+        <- definition;;
+        => nrel_main_idtf:
+	[Опр. (ИСУ)] (*<-lang_ru;;*);;
+        <= nrel_sc_text_translation: 
+                ...
+	        (*
+		-> rrel_example:
+		[Международная организация, управляющая коньковыми видами спорта.](*<- lang_ru;;*);;
+	        *);;
+        *);
+        
+=>nrel_manage:
+        concept_figure_skating;
+        concept_scating;
+
+=>nrel_inclusion:
+        concept_ISU_judging_system;;
+
+sports_organization =>nrel_inclusion: concept_ISU;;

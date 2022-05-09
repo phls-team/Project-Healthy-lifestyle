@@ -1,0 +1,34 @@
+concept_4Lo
+
+=> nrel_main_idtf:[Четверной риттбергер] (* <-lang_ru;; *);
+=> nrel_main_idtf:[4Lo - quadruple loop] (* <-lang_en;; *);
+
+<- sc_node_not_relation;
+	
+        
+<- rrel_key_sc_element: 
+        ...
+        (*
+        <- definition;;
+        => nrel_main_idtf:
+	[Опр. (Четверной риттбергер)] (*<-lang_ru;;*);;
+        <= nrel_sc_text_translation: 
+                ...
+	        (*
+		-> rrel_example:
+		"file://HTML/4Lo_def.html"
+                        (*<- lang_ru;;
+                        =>nrel_format:
+                        format_html;;*);;
+	        *);;
+        *);
+
+
+=>nrel_first_man_execution:
+        hanyu_yuzuru;
+
+=>nrel_first_woman_execution:
+        adelia_petrosyan;
+
+=>nrel_ISU_juding_system_evaluation:
+        10.8;;

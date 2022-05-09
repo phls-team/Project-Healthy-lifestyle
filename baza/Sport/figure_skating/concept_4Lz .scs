@@ -1,0 +1,33 @@
+concept_4Lz
+
+=> nrel_main_idtf:[Четверной лутц] (* <-lang_ru;; *);
+=> nrel_main_idtf:[4Lz - quadruple lutz] (* <-lang_en;; *);
+
+<- sc_node_not_relation;
+	
+        
+<- rrel_key_sc_element: 
+        ...
+        (*
+        <- definition;;
+        => nrel_main_idtf:
+	[Опр. (Четверной лутц)] (*<-lang_ru;;*);;
+        <= nrel_sc_text_translation: 
+                ...
+	        (*
+		-> rrel_example:
+		"file://HTML/4Lz_def.html"
+                        (*<- lang_ru;;
+                        =>nrel_format:
+                        format_html;;*);;
+	        *);;
+        *);
+
+=>nrel_first_man_execution:
+       brandon_mroz;
+
+=>nrel_first_woman_execution:
+       alexandra_trusova;
+
+=>nrel_ISU_juding_system_evaluation:
+        11.8;;

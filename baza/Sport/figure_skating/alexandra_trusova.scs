@@ -1,0 +1,36 @@
+alexandra_trusova
+
+=> nrel_main_idtf: [Александра Трусова] (* <-lang_ru;; *);
+=> nrel_main_idtf:[Alexandra Trusova] (* <-lang_en;; *);
+
+<- sc_node_not_relation;
+
+<-rrel_key_sc_element:
+        ...
+	(*
+	<-illustration;;
+	<=nrel_sc_text_translation:...
+	        (*
+		->rrel_example:
+                "file://Images/trusova.jpg"
+	          (*
+		  =>nrel_format:format_jpg;;
+	          *);;	
+                *);;
+        *);
+	
+        
+=>nrel_birthplace:
+       Russia;
+
+=>nrel_sports_rank:
+       honored_master_of_sport_of_Russia;
+
+=>nrel_age:
+       17;
+
+=>nrel_sports_awards:
+       concept_olympic_silver_medal;
+
+=>nrel_height:
+       162;;

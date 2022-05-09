@@ -1,0 +1,33 @@
+concept_3T
+
+=> nrel_main_idtf:[Тройной тулуп] (* <-lang_ru;; *);
+=> nrel_main_idtf:[3S - triple toe loop] (* <-lang_en;; *);
+
+<- sc_node_not_relation;
+	
+        
+<- rrel_key_sc_element: 
+        ...
+        (*
+        <- definition;;
+        => nrel_main_idtf:
+	[Опр. (Тройной тулуп)] (*<-lang_ru;;*);;
+        <= nrel_sc_text_translation: 
+                ...
+	        (*
+		-> rrel_example:
+		"file://HTML/3T_def.html"
+                        (*<- lang_ru;;
+                        =>nrel_format:
+                        format_html;;*);;
+	        *);;
+        *);
+
+=>nrel_first_man_execution:
+        thomas_litz;
+
+=>nrel_first_woman_execution:
+        marina_titova;
+
+=>nrel_ISU_juding_system_evaluation:
+        4.0;;

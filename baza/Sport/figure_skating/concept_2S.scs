@@ -1,0 +1,34 @@
+concept_2S
+
+=> nrel_main_idtf:[Двойной сальхов] (* <-lang_ru;; *);
+=> nrel_main_idtf:[2S - double salchow] (* <-lang_en;; *);
+
+<- sc_node_not_relation;
+	
+        
+<- rrel_key_sc_element: 
+        ...
+        (*
+        <- definition;;
+        => nrel_main_idtf:
+	[Опр. (Двойной сальхов)] (*<-lang_ru;;*);;
+        <= nrel_sc_text_translation: 
+                ...
+	        (*
+		-> rrel_example:
+		"file://HTML/2S_def.html"
+                        (*<- lang_ru;;
+                        =>nrel_format:
+                        format_html;;*);;
+	        *);;
+        *);
+
+=>nrel_first_man_execution:
+        gillis_grafstroem;
+
+=>nrel_first_woman_execution:
+        cecilia_colledge;
+
+
+=>nrel_ISU_juding_system_evaluation:
+        1.3;;
