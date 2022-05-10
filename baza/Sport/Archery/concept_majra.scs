@@ -1,4 +1,5 @@
 concept_majra<-sc_node_not_relation;;
+concept_majra<=nrel_inclusion:concept_sport_equipment;;
 
 concept_majra=>nrel_main_idtf:[маджра]
         (*

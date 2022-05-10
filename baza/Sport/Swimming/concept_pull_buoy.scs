@@ -1,4 +1,6 @@
 concept_pull_buoy<-sc_node_not_relation;;
+concept_pull_buoy<=nrel_inclusion: concept_sport_equipment;;
+concept_pull_buoy<=nrel_sport_equipment: concept_swimming;;
 
 concept_pull_buoy=>nrel_main_idtf:[колобашка]
         (*

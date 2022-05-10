@@ -1,5 +1,10 @@
 concept_self_bow<-sc_node_not_relation;;
+concept_self_bow<=nrel_inclusion:concept_sport_equipment;;
 
+concept_self_bow=>nrel_main_idtf:[цельный лук]
+        (*
+                <-lang_ru;;
+        *);;
 concept_self_bow=>nrel_main_idtf:[self bow]
         (*
                 <-lang_en;;

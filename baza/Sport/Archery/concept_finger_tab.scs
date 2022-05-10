@@ -1,4 +1,5 @@
 concept_finger_tab<-sc_node_not_relation;;
+concept_finger_tab<=nrel_inclusion:concept_sport_equipment;;
 
 concept_finger_tab=>nrel_main_idtf:[вкладка]
         (*

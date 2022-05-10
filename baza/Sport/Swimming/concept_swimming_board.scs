@@ -1,4 +1,7 @@
 concept_swimming_board<-sc_node_not_relation;;
+concept_swimming_board<=nrel_inclusion: concept_sport_equipment;;
+concept_swimming_board<=nrel_sport_equipment: concept_swimming;;
+
 
 concept_swimming_board=>nrel_main_idtf:[доска для плавания]
         (*

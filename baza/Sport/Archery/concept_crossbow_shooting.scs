@@ -1,0 +1,74 @@
+concept_crossbow_shooting<-sc_node_not_relation;;
+concept_crossbow_shooting<=nrel_inclusion:concept_sport;;
+concept_crossbow_shooting<=nrel_inclusion:concept_activity;;
+concept_crossbow_shooting<=nrel_archery_practice:concept_archery;;
+
+concept_crossbow_shooting=>nrel_sport_equipment:{
+concept_bolt;
+concept_crossbow;
+concept_arm_guard;
+concept_button;
+concept_clicker;
+concept_quiver
+};;
+concept_crossbow_shooting=>nrel_additional_equipment:{
+concept_archery_boss;
+concept_finger_tab;
+concept_archery_target;
+concept_thumb_ring
+};;
+
+concept_crossbow_shooting=>nrel_main_idtf:[стрельба из арбалета]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[crossbow shooting]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_crossbow_shooting<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Стрельба из арбалета)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[ Стрельба из арбалета — один из видов спортивной стрельбы при котором производятся выстрелы из арбалета на точность. ]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_crossbow;
+	concept_sport
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_crossbow_shooting ;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Основным упражнением в данном виде спорта считается стрельба по пятицветной мишени, диаметр которой равняется 25 см. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Стрельба из арбалета)](*<- lang_ru;;*);;
+=>nrel_using_constants:{
+	concept_target_archery;
+	concept_crossbow;
+	concept_sport
+        };;
+*);;
+
+concept_crossbow_shooting<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://Photos//crossbow_shooting.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Стрельба из арбалета)](*<- lang_ru;;*);;
+*);;
+*);;

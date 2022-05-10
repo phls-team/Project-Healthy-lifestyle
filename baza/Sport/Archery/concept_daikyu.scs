@@ -1,4 +1,5 @@
 concept_daikyu<-sc_node_not_relation;;
+concept_daikyu<=nrel_inclusion:concept_sport_equipment;;
 
 concept_daikyu=>nrel_main_idtf:[дайкю]
         (*

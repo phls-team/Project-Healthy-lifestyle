@@ -1,0 +1,56 @@
+concept_swimming<-sc_node_not_relation;;
+concept_swimming<= nrel_inclusion: concept_sport;;
+concept_swimming<= nrel_inclusion: concept_activity;;
+
+concept_swimming=>nrel_main_idtf:[плавание]
+        (*
+                <-lang_ru;;
+        *);
+nrel_main_idtf:[swimming]
+        (*
+                <-lang_en;;
+        *);;
+
+concept_swimming_freestyle<-rrel_key_sc_element:...
+        (*
+                <-definition;;
+=>nrel_main_idtf:[Опр.(Плавание)]
+        (*
+                <-lang_ru;;
+        *);;
+<=nrel_sc_text_translation:...
+        (*
+->[Плавание – это олимпийский водный вид спорта, который заключается в преодолении пловцом различных дистанций вплавь и за наименьшее время.]
+(*
+<-lang_ru;;
+*);;
+        =>nrel_using_constants:{
+        concept_swimmer;
+        concept_sport
+        };;
+     *);;
+*);;
+
+statement ->...
+(*
+->rrel_key_sc_element:concept_swimming;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Независимо от вида плавания, под водой пловцу разрешается проплыть не более 15 метров (на старте или после поворота).](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(Плавание)](*<- lang_ru;;*);;
+  =>nrel_using_constants:{
+        concept_swimmer
+        };;
+*);;
+
+concept_swimming<-rrel_key_sc_element:...
+        (*
+                <-illustration;;
+                <=nrel_sc_text_translation:...
+        (*
+                ->rrel_example:
+                "file://photos//swimmer.jpg"
+        (*
+                =>nrel_format:format_jpg;;
+        *);;
+ => nrel_main_idtf: [Иллюстрация(Пример плавания)](*<- lang_ru;;*);;
+*);;
+*);;

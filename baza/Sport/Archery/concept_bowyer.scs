@@ -1,5 +1,11 @@
 concept_bowyer<-sc_node_not_relation;;
+concept_bowyer<-concept_human;;
+concept_bowyer<= nrel_participant: concept_archery;;
 
+concept_bowyer=>nrel_main_idtf:[изготовитель лука]
+        (*
+                <-lang_ru;;
+        *);;
 concept_bowyer=>nrel_main_idtf:[bowyer]
         (*
                 <-lang_en;;

@@ -1,4 +1,6 @@
 concept_draw_length<-sc_node_not_relation;;
+concept_draw_length<-concept_measure;;
+concept_draw_length<=nrel_archery_measure:concept_archery;;
 
 concept_draw_length=>nrel_main_idtf:[длина натяжения]
         (*

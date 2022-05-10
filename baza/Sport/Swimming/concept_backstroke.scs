@@ -1,4 +1,5 @@
 concept_backstroke<-sc_node_not_relation;;
+concept_backstroke<=nrel_inclusion: concept_swimming_styles;;
 
 concept_backstroke=>nrel_main_idtf:[плавание на спине]
         (*

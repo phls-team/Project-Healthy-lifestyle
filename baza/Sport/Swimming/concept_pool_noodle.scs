@@ -1,4 +1,6 @@
 concept_pool_noodle<-sc_node_not_relation;;
+concept_pool_noodle<=nrel_inclusion: concept_sport_equipment;;
+concept_pool_noodle<=nrel_sport_equipment: concept_swimming;;
 
 concept_pool_noodle=>nrel_main_idtf:[лапша для бассейна]
         (*

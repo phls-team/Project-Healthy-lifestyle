@@ -1,4 +1,6 @@
 concept_swimming_wetsuit<-sc_node_not_relation;;
+concept_swimming_wetsuit<=nrel_inclusion: concept_personal_equipment;;
+
 
 concept_swimming_wetsuit=>nrel_main_idtf:[гидрокостюм]
         (*

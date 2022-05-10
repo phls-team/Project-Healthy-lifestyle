@@ -1,0 +1,45 @@
+nrel_archery_practice
+<-sc_node_norole_relation;
+=>nrel_main_idtf:
+[archery practice](*<-lang_en;;*);
+[практика стрельбы из лука*](*<-lang_ru;;*);
+
+<-rrel_key_sc_element:...(*
+<-definition;;
+
+=>nrel_main_idtf:
+[Опр.(практика стрельбы из лука)](*<-lang_ru;;*);;
+=>nrel_using_constants:{
+concept_archery;
+concept_bow;
+concept_archer
+};;
+<=nrel_sc_text_translation:...(*
+->rrel_example:[Практика стрельбы из лука - совокупность всех типов, разновидностей и стилей стрельбы из лука, различающихся по истории происхождения и методике взаимодейтсвия стрелка с луком.](* <- lang_ru;; => nrel_format: format_html;;*);;
+*);;
+*);
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:[Утв.(практика стрельбы из лука)](*<-lang_ru;;*);;
+=>nrel_using_constants:{
+concept_sport_equipment;
+concept_archery
+};;
+<=nrel_sc_text_translation:...(*
+->rrel_example:[Одной из самых основополагающих черт, отвечающих за отличие той или иной практики стрельбы из лука от другой, является национальное(географическое) происхождение.](* <- lang_ru;; => nrel_format: format_html;;*);;
+*);;
+*);
+
+=>nrel_definitional_domain:..(*
+<=nrel_combination:{ concept_archery(*<=nrel_first_domain:nrel_archery_practice;;*);
+ concept_activity(*<=nrel_second_domain:nrel_archery_practice;;*)
+};;
+*);;
+nrel_participant<-antisymmetric_relation(*<=nrel_inclusion:binary_relation(*<=nrel_inclusion:relation;;*);;*);;
+nrel_participant<-antitransitive_relation(*<=nrel_inclusion:binary_relation;;*);;
+nrel_participant<-antireflexive_relation(*<=nrel_inclusion:binary_relation;;*);;
+nrel_participant<-oriented_relation(*<=nrel_inclusion:relation;;*);; 
+
+arity->...(*=>nrel_measurement:2(*<-number;;*);;
+->nrel_archery_practice;;
+*);;

@@ -1,4 +1,5 @@
 concept_flu_flu_arrow<-sc_node_not_relation;;
+concept_flu_flu_arrow<=nrel_inclusion:concept_sport_equipment;;
 
 concept_flu_flu_arrow=>nrel_main_idtf:[стрела флу флу]
         (*

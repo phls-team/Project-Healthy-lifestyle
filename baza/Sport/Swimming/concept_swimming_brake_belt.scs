@@ -1,4 +1,6 @@
 concept_swimming_break_belt<-sc_node_not_relation;;
+concept_swimming_break_belt<=nrel_inclusion:concept_sport_equipment;;
+concept_swimming_break_belt<=nrel_sport_equipment: concept_swimming;;
 
 concept_swimming_break_belt=>nrel_main_idtf:[пояс тормозной]
         (*
