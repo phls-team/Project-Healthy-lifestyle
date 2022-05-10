@@ -1,0 +1,19 @@
+concept_figure_skating => nrel_inclusion:
+    concept_ice_dancing_sport;
+    concept_women_single_figure_skating;
+    concept_men_single_figure_skating;
+    concept_pair_figure_skating;
+    concept_synchronized_figure_skating;;
+
+kind_of_sport => nrel_inclusion:
+    concept_scating;
+    concept_figure_skating;;
+    
+silver_medal => nrel_inclusion:
+    concept_olympic_silver_medal;;
+    
+gold_medal => nrel_inclusion:
+    concept_olympic_gold_medal;;
+    
+bronze_medal => nrel_inclusion:
+    concept_olympic_bronze_medal;;

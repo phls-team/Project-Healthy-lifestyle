@@ -1,0 +1,33 @@
+concept_3A
+
+=> nrel_main_idtf:[Тройной аксель] (* <-lang_ru;; *);
+=> nrel_main_idtf:[3A - triple axel jump] (* <-lang_en;; *);
+
+<- sc_node_not_relation;
+	
+        
+<- rrel_key_sc_element: 
+        ...
+        (*
+        <- definition;;
+        => nrel_main_idtf:
+	[Опр. (Тройной аксель)] (*<-lang_ru;;*);;
+        <= nrel_sc_text_translation: 
+                ...
+	        (*
+		-> rrel_example:
+		"file://HTML/3A_def.html"
+                        (*<- lang_ru;;
+                        =>nrel_format:
+                        format_html;;*);;
+	        *);;
+        *);
+
+=>nrel_first_man_execution:
+        alexander_fadeev;
+
+=>nrel_first_woman_execution:
+        ito_midori;
+
+=>nrel_ISU_juding_system_evaluation:
+        8.2;;

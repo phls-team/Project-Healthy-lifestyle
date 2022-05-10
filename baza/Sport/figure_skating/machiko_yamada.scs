@@ -1,0 +1,36 @@
+machiko_yamada
+
+=> nrel_main_idtf: [Матико Ямада] (* <-lang_ru;; *);
+=> nrel_main_idtf:[Machiko Yamada] (* <-lang_en;; *);
+
+
+<- sc_node_not_relation;
+
+<-rrel_key_sc_element:
+        ...
+	(*
+	<-illustration;;
+	<=nrel_sc_text_translation:...
+	        (*
+		->rrel_example:
+                "file://Images/machiko_yamada.jpg"
+	          (*
+		  =>nrel_format:format_jpg;;
+	          *);;	
+                *);;
+        *);
+	
+        
+=>nrel_birthplace:
+       Japan;
+
+=>nrel_age:
+       78;
+
+=>nrel_specialization:
+       concept_women_single_figure_skating;
+       concept_men_single_figure_skating;
+
+=>nrel_train:
+       ito_midori;
+       shoma_uno;;

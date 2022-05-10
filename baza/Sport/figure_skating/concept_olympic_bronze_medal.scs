@@ -1,0 +1,21 @@
+concept_olympic_bronze_medal
+
+=> nrel_main_idtf:[Олимпийская бронзовая медаль] (* <-lang_ru;; *);
+=> nrel_main_idtf:[olympic bronze medal] (* <-lang_en;; *);
+
+<- sc_node_not_relation;
+	
+        
+<- rrel_key_sc_element: 
+        ...
+        (*
+        <- definition;;
+        => nrel_main_idtf:
+	[Опр. (Олимпийская бронзовая медаль)] (*<-lang_ru;;*);;
+        <= nrel_sc_text_translation: 
+                ...
+	        (*
+		-> rrel_example:
+		[Бронзоая медаль, полученная на олимпийских играх](*<- lang_ru;;*);;
+	        *);;
+        *);;

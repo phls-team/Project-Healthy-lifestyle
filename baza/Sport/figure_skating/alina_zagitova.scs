@@ -1,0 +1,36 @@
+alina_zagitova
+
+=> nrel_main_idtf: [Алина Загитова] (* <-lang_ru;; *);
+=> nrel_main_idtf:[Alina Zagitova] (* <-lang_en;; *);
+
+<- sc_node_not_relation;
+
+<-rrel_key_sc_element:
+        ...
+	(*
+	<-illustration;;
+	<=nrel_sc_text_translation:...
+	        (*
+		->rrel_example:
+                "file://Images/alina_zagitova.jpg"
+	          (*
+		  =>nrel_format:format_jpg;;
+	          *);;	
+                *);;
+        *);
+	
+        
+=>nrel_birthplace:
+       Russia;
+
+=>nrel_sports_rank:
+       honored_master_of_sport_of_Russia;
+
+=>nrel_age:
+       19;
+
+=>nrel_sports_awards:
+       concept_olympic_gold_medal;
+
+=>nrel_height:
+       160;;

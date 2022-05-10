@@ -1,0 +1,33 @@
+concept_3Lo
+
+=> nrel_main_idtf:[Тройной риттбергер] (* <-lang_ru;; *);
+=> nrel_main_idtf:[3Lo - triple loop] (* <-lang_en;; *);
+
+<- sc_node_not_relation;
+	
+        
+<- rrel_key_sc_element: 
+        ...
+        (*
+        <- definition;;
+        => nrel_main_idtf:
+	[Опр. (Тройной риттбергер)] (*<-lang_ru;;*);;
+        <= nrel_sc_text_translation: 
+                ...
+	        (*
+		-> rrel_example:
+		"file://HTML/3Lo_def.html"
+                        (*<- lang_ru;;
+                        =>nrel_format:
+                        format_html;;*);;
+	        *);;
+        *);
+
+=> nrel_first_man_execution:
+        dick_button;
+
+=> nrel_first_woman_execution:
+        gabriele_seyfert;
+
+=>nrel_ISU_juding_system_evaluation:
+        5.0;;

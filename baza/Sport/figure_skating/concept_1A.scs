@@ -1,0 +1,47 @@
+concept_1A
+
+=> nrel_main_idtf:[Одиночный аксель] (* <-lang_ru;; *);
+=> nrel_main_idtf:[1A - single axel jump] (* <-lang_en;; *);
+
+<- sc_node_not_relation;
+	
+        
+<- rrel_key_sc_element: 
+        ...
+        (*
+        <- definition;;
+        => nrel_main_idtf:
+	[Опр. (Одиночный аксель)] (*<-lang_ru;;*);;
+        <= nrel_sc_text_translation: 
+                ...
+	        (*
+		-> rrel_example:
+                "file://HTML/1A_def.html"
+                        (*<- lang_ru;;
+                        =>nrel_format:
+                        format_html;;*);;
+	        *);;
+        *);
+
+<- rrel_key_sc_element: 
+        ...
+        (*
+        <- statement;;
+        => nrel_main_idtf:
+	[Утв. (Одиночный аксель)] (*<-lang_ru;;*);;
+        <= nrel_sc_text_translation: 
+                ...
+	        (*
+		-> rrel_example:
+		[Крайне редко исполняется на соревнованиях.](*<- lang_ru;; *);;
+	        *);;
+        *);
+
+=>nrel_first_man_execution:
+       axel_paulsen;
+
+=>nrel_first_woman_execution:
+       sonja_henie;
+
+=>nrel_ISU_juding_system_evaluation:
+        0.8;;

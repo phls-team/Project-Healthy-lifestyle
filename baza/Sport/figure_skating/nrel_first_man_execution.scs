@@ -1,0 +1,24 @@
+nrel_first_man_execution
+
+=> nrel_main_idtf:[первое мужское исполнение*] (* <-lang_ru;; *);
+=> nrel_main_idtf:[first man execution*] (* <-lang_en;; *);
+
+<-sc_node_norole_relation;
+	
+->rrel_key_sc_element:
+	...  
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> [Впервые было исполнено мужчиной на соревнованиях.] (* <-lang_ru;; *);; 
+		*);;
+	*);
+	
+=>nrel_definitional_domain: ...(* <=nrel_combination: ...(* -> concept_figure_skating_elements;;
+                                                            -> concept_figure_skating_athlete;;*);;
+                                *);
+	
+=>nrel_first_domain: concept_figure_skating_elements;
+=>nrel_second_domain: concept_figure_skating_athlete;;

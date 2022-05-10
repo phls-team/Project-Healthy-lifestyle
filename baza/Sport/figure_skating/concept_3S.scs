@@ -1,0 +1,33 @@
+concept_3S
+
+=> nrel_main_idtf:[Тройной сальхов] (* <-lang_ru;; *);
+=> nrel_main_idtf:[3S - triple salchow] (* <-lang_en;; *);
+
+<- sc_node_not_relation;
+	
+        
+<- rrel_key_sc_element: 
+        ...
+        (*
+        <- definition;;
+        => nrel_main_idtf:
+	[Опр. (Тройной сальхов)] (*<-lang_ru;;*);;
+        <= nrel_sc_text_translation: 
+                ...
+	        (*
+		-> rrel_example:
+		"file://HTML/3S_def.html"
+                        (*<- lang_ru;;
+                        =>nrel_format:
+                        format_html;;*);;
+	        *);;
+        *);
+
+=>nrel_first_man_execution:
+        ronnie_robertson;
+
+=>nrel_first_woman_execution:
+        jana_mrazkova;
+
+=>nrel_ISU_juding_system_evaluation:
+        4.5;;

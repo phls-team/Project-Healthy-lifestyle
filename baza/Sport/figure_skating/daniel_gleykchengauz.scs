@@ -1,0 +1,39 @@
+daniel_gleykchengauz
+
+=> nrel_main_idtf: [Даниил Глейхенгауз] (* <-lang_ru;; *);
+=> nrel_main_idtf:[Daniel Gleykchengauz] (* <-lang_en;; *);
+
+
+<- sc_node_not_relation;
+
+<-rrel_key_sc_element:
+        ...
+	(*
+	<-illustration;;
+	<=nrel_sc_text_translation:...
+	        (*
+		->rrel_example:
+                "file://Images/daniil.jpg"
+	          (*
+		  =>nrel_format:format_jpg;;
+	          *);;	
+                *);;
+        *);
+	
+        
+=>nrel_birthplace:
+       Russia;
+
+=>nrel_specialization:
+       concept_women_single_figure_skating;
+       concept_men_single_figure_skating;
+       concept_pair_figure_skating;
+
+=>nrel_age:
+       30;
+
+=>nrel_train:
+       alexandra_trusova;
+       evgenia_medvedeva;
+       alina_zagitova;
+       kamila_valieva;;

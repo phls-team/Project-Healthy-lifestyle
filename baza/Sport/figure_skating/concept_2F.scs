@@ -1,0 +1,27 @@
+concept_2F
+
+=> nrel_main_idtf:[Двойной флип] (* <-lang_ru;; *);
+=> nrel_main_idtf:[2F - double flip] (* <-lang_en;; *);
+
+<- sc_node_not_relation;
+	
+        
+<- rrel_key_sc_element: 
+        ...
+        (*
+        <- definition;;
+        => nrel_main_idtf:
+	[Опр. (Двойной флип)] (*<-lang_ru;;*);;
+        <= nrel_sc_text_translation: 
+                ...
+	        (*
+		-> rrel_example:
+		"file://HTML/2F_def.html"
+                        (*<- lang_ru;;
+                        =>nrel_format:
+                        format_html;;*);;
+	        *);;
+        *);
+
+=>nrel_ISU_juding_system_evaluation:
+        1.7;;

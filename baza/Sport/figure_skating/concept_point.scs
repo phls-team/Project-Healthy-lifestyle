@@ -1,0 +1,21 @@
+concept_point
+
+=> nrel_main_idtf:[баллы] (* <-lang_ru;; *);
+=> nrel_main_idtf:[point] (* <-lang_en;; *);
+
+<- sc_node_not_relation;
+	
+        
+<- rrel_key_sc_element: 
+        ...
+        (*
+        <- definition;;
+        => nrel_main_idtf:
+	[Опр. (баллы)] (*<-lang_ru;;*);;
+        <= nrel_sc_text_translation: 
+                ...
+	        (*
+		-> rrel_example:
+		[Количество баллов, набранных за определенный элемент.](*<- lang_ru;;*);;
+	        *);;
+        *);;

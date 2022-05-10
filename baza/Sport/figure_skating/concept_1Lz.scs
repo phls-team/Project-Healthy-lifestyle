@@ -1,0 +1,30 @@
+concept_1Lz
+
+=> nrel_main_idtf:[Одиночный лутц] (* <-lang_ru;; *);
+=> nrel_main_idtf:[1Lz - single lutz] (* <-lang_en;; *);
+
+<- sc_node_not_relation;
+	
+        
+<- rrel_key_sc_element: 
+        ...
+        (*
+        <- definition;;
+        => nrel_main_idtf:
+	[Опр. (Одиночный лутц)] (*<-lang_ru;;*);;
+        <= nrel_sc_text_translation: 
+                ...
+	        (*
+		-> rrel_example:
+		"file://HTML/1Lz_def.html"
+                        (*<- lang_ru;;
+                        =>nrel_format:
+                        format_html;;*);;
+	        *);;
+        *);
+
+=>nrel_first_man_execution:
+       alois_lutz;
+
+=>nrel_ISU_juding_system_evaluation:
+        0.6;;

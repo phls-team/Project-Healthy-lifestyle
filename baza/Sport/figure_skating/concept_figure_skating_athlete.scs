@@ -1,0 +1,57 @@
+concept_figure_skating_athlete
+
+=> nrel_main_idtf:[фигурист] (* <-lang_ru;; *);
+=> nrel_main_idtf:[figure skating athlete] (* <-lang_en;; *);
+
+<- sc_node_not_relation;
+
+<- rrel_key_sc_element: 
+        ...
+        (*
+        <- definition;;
+        => nrel_main_idtf:
+	[Опр. (ИСУ)] (*<-lang_ru;;*);;
+        <= nrel_sc_text_translation: 
+                ...
+	        (*
+		-> rrel_example:
+		[Спортсмен, профессионально занимающийся фигурным катанием](*<- lang_ru;;*);;
+	        *);;
+        *);
+
+=>rrel_example: 
+        timothy_goebel;
+        evgenia_medvedeva;
+        alina_zagitova;
+        alexandra_trusova;
+        kamila_valieva;
+        miki_ando;
+        jana_mrazkova;
+        ronnie_robertson;
+        cecilia_colledge;
+        gillis_grafstroem;
+        ulrich_salchow;
+        therese_weld;
+        brandon_mroz;
+        donald_jackson;
+        denise_biellmann;
+        barbara_scott;
+        alois_lutz;
+        adelia_petrosyan;
+        gabriele_seyfert;
+        werner_rittberger;
+        marina_titova;
+        thomas_litz;
+        bruce_mapes;
+        kurt_browning;
+        shoma_uno;
+        hanyu_yuzuru;
+        ito_midori;
+        alexander_fadeev;
+        carol_heiss;
+        dick_button;
+        sonja_henie;
+        axel_paulsen;
+        nathan_chen;;
+
+concept_athlete => nrel_inclusion: concept_figure_skating_athlete;;

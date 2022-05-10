@@ -1,0 +1,44 @@
+concept_4A
+
+=> nrel_main_idtf:[Четверной аксель] (* <-lang_ru;; *);
+=> nrel_main_idtf:[4A - quadruple axel jump] (* <-lang_en;; *);
+
+<- sc_node_not_relation;
+	
+        
+<- rrel_key_sc_element: 
+        ...
+        (*
+        <- definition;;
+        => nrel_main_idtf:
+	[Опр. (Четверной аксель)] (*<-lang_ru;;*);;
+        <= nrel_sc_text_translation: 
+                ...
+	        (*
+		-> rrel_example:
+		"file://HTML/4A_def.html"
+                        (*<- lang_ru;;
+                        =>nrel_format:
+                        format_html;;*);;
+	        *);;
+        *);
+
+<- rrel_key_sc_element: 
+        ...
+        (*
+        <- statement;;
+        => nrel_main_idtf:
+	[Утв. (Четверной аксель)] (*<-lang_ru;;*);;
+        <= nrel_sc_text_translation: 
+                ...
+	        (*
+		-> rrel_example:
+		[Ни разу чисто не исполнялся на соревнованиях.](*<- lang_ru;; *);;
+	        *);;
+        *);
+
+=>nrel_first_man_execution:
+        hanyu_yuzuru;
+
+=>nrel_ISU_juding_system_evaluation:
+        13.3;;
