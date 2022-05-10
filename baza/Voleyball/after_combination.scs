@@ -1,0 +1,30 @@
+after_combination <- sc_node_not_relation;;
+
+after_combination => nrel_main_idtf:
+[Вдогонку(вол.)] (*<-lang_ru;;*);;
+after_combination => nrel_main_idtf:
+[After combination(voll.)] (*<-lang_en;;*);;
+
+after_combination <- rrel_key_sc_element: ...
+(*
+<- defenition;;
+=> nrel_main_idtf:
+	[Опр. Вдогонку((вол.))] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Kомбинация, при которой игрок первого <b><sc_element sys_idtf="pace">темпа</b></sc_element> идёт на нападающий удар из-за спины связующего и прыгает в метре-полутора впереди него.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+after_combination <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. Вдогонку((вол.))] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Комбинация "Вдогонку" нужна для быстрой атаки, повышающей шансы на гол.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;

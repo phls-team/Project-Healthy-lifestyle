@@ -1,0 +1,30 @@
+back_line <- sc_node_not_relation;;
+
+back_line => nrel_main_idtf:
+[Задняя линия(вол.)] (*<-lang_ru;;*);;
+back_line => nrel_main_idtf:
+[Back line(voll.)] (*<-lang_en;;*);;
+
+back_line <- rrel_key_sc_element: ...
+(*
+<- defenition;;
+=> nrel_main_idtf:
+	[Опр. (Задняя линия(вол.))] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Часть площадки, ограниченная боковыми линиями, лицевой линией и линией атаки.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+back_line <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Задняя линия(вол.))] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Задняя линия команды - самая частая цель подач другой команды.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;

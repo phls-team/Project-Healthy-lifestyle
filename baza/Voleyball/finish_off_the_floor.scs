@@ -1,0 +1,30 @@
+finish_off_the_floor <- sc_node_not_relation;;
+
+finish_off_the_floor => nrel_main_idtf:
+[Добить до пола(вол.)] (*<-lang_ru;;*);;
+finish_off_the_floor => nrel_main_idtf:
+[Finish off the floor(voll.)] (*<-lang_en;;*);;
+
+finish_off_the_floor <- rrel_key_sc_element: ...
+(*
+<- defenition;;
+=> nrel_main_idtf:
+	[Опр. (Добить до пола(вол.))] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Совершить сильный нападающий удар, после которого мяч касается пола.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+finish_off_the_floor <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Добить до пола(вол.))] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Добить до пола - неотъемлемая составляющая практически каждого гола.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;

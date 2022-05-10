@@ -1,0 +1,30 @@
+double_touch <- sc_node_not_relation;;
+
+double_touch => nrel_main_idtf:
+[Двойное касание(вол.)] (*<-lang_ru;;*);;
+double_touch => nrel_main_idtf:
+[Double touch(voll.)] (*<-lang_en;;*);;
+
+double_touch <- rrel_key_sc_element: ...
+(*
+<- defenition;;
+=> nrel_main_idtf:
+	[Опр. (Двойное касание(вол.))] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Действие, при котором игрок ударяет мяч два раза подряд или мяч касается различных частей его тела последовательно.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+double_touch <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Двойное касание(вол.))] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Двойное касание является нарушением правил и засчитывается как очко команде соперника.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;

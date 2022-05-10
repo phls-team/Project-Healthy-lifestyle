@@ -1,0 +1,30 @@
+anterior_zone <- sc_node_not_relation;;
+
+anterior_zone => nrel_main_idtf:
+[Передняя зона(вол.)] (*<-lang_ru;;*);;
+anterior_zone => nrel_main_idtf:
+[Anterior zone(voll.)] (*<-lang_en;;*);;
+
+anterior_zone <- rrel_key_sc_element: ...
+(*
+<- defenition;;
+=> nrel_main_idtf:
+	[Опр. (Передняя зона(вол.))] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Часть площадки, ограниченная боковыми линиями, средней линией и линией атаки.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+anterior_zone <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Передняя зона(вол.))] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Практически всегда именно с передней зоны проводятся атаки.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;

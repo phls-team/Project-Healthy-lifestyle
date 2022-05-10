@@ -1,0 +1,30 @@
+throw <- sc_node_not_relation;;
+
+throw => nrel_main_idtf:
+[Бросок(вол.)] (*<-lang_ru;;*);;
+throw => nrel_main_idtf:
+[Throw(voll.)] (*<-lang_en;;*);;
+
+throw <- rrel_key_sc_element: ...
+(*
+<- defenition;;
+=> nrel_main_idtf:
+	[Опр. Бросок((вол.))] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Действие на <b><sc_element sys_idtf="concept_block">блоке</b></sc_element> или на атакующем ударе, во время которого происходит длительное касание руки и мяча.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
+
+ledge_block <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Бросок(вол.))] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Бросок в волейболе считается нарушением.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
