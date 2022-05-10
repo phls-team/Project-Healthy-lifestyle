@@ -13,7 +13,7 @@ morita <- rrel_key_sc_element: ...
 <= nrel_sc_text_translation: ...
 	(*
 		-> rrel_example:
-		[нападающий удар, при котором игрок разбегается якобы для выполнения взлёта, но задерживается и совершает удар с невысокого <b><sc_element sys_idtf="concept_pass">паса</b></sc_element> в то время, когда блокирующий уже приземлился.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+		[нападающий удар, при котором игрок разбегается якобы для выполнения <b><sc_element sys_idtf="takeoff_combination">взлёта</b></sc_element>, но задерживается и совершает удар с невысокого <b><sc_element sys_idtf="concept_pass">паса</b></sc_element> в то время, когда блокирующий уже приземлился.](*<- lang_ru;; =>nrel_format: format_html;;*);;
 	*);;
 *);;
 
